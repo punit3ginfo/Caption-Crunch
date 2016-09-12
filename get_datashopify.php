@@ -1,4 +1,7 @@
 <?php
+require __DIR__.'/vendor/autoload.php';
+	use phpish\shopify;
+require __DIR__.'/conf.php'; 
 $webhookContent = "";
 
 $webhook = fopen('php://input' , 'rb');
