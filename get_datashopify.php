@@ -3,7 +3,6 @@ require __DIR__.'/vendor/autoload.php';
 	use phpish\shopify;
 require __DIR__.'/conf.php'; 
 require __DIR__.'/connection.php'; 
-
 /*function verify_webhook($data, $hmac_header)
 {
 	$calculated_hmac = base64_encode(hash_hmac('sha256', $data, SHOPIFY_APP_SECRET, true));
@@ -14,9 +13,8 @@ $data = file_get_contents('php://input');
 $verified = verify_webhook($data, $hmac_header);
 error_log('Webhook verified: '.var_export($verified, true)); */
 //check error.log to see the result
-echo $inserted =  pg_query($dbconn4,"INSERT INTO CUSTOMERS (ID,order_id,first_name,last_name,address,order_amount) VALUES ('2','1002','nisha','test','teste','$40')");
- $webhookContent = "";
-
+echo $inserted =  pg_query($dbconn4,"INSERT INTO CUSTOMERS (ID,order_id,first_name,last_name,address,order_amount) VALUES ('3','1003','nisha','test','teste','40')");
+$webhookContent = "";
 $webhook = fopen('php://input' , 'rb');
 while (!feof($webhook)) {
     $webhookContent .= fread($webhook, 4096);
@@ -37,6 +35,5 @@ foreach($p1 as $val)
    
 }
 fclose($webhook);
-
 error_log($webhookContent);
 ?>
