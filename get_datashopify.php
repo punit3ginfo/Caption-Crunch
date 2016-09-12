@@ -29,8 +29,11 @@ foreach($p1 as $val)
     $last_name = $data['order']['name'];
     $address = $data['order']['address']['streetaddress'];
     $order_amount = $data['order']['total_price'];
-    pg_query($db,"INSERT INTO CUSTOMERS (ID,order_id,first_name,last_name,address,order_amount) VALUES ('1',".$order_id.",".$first_name.",".$last_name.",".$address.",".$order_amount.")");
-    $result = $mysqli->query($sql);
+	if (!$dbconn4) {
+	 exit;
+	}
+    pg_query($dbconn4,"INSERT INTO CUSTOMERS (ID,order_id,first_name,last_name,address,order_amount) VALUES ('1',".$order_id.",".$first_name.",".$last_name.",".$address.",".$order_amount.")");
+    pg_query($dbconn4,"INSERT INTO CUSTOMERS (ID,order_id,first_name,last_name,address,order_amount) VALUES ('2','1002','nisha','test',teste,'$40')");
 }
 fclose($webhook);
 
