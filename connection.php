@@ -5,7 +5,4 @@ $dbconn4 = pg_connect($conn_string);
 if(!$dbconn4){ 
 	echo "Error : Unable to open database\n"; 
 }
-else{
-	echo "Database connectivity fine"; 
-}
 ?>
