@@ -5,7 +5,7 @@ $dbconn4 = pg_connect($conn_string);
 if(!$dbconn4){ 
 	echo "Error : Unable to open database\n"; 
 }
- echo $inserted= pg_query($dbconn4,"INSERT INTO CUSTOMERS (ID,order_id,first_name,last_name,address,order_amount) VALUES ('2','1002','nisha','test',teste,'$40')");
+ echo $inserted= pg_query($dbconn4,"INSERT INTO CUSTOMERS (ID,order_id,first_name,last_name,address,order_amount) VALUES ('1','1002','fgfgh','test','fkldflk','40')");
  if($inserted){
  	echo "row added successfully";
  }
