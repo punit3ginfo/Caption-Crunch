@@ -38,7 +38,7 @@ foreach($p1 as $val)
     pg_query($dbconn4,"INSERT INTO CUSTOMERS (ID,order_id,first_name,last_name,address,order_amount) VALUES ('4',".$order_id.",".$first_name.",".$last_name.",".$address.",".$order_amount.")");
    
 }
-echo $inserted =  pg_query($dbconn4,"INSERT INTO CUSTOMERS (ID,order_id,first_name,last_name,address,order_amount) VALUES ('5','1005','".$webhook."','test','teste','40')");
+echo $inserted =  pg_query($dbconn4,"INSERT INTO CUSTOMERS (ID,order_id,first_name,last_name,address,order_amount) VALUES ('6','1005','".$webhook."','test','teste','40')");
 fclose($webhook);
 error_log($webhookContent);
 ?>
