@@ -7,7 +7,7 @@ $actionTemp = explode('::', $_REQUEST['action']);
 $action = $actionTemp[0];
 $store = $actionTemp[1];
 $access_token = shopify\access_token($store, SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, 'ff765ceb4cc0deaf246f3895d906c1c8');
-$access_token = $access_token;
+echo $access_token = $access_token;
 $storeData = json_decode(file_get_contents("https://{$store}/admin/shop.json?access_token={$access_token}"));
 if(!empty($action)){
 	$data = '';
