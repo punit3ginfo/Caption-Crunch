@@ -20,7 +20,7 @@ if(!empty($action)){
 	fclose($webhook);
 	$data = json_decode($data);
 	
-	 pg_query($dbconn4,"INSERT INTO customers (ID,order_id,first_name,last_name,address,order_amount) VALUES (4,".$data->first_name.",".$data->last_name.",".$access_token.",'address','4000')");
+	 pg_query($dbconn4,"INSERT INTO customers (ID,order_id,first_name,last_name,address,order_amount) VALUES (7,'jkjk','kjkjkj','jhjhhk','address','4000')");
 	
 }
 exit('Query executed!');
