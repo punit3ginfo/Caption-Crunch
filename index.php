@@ -1,7 +1,10 @@
 <?php
 echo "<h1>welcome to my app</h1>";
 require __DIR__.'/connection.php'; 
+      echo $shop = $_REQUEST['shop'];
+      echo "saad";
 	$shop="testapp-36.myshopify.com";
+
 $url = "https://{$shop}/admin/webhooks.json";
 	$topics = array(
 			'customers/create' => "https://shopifyturn2.herokuapp.com/get_datashopify.php
