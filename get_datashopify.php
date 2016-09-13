@@ -20,13 +20,11 @@ if(!empty($action)){
 	}
 	fclose($webhook);
 	$data = json_decode($data, true);
-	error_log($data,3,__DIR__.'/errors.log'); 
-	 //pg_query($dbconn4,"INSERT INTO customers (ID,order_id,first_name,last_name,address,order_amount) VALUES (12,251,'{$data->first_name}','jhjhhk','address','4000')");
+     $email=$data->email;
+	pg_query($dbconn4,"INSERT INTO customers (ID,order_id,first_name,last_name,address,order_amount) VALUES (15,251,'{$email}','jhjhhk','address','4000')");
 	
 }
 
-    $result = file_get_contents('http://requestb.in/r4ocbpr4');
-    echo $result;
-pg_query($dbconn4,"INSERT INTO customers (ID,order_id,first_name,last_name,address,order_amount) VALUES (14,251,'{$result}','jhjhhk','address','4000')");
+  
 exit('Query executed!');
 ?>
