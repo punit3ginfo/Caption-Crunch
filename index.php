@@ -1,7 +1,8 @@
 <?php
 echo "<h1>welcome to my app</h1>";
 require __DIR__.'/connection.php'; 
-echo "twutyqwuyiqywi";
+require __DIR__.'/vendor/autoload.php';
+use phpish\shopify;
 	$shop = $_REQUEST['shop'];
 	$access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
 	echo "access_token".$access_token."<br>";
