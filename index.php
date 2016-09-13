@@ -1,9 +1,12 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 echo "<h1>welcome to my app</h1>";
 require __DIR__.'/connection.php'; 
 require __DIR__.'/vendor/autoload.php';
 use phpish\shopify;
 	echo $shop = $_REQUEST['shop'];
+	echo "code=".$_REQUEST['code'];
 	$access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
 	echo "access_token".$access_token."<br>";
 $url = "https://{$shop}/admin/webhooks.json";
