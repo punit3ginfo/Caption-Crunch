@@ -3,6 +3,8 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 require __DIR__.'/conf.php'; 
 require __DIR__.'/connection.php'; 
+require __DIR__.'/vendor/autoload.php';
+use phpish\shopify;
 $actionTemp = explode('::', $_REQUEST['action']);
 $action = $actionTemp[0];
 $store = $actionTemp[1];
