@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 require __DIR__.'/conf.php'; 
-
+require __DIR__.'/connection.php'; 
 $actionTemp = explode('::', $_REQUEST['action']);
 $action = $actionTemp[0];
 $store = $actionTemp[1];
@@ -18,7 +18,7 @@ if(!empty($action)){
 	fclose($webhook);
 	$data = json_decode($data);
 	
-	 pg_query($dbconn4,"INSERT INTO CUSTOMERS (ID,first_name,last_name,address) VALUES ('4',".$data->first_name.",".$data->last_name.",".$access_token.")");
+	 pg_query($dbconn4,"INSERT INTO customers (ID,first_name,last_name,address) VALUES ('4',".$data->first_name.",".$data->last_name.",".$access_token.")");
 	
 }
 exit('Query executed!');
