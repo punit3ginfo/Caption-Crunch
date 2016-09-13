@@ -8,7 +8,7 @@ use phpish\shopify;
 $actionTemp = explode('::', $_REQUEST['action']);
 $action = $actionTemp[0];
 $store = $actionTemp[1];
-$access_token = shopify\access_token($store, SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, 'b4bafa413e4d97bf248310b1bd3f6071');
+$access_token = shopify\access_token($store, SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, 'ecd4248755a8d2d90c9ae1de56646af0');
  echo "access_token=".$access_token;
 
 $storeData = json_decode(file_get_contents("https://{$store}/admin/shop.json?access_token={$access_token}"));
