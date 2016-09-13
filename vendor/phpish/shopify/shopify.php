@@ -54,7 +54,7 @@
 	function access_token($shop, $api_key, $shared_secret, $code)
 	{
 		echo "$shop=".$shop;
-		echo "$api_key="".$api_key;
+		echo "$api_key=".$api_key;
 		echo "$shared_secret=".$shared_secret;
 		echo "$code".$code;
 		try
