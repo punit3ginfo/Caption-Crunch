@@ -19,7 +19,7 @@ if(!empty($action)){
 		$data .= fread($webhook, 4096); 
 	}
 	fclose($webhook);
-	$data = json_decode($data);
+	$data = json_decode($data, true);
 	
 	 pg_query($dbconn4,"INSERT INTO customers (ID,order_id,first_name,last_name,address,order_amount) VALUES (12,251,'{$data->first_name}','jhjhhk','address','4000')");
 	
