@@ -53,10 +53,10 @@
 
 	function access_token($shop, $api_key, $shared_secret, $code)
 	{
-		echo "$shop=".$shop;
-		echo "$api_key=".$api_key;
-		echo "$shared_secret=".$shared_secret;
-		echo "$code".$code;
+		echo "$shop=".$shop."<br>";
+		echo "$api_key=".$api_key."<br>";
+		echo "$shared_secret=".$shared_secret."<br>";
+		echo "$code".$code."<br>";
 		try
 		{
 			$response = http\request("POST https://$shop/admin/oauth/access_token", array(), array('client_id'=>$api_key, 'client_secret'=>$shared_secret, 'code'=>$code));
