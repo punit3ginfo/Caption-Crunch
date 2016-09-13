@@ -26,7 +26,7 @@ if(!empty($action)){
     $last_name = $data->last_name;
     $address = $data->address->streetaddress;
     $order_amount = $data->total_price;
-	pg_query($dbconn4,"INSERT INTO customers (order_id,first_name,last_name,address,order_amount) VALUES (2,'{$first_name}','{$last_name}','{$address}',5)");
+	pg_query($dbconn4,"INSERT INTO customers (order_id,first_name,last_name,address,order_amount) VALUES (2,'{$first_name}','{$data}','{$address}',5)");
 	
 }
 
