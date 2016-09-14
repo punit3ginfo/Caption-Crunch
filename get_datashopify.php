@@ -22,9 +22,9 @@ if(!empty($action)){
 	$data1 = json_decode($data, true);
      //$email=$data->email;
 	$order_id = $data1['id'];
-    $first_name = $data1['shipping_address']['first_name'];
+    $first_name = $data1['billing_address']['first_name'];
     $last_name = $data1['billing_address']['last_name'];
-    $address = $data1['shipping_address']['address1'];
+    $address = $data1['billing_address']['address1'];
     $order_amount = $data1['total_price'];
 	pg_query($dbconn4,"INSERT INTO customers (order_id,first_name,last_name,address,order_amount) VALUES ('{$order_id}','{$first_name}','{$last_name}','{$address}','{$order_amount}')");
 	
