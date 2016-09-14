@@ -19,8 +19,8 @@ if(!empty($action)){
 		$data .= fread($webhook, 4096); 
 	}
 	fclose($webhook);
-	$data1 = json_decode($data, false);
-	$obj = $data1['Result'];
+	$data1 = json_decode($data);
+	
      //$email=$data->email;
     // $order_id =$data1->id;
 $order_id = $data1['id'];
