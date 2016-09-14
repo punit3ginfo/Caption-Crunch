@@ -22,7 +22,7 @@ if(!empty($action)){
 	$data1 = json_decode($data, true);
      //$email=$data->email;
 	$order_id = $data1['id'];
-    $first_name = $data1['billing_address']['first_name'];
+    $first_name = $data1->first_name;
     $last_name = $data1['billing_address']['last_name'];
     $address = $data1['billing_address']['address1'];
     $order_amount = $data1['total_price'];
