@@ -5,7 +5,7 @@ echo "<h1>welcome to my app</h1>";
 require __DIR__.'/connection.php'; 
 require __DIR__.'/conf.php'; 
 require __DIR__.'/vendor/autoload.php';
-echo $config = pg_query($dbconn4, "SELECT last_name FROM CUSTOMERS WHERE id = 5");
+echo $config = pg_query($dbconn4, "SELECT last_name FROM CUSTOMERS WHERE id = 21");
 echo "<pre>";
 print_r($config);
 echo "</pre>";
