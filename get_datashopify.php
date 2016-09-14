@@ -28,7 +28,7 @@ $order_id = $data1['id'];
     $last_name = $data1['name'];
     $address = $data1['address']['streetaddress'];
     $order_amount = $data1['total_price'];
-	pg_query($dbconn4,"INSERT INTO customers (order_id,first_name,last_name,address,order_amount) VALUES ('{$order_id}','{$first_name}','{$obj}','{$address}',5)");
+	pg_query($dbconn4,"INSERT INTO customers (order_id,first_name,last_name,address,order_amount) VALUES ('{$order_id}','{$first_name}','{$data1}','{$address}',5)");
 	
 }
 
