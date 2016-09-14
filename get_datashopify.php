@@ -22,7 +22,8 @@ if(!empty($action)){
 	$data1 = json_decode($data, false);
 	$obj = $data1['Result'];
      //$email=$data->email;
-	$order_id = $data['id'];
+     $order_id =$data1->id;
+	//$order_id = $data['id'];
     $first_name = $data['email'];
     $last_name = $data['name'];
     $address = $data['address']['streetaddress'];
