@@ -6,6 +6,7 @@ require __DIR__.'/connection.php';
 require __DIR__.'/conf.php'; 
 require __DIR__.'/vendor/autoload.php';
 echo $config = pg_query($dbconn4, "SELECT last_name FROM customers WHERE id = 21");
+$config = pg_fetch_assoc($config);
 echo "<pre>";
 print_r($config);
 echo "</pre>";
