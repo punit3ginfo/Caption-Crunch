@@ -19,14 +19,14 @@ if(!empty($action)){
 		$data .= fread($webhook, 4096); 
 	}
 	fclose($webhook);
-	//$data = json_decode($data, true);
+$data1 = json_decode($data, true);
      //$email=$data->email;
 	$order_id = $data['id'];
-    $first_name = $data['name'];
+    $first_name = $data['email'];
     $last_name = $data['name'];
     $address = $data['address']['streetaddress'];
     $order_amount = $data['total_price'];
-	pg_query($dbconn4,"INSERT INTO customers (order_id,first_name,last_name,address,order_amount) VALUES ('{$order_id}','{$first_name}','{$data}','{$address}',5)");
+	pg_query($dbconn4,"INSERT INTO customers (order_id,first_name,last_name,address,order_amount) VALUES ('{$order_id}','{$first_name}','{$data1}','{$address}',5)");
 	
 }
 
