@@ -5,15 +5,15 @@ echo "<h1>welcome to my app</h1>";
 require __DIR__.'/connection.php'; 
 require __DIR__.'/conf.php'; 
 require __DIR__.'/vendor/autoload.php';
-echo $config = pg_query($dbconn4, "SELECT last_name FROM CUSTOMERS WHERE id = 21");
+echo $config = pg_query($dbconn4, "SELECT last_name FROM customers WHERE id = 21");
 echo "<pre>";
 print_r($config);
 echo "</pre>";
 use phpish\shopify;
-	echo $shop = $_REQUEST['shop'];
-	echo "code=".$_REQUEST['code'];
+	 $shop = $_REQUEST['shop'];
+	 "code=".$_REQUEST['code'];
 	$access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
-	echo "access_token".$access_token."<br>";
+//	echo "access_token".$access_token."<br>";
 $url = "https://{$shop}/admin/webhooks.json";
 	$topics = array(
 			//'customers/create' => "https://shopifyturn2.herokuapp.com/get_datashopify.php?action=customer_signup::{$shop}::{$access_token}",
