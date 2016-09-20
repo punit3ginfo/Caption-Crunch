@@ -8,7 +8,7 @@ require __DIR__.'/vendor/autoload.php';
  $config = pg_query($dbconn4, "SELECT last_name FROM customers WHERE id = 21");
 $config = pg_fetch_assoc($config);
 echo "<pre>";
-print_r($config);
+//print_r($config);
 echo "</pre>";
 use phpish\shopify;
 	 $shop = $_REQUEST['shop'];
@@ -31,7 +31,10 @@ $url = "https://{$shop}/admin/webhooks.json";
 					'topic' => $topic,
 				)
 			);
-		$data = json_encode($data);	
+		$data = json_encode($data);
+		echo "<pre>";
+		print_r($data);
+		exit();
 		$ch = curl_init($url);
 		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');                                                                     
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $data);                                                                  
@@ -46,6 +49,7 @@ $url = "https://{$shop}/admin/webhooks.json";
 	
 	
 // The data to send to the API
+
 
 
 $postData='{
@@ -73,6 +77,35 @@ $postData='{
     
     ]
 }';
+
+
+
+
+/*$postData='{
+    "orderId": "999118",
+    "deliveryDate": "2015-05-20",
+    "locale": "en_US",
+    "postalCode": "10667",
+    "emailOptOut": false,
+    "user":          {
+        "firstName": "Andy",
+        "lastName": "Adamson",
+        "nickName": "",
+        "emailAddress": "andrew@sample.com",
+        "externalId": null
+    },
+    "items":     [
+    {
+       "lineItemId": "1",
+       "title": "Sneakers",
+       "url": "www.treadzzzzz.com/sneakers",
+       "sku": "12",
+       "price": "29.99",
+       "itemImageUrl": "www.treadzzzzz.com/img/sneakers.jpg"
+    }
+    
+    ]
+}'; */
 $postDataJson=json_decode($postData);
 
 
