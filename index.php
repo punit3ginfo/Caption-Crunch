@@ -48,15 +48,13 @@ $url = "https://{$shop}/admin/webhooks.json";
 // The data to send to the API
 $postData = array(
 'orderId' => '1516',
-'user' => array(
 'user.firstName' => 'Andy',
 'user.lastName' => 'fff',
-'user.emailAddress' => 'jagdeep.32ginfo@gmail.com'),
-'items' => array(
+'user.emailAddress' => 'jagdeep.32ginfo@gmail.com',
 'items[].titl' => 'testone',
 'items[].url' => 'http://google.com',
 'items[].sku' => '585552',
-'itemImageUrl' => 'www.treadzzzzz.com/img/sneakers.jpg',)
+'itemImageUrl' => 'www.treadzzzzz.com/img/sneakers.jpg'
 );
 
 // Setup cURL
