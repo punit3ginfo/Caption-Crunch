@@ -63,7 +63,7 @@ $postData = array(
 
 
 
-$apple="{
+$apple='{
     "orderId": "999778",
     "deliveryDate": "2015-05-20",
     "locale": "en_US",
@@ -87,7 +87,7 @@ $apple="{
     }
     
     ]
-}";
+}';
 $bnanna=json_decode($apple);
 
 
