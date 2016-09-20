@@ -56,8 +56,11 @@ $postData = array(
 'items[].sku' => '585552',
 'itemImageUrl' => 'www.treadzzzzz.com/img/sneakers.jpg'
 );
+
+ $apple=json_encode($postData);
+ print_r( $apple);
 echo "<pre>";
-print_r($postData);
+//print_r($postData);
 echo "</pre>";
 exit;
 // Setup cURL
