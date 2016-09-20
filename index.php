@@ -49,7 +49,7 @@ $url = "https://{$shop}/admin/webhooks.json";
 
 
 $postData='{
-    "orderId": "999778",
+    "orderId": "999118",
     "deliveryDate": "2015-05-20",
     "locale": "en_US",
     "postalCode": "10667",
@@ -66,7 +66,7 @@ $postData='{
        "lineItemId": "1",
        "title": "Sneakers",
        "url": "www.treadzzzzz.com/sneakers",
-       "sku": "1",
+       "sku": "12",
        "price": "29.99",
        "itemImageUrl": "www.treadzzzzz.com/img/sneakers.jpg"
     }
