@@ -64,8 +64,8 @@ $postData = array(
 
 
 $apple='{
-    "orderId": "999778",
-    "deliveryDate": "2015-05-20",
+    "orderId": "99977812",
+    "deliveryDate": "2015-05-25",
     "locale": "en_US",
     "postalCode": "10667",
     "emailOptOut": false,
@@ -73,7 +73,7 @@ $apple='{
         "firstName": "Andy",
         "lastName": "Adamson",
         "nickName": "",
-        "emailAddress": "andrew@sample.com",
+        "emailAddress": "test@sample.com",
         "externalId": null
     },
     "items":     [
@@ -81,7 +81,7 @@ $apple='{
        "lineItemId": "1",
        "title": "Sneakers",
        "url": "www.treadzzzzz.com/sneakers",
-       "sku": "1",
+       "sku": "16",
        "price": "29.99",
        "itemImageUrl": "www.treadzzzzz.com/img/sneakers.jpg"
     }
