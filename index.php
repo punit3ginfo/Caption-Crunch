@@ -56,8 +56,9 @@ $postData = array(
 'items[].sku' => '585552',
 'itemImageUrl' => 'www.treadzzzzz.com/img/sneakers.jpg'
 );
-
+echo "<pre>";
 print_r($postData);
+echo "</pre>";
 exit;
 // Setup cURL
 $ch = curl_init('https://api.turnto.com/v1/orders/create');
