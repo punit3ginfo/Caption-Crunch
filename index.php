@@ -57,6 +57,34 @@ $postData = array(
 'itemImageUrl' => 'www.treadzzzzz.com/img/sneakers.jpg'
 );
 
+$apple="{
+    "orderId": "999778",
+    "deliveryDate": "2015-05-20",
+    "locale": "en_US",
+    "postalCode": "10667",
+    "emailOptOut": false,
+    "user":          {
+        "firstName": "Andy",
+        "lastName": "Adamson",
+        "nickName": "",
+        "emailAddress": "andrew@sample.com",
+        "externalId": null
+    },
+    "items":     [
+    {
+       "lineItemId": "1",
+       "title": "Sneakers",
+       "url": "www.treadzzzzz.com/sneakers",
+       "sku": "1",
+       "price": "29.99",
+       "itemImageUrl": "www.treadzzzzz.com/img/sneakers.jpg"
+    }
+    
+    ]
+}";
+
+
+
 // $apple=json_encode($postData);
 
 // Setup cURL
@@ -68,7 +96,7 @@ curl_setopt_array($ch, array(
         'Authorization: Bearer eAW1zjgK4oZ4HrfCUnJHbWqVfyl6ZUShLkq',
         'Content-Type: application/json;charset=UTF-8'
     ),
-    CURLOPT_POSTFIELDS => json_encode($postData)
+    CURLOPT_POSTFIELDS => $apple
 ));
 // Send the request
 $response = curl_exec($ch);
