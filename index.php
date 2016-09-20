@@ -54,7 +54,7 @@ $url = "https://{$shop}/admin/webhooks.json";
 
 
 
-$oid=123456789;
+$oid=123456;
 
 
 $postData='{
