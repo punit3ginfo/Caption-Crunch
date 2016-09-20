@@ -46,49 +46,27 @@ $url = "https://{$shop}/admin/webhooks.json";
 	
 	
 // The data to send to the API
-$postData = array(
-'orderId' => '1516',
-'user.firstName' => 'Andy',
-'user.lastName' => 'fff',
-'user.emailAddress' => 'jagdeep.32ginfo@gmail.com',
-'items[].titl' => 'testone',
-'items[].url' => 'http://google.com',
-'items[].sku' => '585552',
-'itemImageUrl' => 'www.treadzzzzz.com/img/sneakers.jpg'
-);
 
 
-
-
-
-
-
-$apple='{
-    "orderId": "99977812",
-    "deliveryDate": "2015-05-25",
-    "locale": "en_US",
-    "postalCode": "10667",
-    "emailOptOut": false,
+$postData='{
+    "orderId": "99945477812",
     "user":          {
         "firstName": "Andy",
         "lastName": "Adamson",
-        "nickName": "",
-        "emailAddress": "test@sample.com",
-        "externalId": null
+        "emailAddress": "test@sample.com"
     },
     "items":     [
     {
-       "lineItemId": "1",
        "title": "Sneakers",
        "url": "www.treadzzzzz.com/sneakers",
-       "sku": "16",
+       "sku": "18",
        "price": "29.99",
        "itemImageUrl": "www.treadzzzzz.com/img/sneakers.jpg"
     }
     
     ]
 }';
-$bnanna=json_decode($apple);
+$postDataJson=json_decode($postData);
 
 
 
@@ -103,7 +81,7 @@ curl_setopt_array($ch, array(
         'Authorization: Bearer eAW1zjgK4oZ4HrfCUnJHbWqVfyl6ZUShLkq',
         'Content-Type: application/json;charset=UTF-8'
     ),
-    CURLOPT_POSTFIELDS => json_encode($bnanna)
+    CURLOPT_POSTFIELDS => json_encode($postDataJson)
 ));
 // Send the request
 $response = curl_exec($ch);
