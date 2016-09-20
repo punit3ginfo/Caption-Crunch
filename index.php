@@ -58,11 +58,7 @@ $postData = array(
 );
 
  $apple=json_encode($postData);
- print_r( $apple);
-echo "<pre>";
-//print_r($postData);
-echo "</pre>";
-exit;
+
 // Setup cURL
 $ch = curl_init('https://api.turnto.com/v1/orders/create');
 curl_setopt_array($ch, array(
@@ -72,7 +68,7 @@ curl_setopt_array($ch, array(
         'Authorization: Bearer eAW1zjgK4oZ4HrfCUnJHbWqVfyl6ZUShLkq',
         'Content-Type: application/json;charset=UTF-8'
     ),
-    CURLOPT_POSTFIELDS => json_encode($postData)
+    CURLOPT_POSTFIELDS => json_encode($apple)
 ));
 // Send the request
 $response = curl_exec($ch);
