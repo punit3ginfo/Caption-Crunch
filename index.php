@@ -48,15 +48,17 @@ $url = "https://{$shop}/admin/webhooks.json";
 // The data to send to the API
 $postData = array(
 'orderId' => '1516',
+'user' => array(
 'user.firstName' => 'Andy',
 'user.lastName' => 'fff',
-'user.emailAddress' => 'jagdeep.32ginfo@gmail.com',
+'user.emailAddress' => 'jagdeep.32ginfo@gmail.com'),
+'items' => array(
 'items[].titl' => 'testone',
 'items[].url' => 'http://google.com',
 'items[].sku' => '585552',
-'price' => '29.99',
-'itemImageUrl' => 'www.treadzzzzz.com/img/sneakers.jpg'
+'itemImageUrl' => 'www.treadzzzzz.com/img/sneakers.jpg',)
 );
+
 // Setup cURL
 $ch = curl_init('https://api.turnto.com/v1/orders/create');
 curl_setopt_array($ch, array(
