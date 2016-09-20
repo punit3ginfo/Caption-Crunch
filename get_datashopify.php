@@ -91,22 +91,22 @@ $responseData = json_decode($response, TRUE);
 echo "<pre>";
 print_r($responseData);
 echo "</pre>";
-pg_query($dbconn4,"INSERT INTO customers (order_id,first_name,last_name,address,order_amount) VALUES ('{$order_id}','{$first_name}','{$last_name}','{$address}','{$order_amount}')");
+//pg_query($dbconn4,"INSERT INTO customers (order_id,first_name,last_name,address,order_amount) VALUES ('{$order_id}','{$first_name}','{$last_name}','{$address}','{$order_amount}')");
 	
   
 exit('Query executed!');
 // The data to send to the API
 $postData='{
-    "orderId": $order_id,
-    "deliveryDate":$created_at,
+    "orderId":'{$order_id}',
+    "deliveryDate":'{$created_at}',
     "locale": "en_US",
     "postalCode": "10667",
     "emailOptOut": false,
     "user":          {
-        "firstName":  $first_name,
-        "lastName":  $last_name,
+        "firstName":  '{$first_name}',
+        "lastName":  '{$last_name}',
         "nickName": "",
-        "emailAddress": $email,
+        "emailAddress": '{$email}',
         "externalId": null
     },
     "items":     [
