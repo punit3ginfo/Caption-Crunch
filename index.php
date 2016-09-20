@@ -54,6 +54,7 @@ $postData = array(
 'items[].titl' => 'testone',
 'items[].url' => 'http://google.com',
 'items[].sku' => '585552',
+'price' => '29.99',
 'itemImageUrl' => 'www.treadzzzzz.com/img/sneakers.jpg'
 );
 // Setup cURL
