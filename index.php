@@ -50,10 +50,10 @@ $url = "https://{$shop}/admin/webhooks.json";
 	
 // The data to send to the API
 
-
+$order_id = 123;
 
 $postData='{
-    "orderId": "999118",
+    "orderId": {'$order_id'},
     "deliveryDate": "2015-05-20",
     "locale": "en_US",
     "postalCode": "10667",
