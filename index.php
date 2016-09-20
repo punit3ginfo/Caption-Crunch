@@ -32,9 +32,9 @@ $url = "https://{$shop}/admin/webhooks.json";
 				)
 			);
 		$data = json_encode($data);
-		echo "<pre>";
-		print_r($data);
-		exit();
+	//	echo "<pre>";
+		//print_r($data);
+		//exit();
 		$ch = curl_init($url);
 		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');                                                                     
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $data);                                                                  
