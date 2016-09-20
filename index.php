@@ -58,7 +58,7 @@ $oid=123456;
 
 
 $postData='{
-    "orderId":"26265121",
+    "orderId":"'.$oid.'",
     "deliveryDate": "2015-05-20",
     "locale": "en_US",
     "postalCode": "10667",
