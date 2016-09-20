@@ -49,17 +49,24 @@ $url = "https://{$shop}/admin/webhooks.json";
 
 
 $postData='{
-    "orderId": "99945477812",
+    "orderId": "999778",
+    "deliveryDate": "2015-05-20",
+    "locale": "en_US",
+    "postalCode": "10667",
+    "emailOptOut": false,
     "user":          {
         "firstName": "Andy",
         "lastName": "Adamson",
-        "emailAddress": "test@sample.com"
+        "nickName": "",
+        "emailAddress": "andrew@sample.com",
+        "externalId": null
     },
     "items":     [
     {
+       "lineItemId": "1",
        "title": "Sneakers",
        "url": "www.treadzzzzz.com/sneakers",
-       "sku": "18",
+       "sku": "1",
        "price": "29.99",
        "itemImageUrl": "www.treadzzzzz.com/img/sneakers.jpg"
     }
