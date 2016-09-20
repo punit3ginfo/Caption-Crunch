@@ -38,16 +38,16 @@ exit('Query executed!');
 
 // The data to send to the API
 $postData='{
-    "orderId": $order_id,
-    "deliveryDate":$created_at,
+    "orderId":"'.$order_id .'",
+    "deliveryDate":"2015-05-20",
     "locale": "en_US",
     "postalCode": "10667",
     "emailOptOut": false,
     "user":          {
-        "firstName":  $first_name,
-        "lastName":  $last_name,
+        "firstName":  "'.$first_name.'",
+        "lastName":  "'.$last_name.'",
         "nickName": "",
-        "emailAddress": $email,
+        "emailAddress": "'.$email.'",
         "externalId": null
     },
     "items":     [
