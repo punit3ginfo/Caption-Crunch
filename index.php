@@ -53,7 +53,7 @@ $url = "https://{$shop}/admin/webhooks.json";
 $order_id = 123;
 
 $postData='{
-    "orderId": {'$order_id'},
+    "orderId": 123,
     "deliveryDate": "2015-05-20",
     "locale": "en_US",
     "postalCode": "10667",
