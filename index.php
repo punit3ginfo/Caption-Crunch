@@ -50,10 +50,15 @@ $url = "https://{$shop}/admin/webhooks.json";
 	
 // The data to send to the API
 
-$order_id = 123;
+
+
+
+
+
+
 
 $postData='{
-    "orderId": 123,
+    "orderId": "999888",
     "deliveryDate": "2015-05-20",
     "locale": "en_US",
     "postalCode": "10667",
@@ -76,36 +81,7 @@ $postData='{
     }
     
     ]
-}';
-
-
-
-
-/*$postData='{
-    "orderId": "999118",
-    "deliveryDate": "2015-05-20",
-    "locale": "en_US",
-    "postalCode": "10667",
-    "emailOptOut": false,
-    "user":          {
-        "firstName": "Andy",
-        "lastName": "Adamson",
-        "nickName": "",
-        "emailAddress": "andrew@sample.com",
-        "externalId": null
-    },
-    "items":     [
-    {
-       "lineItemId": "1",
-       "title": "Sneakers",
-       "url": "www.treadzzzzz.com/sneakers",
-       "sku": "12",
-       "price": "29.99",
-       "itemImageUrl": "www.treadzzzzz.com/img/sneakers.jpg"
-    }
-    
-    ]
-}'; */
+}'; 
 $postDataJson=json_decode($postData);
 
 
