@@ -57,6 +57,12 @@ $postData = array(
 'itemImageUrl' => 'www.treadzzzzz.com/img/sneakers.jpg'
 );
 
+
+
+
+
+
+
 $apple="{
     "orderId": "999778",
     "deliveryDate": "2015-05-20",
@@ -82,6 +88,7 @@ $apple="{
     
     ]
 }";
+$bnanna=json_decode($apple);
 
 
 
@@ -96,7 +103,7 @@ curl_setopt_array($ch, array(
         'Authorization: Bearer eAW1zjgK4oZ4HrfCUnJHbWqVfyl6ZUShLkq',
         'Content-Type: application/json;charset=UTF-8'
     ),
-    CURLOPT_POSTFIELDS => $apple
+    CURLOPT_POSTFIELDS => json_encode($bnanna)
 ));
 // Send the request
 $response = curl_exec($ch);
