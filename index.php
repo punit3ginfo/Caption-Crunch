@@ -57,7 +57,6 @@ $postData = array(
 );
 // Setup cURL
 $ch = curl_init('https://api.turnto.com/v1/orders/create');
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt_array($ch, array(
     CURLOPT_POST => TRUE,
     CURLOPT_RETURNTRANSFER => TRUE,
