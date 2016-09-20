@@ -8,7 +8,7 @@ require __DIR__.'/vendor/autoload.php';
  $config = pg_query($dbconn4, "SELECT last_name FROM customers WHERE id = 21");
 $config = pg_fetch_assoc($config);
 echo "<pre>";
-//print_r($config);
+print_r($config);
 echo "</pre>";
 use phpish\shopify;
 	 $shop = $_REQUEST['shop'];
