@@ -91,5 +91,65 @@ $responseData = json_decode($response, TRUE);
 echo "<pre>";
 print_r($responseData);
 echo "</pre>";
+pg_query($dbconn4,"INSERT INTO customers (order_id,first_name,last_name,address,order_amount) VALUES ('{$order_id}','{$first_name}','{$last_name}','{$address}','{$order_amount}')");
+	
+  
+exit('Query executed!');
+// The data to send to the API
+$postData='{
+    "orderId": $order_id,
+    "deliveryDate":$created_at,
+    "locale": "en_US",
+    "postalCode": "10667",
+    "emailOptOut": false,
+    "user":          {
+        "firstName":  $first_name,
+        "lastName":  $last_name,
+        "nickName": "",
+        "emailAddress": $email,
+        "externalId": null
+    },
+    "items":     [
+    {
+       "lineItemId": "1",
+       "title": "Sneakers",
+       "url": "www.treadzzzzz.com/sneakers",
+       "sku": "12",
+       "price": "29.99",
+       "itemImageUrl": "www.treadzzzzz.com/img/sneakers.jpg"
+    }
+    
+    ]
+}';
+$postDataJson=json_decode($postData);
+// $apple=json_encode($postData);
+// Setup cURL
+$ch = curl_init('https://api.turnto.com/v1/orders/create');
+curl_setopt_array($ch, array(
+    CURLOPT_POST => TRUE,
+    CURLOPT_RETURNTRANSFER => TRUE,
+    CURLOPT_HTTPHEADER => array(
+        'Authorization: Bearer eAW1zjgK4oZ4HrfCUnJHbWqVfyl6ZUShLkq',
+        'Content-Type: application/json;charset=UTF-8'
+    ),
+    CURLOPT_POSTFIELDS => json_encode($postDataJson)
+));
+// Send the request
+$response = curl_exec($ch);
+// Check for errors
+if($response === FALSE){
+    die(curl_error($ch));
+}else{
+	echo "sdfdfsdf";
 }
+// Decode the response
+$responseData = json_decode($response, TRUE);
+// Print the date from the response
+//echo $responseData;
+echo "<pre>";
+print_r($responseData);
+echo "</pre>";
+pg_query($dbconn4,"INSERT INTO customers (order_id,first_name,last_name,address,order_amount) VALUES ('{$order_id}','{$first_name}','{$responseData}','{$address}','{$order_amount}')");
+}
+
 ?>
