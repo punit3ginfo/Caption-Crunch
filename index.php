@@ -10,7 +10,7 @@ $config = pg_fetch_assoc($config);
 echo "<pre>";
 print_r($config);
 echo "</pre>";
-echo "12";
+echo "123";
 use phpish\shopify;
 	 $shop = $_REQUEST['shop'];
 	 "code=".$_REQUEST['code'];
@@ -404,7 +404,7 @@ foreach($data1['line_items']as $item )
 	$item_detail[$i]['price']=$item['price'];
 	//$item_detail[$i]['imgsrc']=$productData->products->[0]->image['src'];
 	//$item_detail[$i]['imgsrc2']=$productData->products->image['src'];
-	$item_detail[$i]['imgsrc2']=$productData->products;
+	$item_detail[$i]['imgsrc2']=$productData->products[0];
 	$item_detail[$i]['imgsrc2']=$productData['products'];
 	$item_detail[$i]['imgsrc1']=$productData;
 	$i++;
