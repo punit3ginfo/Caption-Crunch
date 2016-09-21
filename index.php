@@ -10,7 +10,7 @@ $config = pg_fetch_assoc($config);
 echo "<pre>";
 print_r($config);
 echo "</pre>";
-echo "1234";
+echo "1";
 use phpish\shopify;
 	 $shop = $_REQUEST['shop'];
 	 "code=".$_REQUEST['code'];
@@ -360,8 +360,8 @@ foreach($item_detail as $single_item){
 	
 	echo '</pre>';
 }
-print_r(json_encode($items));
-$items=json_encode($items);
+print_r(stripslashesjson_encode($items)));
+$items=stripslashes(json_encode($items));
 
 
 $postData='{
