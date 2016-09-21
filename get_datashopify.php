@@ -27,6 +27,7 @@ if(!empty($action) &&($action == 'order_created' or $action=='order_updated') ){
     $address = $data1['billing_address']['address1'];
     $order_amount = $data1['total_price'];
     $created_at =$data1['created_at'];
+	$created_at=explode('T',$created_at);
     $email=$data1['email'];
 	$zipcode = $data1['billing_address']['zip'];
 	//pg_query($dbconn4,"INSERT INTO customers (order_id,first_name,last_name,address,order_amount) VALUES ('{$order_id}','{$first_name}','{$data}','{$address}','{$order_amount}')");
@@ -58,7 +59,7 @@ if(!empty($action) &&($action == 'order_created' or $action=='order_updated') ){
 // The data to send to the API
 $postData='{
     "orderId":"'.$order_id .'",
-    "deliveryDate":"2015-05-20",
+    "deliveryDate":"'.$created_at.'",
     "locale": "en_US",
     "postalCode": "'.$zipcode.'",
     "emailOptOut": false,
