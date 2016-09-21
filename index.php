@@ -377,7 +377,24 @@ $postData='{
         "emailAddress": "boskim.3ginfo@gmail.com",
         "externalId": null
     },
-    "items": "'.json_encode($items).'"
+	"items":     [
+    {
+       "lineItemId": "1",
+       "title": "Sneakers",
+       "url": "www.treadzzzzz.com/sneakers",
+       "sku": "1",
+       "price": "29.99",
+       "itemImageUrl": "www.treadzzzzz.com/img/sneakers.jpg"
+    },
+    {
+       "lineItemId": "2",
+       "title": "Cleats",
+       "url": "www.treadzzzzz.com/cleats",
+       "price": "49.99",
+       "itemImageUrl": "www.treadzzzzz.com/img/cleats.jpg"
+    }
+    ]
+    
 }'; 
 $postDataJson=json_decode($postData);
 
