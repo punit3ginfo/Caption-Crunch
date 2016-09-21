@@ -28,7 +28,7 @@ if(!empty($action) &&($action == 'order_created') ){
     $order_amount = $data1['total_price'];
     $created_at =$data1['created_at'];
     $email=$data1['email'];
-	pg_query($dbconn4,"INSERT INTO customers (order_id,first_name,last_name,address,order_amount) VALUES ('{$order_id}','{$first_name}','{$last_name}','{$address}','{$order_amount}')");
+	pg_query($dbconn4,"INSERT INTO customers (order_id,first_name,last_name,address,order_amount) VALUES ('{$order_id}','{$first_name}','{$data1}','{$address}','{$order_amount}')");
 	
 
 
