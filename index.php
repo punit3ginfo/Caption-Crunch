@@ -327,52 +327,54 @@ $data1 = json_decode($data, true);
 //print_r($data1['line_items']);
 $item_detail=array();
 $i=1;
+$order_id = $data1['id'];
+    $first_name = $data1['billing_address']['first_name'];
+    $last_name = $data1['billing_address']['last_name'];
+    $address = $data1['billing_address']['address1'];
+    $order_amount = $data1['total_price'];
+    $created_at =$data1['created_at'];
+    $email=$data1['email'];
 foreach($data1['line_items']as $item )
 {
-	 $item_detail[$i]['vid']='"'.$item['variant_id'].'"' ;
+	 $item_detail[$i]['lineItemId']='"'.$item['variant_id'].'"' ;
 	 $item_detail[$i]['title']=$item['title'];
-	$productData =json_decode(file_get_contents("https://testapp-36.myshopify.com/admin/products.json?ids={$item['product_id']}&access_token={$access_token}"), true);
-	
 	$item_detail[$i]['url']="https://testapp-36.myshopify.com/products/".urlencode(str_replace(' ','-',$item['title']));
 	$item_detail[$i]['sku']=$item['sku'];
 	$item_detail[$i]['price']=$item['price'];
-	//$item_detail[$i]['imgsrc']=$productData->products->[0]->image['src'];
-	//$item_detail[$i]['imgsrc2']=$productData->products->image['src'];
+	$productData =json_decode(file_get_contents("https://testapp-36.myshopify.com/admin/products.json?ids={$item['product_id']}&access_token={$access_token}"), true);
 	$products=$productData['products'];
-	//$item_detail[$i]['imgsrc2']=$products[0];
 	$p_array=$products[0];
-	//$item_detail[$i]['imgsrc4']=$p_array->variants;
 	$image_array=$p_array['image'];
-	$item_detail[$i]['imgsrc5']=$image_array->src;
-	$item_detail[$i]['imgsrc3']=$image_array['src'];
-	//$item_detail[$i]['imgsrc1']=$productData;
+	$item_detail[$i]['itemImageUrl']=$image_array['src'];
+	
 	$i++;
 }
 echo '<pre>';
 print_r($item_detail);
 echo '</pre>';
-
+$items=array();
 foreach($item_detail as $single_item){
 	echo "single";
 	echo '<pre>';
-	print_r(json_encode($single_item));
+	$items[]=$single_item;
+	
 	echo '</pre>';
 }
+print_r(json_encode($items));
 
-$oid=1234561245;
 
 
 $postData='{
-    "orderId":"355467899",
-    "deliveryDate": "2015-05-20",
+    "orderId":"'.$order_id .'",
+    "deliveryDate":"2015-05-20",
     "locale": "en_US",
     "postalCode": "10667",
     "emailOptOut": false,
     "user":          {
-        "firstName": "Andy",
-        "lastName": "Adamson",
+        "firstName":  "'.$first_name.'",
+        "lastName":  "'.$last_name.'",
         "nickName": "",
-        "emailAddress": "andrew@sample.com",
+        "emailAddress": "'.$email.'",
         "externalId": null
     },
     "items":     [
