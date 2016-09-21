@@ -28,6 +28,7 @@ if(!empty($action) &&($action == 'order_created' or $action=='order_updated') ){
     $order_amount = $data1['total_price'];
     $created_at =$data1['created_at'];
 	$created_at=explode('T',$created_at);
+	$created_at=$created_at[0];
     $email=$data1['email'];
 	$zipcode = $data1['billing_address']['zip'];
 	//pg_query($dbconn4,"INSERT INTO customers (order_id,first_name,last_name,address,order_amount) VALUES ('{$order_id}','{$first_name}','{$data}','{$address}','{$order_amount}')");
