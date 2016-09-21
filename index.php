@@ -327,7 +327,7 @@ $data1 = json_decode($data, true);
 //print_r($data1['line_items']);
 $item_detail=array();
 $i=1;
-$order_id = $data1['id'];
+$order_id = 12689320032024;
     $first_name = $data1['billing_address']['first_name'];
     $last_name = $data1['billing_address']['last_name'];
     $address = $data1['billing_address']['address1'];
@@ -377,17 +377,7 @@ $postData='{
         "emailAddress": "'.$email.'",
         "externalId": null
     },
-    "items":     [
-    {
-       "lineItemId": "1",
-       "title": "Sneakers",
-       "url": "www.treadzzzzz.com/sneakers",
-       "sku": "12",
-       "price": "29.99",
-       "itemImageUrl": "www.treadzzzzz.com/img/sneakers.jpg"
-    }
-    
-    ]
+    "items": json_encode($items)
 }'; 
 $postDataJson=json_decode($postData);
 
