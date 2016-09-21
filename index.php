@@ -378,7 +378,7 @@ $postData='{
         "externalId": null
     },
 	
-    "items": "'.$items.'"
+    "items": '.$items.'
 }'; 
 $postDataJson=json_decode($postData);
 echo"<br><br>postdata";
