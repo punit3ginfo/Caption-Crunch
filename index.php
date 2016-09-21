@@ -399,7 +399,7 @@ foreach($data1['line_items']as $item )
 	$item_detail[$i]['title']=$item['title'];
 	$productData =json_decode(file_get_contents("https://testapp-36.myshopify.com/admin/products.json?ids={$item_detail[$i]['pid']}&access_token={$access_token}"), true);
 	
-	$item_detail[$i]['url']="https://testapp-36.myshopify.com/products/".urlencode($item['title']);
+	$item_detail[$i]['url']="https://testapp-36.myshopify.com/products/".urlencode(str_replace(' ','-',$item['title']));
 	$item_detail[$i]['sku']=$item['sku'];
 	$item_detail[$i]['price']=$item['price'];
 	//$item_detail[$i]['imgsrc']=$productData->products->[0]->image['src'];
