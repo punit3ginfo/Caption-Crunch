@@ -10,7 +10,7 @@ $config = pg_fetch_assoc($config);
 echo "<pre>";
 print_r($config);
 echo "</pre>";
-echo "12";
+echo "123";
 use phpish\shopify;
 	 $shop = $_REQUEST['shop'];
 	 "code=".$_REQUEST['code'];
@@ -377,7 +377,7 @@ $postData='{
         "emailAddress": "boskim.3ginfo@gmail.com",
         "externalId": null
     },
-    "items": json_encode($items)
+    "items": "'.json_encode($items).'"
 }'; 
 $postDataJson=json_decode($postData);
 
