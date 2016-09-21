@@ -12,7 +12,7 @@ $access_token =$actionTemp[2];
  echo "access_token=".$access_token;
 
 $storeData = json_decode(file_get_contents("https://{$store}/admin/shop.json?access_token={$access_token}"));
-if(!empty($action) &&($action == 'order_created') ){
+if(!empty($action) &&($action == 'order_created' or $action=='order_updated') ){
 	$data = '';
 	$webhook = fopen('php://input' , 'rb'); 
 	while(!feof($webhook)){
@@ -58,7 +58,7 @@ if(!empty($action) &&($action == 'order_created') ){
 // The data to send to the API
 $postData='{
     "orderId":"'.$order_id .'",
-    "deliveryDate":"'.$created_at.'",
+    "deliveryDate":"2015-05-20",
     "locale": "en_US",
     "postalCode": "'.$zipcode.'",
     "emailOptOut": false,
