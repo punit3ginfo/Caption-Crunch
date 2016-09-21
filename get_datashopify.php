@@ -33,7 +33,7 @@ if(!empty($action) &&($action == 'order_created') ){
 
 
   
-exit('Query executed!');
+//exit('Query executed!');
 
 
 // The data to send to the API
