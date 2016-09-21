@@ -10,7 +10,7 @@ $config = pg_fetch_assoc($config);
 echo "<pre>";
 print_r($config);
 echo "</pre>";
-echo "1";
+echo "12";
 use phpish\shopify;
 	 $shop = $_REQUEST['shop'];
 	 "code=".$_REQUEST['code'];
@@ -365,16 +365,16 @@ print_r(json_encode($items));
 
 
 $postData='{
-    "orderId":"'.$order_id .'",
+    "orderId":"1235467965",
     "deliveryDate":"2015-05-20",
     "locale": "en_US",
     "postalCode": "10667",
     "emailOptOut": false,
     "user":          {
-        "firstName":  "'.$first_name.'",
-        "lastName":  "'.$last_name.'",
+        "firstName":  "testeree",
+        "lastName":  "testereee",
         "nickName": "",
-        "emailAddress": "'.$email.'",
+        "emailAddress": "boskim.3ginfo@gmail.com",
         "externalId": null
     },
     "items": json_encode($items)
