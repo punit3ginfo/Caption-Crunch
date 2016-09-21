@@ -329,8 +329,8 @@ $item_detail=array();
 $i=1;
 foreach($data1['line_items']as $item )
 {
-	 $item_detail[$i]['vid']=$item['variant_id'] ;
-	 $item_detail[$i]['pid']=$item['product_id'] ;
+	 $item_detail[$i]['vid']='".$item['variant_id']."' ;
+	 $item_detail[$i]['pid']='".$item['product_id']."' ;
 	$item_detail[$i]['title']=$item['title'];
 	$productData =json_decode(file_get_contents("https://testapp-36.myshopify.com/admin/products.json?ids={$item_detail[$i]['pid']}&access_token={$access_token}"), true);
 	
