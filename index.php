@@ -10,7 +10,7 @@ $config = pg_fetch_assoc($config);
 echo "<pre>";
 print_r($config);
 echo "</pre>";
-echo "1234";
+echo "12345";
 use phpish\shopify;
 	 $shop = $_REQUEST['shop'];
 	 "code=".$_REQUEST['code'];
@@ -397,7 +397,7 @@ foreach($data1['line_items']as $item )
 	 $item_detail[$i]['vid']=$item['variant_id'] ;
 	 $item_detail[$i]['pid']=$item['product_id'] ;
 	$item_detail[$i]['title']=$item['title'];
-	$productData =file_get_contents("https://testapp-36.myshopify.com/admin/products.json?ids={$item_detail[$i]['pid']}&access_token={$access_token}");
+	$productData =json_decode(file_get_contents("https://testapp-36.myshopify.com/admin/products.json?ids={$item_detail[$i]['pid']}&access_token={$access_token}"), true);
 	
 	$item_detail[$i]['url']="https://testapp-36.myshopify.com/products/".urlencode($item['title']);
 	$item_detail[$i]['sku']=$item['sku'];
