@@ -405,9 +405,10 @@ foreach($data1['line_items']as $item )
 	//$item_detail[$i]['imgsrc']=$productData->products->[0]->image['src'];
 	//$item_detail[$i]['imgsrc2']=$productData->products->image['src'];
 	$products=$productData['products'];
-	$item_detail[$i]['imgsrc2']=$products;
-	$item_detail[$i]['imgsrc4']=$products['variants'];
-	$item_detail[$i]['imgsrc5']=$products[0];
+	$item_detail[$i]['imgsrc2']=$products[0];
+	$p_array=$products[0];
+	$item_detail[$i]['imgsrc4']=$p_array->variants;
+	$item_detail[$i]['imgsrc5']=$p_array['variants'];
 	$item_detail[$i]['imgsrc3']=$productData['products'];
 	$item_detail[$i]['imgsrc1']=$productData;
 	$i++;
