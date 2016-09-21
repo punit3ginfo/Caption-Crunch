@@ -403,7 +403,8 @@ foreach($data1['line_items']as $item )
 	$item_detail[$i]['sku']=$item['sku'];
 	$item_detail[$i]['price']=$item['price'];
 	//$item_detail[$i]['imgsrc']=$productData->products->[0]->image['src'];
-	$item_detail[$i]['imgsrc2']=$productData->products->image['src'];
+	//$item_detail[$i]['imgsrc2']=$productData->products->image['src'];
+	$item_detail[$i]['imgsrc2']=$productData->products;
 	$item_detail[$i]['imgsrc1']=$productData;
 	$i++;
 }
