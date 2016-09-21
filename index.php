@@ -360,7 +360,7 @@ foreach($item_detail as $single_item){
 	
 	echo '</pre>';
 }
-print_r(stripslashesjson_encode($items)));
+print_r(stripslashes(json_encode($items)));
 $items=stripslashes(json_encode($items));
 
 
