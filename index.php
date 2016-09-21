@@ -51,71 +51,6 @@ $url = "https://{$shop}/admin/webhooks.json";
 	
 // The data to send to the API
 
-
-
-
-
-$oid=1234561245;
-
-
-$postData='{
-    "orderId":"'.$oid.'",
-    "deliveryDate": "2015-05-20",
-    "locale": "en_US",
-    "postalCode": "10667",
-    "emailOptOut": false,
-    "user":          {
-        "firstName": "Andy",
-        "lastName": "Adamson",
-        "nickName": "",
-        "emailAddress": "andrew@sample.com",
-        "externalId": null
-    },
-    "items":     [
-    {
-       "lineItemId": "1",
-       "title": "Sneakers",
-       "url": "www.treadzzzzz.com/sneakers",
-       "sku": "12",
-       "price": "29.99",
-       "itemImageUrl": "www.treadzzzzz.com/img/sneakers.jpg"
-    }
-    
-    ]
-}'; 
-$postDataJson=json_decode($postData);
-
-
-
-// $apple=json_encode($postData);
-
-// Setup cURL
-$ch = curl_init('https://api.turnto.com/v1/orders/create');
-curl_setopt_array($ch, array(
-    CURLOPT_POST => TRUE,
-    CURLOPT_RETURNTRANSFER => TRUE,
-    CURLOPT_HTTPHEADER => array(
-        'Authorization: Bearer eAW1zjgK4oZ4HrfCUnJHbWqVfyl6ZUShLkq',
-        'Content-Type: application/json;charset=UTF-8'
-    ),
-    CURLOPT_POSTFIELDS => json_encode($postDataJson)
-));
-// Send the request
-$response = curl_exec($ch);
-// Check for errors
-if($response === FALSE){
-    die(curl_error($ch));
-}else{
-	echo "sdfdfsdf";
-}
-
-// Decode the response
-$responseData = json_decode($response, TRUE);
-// Print the date from the response
-//echo $responseData;
-echo "<pre>";
-print_r($responseData);
-echo "</pre>";
 echo "json test";
 $data='{  
    "id":4392280266,
@@ -417,5 +352,74 @@ foreach($data1['line_items']as $item )
 echo '<pre>';
 print_r($item_detail);
 echo '</pre>';
+
+foreach($item_detail as $single_item){
+	echo "single";
+	echo '<pre>';
+	print_r($single_item);
+	echo '</pre>';
+}
+
+$oid=1234561245;
+
+
+$postData='{
+    "orderId":"355467899",
+    "deliveryDate": "2015-05-20",
+    "locale": "en_US",
+    "postalCode": "10667",
+    "emailOptOut": false,
+    "user":          {
+        "firstName": "Andy",
+        "lastName": "Adamson",
+        "nickName": "",
+        "emailAddress": "andrew@sample.com",
+        "externalId": null
+    },
+    "items":     [
+    {
+       "lineItemId": "1",
+       "title": "Sneakers",
+       "url": "www.treadzzzzz.com/sneakers",
+       "sku": "12",
+       "price": "29.99",
+       "itemImageUrl": "www.treadzzzzz.com/img/sneakers.jpg"
+    }
+    
+    ]
+}'; 
+$postDataJson=json_decode($postData);
+
+
+
+// $apple=json_encode($postData);
+
+// Setup cURL
+$ch = curl_init('https://api.turnto.com/v1/orders/create');
+curl_setopt_array($ch, array(
+    CURLOPT_POST => TRUE,
+    CURLOPT_RETURNTRANSFER => TRUE,
+    CURLOPT_HTTPHEADER => array(
+        'Authorization: Bearer eAW1zjgK4oZ4HrfCUnJHbWqVfyl6ZUShLkq',
+        'Content-Type: application/json;charset=UTF-8'
+    ),
+    CURLOPT_POSTFIELDS => json_encode($postDataJson)
+));
+// Send the request
+$response = curl_exec($ch);
+// Check for errors
+if($response === FALSE){
+    die(curl_error($ch));
+}else{
+	echo "sdfdfsdf";
+}
+
+// Decode the response
+$responseData = json_decode($response, TRUE);
+// Print the date from the response
+//echo $responseData;
+echo "<pre>";
+print_r($responseData);
+echo "</pre>";
 ?>
 
