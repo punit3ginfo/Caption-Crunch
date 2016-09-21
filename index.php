@@ -365,7 +365,7 @@ print_r(json_encode($items));
 
 
 $postData='{
-    "orderId":"1235467965",
+    "orderId":"'.$order_id .'",
     "deliveryDate":"2015-05-20",
     "locale": "en_US",
     "postalCode": "10667",
@@ -381,7 +381,7 @@ $postData='{
 }'; 
 $postDataJson=json_decode($postData);
 
-
+print_r($postDataJson);
 
 // $apple=json_encode($postData);
 
