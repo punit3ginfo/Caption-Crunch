@@ -10,6 +10,7 @@ $config = pg_fetch_assoc($config);
 echo "<pre>";
 print_r($config);
 echo "</pre>";
+echo "jhaqjwed";
 use phpish\shopify;
 	 $shop = $_REQUEST['shop'];
 	 "code=".$_REQUEST['code'];
@@ -54,7 +55,7 @@ $url = "https://{$shop}/admin/webhooks.json";
 
 
 
-$oid=123456;
+$oid=1234561245;
 
 
 $postData='{
