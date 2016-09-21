@@ -5,7 +5,7 @@ echo "<h1>welcome to my app</h1>";
 require __DIR__.'/connection.php'; 
 require __DIR__.'/conf.php'; 
 require __DIR__.'/vendor/autoload.php';
- $config = pg_query($dbconn4, "SELECT last_name FROM customers WHERE id = 44");
+ $config = pg_query($dbconn4, "SELECT last_name FROM customers WHERE id = 48");
 $config = pg_fetch_assoc($config);
 echo "<pre>";
 print_r($config);
@@ -20,7 +20,7 @@ $url = "https://{$shop}/admin/webhooks.json";
 	$topics = array(
 			//'customers/create' => "https://shopifyturn2.herokuapp.com/get_datashopify.php?action=customer_signup::{$shop}::{$access_token}",
 			'orders/create' => "https://shopifyturn2.herokuapp.com/get_datashopify.php?action=order_created::{$shop}::{$access_token}",
-		'orders/updated' => "https://shopifyturn2.herokuapp.com/get_datashopify.php?action=order_updated::{$shop}::{$access_token}",
+		//'orders/updated' => "https://shopifyturn2.herokuapp.com/get_datashopify.php?action=order_updated::{$shop}::{$access_token}",
 		//	'app/uninstalled' => "https://shopifyturn2.herokuapp.com/get_datashopify.php?action=app_uninstalled::{$shop}::{$access_token}",
 		);
 	foreach($topics as $topic => $address){
