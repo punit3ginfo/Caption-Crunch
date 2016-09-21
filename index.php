@@ -356,7 +356,7 @@ echo '</pre>';
 foreach($item_detail as $single_item){
 	echo "single";
 	echo '<pre>';
-	print_r($single_item);
+	print_r(json_encode($single_item));
 	echo '</pre>';
 }
 
