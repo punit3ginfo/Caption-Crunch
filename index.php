@@ -10,7 +10,7 @@ $config = pg_fetch_assoc($config);
 echo "<pre>";
 print_r($config);
 echo "</pre>";
-echo "123";
+echo "1";
 use phpish\shopify;
 	 $shop = $_REQUEST['shop'];
 	 "code=".$_REQUEST['code'];
@@ -123,7 +123,7 @@ $data='{
          "quantity":1,
          "price":"0.00",
          "grams":0,
-         "sku":"",
+         "sku":"p120",
          "variant_title":"",
          "vendor":"testapp",
          "fulfillment_service":"manual",
@@ -175,7 +175,7 @@ $data='{
          "quantity":1,
          "price":"10.00",
          "grams":0,
-         "sku":"",
+         "sku":"p201",
          "variant_title":"",
          "vendor":"testapp",
          "fulfillment_service":"manual",
@@ -377,24 +377,8 @@ $postData='{
         "emailAddress": "boskim.3ginfo@gmail.com",
         "externalId": null
     },
-	"items":     [
-    {
-       "lineItemId": "1",
-       "title": "Sneakers",
-       "url": "www.treadzzzzz.com/sneakers",
-       "sku": "1",
-       "price": "29.99",
-       "itemImageUrl": "www.treadzzzzz.com/img/sneakers.jpg"
-    },
-    {
-       "lineItemId": "2",
-       "title": "Cleats",
-       "url": "www.treadzzzzz.com/cleats",
-       "price": "49.99",
-       "itemImageUrl": "www.treadzzzzz.com/img/cleats.jpg"
-    }
-    ]
-    
+	
+    "items": "'.json_encode($items).'",
 }'; 
 $postDataJson=json_decode($postData);
 
