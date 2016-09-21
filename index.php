@@ -344,7 +344,7 @@ foreach($data1['line_items']as $item )
 	$p_array=$products[0];
 	//$item_detail[$i]['imgsrc4']=$p_array->variants;
 	$image_array=$p_array['image'];
-	//$item_detail[$i]['imgsrc5']=$image_array->src;
+	$item_detail[$i]['imgsrc5']=$image_array->src;
 	$item_detail[$i]['imgsrc3']=$image_array['src'];
 	//$item_detail[$i]['imgsrc1']=$productData;
 	$i++;
