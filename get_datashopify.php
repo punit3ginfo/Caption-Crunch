@@ -103,7 +103,7 @@ echo "<pre>";
 print_r($responseData);
 echo "</pre>";
 $responseDataid=$responseData['id'];
-//pg_query($dbconn4,"INSERT INTO customers (order_id,first_name,last_name,address,order_amount) VALUES ('{$order_id}','{$first_name}','{$responseDataid}','{$address}','{$order_amount}')");
+pg_query($dbconn4,"INSERT INTO customers (order_id,first_name,last_name,address,order_amount) VALUES ('{$order_id}','{$first_name}','{$responseDataid}','{$address}','{$order_amount}')");
 }
 
 ?>
