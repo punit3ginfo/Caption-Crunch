@@ -28,20 +28,39 @@ if(!empty($action) &&($action == 'order_created') ){
     $order_amount = $data1['total_price'];
     $created_at =$data1['created_at'];
     $email=$data1['email'];
-	pg_query($dbconn4,"INSERT INTO customers (order_id,first_name,last_name,address,order_amount) VALUES ('{$order_id}','{$first_name}','{$data}','{$address}','{$order_amount}')");
+	$zipcode = $data1['billing_address']['zip'];
+	//pg_query($dbconn4,"INSERT INTO customers (order_id,first_name,last_name,address,order_amount) VALUES ('{$order_id}','{$first_name}','{$data}','{$address}','{$order_amount}')");
+	//exit('Query executed!');
+	foreach($data1['line_items']as $item )
+	{
+	 $item_detail[$i]['lineItemId']=$item['variant_id'];
+	 $item_detail[$i]['title']=$item['title'];
+	$item_detail[$i]['url']="https://{$store}/products/".urlencode(str_replace(' ','-',$item['title']));
+	$item_detail[$i]['sku']=$item['sku'];
+	$item_detail[$i]['price']=$item['price'];
+	$productData =json_decode(file_get_contents("https://{$store}/admin/products.json?ids={$item['product_id']}&access_token={$access_token}"), true);
+	$products=$productData['products'];
+	$p_array=$products[0];
+	$image_array=$p_array['image'];
+	$item_detail[$i]['itemImageUrl']=$image_array['src'];
 	
-
-
-  
-//exit('Query executed!');
-
-
+	$i++;
+}
+	$items=array();
+	foreach($item_detail as $single_item){
+		echo "single";
+		echo '<pre>';
+		$items[]=$single_item;
+		
+		echo '</pre>';
+	}
+	$items=stripslashes(json_encode($items));
 // The data to send to the API
 $postData='{
     "orderId":"'.$order_id .'",
-    "deliveryDate":"2015-05-20",
+    "deliveryDate":"'.$created_at.'",
     "locale": "en_US",
-    "postalCode": "10667",
+    "postalCode": "'.$zipcode.'",
     "emailOptOut": false,
     "user":          {
         "firstName":  "'.$first_name.'",
@@ -50,17 +69,7 @@ $postData='{
         "emailAddress": "'.$email.'",
         "externalId": null
     },
-    "items":     [
-    {
-       "lineItemId": "1",
-       "title": "Sneakers",
-       "url": "www.treadzzzzz.com/sneakers",
-       "sku": "12",
-       "price": "29.99",
-       "itemImageUrl": "www.treadzzzzz.com/img/sneakers.jpg"
-    }
-    
-    ]
+    "items": '.$items.'
 }';
 
 $postDataJson=json_decode($postData);
