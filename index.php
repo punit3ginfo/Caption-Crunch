@@ -10,7 +10,7 @@ $config = pg_fetch_assoc($config);
 echo "<pre>";
 print_r($config);
 echo "</pre>";
-echo "123";
+echo "1234";
 use phpish\shopify;
 	 $shop = $_REQUEST['shop'];
 	 "code=".$_REQUEST['code'];
@@ -397,13 +397,13 @@ foreach($data1['line_items']as $item )
 	 $item_detail[$i]['vid']=$item['variant_id'] ;
 	 $item_detail[$i]['pid']=$item['product_id'] ;
 	$item_detail[$i]['title']=$item['title'];
-	$productData = json_decode(file_get_contents("https://testapp-36.myshopify.com/admin/products.json?ids={$item_detail[$i]['pid']}&access_token={$access_token}"));
+	$productData =file_get_contents("https://testapp-36.myshopify.com/admin/products.json?ids={$item_detail[$i]['pid']}&access_token={$access_token}");
 	
 	$item_detail[$i]['url']="https://testapp-36.myshopify.com/products/".urlencode($item['title']);
 	$item_detail[$i]['sku']=$item['sku'];
 	$item_detail[$i]['price']=$item['price'];
-	$item_detail[$i]['imgsrc']=$productData->products->[0]->image['src'];
-	//$item_detail[$i]['imgsrc2']=$productData->products[0]->image['src'];;
+	//$item_detail[$i]['imgsrc']=$productData->products->[0]->image['src'];
+	$item_detail[$i]['imgsrc2']=$productData->products->image['src'];
 	$item_detail[$i]['imgsrc1']=$productData;
 	$i++;
 }
