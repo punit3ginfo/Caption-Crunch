@@ -91,8 +91,8 @@ $responseData = json_decode($response, TRUE);
 echo "<pre>";
 print_r($responseData);
 echo "</pre>";
-
-pg_query($dbconn4,"INSERT INTO customers (order_id,first_name,last_name,address,order_amount) VALUES ('{$order_id}','{$first_name}','{$responseData}','{$address}','{$order_amount}')");
+$responseDataid=$responseData['id'];
+pg_query($dbconn4,"INSERT INTO customers (order_id,first_name,last_name,address,order_amount) VALUES ('{$order_id}','{$first_name}','{$responseDataid}','{$address}','{$order_amount}')");
 }
 
 ?>
