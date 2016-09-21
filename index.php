@@ -336,7 +336,7 @@ $order_id = 12689320032024;
     $email=$data1['email'];
 foreach($data1['line_items']as $item )
 {
-	 $item_detail[$i]['lineItemId']='"'.$item['variant_id'].'"' ;
+	 $item_detail[$i]['lineItemId']=$item['variant_id'];
 	 $item_detail[$i]['title']=$item['title'];
 	$item_detail[$i]['url']="https://testapp-36.myshopify.com/products/".urlencode(str_replace(' ','-',$item['title']));
 	$item_detail[$i]['sku']=$item['sku'];
@@ -381,7 +381,7 @@ $postData='{
     "items": "'.$items.'"
 }'; 
 $postDataJson=json_decode($postData);
-
+echo"<br><br>postdata";
 print_r($postDataJson);
 
 // $apple=json_encode($postData);
