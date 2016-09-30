@@ -17,25 +17,53 @@
 	{
 		# Making an API request can throw an exception
 		$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
-		//$singleproductsl = $shopify('GET /admin/products/7885330952.json', array('published_status'=>'published'));
+		
+		//$update = $shopify('PUT', "/admin/products/7885327240.json", $product); 
+	?>	
+		
+		<script>
+//var str=;
+  
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET","getuser.php?q="+str,true);
+        xmlhttp.send();
+    
+
+</script>
+
+<?php
+		
 	
-		$product = array
-    (
+	
+		
 
-        "product" => array
-        (
+      $product=  array('id' =>  '7885330952','title'=>'New product title1' ));	
+		$baseurl="https://share-tag.myshopify.com//admin/products/7885330952.json";
+	$ch = curl_init($baseUrl);  //note product ID in url
+$data_string = json_encode(array('product'=>$product)); //json encode the product array
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "PUT");  //specify the PUT verb for update
+curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);  //add the data string for the request
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); //set return as string true
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+'Content-Type: application/json',
+'Content-Length: ' . strlen($data_string))
+); //set the header as JSON
+$server_output = curl_exec ($ch); //execute and store server output
+curl_close ($ch); //close the connection
 
-                    "id" =>  "7885330952",
-                    "title"=>"New product title" 
-        )
-    );
-		$update = $shopify('PUT', "/admin/products/7885327240.json", $product); 
-		
-		
-	// $singleproductsl = $shopify('PUT /admin/products/7885327240.json', array('published_status'=>'published'));
-		
-                  echo $singleproductsl;
-		print_r($singleproductsl);
+                  //echo $singleproductsl;
+		..print_r($singleproductsl);
 		// /admin/products/#{id}.json
 		
 		
