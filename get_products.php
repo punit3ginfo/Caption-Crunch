@@ -24,7 +24,7 @@
 			echo "apple".$singleproduct['title'];
 			echo $variants=$singleproduct['variants'];
 			foreach($variants as $variants){
-				echo "price="$price=$variants['price'];
+				echo "price=".$price=$variants['price'];
 			}
 			//print_r($variants);
 			//echo $variants['price'];
