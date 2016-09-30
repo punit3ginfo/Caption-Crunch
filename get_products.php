@@ -49,7 +49,7 @@
 		
 
       $product=  array('id' =>  '7885330952','title'=>'New product title1' );	
-		$baseurl="https://share-tag.myshopify.com//admin/products/7885330952.json";
+		$baseUrl="https://share-tag.myshopify.com//admin/products/7885330952.json";
 	$ch = curl_init($baseUrl);  //note product ID in url
 $data_string = json_encode(array('product'=>$product)); //json encode the product array
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "PUT");  //specify the PUT verb for update
