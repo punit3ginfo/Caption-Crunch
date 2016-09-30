@@ -22,7 +22,7 @@
 		$json_ip='{
   "product": {
     "id": 7885330952,
-    "tags": "Barnes & Noble, John's Fav"
+    "tags": "Barnes & Noble"
   }
 }';
 $postDataJson=json_decode($json_ip);
