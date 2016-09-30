@@ -18,13 +18,17 @@
 		foreach($products as $singleproduct)
 		{
 			echo "<pre>";
-		print_r($singleproduct);
+		//print_r($singleproduct);
 			
 		
 			echo "apple".$singleproduct['title'];
 			echo $variants=$singleproduct['variants'];
 			foreach($variants as $variants){
 				echo "price=".$price=$variants['price'];
+			}
+			echo $images=$singleproduct['image'];
+			foreach($images as $images){
+				echo "src=".$src=$images['src'];
 			}
 			//print_r($variants);
 			//echo $variants['price'];
