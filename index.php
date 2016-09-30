@@ -10,4 +10,4 @@ ini_set('display_errors', 1);
 ?>
 
 <link rel="stylesheet" href="style.css">
-<h1>Welcome to Caption Crunch</h1>
+<h1>Go fuck yourself</h1>
