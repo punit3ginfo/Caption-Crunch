@@ -29,17 +29,19 @@
   }
 };
 $ch = curl_init();
+		
+$headers = array(
+    'Accept: application/json',
+    'Content-Type: application/json',
+);		
+		
 // URL for curl
 $url = "https://share-tag.myshopify.com/admin/products/#7885330952.json";
 
 // Clean up string
 $putString = stripslashes($query);
 // Put string into a temporary file
-$putData = tmpfile();
-// Write the string to the temporary file
-fwrite($putData, $putString);
-// Move back to the beginning of the file
-fseek($putData, 0);
+
 
 // Headers
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
@@ -49,12 +51,12 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_URL, $url);
 // Using a PUT method i.e. -XPUT
 curl_setopt($ch, CURLOPT_PUT, true);
-// Instead of POST fields use these settings
-curl_setopt($ch, CURLOPT_INFILE, $putData);
-curl_setopt($ch, CURLOPT_INFILESIZE, strlen($putString));
+
+
 
 $output = curl_exec($ch);
-echo $output;
+ var_dump($output);exit;
+		
 
 // Close the file
 fclose($putData);
