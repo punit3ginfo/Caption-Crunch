@@ -23,9 +23,10 @@
 		
 			echo "apple".$singleproduct['title'];
 			echo $variants=$singleproduct['variants'];
-			echo $variants[0]->price;
+			print_r($variants);
+			echo $variants['price'];
 			echo "welcome";
-			print_r($singleproduct->variants);
+			print_r($singleproduct['images']);
 		}
 	}
 	catch (shopify\ApiException $e)
