@@ -17,9 +17,9 @@
 	{
 		# Making an API request can throw an exception
 		$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
-		$singleproducts = $shopify('GET /admin/products/#7885327240.json', array('published_status'=>'published'));
-		echo $singleproducts;
-		print_r($singleproducts);
+		$singleproducts = $shopify('GET /admin/products/7885327240.json', array('published_status'=>'published'));
+		echo $singleproductsl;
+		print_r($singleproductsl);
 		// /admin/products/#{id}.json
 		
 		
