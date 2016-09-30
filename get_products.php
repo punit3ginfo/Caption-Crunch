@@ -70,7 +70,7 @@ array('id' => '321',
 		$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		
 		
-		echo $baseUrl="$shopify('https://share-tag.myshopify.com//admin/products/7885330952.json');
+		echo $baseUrl=$shopify('https://share-tag.myshopify.com//admin/products/7885330952.json');
 	$ch = curl_init($baseUrl);  //note product ID in url
 echo $data_string = json_encode(array('product'=>$product)); //json encode the product array
 		
