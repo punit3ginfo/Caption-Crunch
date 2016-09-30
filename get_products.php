@@ -10,7 +10,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 	{
 		# Making an API request can throw an exception
 		$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
-		print_r($products);
+		//print_r($products);
 	}
 	catch (shopify\ApiException $e)
 	{
