@@ -17,25 +17,25 @@
 	{
 		# Making an API request can throw an exception
 		$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
-		$json_ip='{
-  "product": {
-    "id": 7885330952,
-    "tags": "Barnes & Noble"
-  }
-}';
+		//$json_ip='{
+  //"product": {
+  //  "id": 7885330952,
+   // "tags": "Barnes & Noble"
+  //}
+//}';
 		 //$products_1 = $shopify('PUT /admin/products/7885330952.json', $json_ip);
-		$ch = curl_init('https://api.turnto.com/v1/orders/create');
+		//$ch = curl_init('https://api.turnto.com/v1/orders/create');
 		
-$postDataJson=json_decode($json_ip);
-		$postDataJson="";
-		curl_setopt_array($ch, array(
-		CURLOPT_PUT => TRUE,
-		CURLOPT_RETURNTRANSFER => TRUE,
-		CURLOPT_HTTPHEADER =>$shopify,
-		CURLOPT_POSTFIELDS => json_encode($postDataJson)
-		));
+//$postDataJson=json_decode($json_ip);
+		//$postDataJson="";
+		//curl_setopt_array($ch, array(
+		//CURLOPT_PUT => TRUE,
+		//CURLOPT_RETURNTRANSFER => TRUE,
+		//CURLOPT_HTTPHEADER =>$shopify,
+		//CURLOPT_POSTFIELDS => json_encode($postDataJson)
+		//));
 // Send the request
-$response = curl_exec($ch);
+//$response = curl_exec($ch);
 		
 		//print_r($response);exit;
 		
