@@ -14,22 +14,18 @@
 	$access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
 	$shopify = shopify\client($_SESSION['shop'], SHOPIFY_APP_API_KEY, $access_token);
 		// Modify product data
-$modify_data = array(
-	"product" => array(
-		"title" => "My New Title"
-	)
-);
+
 
 // Run API call to modify the product
-$modified_product =  $shopify("Put /admin/products/7885330952.json?title=My");
+//$modified_product =  $shopify("Put /admin/products/7885330952.json?title=My");
 
 // Storage response
-echo $modified_product_response = $modified_product['response'];
+//echo $modified_product_response = $modified_product['response'];
 	try
 	{
 		# Making an API request can throw an exception
 		$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
-		$baseUrl = 'https://apikey:password@mystore.myshopify.com/admin/';
+		//$baseUrl = 'https://apikey:password@mystore.myshopify.com/admin/';
 		
 		//$json_ip='{
   //"product": {
