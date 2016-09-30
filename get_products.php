@@ -12,14 +12,19 @@
 		# Making an API request can throw an exception
 		$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		echo "<pre>";
-		print_r($products);
+		//print_r($products);
 		echo "</pre>";
 		
 		foreach($products as $singleproduct)
 		{
 			echo "<pre>";
 		print_r($singleproduct);
-		echo "</pre>";
+			
+		
+			echo "apple".$singleproduct['title'];
+			echo $singleproduct->variants;
+			echo "welcome";
+			print_r($singleproduct->variants);
 		}
 	}
 	catch (shopify\ApiException $e)
