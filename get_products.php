@@ -63,7 +63,7 @@ $server_output = curl_exec ($ch); //execute and store server output
 curl_close ($ch); //close the connection
 
                   //echo $singleproductsl;
-		..print_r($singleproductsl);
+		//print_r($singleproductsl);
 		// /admin/products/#{id}.json
 		
 		
