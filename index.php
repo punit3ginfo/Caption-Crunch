@@ -45,7 +45,6 @@ ini_set('display_errors', 1);
     </header>
 
     <!-- Sidebar Nav -->
-    <div class="container">
 		<aside class="sidebar_nav">
           	<a class="sidebar-link" href="/">
             	<div class="sidebar-nav-container">
@@ -99,7 +98,6 @@ ini_set('display_errors', 1);
               </a>
             </div>
         </aside>
-    </div>
     <!-- /.Sidebar Nav -->
 
     <!-- /.Page Container -->
