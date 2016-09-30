@@ -14,6 +14,13 @@
 		echo "<pre>";
 		print_r($products);
 		echo "</pre>";
+		
+		foreach($products as $singleproduct)
+		{
+			echo "<pre>";
+		print_r($singleproduct);
+		echo "</pre>";
+		}
 	}
 	catch (shopify\ApiException $e)
 	{
