@@ -41,12 +41,14 @@
 		<div class="product-detail-container">
 			<?php echo $title; ?>
 			<?php echo $price; ?>
-			
-			<a id="share-button" class="share-button" onclick="shareButton();return false;" href="https://buffer.com/add">
-<i class="fa fa-share" aria-hidden="true"></i>
-SHARE
-</a>
 		</div>
+		<div class="product-share-container">
+			<a id="share-button" class="share-button" onclick="shareButton();return false;" href="https://buffer.com/add">
+			<i class="fa fa-share" aria-hidden="true"></i>
+			SHARE
+			</a>
+		</div>
+		
 					
         
 		</div>
