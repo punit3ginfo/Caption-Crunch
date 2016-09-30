@@ -24,7 +24,7 @@
     "tags": "Barnes & Noble"
   }
 }', array('published_status'=>'published'));
-		PUT /admin/products/#{id}.json
+		
 
 
 		echo $singleproductsl;
