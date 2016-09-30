@@ -9,4 +9,4 @@ ini_set('display_errors', 1);
 // require __DIR__.'/get_products.php'; //GET PRODUCTS
 ?>
 
-<h1>Test Line</h1>
+<h1>Welcome to Caption Crunch</h1>
