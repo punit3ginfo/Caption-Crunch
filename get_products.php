@@ -11,14 +11,12 @@
 	{
 		# Making an API request can throw an exception
 		$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
-		echo "<pre>";
-		//print_r($products);
-		echo "</pre>";
+		
 		
 		foreach($products as $singleproduct)
 		{
-			echo "<pre>";
-		//print_r($singleproduct);
+			
+		
 			
 		
 			echo "title=".$singleproduct['title'];
@@ -27,7 +25,7 @@
 				echo "price=".$price=$variants['price'];
 			}
 		        $images=$singleproduct['images'];
-			print_r($images);
+			
 			foreach($images as $images){
 				echo "src=".$src=$images['src'];
 			}
