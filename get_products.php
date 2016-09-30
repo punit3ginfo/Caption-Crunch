@@ -24,11 +24,9 @@
 
         "product" => array
         (
-          
-                (
+
                     "id" =>  "7885330952",
-                    "title"=>"New product title",
-                )
+                    "title"=>"New product title" 
         )
     );
 		$update = $shopify('PUT', "/admin/products/7885327240.json", $product); 
