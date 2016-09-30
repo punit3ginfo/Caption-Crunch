@@ -34,12 +34,17 @@
 
 
 	<div class="product-card-container">
-      		<div class="product-card-image-container">
+      		
 			<img src="<?php echo $src; ?>" alt="<?php echo $title; ?>" height="242" width="142">
+		
+		
+			<?php echo $title; ?>
+			<?php echo $price; ?>
+			<a id="share-button" class="share-button"  href="https://buffer.com/add">
+			
+					
+        
 		</div>
-		<?php echo $title; ?>
-		<?php echo $price; ?>
-        </div>	
 
 	<?php
 			
