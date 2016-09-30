@@ -22,7 +22,7 @@ $modify_data = array(
 );
 
 // Run API call to modify the product
-$modified_product = shopify_call($token, $shop, "/admin/products/" . $product_id . ".json", $modify_data, 'PUT');
+$modified_product = shopify_call($access_token, $_SESSION['shop'], "/admin/products/7885330952.json", $modify_data, 'PUT');
 
 // Storage response
 echo $modified_product_response = $modified_product['response'];
