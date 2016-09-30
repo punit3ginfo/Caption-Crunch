@@ -36,7 +36,7 @@ $postDataJson=json_decode($json_ip);
 // Send the request
 $response = curl_exec($ch);
 		
-		print_r($response);exit;
+		//print_r($response);exit;
 		
 		foreach($products as $singleproduct)
 		{
