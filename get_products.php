@@ -22,12 +22,12 @@
 		//$update = $shopify('PUT', "/admin/products/7885327240.json", $product); 	
 		
 		// Start curl
-		$query={
+		$query=
   "product": {
     "id": 7885330952,
     "tags": "Barnes & Noble, John's Fav"
-  }
-};
+  };
+
 $ch = curl_init();
 		
 $headers = array(
