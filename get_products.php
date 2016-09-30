@@ -21,13 +21,11 @@
 		
 		//$update = $shopify('PUT', "/admin/products/7885327240.json", $product); 	
 		
-		// Start curl
-		$query=
-  "product": {
-    "id": 7885330952,
-    "tags": "Barnes & Noble, John's Fav"
-  };
+		$arrayDateAndMachine['product'] = array();
+		$arrayDateAndMachine['id']='7885330952';
+		$arrayDateAndMachine['tags']='Barnes';
 
+		
 $ch = curl_init();
 		
 $headers = array(
@@ -39,7 +37,7 @@ $headers = array(
 $url = "https://share-tag.myshopify.com/admin/products/#7885330952.json";
 
 // Clean up string
-$putString = stripslashes($query);
+$putString = stripslashes($arrayDateAndMachine['product']);
 // Put string into a temporary file
 
 
