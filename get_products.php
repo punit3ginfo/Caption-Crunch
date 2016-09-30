@@ -22,11 +22,12 @@
 			
 		
 			echo "title=".$singleproduct['title'];
-			//echo $variants=$singleproduct['variants'];
+			$variants=$singleproduct['variants'];
 			foreach($variants as $variants){
 				echo "price=".$price=$variants['price'];
 			}
-			echo $images=$singleproduct['images'];
+		        $images=$singleproduct['images'];
+			print_r($images);
 			foreach($images as $images){
 				echo "src=".$src=$images['src'];
 			}
