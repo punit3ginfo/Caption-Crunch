@@ -35,7 +35,7 @@
 
 	<div class="product-card-container">
       		<div class="product-card-image-container">
-			<img src="<?php echo $src; ?>" alt="<?php echo $title; ?>" height="242" width="142">
+			<img src="<?php echo $src; ?>" alt="<?php echo $title; ?>" height="292" width="192">
 		</div>
 		       
 		<div class="product-detail-container">
