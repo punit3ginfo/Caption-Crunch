@@ -1,70 +1,32 @@
-<style>
-	.product-card-container {
-	  float: left;
-	  margin: 30px;
-	}
-</style>
 <?php 
 	session_start();
 
 	require __DIR__.'/vendor/autoload.php';
 	use phpish\shopify;
-	require __DIR__.'/conf.php';
+	require __DIR__.'/conf.php'; //Configuration
 	$_SESSION['shop']=$_REQUEST['shop'];
 	$access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
-	$shopify = shopify\client($_SESSION['shop'], SHOPIFY_APP_API_KEY, $access_token);
-		// Modify product data
-
-
-// Run API call to modify the product
-//$modified_product =  $shopify("Put /admin/products/7885330952.json?title=My");
-
-// Storage response
-//echo $modified_product_response = $modified_product['response'];
+	$shopify = shopify\client($_SESSION['shop'], SHOPIFY_APP_API_KEY, $access_token);	
 	try
 	{
 		# Making an API request can throw an exception
 		$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
-		//$baseUrl = 'https://apikey:password@mystore.myshopify.com/admin/';
-		
-		//$json_ip='{
-  //"product": {
-  //  "id": 7885330952,
-   // "tags": "Barnes & Noble"
-  //}
-//}';
-		 //$products_1 = $shopify('PUT /admin/products/7885330952.json', $json_ip);
-		//$ch = curl_init('https://api.turnto.com/v1/orders/create');
-		
-//$postDataJson=json_decode($json_ip);
-		//$postDataJson="";
-		//curl_setopt_array($ch, array(
-		//CURLOPT_PUT => TRUE,
-		//CURLOPT_RETURNTRANSFER => TRUE,
-		//CURLOPT_HTTPHEADER =>$shopify,
-		//CURLOPT_POSTFIELDS => json_encode($postDataJson)
-		//));
-// Send the request
-//$response = curl_exec($ch);
-		
-		//print_r($response);exit;
-		
 		foreach($products as $singleproduct)
 		{
-			$title=$singleproduct['title'];
+			$title=$singleproduct['title']; // Product Title
 			$variants=$singleproduct['variants'];
 			foreach($variants as $variants){
-				$price=$variants['price'];
+				$price=$variants['price']; // Product PRice
 			}
 		        $images=$singleproduct['images'];
 			
 			foreach($images as $images){
-				$src=$images['src'];
+				$src=$images['src']; //Image Source
 			}
 			
 			?>
 
-
+<!-- HTML Content for Product  START      -->
 	<div class="product-card-container">
       		<div class="product-card-image-container">
 			<img src="<?php echo $src; ?>" alt="<?php echo $title; ?>" height="292" width="192">
@@ -75,14 +37,12 @@
 			<?php echo $price; ?>
 		</div>
 		<div class="product-share-container">
-			<a id="share-button" class="share-button" onclick="shareButton();return false;" href="https://buffer.com/add">
+			<a id="share-button" class="share-button" onclick="shareButton();return false;" href="#">
 			<button type="button">SHARE</button>
 			</a>
 		</div>
-		
-					
-        
-		</div>
+	</div>
+<!-- HTML Content for Product END    -->
 
 	<?php
 			
