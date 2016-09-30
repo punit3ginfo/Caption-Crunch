@@ -36,12 +36,15 @@
 	<div class="product-card-container">
       		
 			<img src="<?php echo $src; ?>" alt="<?php echo $title; ?>" height="242" width="142">
-		
+		       
 		
 			<?php echo $title; ?>
 			<?php echo $price; ?>
-			<a id="share-button" class="share-button"  href="https://buffer.com/add">
 			
+			<a id="share-button" class="share-button" onclick="shareButton();return false;" href="https://buffer.com/add">
+<i class="fa fa-share" aria-hidden="true"></i>
+SHARE
+</a>
 					
         
 		</div>
