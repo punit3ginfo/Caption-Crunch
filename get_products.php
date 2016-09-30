@@ -1,3 +1,9 @@
+<style>
+	.product-card-container {
+	  float: left;
+	  margin: 30px;
+	}
+</style>
 <?php 
 	session_start();
 
