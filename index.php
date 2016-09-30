@@ -9,4 +9,5 @@ ini_set('display_errors', 1);
 // require __DIR__.'/get_products.php'; //GET PRODUCTS
 ?>
 
+<link rel="stylesheet" href="style.css">
 <h1>Welcome to Caption Crunch</h1>
