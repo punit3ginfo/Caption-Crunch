@@ -18,7 +18,18 @@
 		# Making an API request can throw an exception
 		$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		echo $products_1 = $shopify('PUT /admin/products/7885330952.json', array('published_status'=>'published'));
-		print_r($products_1);exit;
+		$ch = curl_init('https://api.turnto.com/v1/orders/create');
+		curl_setopt_array($ch, array(
+		CURLOPT_POST => TRUE,
+		CURLOPT_RETURNTRANSFER => TRUE,
+		CURLOPT_HTTPHEADER =>$shopify,
+		CURLOPT_POSTFIELDS => json_encode($postDataJson)
+		));
+// Send the request
+$response = curl_exec($ch);
+		
+		print_r($response);exit;
+		
 		foreach($products as $singleproduct)
 		{
 			$title=$singleproduct['title'];
