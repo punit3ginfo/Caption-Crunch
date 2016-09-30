@@ -34,10 +34,11 @@
 
 
 	<div class="product-card-container">
-      		
+      		<div class="product-card-image-container">
 			<img src="<?php echo $src; ?>" alt="<?php echo $title; ?>" height="242" width="142">
+		</div>
 		       
-		
+		<div class="product-detail-container">
 			<?php echo $title; ?>
 			<?php echo $price; ?>
 			
@@ -45,6 +46,7 @@
 <i class="fa fa-share" aria-hidden="true"></i>
 SHARE
 </a>
+		</div>
 					
         
 		</div>
