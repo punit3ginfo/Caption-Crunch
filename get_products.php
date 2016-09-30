@@ -13,10 +13,13 @@
 	$_SESSION['shop']=$_REQUEST['shop'];
 	$access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
 	$shopify = shopify\client($_SESSION['shop'], SHOPIFY_APP_API_KEY, $access_token);
+			echo "https://share-tag.myshopify.com/admin/products/7885330952.json?".$access_token;
 	try
 	{
 		# Making an API request can throw an exception
 		$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
+		$baseUrl = 'https://apikey:password@mystore.myshopify.com/admin/';
+		
 		//$json_ip='{
   //"product": {
   //  "id": 7885330952,
