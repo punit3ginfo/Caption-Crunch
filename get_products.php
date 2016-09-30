@@ -16,7 +16,6 @@
 		// Modify product data
 $modify_data = array(
 	"product" => array(
-		"id" => 7885330952,
 		"title" => "My New Title"
 	)
 );
