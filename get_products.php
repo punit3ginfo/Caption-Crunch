@@ -18,12 +18,26 @@
 		# Making an API request can throw an exception
 		$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		//$singleproductsl = $shopify('GET /admin/products/7885330952.json', array('published_status'=>'published'));
-		$singleproductsl = $shopify('PUT /admin/products/7885330952.json{
+		
+		{
   "product": {
     "id": 7885330952,
     "tags": "Barnes & Noble"
   }
-}', array('published_status'=>'published'));
+}
+		
+		PUT /admin/products/#{id}.json
+
+{
+  "product": {
+    "id": 632910392,
+    "tags": "Barnes & Noble, John's Fav"
+  }
+}
+		
+		
+		
+		$singleproductsl = $shopify('PUT /admin/products/7885327240.json', array('published_status'=>'published','tags'=>'Barnes & Noble'));
 		
 
 
