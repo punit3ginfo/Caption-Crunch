@@ -3,11 +3,9 @@
 
 	require __DIR__.'/vendor/autoload.php';
 	use phpish\shopify;
-
 	require __DIR__.'/conf.php';
-
-	$shopify = shopify\client($_SESSION['shop'], SHOPIFY_APP_API_KEY, $_SESSION['oauth_token']);
-
+	$access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
+	$shopify = shopify\client($_SESSION['shop'], SHOPIFY_APP_API_KEY, $access_token);
 	try
 	{
 		# Making an API request can throw an exception
