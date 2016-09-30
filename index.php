@@ -79,10 +79,10 @@ ini_set('display_errors', 1);
 
             <!-- Brand and toggle get grouped for better mobile display -->
 
-                <a class="navbar-brand" href="#">
-                  	<img style="height: 15px; display: inline-block; margin-bottom: 5px;" src="{{ 'Caption-Crunch-Hammer.png' | asset_img_url: 'medium' }}"/>
+                <a class="navbar-brand" href="/">
+                  	<img class="header-cc-hammer-img" src="./images/Caption-Crunch-Hammer.jpg"/>
                 	<span class="header-help">Caption</span>
-                    <span style="margin-left: -4px;" class="header-central">Crunch</span>
+                    <span class="header-central">Crunch</span>
                 </a>
 
             <!-- Collect the nav links, forms, and other content for toggling -->

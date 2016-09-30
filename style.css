@@ -46,12 +46,19 @@ body {
   padding-left: 20px;
 }
 
+.header-cc-hammer-img {
+  height: 15px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
 .header-help {
 	color: #65D35B;
 }
 
 .header-central {
 	color: #4D595C;
+  margin-left: -4px;
 }
 
 .header-help, .header-central {
