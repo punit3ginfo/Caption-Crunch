@@ -17,32 +17,6 @@ ini_set('display_errors', 1);
 
 <body>
 	<div class="back">
-    <!-- Navigation -->
-    <header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-
-            <!-- Brand and toggle get grouped for better mobile display -->
-
-                <a class="navbar-brand" href="#">
-                  	<img style="height: 15px; display: inline-block; margin-bottom: 5px;" src="{{ 'Caption-Crunch-Hammer.png' | asset_img_url: 'medium' }}"/>
-                	<span class="header-help">Caption</span>
-                    <span style="margin-left: -4px;" class="header-central">Crunch</span>
-                </a>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-     		<nav class="main-nav-container">
-				<a class="sidebar-link" style="text-decoration: none;" href="/pages/help">
-                  <div class="sidebar-nav-container-header">
-                      <span class="sidebar-span">
-                      <i style="font-size: 20px;" class="fa fa-info" aria-hidden="true"></i><br>
-                      Help
-                      </span>
-                  </div>
-            	</a>
-            </nav>
-            <!-- /.navbar-collapse -->
-
-        <!-- /.container -->
-    </header>
 
     <!-- Sidebar Nav -->
 		<aside class="sidebar_nav">
@@ -99,6 +73,33 @@ ini_set('display_errors', 1);
             </div>
         </aside>
     <!-- /.Sidebar Nav -->
+
+    <!-- Navigation -->
+    <header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+
+                <a class="navbar-brand" href="#">
+                  	<img style="height: 15px; display: inline-block; margin-bottom: 5px;" src="{{ 'Caption-Crunch-Hammer.png' | asset_img_url: 'medium' }}"/>
+                	<span class="header-help">Caption</span>
+                    <span style="margin-left: -4px;" class="header-central">Crunch</span>
+                </a>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+     		<nav class="main-nav-container">
+				<a class="sidebar-link" style="text-decoration: none;" href="/pages/help">
+                  <div class="sidebar-nav-container-header">
+                      <span class="sidebar-span">
+                      <i style="font-size: 20px;" class="fa fa-info" aria-hidden="true"></i><br>
+                      Help
+                      </span>
+                  </div>
+            	</a>
+            </nav>
+            <!-- /.navbar-collapse -->
+
+        <!-- /.container -->
+    </header>
 
     <!-- /.Page Container -->
     <div class="main_container_clearfix">
