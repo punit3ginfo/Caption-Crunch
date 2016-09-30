@@ -19,6 +19,14 @@
 		$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		 $products_1 = $shopify('PUT /admin/products/7885330952.json', array('published_status'=>'published'));
 		$ch = curl_init('https://api.turnto.com/v1/orders/create');
+		$json_ip="{
+  "product": {
+    "id": 7885330952,
+    "tags": "Barnes & Noble, John's Fav"
+  }
+}";
+$postDataJson=json_decode($json_ip);
+		$postDataJson="";
 		curl_setopt_array($ch, array(
 		CURLOPT_PUT => TRUE,
 		CURLOPT_RETURNTRANSFER => TRUE,
