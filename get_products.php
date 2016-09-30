@@ -23,7 +23,7 @@
     "tags": "Barnes & Noble"
   }
 }';
-		 $products_1 = $shopify('PUT /admin/products/7885330952.json', $json_ip);
+		 //$products_1 = $shopify('PUT /admin/products/7885330952.json', $json_ip);
 		$ch = curl_init('https://api.turnto.com/v1/orders/create');
 		
 $postDataJson=json_decode($json_ip);
