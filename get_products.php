@@ -68,19 +68,19 @@ array('id' => '321',
 );	
 		
 		
-		echo $baseUrl=$shopify('https://share-tag.myshopify.com/admin/products/7885330952.json');
-	$ch = curl_init($shopify);  //note product ID in url
-echo $data_string = json_encode(array('product'=>$product)); //json encode the product array
+		//echo $baseUrl=$shopify('https://share-tag.myshopify.com/admin/products/7885330952.json');
+	//$ch = curl_init($shopify);  //note product ID in url
+//echo $data_string = json_encode(array('product'=>$product)); //json encode the product array
 		
-curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "PUT");  //specify the PUT verb for update
-curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);  //add the data string for the request
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); //set return as string true
-curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-'Content-Type: application/json',
-'Content-Length: ' . strlen($data_string))
-); //set the header as JSON
-echo $server_output = curl_exec ($ch); //execute and store server output
-curl_close ($ch); //close the connection
+//curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "PUT");  //specify the PUT verb for update
+//curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);  //add the data string for the request
+//curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); //set return as string true
+//curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+//'Content-Type: application/json',
+//'Content-Length: ' . strlen($data_string))
+//); //set the header as JSON
+//echo $server_output = curl_exec ($ch); //execute and store server output
+//curl_close ($ch); //close the connection
 
                   //echo $singleproductsl;
 		//print_r($singleproductsl);
