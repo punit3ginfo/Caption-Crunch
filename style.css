@@ -33,6 +33,8 @@ body {
 	height: 63px;
 	padding-left: 20px;
   z-index: 40;
+  position: absolute;
+  width: 100vw;
 }
 
 .container {
@@ -41,6 +43,7 @@ body {
 
 .navbar-brand {
 	padding:0px;
+  padding-left: 20px;
 }
 
 .header-help {
