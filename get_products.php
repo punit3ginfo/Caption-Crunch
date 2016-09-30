@@ -48,7 +48,24 @@
 	
 		
 
-      $product=  array('id' =>  '7885330952','title'=>'New product title1' );	
+      $product =
+array('id' => '7885330952',
+'title' => 'My New Product',
+'body_html' => 'My New Product Description',
+'vendor'=> 'My Product Vendor',
+'product_type'=> 'My Product Type',
+'variants' => array(
+array('id' => '321',
+'option1' => 'Default',
+'price' => '100.00',
+'sku' => 'ABC123',
+'inventory_quantity' => '999',
+'inventory_management' => 'shopify',
+'taxable' => true,
+'requires_shipping' => true
+)
+)
+);	
 		$baseUrl="https://share-tag.myshopify.com//admin/products/7885330952.json";
 	$ch = curl_init($baseUrl);  //note product ID in url
 $data_string = json_encode(array('product'=>$product)); //json encode the product array
