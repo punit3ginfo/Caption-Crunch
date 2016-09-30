@@ -47,9 +47,9 @@ body {
 }
 
 .header-cc-hammer-img {
-  height: 15px;
+  height: 18px;
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom: -2px;
 }
 
 .header-help {

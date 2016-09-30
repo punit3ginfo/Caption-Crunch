@@ -104,9 +104,11 @@ ini_set('display_errors', 1);
     <!-- /.Page Container -->
     <div class="main_container_clearfix">
     	<div class="main_container">
-			<div class="content-container">
+			  <div class="content-container">
+             <div class="chat_container" style="overflow: hidden;">
               {{ content_for_layout }}
             </div>
+        </div>
     	</div>
     </div>
 
