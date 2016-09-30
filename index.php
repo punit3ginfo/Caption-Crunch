@@ -6,7 +6,7 @@ require __DIR__.'/connection.php'; //DB connectivity
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 echo "<h1>SUHHHHHHHH</h1>";
-require __DIR__.'/get_products.php'; //GET PRODUCTS
+// require __DIR__.'/get_products.php'; //GET PRODUCTS
 ?>
 
 <h1>Test Line</h1>
