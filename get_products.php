@@ -19,20 +19,23 @@
 		
 			
 		
-			echo "title=".$singleproduct['title'];
+			$title=$singleproduct['title'];
 			$variants=$singleproduct['variants'];
 			foreach($variants as $variants){
-				echo "price=".$price=$variants['price'];
+				$price=$variants['price'];
 			}
 		        $images=$singleproduct['images'];
 			
 			foreach($images as $images){
-				echo "src=".$src=$images['src'];
+				$src=$images['src'];
 			}
-			//print_r($variants);
-			//echo $variants['price'];
-			//echo "welcome";
-			//print_r($singleproduct['images']);
+			
+			?>
+<img src="<?php echo $src; ?>" alt="<?php echo $title; ?>" height="42" width="42">
+
+	<?php
+			
+			
 		}
 	}
 	catch (shopify\ApiException $e)
