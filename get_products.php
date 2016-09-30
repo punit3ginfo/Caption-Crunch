@@ -22,7 +22,8 @@
 			
 		
 			echo "apple".$singleproduct['title'];
-			echo $singleproduct->variants;
+			echo $variants=$singleproduct['variants'];
+			echo $variants[0]->price;
 			echo "welcome";
 			print_r($singleproduct->variants);
 		}
