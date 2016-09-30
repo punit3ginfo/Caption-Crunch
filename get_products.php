@@ -21,12 +21,12 @@
 		//print_r($singleproduct);
 			
 		
-			echo "apple".$singleproduct['title'];
-			echo $variants=$singleproduct['variants'];
+			echo "title=".$singleproduct['title'];
+			//echo $variants=$singleproduct['variants'];
 			foreach($variants as $variants){
 				echo "price=".$price=$variants['price'];
 			}
-			echo $images=$singleproduct['image'];
+			echo $images=$singleproduct['images'];
 			foreach($images as $images){
 				echo "src=".$src=$images['src'];
 			}
