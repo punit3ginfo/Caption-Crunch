@@ -22,7 +22,7 @@ $modify_data = array(
 );
 
 // Run API call to modify the product
-$modified_product =  $shopify("/admin/products/7885330952.json", $modify_data, 'PUT');
+$modified_product =  $shopify("Put /admin/products/7885330952.json", $modify_data);
 
 // Storage response
 echo $modified_product_response = $modified_product['response'];
