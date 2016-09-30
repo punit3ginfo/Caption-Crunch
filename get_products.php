@@ -10,6 +10,23 @@
 	require __DIR__.'/vendor/autoload.php';
 	use phpish\shopify;
 	require __DIR__.'/conf.php';
+
+	 var Shopify = new shopifyAPI({
+                 shop: 'SHOP_NAME', 
+                 shopify_api_key: 'SHOPIFY_APP_API_KEY', // Your API key
+                 shopify_shared_secret: 'API_SHARED_SECRET'// Your Shared Secret
+             });
+
+// More secure if we get the user email through the server
+var activeUserEmail         = getCurentUser.email;
+var findCustomerByEmailURL  = "/admin/customers/search.json?query=" + activeUserEmail;
+
+Shopify.get(findCustomerByEmailURL, function(err, data, headers){
+     console.log(data); // Data contains customer json information
+
+ });`
+
+
 	$_SESSION['shop']=$_REQUEST['shop'];
 	$access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
 	$shopify = shopify\client($_SESSION['shop'], SHOPIFY_APP_API_KEY, $access_token);
@@ -17,8 +34,8 @@
 	{
 		# Making an API request can throw an exception
 		$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
-		echo $products_1 = $shopify('PUT /admin/products/#7885330952.json', array('published_status'=>'published'));
-		
+		$products_1 = $shopify('PUT /admin/products/#7885330952.json', array('published_status'=>'published'));
+		print_r($products_1);exit;
 		//$update = $shopify('PUT', "/admin/products/7885327240.json", $product); 	
 		
 		$arrayDateAndMachine['product'] = array();
