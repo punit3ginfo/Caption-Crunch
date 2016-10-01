@@ -87,7 +87,7 @@ $server_output = curl_exec ($ch); */   //execute and store server output
 		</div>
 		<div class="product-share-container">
 			
-			<button type="button" onclick="shareButton();">SHARE</button>
+			<button type="button" onclick="shareButton(7885330952);">SHARE</button>
 			
 		</div>
 	</div>
@@ -112,39 +112,17 @@ $server_output = curl_exec ($ch); */   //execute and store server output
 		print_r($e->getRequest());
 		print_r($e->getResponse());
 	}
+	?>
+	<script>
+	function shareButton(pid){
+               
+                $.ajax({
+                    url: 'sharebutton.php?pid=' + pid,
+                    success: function(data){
+                       alert("yahoooooooooo");
+                    }
+                });
+            }
 
-try
-	{
-		echo "<script>alert(2);</script>";
-		# Making an API request can throw an exception
-		$product = $shopify('PUT /admin/products/7885330952.json', array(), array
-		(
-			'product' => array
-			(
-				"title" => "Burton Custom Freestlye 1512",
-				"body_html" => "<strong>Good snowboard!</strong>",
-				"vendor" => "Burton",
-				"product_type" => "Snowboard",
-				"tags"=>"shared"
-				
-			)
-		));
 
-		print_r($product);
-	}
-	catch (shopify\ApiException $e)
-	{
-		echo "<script>alert(3);</script>";
-		# HTTP status code was >= 400 or response contained the key 'errors'
-		echo $e;
-		print_r($e->getRequest());
-		print_r($e->getResponse());
-	}
-	catch (shopify\CurlException $e)
-	{
-		echo "<script>alert(4);</script>";
-		# cURL error
-		echo $e;
-		print_r($e->getRequest());
-		print_r($e->getResponse());
-	}
+	</script>
