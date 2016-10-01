@@ -5,9 +5,10 @@
 $_SESSION['shop']=$_REQUEST['shop'];
 $access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
 	$shopify = shopify\client($_SESSION['shop'], SHOPIFY_APP_API_KEY,$access_token );
-
+           echo "<script>alert(1);</script>";
 	try
 	{
+		echo "<script>alert(2);</script>";
 		# Making an API request can throw an exception
 		$product = $shopify('POST /admin/products.json', array(), array
 		(
@@ -38,6 +39,7 @@ $access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHO
 	}
 	catch (shopify\ApiException $e)
 	{
+		echo "<script>alert(3);</script>";
 		# HTTP status code was >= 400 or response contained the key 'errors'
 		echo $e;
 		print_r($e->getRequest());
@@ -45,6 +47,7 @@ $access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHO
 	}
 	catch (shopify\CurlException $e)
 	{
+		echo "<script>alert(4);</script>";
 		# cURL error
 		echo $e;
 		print_r($e->getRequest());
