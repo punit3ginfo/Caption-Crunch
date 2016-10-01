@@ -125,7 +125,7 @@ try
 				"body_html" => "<strong>Good snowboard!</strong>",
 				"vendor" => "Burton",
 				"product_type" => "Snowboard",
-				"tag"=>"shared"
+				"tags"=>"shared"
 				
 			)
 		));
