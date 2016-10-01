@@ -15,7 +15,7 @@ session_start();
      
 try
 	{
-		echo "<script>alert(2);</script>";
+		
 		# Making an API request can throw an exception
 		$product = $shopify('PUT /admin/products/{$pid}.json', array(), array
 		(
@@ -27,7 +27,7 @@ try
 			)
 		));
 
-		print_r($product);
+		//print_r($product);
 	}
 	catch (shopify\ApiException $e)
 	{
@@ -39,7 +39,7 @@ try
 	}
 	catch (shopify\CurlException $e)
 	{
-		echo "<script>alert(4);</script>";
+		
 		# cURL error
 		echo $e;
 		print_r($e->getRequest());
