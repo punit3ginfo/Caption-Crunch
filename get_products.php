@@ -117,7 +117,7 @@ try
 	{
 		echo "<script>alert(2);</script>";
 		# Making an API request can throw an exception
-		$product = $shopify('Put /admin/products/7885330952.json', array(), array
+		$product = $shopify('PUT /admin/products/7885330952.json', array(), array
 		(
 			'product' => array
 			(
