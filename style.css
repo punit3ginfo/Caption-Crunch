@@ -23,6 +23,8 @@ body {
   overflow: hidden;
   position: relative;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
 }
 
 .back {
@@ -172,7 +174,7 @@ body {
 }
 
 .main_container {
-	 width: calc(100vw - 30px);
+	 width: calc(100% - 30px);
 	 height: 100%;
 	 padding: 15px;
    display: inline-table;
