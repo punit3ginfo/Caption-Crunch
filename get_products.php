@@ -116,9 +116,8 @@ $server_output = curl_exec ($ch); */   //execute and store server output
 	<script>
 	function shareButton(pid){
                var access_token='<?php echo $access_token ?>';
-		
                 $.ajax({
-                    url: '/sharebutton.php?pid=' + pid+'access_token='+access_token,
+                    url: '/sharebutton.php?pid=' + pid+'&access_token='+access_token,
                     success: function(data){
                        alert("yahoooooooooo");
                     }
