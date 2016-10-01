@@ -8,8 +8,7 @@
 	$access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
 	$shopify = shopify\client($_SESSION['shop'], SHOPIFY_APP_API_KEY, $access_token);
 
-<script>
-	var id=7885330952;
+
 $('button').click(function() {
 alert("pk");
  $.ajax({
@@ -22,7 +21,7 @@ alert("pk");
 
     });
    
-</script>
+
 
 /* Share Tag Code Satrt ------------------------------------------------------------------------*/
 /*
