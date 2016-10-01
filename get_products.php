@@ -11,9 +11,7 @@ $baseUrl = 'https://23c709fbea4a1fc65b1e6a54a10d430c:4f36a56e3e52c00978d6dda49d2
 $product =
 array('id' => '7885330952',
 'title' => 'My New Product',
-'body_html' => 'My New Product Description',
-'vendor'=> 'My Product Vendor',
-'product_type'=> 'My Product Type',
+ "tags"=> "Barnes & Noble"
 );
 
 $ch = curl_init($baseUrl.'products/7885330952.json');  //note product ID in url
