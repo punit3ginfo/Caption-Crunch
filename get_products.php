@@ -10,7 +10,7 @@
 $baseUrl = 'https://23c709fbea4a1fc65b1e6a54a10d430c:4f36a56e3e52c00978d6dda49d23a318@share-tag.myshopify.com/admin/';
 $product =
 array('id' => '7885330952',
-'title' => 'My New Product',
+'title' => 'My New Product1',
  "tags"=> "Barnes & Noble"
 );
 
