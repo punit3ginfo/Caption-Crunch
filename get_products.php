@@ -6,23 +6,30 @@
 	require __DIR__.'/conf.php'; //Configuration
 	$_SESSION['shop']=$_REQUEST['shop'];
 	$access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
-	$shopify = shopify\client($_SESSION['shop'], SHOPIFY_APP_API_KEY, $access_token);
+	$shopify = shopify\client($_SESSION['shop'], SHOPIFY_APP_API_KEY, $access_token); ?>
 
 
-$('button').click(function() {
-alert("pk");
- $.ajax({
-  type: "POST",
-  url: " "sharebutton.php?id="+id",
-  data: { name: "John" }
-}).done(function( msg ) {
-  alert( "Data Saved: " + msg );
-});    
 
-    });
+
+<script>
+	var str="7885327240";
+function shareButton(str) {
+	alert('ddsfd');
+     {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                //document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("POST", "sharebutton.php?q=" + str, true);
+        xmlhttp.send();
+    }
+}
+</script>
    
 
-
+<?php
 /* Share Tag Code Satrt ------------------------------------------------------------------------*/
 /*
 $baseUrl = 'https://23c709fbea4a1fc65b1e6a54a10d430c:4f36a56e3e52c00978d6dda49d23a318@share-tag.myshopify.com/admin/';
