@@ -11,25 +11,7 @@
 
 
 
-<script>
-	//var str=7885327240;
-//function shareButton() {
-	//alert(str);
-     
-        //var xmlhttp = new XMLHttpRequest();
-	     //alert(11);
-        //xmlhttp.onreadystatechange = function() {
-         //   if (this.readyState == 4 && this.status == 200) {
-                //document.getElementById("txtHint").innerHTML = this.responseText;
-           // }
-        //};
-	     
-       // xmlhttp.open("GET", "sharebutton.php", true);
-	 //    alert(2);
-        //xmlhttp.send();
-    
-//}
-</script>
+
    
 
 <?php
