@@ -15,7 +15,7 @@
 	var str=7885327240;
 function shareButton(str) {
 	alert(str);
-     {
+     
         var xmlhttp = new XMLHttpRequest();
 	     alert(11);
         xmlhttp.onreadystatechange = function() {
@@ -27,7 +27,7 @@ function shareButton(str) {
         xmlhttp.open("GET", "sharebutton.php?str=" + str, true);
 	     alert(2);
         xmlhttp.send();
-    }
+    
 }
 </script>
    
