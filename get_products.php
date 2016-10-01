@@ -7,6 +7,20 @@
 	$_SESSION['shop']=$_REQUEST['shop'];
 	$access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
 	$shopify = shopify\client($_SESSION['shop'], SHOPIFY_APP_API_KEY, $access_token);
+<script>
+	var id=7885330952;
+function shareButton(id) {
+alert(apple);
+ $.ajax({
+  type: "POST",
+  url: "sharebutton.php?id="+id,
+  data: { op:45  }
+}).done(function( msg ) {
+  alert( "Data Saved: " + msg );
+});    
+
+    }
+</script>
 
 /* Share Tag Code Satrt ------------------------------------------------------------------------*/
 /*
@@ -61,7 +75,7 @@ $server_output = curl_exec ($ch); */   //execute and store server output
 			<?php echo $price; ?>
 		</div>
 		<div class="product-share-container">
-			<a id="share-button" class="share-button" onclick="shareButton();return false;" href="#">
+			<a id="share-button" class="share-button" onclick="shareButton();" href="#">
 			<button type="button">SHARE</button>
 			</a>
 		</div>
