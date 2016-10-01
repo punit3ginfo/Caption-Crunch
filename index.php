@@ -108,7 +108,7 @@ ini_set('display_errors', 1);
 			  <div class="content-container">
               suh dude
 				<?php  require __DIR__.'/get_products.php'; //GET PRODUCTS 
-				  require __DIR__.'/create_product.php'; 
+				 
 
 				  
 				  ?>
