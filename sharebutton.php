@@ -10,20 +10,39 @@ ini_set('display_errors', 1);
 	$shopify = shopify\client($_SESSION['shop'], SHOPIFY_APP_API_KEY, $access_token); 
 
 
-echo "test";
-$baseUrl = 'https://23c709fbea4a1fc65b1e6a54a10d430c:4f36a56e3e52c00978d6dda49d23a318@share-tag.myshopify.com/admin/';
-$product =
-array(
- "tags"=> "share"
-);
-$ch = curl_init($baseUrl.'products/7885327240.json');  //note product ID in url
-$data_string = json_encode(array('product'=>$product)); //json encode the product array
-curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "PUT");  //specify the PUT verb for update
-curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);  //add the data string for the request
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); //set return as string true
-curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-'Content-Type: application/json',
-'Content-Length: ' . strlen($data_string))
-); //set the header as JSON 
- $server_output = curl_exec ($ch); */   //execute and store server output
+try
+	{
+		echo "<script>alert(2);</script>";
+		# Making an API request can throw an exception
+		$product = $shopify('PUT /admin/products/7885330952.json', array(), array
+		(
+			'product' => array
+			(
+				"title" => "Burton Custom Freestlye 1512",
+				"body_html" => "<strong>Good snowboard!</strong>",
+				"vendor" => "Burton",
+				"product_type" => "Snowboard",
+				"tags"=>"shared"
+				
+			)
+		));
+
+		print_r($product);
+	}
+	catch (shopify\ApiException $e)
+	{
+		echo "<script>alert(3);</script>";
+		# HTTP status code was >= 400 or response contained the key 'errors'
+		echo $e;
+		print_r($e->getRequest());
+		print_r($e->getResponse());
+	}
+	catch (shopify\CurlException $e)
+	{
+		echo "<script>alert(4);</script>";
+		# cURL error
+		echo $e;
+		print_r($e->getRequest());
+		print_r($e->getResponse());
+	}
   ?>
