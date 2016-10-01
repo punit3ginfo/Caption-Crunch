@@ -6,11 +6,13 @@ echo "<script>alert(12345);</script>";
 	require __DIR__.'/vendor/autoload.php';
 	use phpish\shopify;
 	require __DIR__.'/conf.php'; //Configuration
-	$_SESSION['shop']=$_REQUEST['shop'];
-	$access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
+	$_SESSION['shop']="https://share-tag.myshopify.com";
+        $pid=$_REQUEST['pid'];
+ 	$access_token=$_REQUEST['access_token'];
+	//$access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
 	$shopify = shopify\client($_SESSION['shop'], SHOPIFY_APP_API_KEY, $access_token); 
 
-      $pid=$_REQUEST['pid'];
+     
 try
 	{
 		echo "<script>alert(2);</script>";
