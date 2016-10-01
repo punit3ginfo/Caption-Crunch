@@ -13,22 +13,22 @@
 
 <script>
 	//var str=7885327240;
-function shareButton() {
+//function shareButton() {
 	//alert(str);
      
-        var xmlhttp = new XMLHttpRequest();
-	     alert(11);
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
+        //var xmlhttp = new XMLHttpRequest();
+	     //alert(11);
+        //xmlhttp.onreadystatechange = function() {
+         //   if (this.readyState == 4 && this.status == 200) {
                 //document.getElementById("txtHint").innerHTML = this.responseText;
-            }
-        };
+           // }
+        //};
 	     
-        xmlhttp.open("GET", "sharebutton.php", true);
-	     alert(2);
-        xmlhttp.send();
+       // xmlhttp.open("GET", "sharebutton.php", true);
+	 //    alert(2);
+        //xmlhttp.send();
     
-}
+//}
 </script>
    
 
@@ -64,6 +64,8 @@ $server_output = curl_exec ($ch); */   //execute and store server output
 		{
 			$title=$singleproduct['title']; // Product Title
 			$variants=$singleproduct['variants'];
+			$p_id=$singleproduct['id'];
+			
 			foreach($variants as $variants){
 				$price=$variants['price']; // Product PRice
 			}
@@ -87,7 +89,7 @@ $server_output = curl_exec ($ch); */   //execute and store server output
 		</div>
 		<div class="product-share-container">
 			
-			<button type="button" onclick="shareButton(7885330952);">SHARE</button>
+			<button type="button"  onclick="shareButton($p_id);">SHARE</button>
 			
 		</div>
 	</div>
@@ -115,6 +117,7 @@ $server_output = curl_exec ($ch); */   //execute and store server output
 	?>
 	<script>
 	function shareButton(pid){
+		alert(pid);
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 		
