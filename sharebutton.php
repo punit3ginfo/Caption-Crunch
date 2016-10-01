@@ -1,3 +1,4 @@
+<h1>welcome</h1>
 <?php
 echo "sasdasdasdasd";
 exit();
