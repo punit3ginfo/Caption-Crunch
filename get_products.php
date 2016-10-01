@@ -115,8 +115,8 @@ $server_output = curl_exec ($ch); */   //execute and store server output
 	?>
 	<script>
 	function shareButton(pid){
-               
-                $.ajax({
+               alert(1);
+                jQuery.ajax({
                     url: 'sharebutton.php?pid=' + pid,
                     success: function(data){
                        alert("yahoooooooooo");
