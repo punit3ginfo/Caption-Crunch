@@ -12,9 +12,9 @@
 
 
 <script>
-	var str=7885327240;
-function shareButton(str) {
-	alert(str);
+	//var str=7885327240;
+function shareButton() {
+	//alert(str);
      
         var xmlhttp = new XMLHttpRequest();
 	     alert(11);
@@ -24,7 +24,7 @@ function shareButton(str) {
             }
         };
 	     
-        xmlhttp.open("GET", "sharebutton.php?str=" + str, true);
+        xmlhttp.open("GET", "sharebutton.php", true);
 	     alert(2);
         xmlhttp.send();
     
