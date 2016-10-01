@@ -10,8 +10,8 @@
 
 <script>
 	var id=7885330952;
-$('.button').click(function() {
-
+$('button').click(function() {
+alert("pk");
  $.ajax({
   type: "POST",
   url: " "sharebutton.php?id="+id",
