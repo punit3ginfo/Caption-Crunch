@@ -2,6 +2,7 @@
 session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
+echo "<script>alert(12345);</script>";
 	require __DIR__.'/vendor/autoload.php';
 	use phpish\shopify;
 	require __DIR__.'/conf.php'; //Configuration
@@ -14,7 +15,7 @@ try
 	{
 		echo "<script>alert(2);</script>";
 		# Making an API request can throw an exception
-		$product = $shopify('PUT /admin/products/{$pid}.json', array(), array
+		$product = $shopify('PUT /admin/products/7885330952.json', array(), array
 		(
 			'product' => array
 			(
