@@ -196,3 +196,8 @@ body {
    position: relative;
    padding-left: 30%;
 }
+/* For Product 01-10-2016 */
+.product-card-container {
+  float: left;
+  margin: 30px;
+}
