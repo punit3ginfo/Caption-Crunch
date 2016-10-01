@@ -1,8 +1,7 @@
 <?php 
 session_start();
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-echo "<script>alert(123);</script>";
+//error_reporting(E_ALL);
+//ini_set('display_errors', 1);
 	require __DIR__.'/vendor/autoload.php';
 	use phpish\shopify;
 	require __DIR__.'/conf.php'; //Configuration
