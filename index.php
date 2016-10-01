@@ -103,13 +103,13 @@ ini_set('display_errors', 1);
 
     <!-- /.Page Container -->
     <div class="main_container_clearfix">
+      <div style="width: 100%; height: 100%;">
     	<div class="main_container">
 			  <div class="content-container">
-             <div class="chat_container" style="overflow: hidden;">
-              {{ content_for_layout }}
-            </div>
+              suh dude
         </div>
     	</div>
+    </div>
     </div>
 
     <!-- /.Page Container -->

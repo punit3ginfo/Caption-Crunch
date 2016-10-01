@@ -9,6 +9,11 @@ a:hover {
     text-decoration: none;
 }
 
+html {
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
 body {
 	overflow: hidden;
 	background-color: #D9E0E0;
@@ -157,8 +162,8 @@ body {
 .main_container_clearfix {
   	position: fixed;
   	top: 0;
-  	width: 100%;
-  	height:100vh;
+    width: calc(100vw - 80px);
+    height: calc(100vh - 63px);
   	padding-left: 80px;
     padding-top: 63px;
   	background-image: url("{{ 'background.jpg' | asset_img_url: 'master' }}");
@@ -166,25 +171,25 @@ body {
 }
 
 .main_container {
-	width: 100%;
-	height: 100%;
-	padding: 15px;
+	 width: 100%;
+	 height: 100%;
+	 padding: 15px;
+   display: inline-table;
 }
 
 .content-container {
-	background-color: white;
+	  background-color: white;
   	width: 100%;
   	height: 100%;
 }
 
 .chat_container {
-	width: 100%;
-	height: 100%;
-	min-height: 200px;
-	background-color: white;
-	border-radius: 4px;
-	background: white;
-	box-shadow: 1px 4px 13px 0px rgba(0,0,0,0.06);
-  	position: relative;
-  	padding-left: 30%;
+	 width: 100%;
+	 height: 100%;
+	 min-height: 200px;
+	 background-color: white;
+	 background: white;
+	 box-shadow: 1px 4px 13px 0px rgba(0,0,0,0.06);
+   position: relative;
+   padding-left: 30%;
 }
