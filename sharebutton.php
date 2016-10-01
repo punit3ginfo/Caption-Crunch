@@ -2,15 +2,16 @@
 session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-echo "<script>alert(12345);</script>";
+echo "<script>alert(12);</script>";
 	require __DIR__.'/vendor/autoload.php';
 	use phpish\shopify;
 	require __DIR__.'/conf.php'; //Configuration
 	$_SESSION['shop']="https://share-tag.myshopify.com";
         $pid=$_REQUEST['pid'];
- 	$access_token=$_REQUEST['access_token'];
-	//$access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
-	$shopify = shopify\client($_SESSION['shop'], SHOPIFY_APP_API_KEY, $access_token); 
+ 	$code=$_REQUEST['code'];
+	$shop=$_REQUEST['shop'];
+	$access_token = shopify\access_token($shop, SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $code);
+	$shopify = shopify\client($shop, SHOPIFY_APP_API_KEY, $access_token); 
 
      
 try
