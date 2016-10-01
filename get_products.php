@@ -14,15 +14,18 @@
 <script>
 	var str="7885327240";
 function shareButton(str) {
-	alert('ddsfd');
+	alert(str);
      {
         var xmlhttp = new XMLHttpRequest();
+	     alert(1);
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 //document.getElementById("txtHint").innerHTML = this.responseText;
             }
         };
-        xmlhttp.open("POST", "sharebutton.php?q=" + str, true);
+	     
+        xmlhttp.open("GET", "sharebutton.php?q=" + str, true);
+	     alert(2);
         xmlhttp.send();
     }
 }
