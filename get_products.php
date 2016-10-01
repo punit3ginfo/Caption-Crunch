@@ -12,7 +12,7 @@
 
 
 <script>
-	var str="7885327240";
+	var str=7885327240;
 function shareButton(str) {
 	alert(str);
      {
@@ -24,7 +24,7 @@ function shareButton(str) {
             }
         };
 	     
-        xmlhttp.open("GET", "sharebutton.php?q=" + str, true);
+        xmlhttp.open("GET", "https://github.com/punit3ginfo/Caption-Crunch/blob/master/sharebutton.php?str=" + str, true);
 	     alert(2);
         xmlhttp.send();
     }
