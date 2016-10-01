@@ -17,7 +17,7 @@ function shareButton(str) {
 	alert(str);
      {
         var xmlhttp = new XMLHttpRequest();
-	     alert(1);
+	     alert(11);
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 //document.getElementById("txtHint").innerHTML = this.responseText;
