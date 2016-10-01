@@ -16,7 +16,7 @@ array('id' => '7885330952',
 'product_type'=> 'My Product Type',
 );
 
-$ch = curl_init($baseUrl.'products/123.json');  //note product ID in url
+$ch = curl_init($baseUrl.'products/7885330952.json');  //note product ID in url
 $data_string = json_encode(array('product'=>$product)); //json encode the product array
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "PUT");  //specify the PUT verb for update
 curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);  //add the data string for the request
@@ -27,7 +27,7 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 ); //set the header as JSON
 $server_output = curl_exec ($ch); //execute and store server output
 
-//print_r($server_output);
+print_r($server_output);
 exit();
 	try
 	{
