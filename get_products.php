@@ -25,8 +25,8 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 'Content-Type: application/json',
 'Content-Length: ' . strlen($data_string))
 ); //set the header as JSON
-$server_output = curl_exec ($ch); //execute and store server output
-print_r($server_output);
+//$server_output = curl_exec ($ch); //execute and store server output
+
 
 /* Share Tag Code END -----------------------------------------------------------------------------*/
 
