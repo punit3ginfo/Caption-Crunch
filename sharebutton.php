@@ -9,20 +9,20 @@ ini_set('display_errors', 1);
 	$access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
 	$shopify = shopify\client($_SESSION['shop'], SHOPIFY_APP_API_KEY, $access_token); 
 
-
+      $pid=$_REQUEST['pid'];
 try
 	{
 		echo "<script>alert(2);</script>";
 		# Making an API request can throw an exception
-		$product = $shopify('PUT /admin/products/7885330952.json', array(), array
+		$product = $shopify('PUT /admin/products/{$pid}.json', array(), array
 		(
 			'product' => array
 			(
-				"title" => "Burton Custom Freestlye 1512",
+				"title" => "test123",
 				"body_html" => "<strong>Good snowboard!</strong>",
 				"vendor" => "Burton",
 				"product_type" => "Snowboard",
-				"tags"=>"shared"
+				"tags"=>"shared1"
 				
 			)
 		));
