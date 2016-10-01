@@ -9,12 +9,11 @@
 	$shopify = shopify\client($_SESSION['shop'], SHOPIFY_APP_API_KEY, $access_token);
 $baseUrl = 'https://23c709fbea4a1fc65b1e6a54a10d430c:4f36a56e3e52c00978d6dda49d23a318@share-tag.myshopify.com/admin/';
 $product =
-array('id' => '7885330952',
-'title' => 'My New Product1',
- "tags"=> "Barnes & Noble"
+array(
+ "tags"=> "share"
 );
 
-$ch = curl_init($baseUrl.'products/7885330952.json');  //note product ID in url
+$ch = curl_init($baseUrl.'products/7885327240.json');  //note product ID in url
 $data_string = json_encode(array('product'=>$product)); //json encode the product array
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "PUT");  //specify the PUT verb for update
 curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);  //add the data string for the request
