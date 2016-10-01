@@ -8,7 +8,7 @@
 	$access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
 	$shopify = shopify\client($_SESSION['shop'], SHOPIFY_APP_API_KEY, $access_token);
 
-$baseUrl = 'https://917505b6882e263ca3563170982a8a0f:c91ad52cc8ae78a4c005a1240221652b@share-tag.myshopify.com/admin/';
+$baseUrl = 'https://917505b6882e263ca3563170982a8a0f:bd392344caf56ce075f44a18fbc099c8@share-tag.myshopify.com/admin/';
 $product =
 array('id' => '7885330952',
 'title' => 'My New Product',
