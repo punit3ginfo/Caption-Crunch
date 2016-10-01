@@ -24,7 +24,7 @@ function shareButton(str) {
             }
         };
 	     
-        xmlhttp.open("GET", "https://github.com/punit3ginfo/Caption-Crunch/blob/master/sharebutton.php?str=" + str, true);
+        xmlhttp.open("GET", "sharebutton.php?str=" + str, true);
 	     alert(2);
         xmlhttp.send();
     }
