@@ -2,15 +2,15 @@
 session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-echo "<script>alert(12);</script>";
+echo "<script>alert(123);</script>";
 	require __DIR__.'/vendor/autoload.php';
 	use phpish\shopify;
 	require __DIR__.'/conf.php'; //Configuration
-	$_SESSION['shop']="https://share-tag.myshopify.com";
+	$_SESSION['shop']="share-tag.myshopify.com";
         $pid=$_REQUEST['pid'];
- 	$code=$_REQUEST['code'];
+ 	$access_token=$_REQUEST['access_token'];
 	$shop=$_REQUEST['shop'];
-	$access_token = shopify\access_token($shop, SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $code);
+	//$access_token = shopify\access_token($shop, SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $code);
 	$shopify = shopify\client($shop, SHOPIFY_APP_API_KEY, $access_token); 
 
      
@@ -22,11 +22,11 @@ try
 		(
 			'product' => array
 			(
-				"title" => "test123",
+				"title" => "test12356",
 				"body_html" => "<strong>Good snowboard!</strong>",
 				"vendor" => "Burton",
 				"product_type" => "Snowboard",
-				"tags"=>"shared1"
+				"tags"=>"shared13"
 				
 			)
 		));
