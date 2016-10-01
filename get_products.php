@@ -117,28 +117,16 @@ try
 	{
 		echo "<script>alert(2);</script>";
 		# Making an API request can throw an exception
-		$product = $shopify('POST /admin/products.json', array(), array
+		$product = $shopify('Put /admin/products/7885330952.json', array(), array
 		(
 			'product' => array
 			(
-				"title" => "Burton Custom Freestlye 151",
+				"title" => "Burton Custom Freestlye 1512",
 				"body_html" => "<strong>Good snowboard!</strong>",
 				"vendor" => "Burton",
 				"product_type" => "Snowboard",
-				"variants" => array
-				(
-					array
-					(
-						"option1" => "First",
-						"price" => "10.00",
-						"sku" => 123,
-					),
-					array (
-						"option1" => "Second",
-						"price" => "20.00",
-						"sku" => "123"
-					)
-				)
+				"tag"=>"shared"
+				
 			)
 		));
 
