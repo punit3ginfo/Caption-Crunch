@@ -1,5 +1,1 @@
-<?php
-
-echo "tits";
-
-?>
+<p>TITS</p>
