@@ -106,7 +106,7 @@ require __DIR__.'/connection.php'; //DB connectivity
       <div style="width: 100%; height: 100%;">
     	<div class="main_container">
 			  <div class="content-container">
-          include 'test.php';
+          <?php include 'test.php'; ?>
   				<?php  require __DIR__.'/get_products.php'; //GET PRODUCTS
 
   				  ?>
