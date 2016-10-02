@@ -201,3 +201,249 @@ body {
   float: left;
   margin: 30px;
 }
+
+/*   Collections Menu    */
+
+.collection-sidebar-container {
+	width: 30%;
+  	height: 100%;
+  	position: absolute;
+    background: white;
+  	left: 0px;
+  	top: 0;
+  	box-shadow: 1px 4px 10px 0px rgba(0,0,0,0.07);
+  	padding-top: 80px;
+  	z-index: 10;
+}
+
+.collection_title_selector {
+	width: 100%;
+	margin: auto;
+	padding-left: 5%;
+	padding-right: 5%;
+	height: 80px;
+	position: absolute;
+    background-color: white;
+    top: 0;
+	z-index: 5;
+}
+
+.collection_title_header {
+	width: 100%;
+	margin: auto;
+	height: 80px;
+	position: absolute;
+    top: 0;
+	z-index: 5;
+  	margin-right: 30px;
+  	position: relative;
+  	background-color: #F8F9F9;
+}
+
+.collection_title_container {
+	width: 100%;
+	height: 100%;
+	border-bottom: 1px solid #65D35B;
+	text-align: center;
+}
+
+.collection_title_container-active {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.collection_title_header_container {
+	width: 30.5%;
+	height: 80px;
+	position: relative;
+  	margin: auto;
+
+}
+
+.pagination-clearfix {
+	width: 30.5%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    position: absolute;
+  	right: 20px;
+}
+
+.collection_title_text {
+	line-height: 80px;
+	font-family: HelveticaNeue-Bold;
+	font-size: 16px;
+	color: #4D595C;
+	letter-spacing: 0.82px;
+	text-transform: uppercase;
+}
+
+.chat_selector_overflow_container{
+	position:absolute;
+	width: 100%;
+	top: 0;
+    padding-top: 80px;
+    height: 100%;
+}
+
+.chat_selector_overflow{
+	width: 100%;
+	overflow:scroll;
+    height: 100%;
+}
+
+.chat_select_container {
+	width: 100%;
+	height: 90px;
+	padding:15px;
+	padding-bottom: 0px;
+}
+
+.chat_select_container:hover {
+	background-color: #65D35B;
+	background-image: url("{{ 'button.png' |  asset_url }}");
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+}
+
+.chat_personal_info_container {
+	width: auto;
+	height: 75px;
+	border-bottom: 1px solid #F2F3F3;
+}
+
+.chat_select_container:hover .chat_personal_info_container {
+	border-bottom: 0px;
+}
+
+
+.chat_user_info {
+	display: inline-block;
+	width: auto;
+	height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+	float: left;
+  	padding-left: 10px;
+}
+
+.collection_list_text {
+	font-family: HelveticaNeue-Medium;
+	font-size: 18px;
+	color: #4D595C;
+	letter-spacing: 0.41px;
+	line-height: 40px;
+	display: block;
+	width: 100%;
+  	text-transform: uppercase;
+}
+
+.chat_select_container:hover .collection_list_text {
+	color: white;
+}
+
+.notification-container {
+	width: 60px;
+	height: 60px;
+	float: right;
+	position: relative;
+}
+
+.chat_notification_container {
+	float: right;
+	background: #4D595C;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	margin: 10px;
+	text-align:center;
+}
+
+.notif_number {
+	font-family: HelveticaNeue-Bold;
+	font-size: 14px;
+	line-height: 40px;
+	color: #FFFFFF;
+	letter-spacing: 0.87px;
+	display: block;
+}
+
+.paginate-style {
+	list-style-type: none;
+    display: inline-flex;
+    padding-left: 0px;
+}
+
+.paginate-list {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 3px;
+  line-height: 30px;
+  border-radius: 3px;
+}
+
+.disabled-previous-page {
+	display: none;
+}
+
+.paginate-link {
+	 color:#4D595C;
+
+}
+
+.paginate-link-active {
+	 color:#65D35B;
+  	 font-weight: 700;
+
+}
+
+.paginate-link:hover {
+	 text-decoration: none;
+  	 color:#65D35B;
+     font-weight: 700;
+}
+/*   Product Cards    */
+
+
+.product-grid-container {
+	width: 100%;
+    height: 100%;
+  	background: #F8F9F9;
+  	position: relative;
+}
+
+.product-grid-overflow-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-left: 15px;
+  padding-right: 5px;
+  padding-top: 15px;
+  padding-bottom: 85px;
+  position: relative;
+}
+
+.product-card-clearfix {
+  	margin-bottom: 10px;
+  	display: inline-block;
+  	width: 32.6%;
+  	padding-left: 5px;
+  	padding-right: 5px;
+  	height: 100%;
+  	max-height: 400px;
+}
+
+.product-card-container {
+	box-shadow: 1px -2px 17px 0px rgba(0,0,0,0.14);
+  	padding: 20px;
+ 	position: relative;
+  	background: white;
+  	width: 100%;
+  	height: 100%;
+  	text-align: center;
+}
