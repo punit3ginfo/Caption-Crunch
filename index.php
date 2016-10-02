@@ -106,12 +106,9 @@ require __DIR__.'/connection.php'; //DB connectivity
       <div style="width: 100%; height: 100%;">
     	<div class="main_container">
 			  <div class="content-container">
-              suh dude
-				<?php  require __DIR__.'/get_products.php'; //GET PRODUCTS 
-				 
+  				<?php  require __DIR__.'/get_products.php'; //GET PRODUCTS
 
-				  
-				  ?>
+  				  ?>
         </div>
     	</div>
     </div>
