@@ -5,7 +5,9 @@
 	require __DIR__.'/conf.php'; //Configuration
 	$_SESSION['shop']=$_REQUEST['shop'];
 	$access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
-	$shopify = shopify\client($_SESSION['shop'], SHOPIFY_APP_API_KEY, $access_token); ?>
+	$shopify = shopify\client($_SESSION['shop'], SHOPIFY_APP_API_KEY, $access_token); 
+        echo "123";
+?>
 
 
 
