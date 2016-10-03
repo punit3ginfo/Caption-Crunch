@@ -23,8 +23,8 @@ echo "<script>alert('{$_SESSION["shop"]}')</script>";
 		echo '</pre>';
            echo $_SESSION['shop'];
          echo "fifth part12345";
-echo "b=".$access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_SESSION['code']);
-echo "dfsgfdgsfdg";	
+   $access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_SESSION['code']);
+	
 
 ?>
 
