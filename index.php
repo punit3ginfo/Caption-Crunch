@@ -10,7 +10,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 // require __DIR__.'/get_products.php'; //GET PRODUCTS
 echo $_REQUEST['code'];
- if((isset($_REQUEST['shop'])) && (isset($_REQUEST['code'])))
+ if((isset($_REQUEST['shop'])) && (isset($_REQUEST['code'])) && $_REQUEST['shop']!='' && $_REQUEST['code']!='' )
     {
        echo $_SESSION['shop']=$_REQUEST['shop'];
 		$_SESSION['code']=$_REQUEST['code'];
