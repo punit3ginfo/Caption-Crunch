@@ -1,7 +1,5 @@
 <?php 
 	session_start();
-echo "ues i am here....";
-exit();
 	require __DIR__.'/vendor/autoload.php';
 	use phpish\shopify;
 	require __DIR__.'/conf.php'; //Configuration
@@ -43,6 +41,7 @@ $server_output = curl_exec ($ch); */   //execute and store server output
 	{
 		# Making an API request can throw an exception
 		$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
+		print_r($products);
 		foreach($products as $singleproduct)
 		{
 			$title=$singleproduct['title']; // Product Title
