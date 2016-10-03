@@ -21,7 +21,7 @@
 		//print_r($products);
 		 $products = $shopify('GET  /admin/products.json?collection_id='.$_REQUEST['colid'], array('published_status'=>'published'));
 		print_r($products);
-		exit();
+		exit;
 		foreach($products as $singleproduct)
 		{
 			$title=$singleproduct['title']; // Product Title
