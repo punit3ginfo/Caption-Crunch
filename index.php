@@ -6,27 +6,14 @@ require __DIR__.'/connection.php'; //DB connectivity
 require __DIR__.'/vendor/autoload.php';
         use phpish\shopify;
 // Required File END...........
-//error_reporting(E_ALL);
-//ini_set('display_errors', 1);
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 // require __DIR__.'/get_products.php'; //GET PRODUCTS
-echo "<script>alert(1)</script>";
-echo "<script>alert('{$_REQUEST['shop']}')</script>";
-$_SESSION['shop']=$_REQUEST['shop'];
-echo "<script>alert('{$_SESSION["shop"]}')</script>";
- $_SESSION['code']=$_REQUEST['code'];
-    if((isset($_REQUEST['shop'])) && (isset($_REQUEST['code'])))
+ if((isset($_REQUEST['shop'])) && (isset($_REQUEST['code'])))
     {
        echo $_SESSION['shop']=$_REQUEST['shop'];
 		$_SESSION['code']=$_REQUEST['code'];
     }
-		echo '<pre>';
-		print_r($_SESSION);
-		echo '</pre>';
-           echo $_SESSION['shop'];
-         echo "fifth part12345";
-  
-	
-
 ?>
 
 <head>
