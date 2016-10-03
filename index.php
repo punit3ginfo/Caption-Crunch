@@ -6,6 +6,8 @@ require __DIR__.'/connection.php'; //DB connectivity
 //error_reporting(E_ALL);
 //ini_set('display_errors', 1);
 // require __DIR__.'/get_products.php'; //GET PRODUCTS
+$_SESSION['shop']=$_REQUEST['shop'];
+ $_SESSION['code']=$_REQUEST['code'];
 ?>
 
 <head>
