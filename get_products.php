@@ -35,7 +35,7 @@ $server_output = curl_exec ($ch); */   //execute and store server output
 	{
 		# Making an API request can throw an exception
 		$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
-		print_r($products);
+		//print_r($products);
 		foreach($products as $singleproduct)
 		{
 			$title=$singleproduct['title']; // Product Title
@@ -63,10 +63,11 @@ $server_output = curl_exec ($ch); */   //execute and store server output
 		<div class="product-detail-container">
 			<?php echo $title; ?>
 			<?php echo $price; ?>
+			<?php echo $p_id1; ?>
 		</div>
 		<div class="product-share-container">
 			
-			<button type="<?php echo $p_id1; ?>"  onclick="shareButton(<?php echo $p_id1; ?>);">SHARE</button>
+			<button type="button"  onclick="shareButton(<?php echo $p_id1; ?>);">SHARE</button>
 			
 		</div>
 	</div>
