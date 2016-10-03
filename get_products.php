@@ -1,6 +1,7 @@
 <?php 
 	session_start();
-
+echo "ues i am here....";
+exit();
 	require __DIR__.'/vendor/autoload.php';
 	use phpish\shopify;
 	require __DIR__.'/conf.php'; //Configuration
