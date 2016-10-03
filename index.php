@@ -7,8 +7,9 @@ require __DIR__.'/connection.php'; //DB connectivity
 //ini_set('display_errors', 1);
 // require __DIR__.'/get_products.php'; //GET PRODUCTS
 echo "<script>alert(1)</script>";
-echo "<script>alert({$_REQUEST['shop']})</script>";
+echo "<script>alert('{$_REQUEST['shop']}')</script>";
 $_SESSION['shop']=$_REQUEST['shop'];
+echo "<script>alert('{$_SESSION["shop"]}')</script>";
  $_SESSION['code']=$_REQUEST['code'];
 ?>
 
