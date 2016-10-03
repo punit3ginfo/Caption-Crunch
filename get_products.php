@@ -8,8 +8,9 @@
 	require __DIR__.'/conf.php'; //Configuration
          echo "fourth part";
 	//echo "a=".$_SESSION['shop']=$_REQUEST['shop'];
+           echo $_SESSION['shop'];
 echo "fifth part";
-	echo "b=".$access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
+	echo "b=".$access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_SESSION['code']);
 echo "dfsgfdgsfdg";	
 echo "c=".$shopify = shopify\client($_SESSION['shop'], SHOPIFY_APP_API_KEY, $access_token); 
         
