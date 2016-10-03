@@ -2,6 +2,8 @@
 
 // Required File Start.........
 require __DIR__.'/connection.php'; //DB connectivity
+require __DIR__.'/vendor/autoload.php';
+        use phpish\shopify;
 // Required File END...........
 //error_reporting(E_ALL);
 //ini_set('display_errors', 1);
@@ -12,6 +14,17 @@ $_SESSION['shop']=$_REQUEST['shop'];
 echo "<script>alert('{$_SESSION["shop"]}')</script>";
  $_SESSION['code']=$_REQUEST['code'];
 //require __DIR__.'/conf.php'; //Configuration
+
+       echo "a=".$_SESSION['shop']=$_REQUEST['shop'];
+		$_SESSION['code']=$_REQUEST['code'];
+		echo '<pre>';
+		print_r($_SESSION);
+		echo '</pre>';
+           echo $_SESSION['shop'];
+         echo "fifth part123";
+echo "b=".$access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_SESSION['code']);
+echo "dfsgfdgsfdg";	
+
 ?>
 
 <head>
@@ -42,7 +55,7 @@ echo "<script>alert('{$_SESSION["shop"]}')</script>";
                   	</span>
               	</div>
             </a>
-            <a class="sidebar-link" href="/?page=collections&shop=<?php echo $_SESSION['shop']?>&code=<?php echo $_SESSION['code']?>">
+            <a class="sidebar-link" href="/?page=collections&shop=<?php echo $_SESSION['shop']?>&access_token=<?php echo $access_token ?>">
             	<div class="sidebar-nav-container">
                   	<span class="sidebar-span">
                       <i style="font-size: 20px;" class="fa fa-sitemap" aria-hidden="true"></i><br>
