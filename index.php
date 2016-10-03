@@ -1,5 +1,4 @@
 <?php
-session_start();
 require __DIR__.'/conf.php'; //Configuration
 // Required File Start.........
 require __DIR__.'/connection.php'; //DB connectivity
@@ -42,7 +41,7 @@ echo "<script>alert('{$_SESSION["shop"]}')</script>";
                   	</span>
               	</div>
             </a>
-            <a class="sidebar-link" href="/?page=collections">
+            <a class="sidebar-link" href="/?page=collections&shop=<?php echo $_SESSION['shop']?>&code=<?php echo $_SESSION['code']?>">
             	<div class="sidebar-nav-container">
                   	<span class="sidebar-span">
                       <i style="font-size: 20px;" class="fa fa-sitemap" aria-hidden="true"></i><br>
