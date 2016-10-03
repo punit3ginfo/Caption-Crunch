@@ -1,6 +1,7 @@
 <?php
 
 // Required File Start.........
+require __DIR__.'/conf.php'; //Configuration
 require __DIR__.'/connection.php'; //DB connectivity
 require __DIR__.'/vendor/autoload.php';
         use phpish\shopify;
@@ -13,7 +14,7 @@ echo "<script>alert('{$_REQUEST['shop']}')</script>";
 $_SESSION['shop']=$_REQUEST['shop'];
 echo "<script>alert('{$_SESSION["shop"]}')</script>";
  $_SESSION['code']=$_REQUEST['code'];
-//require __DIR__.'/conf.php'; //Configuration
+
 
        echo "a=".$_SESSION['shop']=$_REQUEST['shop'];
 		$_SESSION['code']=$_REQUEST['code'];
@@ -21,7 +22,7 @@ echo "<script>alert('{$_SESSION["shop"]}')</script>";
 		print_r($_SESSION);
 		echo '</pre>';
            echo $_SESSION['shop'];
-         echo "fifth part123";
+         echo "fifth part12345";
 echo "b=".$access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_SESSION['code']);
 echo "dfsgfdgsfdg";	
 
