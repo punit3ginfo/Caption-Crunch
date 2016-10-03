@@ -554,3 +554,191 @@ a:hover {
 .share-history-button:hover {
 	color: #65D35B;
 }
+
+/* --------------- BUILDER PAGE ---------------------- */
+
+.caption-header-container {
+    width: auto;
+    height: 100%;
+    margin: auto;
+  	height: 100%;
+}
+
+.builder-title-header-container {
+	width: auto;
+  	display: inline-block;
+  	margin-left: 50px;
+}
+
+.caption-title-text {
+	line-height: 80px;
+	font-family: HelveticaNeue-Bold;
+	font-size: 16px;
+	color: #4D595C;
+	letter-spacing: 0.82px;
+	text-transform: uppercase;
+  	margin-right: 20px;
+}
+
+.caption-title-text-box {
+	width: auto;
+  	height: 40px;
+  	border: 0px;
+  	border-bottom: 1px solid #65D35B;
+  	font-family: HelveticaNeue-Bold;
+    font-size: 16px;
+    color: #4D595C;
+    letter-spacing: 0.82px;
+    text-transform: uppercase;
+}
+
+.caption-title-text-box::-webkit-input-placeholder {
+	color: #666;
+  	font-family: HelveticaNeue-Bold;
+    font-size: 16px;
+    color: #4D595C;
+    letter-spacing: 0.82px;
+    text-transform: uppercase;
+}
+
+.builder-save-button-container {
+	float: right;
+  	width: auto;
+  	margin-right: 50px;
+  	height: 100%;
+  	display: flex;
+    align-items: center;
+}
+
+.save-button {
+	border: 1px solid #65D35B;
+  	padding: 11px 20px;
+  	font-family: HelveticaNeue-Bold;
+    font-size: 16px;
+    color: #65D35B;
+    letter-spacing: 0.82px;
+    text-transform: uppercase;
+  	background: white;
+}
+
+.save-button:hover {
+	border: 1px solid #65D35B;
+	background: #65D35B;
+    color: white;
+  	text-decoration: none;
+}
+
+
+.builder-main-conatiner {
+	width: 100%;
+  	background-color: white;
+  	box-shadow: 1px -2px 17px 0px rgba(0,0,0,0.14);
+  	padding: 15px 30px;
+  	margin-bottom: 20px;
+}
+
+.builder-main-clearfix {
+	width: 100%;
+  	height: auto;
+	border-bottom: 1px solid #eee;
+    padding: 20px 0px;
+}
+
+.builder-conditions-container {
+	width: 100%;
+  	height: 46px;
+  	display: flex;
+  	justify-content: space-between;
+}
+
+.conditions-title {
+	line-height: 46px;
+  	font-family: HelveticaNeue-Bold;
+    font-size: 16px;
+    color: #4D595C;
+    letter-spacing: 0.82px;
+    text-transform: uppercase;
+  	width: 100%;
+}
+
+.conditions-title:hover {
+	color: #65D35B;
+}
+
+.condition-allorany-clearfix {
+	width: 100%;
+  	height: 46px;
+  	display: flex;
+  	justify-content: space-between;
+  	line-height: 46px;
+}
+
+.condition-allorany-container-s {
+	width: 31%;
+  	height: 46px;
+  	text-align: center;
+}
+
+.conditions-container-s {
+  	width: 31%;
+  	height: 46px;
+}
+
+.condition-select {
+	width: 100%;
+  	height: 46px;
+}
+
+.select-style {
+    border: 1px solid #666;
+    overflow: hidden;
+    background: white url("https://cdn.shopify.com/s/files/1/1484/1256/files/arrow-down.png?9258385709659661406") no-repeat 95% 50%;
+  	background-size: 16px 16px;
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+  	margin-left: 11px;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+.select-style:hover {
+  	border: 1px solid #65D35B;
+}
+
+.condition-input {
+	width: 100%;
+  	height: 46px;
+  	padding-left: 10px;
+  	border: 1px solid #666;
+}
+
+.condition-input:hover {
+  	border: 1px solid #65D35B;
+}
+
+.add-condition-button {
+	border: 1px solid #666;
+  	padding: 11px 20px;
+  	font-family: HelveticaNeue-Bold;
+    font-size: 16px;
+    color: #666;
+    letter-spacing: 0.82px;
+    text-transform: uppercase;
+  	background: white;
+  	width: 100%;
+}
+
+.add-condition-button:hover {
+    color: white;
+  	background: #666;
+}
