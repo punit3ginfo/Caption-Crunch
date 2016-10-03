@@ -12,13 +12,20 @@ session_start();
 	$shop=$_REQUEST['shop'];
 	//$access_token = shopify\access_token($shop, SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $code);
 	$shopify = shopify\client($shop, SHOPIFY_APP_API_KEY, $access_token); 
-
+echo "a-".$path= "/admin/products/'$pid'.json";
+		echo "b-".$path= '/admin/products/"$pid".json';
+		echo "c-".$path= "/admin/products/'$pid'.json";
+		echo "d-".$path= "/admin/products/'$pid'.json";
+		echo "e-".$path= "/admin/products/'".$pid."'.json";
+		echo "f-".$path= '/admin/products/"'.$pid.'".json';
      
 try
 	{
 		
 		# Making an API request can throw an exception
-		$product = $shopify('PUT /admin/products/"'.$pid.'".json', array(), array
+		
+		
+		$product = $shopify('PUT /admin/products/'$pid'.json', array(), array
 		(
 			'product' => array
 			(
