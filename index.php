@@ -1,4 +1,5 @@
 <?php
+session_start();
 require __DIR__.'/conf.php'; //Configuration
 // Required File Start.........
 require __DIR__.'/connection.php'; //DB connectivity
