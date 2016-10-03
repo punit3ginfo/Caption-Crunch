@@ -21,7 +21,7 @@ try
 		
 	       $pidii = $pid.'.json';
 		
-		$product = $shopify('PUT /admin/products/7901168776.json', array(), array
+		$product = $shopify('PUT /admin/products/'.$pidii, array(), array
 		(
 			'product' => array
 			(
