@@ -417,15 +417,13 @@ body {
 }
 
 .product-grid-overflow-container {
-  width: calc(100% - 30px);
-  height: 100%;
-  overflow-y: scroll;
+  box-sizing: border-box;
+  height: 500px;
   overflow-x: hidden;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 15px;
-  padding-bottom: 85px;
+  overflow-y: scroll;
+  padding: 15px 15px 85px;
   position: relative;
+  width: 100%;
 }
 
 .product-card-clearfix {
@@ -436,16 +434,18 @@ body {
   	padding-right: 5px;
   	height: 100%;
   	max-height: 400px;
+	box-sizing: border-box;
 }
 
 .product-card-container {
-	box-shadow: 1px -2px 17px 0px rgba(0,0,0,0.14);
-  	padding: 20px;
- 	position: relative;
-  	background: white;
-  	width: 100%;
-  	height: 100%;
-  	text-align: center;
+  background: white none repeat scroll 0 0;
+  box-shadow: 1px -2px 17px 0 rgba(0, 0, 0, 0.14);
+  box-sizing: border-box;
+  height: 100%;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  width: 100%;
 }
 
 /* ------------ Collections Header --------------- */
