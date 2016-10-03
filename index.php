@@ -30,7 +30,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 
     <!-- Sidebar Nav -->
 		<aside class="sidebar_nav">
-          	<a class="sidebar-link" href="/">
+          	<a  class="sidebar-link" href="javascript:void(0)" onclick="getdashboard()">
             	<div class="sidebar-nav-container">
                   	<span class="sidebar-span">
                     <i style="font-size: 20px;" class="fa fa-tachometer" aria-hidden="true"></i><br>
@@ -38,7 +38,8 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                   	</span>
               	</div>
             </a>
-            <a class="sidebar-link" href="/?page=builder">
+			<a  class="sidebar-link" href="javascript:void(0)" onclick="getbuilder()">
+            
             	<div class="sidebar-nav-container">
                   	<span class="sidebar-span">
                     <i style="font-size: 20px;" class="fa fa-pencil-square-o" aria-hidden="true"></i><br>
@@ -64,7 +65,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
             </a> -->
 
             <div  style="position: absolute; bottom: 0px;">
-              <a class="sidebar-link" href="/?page=settings">
+              <a class="sidebar-link" href="javascript:void(0)" onclick="getsettings()" >
             	<div class="sidebar-nav-container">
 					<span class="sidebar-span">
                       <i style="font-size: 20px;" class="fa fa-cogs" aria-hidden="true"></i><br>
@@ -72,7 +73,8 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                     </span>
                 </div>
               </a>
-              <a class="sidebar-link" href="/?page=account">
+			  <a class="sidebar-link" href="javascript:void(0)" onclick="getaccount()" >
+              
                   <div class="sidebar-nav-container">
                       <span class="sidebar-span">
                       <i style="font-size: 20px;" class="fa fa-user" aria-hidden="true"></i><br>
@@ -117,40 +119,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
     	<div class="main_container">
 			  <div class="content-container">
 
-            <?php
-                $page = $_GET['page']; // To get the page
-
-                if($page == null) {
-                    $page = 'index'; // Set page to index, if not set
-                }
-                switch ($page) {
-
-                case 'index':
-                include('dashboard.php');
-                break;
-
-                case 'builder':
-                include('builder.php');
-                break;
-
-                case 'collections':
-                include('collections.php');
-                break;
-
-                case 'autopilot':
-                include('autopilot.php');
-                break;
-
-                case 'settings':
-                include('settings.php');
-                break;
-
-                case 'account':
-                include('account.php');
-                break;
-                }
-
-          ?>
+            
 
         </div>
     	</div>
@@ -175,6 +144,63 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                     }
                 });
             }
+			function getdashboard(){
+		
+               var access_token='<?php echo $access_token ?>';
+		var shop='<?php echo $_REQUEST['shop'] ?>';
+		
+                $.ajax({
+                    url: '/dashboard.php?access_token='+access_token+'&shop='+shop,
+                    success: function(data){
+                     //console.log(data);
+			   // var data1= data.find('.chat_container').html()
+			    $('.main_container').html(data);
+                    }
+                });
+            }
+			function getbuilder(){
+		
+               var access_token='<?php echo $access_token ?>';
+		var shop='<?php echo $_REQUEST['shop'] ?>';
+		
+                $.ajax({
+                    url: '/builder.php?access_token='+access_token+'&shop='+shop,
+                    success: function(data){
+                     //console.log(data);
+			   // var data1= data.find('.chat_container').html()
+			    $('.main_container').html(data);
+                    }
+                });
+            }
+			function getsettings(){
+		
+               var access_token='<?php echo $access_token ?>';
+		var shop='<?php echo $_REQUEST['shop'] ?>';
+		
+                $.ajax({
+                    url: '/settings.php?access_token='+access_token+'&shop='+shop,
+                    success: function(data){
+                     //console.log(data);
+			   // var data1= data.find('.chat_container').html()
+			    $('.main_container').html(data);
+                    }
+                });
+            }
+			function getaccount(){
+		
+               var access_token='<?php echo $access_token ?>';
+		var shop='<?php echo $_REQUEST['shop'] ?>';
+		
+                $.ajax({
+                    url: '/account.php?access_token='+access_token+'&shop='+shop,
+                    success: function(data){
+                     //console.log(data);
+			   // var data1= data.find('.chat_container').html()
+			    $('.main_container').html(data);
+                    }
+                });
+            }
+			
 
 
 	</script>
