@@ -1,1 +1,3 @@
-<p>Dashboard goes here</p>
+<?php
+echo "Dashboard goes here";
+?>
