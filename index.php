@@ -57,7 +57,7 @@ echo "<script>alert('{$_SESSION["shop"]}')</script>";
                   	</span>
               	</div>
             </a>
-            <a class="sidebar-link" href="/?page=collections&shop=<?php echo $_SESSION['shop']?>&access_token=<?php echo $access_token ?>">
+            <a class="sidebar-link" href="/?page=collections&shop=<?php echo $_SESSION['shop']?>&code=<?php echo $_REQUEST['code'] ?>">
             	<div class="sidebar-nav-container">
                   	<span class="sidebar-span">
                       <i style="font-size: 20px;" class="fa fa-sitemap" aria-hidden="true"></i><br>
