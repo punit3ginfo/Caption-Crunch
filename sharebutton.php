@@ -20,8 +20,8 @@ try
 		# Making an API request can throw an exception
 		
 		echo $pidii = $pid.'.json';
-		exit();
-		$product = $shopify("PUT /admin/products/.$pid", array(), array
+		
+		$product = $shopify("PUT /admin/products/.echo $pidii, array(), array
 		(
 			'product' => array
 			(
