@@ -27,8 +27,8 @@
                                     </div>
                                 </a>
                                 <?php
-                               // echo "List collections here";
-				require __DIR__.'/get_products.php'; //GET PRODUCTS
+                                echo "List collections here";
+				
                                 ?>
 
                              <!-- Collection Card -->
@@ -78,7 +78,8 @@
   <div class="product-grid-container">
       <div  class="product-grid-overflow-container">
         <?php
-        echo "Product's go here"
+       // echo "Product's go here"
+       require __DIR__.'/get_products.php'; //GET PRODUCTS
         ?>
       </div>
   </div>
