@@ -63,8 +63,9 @@ $server_output = curl_exec ($ch); */   //execute and store server output
 			?>
 
 <!-- HTML Content for Product  START      -->
+ <div class="product-card-clearfix">
 	<div class="product-card-container">
-      		<div class="product-card-image-container">
+		<div class="product-card-image-container">
 			<img src="<?php echo $src; ?>" alt="<?php echo $title; ?>" height="292" width="192">
 		</div>
 		       
