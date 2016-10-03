@@ -51,7 +51,7 @@ try
       			<div class="product-card-details-container">
                   	<span class="product-title-text"><?php echo $title; ?></span>
                   	<div class="product-card-price-container">
-                  		<span class="product-card-price-text" style="margin-right: 3px;"><?php echo $price; ?></span><span class="product-card-price-text" style="font-size: 14px; color: #888;"><?php echo $price; ?></span>
+                  		<span class="product-card-price-text" style="margin-right: 3px;">$<?php echo $price; ?></span><span class="product-card-price-text" style="font-size: 14px; color: #888;">$<?php echo $price; ?></span>
                   	</div>
       			</div>
       		</div>
