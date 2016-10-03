@@ -7,6 +7,7 @@
 	{
 		# Making an API request can throw an exception
 		$collections = $shopify('GET /admin/custom_collections.json', array('published_status'=>'published'));
+		$collections .= $shopify('GET /admin/smart_collections.json', array('published_status'=>'published'));
 
 		print_r($collections);
 		foreach($collections as $singlecollection)
@@ -15,7 +16,7 @@
 			$id=$singlecollection['id']; // collection id
 			$handle=$singlecollection['handle']; // collection id ?>
 			
-			<a href="<?php echo $handle;  ?>">                 
+			<a href="javascript:void(0)" onclick="getcolproduct(<?php echo $id;?>,<?php echo $handle;?>)">                 
                                     <div class="chat_select_container">
                                         <div class="chat_personal_info_container">
                                             <div class="chat_user_info">
