@@ -7,13 +7,12 @@ session_start();
 	require __DIR__.'/conf.php'; //Configuration
 	$_SESSION['shop']="share-tag.myshopify.com";
         echo "edffsdfsdf".$pid=$_REQUEST['pid'];
-        console.log($pid);
+        
  	$access_token=$_REQUEST['access_token'];
 	$shop=$_REQUEST['shop'];
 	//$access_token = shopify\access_token($shop, SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $code);
 	$shopify = shopify\client($shop, SHOPIFY_APP_API_KEY, $access_token); 
-echo "a-".$path= "/admin/products/'$pid'.json";
-		echo "b-".$path= '/admin/products/"$pid".json';
+                  echo "a-".$path= "/admin/products/'$pid'.json";
 		echo "c-".$path= "/admin/products/'$pid'.json";
 		echo "d-".$path= "/admin/products/'$pid'.json";
 		echo "e-".$path= "/admin/products/'".$pid."'.json";
