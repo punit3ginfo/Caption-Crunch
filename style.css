@@ -821,3 +821,7 @@ a:hover {
     color: white;
   	background: #666;
 }
+
+form {
+    margin-bottom: 0px;
+}

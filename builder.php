@@ -104,7 +104,7 @@
 
                    </div>
 				  <!-- TEMPLATE -->
-                   <div class="builder-main-conatiner" style="margin-bottom: 95px; height: auto;">
+                   <div class="builder-main-conatiner" style="height: auto;">
                     <div class="builder-main-clearfix" style="padding-top: 5px;">
                       	<div class="builder-conditions-container">
                           	<span class="conditions-title conditions-title-hover">Template<i class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 46px;"></i></span>
