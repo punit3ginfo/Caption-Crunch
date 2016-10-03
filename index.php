@@ -11,7 +11,7 @@ echo "<script>alert('{$_REQUEST['shop']}')</script>";
 $_SESSION['shop']=$_REQUEST['shop'];
 echo "<script>alert('{$_SESSION["shop"]}')</script>";
  $_SESSION['code']=$_REQUEST['code'];
-require __DIR__.'/conf.php'; //Configuration
+//require __DIR__.'/conf.php'; //Configuration
 ?>
 
 <head>
