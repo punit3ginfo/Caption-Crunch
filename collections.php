@@ -80,7 +80,7 @@
         <?php
 						    
        // echo "Product's go here"
-       //require __DIR__.'/get_products.php'; //GET PRODUCTS
+       require __DIR__.'/get_products.php'; //GET PRODUCTS
         ?>
       </div>
   </div>
