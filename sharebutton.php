@@ -6,7 +6,7 @@ session_start();
 	use phpish\shopify;
 	require __DIR__.'/conf.php'; //Configuration
 	$_SESSION['shop']="share-tag.myshopify.com";
-        echo "edffsdfsdf".$pid=$_REQUEST['pid'];
+        $pid=$_REQUEST['pid'];
         
  	$access_token=$_REQUEST['access_token'];
 	$shop=$_REQUEST['shop'];
@@ -19,7 +19,7 @@ try
 		
 		# Making an API request can throw an exception
 		
-		echo $pid=$pid.'.json';
+		echo $pidii = $pid.'.json';
 		exit();
 		$product = $shopify("PUT /admin/products/.$pid", array(), array
 		(
