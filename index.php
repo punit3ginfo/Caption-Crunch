@@ -162,7 +162,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 </div>
 <script>
 	function getproducts(){
-		alert(2);
+		alert(3);
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 		
@@ -170,8 +170,8 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                     url: '/collections.php?access_token='+access_token+'&shop='+shop,
                     success: function(data){
                      //console.log(data);
-			    var data1= data.find('.chat_container').html()
-			    $('.main_container').html(data1);
+			   // var data1= data.find('.chat_container').html()
+			    $('.main_container').html(data);
                     }
                 });
             }
