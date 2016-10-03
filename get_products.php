@@ -2,7 +2,9 @@
 	session_start();
          echo "first part";
 	require __DIR__.'/vendor/autoload.php';
+        echo "second part";
 	use phpish\shopify;
+        echo "third part";
 	require __DIR__.'/conf.php'; //Configuration
 	$_SESSION['shop']=$_REQUEST['shop'];
 	$access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
