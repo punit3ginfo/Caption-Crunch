@@ -1,20 +1,11 @@
 <?php 
-	
-         //echo "first part123";
-	
+
      require __DIR__.'/vendor/autoload.php';
-        use phpish\shopify;
-      $access_token=$_REQUEST['access_token'];
+     use phpish\shopify;
+     $access_token=$_REQUEST['access_token'];
+     $shopify = shopify\client($_REQUEST['shop'], SHOPIFY_APP_API_KEY, $access_token ); 
 
-        $shopify = shopify\client($_REQUEST['shop'], SHOPIFY_APP_API_KEY, $access_token ); 
-echo "123";
 ?>
-
-
-
-
-
-   
 
 <?php
 /* Share Tag Code Satrt ------------------------------------------------------------------------*/
@@ -44,7 +35,6 @@ $server_output = curl_exec ($ch); */   //execute and store server output
 	{
 		# Making an API request can throw an exception
 		$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
-		//print_r($products);
 		foreach($products as $singleproduct)
 		{
 			$title=$singleproduct['title']; // Product Title
@@ -115,7 +105,5 @@ $server_output = curl_exec ($ch); */   //execute and store server output
                     }
                 });
             }
-
-
 	</script>
 
