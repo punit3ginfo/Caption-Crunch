@@ -2,7 +2,7 @@
 	
          echo "first part";
 	require __DIR__.'/vendor/autoload.php';
-        echo "second part";
+        echo "second part1213";
 	use phpish\shopify;
         echo "third part";
 	require __DIR__.'/conf.php'; //Configuration
