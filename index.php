@@ -28,7 +28,7 @@ require __DIR__.'/connection.php'; //DB connectivity
                   	</span>
               	</div>
             </a>
-            <a class="sidebar-link" href="/pages/builder">
+            <a class="sidebar-link" href="/?page=builder">
             	<div class="sidebar-nav-container">
                   	<span class="sidebar-span">
                     <i style="font-size: 20px;" class="fa fa-pencil-square-o" aria-hidden="true"></i><br>
@@ -44,17 +44,17 @@ require __DIR__.'/connection.php'; //DB connectivity
                     </span>
                 </div>
             </a>
-            <a class="sidebar-link" href="/">
+            <!-- <a class="sidebar-link" href="/?page=autopilot">
             	<div class="sidebar-nav-container">
 					<span class="sidebar-span">
                       <i style="font-size: 20px;" class="fa fa-paper-plane-o" aria-hidden="true"></i><br>
                       Autopilot
                     </span>
                 </div>
-            </a>
+            </a> -->
 
             <div  style="position: absolute; bottom: 0px;">
-              <a class="sidebar-link" href="/">
+              <a class="sidebar-link" href="/?page=settings">
             	<div class="sidebar-nav-container">
 					<span class="sidebar-span">
                       <i style="font-size: 20px;" class="fa fa-cogs" aria-hidden="true"></i><br>
@@ -62,7 +62,7 @@ require __DIR__.'/connection.php'; //DB connectivity
                     </span>
                 </div>
               </a>
-              <a class="sidebar-link" href="/">
+              <a class="sidebar-link" href="/?page=account">
                   <div class="sidebar-nav-container">
                       <span class="sidebar-span">
                       <i style="font-size: 20px;" class="fa fa-user" aria-hidden="true"></i><br>
@@ -119,8 +119,24 @@ require __DIR__.'/connection.php'; //DB connectivity
                 include('dashboard.php');
                 break;
 
+                case 'builder':
+                include('builder.php');
+                break;
+
                 case 'collections':
                 include('collections.php');
+                break;
+
+                case 'autopilot':
+                include('autopilot.php');
+                break;
+
+                case 'settings':
+                include('settings.php');
+                break;
+
+                case 'account':
+                include('account.php');
                 break;
                 }
 
