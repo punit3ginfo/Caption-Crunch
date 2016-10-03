@@ -4,7 +4,8 @@
 	require __DIR__.'/conf.php'; //Configuration
      require __DIR__.'/vendor/autoload.php';
         use phpish\shopify;
-      $access_token=$_REQUEST['access_token'];
+      //$access_token=$_REQUEST['access_token'];
+ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
         $shopify = shopify\client($_REQUEST['shop'], SHOPIFY_APP_API_KEY, $access_token); 
 echo "123";
 ?>
