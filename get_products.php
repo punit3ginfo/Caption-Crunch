@@ -4,7 +4,8 @@
 	require __DIR__.'/vendor/autoload.php';
         use phpish\shopify;
        require __DIR__.'/conf.php'; //Configuration
-       //echo "a=".$_SESSION['shop']=$_REQUEST['shop'];
+       echo "a=".$_SESSION['shop']=$_REQUEST['shop'];
+		$_SESSION['code']=$_REQUEST['code'];
 		echo '<pre>';
 		print_r($_SESSION);
 		echo '</pre>';
