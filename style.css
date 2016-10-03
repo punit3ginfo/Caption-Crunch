@@ -716,6 +716,10 @@ a:hover {
   	margin-bottom: 20px;
 }
 
+.builder-main-conatiner:last-child {
+  	margin-bottom: 0px;
+}
+
 .builder-main-clearfix {
 	width: 100%;
   	height: auto;
