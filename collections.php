@@ -12,20 +12,7 @@
 
                           	<!-- Collection Card -->
 
-                          		<a href="{{ collection.url }}">
-                                    <div class="chat_select_container" >
-                                        <div class="chat_personal_info_container">
-                                            <div class="chat_user_info">
-                                                <span class="collection_list_text">COLLECTION TITLE</span>
-                                            </div>
-                                            <div class="notification-container">
-                                                <div class="chat_notification_container">
-                                                    <span class="notif_number">45</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
+                          		
                                 <?php
 						    
        				// echo "Product's go here"
