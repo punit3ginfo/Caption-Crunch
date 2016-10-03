@@ -27,9 +27,10 @@
                                     </div>
                                 </a>
                                 <?php
-                                echo "List collections here";
-				
-                                ?>
+						    
+       				// echo "Product's go here"
+       				require __DIR__.'/get_collectionlist.php'; //GET PRODUCTS
+        				?>
 
                              <!-- Collection Card -->
 
