@@ -4,7 +4,7 @@ session_start();
 require __DIR__.'/conf.php'; //Configuration
 require __DIR__.'/connection.php'; //DB connectivity
 require __DIR__.'/vendor/autoload.php';
-        use phpish\shopify;
+use phpish\shopify;
 // Required File END...........
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
