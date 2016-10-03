@@ -14,7 +14,7 @@ echo "<script>alert('{$_REQUEST['shop']}')</script>";
 $_SESSION['shop']=$_REQUEST['shop'];
 echo "<script>alert('{$_SESSION["shop"]}')</script>";
  $_SESSION['code']=$_REQUEST['code'];
-    if(isset($_REQUEST['shop']))
+    if((isset($_REQUEST['shop'])) && (isset($_REQUEST['code'])))
     {
        echo $_SESSION['shop']=$_REQUEST['shop'];
 		$_SESSION['code']=$_REQUEST['code'];
