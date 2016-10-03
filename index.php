@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 // Required File Start.........
 require __DIR__.'/connection.php'; //DB connectivity
 // Required File END...........
