@@ -98,7 +98,7 @@ $server_output = curl_exec ($ch); */   //execute and store server output
 		
                var access_token='<?php echo $access_token ?>';
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
-	       var pid='<?php echo $p_id;  ?>';
+	       var pid='<?php echo $p_id1;  ?>';
 		
                 $.ajax({
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop,
