@@ -36,7 +36,7 @@ require __DIR__.'/connection.php'; //DB connectivity
                   	</span>
               	</div>
             </a>
-            <a class="sidebar-link" href="index.php/?page=collections">
+            <a class="sidebar-link" href="/?page=collections">
             	<div class="sidebar-nav-container">
                   	<span class="sidebar-span">
                       <i style="font-size: 20px;" class="fa fa-sitemap" aria-hidden="true"></i><br>
