@@ -4,7 +4,7 @@
      use phpish\shopify;
      $access_token=$_REQUEST['access_token'];
      $shopify = shopify\client($_REQUEST['shop'], SHOPIFY_APP_API_KEY, $access_token ); 
-
+echo $_REQUEST['colid'];
 ?>
 
 <?php
@@ -18,8 +18,8 @@
 			//alert(1);
 		$products = $shopify('GET /admin/products.json?collection_id='.$_REQUEST['colid'], array('published_status'=>'published'));
 		}
-		else {
-			alert(2);
+		if($_REQUEST['colid']=='') {
+			//alert(2);
 	       $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		}
 		//print_r($products);
