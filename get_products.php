@@ -1,7 +1,7 @@
 <?php 
 	session_start();
          echo "first part";
-	//require __DIR__.'/vendor/autoload.php';
+	require __DIR__.'/vendor/autoload.php';
         echo "second part";
 	use phpish\shopify;
         echo "third part";
