@@ -15,6 +15,7 @@ echo $_REQUEST['code'];
        echo $_SESSION['shop']=$_REQUEST['shop'];
 		$_SESSION['code']=$_REQUEST['code'];
     }
+$access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
 ?>
 
 <head>
@@ -45,7 +46,7 @@ echo $_REQUEST['code'];
                   	</span>
               	</div>
             </a>
-            <a class="sidebar-link" href="/?page=collections&shop=<?php echo $_SESSION['shop']?>&code=<?php echo $_SESSION['code'] ?>">
+            <a class="sidebar-link" href="javascript:void(0)" onclick="getproducts()" >
             	<div class="sidebar-nav-container">
                   	<span class="sidebar-span">
                       <i style="font-size: 20px;" class="fa fa-sitemap" aria-hidden="true"></i><br>
@@ -159,5 +160,21 @@ echo $_REQUEST['code'];
     <!-- /.Page Container -->
 
 </div>
+<script>
+	function getproducts(){
+		
+               var access_token='<?php echo $access_token ?>';
+		var shop='<?php echo $_REQUEST['shop'] ?>';
+		
+                $.ajax({
+                    url: '/collections.php?access_token='+access_token+'&shop='+shop,
+                    success: function(data){
+                     console.log(data);
+                    }
+                });
+            }
+
+
+	</script>
 
 </body>
