@@ -63,7 +63,7 @@ $server_output = curl_exec ($ch); */   //execute and store server output
 		<div class="product-detail-container">
 			<?php echo $title; ?>
 			<?php echo $price; ?>
-			<?php echo $p_id1; ?>
+			
 		</div>
 		<div class="product-share-container">
 			
