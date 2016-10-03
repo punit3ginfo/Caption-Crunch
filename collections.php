@@ -27,7 +27,8 @@
                                     </div>
                                 </a>
                                 <?php
-                                echo "List collections here";
+                               // echo "List collections here";
+				require __DIR__.'/get_products.php'; //GET PRODUCTS
                                 ?>
 
                              <!-- Collection Card -->
