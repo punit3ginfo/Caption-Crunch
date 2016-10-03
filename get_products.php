@@ -79,6 +79,7 @@ $server_output = curl_exec ($ch); */   //execute and store server output
 			
 		</div>
 	</div>
+	 </div>
 <!-- HTML Content for Product END    -->
 
 	<?php
