@@ -7,8 +7,8 @@
 	{
 		# Making an API request can throw an exception
 		$collections = $shopify('GET /admin/custom_collections.json', array('published_status'=>'published'));
-		$collections .= $shopify('GET /admin/smart_collections.json', array('published_status'=>'published'));
-
+		$collections1 = $shopify('GET /admin/smart_collections.json', array('published_status'=>'published'));
+         $collections=array_merge($collections, $collections1);
 		print_r($collections);
 		foreach($collections as $singlecollection)
 		{
