@@ -40,7 +40,7 @@ $server_output = curl_exec ($ch); */   //execute and store server output
 		{
 			$title=$singleproduct['title']; // Product Title
 			$variants=$singleproduct['variants'];
-			$p_id=$singleproduct['id'];
+			echo $p_id1=$singleproduct['id'];
 			
 			foreach($variants as $variants){
 				$price=$variants['price']; // Product PRice
@@ -66,7 +66,7 @@ $server_output = curl_exec ($ch); */   //execute and store server output
 		</div>
 		<div class="product-share-container">
 			
-			<button type="button"  onclick="shareButton(<?php echo $p_id; ?>);">SHARE</button>
+			<button type="<?php echo $p_id1; ?>"  onclick="shareButton(<?php echo $p_id1; ?>);">SHARE</button>
 			
 		</div>
 	</div>
