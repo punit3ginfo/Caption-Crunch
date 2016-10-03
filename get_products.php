@@ -1,9 +1,7 @@
 <?php 
 	
-         echo "first part";
-	require __DIR__.'/vendor/autoload.php';
-        use phpish\shopify;
-       require __DIR__.'/conf.php'; //Configuration
+         echo "first part123";
+	require __DIR__.'/conf.php'; //Configuration
       
         
 echo "123";
