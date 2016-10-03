@@ -40,7 +40,7 @@ $server_output = curl_exec ($ch); */   //execute and store server output
 		{
 			$title=$singleproduct['title']; // Product Title
 			$variants=$singleproduct['variants'];
-			echo $p_id1=$singleproduct['id'];
+		        $p_id1=$singleproduct['id'];
 			
 			foreach($variants as $variants){
 				$price=$variants['price']; // Product PRice
