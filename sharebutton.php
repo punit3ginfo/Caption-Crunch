@@ -7,7 +7,7 @@ session_start();
 	require __DIR__.'/conf.php'; //Configuration
 	$_SESSION['shop']="share-tag.myshopify.com";
         echo "edffsdfsdf".$pid=$_REQUEST['pid'];
-console.log($pid);
+        console.log($pid);
  	$access_token=$_REQUEST['access_token'];
 	$shop=$_REQUEST['shop'];
 	//$access_token = shopify\access_token($shop, SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $code);
@@ -18,13 +18,11 @@ try
 	{
 		
 		# Making an API request can throw an exception
-		$product = $shopify('PUT /admin/products/{$pid}.json', array(), array
+		$product = $shopify('PUT /admin/products/'".$pid."'.json', array(), array
 		(
 			'product' => array
 			(
-				
-				"tags"=>"shared"
-				
+				"tags"=>"shared"	
 			)
 		));
 
