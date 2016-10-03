@@ -36,7 +36,7 @@ require __DIR__.'/connection.php'; //DB connectivity
                   	</span>
               	</div>
             </a>
-            <a class="sidebar-link" href="/collections/all">
+            <a class="sidebar-link" href="index.php/?page=collections">
             	<div class="sidebar-nav-container">
                   	<span class="sidebar-span">
                       <i style="font-size: 20px;" class="fa fa-sitemap" aria-hidden="true"></i><br>
@@ -87,7 +87,7 @@ require __DIR__.'/connection.php'; //DB connectivity
 
             <!-- Collect the nav links, forms, and other content for toggling -->
      		<nav class="main-nav-container">
-				<a class="sidebar-link" style="text-decoration: none;" href="index.php/?page=about">
+				<a class="sidebar-link" style="text-decoration: none;" href="/#">
                   <div class="sidebar-nav-container-header">
                       <span class="sidebar-span">
                       <i style="font-size: 20px;" class="fa fa-info" aria-hidden="true"></i><br>
@@ -106,7 +106,7 @@ require __DIR__.'/connection.php'; //DB connectivity
       <div style="width: 100%; height: 100%;">
     	<div class="main_container">
 			  <div class="content-container">
-          
+
             <?php
                 $page = $_GET['page']; // To get the page
 
@@ -119,8 +119,8 @@ require __DIR__.'/connection.php'; //DB connectivity
                 include('test.php');
                 break;
 
-                case 'about':
-                include('about.php');
+                case 'collections':
+                include('collections.php');
                 break;
                 }
 
