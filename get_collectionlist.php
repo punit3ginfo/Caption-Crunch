@@ -16,7 +16,7 @@
 			$id=$singlecollection['id']; // collection id
 			$handle=$singlecollection['handle']; // collection id ?>
 			
-			<a href="javascript:void(0)" onclick="getcolproduct(<?php echo $id;?>,<?php echo $handle;?>)">                 
+			<a href="javascript:void(0)" onclick="getcolproduct(<?php echo $id;?>,'<?php echo $handle;?>')">                 
                                     <div class="chat_select_container">
                                         <div class="chat_personal_info_container">
                                             <div class="chat_user_info">
