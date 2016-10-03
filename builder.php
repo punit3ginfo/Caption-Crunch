@@ -10,10 +10,10 @@
                 	<div class="chat_selector_overflow_container">
                         <div class="chat_selector_overflow">
                           		<a href="/#">
-                                    <div class="chat_select_container active" >
-                                        <div class="chat_personal_info_container active-border">
+                                    <div class="chat_select_container" >
+                                        <div class="chat_personal_info_container">
                                             <div class="chat_user_info">
-                                                <span class="collection_list_text active-text">20% OFF FOOTWEAR SALE</span>
+                                                <span class="collection_list_text">20% OFF FOOTWEAR SALE</span>
                                             </div>
                                         </div>
                                     </div>
@@ -40,7 +40,7 @@
         	</div>
 
 			<div class="product-grid-container">
-        		<div  class="product-grid-overflow-container" style="padding: 15px 20px 0px 20px;">
+        		<div  class="product-grid-overflow-container">
                   <form style="display: block;">
                   <!-- CONDITIONS -->
                   <div class="builder-main-conatiner">
