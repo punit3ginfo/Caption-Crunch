@@ -8,10 +8,7 @@
 ?>
 
 <?php
-
-
-
-	try
+try
 	{
 		# Making an API request can throw an exception
 		if(isset($_REQUEST['colid']) && $_REQUEST['colid']!=''){
