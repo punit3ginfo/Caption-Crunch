@@ -111,12 +111,12 @@ require __DIR__.'/connection.php'; //DB connectivity
                 $page = $_GET['page']; // To get the page
 
                 if($page == null) {
-                    $page = 'index'; // Set page to index, if not set
+                    $page = 'dashboard'; // Set page to index, if not set
                 }
                 switch ($page) {
 
-                case 'index':
-                include('test.php');
+                case 'dashboard':
+                include('dashboard.php');
                 break;
 
                 case 'collections':

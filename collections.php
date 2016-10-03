@@ -1,6 +1,6 @@
 
 <div class="chat_container" style="overflow: hidden;">
-<div class="collection-sidebar-container">
+  <div class="collection-sidebar-container">
               		<div class="collection_title_selector">
                             <div class="collection_title_container">
                                 <span class="collection_title_text">Collections</span>
@@ -26,6 +26,9 @@
                                         </div>
                                     </div>
                                 </a>
+                                <?php
+                                echo "List collections here";
+                                ?>
 
                              <!-- Collection Card -->
 
@@ -49,7 +52,9 @@
                                     <div class="grid">
                                       <div class="grid-item">
                                           <div class="text-center">
-                                            <p>{Paginate}</p>
+                                            <?php
+                                            echo "Pagination goes here"
+                                            ?>
                                           </div>
                                       </div>
                                     </div>
@@ -71,7 +76,9 @@
 
   <div class="product-grid-container">
       <div  class="product-grid-overflow-container">
-        <p>It works</p>
+        <?php
+        echo "Product's go here"
+        ?>
       </div>
   </div>
 </div>
