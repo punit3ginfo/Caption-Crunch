@@ -23,7 +23,7 @@
 	       $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		}*/
 		//print_r($products);
-		$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
+		$products = $shopify('GET /admin/products.json?collection_id=372270408', array('published_status'=>'published'));
 		foreach($products as $singleproduct)
 		{
 			$title=$singleproduct['title']; // Product Title
