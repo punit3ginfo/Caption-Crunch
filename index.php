@@ -87,7 +87,7 @@ require __DIR__.'/connection.php'; //DB connectivity
 
             <!-- Collect the nav links, forms, and other content for toggling -->
      		<nav class="main-nav-container">
-				<a class="sidebar-link" style="text-decoration: none;" href="index.php/?page=index">
+				<a class="sidebar-link" style="text-decoration: none;" href="index.php/?page=about">
                   <div class="sidebar-nav-container-header">
                       <span class="sidebar-span">
                       <i style="font-size: 20px;" class="fa fa-info" aria-hidden="true"></i><br>
@@ -106,10 +106,10 @@ require __DIR__.'/connection.php'; //DB connectivity
       <div style="width: 100%; height: 100%;">
     	<div class="main_container">
 			  <div class="content-container">
-          <?php include 'test.php'; ?>
+          <!-- <?php include 'test.php'; ?>
   				<?php  require __DIR__.'/get_products.php'; //GET PRODUCTS
 
-  				  ?>
+  				  ?> -->
             <?php
                 $page = $_GET['page']; // To get the page
 
