@@ -48,3 +48,19 @@
 		print_r($e->getResponse());
 	}
 	?>
+	<script>
+	function getcolproduct(id,handle){
+		
+               var access_token='<?php echo $access_token ?>';
+		var shop='<?php echo $_REQUEST['shop'] ?>';
+		
+                $.ajax({
+                    url: '/get_products.php.php?colid='+access_token+'&shop='+shop+'&colid='id,
+                    success: function(data){
+                     //console.log(data);
+			   // var data1= data.find('.chat_container').html()
+			    $('.main_container').html(data);
+                    }
+                });
+            }
+	</script>
