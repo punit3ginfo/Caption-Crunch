@@ -1,5 +1,5 @@
 <?php 
-	session_start();
+	
          echo "first part";
 	require __DIR__.'/vendor/autoload.php';
         echo "second part";
