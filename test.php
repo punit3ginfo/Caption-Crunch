@@ -71,10 +71,7 @@
 
 <div class="product-grid-container">
     <div  class="product-grid-overflow-container">
-        <p>No Products</p>
-        <?php
-          echo basename($_SERVER['PHP_SELF']);
-        ?>
+
     </div>
   </div>
 </div>
