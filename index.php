@@ -87,7 +87,7 @@ require __DIR__.'/connection.php'; //DB connectivity
 
             <!-- Collect the nav links, forms, and other content for toggling -->
      		<nav class="main-nav-container">
-				<a class="sidebar-link" style="text-decoration: none;" href="/pages/help">
+				<a class="sidebar-link" style="text-decoration: none;" href="index.php/?page=index">
                   <div class="sidebar-nav-container-header">
                       <span class="sidebar-span">
                       <i style="font-size: 20px;" class="fa fa-info" aria-hidden="true"></i><br>
@@ -110,6 +110,25 @@ require __DIR__.'/connection.php'; //DB connectivity
   				<?php  require __DIR__.'/get_products.php'; //GET PRODUCTS
 
   				  ?>
+            <?php
+                $page = $_GET['page']; // To get the page
+
+                if($page == null) {
+                    $page = 'index'; // Set page to index, if not set
+                }
+                switch ($page) {
+
+                case 'index':
+                include('test.php');
+                break;
+
+                case 'about':
+                include('about.php');
+                break;
+                }
+
+          ?>
+
         </div>
     	</div>
     </div>
