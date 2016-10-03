@@ -162,14 +162,16 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 </div>
 <script>
 	function getproducts(){
-		
+		alert(1);
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 		
                 $.ajax({
                     url: '/collections.php?access_token='+access_token+'&shop='+shop,
                     success: function(data){
-                     console.log(data);
+                     //console.log(data);
+			    
+			    $('.main_container').html(data.html());
                     }
                 });
             }
