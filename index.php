@@ -14,16 +14,17 @@ echo "<script>alert('{$_REQUEST['shop']}')</script>";
 $_SESSION['shop']=$_REQUEST['shop'];
 echo "<script>alert('{$_SESSION["shop"]}')</script>";
  $_SESSION['code']=$_REQUEST['code'];
-
-
-       echo "a=".$_SESSION['shop']=$_REQUEST['shop'];
+    if(isset($_REQUEST['shop']))
+    {
+       echo $_SESSION['shop']=$_REQUEST['shop'];
 		$_SESSION['code']=$_REQUEST['code'];
+    }
 		echo '<pre>';
 		print_r($_SESSION);
 		echo '</pre>';
            echo $_SESSION['shop'];
          echo "fifth part12345";
-   //$access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_SESSION['code']);
+   $access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_SESSION['code']);
 	
 
 ?>
