@@ -1,7 +1,7 @@
 <?php 
 	
          echo "first part123";
-	require __DIR__.'/conf.php'; //Configuration
+	
      require __DIR__.'/vendor/autoload.php';
         use phpish\shopify;
       //$access_token=$_REQUEST['access_token'];
@@ -44,7 +44,7 @@ $server_output = curl_exec ($ch); */   //execute and store server output
 	{
 		# Making an API request can throw an exception
 		$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
-		print_r($products);
+		//print_r($products);
 		foreach($products as $singleproduct)
 		{
 			$title=$singleproduct['title']; // Product Title
