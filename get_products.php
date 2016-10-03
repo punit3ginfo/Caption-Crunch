@@ -4,16 +4,7 @@
 	require __DIR__.'/vendor/autoload.php';
         use phpish\shopify;
        require __DIR__.'/conf.php'; //Configuration
-       echo "a=".$_SESSION['shop']=$_REQUEST['shop'];
-		$_SESSION['code']=$_REQUEST['code'];
-		echo '<pre>';
-		print_r($_SESSION);
-		echo '</pre>';
-           echo $_SESSION['shop'];
-echo "fifth part";
-	echo "b=".$access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_SESSION['code']);
-echo "dfsgfdgsfdg";	
-echo "c=".$shopify = shopify\client($_SESSION['shop'], SHOPIFY_APP_API_KEY, $access_token); 
+      
         
 echo "123";
 ?>
