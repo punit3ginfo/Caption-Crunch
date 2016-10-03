@@ -6,7 +6,7 @@
    try
 	{
 		# Making an API request can throw an exception
-		$collections = $shopify('GET /admin/collects.json', array('published_status'=>'published'));
+		$collections = $shopify('GET /admin/custom_collections.json', array('published_status'=>'published'));
 		print_r($collections);
 		
 	}
