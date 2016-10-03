@@ -2,12 +2,12 @@
 	
          echo "first part";
 	require __DIR__.'/vendor/autoload.php';
-        echo "second part1213456";
-	use phpish\shopify;
-        echo "third part";
-	require __DIR__.'/conf.php'; //Configuration
-         echo "fourth part";
-	//echo "a=".$_SESSION['shop']=$_REQUEST['shop'];
+        use phpish\shopify;
+       require __DIR__.'/conf.php'; //Configuration
+       //echo "a=".$_SESSION['shop']=$_REQUEST['shop'];
+		echo '<pre>';
+		print_r($_SESSION);
+		echo '</pre>';
            echo $_SESSION['shop'];
 echo "fifth part";
 	echo "b=".$access_token = shopify\access_token($_SESSION['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_SESSION['code']);
