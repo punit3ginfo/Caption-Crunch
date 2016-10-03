@@ -67,7 +67,7 @@ $server_output = curl_exec ($ch); */   //execute and store server output
 		</div>
 		<div class="product-share-container">
 			
-			<button type="button"  onclick="shareButton(<?php echo $p_id1; ?>);">SHARE</button>
+			<button type="button"  onclick="shareButton(<?php $p_id1; ?>);">SHARE</button>
 			
 		</div>
 	</div>
