@@ -28,7 +28,7 @@ try
 			$tags=$singleproduct['tags'];
 			if (in_array("shared", $tags)) {
     				echo "Got shared";
-				if(($key = array_search(shared, $tags)) !== false) {
+				if(($key = array_search("shared", $tags)) !== false) {
     					unset($messages[$key]);
 				}
 				echo "part-1";
