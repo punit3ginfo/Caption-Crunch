@@ -833,3 +833,19 @@ form {
 .product-grid-container.scroll-grid {
   overflow: scroll;
 }
+
+.unshare-button {
+  background: white none repeat scroll 0 0;
+  border: 1px solid #65d35b;
+  bottom: 20px;
+  color: #65d35b;
+  font-family: HelveticaNeue-Bold;
+  font-size: 16px;
+  left: 20px;
+  letter-spacing: 0.82px;
+  padding: 11px 20px;
+  position: absolute;
+  right: 20px;
+  text-transform: uppercase;
+  width: calc(100% - 40px);
+}
