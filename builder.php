@@ -44,7 +44,7 @@
                   <form style="display: block;">
                   <!-- CONDITIONS -->
                   <div class="builder-main-conatiner">
-                    <div id="conditions-header-clearfix" class="builder-main-clearfix" style="border-bottom: 0px;">
+                    <div class="builder-main-clearfix" style="border-bottom: 0px;">
                       	<div class="builder-conditions-container" style="height: 30px;">
 
 															<span class="conditions-title conditions-title-hover conditions-show-hide-button" style="line-height: 30px;">
@@ -112,16 +112,16 @@
                    </div>
 				  <!-- TEMPLATE -->
                    <div class="builder-main-conatiner" style="height: auto;">
-	                    <div class="builder-main-clearfix" style="padding-top: 5px;">
-	                      	<div class="builder-conditions-container">
-	                          	<span class="conditions-title conditions-title-hover templates-show-hide-button">
+	                    <div class="builder-main-clearfix" style="border-bottom: 0px;>
+	                      	<div class="builder-conditions-container" style="height: 30px;">
+	                          	<span class="conditions-title conditions-title-hover templates-show-hide-button" style="line-height: 30px;">
 																Template
-																<i id="template-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 46px;"></i>
+																<i id="template-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
 															</span>
 	                      	</div>
 	                    </div>
 											<div class="template-show-hide">
-		                    <div class="builder-main-clearfix">
+		                    <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
 		                      	<div class="builder-conditions-container">
 		                          	<span class="" style="line-height: 46px;"><i class="fa fa-info-circle" aria-hidden="true" style="margin-right: 10px;"></i> Create a custom caption template or use one of our premade templates</span>
 		                      	</div>
