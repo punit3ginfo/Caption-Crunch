@@ -24,12 +24,12 @@ try
 			$title=$singleproduct['title']; // Product Title
 			$variants=$singleproduct['variants'];
 		        $p_id1=$singleproduct['id'];
-		echo $tags=$singleproduct['tags'];
+		        $tags=$singleproduct['tags'];
 			$OrigonalTag=$singleproduct['tags'];
 			
-		 $tags = str_replace('Shared,', '', $tags);
-		$tags = str_replace(',Shared', '', $tags);
-		$tags = str_replace('Shared', '', $tags);
+		        $tags = str_replace('Shared,', '', $tags);
+		        $tags = str_replace(',Shared', '', $tags);
+		        $tags = str_replace('Shared', '', $tags);
 			$tags = str_replace(',', 'AA', $tags);
 			foreach($variants as $variants){
 				$price=$variants['price']; // Product PRice
