@@ -829,3 +829,7 @@ a:hover {
 form {
     margin-bottom: 0px;
 }
+
+.product-grid-container.scroll-grid {
+  overflow: scroll;
+}
