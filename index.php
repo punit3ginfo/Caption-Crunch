@@ -206,5 +206,5 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 
 
 	</script>
-  <script src="/main.js"></script>
+  <script type="text/javascript" src="/main.js"></script>
 </body>
