@@ -27,7 +27,7 @@ try
 		(
 			'product' => array
 			(
-				"tags"=>"$tags;"	
+				"tags"=>$tags	
 			)
 		));
 
