@@ -46,7 +46,7 @@
                   <div class="builder-main-conatiner">
                     <div id="conditions-header-clearfix" class="builder-main-clearfix">
                       	<div class="builder-conditions-container" style="height: 30px;">
-													  <a href="#" class="conditions-show-hide-button" style="float:right; border: 0px; background: none;">
+													  <a href="#" class="conditions-show-hide-button" style="width: 100%;">
 															<span class="conditions-title conditions-title-hover" style="line-height: 30px;">
 																Conditions
 																<i id="condition-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
