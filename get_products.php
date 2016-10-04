@@ -5,6 +5,7 @@
      $access_token=$_REQUEST['access_token'];
      $shopify = shopify\client($_REQUEST['shop'], SHOPIFY_APP_API_KEY, $access_token );
 
+
 ?>
 
 <?php
@@ -24,65 +25,15 @@ try
 			$title=$singleproduct['title']; // Product Title
 			$variants=$singleproduct['variants'];
 		        $p_id1=$singleproduct['id'];
-			$tags=array();
-			
-$people = array(Peter, Joe, Glenn, Cleveland);
-			echo $people;
-
-if (in_array("Glenn", $people))
-  {
-  echo "Match found";
-  }
-else
-  {
-  echo "Match not found";
-  }
-			
-			if (in_array(Glenn, $people))
-  {
-  echo "Match found";
-  }
-else
-  {
-  echo "Match not found";
-  }
-
 			$tags=$singleproduct['tags'];
-			$apple= $singleproduct['tags'];
-				
-				//$a = 'How are you?';
-
-if ($apple contains 'Shared'){
-    echo 'true';}
-			echo "original tags:-";
+			echo "a-";
 			print_r($tags);
 			
-			if (in_array(Shared, $tags))
-			{
-			
-			 echo "hi";
-			
-			}
-			if (in_array("Shared", $tags)) {
-    				echo "Got shared";
-				if(($key = array_search("shared", $tags)) !== false) {
-    					unset($messages[$key]);
-				}
-				echo "part-1";
-				 print_r($tags);
-				exit();
-			}
-			else{
-				array_push($tags,"shared");
-				echo "part-2";
-			    print_r($tags);
-				exit();
-				
-			}
-			
-			
-			
+			$a = 'How are you?';
 
+if ($tags contains 'Shared'){
+    echo 'true';
+}
 			foreach($variants as $variants){
 				$price=$variants['price']; // Product PRice
 			}
