@@ -59,7 +59,13 @@ try
       			</div>
       		</div>
             <div class="share-button-container">
-		    <?php if (strpos($tags, 'Shared') !== false) { ?>
+		   <?php $a = 'How are you?';
+
+if (strpos($a, 'are') !== false) {
+    echo 'true';
+} ?>
+		    
+		    <?php if (strpos($tags, Shared) !== false) { ?>
 		    <button type="button" class="unshare-button" onclick="unshareButton(<?php echo $p_id1; ?>,'<?php echo $tags; ?>');">UNSHARE</button>
                  
 			<?php } else { ?>
