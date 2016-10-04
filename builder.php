@@ -48,7 +48,7 @@
                       	<div class="builder-conditions-container">
                           	<span class="conditions-title conditions-title-hover">
 															Conditions
-															<button class="conditions-show-hide-button" href="" style="float:right;">
+															<button type="button" class="conditions-show-hide-button" style="float:right;">
 																<i class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 46px;"></i>
 															</button>
 														</span>
