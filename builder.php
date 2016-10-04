@@ -140,7 +140,7 @@
 
 
 	$('.conditions-show-hide-button').click(function() {
-	    $('.conditions-show-hide').toggle();
+	    $('.conditions-show-hide').slideToggle("slow");
 	    return false;
 	});
 
