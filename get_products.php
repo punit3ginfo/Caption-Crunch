@@ -105,8 +105,8 @@ try
                 $.ajax({
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){
-			$('#pid').hide();
-			$('#pid').show();
+			$('#data').hide();
+			$('#data').show();
                     }
                 });
             }
@@ -123,8 +123,8 @@ try
                 $.ajax({
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){
-			    $('#pid').hide();
-			     $('#pid').show();
+			    $('#data').hide();
+			     $('#data').show();
 		 	 
                     }
                 });
