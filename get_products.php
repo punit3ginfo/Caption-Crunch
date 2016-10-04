@@ -65,7 +65,7 @@ try
 			    UNSHARE</button>
                 
 			<?php } else { ?>
-		     <button type="button" class="share-button" onclick="shareButton(<?php echo $p_id1; ?>,Shared);">SHARE</button>
+		     <button type="button" class="share-button" onclick="shareButton(<?php echo $p_id1; ?>,'Shared');">SHARE</button>
 		  
            <?php }?>
 		</div>
