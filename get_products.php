@@ -28,6 +28,7 @@ try
 			
 		 $tags = str_replace('Shared,', '', $tags);
 		$tags = str_replace(',Shared', '', $tags);
+			$tags = str_replace('Shared', '', $tags);
 		echo $tags;			
 
 			foreach($variants as $variants){
