@@ -26,9 +26,19 @@ try
 		        $p_id1=$singleproduct['id'];
 			$tags=array();
 			
-$people = array("Peter", "Joe", "Glenn", "Cleveland");
+$people = array(Peter, Joe, Glenn, Cleveland);
+			echo $people;
 
 if (in_array("Glenn", $people))
+  {
+  echo "Match found";
+  }
+else
+  {
+  echo "Match not found";
+  }
+			
+			if (in_array(Glenn, $people))
   {
   echo "Match found";
   }
