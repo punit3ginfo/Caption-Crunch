@@ -8,7 +8,7 @@
 		# Making an API request can throw an exception
 		$collections = $shopify('GET /admin/custom_collections.json', array('published_status'=>'published'));
 		$collections1 = $shopify('GET /admin/smart_collections.json', array('published_status'=>'published'));
-         $collections=array_merge($collections, $collections1);
+                $collections=array_merge($collections, $collections1);
 		print_r($collections);
 		foreach($collections as $singlecollection)
 		{
@@ -24,6 +24,19 @@
                                             </div>
                                             <div class="notification-container">
                                                 <div class="chat_notification_container">
+							
+						<?php 
+							$products = $shopify('GET /admin/products.json?collection_id=
+							'.$id, array('published_status'=>'published'));	
+			
+			
+							echo "<pre>";
+							print_r($products);
+							echo "</pre>";
+							 echo "Normal count: " . sizeof($products)."<br>";
+						?>
+							
+							
                                                     <span class="notif_number">354</span>
                                                 </div>
                                             </div>
