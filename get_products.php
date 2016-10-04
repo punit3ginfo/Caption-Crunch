@@ -25,31 +25,6 @@ try
 			$variants=$singleproduct['variants'];
 		        $p_id1=$singleproduct['id'];
 			$tags=$singleproduct['tags'];
-			
-			
-			echo $tags;
-			echo "p-1";
-			print_r($tags);
-exit();
-			if ($tags contains 'Shared'){
-    			echo 'true';
-			}
-			
-			
-
-if (in_array("Shared", $tags))
-  {
-  echo "Match found";
-  }
-else
-  {
-  echo "Match not found";
-  }
-			
-			
-			
-			
-			
 
 			foreach($variants as $variants){
 				$price=$variants['price']; // Product PRice
