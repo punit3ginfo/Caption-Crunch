@@ -24,9 +24,23 @@ try
 			$title=$singleproduct['title']; // Product Title
 			$variants=$singleproduct['variants'];
 		        $p_id1=$singleproduct['id'];
+			$tags=array();
 			$tags=$singleproduct['tags'];
 			if (in_array("shared", $tags)) {
     				echo "Got shared";
+				if(($key = array_search(shared, $tags)) !== false) {
+    					unset($messages[$key]);
+				}
+				echo "part-1";
+				 print_r($tags);
+				exit();
+			}
+			else{
+				array_push($tags,"shared");
+				echo "part-2";
+			    print_r($tags);
+				exit();
+				
 			}
 			
 			
