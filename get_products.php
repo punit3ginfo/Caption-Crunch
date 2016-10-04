@@ -25,8 +25,22 @@ try
 			$variants=$singleproduct['variants'];
 		        $p_id1=$singleproduct['id'];
 			$tags=array();
+			
+$people = array("Peter", "Joe", "Glenn", "Cleveland");
+
+if (in_array("Glenn", $people))
+  {
+  echo "Match found";
+  }
+else
+  {
+  echo "Match not found";
+  }
+
 			$tags=$singleproduct['tags'];
-			if (in_array("shared", $tags)) {
+			echo "original tags:-";
+			print_r($tags);
+			if (in_array("Shared", $tags)) {
     				echo "Got shared";
 				if(($key = array_search("shared", $tags)) !== false) {
     					unset($messages[$key]);
