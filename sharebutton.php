@@ -7,6 +7,8 @@ session_start();
 	require __DIR__.'/conf.php'; //Configuration
 	$_SESSION['shop']="share-tag.myshopify.com";
         $pid=$_REQUEST['pid'];
+	$tags=$_REQUEST['tags'];
+        $tags = str_replace('AA', ',', $tags);
  	$access_token=$_REQUEST['access_token'];
 	$shop=$_REQUEST['shop'];
 	//$access_token = shopify\access_token($shop, SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $code);
@@ -25,7 +27,7 @@ try
 		(
 			'product' => array
 			(
-				"tags"=>"Shared"	
+				"tags"=>"$tags;"	
 			)
 		));
 
