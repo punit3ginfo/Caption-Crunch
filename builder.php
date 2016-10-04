@@ -140,8 +140,13 @@
 
 
 	$('.conditions-show-hide-button').click(function() {
-	    $('.conditions-show-hide').slideToggle("slow", function() {
-
+		// Show / Hide Conditions Container
+	    $('.conditions-show-hide').slideToggle("slow");
+		// Rotate Arrow 180 Degree / Click
+			$('#condition-arrow-icon').toggle(function() {
+				$(this).rotate({ endDeg:180, persist:true });
+			}, function() {
+				$(this).rotate({ endDeg:360 });
 			});
 	    return false;
 	});
