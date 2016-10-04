@@ -59,9 +59,13 @@ try
       			</div>
       		</div>
             <div class="share-button-container">
-                 <button type="button" class="share-button" onclick="shareButton(<?php echo $p_id1; ?>);">SHARE</button>
-		    <button type="button" class="unshare-button" onclick="unshareButton(<?php echo $p_id1; ?>,<?php echo $tags; ?>);">UNSHARE</button>
-            </div>
+		    <?php 
+			if($tags!=''){ ?>
+                 <button type="button" class="share-button" onclick="shareButton(<?php //echo $p_id1; ?>);">SHARE</button>
+			<?php } else { ?>
+		  <button type="button" class="unshare-button" onclick="unshareButton(<?php echo $p_id1; ?>,<?php echo $tags; ?>);">UNSHARE</button>
+           <?php }?>
+		</div>
       </div>
 </div>
 <!-- HTML Content for Product END    -->
