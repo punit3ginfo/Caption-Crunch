@@ -143,9 +143,7 @@
 		// Show / Hide Conditions Container
 	    $('.conditions-show-hide').slideToggle("slow");
 		// Rotate Arrow 180 Degree / Click
-			$('#condition-arrow-icon').css('-webkit-transform', 'rotateY(-180deg)');
-   		$('#condition-arrow-icon').css('-moz-transform', 'rotateY(-180deg)');
-   		$('#condition-arrow-icon').css('transform', 'rotateY(-180deg)');
+			$('#condition-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
 		// Link Does Not Follow Href
 	    return false;
 	});
