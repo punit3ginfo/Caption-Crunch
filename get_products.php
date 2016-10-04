@@ -108,6 +108,7 @@ try
 	</script>
 
 <script>
+	var tags;
 	function unshareButton(pid,tags){
 
                var access_token='<?php echo $access_token ?>';
