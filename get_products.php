@@ -12,20 +12,20 @@ try
 	{
 		# Making an API request can throw an exception
 		if(isset($_REQUEST['colid']) && $_REQUEST['colid']!=''){
-			//alert(1);
 		$products = $shopify('GET /admin/products.json?collection_id='.$_REQUEST['colid'], array('published_status'=>'published'));
 		}
-		if($_REQUEST['colid']=='') {
-			//alert(2);
+		if($_REQUEST['colid']=='') {	
 	       $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		}
-		print_r($products);
+		//print_r($products);
 		//$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		foreach($products as $singleproduct)
 		{
 			$title=$singleproduct['title']; // Product Title
 			$variants=$singleproduct['variants'];
 		        $p_id1=$singleproduct['id'];
+			$tags=$singleproduct['tags'];
+			
 
 			foreach($variants as $variants){
 				$price=$variants['price']; // Product PRice
