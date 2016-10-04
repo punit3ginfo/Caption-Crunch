@@ -6,7 +6,7 @@ session_start();
 	use phpish\shopify;
 	require __DIR__.'/conf.php'; //Configuration
 	$_SESSION['shop']="share-tag.myshopify.com";
-        $pid=$_REQUEST['pid'];
+        echo $pid=$_REQUEST['pid'];
 	$tags=$_REQUEST['tags'];
         $tags = str_replace('AA', ',', $tags);
  	$access_token=$_REQUEST['access_token'];
