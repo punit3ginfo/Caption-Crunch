@@ -49,7 +49,7 @@
                           	<span class="conditions-title conditions-title-hover">
 															Conditions
 															<a href="#" class="conditions-show-hide-button" style="float:right; border: 0px; background: none;">
-																<i id="condition-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 46px;"></i>
+																<i id="condition-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
 															</a>
 														</span>
                       	</div>

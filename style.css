@@ -721,21 +721,21 @@ a:hover {
 }
 
 .builder-main-clearfix {
-	width: 100%;
+	  width: 100%;
   	height: auto;
-	border-bottom: 1px solid #eee;
+	  border-bottom: 1px solid #eee;
     padding: 20px 0px;
 }
 
 .builder-conditions-container {
-	width: 100%;
-  	height: 46px;
+	  width: 100%;
+  	height: 30px;
   	display: flex;
   	justify-content: space-between;
 }
 
 .conditions-title {
-	line-height: 46px;
+	  line-height: 30px;
   	font-family: HelveticaNeue-Bold;
     font-size: 16px;
     color: #4D595C;
@@ -745,11 +745,11 @@ a:hover {
 }
 
 .conditions-title:hover {
-	color: #65D35B;
+	 color: #65D35B;
 }
 
 .condition-allorany-clearfix {
-	width: 100%;
+	  width: 100%;
   	height: 46px;
   	display: flex;
   	justify-content: space-between;
