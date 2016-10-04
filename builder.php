@@ -48,13 +48,13 @@
                       	<div class="builder-conditions-container">
                           	<span class="conditions-title conditions-title-hover">
 															Conditions
-															<button type="button" onclick="openClose()" class="conditions-show-hide-button" style="float:right; border: 0px; background: none;">
+															<a href="#" class="conditions-show-hide-button" style="float:right; border: 0px; background: none;">
 																<i class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 46px;"></i>
-															</button>
+															</a>
 														</span>
                       	</div>
                     </div>
-									<div id="conditions-show-hide">
+									<div class="conditions-show-hide">
                    	<div class="builder-main-clearfix">
                       	<div class="builder-conditions-container">
                           <div class="condition-allorany-clearfix">
@@ -138,10 +138,11 @@
 <!-- Show / Hide Script -->
 <script type="text/javascript">
 
-function openClose() {
-	$('document').on('load',function() {
-		$( "#conditions-show-hide" ).toggle("400");
+
+	$('.conditions-show-hide-button').click(function() {
+	    $('.conditions-show-hide').toggle();
+	    return false;
 	});
-};
+
 
 </script>
