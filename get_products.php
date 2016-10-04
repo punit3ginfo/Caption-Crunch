@@ -65,7 +65,7 @@ try
 			    UNSHARE</button>
                 
 			<?php } else { ?>
-		     <button type="button" class="share-button" onclick="shareButton(<?php echo $p_id1; ?>);">SHARE</button>
+		     <button type="button" class="share-button" onclick="shareButton(<?php echo $p_id1; ?>,Shared);">SHARE</button>
 		  
            <?php }?>
 		</div>
@@ -94,14 +94,14 @@ try
 	}
 	?>
 	<script>
-	function shareButton(pid){
+	function shareButton(pid,tags){
 
                var access_token='<?php echo $access_token ?>';
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
 
 
                 $.ajax({
-                    url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop,
+                    url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){
 
                     }
