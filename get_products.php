@@ -12,11 +12,9 @@ try
 	{
 		# Making an API request can throw an exception
 		if(isset($_REQUEST['colid']) && $_REQUEST['colid']!=''){
-			//alert(1);
 		$products = $shopify('GET /admin/products.json?collection_id='.$_REQUEST['colid'], array('published_status'=>'published'));
 		}
 		if($_REQUEST['colid']=='') {
-			//alert(2);
 	       $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		}
 		//print_r($products);
@@ -26,6 +24,32 @@ try
 			$title=$singleproduct['title']; // Product Title
 			$variants=$singleproduct['variants'];
 		        $p_id1=$singleproduct['id'];
+			$tags='.$singleproduct['tags'].';
+			
+			
+			echo $tags;
+			echo "p-1";
+			print_r($tags);
+
+			if ($tags contains 'Shared'){
+    			echo 'true';
+			}
+			
+			
+
+if (in_array("Shared", $tags))
+  {
+  echo "Match found";
+  }
+else
+  {
+  echo "Match not found";
+  }
+			
+			
+			
+			
+			
 
 			foreach($variants as $variants){
 				$price=$variants['price']; // Product PRice
