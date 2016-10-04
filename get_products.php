@@ -61,12 +61,12 @@ try
       		</div>
             <div class="share-button-container">
 		    <?php if (strpos($OrigonalTag, "Shared") !== false) { ?>
-		    <button type="button"  class="unshare-button" onclick="unshareButton(<?php echo $p_id1; ?>,'<?php echo $tags; ?>');">
+		    <button type="button" id="<?php echo $p_id1; ?>" class="unshare-button" onclick="unshareButton(<?php echo $p_id1; ?>,'<?php echo $tags; ?>');">
 			    UNSHARE</button>
 		     
                 
 			<?php } else { ?>
-		     <button type="button" class="share-button" onclick="shareButton(<?php echo $p_id1; ?>,'Shared');">SHARE</button>
+		     <button type="button" id="<?php echo $p_id1; ?>" class="share-button" onclick="shareButton(<?php echo $p_id1; ?>,'Shared');">SHARE</button>
 		   
            <?php }?>
 		</div>
