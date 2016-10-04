@@ -119,19 +119,19 @@
 																<i id="template-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
 															</span>
 	                      	</div>
+													<div class="template-show-hide">
+				                    <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
+				                      	<div class="builder-conditions-container">
+				                          	<span class="" style="line-height: 46px;"><i class="fa fa-info-circle" aria-hidden="true" style="margin-right: 10px;"></i> Create a custom caption template or use one of our premade templates</span>
+				                      	</div>
+				                    </div>
+				                    <div class="builder-main-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
+				                    	<div class="builder-conditions-container" style="height: auto; min-height: 100px;">
+				                          <textarea style="width: 100%; min-height: 100px; border: 1px solid #666;"></textarea>
+				                        </div>
+				                    </div>
+													</div>
 	                    </div>
-											<div class="template-show-hide">
-		                    <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
-		                      	<div class="builder-conditions-container">
-		                          	<span class="" style="line-height: 46px;"><i class="fa fa-info-circle" aria-hidden="true" style="margin-right: 10px;"></i> Create a custom caption template or use one of our premade templates</span>
-		                      	</div>
-		                    </div>
-		                    <div class="builder-main-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
-		                    	<div class="builder-conditions-container" style="height: auto; min-height: 100px;">
-		                          <textarea style="width: 100%; min-height: 100px; border: 1px solid #666;"></textarea>
-		                        </div>
-		                    </div>
-											</div>
                    </div>
                   </form>
     			</div>
