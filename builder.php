@@ -143,11 +143,9 @@
 		// Show / Hide Conditions Container
 	    $('.conditions-show-hide').slideToggle("slow");
 		// Rotate Arrow 180 Degree / Click
-			$('#condition-arrow-icon').toggle(function() {
-				$('#condition-arrow-icon').animate({ rotate: 180 });
-			}, function() {
-				$('#condition-arrow-icon').animate({ rotate: 180 });
-			});
+			$('#condition-arrow-icon').css('-webkit-transform', 'rotateY(-180deg)');
+   		$('#condition-arrow-icon').css('-moz-transform', 'rotateY(-180deg)');
+   		$('#condition-arrow-icon').css('transform', 'rotateY(-180deg)');
 		// Link Does Not Follow Href
 	    return false;
 	});
