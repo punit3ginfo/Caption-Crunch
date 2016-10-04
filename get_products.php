@@ -24,11 +24,12 @@ try
 			$title=$singleproduct['title']; // Product Title
 			$variants=$singleproduct['variants'];
 		        $p_id1=$singleproduct['id'];
-		echo "pp=".$tags=$singleproduct['tags'];
+		echo $tags=$singleproduct['tags'];
 			
 		 $tags = str_replace('Shared,', '', $tags);
 		$tags = str_replace(',Shared', '', $tags);
 		$tags = str_replace('Shared', '', $tags);
+			$tags = str_replace(',', 'AA', $tags);
 			foreach($variants as $variants){
 				$price=$variants['price']; // Product PRice
 			}
@@ -58,7 +59,8 @@ try
       			</div>
       		</div>
             <div class="share-button-container">
-                 <button type="button" class="share-button" onclick="shareButton(<?php echo $p_id1; ?>,<?php echo $tags; ?>);">SHARE</button>
+                 <button type="button" class="share-button" onclick="shareButton(<?php echo $p_id1; ?>);">SHARE</button>
+		    <button type="button" class="unshare-button" onclick="unshareButton(<?php echo $p_id1; ?>,<?php echo $tags; ?>);">UNSHARE</button>
             </div>
       </div>
 </div>
@@ -85,7 +87,23 @@ try
 	}
 	?>
 	<script>
-	function shareButton(pid,tags){
+	function shareButton(pid){
+
+               var access_token='<?php echo $access_token ?>';
+	       var shop='<?php echo $_REQUEST['shop'] ?>';
+
+
+                $.ajax({
+                    url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop,
+                    success: function(data){
+
+                    }
+                });
+            }
+	</script>
+
+<script>
+	function unshareButton(pid,tags){
 
                var access_token='<?php echo $access_token ?>';
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
