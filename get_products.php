@@ -63,13 +63,18 @@ try
 
 if (strpos($a, 'are') !== false) {
     echo 'true';
-} ?>
+}else{
+echo '11311331232';
+}
+		    ?>
 		    
 		    <?php if (strpos($tags, Shared) !== false) { ?>
-		    <button type="button" class="unshare-button" onclick="unshareButton(<?php echo $p_id1; ?>,'<?php echo $tags; ?>');">UNSHARE</button>
-                 
+		    
+                 <button type="button" class="share-button" onclick="shareButton(<?php echo $p_id1; ?>);">SHARE</button>
 			<?php } else { ?>
-		  <button type="button" class="share-button" onclick="shareButton(<?php echo $p_id1; ?>);">SHARE</button>
+		    <button type="button" class="unshare-button" onclick="unshareButton(<?php echo $p_id1; ?>,'<?php echo $tags; ?>');">
+			    UNSHARE</button>
+		  
            <?php }?>
 		</div>
       </div>
