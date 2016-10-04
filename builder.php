@@ -47,7 +47,7 @@
                     <div class="builder-main-clearfix" style="border-bottom: 0px;">
                       	<div class="builder-conditions-container" style="height: 30px;">
 
-															<span class="conditions-title conditions-title-hover conditions-show-hide-button" style="line-height: 30px;">
+															<span class="conditions-title conditions-title-hover conditions-show-hide-button" style="line-height: 30px; cursor: pointer;">
 																Conditions
 																<i id="condition-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
 															</span>
@@ -114,7 +114,7 @@
                    <div class="builder-main-conatiner" style="height: auto;">
 	                    <div class="builder-main-clearfix" style="border-bottom: 0px;>
 	                      	<div class="builder-conditions-container" style="height: 30px;">
-	                          	<span class="conditions-title conditions-title-hover templates-show-hide-button" style="line-height: 30px;">
+	                          	<span class="conditions-title conditions-title-hover templates-show-hide-button" style="line-height: 30px; cursor: pointer;">
 																Template
 																<i id="template-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
 															</span>
