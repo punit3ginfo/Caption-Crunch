@@ -142,16 +142,7 @@
 	$('.conditions-show-hide-button').click(function() {
 	    $('.conditions-show-hide').slideToggle("slow", function() {
 					$('#conditions-header-clearfix').css('border','0px');
-					var value = 0
-					$("#condition-arrow-icon").rotate({
-					  bind:
-					  {
-					    click: function(){
-					      value +=180;
-					      $(this).rotate({ animateTo:value})
-					    }
-					  }
-					});
+					
 			});
 	    return false;
 	});
