@@ -44,12 +44,12 @@
                   <form style="display: block;">
                   <!-- CONDITIONS -->
                   <div class="builder-main-conatiner">
-                    <div class="builder-main-clearfix" style="padding-top: 5px;">
+                    <div id="conditions-header-clearfix" class="builder-main-clearfix">
                       	<div class="builder-conditions-container">
                           	<span class="conditions-title conditions-title-hover">
 															Conditions
 															<a href="#" class="conditions-show-hide-button" style="float:right; border: 0px; background: none;">
-																<i class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 46px;"></i>
+																<i id="condition-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 46px;"></i>
 															</a>
 														</span>
                       	</div>
@@ -140,7 +140,19 @@
 
 
 	$('.conditions-show-hide-button').click(function() {
-	    $('.conditions-show-hide').slideToggle("slow");
+	    $('.conditions-show-hide').slideToggle("slow", function() {
+					$('#conditions-header-clearfix').css('border','0px');
+					var value = 0
+					$("#condition-arrow-icon").rotate({
+					  bind:
+					  {
+					    click: function(){
+					      value +=180;
+					      $(this).rotate({ animateTo:value})
+					    }
+					  }
+					});
+			});
 	    return false;
 	});
 
