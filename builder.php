@@ -48,7 +48,7 @@
                       	<div class="builder-conditions-container">
                           	<span class="conditions-title conditions-title-hover">
 															Conditions
-															<button type="button" id="conditions-show-hide-button" style="float:right; border: 0px; background: none;">
+															<button type="button" onclick="openClose()" class="conditions-show-hide-button" style="float:right; border: 0px; background: none;">
 																<i class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 46px;"></i>
 															</button>
 														</span>
@@ -137,11 +137,11 @@
 
 <!-- Show / Hide Script -->
 <script type="text/javascript">
-	$('document').on('load',function() {
-		$( "#conditions-show-hide-button" ).click(function() {
-			$( "#conditions-show-hide" ).slideToggle( "slow", function() {
-				// Animation complete.
-			});
+
+	$('document').on('load',function openClose() {
+		$( "#conditions-show-hide" ).slideToggle( "slow", function() {
+			// Animation complete.
 		});
 	});
+
 </script>
