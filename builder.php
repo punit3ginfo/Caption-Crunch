@@ -143,11 +143,8 @@
 		// Show / Hide Conditions Container
 	    $('.conditions-show-hide').slideToggle("slow");
 		// Rotate Arrow 180 Degree / Click
-			$('#condition-arrow-icon').slideToggle(function() {
-				$(this).rotate({ endDeg:180, persist:true });
-			}, function() {
-				$(this).rotate({ endDeg:360 });
-			});
+
+		// Link Does Not Follow Href
 	    return false;
 	});
 
