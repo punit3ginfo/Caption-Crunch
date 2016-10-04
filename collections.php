@@ -16,7 +16,7 @@
                                 <?php
 
        				// echo "Product's go here"
-       				//require __DIR__.'/get_collectionlist.php'; //GET PRODUCTS
+       				require __DIR__.'/get_collectionlist.php'; //GET PRODUCTS
         				?>
 
                              <!-- Collection Card -->
