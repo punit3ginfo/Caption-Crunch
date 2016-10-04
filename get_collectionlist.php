@@ -9,12 +9,18 @@
 		$collections = $shopify('GET /admin/custom_collections.json', array('published_status'=>'published'));
 		$collections1 = $shopify('GET /admin/smart_collections.json', array('published_status'=>'published'));
                 $collections=array_merge($collections, $collections1);
-		print_r($collections);
+		
 		foreach($collections as $singlecollection)
 		{
 			$title=$singlecollection['title']; // collection Title
 			$id=$singlecollection['id']; // collection id
-			$handle=$singlecollection['handle']; // collection id ?>
+			$handle=$singlecollection['handle']; // collection id 
+			$products1 = $shopify('GET /admin/products.json?collection_id='.$id, array('published_status'=>'published'));
+			echo sizeof($products1);
+			echo "yes i am here!";
+	?>
+
+                        
 			
 			<a href="javascript:void(0)" onclick="getcolproduct(<?php echo $id;?>,'<?php echo $handle;?>')">                 
                                     <div class="chat_select_container">
