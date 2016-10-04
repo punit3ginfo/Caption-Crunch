@@ -24,7 +24,7 @@ try
 			$title=$singleproduct['title']; // Product Title
 			$variants=$singleproduct['variants'];
 		        $p_id1=$singleproduct['id'];
-			$tags='.$singleproduct['tags'].';
+			$tags=$singleproduct['tags'];
 			
 			
 			echo $tags;
