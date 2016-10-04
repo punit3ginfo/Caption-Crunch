@@ -24,7 +24,12 @@ try
 			$title=$singleproduct['title']; // Product Title
 			$variants=$singleproduct['variants'];
 		        $p_id1=$singleproduct['id'];
-			echo "tag=".$tags=$singleproduct['tags'];
+			$tags=$singleproduct['tags'];
+			if (in_array("shared", $tags)) {
+    				echo "Got shared";
+			}
+			
+			
 			
 
 			foreach($variants as $variants){
@@ -56,7 +61,7 @@ try
       			</div>
       		</div>
             <div class="share-button-container">
-                 <button type="button" class="share-button" onclick="shareButton(<?php echo $p_id1; ?>);">SHARE</button>
+                 <button type="button" class="share-button" onclick="shareButton(<?php echo $p_id1; ?>,<?php echo $tags; ?>);">SHARE</button>
             </div>
       </div>
 </div>
@@ -83,7 +88,7 @@ try
 	}
 	?>
 	<script>
-	function shareButton(pid){
+	function shareButton(pid,tag){
 
                var access_token='<?php echo $access_token ?>';
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
