@@ -29,15 +29,15 @@
 							'.$id, array('published_status'=>'published'));	
 			
 			
-							echo "<pre>";
+							//echo "<pre>";
 							//print_r($products1);
-							echo "</pre>";
+							//echo "</pre>";
 							 
 						?>	
 						
 							
 							
-                                                    <span class="notif_number"><?php echo "Normal count: " . sizeof($products);
+                                                    <span class="notif_number"><?php echo "Normal count: " . sizeof($products1);
 							?>
 							</span>
                                                 </div>
