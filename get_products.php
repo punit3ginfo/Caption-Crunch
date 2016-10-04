@@ -5,7 +5,6 @@
      $access_token=$_REQUEST['access_token'];
      $shopify = shopify\client($_REQUEST['shop'], SHOPIFY_APP_API_KEY, $access_token );
 
-
 ?>
 
 <?php
@@ -13,27 +12,21 @@ try
 	{
 		# Making an API request can throw an exception
 		if(isset($_REQUEST['colid']) && $_REQUEST['colid']!=''){
+			//alert(1);
 		$products = $shopify('GET /admin/products.json?collection_id='.$_REQUEST['colid'], array('published_status'=>'published'));
 		}
-		if($_REQUEST['colid']=='') {	
+		if($_REQUEST['colid']=='') {
+			//alert(2);
 	       $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		}
-		print_r($products);
+		//print_r($products);
 		//$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		foreach($products as $singleproduct)
 		{
 			$title=$singleproduct['title']; // Product Title
 			$variants=$singleproduct['variants'];
 		        $p_id1=$singleproduct['id'];
-			$tags=$singleproduct['tags'];
-			echo "a-";
-			print_r($tags);
-			
-			$a = 'How are you?';
 
-if ($tags contains 'Shared'){
-    echo 'true';
-}
 			foreach($variants as $variants){
 				$price=$variants['price']; // Product PRice
 			}
@@ -90,7 +83,7 @@ if ($tags contains 'Shared'){
 	}
 	?>
 	<script>
-	function shareButton(pid,tag){
+	function shareButton(pid){
 
                var access_token='<?php echo $access_token ?>';
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
