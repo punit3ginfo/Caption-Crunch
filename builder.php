@@ -134,3 +134,14 @@
     			</div>
   			</div>
 </div>
+
+<!-- Show / Hide Script -->
+<script>
+
+JQuery( "#conditions-show-hide-button" ).click(function() {
+	JQuery( "#conditions-show-hide" ).slideToggle( "slow", function() {
+		// Animation complete.
+	});
+});
+
+</script>
