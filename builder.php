@@ -136,12 +136,12 @@
 </div>
 
 <!-- Show / Hide Script -->
-<script>
-
-JQuery( "#conditions-show-hide-button" ).click(function() {
-	JQuery( "#conditions-show-hide" ).slideToggle( "slow", function() {
-		// Animation complete.
+<script type="text/javascript">
+	$('document').load(function() {
+		$( "#conditions-show-hide-button" ).click(function() {
+			$( "#conditions-show-hide" ).slideToggle( "slow", function() {
+				// Animation complete.
+			});
+		});
 	});
-});
-
 </script>
