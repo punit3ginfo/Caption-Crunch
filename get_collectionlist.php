@@ -24,21 +24,11 @@
                                             </div>
                                             <div class="notification-container">
                                                 <div class="chat_notification_container">
-						<?php 
-							$products1 = $shopify('GET /admin/products.json?collection_id=
-							'.$id, array('published_status'=>'published'));	
-			
-			
-							//echo "<pre>";
-							//print_r($products1);
-							//echo "</pre>";
-							 
-						?>	
+							
 						
 							
 							
-                                                    <span class="notif_number"><?php echo "Normal count: " . sizeof($products1);
-							?>
+                                                    <span class="notif_number">355
 							</span>
                                                 </div>
                                             </div>
