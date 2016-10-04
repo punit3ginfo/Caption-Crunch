@@ -17,15 +17,15 @@ try
 	{
 		
 		# Making an API request can throw an exception
-		<script> alert({$pid})</script>
+		
 	       $pidii = $pid.'.json';
-		<script> alert({$pidii})</script>
+		
 		
 		$product = $shopify('PUT /admin/products/'.$pidii, array(), array
 		(
 			'product' => array
 			(
-				"tags"=>""	
+				"tags"=>"share"	
 			)
 		));
 
