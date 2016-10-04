@@ -48,8 +48,21 @@ else
   }
 
 			$tags=$singleproduct['tags'];
+			$apple= $singleproduct['tags'];
+				
+				//$a = 'How are you?';
+
+if ($apple contains 'Shared'){
+    echo 'true';}
 			echo "original tags:-";
 			print_r($tags);
+			
+			if (in_array(Shared, $tags))
+			{
+			
+			 echo "hi";
+			
+			}
 			if (in_array("Shared", $tags)) {
     				echo "Got shared";
 				if(($key = array_search("shared", $tags)) !== false) {
