@@ -19,7 +19,7 @@ try
 			//alert(2);
 	       $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		}
-		//print_r($products);
+		print_r($products);
 		//$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		foreach($products as $singleproduct)
 		{
