@@ -134,6 +134,3 @@
     			</div>
   			</div>
 </div>
-
-<!-- Show / Hide Script -->
-<script type="text/javascript" src="main.js"></script>
