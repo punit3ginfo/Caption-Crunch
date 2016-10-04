@@ -45,8 +45,8 @@
                   <!-- CONDITIONS -->
                   <div class="builder-main-conatiner">
                     <div id="conditions-header-clearfix" class="builder-main-clearfix">
-                      	<div class="builder-conditions-container">
-                          	<span class="conditions-title conditions-title-hover">
+                      	<div class="builder-conditions-container" style="height: 30px;">
+                          	<span class="conditions-title conditions-title-hover" style="line-height: 30px;">
 															Conditions
 															<a href="#" class="conditions-show-hide-button" style="float:right; border: 0px; background: none;">
 																<i id="condition-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
@@ -142,7 +142,7 @@
 	$('.conditions-show-hide-button').click(function() {
 	    $('.conditions-show-hide').slideToggle("slow", function() {
 					$('#conditions-header-clearfix').css('border','0px');
-					
+
 			});
 	    return false;
 	});

@@ -729,13 +729,13 @@ a:hover {
 
 .builder-conditions-container {
 	  width: 100%;
-  	height: 30px;
+  	height: 46px;
   	display: flex;
   	justify-content: space-between;
 }
 
 .conditions-title {
-	  line-height: 30px;
+	  line-height: 46px;
   	font-family: HelveticaNeue-Bold;
     font-size: 16px;
     color: #4D595C;
