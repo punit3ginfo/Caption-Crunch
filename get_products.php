@@ -24,7 +24,8 @@ try
 			$title=$singleproduct['title']; // Product Title
 			$variants=$singleproduct['variants'];
 		        $p_id1=$singleproduct['id'];
-			$tags=$singleproduct['tags'];
+		echo "pp=".$tags=$singleproduct['tags'];
+			
 
 			foreach($variants as $variants){
 				$price=$variants['price']; // Product PRice
