@@ -61,7 +61,7 @@ try
             <div class="share-button-container">
 		    <?php 
 			if($tags!=''){ ?>
-		    <button type="button" class="unshare-button" onclick="unshareButton(<?php echo $p_id1; ?>,<?php echo $tags; ?>);">UNSHARE</button>
+		    <button type="button" class="unshare-button" onclick="unshareButton(<?php echo $p_id1; ?>,'<?php echo $tags; ?>');">UNSHARE</button>
                  
 			<?php } else { ?>
 		  <button type="button" class="share-button" onclick="shareButton(<?php echo $p_id1; ?>);">SHARE</button>
