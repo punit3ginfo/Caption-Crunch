@@ -26,6 +26,12 @@ try
 		        $p_id1=$singleproduct['id'];
 		echo "pp=".$tags=$singleproduct['tags'];
 			
+			
+
+if (strpos($tags, 'Shared') !== false) {
+    echo 'true';
+}
+			
 
 			foreach($variants as $variants){
 				$price=$variants['price']; // Product PRice
