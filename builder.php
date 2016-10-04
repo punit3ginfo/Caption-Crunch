@@ -137,7 +137,7 @@
 
 <!-- Show / Hide Script -->
 <script type="text/javascript">
-	$('document').load(function() {
+	$('document').on('load',function() {
 		$( "#conditions-show-hide-button" ).click(function() {
 			$( "#conditions-show-hide" ).slideToggle( "slow", function() {
 				// Animation complete.
