@@ -30,7 +30,7 @@ try
 			echo $tags;
 			echo "p-1";
 			print_r($tags);
-
+exit();
 			if ($tags contains 'Shared'){
     			echo 'true';
 			}
