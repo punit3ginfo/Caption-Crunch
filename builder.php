@@ -44,7 +44,7 @@
                   <form style="display: block;">
                   <!-- CONDITIONS -->
                   <div class="builder-main-conatiner">
-                    <div id="conditions-header-clearfix" class="builder-main-clearfix">
+                    <div id="conditions-header-clearfix" class="builder-main-clearfix" style="border-bottom: 0px;">
                       	<div class="builder-conditions-container" style="height: 30px;">
 													  <a href="#" class="conditions-show-hide-button" style="width: 100%;">
 															<span class="conditions-title conditions-title-hover" style="line-height: 30px;">
@@ -55,7 +55,7 @@
                       	</div>
                     </div>
 									<div class="conditions-show-hide">
-                   	<div class="builder-main-clearfix">
+                   	<div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
                       	<div class="builder-conditions-container">
                           <div class="condition-allorany-clearfix">
                             	<div class="condition-allorany-container-s">
@@ -141,7 +141,6 @@
 
 	$('.conditions-show-hide-button').click(function() {
 	    $('.conditions-show-hide').slideToggle("slow", function() {
-					$('#conditions-header-clearfix').css('border','0px');
 
 			});
 	    return false;
