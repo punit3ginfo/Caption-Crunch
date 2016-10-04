@@ -144,9 +144,9 @@
 	    $('.conditions-show-hide').slideToggle("slow");
 		// Rotate Arrow 180 Degree / Click
 			$('#condition-arrow-icon').toggle(function() {
-				$(this).animate({ rotate: 180 });
+				$('#condition-arrow-icon').animate({ rotate: 180 });
 			}, function() {
-				$(this).animate({ rotate: 360 });
+				$('#condition-arrow-icon').animate({ rotate: 180 });
 			});
 		// Link Does Not Follow Href
 	    return false;
