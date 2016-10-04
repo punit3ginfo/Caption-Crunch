@@ -25,6 +25,7 @@ try
 			$variants=$singleproduct['variants'];
 		        $p_id1=$singleproduct['id'];
 		echo $tags=$singleproduct['tags'];
+			$OrigonalTag=$singleproduct['tags'];
 			
 		 $tags = str_replace('Shared,', '', $tags);
 		$tags = str_replace(',Shared', '', $tags);
@@ -59,21 +60,12 @@ try
       			</div>
       		</div>
             <div class="share-button-container">
-		   <?php $a = 'How are you?';
-
-if (strpos($a, 'are') !== false) {
-    echo 'true';
-}else{
-echo '11311331232';
-}
-		    ?>
-		    
-		    <?php if (strpos($tags, Shared) !== false) { ?>
-		    
-                 <button type="button" class="share-button" onclick="shareButton(<?php echo $p_id1; ?>);">SHARE</button>
-			<?php } else { ?>
+		    <?php if (strpos($OrigonalTag, "Shared") !== false) { ?>
 		    <button type="button" class="unshare-button" onclick="unshareButton(<?php echo $p_id1; ?>,'<?php echo $tags; ?>');">
 			    UNSHARE</button>
+                
+			<?php } else { ?>
+		     <button type="button" class="share-button" onclick="shareButton(<?php echo $p_id1; ?>);">SHARE</button>
 		  
            <?php }?>
 		</div>
