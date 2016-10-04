@@ -137,11 +137,10 @@
 
 <!-- Show / Hide Script -->
 <script type="text/javascript">
+
 function openClose() {
 	$('document').on('load',function() {
-		$( "#conditions-show-hide" ).slideToggle( "slow", function() {
-			// Animation complete.
-		});
+		$( "#conditions-show-hide" ).toggle("400");
 	});
 };
 
