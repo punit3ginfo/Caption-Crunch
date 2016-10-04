@@ -207,9 +207,15 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 
   <!-- Show / Hide Script -->
   <script>
-  $('.conditions-show-hide-button').click(function(){
-        $('.conditions-show-hide').hide();
+
+  $( "#conditions-show-hide-button" ).click(function() {
+    $( "#conditions-show-hide" ).slideToggle( "slow", function() {
+      // Animation complete.
+    });
   });
+  
   </script>
+
+
 
 </body>

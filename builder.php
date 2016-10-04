@@ -48,13 +48,13 @@
                       	<div class="builder-conditions-container">
                           	<span class="conditions-title conditions-title-hover">
 															Conditions
-															<button type="button" class="conditions-show-hide-button" style="float:right;">
+															<button type="button" id="conditions-show-hide-button" style="float:right; border: 0px; background: none;">
 																<i class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 46px;"></i>
 															</button>
 														</span>
                       	</div>
                     </div>
-									<div class="conditions-show-hide">
+									<div id="conditions-show-hide">
                    	<div class="builder-main-clearfix">
                       	<div class="builder-conditions-container">
                           <div class="condition-allorany-clearfix">
