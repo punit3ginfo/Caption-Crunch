@@ -63,7 +63,7 @@
                           </div>
         				</div>
 
-  <div class="product-grid-container">
+  <div class="product-grid-container scroll-grid">
       <div  class="product-grid-overflow-container">
         <?php
 
