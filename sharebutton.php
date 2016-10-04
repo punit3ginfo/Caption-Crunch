@@ -25,7 +25,7 @@ try
 		(
 			'product' => array
 			(
-				"tags"=>"share"	
+				"tags"=>""	
 			)
 		));
 
