@@ -29,8 +29,9 @@ try
 		 $tags = str_replace('Shared,', '', $tags);
 		$tags = str_replace(',Shared', '', $tags);
 		$tags = str_replace('Shared', '', $tags);
-		echo $tags;			
-
+		echo "$tags";
+			echo '$tags';
+$tags
 			foreach($variants as $variants){
 				$price=$variants['price']; // Product PRice
 			}
