@@ -56,7 +56,7 @@ try
       			</div>
       		</div>
             <div class="share-button-container">
-                 <button type="button" class="share-button" onclick="shareButton(<?php $p_id1; ?>);">SHARE</button>
+                 <button type="button" class="share-button" onclick="shareButton(<?php echo $p_id1; ?>);">SHARE</button>
             </div>
       </div>
 </div>
