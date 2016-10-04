@@ -48,7 +48,7 @@
                       	<div class="builder-conditions-container" style="height: 30px;">
                           	<span class="conditions-title conditions-title-hover" style="line-height: 30px;">
 															Conditions
-															<a href="#" class="conditions-show-hide-button" style="float:right; border: 0px; background: none;">
+															<a onclick='$("#condition-arrow-icon").rotate(180);' href="#" class="conditions-show-hide-button" style="float:right; border: 0px; background: none;">
 																<i id="condition-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
 															</a>
 														</span>
