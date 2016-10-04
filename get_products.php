@@ -61,12 +61,14 @@ try
       		</div>
             <div class="share-button-container">
 		    <?php if (strpos($OrigonalTag, "Shared") !== false) { ?>
-		    <button type="button" class="unshare-button" onclick="unshareButton(<?php echo $p_id1; ?>,'<?php echo $tags; ?>');">
+		    <button type="button"  class="unshare-button" onclick="unshareButton(<?php echo $p_id1; ?>,'<?php echo $tags; ?>');">
 			    UNSHARE</button>
+		     <button type="button" style="display:none;" class="share-button" onclick="shareButton(<?php echo $p_id1; ?>,'Shared');">SHARE</button>
                 
 			<?php } else { ?>
 		     <button type="button" class="share-button" onclick="shareButton(<?php echo $p_id1; ?>,'Shared');">SHARE</button>
-		  
+		   <button type="button" style="display:none;" class="unshare-button" onclick="unshareButton(<?php echo $p_id1; ?>,'<?php echo $tags; ?>');">
+			    UNSHARE</button>
            <?php }?>
 		</div>
       </div>
@@ -103,7 +105,8 @@ try
                 $.ajax({
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){
-			
+			$.('.share-button').hide();
+			    $.('.unshare-button').show();
                     }
                 });
             }
@@ -120,7 +123,8 @@ try
                 $.ajax({
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){
-			
+			$.('.unshare-button').hide();
+			    $.('.share-button').show();
                     }
                 });
             }
