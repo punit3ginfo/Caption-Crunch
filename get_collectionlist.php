@@ -16,8 +16,8 @@
 			$id=$singlecollection['id']; // collection id
 			$handle=$singlecollection['handle']; // collection id 
 			$products1 = $shopify('GET /admin/products.json?collection_id='.$id, array('published_status'=>'published'));
-			echo sizeof($products1);
-			echo "yes i am here!";
+		        $noOfProduct=sizeof($products1);
+			
 	?>
 
                         
@@ -34,7 +34,7 @@
 						
 							
 							
-                                                    <span class="notif_number">355
+                                                    <span class="notif_number"><?php echo $noOfProduct; ?>
 							</span>
                                                 </div>
                                             </div>
