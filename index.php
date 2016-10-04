@@ -21,8 +21,10 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 <head>
   <title>Caption Crunch</title>
   <link rel="stylesheet" href="/style.css">
+
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+  <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -39,7 +41,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
               	</div>
             </a>
 			<a  class="sidebar-link" href="javascript:void(0)" onclick="getbuilder()">
-            
+
             	<div class="sidebar-nav-container">
                   	<span class="sidebar-span">
                     <i style="font-size: 20px;" class="fa fa-pencil-square-o" aria-hidden="true"></i><br>
@@ -74,7 +76,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                 </div>
               </a>
 			  <a class="sidebar-link" href="javascript:void(0)" onclick="getaccount()" >
-              
+
                   <div class="sidebar-nav-container">
                       <span class="sidebar-span">
                       <i style="font-size: 20px;" class="fa fa-user" aria-hidden="true"></i><br>
@@ -119,7 +121,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
     	<div class="main_container">
 			  <div class="content-container">
 
-            
+
 
         </div>
     	</div>
@@ -131,10 +133,10 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 </div>
 <script>
 	function getproducts(){
-		
+
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
-		
+
                 $.ajax({
                     url: '/collections.php?access_token='+access_token+'&shop='+shop,
                     success: function(data){
@@ -145,10 +147,10 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                 });
             }
 			function getdashboard(){
-		
+
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
-		
+
                 $.ajax({
                     url: '/dashboard.php?access_token='+access_token+'&shop='+shop,
                     success: function(data){
@@ -159,10 +161,10 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                 });
             }
 			function getbuilder(){
-		
+
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
-		
+
                 $.ajax({
                     url: '/builder.php?access_token='+access_token+'&shop='+shop,
                     success: function(data){
@@ -173,10 +175,10 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                 });
             }
 			function getsettings(){
-		
+
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
-		
+
                 $.ajax({
                     url: '/settings.php?access_token='+access_token+'&shop='+shop,
                     success: function(data){
@@ -187,10 +189,10 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                 });
             }
 			function getaccount(){
-		
+
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
-		
+
                 $.ajax({
                     url: '/account.php?access_token='+access_token+'&shop='+shop,
                     success: function(data){
@@ -200,9 +202,9 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                     }
                 });
             }
-			
+
 
 
 	</script>
-
+  <script src="/main.js"></script>
 </body>

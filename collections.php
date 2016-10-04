@@ -12,9 +12,9 @@
 
                           	<!-- Collection Card -->
 
-                          		
+
                                 <?php
-						    
+
        				// echo "Product's go here"
        				require __DIR__.'/get_collectionlist.php'; //GET PRODUCTS
         				?>
@@ -66,7 +66,7 @@
   <div class="product-grid-container">
       <div  class="product-grid-overflow-container">
         <?php
-						    
+
        // echo "Product's go here"
        require __DIR__.'/get_products.php'; //GET PRODUCTS
         ?>

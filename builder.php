@@ -46,9 +46,15 @@
                   <div class="builder-main-conatiner">
                     <div class="builder-main-clearfix" style="padding-top: 5px;">
                       	<div class="builder-conditions-container">
-                          	<span class="conditions-title conditions-title-hover">Conditions<i class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 46px;"></i></span>
+                          	<span class="conditions-title conditions-title-hover">
+															Conditions
+															<a class="condition-show-hide-button" href="" style="float:right;">
+																<i class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 46px;"></i>
+															</a>
+														</span>
                       	</div>
                     </div>
+									<div class="conditions-show-hide">
                    	<div class="builder-main-clearfix">
                       	<div class="builder-conditions-container">
                           <div class="condition-allorany-clearfix">
@@ -101,6 +107,7 @@
                           	<a href="#" class="add-condition-button"><i class="fa fa-plus" aria-hidden="true"></i> Add another condition</a>
                     	</div>
                     </div>
+									</div>
 
                    </div>
 				  <!-- TEMPLATE -->
@@ -110,11 +117,13 @@
                           	<span class="conditions-title conditions-title-hover">Template<i class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 46px;"></i></span>
                       	</div>
                     </div>
-                    <div class="builder-main-clearfix">
-                      	<div class="builder-conditions-container">
-                          	<span class="" style="line-height: 46px;"><i class="fa fa-info-circle" aria-hidden="true" style="margin-right: 10px;"></i> Create a custom caption template or use one of our premade templates</span>
-                      	</div>
-                    </div>
+										<div class="template-show-hide">
+	                    <div class="builder-main-clearfix">
+	                      	<div class="builder-conditions-container">
+	                          	<span class="" style="line-height: 46px;"><i class="fa fa-info-circle" aria-hidden="true" style="margin-right: 10px;"></i> Create a custom caption template or use one of our premade templates</span>
+	                      	</div>
+	                    </div>
+										</div>
                     <div class="builder-main-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
                     	<div class="builder-conditions-container" style="height: auto; min-height: 100px;">
                           <textarea style="width: 100%; min-height: 100px; border: 1px solid #666;"></textarea>
