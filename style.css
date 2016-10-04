@@ -521,11 +521,12 @@ body {
     text-transform: uppercase;
   	background: white;
     width: calc(100% - 40px);
+    cursor: pointer;
 }
 
 .share-button:hover {
   	border: 1px solid #65D35B;
-	background: #65D35B;
+	  background: #65D35B;
     color: white;
   	text-decoration: none;
 }
