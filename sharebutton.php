@@ -22,12 +22,19 @@ try
 		
 	       $pidii = $pid.'.json';
 		
-		if($tags!=''){
 		$product = $shopify('PUT /admin/products/'.$pidii, array(), array
 		(
 			'product' => array
-			(
-				
+			(	
+			"tags"=>$tags	
+			)
+		));
+		
+		/*if($tags!=''){
+		$product = $shopify('PUT /admin/products/'.$pidii, array(), array
+		(
+			'product' => array
+			(	
 			"tags"=>$tags	
 			)
 		));
@@ -40,7 +47,7 @@ try
 				"tags"=>Shared	
 				)
 			));	
-		}
+		} */
 		//print_r($product);
 	}
 	catch (shopify\ApiException $e)
