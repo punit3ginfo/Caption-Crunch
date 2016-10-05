@@ -141,7 +141,7 @@ try
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
                var pid_1 = '<?php echo $p_id1; ?>';
 		var tags_1 = '<?php echo $tags; ?>';
-		var _id = '#'+ pid_1;
+		var _id = '#'+ pid;
 		alert(_id);
 
                 $.ajax({
