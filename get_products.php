@@ -79,10 +79,13 @@ try
 		var pid_1 = '<?php echo $p_id1; ?>';
 		//alert(pid_1);
 		var pattern = /Shared/;
+		var pattern1 = Shared;
+		
 		var exists = pattern.test(OrigonalTag);
-		if(exists){
+		var exists1 = pattern1.test(OrigonalTag);
+		if(exists || exists1 ){
 			var tags_1 = '<?php echo $tags; ?>';
-		  var _id = '#'+ pid_1;
+		        var _id = '#'+ pid_1;
 
 			  console.log(_id);   
 			  $(_id).html('<button type=button class="share-button" onclick="shareButton('+pid_1+',"'+tags_1+'");">UnShare</button>');
