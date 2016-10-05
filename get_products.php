@@ -85,6 +85,7 @@ try
 		var exists1 = pattern1.test(OrigonalTag);
 		if(exists || exists1 ){
 			var tags_1 = '<?php echo $tags; ?>';
+			 
 		        var _id = '#'+ pid_1;
 
 			  console.log(_id);   
@@ -139,10 +140,11 @@ try
                
                var access_token='<?php echo $access_token ?>';
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
-               var pid_1 = '<?php echo $p_id1; ?>';
+               
 		var tags_1 = '<?php echo $tags; ?>';
 		var _id = '#'+ pid;
-		alert(_id);
+		alert(tags_1);
+		
 
                 $.ajax({
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
@@ -160,10 +162,16 @@ try
 	
 	var tags;
 	function unshareButton(pid,tags){
-               var pid_1 = '<?php echo $p_id1; ?>';
+               
 		var _id = '#'+ pid;
                var access_token='<?php echo $access_token ?>';
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
+		<?php
+		        $tags = str_replace('Shared,', '', $tags);
+		        $tags = str_replace(',Shared', '', $tags);
+		        $tags = str_replace('Shared', '', $tags);
+			$tags = str_replace(',', 'AA', $tags);
+	       ?>
 		var tags_1 = '<?php echo $tags; ?>';
              
 
