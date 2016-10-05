@@ -86,7 +86,7 @@ try
 		}else{
 		  var _id = '#'+ pid_1;
 			  console.log(_id);   
-			  $(_id).html('<button type=button class="share-button" onclick="shareButton(pid_1,tags_1);">Share</button>');
+			  $(_id).html('<button type=button class="share-button" onclick="shareButton('+pid_1+','+tags_1+');">Share</button>');
 		}
 	});   
 </script>
