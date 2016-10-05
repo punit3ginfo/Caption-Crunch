@@ -88,7 +88,7 @@ try
 		        var _id = '#'+ pid_1;
 
 			  console.log(_id);   
-			  $(_id).html('<button type=button class=share-button onclick=shareButton('+pid_1+',"'+tags_1+'");>UnShare</button>');
+			  $(_id).html('<button type=button class=share-button onclick=shareButton('+pid_1+',"'+tags_1+'");>UnShare1</button>');
 
 		}else{
 			var _id = '#'+ pid_1;
@@ -100,7 +100,7 @@ try
 			?>
 			var tags_1 = '<?php echo $OrigonalTag; ?>';
 			  console.log(_id);   
-			  $(_id).html('<button type="button" class=share-button onclick=shareButton('+pid_1+',"'+tags_1+'");>Share</button>');
+			  $(_id).html('<button type="button" class=share-button onclick=shareButton('+pid_1+',"'+tags_1+'");>Share2</button>');
 	}
 	});   
 </script>
