@@ -83,7 +83,7 @@ try
 		var OrigonalTag = '<?php echo $OrigonalTag; ?>';
 		var pattern = /Shared/;
 		var exists = pattern.test(OrigonalTag);
-		if(exists)
+		if(exists){
 		console.log(11);
 		}else{
 		  console.log(21);
