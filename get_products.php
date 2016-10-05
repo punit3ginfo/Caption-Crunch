@@ -25,12 +25,12 @@ try
 			$variants=$singleproduct['variants'];
 		        $p_id1=$singleproduct['id'];
 		        $tags=$singleproduct['tags'];
-			    $OrigonalTag=$singleproduct['tags'];
+			echo "org=".$OrigonalTag=$singleproduct['tags'];
 			
 			
 		        $tags = str_replace('shared', '', $tags);
 				$tags = str_replace(' ', '', $tags);
-			   $tags = str_replace(',', 'AA', $tags);
+			   echo "tag1=". $tags = str_replace(',', 'AA', $tags);
 		        //$tags = str_replace(',shared', '', $tags);
 		        //$tags = str_replace('shared', '', $tags);
 			//$tags = str_replace(',', 'AA', $tags);
@@ -83,8 +83,8 @@ try
 		var exists = pattern.test(OrigonalTag);
 		var exists1 = pattern1.test(OrigonalTag);
 		if(exists || exists1 ){
-			var tags_1 = "'<?php echo $tags; ?>'";
-			
+			var tags_1 = '"<?php echo $tags; ?>"';
+			alert(tags_1);
 			 
 		        var _id = '#'+ pid_1;
 
@@ -171,3 +171,7 @@ try
                 });
             }
     </script>
+
+
+
+
