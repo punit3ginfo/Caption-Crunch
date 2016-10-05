@@ -144,7 +144,7 @@ try
                
                var access_token='<?php echo $access_token ?>';
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
-              var tags_unshare = tags.replace(Shared, "");
+              var tags_unshare = tags.replace('Shared', "");
 		alert(tags_unshare);
 		
 		var _id = '#'+ pid;
