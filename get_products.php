@@ -75,6 +75,7 @@ try
 	$(document).ready(function(){
 		var OrigonalTag = '<?php echo $OrigonalTag; ?>';
 		var pid_1 = '<?php echo $pid1; ?>';
+		alert(pid_1);
 		var pattern = /Shared/;
 		var exists = pattern.test(OrigonalTag);
 		if(exists){
