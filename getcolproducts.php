@@ -46,7 +46,6 @@
 	<div class="product-card-container">
 
     <div class="product-card-image-container" style='background-image: url(<?php echo $src; ?>)'>
-
     </div>
 
     <div class="product-card-details-section">
@@ -58,14 +57,14 @@
               </div>
       </div>
     </div>
-    
+
 		<div class="product-share-container">
-
 			<button type="button"  onclick="shareButton(<?php $p_id1; ?>);">SHARE</button>
-
 		</div>
+
 	</div>
-	 </div>
+
+</div>
 <!-- HTML Content for Product END    -->
 
 	<?php

@@ -53,8 +53,8 @@ try
 	<div class="product-card-container">
 
       		<div class="product-card-image-container" style='background-image: url(<?php echo $src; ?>)'>
-
       		</div>
+
       		<div class="product-card-details-section">
       			<div class="product-card-details-container">
                   	<span class="product-title-text"><?php echo $title; ?></span>
@@ -65,12 +65,7 @@ try
       			</div>
       		</div>
 
-
-
-
-
-            <div id="<?php echo $p_id1; ?>"  class="share-button-container?>" >
-
+          <div id="<?php echo $p_id1; ?>"  class="share-button-container?>" >
 
 			<script>
 	$(document).ready(function(){
