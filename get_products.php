@@ -25,10 +25,11 @@ try
 			$variants=$singleproduct['variants'];
 		        $p_id1=$singleproduct['id'];
 		        $tags=$singleproduct['tags'];
-			echo "org tag=".$OrigonalTag=$singleproduct['tags'];
+			echo "org=".$OrigonalTag=$singleproduct['tags'];
 			
 			
-		       echo "sim tag1=". $tags = str_replace('shared', '', $tags);
+		        $tags = str_replace('shared', '', $tags);
+			   echo "tag1=". $tags = str_replace(',', '', $tags);
 		        //$tags = str_replace(',shared', '', $tags);
 		        //$tags = str_replace('shared', '', $tags);
 			//$tags = str_replace(',', 'AA', $tags);
@@ -86,8 +87,8 @@ try
 			 
 		        var _id = '#'+ pid_1;
 
-			  console.log(_id);   
-			  $(_id).html('<button type=button class=share-button onclick=unshareButton('+pid_1+',"'+tags_1+'");>UnShare</button>');
+			     
+		$(_id).html('<button type=button class=share-button onclick=unshareButton('+pid_1+',"'+tags_1+'");>UnShare</button>');
 
 		}else{
 			var _id = '#'+ pid_1;
@@ -98,7 +99,7 @@ try
 			}
 			?>
 			var tags_1 = '<?php echo $OrigonalTag; ?>';
-			  console.log(_id);   
+			   
 			  $(_id).html('<button type="button" class=share-button onclick=shareButton('+pid_1+',"'+tags_1+'");>Share</button>');
 	}
 	});   
