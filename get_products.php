@@ -44,9 +44,6 @@ try
 			?>
 
 
-
-
-
 <!-- HTML Content for Product  START      -->
 
 <div class="product-card-clearfix">
@@ -110,15 +107,8 @@ try
 </div>
 <!-- HTML Content for Product END    -->
 
-
-
-
-
-
 	<?php
-
-
-		}
+	}
 	}
 	catch (shopify\ApiException $e)
 	{
@@ -144,16 +134,10 @@ try
                
                var access_token='<?php echo $access_token ?>';
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
-              var tags_unshare = tags.replace('Shared', "");
-		var tags_unshare = tags_unshare.replace('shared', "");
-		
-		alert(tags_unshare);
-		
-		var _id = '#'+ pid;
-		
-		
-
-                $.ajax({
+               var tags_unshare = tags.replace('Shared', "");
+	       var tags_unshare = tags_unshare.replace('shared', "");
+	       var _id = '#'+ pid;
+               $.ajax({
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){
 			$(_id).html('<button type=button class=share-button abc onclick=unshareButton('+pid+',"'+tags_unshare+'");>UnShare</button>');
@@ -162,20 +146,14 @@ try
             }
 	</script>
 
-<script>
-	
-	
-	
-	
+    <script>
+
 	var tags;
-	function unshareButton(pid,tags){
-               
+	function unshareButton(pid,tags){    
 		var _id = '#'+ pid;
-               var access_token='<?php echo $access_token ?>';
-	       var shop='<?php echo $_REQUEST['shop'] ?>';
-		
+                var access_token='<?php echo $access_token ?>';
+	        var shop='<?php echo $_REQUEST['shop'] ?>';
 		var tags_1 = '<?php echo $tags; ?>';
-             
 
                 $.ajax({
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
@@ -185,7 +163,7 @@ try
                     }
                 });
             }
-</script>
+    </script>
 
 
 
