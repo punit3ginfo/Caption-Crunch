@@ -68,7 +68,7 @@ try
 		
 		
 		
-            <div class="share-button-container <?php echo $p_id1;  ?>">
+            <div id="<?php echo $p_id1; ?>"  class="share-button-container?>" >
 		    
 		    
 			<script>
