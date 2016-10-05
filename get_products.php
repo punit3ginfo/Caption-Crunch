@@ -83,7 +83,7 @@ try
 		var exists = pattern.test(OrigonalTag);
 		var exists1 = pattern1.test(OrigonalTag);
 		if(exists || exists1 ){
-			var tags_1 = '<?php echo "'".$tags."'"; ?>';
+			var tags_1 = <?php echo "'"; echo $tags; echo "'"; ?>;
 			alert(tags_1);
 			 
 		        var _id = '#'+ pid_1;
