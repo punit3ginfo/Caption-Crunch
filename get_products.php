@@ -137,20 +137,16 @@ try
 	?>
 
  <?php
-		        $unsharedtags = str_replace('Shared,', '', $tags);
-		        $unsharedtags = str_replace(',Shared', '', $unsharedtags);
-		        $unsharedtags = str_replace('Shared', '', $unsharedtags);
-                        $unsharedtags = str_replace(' Shared', '', $unsharedtags);
-                        $unsharedtags = str_replace('Shared ', '', $unsharedtags);
-			$unsharedtags = str_replace(',', 'AA', $unsharedtags);
+		        
 	       ?>
 	<script>
 	function shareButton(pid,tags){
                
                var access_token='<?php echo $access_token ?>';
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
-              
-		var tags_unshare = '<?php echo $unsharedtags; ?>';
+              var tags_unshare = tags.replace(Shared, "");
+		alert(tags_unshare);
+		
 		var _id = '#'+ pid;
 		
 		
