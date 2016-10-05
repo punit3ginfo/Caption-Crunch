@@ -143,13 +143,13 @@ try
                
 		var tags_1 = '<?php echo $tags; ?>';
 		var _id = '#'+ pid;
-		alert(tags_1);
+		
 		
 
                 $.ajax({
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){
-			$(_id).html('<button type=button class=share-button onclick=unshareButton('+pid_1+',"'+tags_1+'");>UnShare</button>');
+			$(_id).html('<button type=button class=share-button onclick=unshareButton('+pid+',"'+tags_1+'");>UnShare</button>');
                     }
                 });
             }
@@ -179,7 +179,7 @@ try
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){		     	
 			    
-			  $(_id).html('<button type="button" class=share-button onclick=shareButton('+pid_1+',"'+tags_1+'");>Share</button>');
+			  $(_id).html('<button type="button" class=share-button onclick=shareButton('+pid+',"'+tags_1+'");>Share</button>');
                     }
                 });
             }
