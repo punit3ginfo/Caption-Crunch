@@ -123,8 +123,8 @@ try
                 $.ajax({
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){
-			    alert(data);
-			   $('#'+data).html('Save');
+			   //$('#'+data).html('Save');
+			   $('#' + data).html('Save');
                     }
                 });
             }
