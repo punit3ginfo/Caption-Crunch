@@ -28,9 +28,9 @@ try
 			$OrigonalTag=$singleproduct['tags'];
 			
 			
-		        $tags = str_replace('Shared,', '', $tags);
-		        $tags = str_replace(',Shared', '', $tags);
-		        $tags = str_replace('Shared', '', $tags);
+		        $tags = str_replace('shared,', '', $tags);
+		        $tags = str_replace(',shared', '', $tags);
+		        $tags = str_replace('shared', '', $tags);
 			$tags = str_replace(',', 'AA', $tags);
 			foreach($variants as $variants){
 				$price=$variants['price']; // Product PRice
@@ -75,8 +75,8 @@ try
 		
 		var pid_1 = '<?php echo $p_id1; ?>';
 		//alert(pid_1);
-		var pattern = /Shared/;
-		var pattern1 = / Shared/;
+		var pattern = /shared/;
+		var pattern1 = / shared/;
 		
 		var exists = pattern.test(OrigonalTag);
 		var exists1 = pattern1.test(OrigonalTag);
@@ -93,7 +93,7 @@ try
 			<?php 
 			if($OrigonalTag == '')
 			{
-			  $OrigonalTag="Shared";	
+			  $OrigonalTag="shared";	
 			}
 			?>
 			var tags_1 = '<?php echo $OrigonalTag; ?>';
@@ -134,7 +134,7 @@ try
                
                var access_token='<?php echo $access_token ?>';
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
-               var tags_unshare = tags.replace('Shared', "");
+               var tags_unshare = tags.replace('shared', "");
 	       var tags_unshare = tags_unshare.replace('shared', "");
 	       var _id = '#'+ pid;
                $.ajax({
