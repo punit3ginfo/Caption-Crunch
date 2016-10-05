@@ -28,7 +28,7 @@ try
 			$OrigonalTag=$singleproduct['tags'];
 			
 			
-		        $tags = str_replace('shared,', '', $tags);
+		        $tags = str_replace('shared', '', $tags);
 		        //$tags = str_replace(',shared', '', $tags);
 		        //$tags = str_replace('shared', '', $tags);
 			//$tags = str_replace(',', 'AA', $tags);
