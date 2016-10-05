@@ -59,6 +59,11 @@ try
                   	</div>
       			</div>
       		</div>
+		
+		
+		
+		
+		
             <div class="share-button-container">
 		    <?php if (strpos($OrigonalTag, "Shared") !== false) { ?>
 		    <button type="button" id="<?php echo $p_id1; ?>" class="unshare-button" onclick="unshareButton(<?php echo $p_id1; ?>,'<?php echo $tags; ?>');">
@@ -70,6 +75,22 @@ try
       </div>
 </div>
 <!-- HTML Content for Product END    -->
+
+
+
+<script>
+	$(document).ready(function(){
+		var OrigonalTag = '<?php echo $OrigonalTag; ?>';
+		var pattern = /Shared/;
+		var exists = pattern.test(OrigonalTag);
+		if(exists)
+		console.log(11);
+		}else{
+		  console.log(21);
+		}
+	});   
+</script>
+
 
 	<?php
 
@@ -110,6 +131,10 @@ try
 	</script>
 
 <script>
+	
+	
+	
+	
 	var tags;
 	function unshareButton(pid,tags){
 
@@ -126,4 +151,8 @@ try
                     }
                 });
             }
-	</script>
+</script>
+
+
+
+
