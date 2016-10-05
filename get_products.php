@@ -89,7 +89,7 @@ try
 
 			     
 		//$(_id).html('<button type=button class=share-button onclick=unshareButton('+pid_1+',"'+tags_1+'");>UnShare</button>');
-		$(_id).html("<button type='button' class='share-button' onclick='unshareButton(pid_1,tags_1);'>UnShare</button>");
+		$(_id).html("<button type='button' class='share-button' onclick='unshareButton("+pid_1+","tags_1+");'>UnShare</button>");
 
 		}else{
 			var _id = '#'+ pid_1;
@@ -170,3 +170,7 @@ try
                 });
             }
     </script>
+
+
+
+
