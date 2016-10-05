@@ -106,7 +106,7 @@ try
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){
 			  alert(data);
-			     $("#7901168776").html('UnSave');
+			     $("#"+data).html('UnSave');
                     }
                 });
             }
@@ -124,7 +124,7 @@ try
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){
 			    alert(data);
-			   $("#7901168776").html('Save');
+			   $("#"+data).html('Save');
                     }
                 });
             }
