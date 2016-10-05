@@ -78,20 +78,22 @@ try
 			<script>
 	$(document).ready(function(){
 		var OrigonalTag = '<?php echo $OrigonalTag; ?>';
-		var tags_1 = '<?php echo $tags; ?>';
+		
 		var pid_1 = '<?php echo $p_id1; ?>';
 		//alert(pid_1);
 		var pattern = /Shared/;
 		var exists = pattern.test(OrigonalTag);
 		if(exists){
 		var _id = '#'+ pid_1;
+			var tags_1 = '<?php echo $OrigonalTag; ?>';
 			  console.log(_id);   
-			  $(_id).html('<button type="button" class="share-button" onclick="shareButton('+pid_1+','+tags_1+');">Unshare</button>');
+			  $(_id).html('<button type="button" class="share-button" onclick="shareButton('+pid_1+','+tags_1+');">Share</button>');
 		}else{
+			var tags_1 = '<?php echo $tags; ?>';
 		  var _id = '#'+ pid_1;
 			var tags_1 = '<?php echo $OrigonalTag; ?>';
 			  console.log(_id);   
-			  $(_id).html('<button type=button class="share-button" onclick="shareButton('+pid_1+','+tags_1+');">Share</button>');
+			  $(_id).html('<button type=button class="share-button" onclick="shareButton('+pid_1+','+tags_1+');">UnShare</button>');
 		}
 	});   
 </script>
