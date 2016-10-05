@@ -24,10 +24,14 @@ try
 			$title=$singleproduct['title']; // Product Title
 			$variants=$singleproduct['variants'];
 		        $p_id1=$singleproduct['id'];
-		        $tags=$singleproduct['tags'];
+		       
 			$OrigonalTag=$singleproduct['tags'];
+			if($OrigonalTag=='')
+			{
+				$OrigonalTag='Shared';
+			}
 			
-		        $tags = str_replace('Shared,', '', $tags);
+		        $tags = str_replace('Shared,', '', $OrigonalTag);
 		        $tags = str_replace(',Shared', '', $tags);
 		        $tags = str_replace('Shared', '', $tags);
 			$tags = str_replace(',', 'AA', $tags);
@@ -85,6 +89,7 @@ try
 			  $(_id).html('<button type="button" class="share-button" onclick="shareButton('+pid_1+','+tags_1+');">Unshare</button>');
 		}else{
 		  var _id = '#'+ pid_1;
+			var tags_1 = '<?php echo $OrigonalTag; ?>';
 			  console.log(_id);   
 			  $(_id).html('<button type=button class="share-button" onclick="shareButton('+pid_1+','+tags_1+');">Share</button>');
 		}
