@@ -142,16 +142,11 @@ try
                var pid_1 = '<?php echo $p_id1; ?>';
 		var tags_1 = '<?php echo $tags; ?>';
 		var _id = '#'+ pid_1;
+		alert(_id);
 
                 $.ajax({
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){
-			
-			    
-			    
-			    
-			    
-			    
 			$(_id).html('<button type=button class=share-button onclick=unshareButton('+pid_1+',"'+tags_1+'");>UnShare</button>');
                     }
                 });
