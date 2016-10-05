@@ -82,6 +82,7 @@ try
 		var exists1 = pattern1.test(OrigonalTag);
 		if(exists || exists1 ){
 			var tags_1 = '<?php echo $tags; ?>';
+			alert(tags_1);
 			 
 		        var _id = '#'+ pid_1;
 
@@ -140,7 +141,7 @@ try
                $.ajax({
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){
-			$(_id).html('<button type=button class=share-button abc onclick=unshareButton('+pid+',"'+tags_unshare+'");>UnShare</button>');
+			$(_id).html('<button type=button class=share-button onclick=unshareButton('+pid+',"'+tags_unshare+'");>UnShare</button>');
                     }
                 });
             }
