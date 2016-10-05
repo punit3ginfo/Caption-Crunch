@@ -79,7 +79,7 @@ try
 		var pid_1 = '<?php echo $p_id1; ?>';
 		//alert(pid_1);
 		var pattern = /Shared/;
-		var pattern1 = Shared;
+		var pattern1 = / Shared/;
 		
 		var exists = pattern.test(OrigonalTag);
 		var exists1 = pattern1.test(OrigonalTag);
