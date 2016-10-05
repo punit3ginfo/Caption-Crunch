@@ -140,7 +140,12 @@ try
                
                var access_token='<?php echo $access_token ?>';
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
-               
+               <?php
+		        $tags = str_replace('Shared,', '', $tags);
+		        $tags = str_replace(',Shared', '', $tags);
+		        $tags = str_replace('Shared', '', $tags);
+			$tags = str_replace(',', 'AA', $tags);
+	       ?>
 		var tags_1 = '<?php echo $tags; ?>';
 		var _id = '#'+ pid;
 		
@@ -166,12 +171,7 @@ try
 		var _id = '#'+ pid;
                var access_token='<?php echo $access_token ?>';
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
-		<?php
-		        $tags = str_replace('Shared,', '', $tags);
-		        $tags = str_replace(',Shared', '', $tags);
-		        $tags = str_replace('Shared', '', $tags);
-			$tags = str_replace(',', 'AA', $tags);
-	       ?>
+		
 		var tags_1 = '<?php echo $tags; ?>';
              
 
