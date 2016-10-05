@@ -135,18 +135,22 @@ try
 		print_r($e->getResponse());
 	}
 	?>
+
+ <?php
+		        $unsharedtags = str_replace('Shared,', '', $tags);
+		        $unsharedtags = str_replace(',Shared', '', $unsharedtags);
+		        $unsharedtags = str_replace('Shared', '', $unsharedtags);
+                        $unsharedtags = str_replace(' Shared', '', $unsharedtags);
+                        $unsharedtags = str_replace('Shared ', '', $unsharedtags);
+			$unsharedtags = str_replace(',', 'AA', $unsharedtags);
+	       ?>
 	<script>
 	function shareButton(pid,tags){
                
                var access_token='<?php echo $access_token ?>';
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
-               <?php
-		        $tags = str_replace('Shared,', '', $tags);
-		        $tags = str_replace(',Shared', '', $tags);
-		        $tags = str_replace('Shared', '', $tags);
-			$tags = str_replace(',', 'AA', $tags);
-	       ?>
-		var tags_1 = '<?php echo $tags; ?>';
+              
+		var tags_unshare = '<?php echo $unsharedtags; ?>';
 		var _id = '#'+ pid;
 		
 		
@@ -154,7 +158,7 @@ try
                 $.ajax({
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){
-			$(_id).html('<button type=button class=share-button abc onclick=unshareButton('+pid+',"'+tags_1+'");>UnShare</button>');
+			$(_id).html('<button type=button class=share-button abc onclick=unshareButton('+pid+',"'+tags_unshare+'");>UnShare</button>');
                     }
                 });
             }
