@@ -70,7 +70,7 @@ try
 		
             <div class="share-button-container <?php echo $p_id1;  ?>">
 		    
-		    <button type="button" id="<?php //echo $p_id1; ?>" class="unshare-button" onclick="shareButton(<?php echo $p_id1; ?>,'<?php echo $tags; ?>');"></button>
+		    
 			<script>
 	$(document).ready(function(){
 		var OrigonalTag = '<?php echo $OrigonalTag; ?>';
@@ -82,11 +82,11 @@ try
 		if(exists){
 		var _id = '#'+ pid_1;
 			  console.log(_id);   
-			  $(_id).html(' <button type="button" class="share-button" onclick="shareButton(pid_1,tags_1);">Unshare</button>');
+			  $(_id).html('<button type="button" class="share-button" onclick="shareButton(pid_1,tags_1);">Unshare</button>');
 		}else{
 		  var _id = '#'+ pid_1;
 			  console.log(_id);   
-			  $(_id).html('<button type="button" class="share-button" onclick="shareButton(pid_1,tags_1);">Share</button>');
+			  $(_id).html('<button type=button class="share-button" onclick="shareButton(pid_1,tags_1);">Share</button>');
 		}
 	});   
 </script>
