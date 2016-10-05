@@ -25,10 +25,10 @@ try
 			$variants=$singleproduct['variants'];
 		        $p_id1=$singleproduct['id'];
 		        $tags=$singleproduct['tags'];
-			$OrigonalTag=$singleproduct['tags'];
+			echo "org tag=".$OrigonalTag=$singleproduct['tags'];
 			
 			
-		        $tags = str_replace('shared', '', $tags);
+		       echo "sim tag1=". $tags = str_replace('shared', '', $tags);
 		        //$tags = str_replace(',shared', '', $tags);
 		        //$tags = str_replace('shared', '', $tags);
 			//$tags = str_replace(',', 'AA', $tags);
