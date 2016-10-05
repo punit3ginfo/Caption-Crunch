@@ -101,9 +101,8 @@ try
                 $.ajax({
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){
-			    console.log($(this));
-			  console.log(data);
-			   $('button#' + data).html('UnSave');
+			  var _id = '#'+data;
+			  $(_id).html('UnSave');
                     }
                 });
             }
@@ -120,9 +119,8 @@ try
                 $.ajax({
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){
-			   console.log($(this));
-			   console.log(data);
-			   $('button#' + data).html('Save');
+			  var _id = '#'+data;
+			  $(_id).html('UnSave');
                     }
                 });
             }
