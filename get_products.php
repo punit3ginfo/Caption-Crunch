@@ -161,7 +161,7 @@ try
 	var tags;
 	function unshareButton(pid,tags){
                var pid_1 = '<?php echo $p_id1; ?>';
-		var _id = '#'+ pid_1;
+		var _id = '#'+ pid;
                var access_token='<?php echo $access_token ?>';
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
 		var tags_1 = '<?php echo $tags; ?>';
