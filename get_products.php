@@ -154,6 +154,9 @@ try
                 var access_token='<?php echo $access_token ?>';
 	        var shop='<?php echo $_REQUEST['shop'] ?>';
 		var tags_1 = '<?php echo $tags; ?>';
+		if(tags_1== ''){
+			tags_1= 'shared';
+		}
 
                 $.ajax({
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
