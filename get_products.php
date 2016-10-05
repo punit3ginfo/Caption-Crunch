@@ -42,6 +42,10 @@ try
 
 			?>
 
+
+
+
+
 <!-- HTML Content for Product  START      -->
 
 <div class="product-card-clearfix">
@@ -65,31 +69,33 @@ try
 		
 		
             <div class="share-button-container">
-		    <?php if (strpos($OrigonalTag, "Shared") !== false) { ?>
-		    <button type="button" id="<?php echo $p_id1; ?>" class="unshare-button" onclick="unshareButton(<?php echo $p_id1; ?>,'<?php echo $tags; ?>');">
-			    UNSHARE</button>
-			<?php } else { ?>
-		     <button type="button" id="<?php echo $p_id1; ?>" class="share-button" onclick="shareButton(<?php echo $p_id1; ?>,'Shared');">SHARE</button>
-           <?php }?>
-		</div>
+		    
+		    <button type="button" id="<?php echo $p_id1; ?>" class="unshare-button" onclick="unshareButton(<?php echo $p_id1; ?>,'<?php echo $tags; ?>');"></button>
+			<script>
+	$(document).ready(function(){
+		var OrigonalTag = '<?php echo $OrigonalTag; ?>';
+		var pid_1 = '<?php echo $pid1; ?>';
+		var pattern = /Shared/;
+		var exists = pattern.test(OrigonalTag);
+		if(exists){
+		var _id = '#'+ pid_1;
+			  console.log(_id);   
+			  $(_id).html('Save');
+		}else{
+		  var _id = '#'+ pid_1;
+			  console.log(_id);   
+			  $(_id).html('UnSave');
+		}
+	});   
+</script>
+	   </div>
       </div>
 </div>
 <!-- HTML Content for Product END    -->
 
 
 
-<script>
-	$(document).ready(function(){
-		var OrigonalTag = '<?php echo $OrigonalTag; ?>';
-		var pattern = /Shared/;
-		var exists = pattern.test(OrigonalTag);
-		if(exists){
-		console.log(11);
-		}else{
-		  console.log(21);
-		}
-	});   
-</script>
+
 
 
 	<?php
