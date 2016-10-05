@@ -29,7 +29,7 @@ try
 			
 			
 		        $tags = str_replace('shared', '', $tags);
-			   echo "tag1=". $tags = str_replace(',', '', $tags);
+			   echo "tag1=". $tags = str_replace(',', 'AA', $tags);
 		        //$tags = str_replace(',shared', '', $tags);
 		        //$tags = str_replace('shared', '', $tags);
 			//$tags = str_replace(',', 'AA', $tags);
@@ -170,3 +170,7 @@ try
                 });
             }
     </script>
+
+
+
+
