@@ -33,7 +33,7 @@
                    <div class="collection_header_container">
                        <div class="caption-header-container">
                          	  <div class="builder-title-header-container" style=" width: 100%;">
-
+                                <?php echo 'header' ?>
   						              </div>
                        </div>
                     </div>
@@ -41,8 +41,13 @@
 
   			<div class="product-grid-container">
           		<div  class="product-grid-overflow-container">
-                  <div class="builder-main-conatiner">
-
+                  <div class="dashboard-feed-product-main-conatiner">
+                    <div class="dashboard-feed-product-main-clearfix">
+                              <span class="conditions-title" style="line-height: 30px;">
+                                Product goes here
+                              </span>
+                        </div>
+                    </div>
                   </div>
       			</div>
     			</div>
