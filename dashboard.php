@@ -43,7 +43,7 @@
           		<div  class="product-grid-overflow-container">
                   <div class="dashboard-feed-product-main-conatiner">
                     <div class="dashboard-feed-product-main-clearfix">
-                              <span class="conditions-title" style="line-height: 30px;">
+                              <span class="conditions-title" style="line-height: 70px;">
                                 Product goes here
                               </span>
                         </div>
