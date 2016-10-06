@@ -859,13 +859,10 @@ form {
 /* ------------------------ Dashboard ------------------------------------*/
 
 .dashboard-menu-icon-container {
-    display: inline-block;
-    width: auto;
-    height: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    float: right;
-    padding-right: 10px;
+  width: 60px;
+  height: 60px;
+  float: right;
+  position: relative;
 }
 
 .dashboard-menu-icon-circle {
