@@ -219,6 +219,22 @@ function gethistory(){
                     }
                 });
             }
+	
+	
+	function search(){
+                alert(451222);
+               var access_token='<?php echo $access_token ?>';
+		var shop='<?php echo $_REQUEST['shop'] ?>';
+
+                $.ajax({
+                    url: '/collections.php?access_token='+access_token+'&shop='+shop+'&status=history',
+                    success: function(data){
+                     //console.log(data);
+			   // var data1= data.find('.chat_container').html()
+			    $('.main_container').html(data);
+                    }
+                });
+            }
 </script>
 
 	
