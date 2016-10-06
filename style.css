@@ -919,10 +919,10 @@ form {
 
 .feed-product-image-zoom {
   position: absolute;
-  left: -10px;
-  top: -10px;
-  width: 66px;
-  height: 66px;
+  left: -20px;
+  top: -20px;
+  width: 86px;
+  height: 86px;
   border: 1px solid #666;
   border-radius: 5px;
   display: none;
