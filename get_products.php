@@ -139,7 +139,10 @@ try
                var access_token='<?php echo $access_token ?>';
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
                var tags_unshare = tags.replace('shared', "");
+	       
 	       var tags_unshare = tags_unshare.replace('shared', "");
+		var tags_unshare = tags_unshare.replace(' ', "");
+		
 	       var _id = '#'+ pid;
                $.ajax({
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
