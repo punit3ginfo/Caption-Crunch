@@ -20,7 +20,7 @@ try
 		if($_REQUEST['status']=="history")
 		{
 			echo "<script>alert(145);</script>";
-			$p_title="Abuze London Hoody";
+			$p_title='"Abuze London Hoody"';
 			$products = $shopify('GET /admin/products.json?title='.$p_title, array('published_status'=>'published'));
 		}
 		//print_r($products);
