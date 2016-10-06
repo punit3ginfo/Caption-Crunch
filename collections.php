@@ -88,7 +88,7 @@ function gethistory(){
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
-			   // $('.main_container').html(data);
+			    $('.main_container').html(data);
                     }
                 });
             }
