@@ -11,10 +11,19 @@
 try
 	{
 		# Making an API request can throw an exception
-			echo "<script>alert(145);</script>";
+			echo "<script>alert(6979);</script>";
 			echo $p_title='"Abuze London Hoody"';
-			
-			$products = $shopify('GET /admin/products/7901170760.json', array('published_status'=>'published'));
+			 $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
+			 {
+				foreach($products as $singleproduct)
+				{ 
+					$title=$singleproduct['title'];
+					if($title==$_REQUEST['title']){
+						$SingleProduct_id=$singleproduct['id'].'.json';	
+					}
+				}
+			 }
+			$products = $shopify('GET /admin/products/'.$SingleProduct_id, array('published_status'=>'published'));
 		echo "<pre>";
 		//print_r($products);
 		
