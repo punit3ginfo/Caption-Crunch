@@ -200,7 +200,24 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                     }
                 });
             }
+	
+	
+function gethistory(){
+                alert(45);
+               var access_token='<?php echo $access_token ?>';
+		var shop='<?php echo $_REQUEST['shop'] ?>';
 
-	</script>
+                $.ajax({
+                    url: '/history.php?access_token='+access_token+'&shop='+shop+'&status=history',
+                    success: function(data){
+                     //console.log(data);
+			   // var data1= data.find('.chat_container').html()
+			    $('.main_container').html(data);
+                    }
+                });
+            }
+</script>
+
+	
 
 </body>
