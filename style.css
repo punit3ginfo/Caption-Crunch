@@ -16,6 +16,14 @@ html {
   max-height: 100vh;
 }
 
+select {
+  font-size: 14px;
+}
+
+input {
+  font-size: 14px;
+}
+
 body {
 	overflow: hidden;
 	background-color: #D9E0E0;
