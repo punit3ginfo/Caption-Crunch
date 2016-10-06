@@ -95,11 +95,15 @@ try
 			{
 			  $OrigonalTag="shared";
 			}
+			else{
+			   $OrigonalTag=$OrigonalTag.",shared";
+			}
 			?>
-			var tags_1 = '<?php echo $OrigonalTag; ?>';
+			var tags_1 = '"<?php echo $OrigonalTag; ?>"';
 
-			  $(_id).html('<button type="button" class=share-button onclick=shareButton('+pid_1+',"'+tags_1+'");>Share</button>');
-	}
+			  //$(_id).html('<button type="button" class=share-button onclick=shareButton('+pid_1+',"'+tags_1+'");>Share</button>');
+	$(_id).html("<button type='button' class='share-button' onclick='shareButton("+pid_1+","+tags_1+");'>Share</button>");
+		}
 	});
 </script>
 	   </div>
