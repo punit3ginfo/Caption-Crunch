@@ -19,8 +19,8 @@ try
 			 {
 				foreach($products as $singleproduct)
 				{ 
-					echo "apple=".$title=$singleproduct['title'];
-					
+					$title=$singleproduct['title'];
+					$query_title =str_replace('"','',$query_title);
 					$val=strcmp($title,$query_title);
 					if($val=='0'){
 						echo "welcome";
