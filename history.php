@@ -15,25 +15,20 @@ try
 			
 			 $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		         //print_r($products);
-		        $query_title=$_REQUEST['title'];
+		         echo "pulkit=".$query_title=$_REQUEST['title'];
 			 {
 				foreach($products as $singleproduct)
 				{ 
-					$title=$singleproduct['title'];
-					$query_title=$_REQUEST['title'];
-					$query_title=str_replace('"','',$query_title);
+					echo "apple=".$title=$singleproduct['title'];
 					
-					
-					.$val=strcmp($title,$query_title);
-					if($val==0){
+					$val=strcmp($title,$query_title);
+					if($val=='0'){
 						echo "welcome";
 						exit();
-						echo $SingleProduct_id=$singleproduct['id'].'.json';
-						
-						
+						$SingleProduct_id=$singleproduct['id'].'.json';	
 					}
 					else{
-					//echo "fail";
+					echo "fail";
 					}
 					
 				}
