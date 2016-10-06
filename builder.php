@@ -119,6 +119,7 @@
 																<i id="template-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
 															</span>
 	                      	</div>
+											</div>
 													<div class="template-show-hide">
 				                    <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
 				                      	<div class="builder-conditions-container">
@@ -132,7 +133,6 @@
 				                    </div>
 													</div>
 	                    </div>
-                   </div>
 					<!-- PRODUCTS -->
 									 <div class="builder-main-conatiner" style="height: auto;">
 									 			<div class="builder-main-clearfix" style="border-bottom: 0px;">
@@ -142,6 +142,7 @@
 									 									<i id="products-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
 									 							</span>
 									 					</div>
+												</div>
 											 			<div class="products-show-hide">
 													 			<div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
 													 						<div class="builder-conditions-container">
@@ -155,10 +156,9 @@
 													 			</div>
 											 			</div>
 									 			</div>
-									  </div>
                   </form>
-    			</div>
-  			</div>
+    			  </div>
+  	  </div>
 </div>
 
 <!-- Show / Hide Script -->
