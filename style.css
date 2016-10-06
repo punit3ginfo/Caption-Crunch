@@ -928,5 +928,18 @@ form {
 
 .feed-product-sharenow-container {
   float: right;
-  
+  position: relative;
+  width: 200px;
+}
+
+.feed-product-sharenow-button {
+    border: 1px solid #65D35B;
+    padding: 11px 20px;
+    font-family: HelveticaNeue-Bold;
+    font-size: 16px;
+    color: #65D35B;
+    letter-spacing: 0.82px;
+    text-transform: uppercase;
+    background: white;
+    cursor: pointer;
 }
