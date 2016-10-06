@@ -15,13 +15,15 @@ try
 		$products = $shopify('GET /admin/products.json?collection_id='.$_REQUEST['colid'], array('published_status'=>'published'));
 		}
 		if($_REQUEST['colid']=='' && $_REQUEST['status']=='') {
+			
 	       $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		}
 		if($_REQUEST['status']=="history")
 		{
 			echo "<script>alert(145);</script>";
 			$p_title='"Abuze London Hoody"';
-			$products = $shopify('GET /admin/products.json?ids=7901554184',array('published_status'=>'published'));
+			GET /admin/products.json?since_id=632910392
+			$products = $shopify("GET /admin/products.json?ids='7901554184'");
 		}
 		//print_r($products);
 		//$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
