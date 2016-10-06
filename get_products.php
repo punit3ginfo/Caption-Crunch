@@ -19,8 +19,7 @@ try
 		}
 		if($_REQUEST['status']=="history")
 		{
-			echo "yes i done it";
-			exit();
+			$products = $shopify('GET /admin/products.json', array('tags'=>'shared'));
 		}
 		//print_r($products);
 		//$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
