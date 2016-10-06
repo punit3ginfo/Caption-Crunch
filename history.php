@@ -21,7 +21,7 @@ try
 		
 		foreach($products as $singleproduct)
 		{
-			$title=$singleproduct['title']; // Product Title
+			echo "t=".$title=$singleproduct['title']; // Product Title
 			$variants=$singleproduct['variants'];
 		        $p_id1=$singleproduct['id'];
 		        $tags=$singleproduct['tags'];
@@ -35,7 +35,7 @@ try
 		        //$tags = str_replace('shared', '', $tags);
 			//$tags = str_replace(',', 'AA', $tags);
 			foreach($variants as $variants){
-				$price=$variants['price']; // Product PRice
+				echo "p=".$price=$variants['price']; // Product PRice
 			}
 		        $images=$singleproduct['images'];
 
