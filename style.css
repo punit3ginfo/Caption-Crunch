@@ -855,3 +855,34 @@ form {
   text-transform: uppercase;
   width: calc(100% - 40px);
 }
+
+/* ------------------------ Dashboard ------------------------------------*/
+
+.dashboard-menu-icon-container {
+    display: inline-block;
+    width: auto;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: right;
+    padding-right: 10px;
+}
+
+.dashboard-menu-icon-circle {
+    float: left;
+    background: #4D595C;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    text-align: center;
+}
+
+.dashboard-menu-icon {
+    font-family: HelveticaNeue-Bold;
+    font-size: 14px;
+    line-height: 40px;
+    color: #FFFFFF;
+    letter-spacing: 0.87px;
+    display: block;
+}

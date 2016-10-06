@@ -16,6 +16,11 @@
                                               <div class="chat_user_info">
                                                   <span class="collection_list_text">Feed</span>
                                               </div>
+                                              <div class="dashboard-menu-icon-container">
+                                                  <div class="dashboard-menu-icon-circle">
+                                                    <i class="fa fa-bars dashboard-menu-icon" aria-hidden="true"></i>
+                                                  </div>
+                                              </div>
                                           </div>
                                       </div>
                                 </a>
