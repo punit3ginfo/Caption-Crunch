@@ -14,11 +14,12 @@ try
 			echo "<script>alert(6979);</script>";
 			echo $p_title='"Abuze London Hoody"';
 			 $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
-		         print_r($products);
+		         //print_r($products);
 			 {
 				foreach($products as $singleproduct)
 				{ 
-					$title=$singleproduct['title'];
+					echo $title=$singleproduct['title'];
+					echo "is it=".$_REQUEST['title'];
 					if($title==$_REQUEST['title']){
 						$SingleProduct_id=$singleproduct['id'].'.json';	
 					}
