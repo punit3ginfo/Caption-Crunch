@@ -41,7 +41,7 @@ try
 			
 
 if (strpos($OrigonalTag, 'shared') !== false) {
-   $status = "history";
+   echo $status = "history";
 }
 
 
@@ -67,10 +67,11 @@ if (strpos($OrigonalTag, 'shared') !== false) {
 
 <div class="product-card-clearfix">
   <?php if($_REQUEST['status']=="history") {
+	  echo "done";
 	  
 	  if( $status != "history")
 	  {
-	  
+	  echo "part-3";
 	  ?>
      
 	<div class="product-card-container">
