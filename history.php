@@ -11,7 +11,7 @@
 try
 	{
 		# Making an API request can throw an exception
-			echo "<script>alert(6979);</script>";
+			
 			
 			 $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		         //print_r($products);
