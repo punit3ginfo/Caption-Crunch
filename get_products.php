@@ -20,7 +20,7 @@ try
 		if($_REQUEST['status']=="history")
 		{
 			echo "<script>alert(78);</script>";
-		$products_history = $shopify('GET /admin/products.json?tags=shared', array('published_status'=>'published'));
+		$products = $shopify('GET /admin/products.json?tags=shared', array('published_status'=>'published'));
 			
 			
 			
