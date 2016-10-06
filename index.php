@@ -227,7 +227,7 @@ function gethistory(){
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 
                 $.ajax({
-                    url: '/collections.php?access_token='+access_token+'&shop='+shop+'&title='+p_title+'&status=search,
+                    url: '/collections.php?access_token='+access_token+'&shop='+shop+'&title='+p_title+'&status=search',
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
