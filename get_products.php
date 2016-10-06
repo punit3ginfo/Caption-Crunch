@@ -20,7 +20,7 @@ try
 		if($_REQUEST['status']=="history")
 		{
 			echo "<script>alert(781);</script>";
-			$products = $shopify('GET /admin/products.json?title=7X Felt Snapback in Gray', array('published_status'=>'published'));
+			$products = $shopify('GET /admin/products.json?title="'.7X Felt Snapback in Gray.'"', array('published_status'=>'published'));
 		}
 		//print_r($products);
 		//$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
