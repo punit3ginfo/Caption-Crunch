@@ -220,14 +220,14 @@ function gethistory(){
                 });
             }
 	
-	
-	function search(){
+	var p_title;
+	function search(p_title){
                 alert(451222);
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 
                 $.ajax({
-                    url: '/collections.php?access_token='+access_token+'&shop='+shop+'&status=history',
+                    url: '/collections.php?access_token='+access_token+'&shop='+shop+'&status='+p_title',
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
