@@ -22,7 +22,7 @@ try
 		{
 			echo "<script>alert(145);</script>";
 			$p_title='"Abuze London Hoody"';
-			GET /admin/products.json?since_id=632910392
+			
 			$products = $shopify("GET /admin/products.json?ids='7901554184'");
 		}
 		//print_r($products);
