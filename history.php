@@ -12,14 +12,14 @@ try
 	{
 		# Making an API request can throw an exception
 			echo "<script>alert(6979);</script>";
-			echo $p_title='"Abuze London Hoody"';
+			
 			 $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		         //print_r($products);
 		         echo "pulkit=".$query_title=$_REQUEST['title'];
 			 {
 				foreach($products as $singleproduct)
 				{ 
-					echo $title="tit=".$singleproduct['title'];
+					echo "apple=".$title=$singleproduct['title'];
 					
 					$val=strcmp($title,$query_title);
 					if($val=='0'){
