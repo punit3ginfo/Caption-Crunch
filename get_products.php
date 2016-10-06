@@ -21,7 +21,7 @@ try
 		{
 			echo "<script>alert(145);</script>";
 			$p_title='"Abuze London Hoody"';
-			$products = $shopify('GET /admin/products.json?title='.$p_title);
+			$products = $shopify('GET /admin/products.json?ids=7901554184',array('published_status'=>'published'));
 		}
 		//print_r($products);
 		//$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
