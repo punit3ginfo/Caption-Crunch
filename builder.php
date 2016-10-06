@@ -112,7 +112,7 @@
                    </div>
 				  <!-- TEMPLATE -->
                    <div class="builder-main-conatiner" style="height: auto;">
-	                    <div class="builder-main-clearfix" style="border-bottom: 0px;>
+	                    <div class="builder-main-clearfix" style="border-bottom: 0px;">
 	                      	<div class="builder-conditions-container" style="height: 30px;">
 	                          	<span class="conditions-title conditions-title-hover templates-show-hide-button" style="line-height: 30px; cursor: pointer;">
 																Template
@@ -133,6 +133,29 @@
 													</div>
 	                    </div>
                    </div>
+					<!-- PRODUCTS -->
+									 <div class="builder-main-conatiner" style="height: auto;">
+									 			<div class="builder-main-clearfix" style="border-bottom: 0px;">
+									 					<div class="builder-conditions-container" style="height: 30px;">
+									 							<span class="conditions-title conditions-title-hover products-show-hide-button" style="line-height: 30px; cursor: pointer;">
+									 									Products
+									 									<i id="products-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
+									 							</span>
+									 					</div>
+											 			<div class="products-show-hide">
+													 			<div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
+													 						<div class="builder-conditions-container">
+													 								<span class="" style="line-height: 46px;"><i class="fa fa-info-circle" aria-hidden="true" style="margin-right: 10px;"></i> Listed below are the products with matching conditions</span>
+													 						</div>
+													 			</div>
+													 			<div class="builder-main-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
+													 						<div class="builder-conditions-container" style="height: auto; min-height: 100px;">
+
+													 						</div>
+													 			</div>
+											 			</div>
+									 			</div>
+									  </div>
                   </form>
     			</div>
   			</div>
@@ -149,12 +172,20 @@
 			$('#condition-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
 	});
 
-	// Condition - Show / Hide
+	// Templates - Show / Hide
 	$('.templates-show-hide-button').click(function() {
 		// Show / Hide Conditions Container
 	    $('.template-show-hide').slideToggle("slow");
 		// Rotate Arrow 180 Degree / Click
 			$('#template-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+	});
+
+	// Products - Show / Hide
+	$('.products-show-hide-button').click(function() {
+		// Show / Hide Conditions Container
+	    $('.products-show-hide').slideToggle("slow");
+		// Rotate Arrow 180 Degree / Click
+			$('#products-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
 	});
 
 </script>
