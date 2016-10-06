@@ -1,3 +1,5 @@
-<?php
-echo "Autopilot";
-?>
+<div class="content-container">
+  <?php
+  echo "Autopilot";
+  ?>
+</div>
