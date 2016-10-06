@@ -23,12 +23,13 @@ try
 					$query_title =str_replace('"','',$query_title);
 					$val=strcmp($title,$query_title);
 					if($val=='0'){
-						echo "welcome";
+						echo "match";
 						exit();
 						$SingleProduct_id=$singleproduct['id'].'.json';	
 					}
 					else{
-					echo "fail";
+					echo "not match";
+						exit();
 					}
 					
 				}
