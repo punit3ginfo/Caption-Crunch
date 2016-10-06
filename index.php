@@ -206,7 +206,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 	
 	
 function gethistory(){
-                alert(45);
+               
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 
@@ -222,7 +222,7 @@ function gethistory(){
 	
 	
 	function search(p_title){
-                alert(p_title);
+                
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
                 var p_title= '"'+p_title+'"';
