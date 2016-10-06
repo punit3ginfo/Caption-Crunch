@@ -55,6 +55,9 @@
                               <div class="feed-product-image" style="background: #65D35B;">
 
                               </div>
+                              <div class="feed-product-sharenow-container">
+                                  <button type='button' class='share-button'>Share</button>
+                              </div>
                       </div>
                   </div>
                 <!-- Feed Today -->
