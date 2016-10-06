@@ -43,9 +43,9 @@
           		<div  class="product-grid-overflow-container">
                   <div class="dashboard-feed-product-main-conatiner">
                     <div class="dashboard-feed-product-main-clearfix">
-                              <span class="conditions-title" style="line-height: 70px;">
-                                Product goes here
-                              </span>
+                              <div class="feed-product-image" style="background: #65D35B;">
+
+                              </div>
                         </div>
                     </div>
                   </div>
