@@ -16,6 +16,9 @@ use phpish\shopify;
        $_SESSION['code']=$_REQUEST['code'];
     }
 $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
+
+       require __DIR__.'/smart_collection.php'; //create smart collection
+       
 ?>
 
 <head>
