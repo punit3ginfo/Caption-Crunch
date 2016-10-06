@@ -14,7 +14,7 @@
                                       <div class="chat_select_container" >
                                           <div class="chat_personal_info_container">
                                               <div class="chat_user_info">
-                                                  <span class="collection_list_text">Feed</span>
+                                                  <span class="collection_list_text">Share Feed</span>
                                               </div>
                                               <div class="dashboard-menu-icon-container">
                                                   <div class="dashboard-menu-icon-circle">
