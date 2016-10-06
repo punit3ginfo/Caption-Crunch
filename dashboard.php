@@ -56,6 +56,7 @@
 
                               </div>
                               <div class="feed-product-sharenow-container">
+                                  <button type='button' class='feed-product-preview-button'>Preview</button>
                                   <button type='button' class='feed-product-sharenow-button'>Share Now</button>
                               </div>
                       </div>
