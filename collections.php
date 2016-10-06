@@ -56,8 +56,8 @@
 
                             <div class="collection_title_header_container">
                                <div class="collection_title_container-active">
-                                 <form class="search-form" method="get" action="/search">
-                                    <input class="search-text-box" type="text" name="q" placeholder="Search" />
+                                 <form class="search-form" method="get">
+                                    <input class="search-text-box" id="formValueId" type="text" name="q_name" placeholder="Search" />
                                     <input class="search-icon-button" type="submit" value="&#xf002;" />
                                 </form>
                                </div>
@@ -65,6 +65,16 @@
 
                           </div>
         				</div>
+	
+	<script>
+		$(document).ready(function() {
+    $('.search-form').onsubmit(function() {
+	    alert("OK");
+      search($('#formValueId').val());
+    });
+});
+		
+		</script>
 
   <div class="product-grid-container scroll-grid">
       <div  class="product-grid-overflow-container">
