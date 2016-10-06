@@ -919,11 +919,17 @@ form {
 
 .feed-product-image-zoom {
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: -10px;
+  top: -10px;
   width: 66px;
   height: 66px;
   border: 1px solid #666;
+  border-radius: 5px;
+  display: none;
+}
+
+.feed-product-image:hover .feed-product-image-zoom {
+  display: block;
 }
 
 .feed-product-titledate-container {
