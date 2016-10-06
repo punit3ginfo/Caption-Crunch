@@ -15,8 +15,9 @@ try
 			echo $p_title='"Abuze London Hoody"';
 			
 			$products = $shopify('GET /admin/products/7901170760.json', array('published_status'=>'published'));
-		
+		echo "<pre>";
 		print_r($products);
+		echo "</pre>";
 		
 		foreach($products as $singleproduct)
 		{
