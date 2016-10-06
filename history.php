@@ -15,11 +15,12 @@ try
 			echo $p_title='"Abuze London Hoody"';
 			 $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		         //print_r($products);
+		         echo "pulkit=".$_REQUEST['title'];
 			 {
 				foreach($products as $singleproduct)
 				{ 
 					echo $title=$singleproduct['title'];
-					echo "is it=".$_REQUEST['title'];
+					
 					if($title==$_REQUEST['title']){
 						$SingleProduct_id=$singleproduct['id'].'.json';	
 					}
