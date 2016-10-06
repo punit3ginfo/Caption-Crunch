@@ -15,7 +15,7 @@ try
 			
 			 $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		         //print_r($products);
-		         echo "pulkit=".$query_title=$_REQUEST['title'];
+		         $query_title=$_REQUEST['title'];
 			 {
 				foreach($products as $singleproduct)
 				{ 
@@ -23,18 +23,18 @@ try
 					$query_title =str_replace('"','',$query_title);
 					$val=strcmp($title,$query_title);
 					if($val=='0'){
-						echo "match";
+						echo "FOUND";
 						exit();
 						$SingleProduct_id=$singleproduct['id'].'.json';	
 					}
 					else{
-					echo "not match";
+					echo "not FOUND";
 						exit();
 					}
 					
 				}
 			 }
-		         echo "idaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa=".$SingleProduct_id;
+		         
 			$products = $shopify('GET /admin/products/'.$SingleProduct_id, array('published_status'=>'published'));
 		echo "<pre>";
 		//print_r($products);
