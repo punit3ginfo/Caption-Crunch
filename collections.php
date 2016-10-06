@@ -71,7 +71,11 @@
         <?php
 
        // echo "Product's go here"
-       require __DIR__.'/get_products.php'; //GET PRODUCTS
+	if($_REQUEST['status']=="history"){				    
+       require __DIR__.'/history.php';
+	}else{
+		 require __DIR__.'/get_products.php';
+	}
         ?>
       </div>
   </div>
