@@ -44,7 +44,7 @@
                 <!-- Feed Up Next -->
                   <div class="feed-upnext-container">
                     <div class="feed-upnext-clearfix">
-                      <span class="conditions-title" style="line-height: 70px">
+                      <span class="conditions-title" style="line-height: 30px">
                         Up Next
                       </span>
                     </div>
