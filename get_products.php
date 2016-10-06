@@ -54,11 +54,7 @@ try
 <!-- HTML Content for Product  START      -->
 
 <div class="product-card-clearfix">
-    <?php  
-		if(($_REQUEST['status']=='history') && (strpos($OrigonalTag, 'shared') !== false)){ 	
-	?>
-	
-	           
+
 	<div class="product-card-container">
 
       		<div class="product-card-image-container" style='background-image: url(<?php echo $src; ?>)'>
@@ -117,72 +113,6 @@ try
 </script>
 	   </div>
       </div>
-	  
-	<?php }else { ?>
-	
-	<div class="product-card-container">
-
-      		<div class="product-card-image-container" style='background-image: url(<?php echo $src; ?>)'>
-      		</div>
-
-      		<div class="product-card-details-section">
-      			<div class="product-card-details-container">
-                  	<span class="product-title-text"><?php echo $title; ?></span>
-                  	<div class="product-card-price-container">
-                  		<span class="product-card-price-text" style="margin-right: 3px;">$<?php echo $price; ?></span>
-                      <span class="product-card-price-text" style="font-size: 14px; color: #888;">$<?php echo $price; ?></span>
-                  	</div>
-      			</div>
-      		</div>
-
-          <div id="<?php echo $p_id1; ?>"  class="share-button-container?>" >
-
-			<script>
-	$(document).ready(function(){
-		var OrigonalTag = '<?php echo $OrigonalTag; ?>';
-
-		var pid_1 = '<?php echo $p_id1; ?>';
-		//alert(pid_1);
-		var pattern = /shared/;
-		var pattern1 = / shared/;
-
-		var exists = pattern.test(OrigonalTag);
-		var exists1 = pattern1.test(OrigonalTag);
-		if(exists || exists1 ){
-			var tags_1 = '"<?php echo $tags; ?>"';
-			//alert(tags_1);
-
-		        var _id = '#'+ pid_1;
-
-
-		//$(_id).html('<button type=button class=share-button onclick=unshareButton('+pid_1+',"'+tags_1+'");>UnShare</button>');
-		$(_id).html("<button type='button' class='share-button' onclick='unshareButton("+pid_1+","+tags_1+");'>UnShare</button>");
-
-		}else{
-			var _id = '#'+ pid_1;
-			<?php
-			if($OrigonalTag == '')
-			{
-			  $OrigonalTag="shared";
-			}
-			else{
-			   $OrigonalTag=$OrigonalTag.",shared";
-			}
-			?>
-			var tags_1 = '"<?php echo $OrigonalTag; ?>"';
-
-			  //$(_id).html('<button type="button" class=share-button onclick=shareButton('+pid_1+',"'+tags_1+'");>Share</button>');
-	$(_id).html("<button type='button' class='share-button' onclick='shareButton("+pid_1+","+tags_1+");'>Share</button>");
-		}
-	});
-</script>
-	   </div>
-      </div>
-	
-	
-	
-	
-	
 </div>
 <!-- HTML Content for Product END    -->
 
