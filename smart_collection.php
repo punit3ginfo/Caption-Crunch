@@ -8,7 +8,7 @@ try
 		
 		
 			echo "<script>alert(78);</script>";
-			$smart_collection = $shopify('POST /admin/smart_collections.json', {"custom_collection"=>{"title"=>"shared", "collects"=>{"product_id"=>7901168776}}}
+			$smart_collection = $shopify('POST /admin/smart_collections.json', {"smart_collection"=>{"title"=>"shared", "collects"=>{"product_id"=>7901168776}}}
 			print_r($smart_collection); 
 	}
 		catch (shopify\ApiException $e)
