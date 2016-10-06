@@ -26,6 +26,7 @@ try
 					}
 				}
 			 }
+		         echo "idaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa=".$SingleProduct_id;
 			$products = $shopify('GET /admin/products/'.$SingleProduct_id, array('published_status'=>'published'));
 		echo "<pre>";
 		//print_r($products);
