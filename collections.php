@@ -68,7 +68,7 @@
 	
 	<script>
 		$(document).ready(function() {
-    $('.search-form').onsubmit(function() {
+    $('.search-form').submit(function() {
 	    alert("OK");
       search($('#formValueId').val());
     });
