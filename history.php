@@ -21,8 +21,8 @@ try
 				{ 
 					echo "apple=".$title=$singleproduct['title'];
 					
-					$val=strcmp($title,$query_title);
-					if($val=='0'){
+					echo "value=".$val=strcmp($title,$query_title);
+					if($val==0){
 						echo "welcome";
 						exit();
 						$SingleProduct_id=$singleproduct['id'].'.json';	
