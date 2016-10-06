@@ -30,7 +30,12 @@ try
 			$variants=$singleproduct['variants'];
 		        $p_id1=$singleproduct['id'];
 		        $tags=$singleproduct['tags'];
-			   $OrigonalTag=$singleproduct['tags'];
+			$OrigonalTag=$singleproduct['tags'];
+			$a = 'How are you?';
+
+if (strpos($OrigonalTag, 'shared') !== false) {
+    echo 'true';
+}
 
 
 		        $tags = str_replace('shared', '', $tags);
@@ -54,7 +59,7 @@ try
 <!-- HTML Content for Product  START      -->
 
 <div class="product-card-clearfix">
-
+  
 	<div class="product-card-container">
 
       		<div class="product-card-image-container" style='background-image: url(<?php echo $src; ?>)'>
