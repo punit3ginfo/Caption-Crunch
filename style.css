@@ -929,7 +929,7 @@ form {
 .feed-product-sharenow-container {
   float: right;
   position: relative;
-  width: 200px;
+  width: auto;
 }
 
 .feed-product-sharenow-button {
