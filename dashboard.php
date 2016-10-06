@@ -66,8 +66,8 @@
                                   </div>
                               </div>
                               <div class="feed-product-sharenow-container">
-                                  <button type='button' class='feed-product-preview-button'>Preview</button>
-                                  <button type='button' class='feed-product-sharenow-button'>Share Now</button>
+                                  <button type='button' class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</button>
+                                  <button type='button' class='feed-product-sharenow-button'><i class="fa fa-share" aria-hidden="true"></i> Share Now</button>
                               </div>
                       </div>
                   </div>
