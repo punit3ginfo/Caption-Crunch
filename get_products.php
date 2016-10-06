@@ -16,7 +16,9 @@ try
 		}
 		if($_REQUEST['colid']=='' && $_REQUEST['status']=='') {
 			
-	       $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
+	      // $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
+			$products = $shopify('GET /admin/products.json?title=fgdffsfd', array('published_status'=>'published'));
+			
 		}
 		
 		
