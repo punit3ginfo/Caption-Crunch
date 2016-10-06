@@ -22,14 +22,14 @@ try
 					$title=$singleproduct['title'];
 					$query_title=$_REQUEST['title'];
 					$query_title=str_replace('"','',$query_title);
-					$query_title;
+					
 					
 					.$val=strcmp($title,$query_title);
 					if($val==0){
-						//echo "welcome";
-						//exit();
-						echo $SingleProduct_id=$singleproduct['id'].'.json';
+						echo "welcome";
 						exit();
+						echo $SingleProduct_id=$singleproduct['id'].'.json';
+						
 						
 					}
 					else{
