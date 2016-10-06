@@ -28,8 +28,8 @@ try
 						$SingleProduct_id=$singleproduct['id'].'.json';	
 					}
 					else{
-					echo "not FOUND";
-						exit();
+					//echo "not FOUND";
+						//exit();
 					}
 					
 				}
