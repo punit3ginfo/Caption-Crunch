@@ -20,8 +20,9 @@ try
 				foreach($products as $singleproduct)
 				{ 
 					echo "valA=".$title=$singleproduct['title'];
-					echo "valB=".$query_title=$_REQUEST['title'];
-					str_replace('"','',$query_title);
+					$query_title=$_REQUEST['title'];
+					$query_title=str_replace('"','',$query_title);
+					echo "valB=".$query_title;
 					
 					echo "value=".$val=strcmp($title,$query_title);
 					if($val==0){
