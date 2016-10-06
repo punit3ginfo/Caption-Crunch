@@ -29,12 +29,13 @@ try
 						//echo "welcome";
 						//exit();
 						echo $SingleProduct_id=$singleproduct['id'].'.json';
+						exit();
 						
 					}
 					else{
 					//echo "fail";
 					}
-					exit();
+					
 				}
 			 }
 		         echo "idaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa=".$SingleProduct_id;
