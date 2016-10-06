@@ -211,7 +211,7 @@ function gethistory(){
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 
                 $.ajax({
-                    url: '/history.php?access_token='+access_token+'&shop='+shop+'&status=history',
+                    url: '/collections.php?access_token='+access_token+'&shop='+shop+'&status=history',
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
