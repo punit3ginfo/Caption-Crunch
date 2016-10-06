@@ -19,7 +19,8 @@ try
 		}
 		if($_REQUEST['status']=="history")
 		{
-			$products = $shopify('GET /admin/products.json', array('tags'=>'shared'));
+			echo "<script>alert(78);</script>";
+			$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		}
 		//print_r($products);
 		//$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
