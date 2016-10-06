@@ -225,7 +225,7 @@ function gethistory(){
                 alert(451222);
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
-
+                p_title= '"'+p_title+'"';
                 $.ajax({
                     url: '/history.php?access_token='+access_token+'&shop='+shop+'&title='+p_title+'&status=search',
                     success: function(data){
