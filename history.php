@@ -16,9 +16,12 @@ try
 			
 			$products = $shopify('GET /admin/products/7901170760.json', array('published_status'=>'published'));
 		echo "<pre>";
-		print_r($products);
+		//print_r($products);
+		
 		echo "</pre>";
 		
+		echo "yes=".$products['title'];
+		exit();
 		foreach($products as $singleproduct)
 		{
 			echo "t=".$title=$singleproduct['title']; // Product Title
