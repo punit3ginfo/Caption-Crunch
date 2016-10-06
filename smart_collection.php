@@ -1,6 +1,4 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 try
 	{
 		# Making an API request can throw an exception
@@ -8,13 +6,8 @@ try
 		
 		
 			echo "<script>alert(78);</script>";
-			$smartcollection = $shopify('POST /admin/smart_collections.json', array(), array
-			(
-			'smart_collection' => array
-			(	
-			"title"=>'Shared'	
-			)
-		));
+			$smart_collection = $shopify('POST /admin/smart_collections.json', {"custom_collection"=>{"title"=>"shared", "collects"=>{"product_id"=>7901168776}}}
+			print_r($smart_collection); 
 	}
 		catch (shopify\ApiException $e)
 		{
