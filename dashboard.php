@@ -39,17 +39,27 @@
                     </div>
           	</div>
 
-  			<div class="product-grid-container">
+  			    <div class="product-grid-container">
           		<div  class="product-grid-overflow-container">
-                  <div class="dashboard-feed-product-main-conatiner">
-                    <div class="dashboard-feed-product-main-clearfix">
+                <!-- Feed Up Next -->
+                  <div class="feed-upnext-container">
+                    <div class="feed-upnext-clearfix">
+                      <span class="conditions-title" style="line-height: 70px">
+                        Up Next
+                      </span>
+                    </div>
+                  </div>
+                <!-- Feed Product Card -->
+                  <div class="feed-product-main-conatiner">
+                      <div class="feed-product-main-clearfix">
                               <div class="feed-product-image" style="background: #65D35B;">
 
                               </div>
-                        </div>
-                    </div>
+                      </div>
                   </div>
-      			</div>
-    			</div>
+                <!-- Feed Today -->
+              </div>
+      		 </div>
+    	</div>
   </div>
 </div>
