@@ -58,6 +58,52 @@
                       </div>
                   </div>
                 <!-- Feed Today -->
+                  <div class="feed-upnext-container">
+                    <div class="feed-upnext-clearfix">
+                      <span class="conditions-title" style="line-height: 30px">
+                        Upcoming Today
+                      </span>
+                    </div>
+                  </div>
+                <!-- Feed Product Card -->
+                  <div class="feed-product-main-conatiner">
+                      <div class="feed-product-main-clearfix">
+                            <div class="feed-product-image" style="background: #65D35B;">
+
+                            </div>
+                      </div>
+                  </div>
+                  <div class="feed-product-main-conatiner">
+                      <div class="feed-product-main-clearfix">
+                            <div class="feed-product-image" style="background: #65D35B;">
+
+                            </div>
+                      </div>
+                  </div>
+                <!-- Feed Today -->
+                    <div class="feed-upnext-container">
+                      <div class="feed-upnext-clearfix">
+                        <span class="conditions-title" style="line-height: 30px">
+                          Upcoming This Week
+                        </span>
+                      </div>
+                    </div>
+                <!-- Feed Product Card -->
+                      <div class="feed-product-main-conatiner">
+                          <div class="feed-product-main-clearfix">
+                                <div class="feed-product-image" style="background: #65D35B;">
+
+                                </div>
+                          </div>
+                      </div>
+                      <div class="feed-product-main-conatiner">
+                          <div class="feed-product-main-clearfix">
+                                <div class="feed-product-image" style="background: #65D35B;">
+
+                                </div>
+                          </div>
+                      </div>
+                <!-- END -->
               </div>
       		 </div>
     	</div>
