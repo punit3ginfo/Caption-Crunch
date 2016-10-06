@@ -921,15 +921,16 @@ form {
   display: inline-block;
   width: auto;
   height: 46px;
+  padding-left: 10px;
 }
 
 .feed-product-title-container {
-  height: 50%;
+  height: 23px;
   width: auto;
 }
 
 .feed-product-title {
-  line-height: 100%;
+  line-height: 23px;
   font-family: HelveticaNeue-Bold;
   font-size: 16px;
   color: #4D595C;
@@ -938,12 +939,12 @@ form {
 }
 
 .feed-product-date-container {
-  height: 50%;
+  height: 23px;
   width: auto;
 }
 
 .feed-product-date {
-  line-height: 100%;
+  line-height: 23px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
