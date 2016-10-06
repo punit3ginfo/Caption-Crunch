@@ -914,6 +914,16 @@ form {
     border-radius: 5px;
     display: inline-block;
     float: left;
+    position: relative;
+}
+
+.feed-product-image-zoom {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 66px;
+  height: 66px;
+  border: 1px solid #666;
 }
 
 .feed-product-titledate-container {

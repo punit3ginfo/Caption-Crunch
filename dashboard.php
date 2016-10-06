@@ -53,7 +53,9 @@
                   <div class="feed-product-main-conatiner">
                       <div class="feed-product-main-clearfix">
                               <div class="feed-product-image" style="background: #65D35B;">
+                                <div class="feed-product-image-zoom" style="background: #65D35B;">
 
+                                </div>
                               </div>
                               <div class="feed-product-titledate-container">
                                   <div class="feed-product-title-container">
