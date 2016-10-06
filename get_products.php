@@ -11,7 +11,7 @@
 try
 	{
 		# Making an API request can throw an exception
-		if(isset($_REQUEST['colid']) && $_REQUEST['colid']!=''){
+		if(isset($_REQUEST['colid']) && $_REQUEST['colid']!='' && $_REQUEST['status']==''){
 		$products = $shopify('GET /admin/products.json?collection_id='.$_REQUEST['colid'], array('published_status'=>'published'));
 		}
 		if($_REQUEST['colid']=='' && $_REQUEST['status']=='') {
@@ -23,10 +23,10 @@ try
 			echo "<script>alert(145);</script>";
 			$p_title='"Abuze London Hoody"';
 			
-			$products1 = $shopify('GET /admin/products/7901170760.json', array('published_status'=>'published'));
+			$products = $shopify('GET /admin/products/7901170760.json', array('published_status'=>'published'));
 		}
 		
-		print_r($products1);
+		print_r($products);
 		
 		foreach($products as $singleproduct)
 		{
