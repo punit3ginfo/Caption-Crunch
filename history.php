@@ -21,12 +21,16 @@ try
 				{ 
 					echo $title="tit=".$singleproduct['title'];
 					
-					
-					if($title==$query_title){
+					$val=strcmp($title,$query_title);
+					if($val=='0'){
 						echo "welcome";
 						exit();
 						$SingleProduct_id=$singleproduct['id'].'.json';	
 					}
+					else{
+					echo "fail";
+					}
+					
 				}
 			 }
 		         echo "idaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa=".$SingleProduct_id;
