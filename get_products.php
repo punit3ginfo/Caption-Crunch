@@ -14,7 +14,7 @@ try
 		if(isset($_REQUEST['colid']) && $_REQUEST['colid']!=''){
 		$products = $shopify('GET /admin/products.json?collection_id='.$_REQUEST['colid'], array('published_status'=>'published'));
 		}
-		if($_REQUEST['colid']=='') {
+		if($_REQUEST['colid']=='' && $_REQUEST['status']=='') {
 	       $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		}
 		if($_REQUEST['status']=="history")
@@ -22,7 +22,6 @@ try
 			echo "yes i done it";
 			exit();
 		}
-		if
 		//print_r($products);
 		//$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		foreach($products as $singleproduct)
