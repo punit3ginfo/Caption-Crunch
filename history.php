@@ -19,21 +19,22 @@ try
 			 {
 				foreach($products as $singleproduct)
 				{ 
-					echo "valA=".$title=$singleproduct['title'];
+					$title=$singleproduct['title'];
 					$query_title=$_REQUEST['title'];
 					$query_title=str_replace('"','',$query_title);
-					echo "valB=".$query_title;
+					$query_title;
 					
-					echo "value=".$val=strcmp($title,$query_title);
+					.$val=strcmp($title,$query_title);
 					if($val==0){
-						echo "welcome";
-						exit();
-						$SingleProduct_id=$singleproduct['id'].'.json';	
+						//echo "welcome";
+						//exit();
+						echo $SingleProduct_id=$singleproduct['id'].'.json';
+						
 					}
 					else{
-					echo "fail";
+					//echo "fail";
 					}
-					
+					exit();
 				}
 			 }
 		         echo "idaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa=".$SingleProduct_id;
