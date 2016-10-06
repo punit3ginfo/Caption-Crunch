@@ -14,6 +14,7 @@ try
 			echo "<script>alert(6979);</script>";
 			echo $p_title='"Abuze London Hoody"';
 			 $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
+		         print_r($products);
 			 {
 				foreach($products as $singleproduct)
 				{ 
@@ -25,7 +26,7 @@ try
 			 }
 			$products = $shopify('GET /admin/products/'.$SingleProduct_id, array('published_status'=>'published'));
 		echo "<pre>";
-		print_r($products);
+		//print_r($products);
 		
 		echo "</pre>";
 		
