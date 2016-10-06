@@ -23,8 +23,10 @@ try
 			echo "<script>alert(145);</script>";
 			$p_title='"Abuze London Hoody"';
 			
-			$products = $shopify('GET /admin/products/#{7901170760}.json');
+			$products1 = $shopify('GET /admin/products/#{7901170760}.json', array('published_status'=>'published'));
 		}
+		
+		print_r($products1);
 		
 		foreach($products as $singleproduct)
 		{
