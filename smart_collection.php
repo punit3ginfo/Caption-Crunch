@@ -8,7 +8,7 @@ try
 		
 		
 			echo "<script>alert(78);</script>";
-			$smart_collection = $shopify('POST /admin/smart_collections.json', array(), array
+			$smart_collection = $shopify('POST /admin/smart_collections.json', array
 		(
 			"smart_collection" => array
 			(	
