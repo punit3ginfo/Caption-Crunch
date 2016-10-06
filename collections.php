@@ -45,7 +45,7 @@
                                       <div class="grid-item">
                                           <div class="text-center">
                                             <?php
-                                            echo "Pagination goes here"
+                                            echo "Pagination goes here";
                                             ?>
                                           </div>
                                       </div>
@@ -56,32 +56,26 @@
 
                             <div class="collection_title_header_container">
                                <div class="collection_title_container-active">
-                                 <form class="search-form" method="get">
+                                 <form class="search-form" method="">
                                     <input class="search-text-box" id="formValueId" type="text" name="q_name" placeholder="Search" />
-                                    <input class="search-icon-button" type="submit" value="&#xf002;" />
+                                    <input class="search-icon-button" type="button" onclick="share(document.getElementById('formValueId').value);" value="&#xf002;" />
                                 </form>
                                </div>
                             </div>
 
                           </div>
         				</div>
-	
-	<script>
-		$(document).ready(function() {
-    $('.search-form').submit(function() {
-	    alert("OK");
-      search($('#formValueId').val());
-    });
-});
 		
-		</script>
+	
+	
+	
 
   <div class="product-grid-container scroll-grid">
       <div  class="product-grid-overflow-container">
         <?php
 
        // echo "Product's go here"
-	if($_REQUEST['status']=="history"){				    
+	if($_REQUEST['status']=="search"){				    
        require __DIR__.'/history.php';
 	}else{
 		 require __DIR__.'/get_products.php';
