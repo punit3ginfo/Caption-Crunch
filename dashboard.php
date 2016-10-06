@@ -55,6 +55,14 @@
                               <div class="feed-product-image" style="background: #65D35B;">
 
                               </div>
+                              <div class="feed-product-titledate-container">
+                                  <div class="feed-product-title-container">
+
+                                  </div>
+                                  <div class="feed-product-date-container">
+
+                                  </div>
+                              </div>
                               <div class="feed-product-sharenow-container">
                                   <button type='button' class='feed-product-preview-button'>Preview</button>
                                   <button type='button' class='feed-product-sharenow-button'>Share Now</button>
