@@ -6,8 +6,8 @@ require __DIR__.'/connection.php'; //DB connectivity
 require __DIR__.'/vendor/autoload.php';
 use phpish\shopify;
 // Required File END...........
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+//error_reporting(E_ALL);
+//ini_set('display_errors', 1);
 // require __DIR__.'/get_products.php'; //GET PRODUCTS
 //echo $_REQUEST['code'];
  if((isset($_REQUEST['shop'])) && (isset($_REQUEST['code'])) && $_REQUEST['shop']!='' && $_REQUEST['code']!='' )
