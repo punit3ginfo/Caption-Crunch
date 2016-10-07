@@ -36,10 +36,8 @@ $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
 
 			
 		echo "part-11111";
-		 $pppp=$shopify(GET /admin/products.json?ids=7901168776,7901168520);
-		 print_r($pppp);
-		
 		exit();
+		
 		 
 			$products = $shopify('GET /admin/products.json?ids='.$MultipleProduct_id_comma_seprated, array('published_status'=>'published'));
 
