@@ -120,6 +120,15 @@ try
 	   </div>
       </div>
 </div>
+
+<script>
+  $('.product-image-<?php echo $p_id1; ?>').click(function() {
+    // Show / Hide Product Details Opacity Container
+      $('.product-opacity-<?php echo $p_id1; ?>').slideToggle("slow");
+    // Show / Hide Product Details Container
+      $('.product-details-<?php echo $p_id1; ?>').slideToggle("slow");
+  });
+</script>
 <!-- HTML Content for Product END    -->
 
 	<?php
@@ -185,13 +194,4 @@ try
                     }
                 });
             }
-    </script>
-
-    <script>
-      $('.product-image-<?php echo $p_id1; ?>').click(function() {
-        // Show / Hide Product Details Opacity Container
-          $('.product-opacity-<?php echo $p_id1; ?>').slideToggle("slow");
-        // Show / Hide Product Details Container
-      	  $('.product-details-<?php echo $p_id1; ?>').slideToggle("slow");
-      });
     </script>
