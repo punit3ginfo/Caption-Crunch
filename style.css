@@ -357,11 +357,6 @@ body {
 .chat_select_container:hover .collection_list_text {
 	color: white;
 }
-
-.chat_select_container:hover .chat_notification_container {
-	color: #D577C3;
-}
-
 .notification-container {
 	width: 60px;
 	height: 60px;
@@ -392,6 +387,14 @@ body {
 	list-style-type: none;
     display: inline-flex;
     padding-left: 0px;
+}
+
+.chat_select_container:hover .chat_notification_container {
+	color: #D577C3;
+}
+
+.chat_select_container:hover .dashboard-menu-icon-circle {
+	color: #D577C3;
 }
 
 .paginate-list {
