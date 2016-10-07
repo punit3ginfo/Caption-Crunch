@@ -906,6 +906,7 @@ form {
 .feed-product-main-clearfix {
     width: 100%;
     height: 46px;
+    position: relative;
 }
 
 .feed-product-image {
@@ -976,8 +977,8 @@ form {
 }
 
 .feed-product-sharenow-container {
-  float: right;
-  position: relative;
+  position: absolute;
+  right: 0px;
   width: auto;
 }
 
