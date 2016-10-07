@@ -62,7 +62,7 @@
                                       <span class="feed-product-title">Product Title Goes Here</span>
                                   </div>
                                   <div class="feed-product-date-container">
-                                      <span class="feed-product-date">Scheduled for: Today @ 2:22PM</span>
+                                      <span class="feed-product-date">Today @ 2:22PM</span>
                                   </div>
                               </div>
                               <div class="feed-product-sharenow-container">
@@ -92,7 +92,7 @@
                                         <span class="feed-product-title">Product Title Goes Here</span>
                                     </div>
                                     <div class="feed-product-date-container">
-                                        <span class="feed-product-date">Scheduled for: Today @ 2:22PM</span>
+                                        <span class="feed-product-date">Today @ 2:22PM</span>
                                     </div>
                                 </div>
                                 <div class="feed-product-sharenow-container">
@@ -113,7 +113,7 @@
                                         <span class="feed-product-title">Product Title Goes Here</span>
                                     </div>
                                     <div class="feed-product-date-container">
-                                        <span class="feed-product-date">Scheduled for: Today @ 2:22PM</span>
+                                        <span class="feed-product-date">Today @ 2:22PM</span>
                                     </div>
                                 </div>
                                 <div class="feed-product-sharenow-container">
@@ -143,7 +143,7 @@
                                     <span class="feed-product-title">Product Title Goes Here</span>
                                 </div>
                                 <div class="feed-product-date-container">
-                                    <span class="feed-product-date">Scheduled for: Today @ 2:22PM</span>
+                                    <span class="feed-product-date">Today @ 2:22PM</span>
                                 </div>
                             </div>
                             <div class="feed-product-sharenow-container">
@@ -164,7 +164,7 @@
                                     <span class="feed-product-title">Product Title Goes Here</span>
                                 </div>
                                 <div class="feed-product-date-container">
-                                    <span class="feed-product-date">Scheduled for: Today @ 2:22PM</span>
+                                    <span class="feed-product-date">Today @ 2:22PM</span>
                                 </div>
                             </div>
                             <div class="feed-product-sharenow-container">
@@ -185,7 +185,7 @@
                                     <span class="feed-product-title">Product Title Goes Here</span>
                                 </div>
                                 <div class="feed-product-date-container">
-                                    <span class="feed-product-date">Scheduled for: Today @ 2:22PM</span>
+                                    <span class="feed-product-date">Today @ 2:22PM</span>
                                 </div>
                             </div>
                             <div class="feed-product-sharenow-container">
@@ -206,7 +206,7 @@
                                     <span class="feed-product-title">Product Title Goes Here</span>
                                 </div>
                                 <div class="feed-product-date-container">
-                                    <span class="feed-product-date">Scheduled for: Today @ 2:22PM</span>
+                                    <span class="feed-product-date">Today @ 2:22PM</span>
                                 </div>
                             </div>
                             <div class="feed-product-sharenow-container">
@@ -227,7 +227,7 @@
                                     <span class="feed-product-title">Product Title Goes Here</span>
                                 </div>
                                 <div class="feed-product-date-container">
-                                    <span class="feed-product-date">Scheduled for: Today @ 2:22PM</span>
+                                    <span class="feed-product-date">Today @ 2:22PM</span>
                                 </div>
                             </div>
                             <div class="feed-product-sharenow-container">
