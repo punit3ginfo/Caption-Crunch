@@ -121,12 +121,13 @@ try
       </div>
 </div>
 
+<!-- Show / Hide Product Details -->
 <script>
   $('.product-image-<?php echo $p_id1; ?>').hover(function() {
     // Show / Hide Product Details Opacity Container
-      $('.product-opacity-<?php echo $p_id1; ?>').slideToggle("fast");
+      $('.product-opacity-<?php echo $p_id1; ?>').slideToggle("400");
     // Show / Hide Product Details Container
-      $('.product-details-<?php echo $p_id1; ?>').slideToggle("slow");
+      $('.product-details-<?php echo $p_id1; ?>').slideToggle("400");
   });
 </script>
 <!-- HTML Content for Product END    -->
