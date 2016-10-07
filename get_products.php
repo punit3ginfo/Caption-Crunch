@@ -56,7 +56,10 @@ try
 	<div class="product-card-container">
 
       		<div class="product-card-image-container" style='background-image: url(<?php echo $src; ?>)'>
-              <div class="product-card-image-container-hover">
+            <!-- Opacity Layer -->
+              <div class="product-card-image-container-background-hover"></div>
+            <!-- Product Details Layer -->
+              <div class="product-card-image-container-content-hover">
                 <div>
                   <span class="product-title-text"><?php echo $title; ?></span>
                 </div>
