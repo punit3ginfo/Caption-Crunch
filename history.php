@@ -39,7 +39,7 @@ try
 		
 		  $pidii = $pid.'.json';
 		         
-			$products = $shopify('GET /admin/products/'.$SingleProduct_id, array('published_status'=>'published'));
+			$products = $shopify('GET /admin/products/#'.$SingleProduct_id, array('published_status'=>'published'));
 		
 		
 		
