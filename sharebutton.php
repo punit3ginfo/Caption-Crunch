@@ -17,7 +17,8 @@ session_start();
      
 try
 	{
-		
+		echo "id=".$pid;
+		exit();
 		# Making an API request can throw an exception
 		
 	       $pidii = $pid.'.json';
