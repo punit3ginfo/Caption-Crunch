@@ -56,7 +56,12 @@ try
 	<div class="product-card-container">
 
       		<div class="product-card-image-container" style='background-image: url(<?php echo $src; ?>)'>
-      		</div>
+              <div class="product-card-image-container-hover">
+                <div>
+                  <span class="product-title-text"><?php echo $title; ?></span>
+                </div>
+              </div>
+          </div>
 
       		<!-- <div class="product-card-details-section">
       			<div class="product-card-details-container">
