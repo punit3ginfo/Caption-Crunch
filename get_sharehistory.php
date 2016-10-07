@@ -15,15 +15,15 @@ try
 			
 			
 			 $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
-		         print_r($products);
+		         //print_r($products);
 		         
-				  echo "ppppp";
-	 exit();
+				 // echo "ppppp";
+	// exit();
 			 
 				 $MultipleProduct_id = array();
 				foreach($products as $singleproduct)
 				{ 
-					$eachProductTag=$singleproduct['tags'];					
+					echo "tags=".$eachProductTag=$singleproduct['tags'];					
 					if (strpos($eachProductTag, 'shared') !== false) {
 						$MultipleProduct_id[]=$singleproduct['id'];
 					}
