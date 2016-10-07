@@ -4,6 +4,8 @@
      use phpish\shopify;
      $access_token=$_REQUEST['access_token'];
      $shopify = shopify\client($_REQUEST['shop'], SHOPIFY_APP_API_KEY, $access_token );
+	 echo "lkholhoho";
+	 exit();
 
 ?>
 
@@ -30,7 +32,6 @@ try
 			 exit();
 		
 		  $pidii = $pid.'.json';
-		         GET /admin/products.json?ids=632910392,921728736
 			$products = $shopify('GET /admin/products/'.$SingleProduct_id, array('published_status'=>'published'));
 		
 		
