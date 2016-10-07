@@ -1,42 +1,27 @@
 <?php
-
      require __DIR__.'/vendor/autoload.php';
      use phpish\shopify;
      $access_token=$_REQUEST['access_token'];
      $shopify = shopify\client($_REQUEST['shop'], SHOPIFY_APP_API_KEY, $access_token );
-
-?>
-
-<?php
-try
+	 $query_title=$_REQUEST['title']; // Search Product Title
+ try
 	{
 		# Making an API request can throw an exception
-		         $query_title=$_REQUEST['title'];
-				 $query_title =str_replace('"','',$query_title);
-				 $search_products = $shopify('GET /admin/products.json', array('title'=>$query_title));
-				 print_r($search_products);
-				
-			
-			foreach($search_products as $singleproduct)
+		$search_products = $shopify('GET /admin/products.json', array('title'=>$query_title)); // API Hit for search TITLE
+		foreach($search_products as $singleproduct)
 		{
 			$title=$singleproduct['title']; // Product Title
 			$variants=$singleproduct['variants'];
-		        $p_id1=$singleproduct['id'];
-		        $tags=$singleproduct['tags'];
-			   $OrigonalTag=$singleproduct['tags'];
-
-
-		        $tags = str_replace('shared', '', $tags);
-				$tags = str_replace(' ', '', $tags);
-			    $tags = str_replace(',', 'AA', $tags);
-		        //$tags = str_replace(',shared', '', $tags);
-		        //$tags = str_replace('shared', '', $tags);
-			//$tags = str_replace(',', 'AA', $tags);
+		    $p_id1=$singleproduct['id']; // Product ID
+		    $tags=$singleproduct['tags'];
+			$OrigonalTag=$singleproduct['tags'];
+			$tags = str_replace('shared', '', $tags);
+			$tags = str_replace(' ', '', $tags);
+			$tags = str_replace(',', 'AA', $tags);   
 			foreach($variants as $variants){
 				$price=$variants['price']; // Product PRice
 			}
-		        $images=$singleproduct['images'];
-
+		    $images=$singleproduct['images'];
 			foreach($images as $images){
 				$src=$images['src']; //Image Source
 			}
@@ -65,27 +50,18 @@ try
 
           <div id="<?php echo $p_id1; ?>"  class="share-button-container">
 
-			<script>
+<script>
 	$(document).ready(function(){
 		var OrigonalTag = '<?php echo $OrigonalTag; ?>';
-
 		var pid_1 = '<?php echo $p_id1; ?>';
-		//alert(pid_1);
 		var pattern = /shared/;
 		var pattern1 = / shared/;
-
 		var exists = pattern.test(OrigonalTag);
 		var exists1 = pattern1.test(OrigonalTag);
 		if(exists || exists1 ){
 			var tags_1 = '"<?php echo $tags; ?>"';
-			//alert(tags_1);
-
-		        var _id = '#'+ pid_1;
-
-
-		//$(_id).html('<button type=button class=share-button onclick=unshareButton('+pid_1+',"'+tags_1+'");>UnShare</button>');
-		$(_id).html("<button type='button' class='share-button' onclick='unshareButton("+pid_1+","+tags_1+");'>UnShare</button>");
-
+			var _id = '#'+ pid_1;
+			$(_id).html("<button type='button' class='share-button' onclick='unshareButton("+pid_1+","+tags_1+");'>UnShare</button>");
 		}else{
 			var _id = '#'+ pid_1;
 			<?php
@@ -98,13 +74,11 @@ try
 			}
 			?>
 			var tags_1 = '"<?php echo $OrigonalTag; ?>"';
-
-			  //$(_id).html('<button type="button" class=share-button onclick=shareButton('+pid_1+',"'+tags_1+'");>Share</button>');
-	$(_id).html("<button type='button' class='share-button' onclick='shareButton("+pid_1+","+tags_1+");'>Share</button>");
+			$(_id).html("<button type='button' class='share-button' onclick='shareButton("+pid_1+","+tags_1+");'>Share</button>");
 		}
 	});
 </script>
-	   </div>
+			</div> <!-- BUTTON DIV CLOSE --> 
       </div>
 </div>
 <!-- HTML Content for Product END    -->
@@ -128,49 +102,40 @@ try
 		print_r($e->getResponse());
 	}
 	?>
-
- <?php
-
-	       ?>
-	<script>
+<script>
 	function shareButton(pid,tags){
 
-               var access_token='<?php echo $access_token ?>';
-	       var shop='<?php echo $_REQUEST['shop'] ?>';
-               var tags_unshare = tags.replace('shared', "");
-	       
-	       var tags_unshare = tags_unshare.replace('shared', "");
+        var access_token='<?php echo $access_token ?>';
+	    var shop='<?php echo $_REQUEST['shop'] ?>';
+        var tags_unshare = tags.replace('shared', "");
+		var tags_unshare = tags_unshare.replace('shared', "");
 		var tags_unshare = tags_unshare.replace(' ', "");
-		
-	       var _id = '#'+ pid;
-               $.ajax({
-                    url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
-                    success: function(data){
-			$(_id).html('<button type=button class=share-button onclick=unshareButton('+pid+',"'+tags_unshare+'");>UnShare</button>');
-                    }
-                });
-            }
-	</script>
+	    var _id = '#'+ pid;
+        $.ajax({
+                url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
+                success: function(data){
+					$(_id).html('<button type=button class=share-button onclick=unshareButton('+pid+',"'+tags_unshare+'");>UnShare</button>');
+                }
+              });
+    }
+</script>
 
-    <script>
+<script>
 
 	var tags;
 	function unshareButton(pid,tags){
-		var _id = '#'+ pid;
+				var _id = '#'+ pid;
                 var access_token='<?php echo $access_token ?>';
-	        var shop='<?php echo $_REQUEST['shop'] ?>';
-			var tags_1 = tags+',shared';
-		//var tags_1 = '<?php //echo $tags; ?>';
-		if(tags_1== ''){
-			tags_1= 'shared';
-		}
-
+				var shop='<?php echo $_REQUEST['shop'] ?>';
+				var tags_1 = tags+',shared';
+				if(tags_1== ''){
+					tags_1= 'shared';
+				}
                 $.ajax({
                     url: '/collections.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){
-
-			  $(_id).html('<button type="button" class=share-button def onclick=shareButton('+pid+',"'+tags_1+'");>Share</button>');
+						$(_id).html('<button type="button" class=share-button def onclick=shareButton('+pid+',"'+tags_1+'");>Share</button>');
                     }
                 });
-            }
-    </script>
+    }
+</script>
