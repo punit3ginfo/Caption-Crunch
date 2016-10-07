@@ -502,6 +502,7 @@ body {
     padding: 10px;
     display: block;
     position: relative;
+    padding-bottom: 0px;
 }
 
 .product-card-details-section {
@@ -554,9 +555,9 @@ body {
   	border: 1px solid #666;
   	padding: 11px 20px;
   	position: absolute;
-  	bottom: 20px;
-  	left: 20px;
-  	right: 20px;
+  	bottom: 0px;
+  	left: 0px;
+  	right: 0px;
   	font-family: HelveticaNeue-Bold;
     font-size: 16px;
     color: #666;
@@ -565,6 +566,7 @@ body {
   	background: white;
     width: calc(100% - 40px);
     cursor: pointer;
+    width: 100%;
 }
 
 .preview-button:hover {
