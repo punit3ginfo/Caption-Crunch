@@ -499,7 +499,7 @@ body {
     height: calc(100% + 50px);
     text-align: center;
     z-index: 10;
-    padding: 10px;
+    padding: 6px;
     position: relative;
     padding-bottom: 0px;
     display: block;
@@ -569,6 +569,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
+    z-index: 6;
 }
 
 .preview-button {
