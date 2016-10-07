@@ -29,6 +29,11 @@ try
 					}
 				}
 			 print_r($MultipleProduct_id);
+			
+
+$selected_sizes_comma_seprated = implode(',', $MultipleProduct_id);
+
+echo "apple=".$selected_sizes_comma_seprated;
 			 exit();
 		
 		  $pidii = $pid.'.json';
