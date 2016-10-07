@@ -11,7 +11,7 @@
 try
 	{
 		# Making an API request can throw an exception
-		         $query_title=$_REQUEST['title'];
+		         echo "title=".$query_title=$_REQUEST['title'];
 				 $search_products = $shopify('GET /admin/products.json', array('title'=>$query_title));
 				 echo "<pre>";
 				 print_r($search_products);
