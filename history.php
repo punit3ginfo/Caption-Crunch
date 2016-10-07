@@ -15,12 +15,15 @@ try
 				 $query_title =str_replace('"','',$query_title);
 				 $search_products = $shopify('GET /admin/products.json', array('title'=>$query_title));
 				 print_r($search_products);
-				 exit();
-			$title=$search_products['title']; // Product Title
-			$variants=$search_products['variants'];
-		        $p_id1=$search_products['id'];
-		        $tags=$search_products['tags'];
-			   $OrigonalTag=$search_products['tags'];
+				
+			
+			foreach($search_products as $singleproduct)
+		{
+			$title=$singleproduct['title']; // Product Title
+			$variants=$singleproduct['variants'];
+		        $p_id1=$singleproduct['id'];
+		        $tags=$singleproduct['tags'];
+			   $OrigonalTag=$singleproduct['tags'];
 
 
 		        $tags = str_replace('shared', '', $tags);
@@ -32,15 +35,15 @@ try
 			foreach($variants as $variants){
 				$price=$variants['price']; // Product PRice
 			}
-		        $images=$products['images'];
+		        $images=$singleproduct['images'];
 
 			foreach($images as $images){
 				$src=$images['src']; //Image Source
 			}
-            
+
 			?>
-		
-			
+
+
 <!-- HTML Content for Product  START      -->
 
 <div class="product-card-clearfix">
@@ -104,22 +107,11 @@ try
 	   </div>
       </div>
 </div>
-
 <!-- HTML Content for Product END    -->
-
-
-
-
-
-
-
-
-
-
 
 	<?php
 	
-		
+		}
 	}
 	catch (shopify\ApiException $e)
 	{
