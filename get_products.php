@@ -60,6 +60,11 @@ try
               <div class="product-card-image-container-background-hover product-opacity-<?php echo $p_id1; ?>"></div>
             <!-- Product Details Layer -->
               <div class="product-card-image-container-content-hover product-details-<?php echo $p_id1; ?>">
+                  <div class="product-icon-container">
+                     <span class="product-icon-clearfix">
+                       1
+                     </span>
+                  </div>
                   <span class="product-title-text"><?php echo $title; ?></span>
                   <span class="product-card-price-text" style="margin-right: 3px;">$<?php echo $price; ?></span>
                   <span class="product-card-price-text" style="font-size: 14px; color: #888;">$<?php echo $price; ?></span>
