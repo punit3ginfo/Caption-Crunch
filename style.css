@@ -551,6 +551,9 @@ body {
     width: 100%;
     height: 220px;
     border-bottom: 1px solid green;
+    display: flex;
+    align-content: space-around;
+    align-items: center;
 }
 
 .product-card-price-container {

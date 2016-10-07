@@ -61,7 +61,7 @@ try
             <!-- Product Details Layer -->
               <div class="product-card-image-container-content-hover product-details-<?php echo $p_id1; ?>">
                   <div class="product-details-container">
-                      <div class="product-icon-container" style="margin-bottom: 15px; margin-top: 15px;">
+                      <div class="product-icon-container" style="margin-bottom: 15px;">
                          <span class="product-icon-clearfix">
                            1
                          </span>
