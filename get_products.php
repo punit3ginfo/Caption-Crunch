@@ -58,7 +58,7 @@ try
       		<div class="product-card-image-container" style='background-image: url(<?php echo $src; ?>)'>
       		</div>
 
-      		<div class="product-card-details-section">
+      		<!-- <div class="product-card-details-section">
       			<div class="product-card-details-container">
                   	<span class="product-title-text"><?php echo $title; ?></span>
                   	<div class="product-card-price-container">
@@ -66,7 +66,7 @@ try
                       <span class="product-card-price-text" style="font-size: 14px; color: #888;">$<?php echo $price; ?></span>
                   	</div>
       			</div>
-      		</div>
+      		</div> -->
 
           <div id="<?php echo $p_id1; ?>"  class="share-button-container?>" >
 
