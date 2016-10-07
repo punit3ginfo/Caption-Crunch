@@ -181,7 +181,7 @@ body {
     height: calc(100vh - 63px);
   	padding-left: 80px;
     padding-top: 63px;
-  	/*background-image: url("{{ 'background.jpg' | asset_img_url: 'master' }}");*/
+  	background-image: url("./images/background.jpg");
   	background-size: 100%;
 }
 
@@ -316,7 +316,7 @@ body {
 
 .chat_select_container:hover {
 	background-color: #65D35B;
-	/*background-image: url("{{ 'button.png' |  asset_url }}");*/
+	background-image: url("./images/menu-background.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
 
