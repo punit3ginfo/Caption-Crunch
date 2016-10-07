@@ -11,12 +11,10 @@
 try
 	{
 		# Making an API request can throw an exception
-		         echo "title=".$query_title=$_REQUEST['title'];
-				 $search_products = $shopify('GET /admin/products.json', array('title'=>$query_title));
-				 echo "<pre>";
-				 print_r($search_products);
-				 echo "</pre>";
-				 exit();
+		         $query_title=$_REQUEST['title'];
+				 $query_title =str_replace('"','',$query_title);
+					$val=strcmp($title,$query_title);
+				 $search_products = $shopify('GET /admin/products.json', array('title'=>$val));
 			$title=$search_products['title']; // Product Title
 			$variants=$search_products['variants'];
 		        $p_id1=$search_products['id'];
