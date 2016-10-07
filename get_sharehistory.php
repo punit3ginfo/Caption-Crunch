@@ -15,11 +15,6 @@ try
 			
 			
 			 $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
-		         //print_r($products);
-		         
-				 // echo "ppppp";
-	// exit();
-			 
 				 $MultipleProduct_id = array();
 				foreach($products as $singleproduct)
 				{ 
@@ -33,22 +28,15 @@ try
 
 $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
 
-
-			
-		
-	
-		
-		 
 			$shared_products = $shopify('GET /admin/products.json', array('ids'=>$MultipleProduct_id_comma_seprated));
-			echo "<pre>";
-	print_r($shared_products);
-	echo "</pre>";
-	exit();
-			$title=$products['title']; // Product Title
-			$variants=$products['variants'];
-		        $p_id1=$products['id'];
-		        $tags=$products['tags'];
-			   $OrigonalTag=$products['tags'];
+			
+			foreach($shared_products as $singleproduct)
+		{
+			$title=$singleproduct['title']; // Product Title
+			$variants=$singleproduct['variants'];
+		        $p_id1=$singleproduct['id'];
+		        $tags=$singleproduct['tags'];
+			   $OrigonalTag=$singleproduct['tags'];
 
 
 		        $tags = str_replace('shared', '', $tags);
@@ -60,15 +48,15 @@ $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
 			foreach($variants as $variants){
 				$price=$variants['price']; // Product PRice
 			}
-		        $images=$products['images'];
+		        $images=$singleproduct['images'];
 
 			foreach($images as $images){
 				$src=$images['src']; //Image Source
 			}
-            
+
 			?>
-		
-			
+
+
 <!-- HTML Content for Product  START      -->
 
 <div class="product-card-clearfix">
@@ -132,22 +120,11 @@ $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
 	   </div>
       </div>
 </div>
-
 <!-- HTML Content for Product END    -->
-
-
-
-
-
-
-
-
-
-
 
 	<?php
 	
-		
+		}
 	}
 	catch (shopify\ApiException $e)
 	{
