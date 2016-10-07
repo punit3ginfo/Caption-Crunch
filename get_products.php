@@ -60,11 +60,9 @@ try
               <div class="product-card-image-container-background-hover"></div>
             <!-- Product Details Layer -->
               <div class="product-card-image-container-content-hover">
-                <div>
                   <span class="product-title-text"><?php echo $title; ?></span>
                   <span class="product-card-price-text" style="margin-right: 3px;">$<?php echo $price; ?></span>
                   <span class="product-card-price-text" style="font-size: 14px; color: #888;">$<?php echo $price; ?></span>
-                </div>
               </div>
           </div>
 
@@ -187,4 +185,13 @@ try
                     }
                 });
             }
+    </script>
+
+    <script>
+      $('product-card-image-container').hover(function() {
+        // Show / Hide Product Details Opacity Container
+          $('.product-card-image-container-background-hover').slideToggle("slow");
+        // Show / Hide Product Details Container
+      	  $('.product-card-image-container-content-hover').slideToggle("slow");
+      });
     </script>

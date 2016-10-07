@@ -487,6 +487,7 @@ body {
     opacity: 0.9;
     background: white;
     z-index: 5;
+    display: none;
 }
 
 
@@ -496,12 +497,10 @@ body {
     top: 0;
     width: calc(100% - 20px);
     height: calc(100% - 20px);
-    border: 1px solid #65D35B;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     z-index: 10;
     padding: 10px;
+    display: none;
 }
 
 .product-card-details-section {
