@@ -14,6 +14,8 @@ try
 		         $query_title=$_REQUEST['title'];
 				 $query_title =str_replace('"','',$query_title);
 				 $search_products = $shopify('GET /admin/products.json', array('title'=>$query_title));
+				 print_r($search_products);
+				 exit();
 			$title=$search_products['title']; // Product Title
 			$variants=$search_products['variants'];
 		        $p_id1=$search_products['id'];
@@ -58,7 +60,7 @@ try
       			</div>
       		</div>
 
-          <div id="<?php echo $p_id1; ?>"  class="share-button-container?>" >
+          <div id="<?php echo $p_id1; ?>"  class="share-button-container">
 
 			<script>
 	$(document).ready(function(){
