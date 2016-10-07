@@ -501,6 +501,7 @@ body {
     z-index: 10;
     padding: 10px;
     display: none;
+    position: relative;
 }
 
 .product-card-details-section {
@@ -538,6 +539,40 @@ body {
     color: #666;
     letter-spacing: 0.82px;
     text-transform: uppercase;
+}
+
+.preview-button-container {
+	  width: 100%;
+    height: 65px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.preview-button {
+  	border: 1px solid #666;
+  	padding: 11px 20px;
+  	position: absolute;
+  	bottom: 20px;
+  	left: 20px;
+  	right: 20px;
+  	font-family: HelveticaNeue-Bold;
+    font-size: 16px;
+    color: #666;
+    letter-spacing: 0.82px;
+    text-transform: uppercase;
+  	background: white;
+    width: calc(100% - 40px);
+    cursor: pointer;
+}
+
+.preview-button:hover {
+  	border: 1px solid #666;
+	  background: #666;
+    color: white;
+  	text-decoration: none;
+    cursor: pointer;
 }
 
 .share-button-container {
