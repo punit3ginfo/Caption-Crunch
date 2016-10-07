@@ -122,7 +122,7 @@ try
 </div>
 
 <script>
-  $('.product-image-<?php echo $p_id1; ?>').click(function() {
+  $('.product-image-<?php echo $p_id1; ?>').hover(function() {
     // Show / Hide Product Details Opacity Container
       $('.product-opacity-<?php echo $p_id1; ?>').slideToggle("slow");
     // Show / Hide Product Details Container
