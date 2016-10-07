@@ -4,8 +4,7 @@
      use phpish\shopify;
      $access_token=$_REQUEST['access_token'];
      $shopify = shopify\client($_REQUEST['shop'], SHOPIFY_APP_API_KEY, $access_token );
-	 echo "lkholhoho";
-	 exit();
+	
 
 ?>
 
@@ -16,9 +15,10 @@ try
 			
 			
 			 $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
-		         //print_r($products);
+		         print_r($products);
 		         
-				 
+				  echo "ppppp";
+	 exit();
 			 
 				 $MultipleProduct_id = array();
 				foreach($products as $singleproduct)
