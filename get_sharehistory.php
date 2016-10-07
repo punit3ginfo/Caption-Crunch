@@ -28,19 +28,22 @@ try
 						$MultipleProduct_id[]=$singleproduct['id'];
 					}
 				}
-			 print_r($MultipleProduct_id);
+			 
 			
 
-$selected_sizes_comma_seprated = implode(',', $MultipleProduct_id);
+$MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
 
-echo "apple=".$selected_sizes_comma_seprated;
-			 exit();
+
+			
+		echo "part-1";
+		 
+			$products = $shopify('GET //admin/products.json?ids='.$MultipleProduct_id_comma_seprated, array('published_status'=>'published'));
+			echo "<pre>";
+		print_r($products);
+		echo "</pre>";
+		echo "part-2";
 		
-		  $pidii = $pid.'.json';
-			$products = $shopify('GET /admin/products/'.$SingleProduct_id, array('published_status'=>'published'));
-		
-		
-		
+		 exit();
 		
 		
 		
