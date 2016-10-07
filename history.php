@@ -15,7 +15,7 @@ try
 			
 			 $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		         //print_r($products);
-		         echo "title=".$query_title=$_REQUEST['title'];
+		         $query_title=$_REQUEST['title'];
 			 {
 				foreach($products as $singleproduct)
 				{ 
