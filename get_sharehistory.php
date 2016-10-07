@@ -76,7 +76,7 @@ $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
       			</div>
       		</div>
 
-          <div id="<?php echo $p_id1; ?>"  class="share-button-container">
+          <div id="<?php //echo $p_id1; ?>"  class="share-button-container">
 
 			<script>
 	$(document).ready(function(){
