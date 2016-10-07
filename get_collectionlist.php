@@ -76,7 +76,22 @@
             }
 	</script>
 
-	
+	<script>
+	function getsharehistory(){
+		
+               var access_token='<?php echo $access_token ?>';
+		var shop='<?php echo $_REQUEST['shop'] ?>';
+		
+                $.ajax({
+                    url: '/get_sharehistory.php?access_token='+access_token+'&shop='+shop,
+                    success: function(data){
+                     //console.log(data);
+			   // var data1= data.find('.chat_container').html()
+			    $('.product-grid-container').html(data);
+                    }
+                });
+            }
+	</script>
 <script>
 	function search(p_title){
                 
