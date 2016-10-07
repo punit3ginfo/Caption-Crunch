@@ -32,12 +32,15 @@ try
 			
 
 $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
-
+/admin/products/#{id}.json
 
 			
 		echo "part-1";
+		 $pppp=$shopify("GET /admin/products.json?ids=7901168776,7901168520");
+		 print_r($pppp);
+		 exit();
 		 
-			$products = $shopify('GET /admin/products/#{'.$MultipleProduct_id_comma_seprated.'}.json', array('published_status'=>'published'));
+			$products = $shopify('GET /admin/products.json?ids='.$MultipleProduct_id_comma_seprated, array('published_status'=>'published'));
 			echo "<pre>";
 		print_r($products);
 		echo "</pre>";
