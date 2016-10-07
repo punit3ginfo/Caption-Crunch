@@ -24,8 +24,10 @@ try
 					$val=strcmp($title,$query_title);
 					if($val=='0'){
 						echo "FOUND";
+						
+						echo "json=".$SingleProduct_id=$singleproduct['id'].'.json';	
+						
 						exit();
-						$SingleProduct_id=$singleproduct['id'].'.json';	
 					}
 					else{
 					//echo "not FOUND";
