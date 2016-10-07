@@ -31,7 +31,7 @@
 						<div class="collection_title_header">
 
                           <div class="collection-share-history-container">
-                            <a href="javascript:void(0)" onclick="gethistory()" class="sidebar-span share-history-button">
+                            <a href="javascript:void(0)" onclick="getsharehistory()" class="sidebar-span share-history-button">
 				    <i class="fa fa-history" aria-hidden="true"></i> 
 				    Share History
 			    </a>
