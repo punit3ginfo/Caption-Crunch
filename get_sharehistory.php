@@ -15,30 +15,22 @@ try
 			
 			 $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		         //print_r($products);
-		         $query_title=$_REQUEST['title'];
-			 {
+		         
+				 
+			 
+				 $MultipleProduct_id = array();
 				foreach($products as $singleproduct)
 				{ 
-					$title=$singleproduct['title'];
-					$query_title =str_replace('"','',$query_title);
-					$val=strcmp($title,$query_title);
-					if($val=='0'){
-						
-						
-						$SingleProduct_id=$singleproduct['id'].'.json';	
-						
-						
+					$eachProductTag=$singleproduct['tags'];					
+					if (strpos($eachProductTag, 'shared') !== false) {
+						$MultipleProduct_id[]=$singleproduct['id'];
 					}
-					else{
-					//echo "not FOUND";
-						//exit();
-					}
-					
 				}
-			 }
+			 print_r($MultipleProduct_id);
+			 exit();
 		
 		  $pidii = $pid.'.json';
-		         
+		         GET /admin/products.json?ids=632910392,921728736
 			$products = $shopify('GET /admin/products/'.$SingleProduct_id, array('published_status'=>'published'));
 		
 		
