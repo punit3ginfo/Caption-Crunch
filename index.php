@@ -237,7 +237,16 @@ function gethistory(){
                 });
             }
 </script>
-<?php getdashboard(); ?>
+
+<script>
+(function($) {
+    $(document).ready(function() {
+        getdashboard(); // start the loop
+    });
+})(jQuery);	
+</script>
+
+
 	
 
 </body>
