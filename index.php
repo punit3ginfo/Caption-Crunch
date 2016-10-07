@@ -237,7 +237,7 @@ function gethistory(){
                 });
             }
 </script>
-
+<?php getdashboard(); ?>
 	
 
 </body>
