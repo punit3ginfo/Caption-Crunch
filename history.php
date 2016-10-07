@@ -11,47 +11,13 @@
 try
 	{
 		# Making an API request can throw an exception
-			
-			
-			 $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
-		         //print_r($products);
 		         $query_title=$_REQUEST['title'];
-			 {
-				foreach($products as $singleproduct)
-				{ 
-					$title=$singleproduct['title'];
-					$query_title =str_replace('"','',$query_title);
-					$val=strcmp($title,$query_title);
-					if($val=='0'){
-						
-						
-						$SingleProduct_id=$singleproduct['id'].'.json';	
-						
-						
-					}
-					else{
-					//echo "not FOUND";
-						//exit();
-					}
-					
-				}
-			 }
-		
-		  $pidii = $pid.'.json';
-		         
-			$products = $shopify('GET /admin/products/'.$SingleProduct_id, array('published_status'=>'published'));
-		
-		
-		
-		
-		
-		
-		
-			$title=$products['title']; // Product Title
-			$variants=$products['variants'];
-		        $p_id1=$products['id'];
-		        $tags=$products['tags'];
-			   $OrigonalTag=$products['tags'];
+				 $search_products = $shopify('GET /admin/products.json', array('title'=>$query_title));
+			$title=$search_products['title']; // Product Title
+			$variants=$search_products['variants'];
+		        $p_id1=$search_products['id'];
+		        $tags=$search_products['tags'];
+			   $OrigonalTag=$search_products['tags'];
 
 
 		        $tags = str_replace('shared', '', $tags);
