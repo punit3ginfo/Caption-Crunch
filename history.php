@@ -40,22 +40,18 @@ try
 		  $pidii = $pid.'.json';
 		         
 			$products = $shopify('GET /admin/products/'.$SingleProduct_id, array('published_status'=>'published'));
-		echo "<pre>";
-		print_r($products);
-		
-		echo "</pre>";
 		
 		
 		
-		echo "yes=".$products['title'];
-		exit();
-		foreach($products as $singleproduct)
-		{
-			echo "t=".$title=$singleproduct['title']; // Product Title
-			$variants=$singleproduct['variants'];
-		        $p_id1=$singleproduct['id'];
-		        $tags=$singleproduct['tags'];
-			   $OrigonalTag=$singleproduct['tags'];
+		
+		
+		
+		
+			$title=$products['title']; // Product Title
+			$variants=$products['variants'];
+		        $p_id1=$products['id'];
+		        $tags=$products['tags'];
+			   $OrigonalTag=$products['tags'];
 
 
 		        $tags = str_replace('shared', '', $tags);
@@ -67,7 +63,7 @@ try
 			foreach($variants as $variants){
 				echo "p=".$price=$variants['price']; // Product PRice
 			}
-		        $images=$singleproduct['images'];
+		        $images=$products['images'];
 
 			foreach($images as $images){
 				$src=$images['src']; //Image Source
@@ -143,7 +139,7 @@ try
 
 	<?php
 	}
-		}
+		
 	}
 	catch (shopify\ApiException $e)
 	{
