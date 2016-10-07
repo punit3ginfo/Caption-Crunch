@@ -125,9 +125,9 @@ try
 <script>
   $('.product-image-<?php echo $p_id1; ?>').hover(function() {
     // Show / Hide Product Details Opacity Container
-      $('.product-opacity-<?php echo $p_id1; ?>').slideToggle("400");
+      $('.product-opacity-<?php echo $p_id1; ?>').slideToggle("300");
     // Show / Hide Product Details Container
-      $('.product-details-<?php echo $p_id1; ?>').slideToggle("400");
+      $('.product-details-<?php echo $p_id1; ?>').slideToggle("300");
   });
 </script>
 <!-- HTML Content for Product END    -->
