@@ -35,12 +35,14 @@ $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
 
 
 			
-		echo "part-79";
+		
 	
 		
 		 
 			$shared_products = $shopify('GET /admin/products.json', array('ids'=>$MultipleProduct_id_comma_seprated));
+			echo "<pre>";
 	print_r($shared_products);
+	echo "</pre>";
 	exit();
 			$title=$products['title']; // Product Title
 			$variants=$products['variants'];
