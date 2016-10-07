@@ -55,11 +55,11 @@ try
 
 	<div class="product-card-container">
 
-      		<div class="product-card-image-container" style='background-image: url(<?php echo $src; ?>)'>
+      		<div class="product-card-image-container product-image-<?php echo $p_id1; ?>" style='background-image: url(<?php echo $src; ?>)'>
             <!-- Opacity Layer -->
-              <div class="product-card-image-container-background-hover"></div>
+              <div class="product-card-image-container-background-hover product-opacity-<?php echo $p_id1; ?>"></div>
             <!-- Product Details Layer -->
-              <div class="product-card-image-container-content-hover">
+              <div class="product-card-image-container-content-hover product-details-<?php echo $p_id1; ?>">
                   <span class="product-title-text"><?php echo $title; ?></span>
                   <span class="product-card-price-text" style="margin-right: 3px;">$<?php echo $price; ?></span>
                   <span class="product-card-price-text" style="font-size: 14px; color: #888;">$<?php echo $price; ?></span>
@@ -188,10 +188,10 @@ try
     </script>
 
     <script>
-      $('.product-card-image-container').click(function() {
+      $('.product-image-<?php echo $p_id1; ?>').click(function() {
         // Show / Hide Product Details Opacity Container
-          $('.product-card-image-container-background-hover').slideToggle("slow");
+          $('.product-opacity-<?php echo $p_id1; ?>').slideToggle("slow");
         // Show / Hide Product Details Container
-      	  $('.product-card-image-container-content-hover').slideToggle("slow");
+      	  $('.product-details-<?php echo $p_id1; ?>').slideToggle("slow");
       });
     </script>
