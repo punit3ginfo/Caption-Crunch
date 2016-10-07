@@ -513,11 +513,12 @@ body {
 }
 
 .product-title-text {
-	  color: #666;
-  	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
   	word-wrap: normal;
+    font-family: HelveticaNeue-Bold;
+    font-size: 16px;
+    color: #666;
+    letter-spacing: 0.82px;
+    text-transform: uppercase;
 }
 
 .product-icon-container {

@@ -66,6 +66,7 @@ try
                      </span>
                   </div>
                   <span class="product-title-text"><?php echo $title; ?></span>
+                  <br>
                   <span class="product-card-price-text" style="margin-right: 3px;">$<?php echo $price; ?></span>
                   <span class="product-card-price-text" style="font-size: 14px; color: #888;">$<?php echo $price; ?></span>
                   <div class="preview-button-container">
