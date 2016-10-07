@@ -36,11 +36,11 @@ $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
 
 			
 		echo "part-11111";
-		exit();
+	
 		
 		 
-			$products = $shopify('GET /admin/products.json?ids='.$MultipleProduct_id_comma_seprated, array('published_status'=>'published'));
-
+			$products = $shopify('GET /admin/products.json', array('ids'=>$MultipleProduct_id_comma_seprated));
+	exit();
 			$title=$products['title']; // Product Title
 			$variants=$products['variants'];
 		        $p_id1=$products['id'];
