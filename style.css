@@ -241,12 +241,12 @@ body {
 }
 
 .collection_title_header {
-	width: 100%;
-	margin: auto;
-	height: 80px;
-	position: absolute;
+	  width: 100%;
+	  margin: auto;
+	  height: 80px;
+	  position: absolute;
     top: 0;
-	z-index: 5;
+	  z-index: 9;
   	margin-right: 30px;
   	position: relative;
   	background-color: #F8F9F9;
