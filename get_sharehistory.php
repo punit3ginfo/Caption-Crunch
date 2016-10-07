@@ -23,7 +23,7 @@ try
 				 $MultipleProduct_id = array();
 				foreach($products as $singleproduct)
 				{ 
-					echo "tags=".$eachProductTag=$singleproduct['tags'];					
+					$eachProductTag=$singleproduct['tags'];					
 					if (strpos($eachProductTag, 'shared') !== false) {
 						$MultipleProduct_id[]=$singleproduct['id'];
 					}
@@ -35,11 +35,12 @@ $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
 
 
 			
-		echo "part-11111";
+		echo "part-79";
 	
 		
 		 
-			$products = $shopify('GET /admin/products.json', array('ids'=>$MultipleProduct_id_comma_seprated));
+			$shared_products = $shopify('GET /admin/products.json', array('ids'=>$MultipleProduct_id_comma_seprated));
+	print_r($shared_products);
 	exit();
 			$title=$products['title']; // Product Title
 			$variants=$products['variants'];
