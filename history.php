@@ -68,7 +68,7 @@ try
 			foreach($images as $images){
 				$src=$images['src']; //Image Source
 			}
-             if (strpos($OrigonalTag, 'shared') == true && $_REQUEST['status']=="history") {
+            
 			?>
 
 
@@ -138,7 +138,7 @@ try
 <!-- HTML Content for Product END    -->
 
 	<?php
-	}
+	
 		
 	}
 	catch (shopify\ApiException $e)
