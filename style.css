@@ -390,11 +390,11 @@ body {
 }
 
 .chat_select_container:hover .chat_notification_container {
-	color: #D577C3;
+	background-color: #D577C3;
 }
 
 .chat_select_container:hover .dashboard-menu-icon-circle {
-	color: #D577C3;
+	background-color: #D577C3;
 }
 
 .paginate-list {
