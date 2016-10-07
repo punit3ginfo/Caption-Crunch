@@ -188,7 +188,7 @@ try
     </script>
 
     <script>
-      $('product-card-image-container').click(function() {
+      $('.product-card-image-container').click(function() {
         // Show / Hide Product Details Opacity Container
           $('.product-card-image-container-background-hover').slideToggle("slow");
         // Show / Hide Product Details Container
