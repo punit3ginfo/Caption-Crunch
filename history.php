@@ -23,11 +23,11 @@ try
 					$query_title =str_replace('"','',$query_title);
 					$val=strcmp($title,$query_title);
 					if($val=='0'){
-						echo "FOUND";
 						
-						echo "json=".$SingleProduct_id=$singleproduct['id'].'.json';	
 						
-						exit();
+						$SingleProduct_id=$singleproduct['id'].'.json';	
+						
+						
 					}
 					else{
 					//echo "not FOUND";
@@ -36,12 +36,16 @@ try
 					
 				}
 			 }
+		
+		  $pidii = $pid.'.json';
 		         
 			$products = $shopify('GET /admin/products/'.$SingleProduct_id, array('published_status'=>'published'));
 		echo "<pre>";
-		//print_r($products);
+		print_r($products);
 		
 		echo "</pre>";
+		
+		
 		
 		echo "yes=".$products['title'];
 		exit();
