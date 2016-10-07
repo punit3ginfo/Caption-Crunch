@@ -61,7 +61,7 @@ try
 		        //$tags = str_replace('shared', '', $tags);
 			//$tags = str_replace(',', 'AA', $tags);
 			foreach($variants as $variants){
-				echo "p=".$price=$variants['price']; // Product PRice
+				$price=$variants['price']; // Product PRice
 			}
 		        $images=$products['images'];
 
