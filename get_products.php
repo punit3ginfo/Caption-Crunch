@@ -63,7 +63,7 @@ try
                   <div class="product-details-container">
                       <div class="product-icon-container" style="margin-bottom: 15px;">
                          <span class="product-icon-clearfix">
-                           
+
                          </span>
                       </div>
 
@@ -129,7 +129,7 @@ try
 			var tags_1 = '"<?php echo $OrigonalTag; ?>"';
 
 			  //$(_id).html('<button type="button" class=share-button onclick=shareButton('+pid_1+',"'+tags_1+'");>Share</button>');
-	$(_id).html("<button type='button' class='share-button' onclick='shareButton("+pid_1+","+tags_1+");'>Share</button>");
+	$(_id).html("<button type='button' class='share-button' onclick='shareButton("+pid_1+","+tags_1+");'><i class="fa fa-share" aria-hidden="true"></i> Share</button>");
 		}
 	});
 </script>
