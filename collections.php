@@ -90,7 +90,8 @@
        // echo "Product's go here"
 	if($_REQUEST['status']=="search"){				    
        require __DIR__.'/history.php';
-	}else{
+	}
+	      if(($_REQUEST['status']!="search")|| ($_REQUEST['status']=="")){
 		 require __DIR__.'/get_products.php';
 	}
         ?>
