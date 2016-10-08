@@ -117,7 +117,7 @@
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 		
                 $.ajax({
-                    url: '/get_products.php?access_token='+access_token+'&shop='+shop+'&page_id='+id,
+                    url: '/get_products.php?access_token='+access_token+'&shop='+shop+'&page_id='+id+'&pagination',
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
