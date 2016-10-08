@@ -1,7 +1,7 @@
 <div class="content-container">
 
-  <div class="chat_container" style="overflow: hidden;">
-  			 <div class="collection-sidebar-container">
+  <div class="chat_container" style="overflow: hidden; padding-left: 0px; width: 100%;">
+  			 <div class="collection-sidebar-container" style="display: none;">
                 		<div class="collection_title_selector">
                               <div class="collection_title_container">
                                   <span class="collection_title_text">Dashboard</span>
