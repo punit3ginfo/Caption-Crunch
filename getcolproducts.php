@@ -45,31 +45,17 @@
 
 	<div class="product-card-container">
 
-    <div class="product-card-image-container product-image-<?php echo $p_id1; ?>" style='background-image: url(<?php echo $src; ?>)'>
-      <!-- Opacity Layer -->
-        <div class="product-card-image-container-background-hover product-opacity-<?php echo $p_id1; ?>"></div>
-      <!-- Product Details Layer -->
-        <div class="product-card-image-container-content-hover product-details-<?php echo $p_id1; ?>">
-            <div class="product-details-container">
-                <div class="product-icon-container" style="margin-bottom: 15px;">
-                   <span class="product-icon-clearfix">
+    <div class="product-card-image-container" style='background-image: url(<?php echo $src; ?>)'>
+    </div>
 
-                   </span>
-                </div>
-
-                <div style="margin-top: 15px;">
-                  <span class="product-title-text"><?php echo $title; ?></span>
-                </div>
-
-                <div style="margin-top: 15px;">
-                  <span class="product-card-price-text" style="margin-right: 3px;">$<?php echo $price; ?></span>
-                  <span class="product-card-price-text" style="font-size: 12px; color: #888;">$<?php echo $price; ?></span>
-                </div>
-            </div>
-            <div class="preview-button-container">
-              <button type="button" class="preview-button" onclick=""><i class="fa fa-eye" aria-hidden="true"></i> Preview</button>
-            </div>
-        </div>
+    <div class="product-card-details-section">
+      <div class="product-card-details-container">
+              <span class="product-title-text"><?php echo $title; ?></span>
+              <div class="product-card-price-container">
+                <span class="product-card-price-text" style="margin-right: 3px;">$<?php echo $price; ?></span>
+                <span class="product-card-price-text" style="font-size: 14px; color: #888;">$<?php echo $price; ?></span>
+              </div>
+      </div>
     </div>
 
 		<div class="product-share-container">
