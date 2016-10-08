@@ -40,7 +40,7 @@
           	</div>
 
   			    <div class="product-grid-container">
-          		<div  class="product-grid-overflow-container" style="max-width: 800px; margin: auto;">
+          		<div  class="product-grid-overflow-container" style="">
                 <!-- Feed Up Next -->
                   <div class="feed-upnext-container">
                     <div class="feed-upnext-clearfix">

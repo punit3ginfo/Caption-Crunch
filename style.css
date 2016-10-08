@@ -1002,6 +1002,8 @@ form {
     box-shadow: 1px -2px 17px 0px rgba(0,0,0,0.14);
     padding: 15px 30px;
     margin-bottom: 20px;
+    max-width: 600px;
+    margin: auto;
 }
 
 .feed-product-main-clearfix {
@@ -1070,6 +1072,8 @@ form {
 .feed-upnext-container {
     width: calc(100% - 60px);
     padding: 15px 30px;
+    max-width: 600px;
+    margin: auto;
 }
 
 .feed-upnext-clearfix {
