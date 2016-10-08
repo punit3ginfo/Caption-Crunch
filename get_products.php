@@ -151,7 +151,7 @@ try
 	<?php
 	$count++;
 	}?>
-	<div id="product_count" style="display:none;"><?php echo $count;?></div>
+	<input type="hidden" id="product_count" value="<?php echo $count;?>">
 	<?php }
 	catch (shopify\ApiException $e)
 	{
