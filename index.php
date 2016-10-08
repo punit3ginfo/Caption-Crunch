@@ -106,7 +106,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 
             <!-- Collect the nav links, forms, and other content for toggling -->
      		<nav class="main-nav-container">
-				<a class="sidebar-link" style="text-decoration: none;">
+				<a id="help-button" class="sidebar-link" style="text-decoration: none;">
                   <div class="sidebar-nav-container-header">
                       <span class="sidebar-span">
                       <i style="font-size: 20px;" class="fa fa-info" aria-hidden="true"></i><br>
@@ -237,6 +237,11 @@ function gethistory(){
 })(jQuery);
 </script>
 
+<script>
+  $('#help-button').click(function() {
+    $('.help-menu-container').toggle('slide', 'right', '500');;
+  });
+</script>
 
 
 
