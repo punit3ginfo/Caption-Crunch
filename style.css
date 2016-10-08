@@ -997,12 +997,13 @@ form {
 }
 
 .feed-product-main-conatiner {
-    width: calc(100% - 60px);
+    /*width: calc(100% - 60px);*/
     background-color: white;
     box-shadow: 1px -2px 17px 0px rgba(0,0,0,0.14);
     padding: 15px 30px;
     margin-bottom: 20px;
-    max-width: 600px;
+    width: 100%;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -1070,9 +1071,10 @@ form {
 }
 
 .feed-upnext-container {
-    width: calc(100% - 60px);
+    /*width: calc(100% - 60px);*/
     padding: 15px 30px;
-    max-width: 600px;
+    width: 100%;
+    max-width: 800px;
     margin: auto;
 }
 
