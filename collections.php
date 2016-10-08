@@ -82,12 +82,7 @@
 		 require __DIR__.'/get_products.php';
 	}
         ?>
-	      <?php 
-	echo "welcome";
-    echo "count".$count="<script>var number=document.getElementById('product_count').value; alert(number);</script>";
-	$item_per_page=5;
-	echo "no_of_pages=".$pages = ceil($count/$item_per_page);	
-?>
+	    
 	      
       </div>
   </div>
