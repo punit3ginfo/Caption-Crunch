@@ -24,7 +24,7 @@ try
 		if($_REQUEST['page_id']!='' && isset($_REQUEST['page_id']) ) {
 
 	     // $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
-		$products = $shopify('GET /admin/products.json', array('limit'=>'12','page'=>'1'));
+		$products = $shopify('GET /admin/products.json', array('limit'=>'12','page'=>'2'));
 			//GET /admin/products.json&limit=50=&page=1
 
 		}
