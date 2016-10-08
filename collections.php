@@ -45,8 +45,18 @@
                                     <div class="grid">
                                       <div class="grid-item">
                                           <div class="text-center" id="pagination">
+						  <style>
+							ul#pagination-list li {
+							    display:inline;
+							}
+						</style>
+						  
+						  <ul id="pagination-list">
+							  <li onclick="getPaging(this.id)" id="1">1</li>
+							<li onclick="getPaging(this.id)" id="2">2</li>
+						   </ul>
                                             <?php
-                                            echo "Pagination goes here";
+                                            //echo "Pagination goes here";
                                             ?>
                                           </div>
                                       </div>
