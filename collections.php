@@ -1,8 +1,8 @@
 <?php 
 	echo "welcome";
-    $item_per_page="<script>var number=document.getElementById('product_count').value; alert(number);</script>";
+    echo "count".$item_per_page="<script>var number=document.getElementById('product_count').value; alert(number);</script>";
 	$item_per_page=5;
-	echo "no_of_pages=".$pages = ceil($get_total_rows[0]/$item_per_page);	
+	echo "no_of_pages=".$pages = ceil($item_per_page/$item_per_page);	
 ?>
 
 <div class="chat_container" style="overflow: hidden;">
