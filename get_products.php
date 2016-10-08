@@ -63,7 +63,7 @@ try
                   <div class="product-details-container">
                       <div class="product-icon-container" style="margin-bottom: 15px;">
                          <span class="product-icon-clearfix">
-                           1
+                           <img src="https://maxcdn.icons8.com/iOS7/PNG/25/Clothing/jumper_filled-25.png" width="25">
                          </span>
                       </div>
 
