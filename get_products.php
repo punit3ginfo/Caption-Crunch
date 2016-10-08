@@ -14,7 +14,7 @@ try
 		if(isset($_REQUEST['colid']) && $_REQUEST['colid']!='' && $_REQUEST['status']=='' && isset($_REQUEST['page_id'])){
 			
 				
-		$products = $shopify('GET /admin/products.json?collection_id='.$_REQUEST['colid'], array('published_status'=>'published','limit'=>'12','page'=>$_REQUEST['page_id'])) );
+		$products = $shopify('GET /admin/products.json?collection_id='.$_REQUEST['colid'], array('limit'=>'12','page'=>$_REQUEST['page_id'])) );
 			
 			}
 		if($_REQUEST['colid']=='' && $_REQUEST['status']=='' && !isset($_REQUEST['page_id']) ) {
