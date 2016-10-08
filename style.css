@@ -181,6 +181,7 @@ body {
     right: 0px;
     top: 0px;
     background: #666;
+    z-index: 25;
 }
 
 .main_container_clearfix {
