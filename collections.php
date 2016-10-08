@@ -1,3 +1,7 @@
+<?php echo "welcome hvbdfshbd";
+
+exit();
+?>
 
 <div class="chat_container" style="overflow: hidden;">
   <div class="collection-sidebar-container">
