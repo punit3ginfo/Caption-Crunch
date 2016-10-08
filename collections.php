@@ -1,6 +1,8 @@
-<?php echo "welcome hvbdfshbd";
-
-exit();
+<?php 
+	echo "welcome";
+    $item_per_page="<script>var number=document.getElementById('product_count').value; alert(number);</script>";
+	$item_per_page=5;
+	echo "no_of_pages=".$pages = ceil($get_total_rows[0]/$item_per_page);	
 ?>
 
 <div class="chat_container" style="overflow: hidden;">
@@ -88,11 +90,4 @@ exit();
       </div>
   </div>
 </div>
-<?php 
-echo "welcome";
-exit();
-    $item_per_page="<script>var number=document.getElementById('product_count').value; alert(number);</script>";
-	$item_per_page=5;
-	echo "no_of_pages=".$pages = ceil($get_total_rows[0]/$item_per_page);	
-	
-?>
+
