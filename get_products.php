@@ -150,19 +150,12 @@ try
 
 	<?php
 	$count++;
-	}?>
-	<input type="hidden" id="product_count" value="<?php echo $count;?>">
+	}
 
-
-
-
-	<?php
-	
-	
-	echo "welcome".$count;
+	//echo "welcome".$count;
    
 	$item_per_page=5;
-	echo "no_of_pages=".$pages = ceil($count/$item_per_page);	
+	$pages = ceil($count/$item_per_page);	
 
 	
 	
