@@ -44,7 +44,7 @@
                                   <div class="grid-item pagination-border-top">
                                     <div class="grid">
                                       <div class="grid-item">
-                                          <div class="text-center">
+                                          <div class="text-center" id="pagination">
                                             <?php
                                             echo "Pagination goes here";
                                             ?>
