@@ -552,8 +552,9 @@ body {
     height: 220px;
     border-bottom: 1px solid green;
     display: flex;
-    align-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .product-card-price-container {
