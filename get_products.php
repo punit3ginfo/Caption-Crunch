@@ -77,7 +77,7 @@ try
                       </div>
                   </div>
                   <div class="preview-button-container">
-                    <button type="button" class="preview-button" onclick="">Preview</button>
+                    <button type="button" class="preview-button" onclick=""><i class="fa fa-eye" aria-hidden="true"></i> Preview</button>
                   </div>
               </div>
           </div>
