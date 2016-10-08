@@ -333,6 +333,13 @@ body {
 
 }
 
+.add-new-caption-container {
+    width: calc(100% - 30px);
+    height: 75px;
+    padding: 15px;
+    padding-bottom: 0px;
+}
+
 .chat_personal_info_container {
 	width: auto;
 	height: 75px;

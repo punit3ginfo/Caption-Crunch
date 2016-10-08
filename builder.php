@@ -19,11 +19,11 @@
                                     </div>
                               </a>
 
-                                    <div class="chat_select_container" >
+                                    <div class="add-new-caption-container">
                                         <div class="chat_personal_info_container" style="border-bottom: 0px;">
-                                            <div class="chat_user_info">
+                                            <div class="chat_user_info" style="text-align: center;">
 																							<a href="javascript:void(0)">
-                                                <span class="sidebar-span share-history-button"><i class="fa fa-plus" aria-hidden="true"></i> New Caption</span>
+                                                <span class="sidebar-span share-history-button" style="line-height: 40px;"><i class="fa fa-plus" aria-hidden="true"></i> New Caption</span>
 																							</a>
                                             </div>
                                         </div>
