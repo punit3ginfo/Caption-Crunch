@@ -31,6 +31,10 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 <body>
 	<div class="back">
 
+    <div class="help-menu-container">
+
+    </div>
+
     <!-- Sidebar Nav -->
 		<aside class="sidebar_nav">
           	<a  class="sidebar-link" href="javascript:void(0)" onclick="getdashboard()">
