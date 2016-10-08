@@ -175,13 +175,14 @@ body {
 }
 
 .help-menu-container {
-    width: 300px;
+    width: 350px;
     height: 100vh;
     position: absolute;
     right: 0px;
     top: 0px;
     background: #666;
     z-index: 25;
+    box-shadow: 1px 4px 10px 0px rgba(0,0,0,0.07);
 }
 
 .main_container_clearfix {
