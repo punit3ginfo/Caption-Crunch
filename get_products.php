@@ -17,7 +17,7 @@ try
 		if($_REQUEST['colid']=='' && $_REQUEST['status']=='') {
 
 	      $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
-			//$products = $shopify('GET /admin/products.json?title=fgdffsfd', array('published_status'=>'published'));
+			
 
 		}
 
@@ -151,7 +151,7 @@ try
 	<?php
 	$count++;
 	}?>
-	<div id="product_count"><?php echo $count;?></div>
+	<div id="product_count" style="display:none;"><?php echo $count;?></div>
 	<?php }
 	catch (shopify\ApiException $e)
 	{
