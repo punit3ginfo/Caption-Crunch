@@ -21,7 +21,7 @@ try
 
 		}
 
-
+                $count=0;
 		foreach($products as $singleproduct)
 		{
 			$title=$singleproduct['title']; // Product Title
@@ -45,7 +45,7 @@ try
 			foreach($images as $images){
 				$src=$images['src']; //Image Source
 			}
-
+                         
 			?>
 
 
@@ -149,8 +149,10 @@ try
 <!-- HTML Content for Product END    -->
 
 	<?php
-	}
-	}
+	$count++;
+	}?>
+	<div id="product_count"><?php echo $count;?></div>
+	<?php }
 	catch (shopify\ApiException $e)
 	{
 		# HTTP status code was >= 400 or response contained the key 'errors'
