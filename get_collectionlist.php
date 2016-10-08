@@ -109,6 +109,23 @@
                 });
             }
 </script>	
+
+<script>
+	function getPaging(page_id){
+		alert(page_id);
+               var access_token='<?php echo $access_token ?>';
+		var shop='<?php echo $_REQUEST['shop'] ?>';
+		
+                $.ajax({
+                    url: '/get_products.php?access_token='+access_token+'&shop='+shop+'&page_id='+page_id,
+                    success: function(data){
+                     //console.log(data);
+			   // var data1= data.find('.chat_container').html()
+			    $('.product-grid-container').html(data);
+                    }
+                });
+            }
+</script>
 	
 
 
