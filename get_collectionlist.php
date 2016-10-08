@@ -112,7 +112,7 @@
 
 <script>
 	function getPaging(id){
-		//alert(page_id);
+		alert(id);
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 		
@@ -125,7 +125,7 @@
                     }
                 });
             }
-</script>
+	</script>
 	
 
 
