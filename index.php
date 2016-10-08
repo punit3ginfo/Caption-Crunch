@@ -18,7 +18,7 @@ use phpish\shopify;
 $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
 
        require __DIR__.'/smart_collection.php'; //create smart collection
-       
+
 ?>
 
 <head>
@@ -67,7 +67,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                 </div>
             </a> -->
 
-            <div  style="position: absolute; bottom: 0px;">
+            <!-- <div  style="position: absolute; bottom: 0px;">
               <a class="sidebar-link" href="javascript:void(0)" onclick="getsettings()" >
             	<div class="sidebar-nav-container">
 					<span class="sidebar-span">
@@ -85,7 +85,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                       </span>
                   </div>
               </a>
-            </div>
+            </div> -->
         </aside>
     <!-- /.Sidebar Nav -->
 
@@ -203,10 +203,10 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                     }
                 });
             }
-	
-	
+
+
 function gethistory(){
-               
+
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 
@@ -219,21 +219,21 @@ function gethistory(){
                     }
                 });
             }
-	
-	
+
+
 </script>
 
-	
+
 
 <script>
 (function($) {
     $(document).ready(function() {
         getdashboard(); // start the loop
     });
-})(jQuery);	
+})(jQuery);
 </script>
 
 
-	
+
 
 </body>
