@@ -21,7 +21,7 @@ try
 			//GET /admin/products.json&limit=50=&page=1
 
 		}
-		if()
+		
 
                 $count=0;
 		foreach($products as $singleproduct)
