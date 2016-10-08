@@ -1,6 +1,6 @@
 <?php
 echo "ebjjdsfjbdfsdfdfdsf";
-exit()'
+exit();
      require __DIR__.'/vendor/autoload.php';
      use phpish\shopify;
      $access_token=$_REQUEST['access_token'];
