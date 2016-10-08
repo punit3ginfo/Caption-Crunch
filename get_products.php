@@ -21,6 +21,9 @@ try
 			//GET /admin/products.json&limit=50=&page=1
 
 		}
+		if(isset($_REQUEST['page_id']) && $_REQUEST['page_id']!='' && $_REQUEST['status']==''&& $_REQUEST['colid']==''){
+			$products = $shopify('GET /admin/products.json', array('limit'=>'12','page'=>'".$_REQUEST['page_id']."'));
+		}
 		
 
                 $count=0;
