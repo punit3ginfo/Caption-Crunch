@@ -32,7 +32,7 @@
   			<div class="collection_title_header">
                    <div class="collection_header_container">
                        <div class="caption-header-container">
-                         	  <div class="builder-title-header-container" style=" width: 100%; max-width: 800px; margin: auto;">
+                         	  <div class="builder-title-header-container" style=" width: 100%; max-width: 800px; margin: auto; margin-left: 0px; display: block; height: 100%;">
                                 <?php echo 'header' ?>
   						              </div>
                        </div>
