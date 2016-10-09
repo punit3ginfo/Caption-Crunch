@@ -31,9 +31,9 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 <body>
 	<div class="back">
 
-    <!-- <div class="help-menu-container">
+    <div class="help-menu-container">
 
-    </div> -->
+    </div>
 
     <!-- Sidebar Nav -->
 		<aside class="sidebar_nav">
@@ -238,11 +238,11 @@ function gethistory(){
 </script>
 
 <!-- Help Slide -->
-<!-- <script>
+<script>
   $('#help-button').click(function() {
-    $('.help-menu-container').toggle('slide', 'right', '500');;
+    $('.help-menu-container').toggle('slide', 'right', '500');
   });
-</script> -->
+</script>
 
 
 
