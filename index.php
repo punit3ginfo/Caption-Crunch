@@ -240,8 +240,11 @@ function gethistory(){
 <!-- Help Slide -->
 <script>
 $('#help-button').click(function() {
-    console.log('tiittes');
-    $('#help-menu-container').css("right", "0px");
+    if ($("#help-menu-container").hasClass('help-menu-animate')) {
+        $('#help-menu-container').removeClass("help-menu-animate");
+    } else {
+        $('#help-menu-container').addClass("help-menu-animate");
+    };
 });
 </script>
 
