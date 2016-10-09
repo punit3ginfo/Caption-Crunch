@@ -174,7 +174,7 @@ body {
 	color:#666;
 }
 
-.help-menu-container {
+#help-menu-container {
     width: 275px;
     height: 100vh;
     position: absolute;
