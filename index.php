@@ -241,7 +241,7 @@ function gethistory(){
 <script>
 $('#help-button').click(function() {
     console.log('tiittes');
-    $('#help-menu-container').classList.add("help-menu-animate");
+    $('#help-menu-container').addClass("help-menu-animate");
 });
 </script>
 
