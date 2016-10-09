@@ -122,7 +122,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 
     <!-- /.Page Container -->
     <div class="main_container_clearfix">
-      <div style="width: 100%; height: 100%;">
+      <div id="main-padded-container" class="">
     	<div class="main_container">
 			  <div class="content-container">
 
@@ -242,9 +242,11 @@ function gethistory(){
 $('#help-button').click(function() {
     if ($("#help-menu-container").hasClass('help-menu-animate')) {
         $('#help-menu-container').removeClass("help-menu-animate");
+        $('#main-padded-container').removeClass("main-padded-container-animate");
         console.log('Stage 1 Complete');
     } else {
         $('#help-menu-container').addClass("help-menu-animate");
+        $('#main-padded-container').addClass("main-padded-container-animate");
         console.log('Stage 2 Complete');
     };
 });
