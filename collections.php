@@ -33,9 +33,9 @@
 
                           <div class="collection-share-history-container">
                             <a href="javascript:void(0)" onclick="getsharehistory()" class="sidebar-span share-history-button">
-				    <i class="fa fa-history" aria-hidden="true"></i> 
-				    Share History
-			    </a>
+				                        <i class="fa fa-history" aria-hidden="true"></i>
+				                         History
+			                      </a>
                           </div>
                           <div class="collection_header_container">
 
@@ -50,7 +50,7 @@
 							    display:inline;
 							}
 						</style>
-						  
+
 						  <ul id="pagination-list">
 							  <li onclick="getPaging(this.id)" id="1">1</li>
 							<li onclick="getPaging(this.id)" id="2">2</li>
@@ -78,26 +78,25 @@
 
                           </div>
         				</div>
-		
-	
-	
-	
+
+
+
+
 
   <div class="product-grid-container scroll-grid">
       <div  class="product-grid-overflow-container">
         <?php
 
        // echo "Product's go here"
-	if($_REQUEST['status']=="search"){				    
+	if($_REQUEST['status']=="search"){
        require __DIR__.'/history.php';
 	}
 	      if(($_REQUEST['status']!="search")|| ($_REQUEST['status']=="")){
 		 require __DIR__.'/get_products.php';
 	}
         ?>
-	    
-	      
+
+
       </div>
   </div>
 </div>
-
