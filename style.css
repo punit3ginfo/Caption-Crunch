@@ -184,6 +184,12 @@ body {
     z-index: 25;
     box-shadow: 1px -2px 17px 0px rgba(0,0,0,0.34);
     animation-direction:normal;
+    transition-timing-function: ease;
+    transition-duration: 2s;
+}
+
+.help-menu-animate {
+    right: 0px;
 }
 
 .main_container_clearfix {

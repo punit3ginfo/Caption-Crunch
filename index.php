@@ -240,7 +240,7 @@ function gethistory(){
 <!-- Help Slide -->
 <script>
   $('#help-button').click(function() {
-    $('.help-menu-container').css('right', '275px');
+    $('.help-menu-container').addClass("help-menu-animate");
   });
 </script>
 
