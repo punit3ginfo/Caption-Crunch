@@ -242,8 +242,10 @@ function gethistory(){
 $('#help-button').click(function() {
     if ($("#help-menu-container").hasClass('help-menu-animate')) {
         $('#help-menu-container').removeClass("help-menu-animate");
+        console.log('Stage 1 Complete');
     } else {
         $('#help-menu-container').addClass("help-menu-animate");
+        console.log('Stage 2 Complete');
     };
 });
 </script>
