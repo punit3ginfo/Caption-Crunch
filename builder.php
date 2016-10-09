@@ -35,22 +35,26 @@
 			<div class="collection_title_header">
                  <div class="collection_header_container">
                      <div class="caption-header-container">
-													 <div class="collection-share-history-container" style="width: 33%;">
+
+													 <div class="collection-share-history-container" style="width: 33%; margin: 0;">
 														 <a href="javascript:void(0)" onclick="" class="sidebar-span share-history-button">
 																 <i class="fa fa-plus" aria-hidden="true"></i>
 																   New Caption
 														 </a>
 													 </div>
-													<div class="builder-title-header-container" style="width: 33%;">
+
+													<div class="builder-title-header-container" style="width: 33%; margin: 0;">
 														<form class="search-form">
 																	<input class="caption-title-text-box" type="text" name="q" placeholder="Footwear Sale" style="text-align: center;"/>
 														</form>
 													</div>
-													<div class="builder-title-header-container" style="width: 33%;">
+
+													<div class="builder-title-header-container" style="width: 33%; margin: 0;">
 		                       	  <div class="builder-save-button-container">
 		                              <a href="#" class="save-button"><i class="fa fa-unlock-alt" aria-hidden="true"></i> SAVE</a>
 		                       	  </div>
 												  </div>
+
                      </div>
                   </div>
         	</div>
