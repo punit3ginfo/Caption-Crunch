@@ -239,9 +239,11 @@ function gethistory(){
 
 <!-- Help Slide -->
 <script>
-  $('#help-button').click(function() {
+$('#help-button').clickToggle(function() {
     $('.help-menu-container').addClass("help-menu-animate");
-  });
+}, function() {
+    $('.help-menu-container').removeClass("help-menu-animate");
+});
 </script>
 
 
