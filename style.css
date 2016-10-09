@@ -207,11 +207,6 @@ body {
     width: 100%;
     height: 100%;
 }
-
-.main-padded-container-animate {
-  width: calc(100% - 275px) !important;
-}
-
 .main_container {
 	 width: calc(100% - 30px);
 	 height: 100%;
