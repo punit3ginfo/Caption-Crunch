@@ -204,6 +204,7 @@ body {
     height: 100vh;
     background: white;
     display: none;
+    z-index: 80;
 }
 
 /* ---------------- Main Container ----------------- */
