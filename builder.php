@@ -37,10 +37,10 @@
                      <div class="caption-header-container">
 
 													 <div class="builder-title-header-container">
-														 <!-- <a href="javascript:void(0)" onclick="" class="sidebar-span share-history-button">
+														 <a href="javascript:void(0)" onclick="" class="sidebar-span share-history-button">
 																 <i class="fa fa-plus" aria-hidden="true"></i>
 																   New Caption
-														 </a> -->
+														 </a>
 													 </div>
 
 													<div class="builder-title-header-container">
