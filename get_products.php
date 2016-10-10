@@ -92,7 +92,7 @@ try
                       </div>
                   </div>
                   <div class="preview-button-container">
-                    <button type="button" class="preview-button" id="preview-button"><i class="fa fa-eye" aria-hidden="true"></i> Preview</button>
+                    <button type="button" class="preview-button preview-button"><i class="fa fa-eye" aria-hidden="true"></i> Preview</button>
                   </div>
               </div>
           </div>

@@ -257,7 +257,7 @@ $(document).ready(function(){
 <!-- Preview Drop Down -->
 <script>
 $(document).ready(function(){
-  $('#preview-button').click(function() {
+  $('.preview-button').click(function() {
       $("#preview-container").slideDown("slow");
       console.log('it works!');
   });
