@@ -254,8 +254,8 @@ $('#help-button').click(function() {
 
 <!-- Preview Drop Down -->
 <script>
-$('#preview').click(function() {
-    $("#preview-container").show();
+$('#preview-button').click(function() {
+    $("#preview-container").slideDown("slow");
 });
 </script>
 
