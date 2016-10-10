@@ -258,8 +258,11 @@ $(document).ready(function(){
 <script>
 $(document).ready(function(){
   $('.preview-button').click(function() {
-      $("#preview-container").slideToggle("600");
-      console.log('it works!');
+      if ($("#preview-container").hasClass('preview-container-animate')) {
+          $('#preview-container').removeClass("preview-container-animate");
+      } else {
+          $('#preview-container').addClass("preview-container-animate");
+      };
   });
 });
 </script>

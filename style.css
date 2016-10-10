@@ -198,13 +198,16 @@ body {
 
 #preview-container {
     position: absolute;
-    top: 0px;
+    top: -100vh;
     left: 0px;
     width: 100vw;
     height: 100vh;
     background: white;
     z-index: 80;
-    display: none;
+}
+
+.preview-container-animate {
+    top: 0px;
 }
 
 /* ---------------- Main Container ----------------- */
