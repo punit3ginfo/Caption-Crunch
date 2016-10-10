@@ -256,6 +256,7 @@ $('#help-button').click(function() {
 <script>
 $('#preview-button').click(function() {
     $("#preview-container").slideDown("slow");
+    console.log('it works!');
 });
 </script>
 
