@@ -31,7 +31,11 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 <body>
 	<div class="back">
 
-    <div id="help-menu-container" class="">
+    <div id="preview-container">
+
+    </div>
+
+    <div id="help-menu-container">
 
     </div>
 
@@ -245,6 +249,13 @@ $('#help-button').click(function() {
     } else {
         $('#help-menu-container').addClass("help-menu-animate");
     };
+});
+</script>
+
+<!-- Preview Drop Down -->
+<script>
+$('#preview').click(function() {
+    $("#preview-container").show();
 });
 </script>
 

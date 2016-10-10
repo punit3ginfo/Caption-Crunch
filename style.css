@@ -52,7 +52,7 @@ body {
 	border-bottom: 0px;
 	box-shadow: 1px -2px 17px 0px rgba(0,0,0,0.34);
 	height: 63px;
-  z-index: 40;
+  z-index: 100;
   position: fixed;
   width: 100vw;
 }
@@ -174,6 +174,8 @@ body {
 	color:#666;
 }
 
+/* ------------- Help Menu -------------- */
+
 #help-menu-container {
     width: 275px;
     height: 100vh;
@@ -191,6 +193,20 @@ body {
 .help-menu-animate {
     right: 0px !important;
 }
+
+/* ---------------- Preview Dropdown ----------------- */
+
+#preview-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    display: none;
+}
+
+/* ---------------- Main Container ----------------- */
 
 .main_container_clearfix {
   	position: fixed;

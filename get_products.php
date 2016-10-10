@@ -12,10 +12,10 @@ try
 	{
 		# Making an API request can throw an exception
 		if(isset($_REQUEST['colid']) && $_REQUEST['colid']!='' && $_REQUEST['status']==''){
-			
-				
+
+
 		$products = $shopify('GET /admin/products.json?collection_id='.$_REQUEST['colid'], array('published_status'=>'published'));
-			
+
 			}
 		if($_REQUEST['colid']=='' && $_REQUEST['status']=='' && !isset($_REQUEST['page_id']) ) {
 
@@ -31,10 +31,10 @@ try
 			//GET /admin/products.json&limit=50=&page=1
 
 		}
-		
-		
-		
-		
+
+
+
+
 
                 $count=0;
 		foreach($products as $singleproduct)
@@ -60,7 +60,7 @@ try
 			foreach($images as $images){
 				$src=$images['src']; //Image Source
 			}
-                         
+
 			?>
 
 
@@ -92,7 +92,7 @@ try
                       </div>
                   </div>
                   <div class="preview-button-container">
-                    <button type="button" class="preview-button" onclick=""><i class="fa fa-eye" aria-hidden="true"></i> Preview</button>
+                    <button id="preview" type="button" class="preview-button" onclick=""><i class="fa fa-eye" aria-hidden="true"></i> Preview</button>
                   </div>
               </div>
           </div>
@@ -168,12 +168,12 @@ try
 	}
 
 	//echo "welcome".$count;
-   
-	$item_per_page=5;
-	$pages = ceil($count/$item_per_page);	
 
-	
-	
+	$item_per_page=5;
+	$pages = ceil($count/$item_per_page);
+
+
+
 	}
 	catch (shopify\ApiException $e)
 	{
@@ -236,5 +236,3 @@ try
                 });
             }
     </script>
-
-
