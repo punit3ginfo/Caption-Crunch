@@ -211,7 +211,7 @@ body {
 }
 
 .preview-container-animate {
-    top: 0px;
+    top: 0px !important;
 }
 
 /* ---------------- Main Container ----------------- */
