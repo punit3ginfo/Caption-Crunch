@@ -649,7 +649,6 @@ body {
   	background: white;
     width: calc(100% - 40px);
     cursor: pointer;
-    width: 100%;
 }
 
 .preview-button:hover {
