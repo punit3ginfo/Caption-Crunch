@@ -32,7 +32,7 @@
   			<div class="collection_title_header">
                    <div class="collection_header_container">
                        <div class="caption-header-container">
-                         	  <div class="builder-title-header-container" style=" width: 100%; max-width: 800px; margin-left: 0px; margin: auto; display: block; height: 100%;">
+                         	  <div style=" width: 100%; max-width: 800px; margin-left: 0px; margin: auto; display: block; height: 100%;">
                                 <span class="collection_title_text" style="float: left;">DASHBOARD</span>
                                   <a href="javascript:void(0)" onclick="getsharehistory()" class="sidebar-span share-history-button" style="float: right; line-height: 80px;">
                         				    <i class="fa fa-history" aria-hidden="true"></i>
