@@ -71,7 +71,7 @@
                                <div class="collection_title_container-active">
                                  <form class="search-form" method="">
                                     <input class="search-text-box" id="formValueId" type="text" name="q_name" placeholder="Search" />
-                                    <input class="search-icon-button" type="button" onclick="search(document.getElementById('formValueId').value);" value="&#xf002;" />
+                                    <input class="search-icon-button" type="button" onclick="search(document.getElementById('formValueId').value);" value="[&#xf002;]" />
                                 </form>
                                </div>
                             </div>
