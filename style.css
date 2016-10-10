@@ -203,8 +203,8 @@ body {
     width: 100vw;
     height: 100vh;
     background: white;
-    display: none;
     z-index: 80;
+    display: none;
 }
 
 /* ---------------- Main Container ----------------- */

@@ -258,7 +258,7 @@ $(document).ready(function(){
 <script>
 $(document).ready(function(){
   $('.preview-button').click(function() {
-      $("#preview-container").slideDown("slow");
+      $("#preview-container").slideToggle("600");
       console.log('it works!');
   });
 });
