@@ -10,13 +10,13 @@
                 	<div class="chat_selector_overflow_container">
                         <div class="chat_selector_overflow">
 
-															<div class="add-new-caption-container" style="height: 50px;">
+															<!-- <div class="add-new-caption-container" style="height: 50px;">
 																	<div class="chat_personal_info_container" style="text-align: center; height: 50px;">
 																				<a href="javascript:void(0)">
 																					<span class="sidebar-span share-history-button" style="line-height: 40px;"><i class="fa fa-plus" aria-hidden="true"></i> New Caption</span>
 																				</a>
 																	</div>
-															</div>
+															</div> -->
 
                           		<a href="javascript:void(0)">
                                     <div class="chat_select_container" >
