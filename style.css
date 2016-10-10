@@ -198,7 +198,7 @@ body {
 
 #preview-container {
     position: absolute;
-    top: -50px;
+    top: -100vh;
     left: 0px;
     width: 100vw;
     height: 100vh;
