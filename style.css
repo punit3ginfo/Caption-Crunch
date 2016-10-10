@@ -788,9 +788,11 @@ a:hover {
 }
 
 .builder-title-header-container {
-	width: auto;
   	display: inline-block;
-  	margin-left: 50px;
+    width: 33%;
+    border: 1px solid black;
+    height: 100%;
+    margin-right: -4px;
 }
 
 .caption-title-text {
