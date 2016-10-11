@@ -118,6 +118,7 @@
 
 <script>
 jQuery(document).ready(function () {
+	alert(1);
     size_li =jQuery("#pagination-list li").length;
     x=3;
     jQuery('#pagination-list li:lt('+x+')').show();
@@ -143,6 +144,3 @@ jQuery(document).ready(function () {
 });
 
 </script>
-
-
-
