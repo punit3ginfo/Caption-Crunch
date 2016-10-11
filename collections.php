@@ -56,7 +56,7 @@
 							$limit=50; // Number of product per page
 							$noofPages=$TotalnoOfProduct/$limit;
 							echo "number=".$noofPages=abs(round($noofPages));
-						
+						exit();
 							 
 						?>
 						  <ul id="pagination-list">
