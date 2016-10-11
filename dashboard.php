@@ -121,7 +121,7 @@
                                     </div>
                                 </div>
                                 <div class="feed-product-sharenow-container">
-                                    <button type='button' class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</button>
+                                    <a id="preview-button" class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</a>
                                     <button type='button' class='feed-product-sharenow-button'><i class="fa fa-share" aria-hidden="true"></i> Share Now</button>
                                 </div>
                         </div>
@@ -151,7 +151,7 @@
                                 </div>
                             </div>
                             <div class="feed-product-sharenow-container">
-                                <button type='button' class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</button>
+                                <a id="preview-button" class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</a>
                                 <button type='button' class='feed-product-sharenow-button'><i class="fa fa-share" aria-hidden="true"></i> Share Now</button>
                             </div>
                     </div>
@@ -172,7 +172,7 @@
                                 </div>
                             </div>
                             <div class="feed-product-sharenow-container">
-                                <button type='button' class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</button>
+                                <a id="preview-button" class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</a>
                                 <button type='button' class='feed-product-sharenow-button'><i class="fa fa-share" aria-hidden="true"></i> Share Now</button>
                             </div>
                     </div>
@@ -193,7 +193,7 @@
                                 </div>
                             </div>
                             <div class="feed-product-sharenow-container">
-                                <button type='button' class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</button>
+                                <a id="preview-button" class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</a>
                                 <button type='button' class='feed-product-sharenow-button'><i class="fa fa-share" aria-hidden="true"></i> Share Now</button>
                             </div>
                     </div>
@@ -214,7 +214,7 @@
                                 </div>
                             </div>
                             <div class="feed-product-sharenow-container">
-                                <button type='button' class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</button>
+                                <a id="preview-button" class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</a>
                                 <button type='button' class='feed-product-sharenow-button'><i class="fa fa-share" aria-hidden="true"></i> Share Now</button>
                             </div>
                     </div>
@@ -235,7 +235,7 @@
                                 </div>
                             </div>
                             <div class="feed-product-sharenow-container">
-                                <button type='button' class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</button>
+                                <a id="preview-button" class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</a>
                                 <button type='button' class='feed-product-sharenow-button'><i class="fa fa-share" aria-hidden="true"></i> Share Now</button>
                             </div>
                     </div>
