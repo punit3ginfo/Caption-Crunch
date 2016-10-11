@@ -118,7 +118,7 @@
 
 <script>
 jQuery(document).ready(function () {
-    size_li =jQuery("#pagination-list li").size();
+    size_li =jQuery("#pagination-list li").length;
     x=3;
     jQuery('#pagination-list li:lt('+x+')').show();
     jQuery('#loadMore').click(function () {
@@ -137,9 +137,12 @@ jQuery(document).ready(function () {
         jQuery('#loadMore').show();
          jQuery('#showLess').show();
         if(x == 3){
-            jQuery('#showLess').hide();
+            $('#showLess').hide();
         }
     });
 });
 
 </script>
+
+
+
