@@ -1,5 +1,7 @@
 
 
+
+
 <div class="chat_container" style="overflow: hidden;">
   <div class="collection-sidebar-container">
               		<div class="collection_title_selector">
@@ -59,11 +61,15 @@
 						
 						 ?>
 												  <ul id="pagination-list">
+												  <li id="showLess"><<</li>
 						  <?php
 						     for($i=1;$i<=$noofPages;$i++)
 							 {?>
 								<li onclick="getPaging(this.id,<?php echo $limit; ?>)" id="<?php echo $i; ?>"><?php echo $i; ?></li>
-						  <?php } ?>	
+								
+								
+						  <?php } ?>
+							<li id="loadMore">>></li>						  
 								
 						  </ul>
 											
@@ -110,7 +116,15 @@
 
 
 <script>
-$(document).ready(function(){
-    $('ul li:gt(4)').hide();
+$(document).ready(function () {
+    // Load the first 3 list items from another HTML file
+    //$('#myList').load('externalList.html li:lt(3)');
+    $('#pagination-list li:lt(3)').show();
+    $('#loadMore').click(function () {
+        $('#pagination-list li:lt(10)').show();
+    });
+    $('#showLess').click(function () {
+        $('#pagination-list li').not(':lt(3)').hide();
+    });
 });
 </script>
