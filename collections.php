@@ -113,11 +113,9 @@
   </div>
 </div>
 
-
-
-
 <script>
 jQuery(document).ready(function () {
+	$('ul li:gt(3)').hide();
 	alert(1);
     size_li =jQuery("#pagination-list li").length;
     x=3;
