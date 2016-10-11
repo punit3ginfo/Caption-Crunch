@@ -24,10 +24,10 @@ try
 			//GET /admin/products.json&limit=50=&page=1
 
 		}
-		if($_REQUEST['page_id']!='' && isset($_REQUEST['page_id']) ) {
+		if($_REQUEST['page_id']!='' && isset($_REQUEST['page_id']) && $_REQUEST['limit']!='' && isset($_REQUEST['limit']) ) {
 
 	     // $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
-		$products = $shopify('GET /admin/products.json', array('limit'=>'12','page'=>$_REQUEST['page_id']));
+		$products = $shopify('GET /admin/products.json', array('limit'=>$_REQUEST['limit'],'page'=>$_REQUEST['page_id']));
 			//GET /admin/products.json&limit=50=&page=1
 
 		}
