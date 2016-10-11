@@ -57,9 +57,21 @@
 							$noofPages=$TotalnoOfProduct/$limit;
 							echo "number=".$noofPages=abs(round($noofPages));
 						
-							 
+						if($noofPages>3)	{ 
 						?>
-						  <ul id="pagination-list">
+						
+						
+					  <ul id="pagination-list">
+						  <?php
+						     for($i=1;$i<=4;$i++)
+							 {?>
+								<li onclick="getPaging(this.id,<?php echo $limit; ?>)" id="<?php echo $i; ?>"><?php echo $i; ?></li>
+						  <?php } ?>	
+								
+						  </ul>
+                                            <?php
+											}else{ ?>
+												  <ul id="pagination-list">
 						  <?php
 						     for($i=1;$i<=$noofPages;$i++)
 							 {?>
@@ -67,8 +79,7 @@
 						  <?php } ?>	
 								
 						  </ul>
-                                            <?php
-                                            //echo "Pagination goes here";
+											<?php }
                                             ?>
                                           </div>
                                       </div>
