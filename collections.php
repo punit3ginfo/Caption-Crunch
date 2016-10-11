@@ -48,6 +48,7 @@
 						  <style>
 							ul#pagination-list li {
 							    display:inline;
+								cursor:pointer;
 							}
 						</style>
 						<?php 
