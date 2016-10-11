@@ -166,7 +166,7 @@ try
 <script>
 $(document).ready(function(){
 
-      $('#preview-button').click(function() {
+      $('#preview-button-<?php echo $p_id1; ?>').click(function() {
               $('#preview-container').addClass("preview-container-animate");
               $('.close-preview-container').css('display', 'flex');
       });
