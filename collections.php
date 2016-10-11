@@ -58,8 +58,8 @@
 							$noofPages=abs(round($noofPages));
 						
 						 ?>
-												  <ul id="pagination-list">
-												  <li id="showLess"><<</li>
+												 <button type="button" id="previous"><<</button> <ul id="pagination-list">
+												 
 						  <?php
 						     for($i=1;$i<=$noofPages;$i++)
 							 {?>
@@ -67,9 +67,10 @@
 								
 								
 						  <?php } ?>
-							<li id="loadMore">>></li>						  
+												  
 								
 						  </ul>
+						   <button type="button" id="loadMore">>></button>
 											
                                           </div>
                                       </div>
