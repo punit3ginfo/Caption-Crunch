@@ -124,7 +124,8 @@ $(document).ready(function () {
     x=3;
     $('#ul li:lt('+x+')').show();
     $('#loadMore').click(function () {
-        x= (x+5 <= size_li) ? x+5 : size_li;
+		alert(sdfsd);
+        x= (x+3 <= size_li) ? x+3 : size_li;
         $('#ul li:lt('+x+')').show();
     });
     $('#showLess').click(function () {
@@ -134,6 +135,3 @@ $(document).ready(function () {
 });
 
 </script>
-
-
-
