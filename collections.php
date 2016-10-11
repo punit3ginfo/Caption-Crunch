@@ -113,10 +113,15 @@
   </div>
 </div>
 
+
+
+
 <script>
+
 $(document).ready(function () {
+	$('ul li:gt(3)').hide();
     size_li = $("ul li").size();
-    x=4;
+    x=3;
     $('#ul li:lt('+x+')').show();
     $('#loadMore').click(function () {
         x= (x+5 <= size_li) ? x+5 : size_li;
@@ -129,3 +134,6 @@ $(document).ready(function () {
 });
 
 </script>
+
+
+
