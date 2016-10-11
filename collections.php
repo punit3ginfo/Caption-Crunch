@@ -1,5 +1,5 @@
 
-<?php echo "dafdffdsfaf"; ?>
+
 <div class="chat_container" style="overflow: hidden;">
   <div class="collection-sidebar-container">
               		<div class="collection_title_selector">
@@ -51,28 +51,25 @@
 							}
 						</style>
 						<?php 
-						  echo "sdasdasda";
-						  	exit();
 							$TotalnoOfProduct = $shopify('GET /admin/products/count.json');
 							//echo "total products=".$TotalnoOfProduct=sizeof($products);
 							$limit=50; // Number of product per page
 							$noofPages=$TotalnoOfProduct/$limit;
 							echo "number=".$noofPages=abs(round($noofPages));
-					
+						
 							 
 						?>
 						  <ul id="pagination-list">
-							  
 						  <?php
-							
-						     		for($i=1;$i<=4);$i++) 
-				
+						     for($i=1;$i<=$noofPages;$i++)
 							 {?>
-								<li onclick="getPaging(this.id,<?php echo $limit; ?>)" id="<?php echo $i; ?>"><?php echo $i; ?></li>
+								<li onclick="getPaging(this.id)" id="<?php echo $i; ?>"><?php echo $i; ?></li>
 						  <?php } ?>	
 								
 						  </ul>
-                                            
+                                            <?php
+                                            //echo "Pagination goes here";
+                                            ?>
                                           </div>
                                       </div>
                                     </div>
