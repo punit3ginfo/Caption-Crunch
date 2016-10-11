@@ -1,5 +1,3 @@
-
-
 <div class="chat_container" style="overflow: hidden;">
   <div class="collection-sidebar-container">
               		<div class="collection_title_selector">
@@ -51,8 +49,9 @@
 							}
 						</style>
 						<?php 
-							$products = $shopify('GET /admin/products.json', array('published_status'=>'published','limit'=>'250'));
-							echo "total products=".$TotalnoOfProduct=sizeof($products);
+							$products = $shopify('GET /admin/products/count.json');
+						  print_r($products);
+							//echo "total products=".$TotalnoOfProduct=sizeof($products);
 							$limit=15; // Number of product per page
 							$noofPages=$TotalnoOfProduct/$limit;
 							echo "nuber=".$noofPages=abs(round($noofPages));
