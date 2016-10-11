@@ -108,8 +108,9 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                     <span class="header-central">Crunch</span>
                 </a>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
      		<nav class="main-nav-container">
+        <a id="close-preview-button" class='feed-product-preview-button'><i class="fa fa-times" aria-hidden="true"></i>Close Preview</a>
 				<a id="help-button" class="sidebar-link" style="text-decoration: none;">
                   <div class="sidebar-nav-container-header">
                       <span class="sidebar-span">
@@ -118,8 +119,8 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                       </span>
                   </div>
             	</a>
-            </nav>
-            <!-- /.navbar-collapse -->
+          </nav>
+          <!-- /.navbar-collapse -->
 
         <!-- /.container -->
     </header>
