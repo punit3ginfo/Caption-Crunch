@@ -1,7 +1,5 @@
 
 
-
-
 <div class="chat_container" style="overflow: hidden;">
   <div class="collection-sidebar-container">
               		<div class="collection_title_selector">
@@ -117,14 +115,11 @@
 
 <script>
 $(document).ready(function () {
-    // Load the first 3 list items from another HTML file
-    //$('#myList').load('externalList.html li:lt(3)');
-    $('#pagination-list li:lt(3)').show();
-    $('#loadMore').click(function () {
-        $('#pagination-list li:lt(10)').show();
-    });
-    $('#showLess').click(function () {
-        $('#pagination-list li').not(':lt(3)').hide();
-    });
+	
+	$('ul li:gt(3)').hide();
+$('.loadMore').click(function() {
+    $('ul li:gt(3)').show();
+});
+		
 });
 </script>
