@@ -101,6 +101,7 @@ body {
     float: left;
     display: flex;
     align-items: center;
+    display: none;
 }
 
 .close-button {
@@ -113,7 +114,6 @@ body {
     text-transform: uppercase;
     background: white;
     cursor: pointer;
-    display: none;
 }
 
 .close-button:hover {

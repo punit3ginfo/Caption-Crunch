@@ -258,15 +258,15 @@ $(document).ready(function(){
   //     };
   // });
 
-  $('#preview-button').click(function() {
-          $('#preview-container').addClass("preview-container-animate");
-          $('.close-preview-container').show();
-  });
+      $('#preview-button').click(function() {
+              $('#preview-container').addClass("preview-container-animate");
+              $('.close-preview-container').css('display', 'block');
+      });
 
-  $('#close-preview-button').click(function() {
-          $('#preview-container').removeClass("preview-container-animate");
-          $('.close-preview-container').hide();
-  });
+      $('#close-preview-button').click(function() {
+              $('#preview-container').removeClass("preview-container-animate");
+              $('.close-preview-container').css('display', 'none');
+      });
 
   });
 </script>
