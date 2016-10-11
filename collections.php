@@ -51,7 +51,7 @@
 							}
 						</style>
 						<?php 
-							$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
+							$products = $shopify('GET /admin/products.json', array('published_status'=>'published','limit'=>'250'));
 							echo "total products=".$TotalnoOfProduct=sizeof($products);
 							$limit=15; // Number of product per page
 							$noofPages=$TotalnoOfProduct/$limit;
