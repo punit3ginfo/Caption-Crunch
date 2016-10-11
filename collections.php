@@ -58,7 +58,7 @@
 							$noofPages=abs(round($noofPages));
 						
 						 ?>
-												 <button type="button" id="showLess"><<</button> <ul id="pagination-list">
+												 <button type="button" id="showLess">Previous</button> <ul id="pagination-list">
 												 
 						  <?php
 						     for($i=1;$i<=$noofPages;$i++)
@@ -70,7 +70,7 @@
 												  
 								
 						  </ul>
-						   <button type="button" id="loadMore">>></button>
+						   <button type="button" id="loadMore">NEXT</button>
 											
                                           </div>
                                       </div>
@@ -116,12 +116,12 @@
 <script>
 jQuery(document).ready(function () {
 	$('ul li:gt(3)').hide();
-	alert(1);
+	
     size_li =jQuery("#pagination-list li").length;
     x=3;
     jQuery('#pagination-list li:lt('+x+')').show();
     jQuery('#loadMore').click(function () {
-		alert('1');
+		
         x= (x+5 <= size_li) ? x+5 : size_li;
         jQuery('#pagination-list li:lt('+x+')').show();
          jQuery('#showLess').show();
@@ -130,7 +130,7 @@ jQuery(document).ready(function () {
         }
     });
     $('#showLess').click(function () {
-		alert('2');
+		
         x=(x-5<0) ? 3 : x-5;
         jQuery('#pagination-list li').not(':lt('+x+')').hide();
         jQuery('#loadMore').show();
@@ -142,3 +142,6 @@ jQuery(document).ready(function () {
 });
 
 </script>
+
+
+
