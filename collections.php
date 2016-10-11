@@ -118,7 +118,7 @@
 
 <script>
 $(document).ready(function () {
-    size_li = jQuery("#pagination-list li").size();
+    size_li = $("#pagination-list li").length();
     x=3;
     $('#pagination-list li:lt('+x+')').show();
     $('#loadMore').click(function () {
