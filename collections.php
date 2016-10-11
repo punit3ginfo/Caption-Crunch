@@ -63,7 +63,7 @@
 						  <?php
 						     for($i=0;$i<=$noofPages;$i++)
 							 {?>
-								<li onclick="getPaging(this.id,<?php echp $noofPages; ?>)" id="<?php echo $i; ?>"><?php echo $i; ?></li>
+								<li onclick="getPaging(this.id,<?php echp $limit; ?>)" id="<?php echo $i; ?>"><?php echo $i; ?></li>
 						  <?php } ?>	
 								
 						  </ul>
