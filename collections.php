@@ -1,5 +1,5 @@
 
-
+<?php echo "dafdffdsfaf"; ?>
 <div class="chat_container" style="overflow: hidden;">
   <div class="collection-sidebar-container">
               		<div class="collection_title_selector">
