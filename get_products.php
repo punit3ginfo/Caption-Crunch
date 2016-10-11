@@ -92,7 +92,7 @@ try
                       </div>
                   </div>
                   <div class="preview-button-container">
-                    <a id="preview-button" class="preview-button"><i class="fa fa-eye" aria-hidden="true"></i> Preview</a>
+                    <a id="preview-button-<?php echo $p_id1; ?>" class="preview-button"><i class="fa fa-eye" aria-hidden="true"></i> Preview</a>
                   </div>
               </div>
           </div>
@@ -160,6 +160,21 @@ try
     // Show / Hide Product Details Container
       $('.product-details-<?php echo $p_id1; ?>').toggle();
   });
+</script>
+
+<!-- Preview Drop Down -->
+<script>
+$(document).ready(function(){
+  $('#preview-button-<?php echo $p_id1; ?>').click(function() {
+      if ($("#preview-container").hasClass('preview-container-animate')) {
+          $('#preview-container').removeClass("preview-container-animate");
+          console.log('Stage 1 Complete');
+      } else {
+          $('#preview-container').addClass("preview-container-animate");
+          console.log('Stage 2 Complete');
+      };
+  });
+});
 </script>
 <!-- HTML Content for Product END    -->
 
