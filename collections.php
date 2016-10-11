@@ -117,20 +117,28 @@
 
 
 <script>
-
 $(document).ready(function () {
-	$('ul li:gt(3)').hide();
-    size_li = $("ul li").size();
+    size_li = $("#pagination-list li").size();
     x=3;
-    $('#ul li:lt('+x+')').show();
+    $('#pagination-list li:lt('+x+')').show();
     $('#loadMore').click(function () {
-		alert(sdfsd);
-        x= (x+3 <= size_li) ? x+3 : size_li;
-        $('#ul li:lt('+x+')').show();
+		alert('1');
+        x= (x+5 <= size_li) ? x+5 : size_li;
+        $('#pagination-list li:lt('+x+')').show();
+         $('#showLess').show();
+        if(x == size_li){
+            $('#loadMore').hide();
+        }
     });
     $('#showLess').click(function () {
+		alert('2');
         x=(x-5<0) ? 3 : x-5;
-        $('ul li').not(':lt('+x+')').hide();
+        $('#pagination-list li').not(':lt('+x+')').hide();
+        $('#loadMore').show();
+         $('#showLess').show();
+        if(x == 3){
+            $('#showLess').hide();
+        }
     });
 });
 
