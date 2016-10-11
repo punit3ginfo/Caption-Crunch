@@ -51,12 +51,14 @@
 							}
 						</style>
 						<?php 
+						  echo "sdasdasda";
+						  	exit();
 							$TotalnoOfProduct = $shopify('GET /admin/products/count.json');
 							//echo "total products=".$TotalnoOfProduct=sizeof($products);
 							$limit=50; // Number of product per page
 							$noofPages=$TotalnoOfProduct/$limit;
 							echo "number=".$noofPages=abs(round($noofPages));
-						exit();
+					
 							 
 						?>
 						  <ul id="pagination-list">
