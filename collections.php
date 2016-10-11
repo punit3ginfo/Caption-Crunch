@@ -118,7 +118,8 @@
 $(document).ready(function () {
 	
 	$('ul li:gt(3)').hide();
-$('.loadMore').click(function() {
+$('#loadMore').click(function() {
+	alert('dfdsafsdfsdaf');
     $('ul li:gt(3)').show();
 });
 		
