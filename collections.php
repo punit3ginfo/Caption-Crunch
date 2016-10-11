@@ -60,8 +60,14 @@
 							 
 						?>
 						  <ul id="pagination-list">
+							  
 						  <?php
-						     for($i=1;$i<=$noofPages;$i++)
+							  if($noofPages>3){
+						     		for($i=1;$i<=4);$i++) 
+							  }
+							   else{
+							    for($i=1;$i<=$noofPages;$i++)  
+							  }
 							 {?>
 								<li onclick="getPaging(this.id,<?php echo $limit; ?>)" id="<?php echo $i; ?>"><?php echo $i; ?></li>
 						  <?php } ?>	
