@@ -49,7 +49,7 @@
 							}
 						</style>
 						<?php 
-							echo $products1 = $shopify('GET /admin/products/count.json');
+							echo $products1 = $shopify('GET /admin/products/count.json',array('published_status'=>'published'));
 						  echo "START";
 						  print_r($products1);
 						  echo "END";
