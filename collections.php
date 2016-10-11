@@ -61,7 +61,7 @@
 						?>
 						  <ul id="pagination-list">
 						  <?php
-						     for($i=0;$i<=$noofPages;$i++)
+						     for($i=1;$i<=$noofPages;$i++)
 							 {?>
 								<li onclick="getPaging(this.id,<?php echo $limit; ?>)" id="<?php echo $i; ?>"><?php echo $i; ?></li>
 						  <?php } ?>	
