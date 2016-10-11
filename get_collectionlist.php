@@ -15,7 +15,7 @@
 			$title=$singlecollection['title']; // collection Title
 			$id=$singlecollection['id']; // collection id
 			$handle=$singlecollection['handle']; // collection id 
-			$products1 = $shopify('GET /admin/products.json?collection_id='.$id, array('published_status'=>'published'));
+			$products1 = $shopify('GET /admin/products.json?collection_id='.$id, array('published_status'=>'any'));
 		        $noOfProduct=sizeof($products1);
 			
 	?>
