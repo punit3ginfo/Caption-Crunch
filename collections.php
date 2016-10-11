@@ -50,13 +50,22 @@
 							    display:inline;
 							}
 						</style>
-
+						<?php 
+							$products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
+							echo "total products=".$TotalnoOfProduct=sizeof($products);
+							$limit=15; // Number of product per page
+							$noofPages=$TotalnoOfProduct/$limit;
+							echo "nuber=".$noofPages=abs(round($noofPages));
+						
+							 
+						?>
 						  <ul id="pagination-list">
-							  <li onclick="getPaging(this.id)" id="1">1</li>
+						      
+							<li onclick="getPaging(this.id)" id="1">1</li>
 							<li onclick="getPaging(this.id)" id="2">2</li>
-							  <li onclick="getPaging(this.id)" id="3">3</li>
+							<li onclick="getPaging(this.id)" id="3">3</li>
 							<li onclick="getPaging(this.id)" id="4">4</li>
-						   </ul>
+						  </ul>
                                             <?php
                                             //echo "Pagination goes here";
                                             ?>
