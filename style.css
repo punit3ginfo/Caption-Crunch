@@ -183,7 +183,7 @@ body {
     right: -275px;
     top: 0px;
     background: white;
-    z-index: 25;
+    z-index: 85;
     box-shadow: 1px -2px 17px 0px rgba(0,0,0,0.34);
     animation-direction:normal;
     transition-timing-function: ease;
