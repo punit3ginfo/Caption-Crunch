@@ -94,6 +94,27 @@ body {
 	height: 63px;
 }
 
+.close-preview-container {
+    width: auto;
+    height: 63px;
+    margin-right: 10px;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.close-button {
+    border: 1px solid #666;
+    padding: 12px 20px;
+    font-family: HelveticaNeue-Bold;
+    font-size: 16px;
+    color: #666;
+    letter-spacing: 0.82px;
+    text-transform: uppercase;
+    background: white;
+    cursor: pointer;
+}
+
 .nav-container {
 	display: inline-block;
 	height: 63px;
