@@ -48,7 +48,6 @@
 						  <style>
 							ul#pagination-list li {
 							    display:inline;
-								cursor:pointer;
 							}
 						</style>
 						<?php 
@@ -58,20 +57,7 @@
 							$noofPages=$TotalnoOfProduct/$limit;
 							$noofPages=abs(round($noofPages));
 						
-						if($noofPages>3)	{ 
-						?>
-						
-						
-					  <ul id="pagination-list">
-						  <?php
-						     for($i=1;$i<=$noofPages;$i++)
-							 {?>
-								<li onclick="getPaging(this.id,<?php echo $limit; ?>)" id="<?php echo $i; ?>"><?php echo $i; ?></li>
-						  <?php } ?>	
-								
-						  </ul>
-                                            <?php
-											}else{ ?>
+						 ?>
 												  <ul id="pagination-list">
 						  <?php
 						     for($i=1;$i<=$noofPages;$i++)
@@ -80,8 +66,7 @@
 						  <?php } ?>	
 								
 						  </ul>
-											<?php }
-                                            ?>
+											
                                           </div>
                                       </div>
                                     </div>
@@ -122,3 +107,10 @@
       </div>
   </div>
 </div>
+
+
+<script>
+$(document).ready(function(){
+    $('ul li:gt(4)').hide();
+});
+</script>
