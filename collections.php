@@ -119,8 +119,8 @@ $(document).ready(function () {
 	
 	$('ul li:gt(3)').hide();
 $('#loadMore').click(function() {
-	alert('dfdsafsdfsdaf');
-    $('ul li:gt(3)').show();
+    //$('ul li:gt(3)').show();
+	$('ul li:lt(10)').show();
 });
 		
 });
