@@ -246,21 +246,13 @@
     	</div>
   </div>
 </div>
+
 <script>
 $(document).ready(function(){
-  // $('#preview-button').click(function() {
-  //     if ($("#preview-container").hasClass('preview-container-animate')) {
-  //         $('#preview-container').removeClass("preview-container-animate");
-  //         console.log('Stage 1 Complete');
-  //     } else {
-  //         $('#preview-container').addClass("preview-container-animate");
-  //         console.log('Stage 2 Complete');
-  //     };
-  // });
 
       $('#preview-button').click(function() {
               $('#preview-container').addClass("preview-container-animate");
-              $('.close-preview-container').css('display', 'block');
+              $('.close-preview-container').css('display', 'flex');
       });
 
       $('#close-preview-button').click(function() {

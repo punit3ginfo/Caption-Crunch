@@ -99,7 +99,6 @@ body {
     height: 63px;
     margin-right: 10px;
     float: left;
-    display: flex;
     align-items: center;
     display: none;
 }
