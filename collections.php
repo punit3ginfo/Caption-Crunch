@@ -117,32 +117,29 @@
 
 
 <script>
-$(document).ready(function () {
-    size_li = $("#pagination-list li").length();
+jQuery(document).ready(function () {
+    size_li =jQuery("#pagination-list li").size();
     x=3;
-    $('#pagination-list li:lt('+x+')').show();
-    $('#loadMore').click(function () {
+    jQuery('#pagination-list li:lt('+x+')').show();
+    jQuery('#loadMore').click(function () {
 		alert('1');
         x= (x+5 <= size_li) ? x+5 : size_li;
-        $('#pagination-list li:lt('+x+')').show();
-         $('#showLess').show();
+        jQuery('#pagination-list li:lt('+x+')').show();
+         jQuery('#showLess').show();
         if(x == size_li){
-            $('#loadMore').hide();
+            jQuery('#loadMore').hide();
         }
     });
     $('#showLess').click(function () {
 		alert('2');
         x=(x-5<0) ? 3 : x-5;
-        $('#pagination-list li').not(':lt('+x+')').hide();
-        $('#loadMore').show();
-         $('#showLess').show();
+        jQuery('#pagination-list li').not(':lt('+x+')').hide();
+        jQuery('#loadMore').show();
+         jQuery('#showLess').show();
         if(x == 3){
-            $('#showLess').hide();
+            jQuery('#showLess').hide();
         }
     });
 });
 
 </script>
-
-
-
