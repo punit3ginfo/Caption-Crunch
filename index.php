@@ -111,7 +111,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
         <!-- Collect the nav links, forms, and other content for toggling -->
      		<nav class="main-nav-container">
         <div class="close-preview-container">
-            <a id="close-preview-button" class='close-button'><i class="fa fa-times" aria-hidden="true"></i>Close Preview</a>
+            <a id="close-preview-button" class='close-button'><i class="fa fa-times" aria-hidden="true"></i> Close Preview</a>
         </div>
 				<a id="help-button" class="sidebar-link" style="text-decoration: none; float: right;">
                   <div class="sidebar-nav-container-header">

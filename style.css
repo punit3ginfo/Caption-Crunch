@@ -115,6 +115,12 @@ body {
     cursor: pointer;
 }
 
+.close-button:hover {
+    border: 1px solid #666;
+    color: white;
+    background: #666;
+}
+
 .nav-container {
 	display: inline-block;
 	height: 63px;
