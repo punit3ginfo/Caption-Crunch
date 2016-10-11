@@ -49,8 +49,10 @@
 							}
 						</style>
 						<?php 
-							$products = $shopify('GET /admin/products/count.json');
-						  print_r($products);
+							echo $products1 = $shopify('GET /admin/products/count.json');
+						  echo "START";
+						  print_r($products1);
+						  echo "END";
 							//echo "total products=".$TotalnoOfProduct=sizeof($products);
 							$limit=15; // Number of product per page
 							$noofPages=$TotalnoOfProduct/$limit;
