@@ -11,22 +11,22 @@
 try
 	{
 		# Making an API request can throw an exception
-		if(isset($_REQUEST['colid']) && $_REQUEST['colid']!='' && $_REQUEST['status']==''){
+		if(isset($_REQUEST['colid']) && $_REQUEST['colid']!='' && $_REQUEST['status']=='' && !(isset($_REQUEST['page_id'])){
 
-
+                    echo "2";
 		$products = $shopify('GET /admin/products.json?collection_id='.$_REQUEST['colid'], array('published_status'=>'published','page'=>'1'));
 		//$products = $shopify('GET /admin/products.json?collection_id='.$_REQUEST['colid'], array('limit'=>'12','page'=>'2'));
 
 			}
 		if($_REQUEST['colid']=='' && $_REQUEST['status']=='' && !isset($_REQUEST['page_id']) ) {
-
+                   echo "3";
 	     // $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		$products = $shopify('GET /admin/products.json', array('limit'=>'50','page'=>'1'));
 			//GET /admin/products.json&limit=50=&page=1
 
 		}
 		if($_REQUEST['page_id']!='' && isset($_REQUEST['page_id']) && $_REQUEST['limit']!='' && isset($_REQUEST['limit']) && !(isset($_REQUEST['colid'])) {
-
+                echo "4";
 	     // $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		$products = $shopify('GET /admin/products.json', array('limit'=>$_REQUEST['limit'],'page'=>$_REQUEST['page_id']));
 			//GET /admin/products.json&limit=50=&page=1
@@ -34,6 +34,7 @@ try
 		}
 		  if(isset($_REQUEST['colid']) && $_REQUEST['colid']!=''&&  isset($_REQUEST['page_id']))
 		   {
+			echo "1";
 			$products = $shopify('GET /admin/products.json?collection_id='.$_REQUEST['colid'], array('published_status'=>'published',$_REQUEST['page_id']));
 		}
 		   
