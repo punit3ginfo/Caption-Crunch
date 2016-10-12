@@ -842,7 +842,7 @@ a:hover {
     width: 33%;
     border: 1px solid black;
     height: 100%;
-    margin-right: -4px;
+    float: left;
 }
 
 .builder-title-clearfix {
