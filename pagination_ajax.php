@@ -8,6 +8,7 @@
 try
 	{
 		if(isset($_REQUEST['colid']) && $_REQUEST['colid']!='' && $_REQUEST['status']==''){
+			echo "<script>alert(456);</script>";
 			
 			
 		}else{
