@@ -86,8 +86,28 @@
   </div>
 </div>
 
+
+
+
+<script>
+	jQuery(document).ready(function () {
+	      var access_token='<?php echo $access_token ?>';
+	      var shop='<?php echo $_REQUEST['shop'] ?>';
+	      var col_id='<?php echo $_REQUEST['colid'] ?>';
+		 $.ajax({
+                    url: '/pagination_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id,
+                    success: function(data){
+			$('#pagination').html(data);  
+                    }
+                });
+		
+	});
+</script>
+
+
 <script>
 jQuery(document).ready(function () {
+	alert(1);
 	$('ul li:gt(3)').hide();
 	$('#showLess').hide();
 	
@@ -131,20 +151,4 @@ jQuery(document).ready(function () {
 	
 
 
-</script>
-
-
-<script>
-	jQuery(document).ready(function () {
-	      var access_token='<?php echo $access_token ?>';
-	      var shop='<?php echo $_REQUEST['shop'] ?>';
-	      var col_id='<?php echo $_REQUEST['colid'] ?>';
-		 $.ajax({
-                    url: '/pagination_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id,
-                    success: function(data){
-			$('#pagination').html(data);  
-                    }
-                });
-		
-	});
 </script>
