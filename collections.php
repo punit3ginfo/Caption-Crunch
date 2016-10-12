@@ -159,7 +159,7 @@ jQuery(document).ready(function () {
 $(document).ready(function(){
 		var Origonalid = '<?php echo $_REQUEST['page_id']; ?>';
 	
-    $("ul li#"+Origonalid).addClass("paginate-link-active"");
+    $("ul li#"+Origonalid).addClass("paginate-link-active");
 }); 
 
 </script>
