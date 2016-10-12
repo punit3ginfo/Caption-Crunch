@@ -127,9 +127,9 @@
 			   // var data1= data.find('.chat_container').html()
 			    $('.product-grid-container').html(data);
 			   
-		var CurrentPageid = '<?php echo $_REQUEST['page_id']; ?>';
-	alert(CurrentPageid);
-			CurrentPageid= "#pagination-list li#"+CurrentPageid;  
+		
+	alert(id);
+			CurrentPageid= "#pagination-list li#"+id;  
 			    alert(CurrentPageid);
 	
    // $("ul li#"+CurrentPageid).addClass("paginate-link-active");
