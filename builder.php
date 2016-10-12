@@ -22,7 +22,7 @@
                                     <div class="chat_select_container" >
                                         <div class="chat_personal_info_container">
                                             <div class="chat_user_info">
-                                                <span class="collection_list_text">Caption titles go here</span>
+                                                <span class="collection_list_text">Caption title go here</span>
                                             </div>
                                         </div>
                                     </div>
@@ -47,7 +47,7 @@
 
 													<div class="builder-title-header-container">
 														<div class="builder-title-clearfix">
-																
+																<span class="collection_list_text">Caption title go here</span>
 														</div>
 													</div>
 
