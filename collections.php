@@ -45,30 +45,7 @@
                                     <div class="grid">
                                       <div class="grid-item">
                                           <div class="text-center" id="pagination">
-						 
-						<?php 
-							$TotalnoOfProduct = $shopify('GET /admin/products/count.json');
-							//echo "total products=".$TotalnoOfProduct=sizeof($products);
-							$limit=50; // Number of product per page
-							$noofPages=$TotalnoOfProduct/$limit;
-							$noofPages=abs(round($noofPages));
-						
-						 ?>
-						<button type="button" id="showLess"><i class="fa fa-long-arrow-left"></i></button> <ul id="pagination-list">
-												 
-						  <?php
-						     for($i=1;$i<=$noofPages;$i++)
-							 {?>
-								<li class="page-link" onclick="getPaging(this.id,<?php echo $limit; ?>)" id="<?php echo $i; ?>"><?php echo $i; ?></li>
-								
-								
-						  <?php } ?>
-												  
-								
-						  </ul>
-						   <button type="button" id="loadMore"><i class="fa fa-long-arrow-right"></i></button>
-											
-                                          </div>
+					  </div>
                                       </div>
                                     </div>
                                   </div>
@@ -165,7 +142,7 @@ jQuery(document).ready(function () {
 		 $.ajax({
                     url: '/pagination_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id,
                     success: function(data){
-			//$('#pagination').html(data);  
+			$('#pagination').html(data);  
                     }
                 });
 		
