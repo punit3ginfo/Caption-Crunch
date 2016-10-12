@@ -47,10 +47,7 @@
 
 													<div class="builder-title-header-container">
 														<div class="builder-title-clearfix">
-																<a href="javascript:void(0)" class="sidebar-span share-history-button">
-																	 <i class="fa fa-plus" aria-hidden="true"></i>
-																		 New Caption
-																</a>
+																
 														</div>
 													</div>
 

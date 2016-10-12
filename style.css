@@ -840,7 +840,6 @@ a:hover {
 .builder-title-header-container {
   	display: inline-block;
     width: 33%;
-    border: 1px solid black;
     height: 100%;
     float: left;
 }
