@@ -12,21 +12,21 @@ try
 	{
 		# Making an API request can throw an exception
 		if(isset($_REQUEST['colid']) && $_REQUEST['colid']!='' && $_REQUEST['status']=='' && !(isset($_REQUEST['page_id']))){
-              
-                    
+
+
 		$products = $shopify('GET /admin/products.json?collection_id='.$_REQUEST['colid'], array('published_status'=>'published','page'=>'1'));
 		//$products = $shopify('GET /admin/products.json?collection_id='.$_REQUEST['colid'], array('limit'=>'12','page'=>'2'));
 
 			}
 		if($_REQUEST['colid']=='' && $_REQUEST['status']=='' && !isset($_REQUEST['page_id']) ) {
-               
+
 	     // $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		$products = $shopify('GET /admin/products.json', array('limit'=>'50','page'=>'1'));
 			//GET /admin/products.json&limit=50=&page=1
 
 		}
 		if($_REQUEST['page_id']!='' && isset($_REQUEST['page_id']) && $_REQUEST['limit']!='' && isset($_REQUEST['limit']) && (isset($_REQUEST['colid']))) {
-                 
+
 	     // $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		$products = $shopify('GET /admin/products.json?collection_id='.$_REQUEST['colid'], array('limit'=>$_REQUEST['limit'],'page'=>$_REQUEST['page_id']));
 			//GET /admin/products.json&limit=50=&page=1
@@ -39,8 +39,8 @@ try
 			//GET /admin/products.json&limit=50=&page=1
 
 		}
-		  
-		   
+
+
 
 
 
@@ -109,7 +109,7 @@ try
 
           <div id="<?php echo $p_id1; ?>"  class="share-button-container?>" >
 
-			<script>
+<script>
 	$(document).ready(function(){
 		var OrigonalTag = '<?php echo $OrigonalTag; ?>';
 
@@ -211,7 +211,7 @@ $(document).ready(function(){
  <?php
 
 	       ?>
-	<script>
+<script>
 	function shareButton(pid,tags){
 
                var access_token='<?php echo $access_token ?>';
@@ -229,9 +229,9 @@ $(document).ready(function(){
                     }
                 });
             }
-	</script>
+</script>
 
-    <script>
+<script>
 
 	var tags;
 	function unshareButton(pid,tags){
@@ -263,38 +263,38 @@ $(document).ready(function(){
 		 $.ajax({
                     url: '/pagination_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id,
                     success: function(data){
-			$('#pagination').html(data); 
+			$('#pagination').html(data);
 			    $('ul li:gt(3)').hide();
 	$('#showLess').hide();
-	
+
     size_li =jQuery("#pagination-list li").length;
 
     x=3;
     jQuery('#pagination-list li:lt('+x+')').show();
     jQuery('#loadMore').click(function () {
-		
+
         x= (x+4 <= size_li) ? x+4 : size_li;
         y= (x-4 <= size_li) ? x-4 : size_li;
         jQuery('#pagination-list li:lt('+x+')').show();
 		jQuery('#pagination-list li:lt('+y+')').hide();
-		
+
          jQuery('#showLess').show();
         if(x == size_li){
             jQuery('#loadMore').hide();
         }
     });
     $('#showLess').click(function () {
-		
+
         x=(x-5<0) ? 3 : x-5;
 		y=(x+5<0) ? 3 : x+5;
         jQuery('#pagination-list li').not(':lt('+x+')').hide();
 		jQuery('#pagination-list li:lt('+y+')').show();
 		z=y-4;
-		
+
 		 jQuery('#pagination-list li').not(':lt('+z+')').hide();
 		 if(z>6){
 		 a=z-5;
-		
+
 		 jQuery('#pagination-list li').not(':gt('+a+')').hide();
 		 }
         jQuery('#loadMore').show();
@@ -305,7 +305,7 @@ $(document).ready(function(){
     });
                     }
                 });
-		
+
 	});
 </script>
 
@@ -313,7 +313,7 @@ $(document).ready(function(){
 <script>
 jQuery(document).ready(function () {
 	//alert(1);
-	
+
 });
-	
+
 </script>

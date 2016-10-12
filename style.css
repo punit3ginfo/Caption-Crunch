@@ -845,6 +845,14 @@ a:hover {
     margin-right: -4px;
 }
 
+.builder-title-clearfix {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .caption-title-text {
 	line-height: 80px;
 	font-family: HelveticaNeue-Bold;
@@ -1242,5 +1250,5 @@ ul#pagination-list li {
 	cursor:pointer;
 }
 #showLess{
-cursor:pointer;	
+cursor:pointer;
 }
