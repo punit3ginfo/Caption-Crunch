@@ -1,5 +1,3 @@
-
-
 <div class="chat_container" style="overflow: hidden;">
   <div class="collection-sidebar-container">
               		<div class="collection_title_selector">
@@ -139,6 +137,8 @@ jQuery(document).ready(function () {
 		y=(x+5<0) ? 3 : x+5;
         jQuery('#pagination-list li').not(':lt('+x+')').hide();
 		jQuery('#pagination-list li:lt('+y+')').show();
+		z=y-4;
+		 jQuery('#pagination-list li').not(':lt('+z+')').hide();
 		
         jQuery('#loadMore').show();
          jQuery('#showLess').show();
