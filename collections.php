@@ -45,11 +45,7 @@
                                     <div class="grid">
                                       <div class="grid-item">
                                           <div class="text-center" id="pagination">
-						  <style>
-							ul#pagination-list li {
-							    display:inline;
-							}
-						</style>
+						 
 						<?php 
 							$TotalnoOfProduct = $shopify('GET /admin/products/count.json');
 							//echo "total products=".$TotalnoOfProduct=sizeof($products);
@@ -58,7 +54,7 @@
 							$noofPages=abs(round($noofPages));
 						
 						 ?>
-												 <button type="button" id="showLess"><i class="fa fa-long-arrow-left"></i></button> <ul id="pagination-list">
+						<button type="button" id="showLess"><i class="fa fa-long-arrow-left"></i></button> <ul id="pagination-list">
 												 
 						  <?php
 						     for($i=1;$i<=$noofPages;$i++)
