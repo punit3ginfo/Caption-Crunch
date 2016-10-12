@@ -264,7 +264,7 @@ $(document).ready(function(){
 
 <script>
 jQuery(document).ready(function () {
-	alert(1);
+	//alert(1);
 	$('ul li:gt(3)').hide();
 	$('#showLess').hide();
 	
