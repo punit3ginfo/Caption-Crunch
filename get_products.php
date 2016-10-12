@@ -254,18 +254,8 @@ $(document).ready(function(){
 		 $.ajax({
                     url: '/pagination_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id,
                     success: function(data){
-			$('#pagination').html(data);  
-                    }
-                });
-		
-	});
-</script>
-
-
-<script>
-jQuery(document).ready(function () {
-	//alert(1);
-	$('ul li:gt(3)').hide();
+			$('#pagination').html(data); 
+			    $('ul li:gt(3)').hide();
 	$('#showLess').hide();
 	
     size_li =jQuery("#pagination-list li").length;
@@ -304,6 +294,17 @@ jQuery(document).ready(function () {
             $('#showLess').hide();
         }
     });
+                    }
+                });
+		
+	});
+</script>
+
+
+<script>
+jQuery(document).ready(function () {
+	//alert(1);
+	
 });
 	
 </script>
