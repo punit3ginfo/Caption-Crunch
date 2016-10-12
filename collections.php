@@ -134,10 +134,14 @@ jQuery(document).ready(function () {
         }
     });
     $('#showLess').click(function () {
-		x= (x+5 <= size_li) ? x+5 : size_li;
-        y= (x-5 <= size_li) ? x-5 : size_li;
-        jQuery('#pagination-list li:lt('+x+')').hide();
+		
+        x=(x-5<0) ? 3 : x-5;
+		y=(x+5<0) ? 3 : x+5;
+        jQuery('#pagination-list li').not(':lt('+x+')').hide();
 		jQuery('#pagination-list li:lt('+y+')').show();
+		
+        jQuery('#loadMore').show();
+         jQuery('#showLess').show();
         if(x == 3){
             $('#showLess').hide();
         }
