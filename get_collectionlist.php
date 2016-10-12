@@ -115,13 +115,13 @@
 </script>	
 
 <script>
-	function getPaging(id,limit){
+	function getPaging(id,limit,colid){
 		
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 		
                 $.ajax({
-                    url: '/get_products.php?access_token='+access_token+'&shop='+shop+'&page_id='+id+'&limit='+limit,
+                    url: '/get_products.php?access_token='+access_token+'&shop='+shop+'&page_id='+id+'&limit='+limit+'&colid='+colid,
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
