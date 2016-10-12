@@ -116,6 +116,7 @@
 <script>
 jQuery(document).ready(function () {
 	$('ul li:gt(3)').hide();
+	$('#showLess').hide();
 	
     size_li =jQuery("#pagination-list li").length;
     x=3;
