@@ -1,3 +1,5 @@
+
+
 <div class="chat_container" style="overflow: hidden;">
   <div class="collection-sidebar-container">
               		<div class="collection_title_selector">
@@ -117,6 +119,7 @@ jQuery(document).ready(function () {
 	$('#showLess').hide();
 	
     size_li =jQuery("#pagination-list li").length;
+	alert(size_li);
     x=3;
     jQuery('#pagination-list li:lt('+x+')').show();
     jQuery('#loadMore').click(function () {
@@ -139,6 +142,8 @@ jQuery(document).ready(function () {
 		jQuery('#pagination-list li:lt('+y+')').show();
 		z=y-4;
 		 jQuery('#pagination-list li').not(':lt('+z+')').hide();
+		 a=z-4;
+		 jQuery('#pagination-list li').not(':lt('+a+')').hide();
 		
         jQuery('#loadMore').show();
          jQuery('#showLess').show();
