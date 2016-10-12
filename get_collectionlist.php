@@ -139,6 +139,35 @@
                 });
             }
 	</script>
+
+
+<script>
+	function getPagingALLProduct(id,limit){
+		
+               var access_token='<?php echo $access_token ?>';
+		var shop='<?php echo $_REQUEST['shop'] ?>';
+		
+                $.ajax({
+                    url: '/get_products.php?access_token='+access_token+'&shop='+shop+'&page_id='+id+'&limit='+limit+'&colid='+colid,
+                    success: function(data){
+                     //console.log(data);
+			   // var data1= data.find('.chat_container').html()
+			    $('.product-grid-container').html(data);
+			   
+		
+	
+			CurrentPageid= "#pagination-list li#"+id;  
+			   // alert(CurrentPageid);
+	
+   // $("ul li#"+CurrentPageid).addClass("paginate-link-active");
+	$(CurrentPageid).addClass("paginate-link-active");
+ 
+                    }
+                });
+            }
+	</script>
+
+
 	
 
 
