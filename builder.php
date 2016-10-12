@@ -56,9 +56,7 @@
 
 													<div class="builder-title-header-container">
 														<div class="builder-title-clearfix">
-															<div class="builder-save-button-container">
 																	<a href="javascript:void(0)" class="save-button"><i class="fa fa-unlock-alt" aria-hidden="true"></i> SAVE</a>
-															</div>
 														</div>
 												  </div>
 
