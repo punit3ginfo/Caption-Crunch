@@ -1233,3 +1233,7 @@ ul#pagination-list {
 ul#pagination-list li {
  display:inline;
 }
+
+.page-link{
+	cursor:pointer;
+}
