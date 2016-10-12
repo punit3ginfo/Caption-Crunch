@@ -124,7 +124,9 @@ jQuery(document).ready(function () {
     jQuery('#loadMore').click(function () {
 		
         x= (x+5 <= size_li) ? x+5 : size_li;
+        y= (x-5 <= size_li) ? x-5 : size_li;
         jQuery('#pagination-list li:lt('+x+')').show();
+		jQuery('#pagination-list li:lt('+y+')').hide();
 		
          jQuery('#showLess').show();
         if(x == size_li){
@@ -132,11 +134,10 @@ jQuery(document).ready(function () {
         }
     });
     $('#showLess').click(function () {
-		
-        x=(x-5<0) ? 3 : x-5;
-        jQuery('#pagination-list li').not(':lt('+x+')').hide();
-        jQuery('#loadMore').show();
-         jQuery('#showLess').show();
+		x= (x+5 <= size_li) ? x+5 : size_li;
+        y= (x-5 <= size_li) ? x-5 : size_li;
+        jQuery('#pagination-list li:lt('+x+')').hide();
+		jQuery('#pagination-list li:lt('+y+')').show();
         if(x == 3){
             $('#showLess').hide();
         }
