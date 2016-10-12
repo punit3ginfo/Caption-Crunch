@@ -134,11 +134,11 @@ jQuery(document).ready(function () {
     });
     $('#showLess').click(function () {
 		
-        x=(x-5<0) ? 3 : x-5;
+        x=(x-4<0) ? 2 : x-4;
         jQuery('#pagination-list li').not(':lt('+x+')').hide();
         jQuery('#loadMore').show();
          jQuery('#showLess').show();
-        if(x == 3){
+        if(x == 2){
             $('#showLess').hide();
         }
     });
