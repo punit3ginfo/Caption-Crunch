@@ -9,15 +9,7 @@
 
                 	<div class="chat_selector_overflow_container">
                         <div class="chat_selector_overflow">
-
-															<!-- <div class="add-new-caption-container" style="height: 50px;">
-																	<div class="chat_personal_info_container" style="text-align: center; height: 50px;">
-																				<a href="javascript:void(0)">
-																					<span class="sidebar-span share-history-button" style="line-height: 40px;"><i class="fa fa-plus" aria-hidden="true"></i> New Caption</span>
-																				</a>
-																	</div>
-															</div> -->
-
+													<!-- Caption Menu Item  -->
                           		<a href="javascript:void(0)">
                                     <div class="chat_select_container" >
                                         <div class="chat_personal_info_container">
@@ -27,6 +19,7 @@
                                         </div>
                                     </div>
                               </a>
+													<!-- Caption Menu Item  -->
                         </div>
                   	</div>
               </div>
@@ -46,7 +39,7 @@
 													 </div>
 
 													<div class="builder-title-header-container">
-														<div class="builder-title-clearfix">
+														<div class="builder-title-clearfix" style="text-align: center;">
 																<span class="collection_list_text">Caption title go here</span>
 														</div>
 													</div>
