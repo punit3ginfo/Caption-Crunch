@@ -1237,3 +1237,7 @@ ul#pagination-list li {
 .page-link{
 	cursor:pointer;
 }
+
+#loadMore{
+	cursor:pointer;
+}
