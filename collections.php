@@ -119,7 +119,7 @@ jQuery(document).ready(function () {
 	$('#showLess').hide();
 	
     size_li =jQuery("#pagination-list li").length;
-	alert(size_li);
+	//alert(size_li);
     x=3;
     jQuery('#pagination-list li:lt('+x+')').show();
     jQuery('#loadMore').click(function () {
@@ -141,10 +141,9 @@ jQuery(document).ready(function () {
         jQuery('#pagination-list li').not(':lt('+x+')').hide();
 		jQuery('#pagination-list li:lt('+y+')').show();
 		z=y-4;
-	        a=z-4;
-		jQuery('#pagination-list li').not(':lt('+z+')').hide();
-	        jQuery('#pagination-list li').not(':gt('+a+')').hide();
-		
+		 jQuery('#pagination-list li').not(':lt('+z+')').hide();
+		 a=z-2;
+		 jQuery('#pagination-list li').not(':lt('+a+')').hide();
 		
         jQuery('#loadMore').show();
          jQuery('#showLess').show();
@@ -155,3 +154,6 @@ jQuery(document).ready(function () {
 });
 
 </script>
+
+
+
