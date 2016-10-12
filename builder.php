@@ -39,9 +39,9 @@
 													 </div>
 
 													<div class="builder-title-header-container">
-														<div class="builder-title-clearfix" style="text-align: center;">
+														<!-- <div class="builder-title-clearfix" style="text-align: center;">
 																<span class="collection_list_text">Caption title go here</span>
-														</div>
+														</div> -->
 													</div>
 
 													<div class="builder-title-header-container">
