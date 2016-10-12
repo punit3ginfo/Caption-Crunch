@@ -8,7 +8,14 @@
 try
 	{
 		if(isset($_REQUEST['colid']) && $_REQUEST['colid']!='' && $_REQUEST['status']==''){
-			echo "<script>alert(456);</script>";
+			
+			           
+						   $TotalnoOfProduct = $shopify('GET /admin/products/count.json', array('collection_id'=>$_REQUEST['colid']));
+							//echo "total products=".$TotalnoOfProduct=sizeof($products);
+							$limit=50; // Number of product per page
+							$noofPages=$TotalnoOfProduct/$limit;
+							$noofPages=abs(round($noofPages));
+			
 			
 			
 		}else{
@@ -18,6 +25,7 @@ try
 							$limit=50; // Number of product per page
 							$noofPages=$TotalnoOfProduct/$limit;
 							$noofPages=abs(round($noofPages));
+		}
 		?>				
 						 
 						<button type="button" id="showLess"><i class="fa fa-long-arrow-left"></i></button> <ul id="pagination-list">
@@ -33,7 +41,7 @@ try
 						  </ul>
 						   <button type="button" id="loadMore"><i class="fa fa-long-arrow-right"></i></button>
 		<?php				   
-		}
+		
 	}
 	catch (shopify\ApiException $e)
 	{
