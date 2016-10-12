@@ -130,7 +130,7 @@
 		
 	
 			CurrentPageid= "#pagination-list li#"+id;  
-			    alert(CurrentPageid);
+			   // alert(CurrentPageid);
 	
    // $("ul li#"+CurrentPageid).addClass("paginate-link-active");
 	$(CurrentPageid).addClass("paginate-link-active");
