@@ -46,15 +46,20 @@
 													 </div>
 
 													<div class="builder-title-header-container">
-														<!-- <form class="search-form">
-																	<input class="caption-title-text-box" type="text" name="q" placeholder="Footwear Sale" style="text-align: center;"/>
-														</form> -->
+														<div class="builder-title-clearfix">
+																<a href="javascript:void(0)" class="sidebar-span share-history-button">
+																	 <i class="fa fa-plus" aria-hidden="true"></i>
+																		 New Caption
+																</a>
+														</div>
 													</div>
 
 													<div class="builder-title-header-container">
-		                       	  <!-- <div class="builder-save-button-container">
-		                              <a href="#" class="save-button"><i class="fa fa-unlock-alt" aria-hidden="true"></i> SAVE</a>
-		                       	  </div> -->
+														<div class="builder-title-clearfix">
+															<div class="builder-save-button-container">
+																	<a href="javascript:void(0)" class="save-button"><i class="fa fa-unlock-alt" aria-hidden="true"></i> SAVE</a>
+															</div>
+														</div>
 												  </div>
 
                      </div>
