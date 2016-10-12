@@ -1241,3 +1241,6 @@ ul#pagination-list li {
 #loadMore{
 	cursor:pointer;
 }
+#showLess{
+cursor:pointer;	
+}
