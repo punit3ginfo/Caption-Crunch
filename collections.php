@@ -157,9 +157,11 @@ jQuery(document).ready(function () {
 });
 	
 $(document).ready(function(){
-		var Origonalid = '<?php echo $_REQUEST['page_id']; ?>';
+		var CurrentPageid = '<?php echo $_REQUEST['page_id']; ?>';
+	alert(CurrentPageid);
 	
-    $("ul li#"+Origonalid).addClass("paginate-link-active");
+   // $("ul li#"+CurrentPageid).addClass("paginate-link-active");
+	$("ul li#2").addClass("paginate-link-active");
 }); 
 
 </script>
