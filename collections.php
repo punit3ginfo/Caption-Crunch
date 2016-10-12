@@ -124,8 +124,8 @@ jQuery(document).ready(function () {
     jQuery('#pagination-list li:lt('+x+')').show();
     jQuery('#loadMore').click(function () {
 		
-        x= (x+5 <= size_li) ? x+5 : size_li;
-        y= (x-5 <= size_li) ? x-5 : size_li;
+        x= (x+4 <= size_li) ? x+4 : size_li;
+        y= (x-4 <= size_li) ? x-4 : size_li;
         jQuery('#pagination-list li:lt('+x+')').show();
 		jQuery('#pagination-list li:lt('+y+')').hide();
 		
