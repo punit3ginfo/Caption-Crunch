@@ -70,7 +70,7 @@
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 		
                 $.ajax({
-                    url: '/get_products.php?access_token='+access_token+'&shop='+shop+'&colid='+id+'&page_id=1',
+                    url: '/get_products.php?access_token='+access_token+'&shop='+shop+'&colid='+id,
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
@@ -128,7 +128,7 @@
 			    $('.product-grid-container').html(data);
 			   
 		
-	alert(id);
+	
 			CurrentPageid= "#pagination-list li#"+id;  
 			    alert(CurrentPageid);
 	
