@@ -155,3 +155,18 @@ jQuery(document).ready(function () {
 
 
 </script>
+
+
+<script>
+	jQuery(document).ready(function () {
+	      var access_token='<?php echo $access_token ?>';
+	       var shop='<?php echo $_REQUEST['shop'] ?>';
+		 $.ajax({
+                    url: '/pagination_ajax.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
+                    success: function(data){
+			//$('#pagination').html(data);  
+                    }
+                });
+		
+	});
+</script>
