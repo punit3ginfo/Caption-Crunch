@@ -244,3 +244,66 @@ $(document).ready(function(){
                 });
             }
     </script>
+
+
+<script>
+	jQuery(document).ready(function () {
+	      var access_token='<?php echo $access_token ?>';
+	      var shop='<?php echo $_REQUEST['shop'] ?>';
+	      var col_id='<?php echo $_REQUEST['colid'] ?>';
+		 $.ajax({
+                    url: '/pagination_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id,
+                    success: function(data){
+			$('#pagination').html(data);  
+                    }
+                });
+		
+	});
+</script>
+
+
+<script>
+jQuery(document).ready(function () {
+	alert(1);
+	$('ul li:gt(3)').hide();
+	$('#showLess').hide();
+	
+    size_li =jQuery("#pagination-list li").length;
+
+    x=3;
+    jQuery('#pagination-list li:lt('+x+')').show();
+    jQuery('#loadMore').click(function () {
+		
+        x= (x+4 <= size_li) ? x+4 : size_li;
+        y= (x-4 <= size_li) ? x-4 : size_li;
+        jQuery('#pagination-list li:lt('+x+')').show();
+		jQuery('#pagination-list li:lt('+y+')').hide();
+		
+         jQuery('#showLess').show();
+        if(x == size_li){
+            jQuery('#loadMore').hide();
+        }
+    });
+    $('#showLess').click(function () {
+		
+        x=(x-5<0) ? 3 : x-5;
+		y=(x+5<0) ? 3 : x+5;
+        jQuery('#pagination-list li').not(':lt('+x+')').hide();
+		jQuery('#pagination-list li:lt('+y+')').show();
+		z=y-4;
+		
+		 jQuery('#pagination-list li').not(':lt('+z+')').hide();
+		 if(z>6){
+		 a=z-5;
+		
+		 jQuery('#pagination-list li').not(':gt('+a+')').hide();
+		 }
+        jQuery('#loadMore').show();
+         jQuery('#showLess').show();
+        if(x == 3){
+            $('#showLess').hide();
+        }
+    });
+});
+	
+</script>
