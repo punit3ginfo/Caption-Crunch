@@ -156,12 +156,6 @@ jQuery(document).ready(function () {
     });
 });
 	
-$(document).ready(function(){
-		var CurrentPageid = '<?php echo $_REQUEST['page_id']; ?>';
-	alert(CurrentPageid);
-	
-   // $("ul li#"+CurrentPageid).addClass("paginate-link-active");
-	$("ul li#2").addClass("paginate-link-active");
-}); 
+
 
 </script>
