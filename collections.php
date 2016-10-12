@@ -141,10 +141,8 @@ jQuery(document).ready(function () {
         jQuery('#pagination-list li').not(':lt('+x+')').hide();
 		jQuery('#pagination-list li:lt('+y+')').show();
 		z=y-4;
-		alert(z);
 		 jQuery('#pagination-list li').not(':lt('+z+')').hide();
 		 a=z-5;
-		 alert(a);
 		 jQuery('#pagination-list li').not(':gt('+a+')').hide();
 		
         jQuery('#loadMore').show();
