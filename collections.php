@@ -123,10 +123,9 @@ jQuery(document).ready(function () {
     jQuery('#pagination-list li:lt('+x+')').show();
     jQuery('#loadMore').click(function () {
 		
-        x= (x+4 <= size_li) ? x+4 : size_li;
-		y= (x-4 <= size_li) ? x-4 : size_li;
+        x= (x+5 <= size_li) ? x+5 : size_li;
         jQuery('#pagination-list li:lt('+x+')').show();
-		jQuery('#pagination-list li:lt('+y+')').hide();
+		
          jQuery('#showLess').show();
         if(x == size_li){
             jQuery('#loadMore').hide();
@@ -134,11 +133,11 @@ jQuery(document).ready(function () {
     });
     $('#showLess').click(function () {
 		
-        x=(x-4<0) ? 2 : x-4;
+        x=(x-5<0) ? 3 : x-5;
         jQuery('#pagination-list li').not(':lt('+x+')').hide();
         jQuery('#loadMore').show();
          jQuery('#showLess').show();
-        if(x == 2){
+        if(x == 3){
             $('#showLess').hide();
         }
     });
