@@ -46,7 +46,7 @@ try
 						  <?php
 						     for($i=1;$i<=$noofPages;$i++)
 							 {?>
-								<li class="page-link" onclick="getPaging(this.id,<?php echo $limit; ?>,<?php echo $_REQUEST['colid']; ?>)" id="<?php echo $i; ?>"><?php echo $i; ?></li>
+								<li class="page-link" onclick="getPagingALLProduct(this.id,<?php echo $limit; ?>)" id="<?php echo $i; ?>"><?php echo $i; ?></li>
 								
 						  <?php } ?>
 												  
