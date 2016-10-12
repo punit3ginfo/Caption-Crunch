@@ -15,9 +15,22 @@ try
 							$limit=50; // Number of product per page
 							$noofPages=$TotalnoOfProduct/$limit;
 							$noofPages=abs(round($noofPages));
+			?>
+			<button type="button" id="showLess"><i class="fa fa-long-arrow-left"></i></button> <ul id="pagination-list">
+												 
+						  <?php
+						     for($i=1;$i<=$noofPages;$i++)
+							 {?>
+								<li class="page-link" onclick="getPaging(this.id,<?php echo $limit; ?>,<?php echo $_REQUEST['colid']; ?>)" 
+								    id="<?php echo $i; ?>"><?php echo $i; ?></li>
+								
+						  <?php } ?>
+												  
+								
+						  </ul>
+						   <button type="button" id="loadMore"><i class="fa fa-long-arrow-right"></i></button>
 			
-			
-			
+		<?php	
 		}else{
 			
 							$TotalnoOfProduct = $shopify('GET /admin/products/count.json');
@@ -25,7 +38,7 @@ try
 							$limit=50; // Number of product per page
 							$noofPages=$TotalnoOfProduct/$limit;
 							$noofPages=abs(round($noofPages));
-		}
+		
 		?>				
 						 
 						<button type="button" id="showLess"><i class="fa fa-long-arrow-left"></i></button> <ul id="pagination-list">
@@ -33,7 +46,7 @@ try
 						  <?php
 						     for($i=1;$i<=$noofPages;$i++)
 							 {?>
-								<li class="page-link" onclick="getPaging(this.id,<?php echo $limit; ?>)" id="<?php echo $i; ?>"><?php echo $i; ?></li>
+								<li class="page-link" onclick="getPaging(this.id,<?php echo $limit; ?>,<?php echo $_REQUEST['colid']; ?>)" id="<?php echo $i; ?>"><?php echo $i; ?></li>
 								
 						  <?php } ?>
 												  
@@ -41,7 +54,7 @@ try
 						  </ul>
 						   <button type="button" id="loadMore"><i class="fa fa-long-arrow-right"></i></button>
 		<?php				   
-		
+		}
 	}
 	catch (shopify\ApiException $e)
 	{
