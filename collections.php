@@ -142,7 +142,7 @@ jQuery(document).ready(function () {
 		jQuery('#pagination-list li:lt('+y+')').show();
 		z=y-4;
 		 jQuery('#pagination-list li').not(':lt('+z+')').hide();
-		 a=z-5;
+		 a=z-6;
 		 jQuery('#pagination-list li').not(':gt('+a+')').hide();
 		
         jQuery('#loadMore').show();
