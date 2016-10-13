@@ -195,6 +195,10 @@ try
 			    $('ul li:gt(3)').hide();
 	$('#showLess').hide();
     size_li =jQuery("#pagination-list li").length;
+	if(size_li<=4)
+	{
+		jQuery('#loadMore').hide();
+	}
     x=3;
     jQuery('#pagination-list li:lt('+x+')').show();
     jQuery('#loadMore').click(function () {
