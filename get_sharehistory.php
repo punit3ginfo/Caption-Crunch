@@ -57,7 +57,7 @@ $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
 			?>
 
 
-<!-- HTML Content for Product  START      -->
+<!-- HTML Content for Product  START | Share History      -->
 
 <div class="product-card-clearfix">
 
