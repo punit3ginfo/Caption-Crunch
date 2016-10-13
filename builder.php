@@ -54,9 +54,9 @@
                   </div>
         	</div>
 
-			<div class="product-grid-container">
-        		<div  class="product-grid-overflow-container">
-                  <form style="display: block;">
+			<div class="builder-grid-container">
+        		<div  class="builder-grid-overflow-container">
+                  <form style="display: block; padding: 15px;">
                   <!-- CONDITIONS -->
                   <div class="builder-main-conatiner">
                     <div class="builder-main-clearfix" style="border-bottom: 0px;">
