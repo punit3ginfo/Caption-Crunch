@@ -14,7 +14,7 @@ try
 		# Making an API request can throw an exception
 		         
 				 $query_title =str_replace('"','',$query_title);
-				 $search_products = $shopify('GET /admin/products.json', array('title'=>$query_title));
+				 $search_products = $shopify('GET /admin/products.json', array('title'=>$query_title ,'limit'=>'12','page'=>'1'));
 			foreach($search_products as $singleproduct)
 		{
 			$title=$singleproduct['title']; // Product Title
@@ -173,3 +173,6 @@ try
                 });
             }
     </script>
+
+
+
