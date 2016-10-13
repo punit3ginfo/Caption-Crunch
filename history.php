@@ -203,7 +203,7 @@ try
         jQuery('#pagination-list li:lt('+x+')').show();
 		jQuery('#pagination-list li:lt('+y+')').hide();
          jQuery('#showLess').show();
-        if(x == size_li){
+        if(size_li < 4){
             jQuery('#loadMore').hide();
         }
     });
