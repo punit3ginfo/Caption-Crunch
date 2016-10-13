@@ -133,7 +133,9 @@
 			   // alert(CurrentPageid);
 	
    // $("ul li#"+CurrentPageid).addClass("paginate-link-active");
-	$(CurrentPageid).addClass("paginate-link-active");
+			    $("#pagination-list>li.paginate-link-active").removeClass("paginate-link-active");
+	                    $(CurrentPageid).addClass("paginate-link-active");
+			    
  
                     }
                 });
