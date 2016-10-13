@@ -168,8 +168,35 @@
                     }
                 });
             }
-	</script>
+</script>
 
+<script>
+	function getPagingSearch(id,limit,title){
+		
+               var access_token='<?php echo $access_token ?>';
+		var shop='<?php echo $_REQUEST['shop'] ?>';
+		
+                $.ajax({
+                    url: '/history.php?access_token='+access_token+'&shop='+shop+'&page_id='+id+'&limit='+limit+'&title='+title,
+                    success: function(data){
+                     //console.log(data);
+			   // var data1= data.find('.chat_container').html()
+			    $('.product-grid-container').html(data);
+			   
+		
+	
+			CurrentPageid= "#pagination-list li#"+id;  
+			   // alert(CurrentPageid);
+	
+   // $("ul li#"+CurrentPageid).addClass("paginate-link-active");
+			    $("#pagination-list>li.paginate-link-active").removeClass("paginate-link-active");
+	                    $(CurrentPageid).addClass("paginate-link-active");
+			    
+ 
+                    }
+                });
+            }
+</script>
 
 	
 
