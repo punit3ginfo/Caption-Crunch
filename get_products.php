@@ -254,7 +254,7 @@ $(document).ready(function(){
             }
     </script>
 
-<?php if(isset($_REQUEST['colid']) && $_REQUEST['colid']!=''){?>
+<?php if((isset($_REQUEST['colid']) && $_REQUEST['colid']!='') || ($_REQUEST['page_id']=='')){?>
 <script>
 	jQuery(document).ready(function () {
 	      var access_token='<?php echo $access_token ?>';
