@@ -8,10 +8,10 @@
 <?php
 try
 	{
-		if(isset($_REQUEST['colid']) && $_REQUEST['colid']!='' && $_REQUEST['status']==''){
+		if(isset($_REQUEST['title']) && $_REQUEST['title']!='' && $_REQUEST['status']==''){
 			
 			           
-						   $TotalnoOfProduct = $shopify('GET /admin/products/count.json', array('collection_id'=>$_REQUEST['colid']));
+						   $TotalnoOfProduct = $shopify('GET /admin/products/count.json',array('title'=>$query_title));
 							//echo "total products=".$TotalnoOfProduct=sizeof($products);
 							$limit=50; // Number of product per page
 							$noofPages=$TotalnoOfProduct/$limit;
@@ -22,7 +22,7 @@ try
 						  <?php
 						     for($i=1;$i<=$noofPages;$i++)
 							 {?>
-								<li class="page-link" onclick="getPaging(this.id,<?php echo $limit; ?>,<?php echo $_REQUEST['colid']; ?>)" 
+								<li class="page-link" onclick="getPagingSearch(this.id,<?php echo $limit; ?>,<?php echo $_REQUEST['title']; ?>)" 
 								    id="<?php echo $i; ?>"><?php echo $i; ?></li>
 								
 						  <?php } ?>
@@ -37,9 +37,9 @@ try
 			
 			
 						
-						$query_title =str_replace('"','',$query_title);
-			echo $query_title;
-							echo "p=".$TotalnoOfProduct = $shopify('GET /admin/products/count.json',array('title'=>$query_title));
+						
+						
+							$TotalnoOfProduct = $shopify('GET /admin/products/count.json',array('title'=>$query_title));
 							//echo "total products=".$TotalnoOfProduct=sizeof($products);
 							$limit=50; // Number of product per page
 							$noofPages=$TotalnoOfProduct/$limit;
