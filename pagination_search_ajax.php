@@ -23,7 +23,7 @@ try
 						  <?php
 						     for($i=1;$i<=$noofPages;$i++)
 							 {?>
-								<li class="page-link" onclick="getPagingSearch(this.id,<?php echo $limit; ?>,<?php echo $query_title; ?>)" 
+								<li class="page-link" onclick="getPagingSearch(this.id,<?php echo $limit; ?>,'<?php echo $query_title; ?>')" 
 								    id="<?php echo $i; ?>"><?php echo $i; ?></li>
 								
 						  <?php } ?>
