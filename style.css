@@ -1251,3 +1251,7 @@ ul#pagination-list li {
 #showLess{
 cursor:pointer;
 }
+
+.fa-search{
+cursor:pointer;
+}
