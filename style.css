@@ -539,6 +539,8 @@ body {
   position: relative;
   width: 100%;
   height: calc(100vh - 173px);
+  padding-left: 10px;
+  padding-left: 10px;
 }
 
 .product-card-clearfix {
