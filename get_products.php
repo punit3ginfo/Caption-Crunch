@@ -76,6 +76,8 @@ try
 
 <!-- HTML Content for Product  START      -->
 
+<div class="product-gird-clearfix">
+
 <div class="product-card-clearfix">
 
 	<div class="product-card-container">
@@ -109,49 +111,53 @@ try
 
           <div id="<?php echo $p_id1; ?>"  class="share-button-container?>" >
 
-<script>
-	$(document).ready(function(){
-		var OrigonalTag = '<?php echo $OrigonalTag; ?>';
+                <script>
+                	$(document).ready(function(){
+                		var OrigonalTag = '<?php echo $OrigonalTag; ?>';
 
-		var pid_1 = '<?php echo $p_id1; ?>';
-		//alert(pid_1);
-		var pattern = /shared/;
-		var pattern1 = / shared/;
+                		var pid_1 = '<?php echo $p_id1; ?>';
+                		//alert(pid_1);
+                		var pattern = /shared/;
+                		var pattern1 = / shared/;
 
-		var exists = pattern.test(OrigonalTag);
-		var exists1 = pattern1.test(OrigonalTag);
-		if(exists || exists1 ){
-			var tags_1 = '"<?php echo $tags; ?>"';
-			//alert(tags_1);
+                		var exists = pattern.test(OrigonalTag);
+                		var exists1 = pattern1.test(OrigonalTag);
+                		if(exists || exists1 ){
+                			var tags_1 = '"<?php echo $tags; ?>"';
+                			//alert(tags_1);
 
-		        var _id = '#'+ pid_1;
+                		        var _id = '#'+ pid_1;
 
 
-		//$(_id).html('<button type=button class=share-button onclick=unshareButton('+pid_1+',"'+tags_1+'");>UnShare</button>');
-		$(_id).html("<button type='button' class='share-button' onclick='unshareButton("+pid_1+","+tags_1+");'>UnShare</button>");
+                		//$(_id).html('<button type=button class=share-button onclick=unshareButton('+pid_1+',"'+tags_1+'");>UnShare</button>');
+                		$(_id).html("<button type='button' class='share-button' onclick='unshareButton("+pid_1+","+tags_1+");'>UnShare</button>");
 
-		}else{
-			var _id = '#'+ pid_1;
-			<?php
-			if($OrigonalTag == '')
-			{
-			  $OrigonalTag="shared";
-			}
-			else{
-			   $OrigonalTag=$OrigonalTag.",shared";
-			}
-			?>
-			var tags_1 = '"<?php echo $OrigonalTag; ?>"';
+                		}else{
+                			var _id = '#'+ pid_1;
+                			<?php
+                			if($OrigonalTag == '')
+                			{
+                			  $OrigonalTag="shared";
+                			}
+                			else{
+                			   $OrigonalTag=$OrigonalTag.",shared";
+                			}
+                			?>
+                			var tags_1 = '"<?php echo $OrigonalTag; ?>"';
 
-			  //$(_id).html('<button type="button" class=share-button onclick=shareButton('+pid_1+',"'+tags_1+'");>Share</button>');
-	$(_id).html("<button type='button' class='share-button' onclick='shareButton("+pid_1+","+tags_1+");'>Share</button>");
-		}
-	});
-</script>
-	   </div>
-      </div>
+                			  //$(_id).html('<button type="button" class=share-button onclick=shareButton('+pid_1+',"'+tags_1+'");>Share</button>');
+                	$(_id).html("<button type='button' class='share-button' onclick='shareButton("+pid_1+","+tags_1+");'>Share</button>");
+                		}
+                	});
+                </script>
+
+	         </div>
+
+        </div>
+
+    </div>
+
 </div>
-
 <!-- Show / Hide Product Details -->
 <script>
   $('.product-image-<?php echo $p_id1; ?>').hover(function() {
@@ -254,14 +260,14 @@ $(document).ready(function(){
             }
     </script>
 
-<?php if((isset($_REQUEST['colid']) && $_REQUEST['colid']!='' && ($_REQUEST['page_id']=='')) || (($_REQUEST['page_id']=='') && 
+<?php if((isset($_REQUEST['colid']) && $_REQUEST['colid']!='' && ($_REQUEST['page_id']=='')) || (($_REQUEST['page_id']=='') &&
 												($_REQUEST['colid']==''))){?>
 <script>
 	jQuery(document).ready(function () {
 	      var access_token='<?php echo $access_token ?>';
 	      var shop='<?php echo $_REQUEST['shop'] ?>';
 	      var col_id='<?php echo $_REQUEST['colid'] ?>';
-		
+
 		 $.ajax({
                     url: '/pagination_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id,
                     success: function(data){
