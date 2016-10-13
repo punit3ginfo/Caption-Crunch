@@ -166,7 +166,24 @@
 													 			</div>
 													 			<div class="builder-main-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
 													 						<div class="builder-conditions-container" style="height: auto; min-height: 100px;">
+																				<!-- Product List -->
+																				<div class="feed-product-main-conatiner">
+																						<div class="feed-product-main-clearfix">
+																										<div class="feed-product-image" style="background: #65D35B;">
+																											<div class="feed-product-image-zoom" style="background: #65D35B;">
 
+																											</div>
+																										</div>
+																										<div class="feed-product-titledate-container">
+																														<span class="feed-product-title">Product Title Goes Here</span>
+																										</div>
+																										<div class="feed-product-sharenow-container">
+																												<a id="preview-button" class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</a>
+																												<button type='button' class='feed-product-sharenow-button'><i class="fa fa-share" aria-hidden="true"></i> Share Now</button>
+																										</div>
+																						</div>
+																				</div>
+																				<!-- Product List End -->
 													 						</div>
 													 			</div>
 											 			</div>
