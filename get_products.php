@@ -311,11 +311,3 @@ $(document).ready(function(){
 	});
 </script>
 <?php } ?>
-
-<script>
-jQuery(document).ready(function () {
-	//alert(1);
-
-});
-
-</script>
