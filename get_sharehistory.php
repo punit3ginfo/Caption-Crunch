@@ -14,7 +14,8 @@ try
 		# Making an API request can throw an exception
 			
 			$productsa = $shopify('GET /admin/products.json', array('tags'=>'shared'));
-		echo "number=".$productscount = $shopify('GET /admin/products/count.json', array('tags'=>'shared'));
+		
+		
 			
 			foreach($productsa as $singleproduct)
 		{
