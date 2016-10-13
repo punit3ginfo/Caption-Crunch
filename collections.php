@@ -57,7 +57,8 @@
                                  <form class="search-form" method="">
                                     <input class="search-text-box" id="formValueId" type="text" name="q_name" placeholder="Search" />
                                     <input class="search-icon-button" type="button" onclick="search(document.getElementById('formValueId').value);" value="&#xf002;" />
-                                </form>
+                               <i class="fa fa-search"></i>
+				       </form>
                                </div>
                             </div>
 
