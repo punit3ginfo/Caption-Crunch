@@ -92,6 +92,8 @@
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
 			    $('.product-grid-container').html(data);
+			     $('#pagination').html();
+			   
                     }
                 });
             }
