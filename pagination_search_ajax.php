@@ -36,8 +36,9 @@ try
 			
 			
 			
-						echo $query_title;
-			
+						
+						$query_title =str_replace('"','',$query_title);
+			echo $query_title;
 							echo "p=".$TotalnoOfProduct = $shopify('GET /admin/products/count.json',array('title'=>$query_title));
 							//echo "total products=".$TotalnoOfProduct=sizeof($products);
 							$limit=50; // Number of product per page
