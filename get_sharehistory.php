@@ -14,23 +14,7 @@ try
 		# Making an API request can throw an exception
 			
 			$productsa = $shopify('GET /admin/products.json', array('tags'=>'shared'));
-			//print_r($productsa);
-		
-			 $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
-				 $MultipleProduct_id = array();
-				foreach($products as $singleproduct)
-				{ 
-					$eachProductTag=$singleproduct['tags'];					
-					if (strpos($eachProductTag, 'shared') !== false) {
-						$MultipleProduct_id[]=$singleproduct['id'];
-					}
-				}
-			 
-			
-
-$MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
-
-			$shared_products = $shopify('GET /admin/products.json', array('ids'=>$MultipleProduct_id_comma_seprated));
+		echo "number=".$productscount = $shopify('GET /admin/products/count.json', array('tags'=>'shared'));
 			
 			foreach($productsa as $singleproduct)
 		{
@@ -189,3 +173,56 @@ $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
                 });
             }
     </script>
+
+<script>
+	jQuery(document).ready(function () {
+	      var access_token='<?php echo $access_token ?>';
+	      var shop='<?php echo $_REQUEST['shop'] ?>';
+	      var col_id='<?php echo $_REQUEST['colid'] ?>';
+	      var title='<?php echo $_REQUEST['title'] ?>';
+		
+		 $.ajax({
+                    url: '/pagination_search_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id+'&title='+title,
+                    success: function(data){
+			$('#pagination').html(data);
+			    $('ul li:gt(3)').hide();
+	$('#showLess').hide();
+    size_li =jQuery("#pagination-list li").length;
+	if(size_li<=4)
+	{
+		jQuery('#loadMore').hide();
+		jQuery('#showLess').hide();
+	}
+    x=3;
+    jQuery('#pagination-list li:lt('+x+')').show();
+    jQuery('#loadMore').click(function () {
+        x= (x+4 <= size_li) ? x+4 : size_li;
+        y= (x-4 <= size_li) ? x-4 : size_li;
+        jQuery('#pagination-list li:lt('+x+')').show();
+		jQuery('#pagination-list li:lt('+y+')').hide();
+         jQuery('#showLess').show();
+        if(x == size_li){
+            jQuery('#loadMore').hide();
+        }
+    });
+    $('#showLess').click(function () {
+        x=(x-5<0) ? 3 : x-5;
+		y=(x+5<0) ? 3 : x+5;
+        jQuery('#pagination-list li').not(':lt('+x+')').hide();
+		jQuery('#pagination-list li:lt('+y+')').show();
+		z=y-4;
+		 jQuery('#pagination-list li').not(':lt('+z+')').hide();
+		 if(z>6){
+		 a=z-5;
+		 jQuery('#pagination-list li').not(':gt('+a+')').hide();
+		 }
+        jQuery('#loadMore').show();
+         jQuery('#showLess').show();
+        if(x == 3){
+            $('#showLess').hide();
+        }
+    });
+                    }
+                });
+	});
+</script>
