@@ -4,14 +4,15 @@
      $access_token=$_REQUEST['access_token'];
      $shopify = shopify\client($_REQUEST['shop'], SHOPIFY_APP_API_KEY, $access_token );
 	  $query_title=$_REQUEST['title'];
+	   $query_title =str_replace('"','',$query_title);
 ?>
 <?php
 try
 	{
 		if(isset($_REQUEST['title']) && $_REQUEST['title']!='' && $_REQUEST['status']==''){
 			
-			           
-						   $TotalnoOfProduct = $shopify('GET /admin/products/count.json',array('title'=>$query_title));
+			           echo  $query_title;
+						  echo $TotalnoOfProduct = $shopify('GET /admin/products/count.json',array('title'=>$query_title));
 							//echo "total products=".$TotalnoOfProduct=sizeof($products);
 							$limit=50; // Number of product per page
 							$noofPages=$TotalnoOfProduct/$limit;
