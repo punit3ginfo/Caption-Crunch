@@ -198,6 +198,7 @@ try
 	if(size_li<=4)
 	{
 		jQuery('#loadMore').hide();
+		jQuery('#showLess').hide();
 	}
     x=3;
     jQuery('#pagination-list li:lt('+x+')').show();
