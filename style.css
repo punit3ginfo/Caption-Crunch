@@ -508,7 +508,7 @@ body {
 /*   Product Cards    */
 
 
-.product-grid-container {
+/*.product-grid-container {
 	  width: 100%;
     height: calc(100% - 80px);
   	background: #F8F9F9;
@@ -523,6 +523,22 @@ body {
   padding: 15px;
   position: relative;
   width: 100%;
+}*/
+
+.product-grid-container {
+  width: 100%;
+  height: calc(100% - 80px);
+  background: #F8F9F9;
+  position: relative;
+}
+
+.product-grid-overflow-container  {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 173px);
 }
 
 .product-card-clearfix {
