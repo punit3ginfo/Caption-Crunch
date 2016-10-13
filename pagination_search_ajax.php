@@ -3,6 +3,7 @@
      use phpish\shopify;
      $access_token=$_REQUEST['access_token'];
      $shopify = shopify\client($_REQUEST['shop'], SHOPIFY_APP_API_KEY, $access_token );
+	  $query_title=$_REQUEST['title'];
 ?>
 <?php
 try
@@ -33,7 +34,11 @@ try
 		<?php	
 		}else{
 			
-							$TotalnoOfProduct = $shopify('GET /admin/products/count.json');
+			
+			
+						
+			
+							echo "p=".$TotalnoOfProduct = $shopify('GET /admin/products/count.json',array('title'=>$query_title));
 							//echo "total products=".$TotalnoOfProduct=sizeof($products);
 							$limit=50; // Number of product per page
 							$noofPages=$TotalnoOfProduct/$limit;
