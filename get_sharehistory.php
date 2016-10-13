@@ -13,7 +13,9 @@ try
 	{
 		# Making an API request can throw an exception
 			
-			
+			$productsa = $shopify('GET /admin/products.json', array('tags'=>'shared'));
+			print_r($productsa);
+		
 			 $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 				 $MultipleProduct_id = array();
 				foreach($products as $singleproduct)
