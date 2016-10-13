@@ -525,13 +525,6 @@ body {
   width: 100%;
 }*/
 
-.product-gird-clearfix {
-  padding: 15px;
-  width: auto;
-  height: auto;
-  position: relative;
-}
-
 .product-grid-container {
   width: 100%;
   height: calc(100% - 80px);
