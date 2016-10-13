@@ -36,7 +36,7 @@ try
 			
 			
 			
-						
+						echo $query_title;
 			
 							echo "p=".$TotalnoOfProduct = $shopify('GET /admin/products/count.json',array('title'=>$query_title));
 							//echo "total products=".$TotalnoOfProduct=sizeof($products);
