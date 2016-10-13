@@ -4,7 +4,7 @@
      use phpish\shopify;
      $access_token=$_REQUEST['access_token'];
      $shopify = shopify\client($_REQUEST['shop'], SHOPIFY_APP_API_KEY, $access_token );
-	
+
 
 ?>
 
@@ -12,24 +12,24 @@
 try
 	{
 		# Making an API request can throw an exception
-			
-			
+
+
 			 $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 				 $MultipleProduct_id = array();
 				foreach($products as $singleproduct)
-				{ 
-					$eachProductTag=$singleproduct['tags'];					
+				{
+					$eachProductTag=$singleproduct['tags'];
 					if (strpos($eachProductTag, 'shared') !== false) {
 						$MultipleProduct_id[]=$singleproduct['id'];
 					}
 				}
-			 
-			
+
+
 
 $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
 
 			$shared_products = $shopify('GET /admin/products.json', array('ids'=>$MultipleProduct_id_comma_seprated));
-			
+
 			foreach($shared_products as $singleproduct)
 		{
 			$title=$singleproduct['title']; // Product Title
@@ -63,20 +63,34 @@ $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
 
 	<div class="product-card-container">
 
-      		<div class="product-card-image-container" style='background-image: url(<?php echo $src; ?>)'>
-      		</div>
+      		<div class="product-card-image-container product-image-<?php echo $p_id1; ?>" style='background-image: url(<?php echo $src; ?>)'>
+            <!-- Opacity Layer -->
+              <div class="product-card-image-container-background-hover product-opacity-<?php echo $p_id1; ?>"></div>
+            <!-- Product Details Layer -->
+              <div class="product-card-image-container-content-hover product-details-<?php echo $p_id1; ?>">
+                  <div class="product-details-container">
+                      <div class="product-icon-container" style="margin-bottom: 15px;">
+                         <span class="product-icon-clearfix">
 
-      		<div class="product-card-details-section">
-      			<div class="product-card-details-container">
-                  	<span class="product-title-text"><?php echo $title; ?></span>
-                  	<div class="product-card-price-container">
-                  		<span class="product-card-price-text" style="margin-right: 3px;">$<?php echo $price; ?></span>
-                      <span class="product-card-price-text" style="font-size: 14px; color: #888;">$<?php echo $price; ?></span>
-                  	</div>
-      			</div>
-      		</div>
+                         </span>
+                      </div>
 
-          <div id="<?php //echo $p_id1; ?>"  class="share-button-container">
+                      <div style="margin-top: 15px;">
+                        <span class="product-title-text"><?php echo $title; ?></span>
+                      </div>
+
+                      <div style="margin-top: 15px;">
+                        <span class="product-card-price-text" style="margin-right: 3px;">$<?php echo $price; ?></span>
+                        <span class="product-card-price-text" style="font-size: 12px; color: #888;">$<?php echo $price; ?></span>
+                      </div>
+                  </div>
+                  <div class="preview-button-container">
+                    <a id="preview-button-<?php echo $p_id1; ?>" class="preview-button" style="height: 19px; width: calc(100% - 42px);"><i class="fa fa-eye" aria-hidden="true"></i> Preview</a>
+                  </div>
+              </div>
+          </div>
+
+          <div id="<?php echo $p_id1; ?>"  class="share-button-container?>" >
 
 			<script>
 	$(document).ready(function(){
@@ -123,7 +137,7 @@ $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
 <!-- HTML Content for Product END    -->
 
 	<?php
-	
+
 		}
 	}
 	catch (shopify\ApiException $e)
@@ -151,10 +165,10 @@ $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
                var access_token='<?php echo $access_token ?>';
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
                var tags_unshare = tags.replace('shared', "");
-	       
+
 	       var tags_unshare = tags_unshare.replace('shared', "");
 		var tags_unshare = tags_unshare.replace(' ', "");
-		
+
 	       var _id = '#'+ pid;
                $.ajax({
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,

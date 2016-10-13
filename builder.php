@@ -138,7 +138,7 @@
 													<div class="template-show-hide">
 				                    <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
 				                      	<div class="builder-conditions-container">
-				                          	<span class="" style="line-height: 46px;"><i class="fa fa-info-circle" aria-hidden="true" style="margin-right: 10px;"></i> Create a custom caption template or use one of our premade templates</span>
+				                          	<span class="" style="line-height: 46px; color: #666;"><i class="fa fa-info-circle" aria-hidden="true" style="margin-right: 10px;"></i> Create a custom caption template or use one of our premade templates</span>
 				                      	</div>
 				                    </div>
 				                    <div class="builder-main-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
@@ -161,7 +161,7 @@
 											 			<div class="products-show-hide">
 													 			<div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
 													 						<div class="builder-conditions-container">
-													 								<span class="" style="line-height: 46px;"><i class="fa fa-info-circle" aria-hidden="true" style="margin-right: 10px;"></i> Listed below are the products with matching conditions</span>
+													 								<span class="" style="line-height: 46px; color: #666;"><i class="fa fa-info-circle" aria-hidden="true" style="margin-right: 10px;"></i> Listed below are the products with matching conditions</span>
 													 						</div>
 													 			</div>
 													 			<div class="builder-main-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
@@ -251,7 +251,7 @@
 																										</div>
 																						</div>
 																				</div>
-																				
+
 																				<!-- Product List End -->
 													 						</div>
 													 			</div>
