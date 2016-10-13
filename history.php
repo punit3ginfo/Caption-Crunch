@@ -181,9 +181,10 @@ try
 	      var access_token='<?php echo $access_token ?>';
 	      var shop='<?php echo $_REQUEST['shop'] ?>';
 	      var col_id='<?php echo $_REQUEST['colid'] ?>';
+	      var title='<?php echo $_REQUEST['title'] ?>';
 		
 		 $.ajax({
-                    url: '/pagination_search_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id,
+                    url: '/pagination_search_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id+'&title='+title,
                     success: function(data){
 			$('#pagination').html(data);
 			    $('ul li:gt(3)').hide();
