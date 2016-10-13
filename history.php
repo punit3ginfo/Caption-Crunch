@@ -180,7 +180,7 @@ try
             }
     </script>
 
-
+<?php if($_REQUEST['page_id']==''){ ?>
 <script>
 	jQuery(document).ready(function () {
 	      var access_token='<?php echo $access_token ?>';
@@ -228,3 +228,4 @@ try
                 });
 	});
 </script>
+<?php } ?>
