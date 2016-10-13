@@ -165,9 +165,9 @@
 													 						</div>
 													 			</div>
 													 			<div class="builder-main-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
-													 						<div class="builder-conditions-container" style="height: auto; min-height: 100px;">
+													 						<div class="builder-conditions-container" style="height: auto; min-height: 100px; display: block;">
 																				<!-- Product List -->
-																				<div class="feed-product-main-conatiner">
+																				<div class="feed-product-main-conatiner" style="width: calc(100% - 60px);">
 																						<div class="feed-product-main-clearfix">
 																										<div class="feed-product-image" style="background: #65D35B;">
 																											<div class="feed-product-image-zoom" style="background: #65D35B;">
