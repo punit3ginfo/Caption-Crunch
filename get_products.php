@@ -254,12 +254,13 @@ $(document).ready(function(){
             }
     </script>
 
-
+<?php if(isset($_REQUEST['colid']) && $_REQUEST['colid']!=''){?>
 <script>
 	jQuery(document).ready(function () {
 	      var access_token='<?php echo $access_token ?>';
 	      var shop='<?php echo $_REQUEST['shop'] ?>';
 	      var col_id='<?php echo $_REQUEST['colid'] ?>';
+		
 		 $.ajax({
                     url: '/pagination_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id,
                     success: function(data){
@@ -308,7 +309,7 @@ $(document).ready(function(){
 
 	});
 </script>
-
+<?php } ?>
 
 <script>
 jQuery(document).ready(function () {
