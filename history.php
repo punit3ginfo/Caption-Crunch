@@ -139,7 +139,7 @@ try
 	       ?>
 	<script>
 	function shareButton(pid,tags){
-alert(2);
+
                var access_token='<?php echo $access_token ?>';
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
                var tags_unshare = tags.replace('shared', "");
