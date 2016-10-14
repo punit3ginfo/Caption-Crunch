@@ -70,7 +70,7 @@
 
 
   <div class="product-grid-container scroll-grid">
-      <!-- <div  class="product-grid-overflow-container"> -->
+      <div  class="product-grid-overflow-container">
 
         <?php
 
@@ -81,9 +81,9 @@
                 	      if(($_REQUEST['status']!="search")|| ($_REQUEST['status']=="")){
                 		 require __DIR__.'/get_products.php';
                 	}
-                  
+
         ?>
 
-      <!-- </div> -->
+      </div>
   </div>
 </div>
