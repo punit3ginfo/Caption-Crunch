@@ -71,7 +71,7 @@
 
   <div class="product-grid-container scroll-grid">
       <div  class="product-grid-overflow-container">
-          <div>
+
         <?php
 
                  //  Products List Here
@@ -83,7 +83,7 @@
                 	}
 
         ?>
-      </div>
+
       </div>
   </div>
 </div>

@@ -1,32 +1,32 @@
-<?php 
+<?php
      require __DIR__.'/vendor/autoload.php';
      use phpish\shopify;
      $access_token=$_REQUEST['access_token'];
-     $shopify = shopify\client($_REQUEST['shop'], SHOPIFY_APP_API_KEY, $access_token ); 
+     $shopify = shopify\client($_REQUEST['shop'], SHOPIFY_APP_API_KEY, $access_token );
    try
 	{
 		# Making an API request can throw an exception
 		$collections = $shopify('GET /admin/custom_collections.json', array('published_status'=>'published'));
 		$collections1 = $shopify('GET /admin/smart_collections.json', array('published_status'=>'published'));
                 $collections=array_merge($collections, $collections1);
-		
+
 		foreach($collections as $singlecollection)
 		{
 			$title=$singlecollection['title']; // collection Title
 			$id=$singlecollection['id']; // collection id
-			$handle=$singlecollection['handle']; // collection id 
+			$handle=$singlecollection['handle']; // collection id
 			$products1 = $shopify('GET /admin/products.json?collection_id='.$id, array('published_status'=>'any'));
 			$noOfProduct = $shopify('GET /admin/products/count.json?collection_id='.$id);
-			
+
 		      //  $noOfProduct=sizeof($products1);
-			
-			
-			
+
+
+
 	?>
 
-                        
-			
-			<a href="javascript:void(0)" onclick="getcolproduct(<?php echo $id;?>,'<?php echo $handle;?>')">                 
+
+
+			                      <a href="javascript:void(0)" onclick="getcolproduct(<?php echo $id;?>,'<?php echo $handle;?>')">
                                     <div class="chat_select_container">
                                         <div class="chat_personal_info_container">
                                             <div class="chat_user_info">
@@ -34,18 +34,14 @@
                                             </div>
                                             <div class="notification-container">
                                                 <div class="chat_notification_container">
-							
-						
-							
-							
-                                                    <span class="notif_number"><?php echo $noOfProduct; ?>
-							</span>
+
+                                                    <span class="notif_number"><?php echo $noOfProduct; ?></span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
-								
+
 		<?php }
 	}
 	catch (shopify\ApiException $e)
@@ -65,16 +61,16 @@
 	?>
 	<script>
 	function getcolproduct(id,handle){
-		
+
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
-		
+
                 $.ajax({
                     url: '/get_products.php?access_token='+access_token+'&shop='+shop+'&colid='+id,
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
-			    $('.product-grid-container').html(data);
+			    $('.product-grid-overflow-container').html(data);
                     }
                 });
             }
@@ -82,25 +78,25 @@
 
 	<script>
 	function getsharehistory(){
-		
+
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
-		
+
                 $.ajax({
                     url: '/get_sharehistory.php?access_token='+access_token+'&shop='+shop,
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
-			    $('.product-grid-container').html(data);
+			    $('.product-grid-overflow-container').html(data);
 			     $('#pagination').html('');
-			   
+
                     }
                 });
             }
 	</script>
 <script>
 	function search(p_title){
-                
+
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
                 var p_title= '"'+p_title+'"';
@@ -110,35 +106,35 @@
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
-			    $('.product-grid-container').html(data);
+			    $('.product-grid-overflow-container').html(data);
                     }
                 });
             }
-</script>	
+</script>
 
 <script>
 	function getPaging(id,limit,colid){
-		
+
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
-		
+
                 $.ajax({
                     url: '/get_products.php?access_token='+access_token+'&shop='+shop+'&page_id='+id+'&limit='+limit+'&colid='+colid,
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
-			    $('.product-grid-container').html(data);
-			   
-		
-	
-			CurrentPageid= "#pagination-list li#"+id;  
+			    $('.product-grid-overflow-container').html(data);
+
+
+
+			CurrentPageid= "#pagination-list li#"+id;
 			   // alert(CurrentPageid);
-	
+
    // $("ul li#"+CurrentPageid).addClass("paginate-link-active");
 			    $("#pagination-list>li.paginate-link-active").removeClass("paginate-link-active");
 	                    $(CurrentPageid).addClass("paginate-link-active");
-			    
- 
+
+
                     }
                 });
             }
@@ -147,26 +143,26 @@
 
 <script>
 	function getPagingALLProduct(id,limit){
-		
+
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
-		
+
                 $.ajax({
                     url: '/get_products.php?access_token='+access_token+'&shop='+shop+'&page_id='+id+'&limit='+limit,
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
-			    $('.product-grid-container').html(data);
-			   
-		
-	
-			CurrentPageid= "#pagination-list li#"+id;  
+			    $('.product-grid-overflow-container').html(data);
+
+
+
+			CurrentPageid= "#pagination-list li#"+id;
 			   // alert(CurrentPageid);
-	
+
    // $("ul li#"+CurrentPageid).addClass("paginate-link-active");
 	 $("#pagination-list>li.paginate-link-active").removeClass("paginate-link-active");
 	$(CurrentPageid).addClass("paginate-link-active");
- 
+
                     }
                 });
             }
@@ -174,32 +170,28 @@
 
 <script>
 	function getPagingSearch(id,limit,title){
-		
+
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
-		
+
                 $.ajax({
                     url: '/history.php?access_token='+access_token+'&shop='+shop+'&page_id='+id+'&limit='+limit+'&title='+title,
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
-			    $('.product-grid-container').html(data);
-			   
-		
-	
-			CurrentPageid= "#pagination-list li#"+id;  
+			    $('.product-grid-overflow-container').html(data);
+
+
+
+			CurrentPageid= "#pagination-list li#"+id;
 			   // alert(CurrentPageid);
-	
+
    // $("ul li#"+CurrentPageid).addClass("paginate-link-active");
 			    $("#pagination-list>li.paginate-link-active").removeClass("paginate-link-active");
 	                    $(CurrentPageid).addClass("paginate-link-active");
-			    
- 
+
+
                     }
                 });
             }
 </script>
-
-	
-
-
