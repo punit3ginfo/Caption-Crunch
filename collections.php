@@ -54,11 +54,11 @@
 
                             <div class="collection_title_header_container">
                                <div class="collection_title_container-active">
-                                 
+
                                     <input class="search-text-box" onKeyDown="if(event.keyCode==13) search(document.getElementById('formValueId').value);" id="formValueId" type="text" name="q_name" placeholder="Search" />
 
                                <i class="fa fa-search" onclick="search(document.getElementById('formValueId').value);"></i>
-				      
+
                                </div>
                             </div>
 
@@ -70,19 +70,20 @@
 
 
   <div class="product-grid-container scroll-grid">
-      <div  class="product-grid-overflow-container">
+      <!-- <div  class="product-grid-overflow-container"> -->
 
         <?php
 
-       // echo "Product's go here"
-	if($_REQUEST['status']=="search"){
-       require __DIR__.'/history.php';
-	}
-	      if(($_REQUEST['status']!="search")|| ($_REQUEST['status']=="")){
-		 require __DIR__.'/get_products.php';
-	}
+                       // echo "Product's go here"
+                	if($_REQUEST['status']=="search"){
+                       require __DIR__.'/history.php';
+                	}
+                	      if(($_REQUEST['status']!="search")|| ($_REQUEST['status']=="")){
+                		 require __DIR__.'/get_products.php';
+                	}
+                  
         ?>
-        
-      </div>
+
+      <!-- </div> -->
   </div>
 </div>
