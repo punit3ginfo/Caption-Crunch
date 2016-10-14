@@ -197,6 +197,8 @@ $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
                     success: function(data){
 
 			  $(_id).html('<button type="button" class=share-button def onclick=shareButton('+pid+',"'+tags_1+'");>Share</button>');
+			      $(_id).parents('.product-card-clearfix').hide();
+			    
                     }
                 });
             }
