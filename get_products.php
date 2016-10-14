@@ -72,8 +72,7 @@ try
 			}
 
 			?>
-
-
+      
 <!-- HTML Content for Product  START      -->
 
 <div class="product-card-clearfix">
@@ -154,7 +153,7 @@ try
         </div>
 
     </div>
-    
+
 <!-- Show / Hide Product Details -->
 <script>
   $('.product-image-<?php echo $p_id1; ?>').hover(function() {
