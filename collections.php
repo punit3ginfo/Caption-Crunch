@@ -41,17 +41,9 @@
                           <div class="collection_header_container">
 
                             <div class="pagination-clearfix">
-
-                                  <div class="grid-item pagination-border-top">
-                                    <div class="grid">
-                                      <div class="grid-item">
                                           <div class="text-center" id="pagination">
 
                                           </div>
-                                      </div>
-                                    </div>
-                                  </div>
-
                           	</div>
 
                             <div class="collection_title_header_container">
