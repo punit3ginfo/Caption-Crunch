@@ -261,6 +261,7 @@ $(document).ready(function(){
 												($_REQUEST['colid']==''))){?>
 <script>
 	jQuery(document).ready(function () {
+		alert(1);
 	      var access_token='<?php echo $access_token ?>';
 	      var shop='<?php echo $_REQUEST['shop'] ?>';
 	      var col_id='<?php echo $_REQUEST['colid'] ?>';
