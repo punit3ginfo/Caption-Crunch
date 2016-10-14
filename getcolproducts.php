@@ -41,8 +41,6 @@
 
 <!-- HTML Content for Product  START      -->
 
-<!-- HTML Content for Product  START      -->
-
 <div class="product-card-clearfix">
 
 	<div class="product-card-container">

@@ -56,7 +56,7 @@
                                <div class="collection_title_container-active">
                                  <form class="search-form" method="">
                                     <input class="search-text-box" id="formValueId" type="text" name="q_name" placeholder="Search" />
-                                
+
                                <i class="fa fa-search" onclick="search(document.getElementById('formValueId').value);"></i>
 				       </form>
                                </div>
@@ -71,6 +71,7 @@
 
   <div class="product-grid-container scroll-grid">
       <div  class="product-grid-overflow-container">
+
         <?php
 
        // echo "Product's go here"
@@ -81,8 +82,7 @@
 		 require __DIR__.'/get_products.php';
 	}
         ?>
-
-
+        
       </div>
   </div>
 </div>
