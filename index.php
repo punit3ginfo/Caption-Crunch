@@ -132,7 +132,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
         <div class="close-preview-container">
             <a id="close-preview-button" class='close-button'><i class="fa fa-times" aria-hidden="true"></i> Close Preview</a>
         </div>
-				<a id="help-button" class="sidebar-link" style="text-decoration: none; float: right;">
+				<a id="help-button" class="sidebar-link" style="text-decoration: none; float: right; cursor:pointer;">
                   <div class="sidebar-nav-container-header">
                       <span class="sidebar-span">
                       <i style="font-size: 20px;" class="fa fa-info" aria-hidden="true"></i><br>
