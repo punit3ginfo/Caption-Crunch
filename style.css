@@ -350,12 +350,11 @@ body {
 }
 
 .pagination-clearfix {
-	width: 30.5%;
+	  width: 30.5%;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
     position: absolute;
   	right: 20px;
 }

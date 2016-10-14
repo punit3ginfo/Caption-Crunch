@@ -37,6 +37,7 @@
 				                         History
 			                      </a>
                           </div>
+
                           <div class="collection_header_container">
 
                             <div class="pagination-clearfix">
