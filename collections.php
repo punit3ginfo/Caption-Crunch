@@ -55,7 +55,7 @@
                             <div class="collection_title_header_container">
                                <div class="collection_title_container-active">
                                  <form class="search-form" method="">
-                                    <input class="search-text-box" id="formValueId" type="text" name="q_name" placeholder="Search" />
+                                    <input class="search-text-box" onKeyDown="if(event.keyCode==13) search(document.getElementById('formValueId').value);" id="formValueId" type="text" name="q_name" placeholder="Search" />
 
                                <i class="fa fa-search" onclick="search(document.getElementById('formValueId').value);"></i>
 				       </form>
