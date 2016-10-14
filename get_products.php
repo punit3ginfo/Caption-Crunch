@@ -261,7 +261,6 @@ $(document).ready(function(){
 												($_REQUEST['colid']==''))){?>
 <script>
 	jQuery(document).ready(function () {
-		alert(1);
 	      var access_token='<?php echo $access_token ?>';
 	      var shop='<?php echo $_REQUEST['shop'] ?>';
 	      var col_id='<?php echo $_REQUEST['colid'] ?>';
@@ -270,6 +269,7 @@ $(document).ready(function(){
                     url: '/pagination_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id,
                     success: function(data){
 			$('#pagination').html(data);
+			      $('ul li:lt(2)').addClass("paginate-link-active");
 			    $('ul li:gt(3)').hide();
 	$('#showLess').hide();
 
