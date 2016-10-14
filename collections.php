@@ -74,7 +74,7 @@
 
         <?php
 
-                       // echo "Product's go here"
+                 //  Products List Here
                 	if($_REQUEST['status']=="search"){
                        require __DIR__.'/history.php';
                 	}
