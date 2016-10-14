@@ -333,9 +333,12 @@ body {
 }
 
 .collection_title_container-active {
-	width: 100%;
-	height: 100%;
-	text-align: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  width: 100%;
 }
 
 .collection_title_header_container {
