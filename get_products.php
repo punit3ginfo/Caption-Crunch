@@ -269,7 +269,7 @@ $(document).ready(function(){
                     url: '/pagination_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id,
                     success: function(data){
 			$('#pagination').html(data);
-			      $('ul li:lt(2)').addClass("paginate-link-active");
+			      $('ul li:lt(1)').addClass("paginate-link-active");
 			    $('ul li:gt(3)').hide();
 	$('#showLess').hide();
 
