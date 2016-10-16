@@ -92,48 +92,103 @@ $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
 
           <div id="<?php echo $p_id1; ?>"  class="share-button-container?>" >
 
-			<script>
-	$(document).ready(function(){
-		var OrigonalTag = '<?php echo $OrigonalTag; ?>';
+			     <script>
+                  	$(document).ready(function(){
+                  		var OrigonalTag = '<?php echo $OrigonalTag; ?>';
 
-		var pid_1 = '<?php echo $p_id1; ?>';
-		//alert(pid_1);
-		var pattern = /shared/;
-		var pattern1 = / shared/;
+                  		var pid_1 = '<?php echo $p_id1; ?>';
+                  		//alert(pid_1);
+                  		var pattern = /shared/;
+                  		var pattern1 = / shared/;
 
-		var exists = pattern.test(OrigonalTag);
-		var exists1 = pattern1.test(OrigonalTag);
-		if(exists || exists1 ){
-			var tags_1 = '"<?php echo $tags; ?>"';
-			//alert(tags_1);
+                  		var exists = pattern.test(OrigonalTag);
+                  		var exists1 = pattern1.test(OrigonalTag);
+                  		if(exists || exists1 ){
+                  			var tags_1 = '"<?php echo $tags; ?>"';
+                  			//alert(tags_1);
 
-		        var _id = '#'+ pid_1;
+                  		        var _id = '#'+ pid_1;
 
 
-		//$(_id).html('<button type=button class=share-button onclick=unshareButton('+pid_1+',"'+tags_1+'");>UnShare</button>');
-		$(_id).html("<button type='button' class='share-button'  id='reset-button' onclick='unshareButton("+pid_1+","+tags_1+");'><i class='fa fa-times' aria-hidden='true'></i> Reset</button>");
+                  		//$(_id).html('<button type=button class=share-button onclick=unshareButton('+pid_1+',"'+tags_1+'");>UnShare</button>');
+                  		$(_id).html("<button type='button' class='reset-button'  id='reset-button-<?php echo $p_id1; ?>' onclick='unshareButton("+pid_1+","+tags_1+");'><i class='fa fa-times' aria-hidden='true'></i> Reset</button>");
 
-		}else{
-			var _id = '#'+ pid_1;
-			<?php
-			if($OrigonalTag == '')
-			{
-			  $OrigonalTag="shared";
-			}
-			else{
-			   $OrigonalTag=$OrigonalTag.",shared";
-			}
-			?>
-			var tags_1 = '"<?php echo $OrigonalTag; ?>"';
+                  		}else{
+                  			var _id = '#'+ pid_1;
+                  			<?php
+                  			if($OrigonalTag == '')
+                  			{
+                  			  $OrigonalTag="shared";
+                  			}
+                  			else{
+                  			   $OrigonalTag=$OrigonalTag.",shared";
+                  			}
+                  			?>
+                  			var tags_1 = '"<?php echo $OrigonalTag; ?>"';
 
-			  //$(_id).html('<button type="button" class=share-button onclick=shareButton('+pid_1+',"'+tags_1+'");>Share</button>');
-	$(_id).html("<button type='button' class='share-button' onclick='shareButton("+pid_1+","+tags_1+");'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</button>");
-		}
-	});
-</script>
-	   </div>
+                  			  //$(_id).html('<button type="button" class=share-button onclick=shareButton('+pid_1+',"'+tags_1+'");>Share</button>');
+                  	$(_id).html("<button type='button' class='share-button' id='share-button-<?php echo $p_id1; ?>' onclick='shareButton("+pid_1+","+tags_1+");'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</button>");
+                  		}
+                  	});
+                  </script>
+
+	           </div>
+
       </div>
+
 </div>
+
+<!-- Show / Hide Product Details -->
+<script>
+$(document).ready(function() {
+      $('.product-image-<?php echo $p_id1; ?>').hover(function() {
+        // Show / Hide Product Details Opacity Container
+          $('.product-opacity-<?php echo $p_id1; ?>').toggle();
+        // Show / Hide Product Details Container
+          $('.product-details-<?php echo $p_id1; ?>').toggle();
+      });
+  });
+</script>
+
+<!-- Preview Drop Down -->
+<script>
+$(document).ready(function() {
+
+      $('#preview-button-<?php echo $p_id1; ?>').click(function() {
+              $('#preview-container').addClass("preview-container-animate");
+              $('.close-preview-container').css('display', 'flex');
+      });
+
+      $('#close-preview-button').click(function() {
+              $('#preview-container').removeClass("preview-container-animate");
+              $('.close-preview-container').css('display', 'none');
+      });
+
+  });
+</script>
+
+<!-- Shared Banner -->
+<script>
+$(document).ready(function(){
+    if ( $( "#reset-button-<?php echo $p_id1; ?>" ).length != 0) {
+      $('.ribbon-<?php echo $p_id1; ?>').css( "display", "block" );
+    } else {
+      $('.ribbon-<?php echo $p_id1; ?>').css( "display", "none" );
+    }
+});
+
+$(document).ready(function(){
+    $( "#reset-button-<?php echo $p_id1; ?>" ).click( function()  {
+      $('.ribbon-<?php echo $p_id1; ?>').css( "display", "none" );
+    });
+});
+
+$(document).ready(function(){
+    $( "#share-button-<?php echo $p_id1; ?>" ).click( function()  {
+      $('.ribbon-<?php echo $p_id1; ?>').css( "display", "block" );
+    });
+});
+</script>
 <!-- HTML Content for Product END    -->
 
 	<?php
@@ -173,7 +228,7 @@ $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
                $.ajax({
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){
-			$(_id).html('<button type=button class=share-button id=reset-button  onclick=unshareButton('+pid+',"'+tags_unshare+'");><i class="fa fa-times" aria-hidden=true></i> Reset</button>');
+			$(_id).html('<button type=button class=reset-button id=reset-button-<?php echo $p_id1; ?>  onclick=unshareButton('+pid+',"'+tags_unshare+'");><i class="fa fa-times" aria-hidden=true></i> Reset</button>');
                     }
                 });
             }
@@ -196,7 +251,7 @@ $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){
 
-			  $(_id).html('<button type="button" class=share-button def onclick=shareButton('+pid+',"'+tags_1+'");><i class="fa fa-bullhorn" aria-hidden=true></i> Share</button>');
+			  $(_id).html('<button type="button" class=share-button id=share-button-<?php echo $p_id1; ?>  def onclick=shareButton('+pid+',"'+tags_1+'");><i class="fa fa-bullhorn" aria-hidden=true></i> Share</button>');
 			      $(_id).parents('.product-card-clearfix').hide();
 
                     }
