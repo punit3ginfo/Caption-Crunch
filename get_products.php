@@ -79,7 +79,7 @@ try
 
 	<div class="product-card-container">
 
-          <div class="ribbon"><span>SHARED</span></div>
+          <div class="ribbon ribbon-<?php echo $p_id1; ?>"><span>SHARED</span></div>
 
       		<div class="product-card-image-container product-image-<?php echo $p_id1; ?>" style='background-image: url(<?php echo $src; ?>)'>
             <!-- Opacity Layer -->
@@ -188,13 +188,14 @@ $(document).ready(function() {
 <!-- Shared Banner -->
 <script>
 $(document).ready(function(){
-      if ( $( ".share-button:contains('Reset')" ) ) {
-      $('.ribbon').css( "display", "block" );
+    if ( $( "#reset-button" ) ) {
+      $('.ribbon-<?php echo $p_id1; ?>').css( "display", "block" );
     } else {
-      $('.ribbon').css( "display", "none" );
+      $('.ribbon-<?php echo $p_id1; ?>').css( "display", "none" );
     }
 });
 </script>
+
 <!-- HTML Content for Product END    -->
 
 	<?php
