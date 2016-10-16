@@ -188,7 +188,7 @@ $(document).ready(function() {
 <!-- Shared Banner -->
 <script>
 $(document).ready(function(){
-    if ( $( "#reset-button-<?php echo $p_id1; ?>" ).length == 0) ) {
+    if ( $( "#reset-button-<?php echo $p_id1; ?>" ).length != 0) ) {
       $('.ribbon-<?php echo $p_id1; ?>').css( "display", "block" );
     } else {
       $('.ribbon-<?php echo $p_id1; ?>').css( "display", "none" );
