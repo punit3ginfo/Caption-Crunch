@@ -195,17 +195,15 @@ $(document).ready(function(){
     }
 });
 
-$(document).ready(function(){
+
     $( "#reset-button-<?php echo $p_id1; ?>" ).click( function()  {
       $('.ribbon-<?php echo $p_id1; ?>').toggle();
     });
-});
 
-$(document).ready(function(){
+
     $( "#share-button-<?php echo $p_id1; ?>" ).click( function()  {
       $('.ribbon-<?php echo $p_id1; ?>').toggle();
     });
-});
 </script>
 
 <!-- HTML Content for Product END    -->
