@@ -199,7 +199,9 @@ $(document).ready(function(){
     $( "#reset-button-<?php echo $p_id1; ?>" ).click( function()  {
       $('.ribbon-<?php echo $p_id1; ?>').css( "display", "none" );
     });
+});
 
+$(document).ready(function(){
     $( "#share-button-<?php echo $p_id1; ?>" ).click( function()  {
       $('.ribbon-<?php echo $p_id1; ?>').css( "display", "block" );
     });
