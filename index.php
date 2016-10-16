@@ -52,6 +52,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 
     <div id="preview-container">
            <div class="preview-container">
+
              <div class="product-grid-container">
                <div  class="product-grid-overflow-container" style="">
                  <!-- Feed Up Next -->
@@ -84,175 +85,10 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                                </div>
                        </div>
                    </div>
-                 <!-- Feed Today -->
-                   <div class="feed-upnext-container">
-                     <div class="feed-upnext-clearfix">
-                       <span class="conditions-title" style="line-height: 30px">
-                         Upcoming Today
-                       </span>
-                     </div>
-                   </div>
-                   <!-- Feed Product Card -->
-                     <div class="feed-product-main-conatiner">
-                         <div class="feed-product-main-clearfix">
-                                 <div class="feed-product-image" style="background: #65D35B;">
-                                   <div class="feed-product-image-zoom" style="background: #65D35B;">
-
-                                   </div>
-                                 </div>
-                                 <div class="feed-product-titledate-container">
-                                     <div class="feed-product-title-container">
-                                         <span class="feed-product-title">Product Title Goes Here</span>
-                                     </div>
-                                     <div class="feed-product-date-container">
-                                         <span class="feed-product-date">Today @ 2:22PM</span>
-                                     </div>
-                                 </div>
-                                 <div class="feed-product-sharenow-container">
-                                     <a id="preview-button" class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</a>
-                                     <button type='button' class='feed-product-sharenow-button'><i class="fa fa-bullhorn" aria-hidden="true"></i> Share Now</button>
-                                 </div>
-                         </div>
-                     </div>
-                     <div class="feed-product-main-conatiner">
-                         <div class="feed-product-main-clearfix">
-                                 <div class="feed-product-image" style="background: #65D35B;">
-                                   <div class="feed-product-image-zoom" style="background: #65D35B;">
-
-                                   </div>
-                                 </div>
-                                 <div class="feed-product-titledate-container">
-                                     <div class="feed-product-title-container">
-                                         <span class="feed-product-title">Product Title Goes Here</span>
-                                     </div>
-                                     <div class="feed-product-date-container">
-                                         <span class="feed-product-date">Today @ 2:22PM</span>
-                                     </div>
-                                 </div>
-                                 <div class="feed-product-sharenow-container">
-                                     <a id="preview-button" class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</a>
-                                     <button type='button' class='feed-product-sharenow-button'><i class="fa fa-bullhorn" aria-hidden="true"></i> Share Now</button>
-                                 </div>
-                         </div>
-                     </div>
-                 <!-- Feed This Week -->
-                     <div class="feed-upnext-container">
-                       <div class="feed-upnext-clearfix">
-                         <span class="conditions-title" style="line-height: 30px">
-                           Upcoming This Week
-                         </span>
-                       </div>
-                     </div>
-                 <!-- Feed Product Card -->
-                 <div class="feed-product-main-conatiner">
-                     <div class="feed-product-main-clearfix">
-                             <div class="feed-product-image" style="background: #65D35B;">
-                               <div class="feed-product-image-zoom" style="background: #65D35B;">
-
-                               </div>
-                             </div>
-                             <div class="feed-product-titledate-container">
-                                 <div class="feed-product-title-container">
-                                     <span class="feed-product-title">Product Title Goes Here</span>
-                                 </div>
-                                 <div class="feed-product-date-container">
-                                     <span class="feed-product-date">Today @ 2:22PM</span>
-                                 </div>
-                             </div>
-                             <div class="feed-product-sharenow-container">
-                                 <a id="preview-button" class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</a>
-                                 <button type='button' class='feed-product-sharenow-button'><i class="fa fa-bullhorn" aria-hidden="true"></i> Share Now</button>
-                             </div>
-                     </div>
-                 </div>
-                 <div class="feed-product-main-conatiner">
-                     <div class="feed-product-main-clearfix">
-                             <div class="feed-product-image" style="background: #65D35B;">
-                               <div class="feed-product-image-zoom" style="background: #65D35B;">
-
-                               </div>
-                             </div>
-                             <div class="feed-product-titledate-container">
-                                 <div class="feed-product-title-container">
-                                     <span class="feed-product-title">Product Title Goes Here</span>
-                                 </div>
-                                 <div class="feed-product-date-container">
-                                     <span class="feed-product-date">Today @ 2:22PM</span>
-                                 </div>
-                             </div>
-                             <div class="feed-product-sharenow-container">
-                                 <a id="preview-button" class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</a>
-                                 <button type='button' class='feed-product-sharenow-button'><i class="fa fa-bullhorn" aria-hidden="true"></i> Share Now</button>
-                             </div>
-                     </div>
-                 </div>
-                 <div class="feed-product-main-conatiner">
-                     <div class="feed-product-main-clearfix">
-                             <div class="feed-product-image" style="background: #65D35B;">
-                               <div class="feed-product-image-zoom" style="background: #65D35B;">
-
-                               </div>
-                             </div>
-                             <div class="feed-product-titledate-container">
-                                 <div class="feed-product-title-container">
-                                     <span class="feed-product-title">Product Title Goes Here</span>
-                                 </div>
-                                 <div class="feed-product-date-container">
-                                     <span class="feed-product-date">Today @ 2:22PM</span>
-                                 </div>
-                             </div>
-                             <div class="feed-product-sharenow-container">
-                                 <a id="preview-button" class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</a>
-                                 <button type='button' class='feed-product-sharenow-button'><i class="fa fa-bullhorn" aria-hidden="true"></i> Share Now</button>
-                             </div>
-                     </div>
-                 </div>
-                 <div class="feed-product-main-conatiner">
-                     <div class="feed-product-main-clearfix">
-                             <div class="feed-product-image" style="background: #65D35B;">
-                               <div class="feed-product-image-zoom" style="background: #65D35B;">
-
-                               </div>
-                             </div>
-                             <div class="feed-product-titledate-container">
-                                 <div class="feed-product-title-container">
-                                     <span class="feed-product-title">Product Title Goes Here</span>
-                                 </div>
-                                 <div class="feed-product-date-container">
-                                     <span class="feed-product-date">Today @ 2:22PM</span>
-                                 </div>
-                             </div>
-                             <div class="feed-product-sharenow-container">
-                                 <a id="preview-button" class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</a>
-                                 <button type='button' class='feed-product-sharenow-button'><i class="fa fa-bullhorn" aria-hidden="true"></i> Share Now</button>
-                             </div>
-                     </div>
-                 </div>
-                 <div class="feed-product-main-conatiner">
-                     <div class="feed-product-main-clearfix">
-                             <div class="feed-product-image" style="background: #65D35B;">
-                               <div class="feed-product-image-zoom" style="background: #65D35B;">
-
-                               </div>
-                             </div>
-                             <div class="feed-product-titledate-container">
-                                 <div class="feed-product-title-container">
-                                     <span class="feed-product-title">Product Title Goes Here</span>
-                                 </div>
-                                 <div class="feed-product-date-container">
-                                     <span class="feed-product-date">Today @ 2:22PM</span>
-                                 </div>
-                             </div>
-                             <div class="feed-product-sharenow-container">
-                                 <a id="preview-button" class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</a>
-                                 <button type='button' class='feed-product-sharenow-button'><i class="fa fa-bullhorn" aria-hidden="true"></i> Share Now</button>
-                             </div>
-                     </div>
-                 </div>
                  <!-- END -->
                </div>
             </div>
-            
+
            </div>
     </div>
 
