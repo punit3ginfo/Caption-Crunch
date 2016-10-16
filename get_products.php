@@ -182,6 +182,16 @@ $(document).ready(function(){
 
   });
 </script>
+
+<script>
+$( "div:contains('John')" ).css( "text-decoration", "underline" );
+</script>
+
+<script>
+$(document).ready(function(){
+      $( ".share-button:contains('Reset')" ).css( "display", "block" );
+  });
+</script>
 <!-- HTML Content for Product END    -->
 
 	<?php
