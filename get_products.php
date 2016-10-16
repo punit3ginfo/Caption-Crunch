@@ -129,7 +129,7 @@ try
 
 
                 		//$(_id).html('<button type=button class=share-button onclick=unshareButton('+pid_1+',"'+tags_1+'");>UnShare</button>');
-                		$(_id).html("<button type='button' class='share-button'  id='reset-button' onclick='unshareButton("+pid_1+","+tags_1+");'><i class='fa fa-times' aria-hidden='true'></i> Reset</button>");
+                		$(_id).html("<button type='button' class='reset-button'  id='reset-button-<?php echo $p_id1; ?>' onclick='unshareButton("+pid_1+","+tags_1+");'><i class='fa fa-times' aria-hidden='true'></i> Reset</button>");
 
                 		}else{
                 			var _id = '#'+ pid_1;
@@ -188,7 +188,7 @@ $(document).ready(function() {
 <!-- Shared Banner -->
 <script>
 $(document).ready(function(){
-    if ( $( "#reset-button" ) ) {
+    if ( $( "#reset-button-<?php echo $p_id1; ?>" ) ) {
       $('.ribbon-<?php echo $p_id1; ?>').css( "display", "block" );
     } else {
       $('.ribbon-<?php echo $p_id1; ?>').css( "display", "none" );
@@ -243,7 +243,7 @@ $(document).ready(function(){
                $.ajax({
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){
-			$(_id).html('<button type=button class=share-button id=reset-button  onclick=unshareButton('+pid+',"'+tags_unshare+'");><i class="fa fa-times" aria-hidden=true></i> Reset</button>');
+			$(_id).html('<button type=button class=reset-button id=reset-button-<?php echo $p_id1; ?>  onclick=unshareButton('+pid+',"'+tags_unshare+'");><i class="fa fa-times" aria-hidden=true></i> Reset</button>');
                     }
                 });
             }

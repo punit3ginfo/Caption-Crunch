@@ -724,17 +724,30 @@ body {
 }
 
 .reset-button {
-  background: white !important;
-  color: #666 !important;
-  border: 1px solid #666 !important;
+  padding: 11px 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  font-family: HelveticaNeue-Bold;
+  font-size: 16px;
+  letter-spacing: 0.82px;
+  text-transform: uppercase;
+  width: calc(100% - 40px);
+  cursor: pointer;
+  background: white;
+  color: #666;
+  border: 1px solid #666;
 }
 
 .reset-button:hover {
-    background: #666 !important;
-    color: white !important;
+    text-decoration: none;
+    cursor: pointer;
+    background: #666;
+    color: white;
 }
 
-#reset-button {
+/*#reset-button {
   background: white !important;
   color: #666 !important;
   border: 1px solid #666 !important;
@@ -743,12 +756,12 @@ body {
 #reset-button:hover {
     background: #666 !important;
     color: white !important;
-}
+}*/
 
 /* Ribbon */
 
 .ribbon {
-  display: none; 
+  display: none;
   position: absolute;
   left: -5px; top: -5px;
   z-index: 20;
