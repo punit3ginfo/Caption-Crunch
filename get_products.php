@@ -127,7 +127,7 @@ try
 
 
                 		//$(_id).html('<button type=button class=share-button onclick=unshareButton('+pid_1+',"'+tags_1+'");>UnShare</button>');
-                		$(_id).html("<button type='button' class='share-button reset-button' onclick='unshareButton("+pid_1+","+tags_1+");'><i class='fa fa-times' aria-hidden='true'></i> Reset</button>");
+                		$(_id).html("<button type='button' class='share-button'  id='reset-button' onclick='unshareButton("+pid_1+","+tags_1+");'><i class='fa fa-times' aria-hidden='true'></i> Reset</button>");
 
                 		}else{
                 			var _id = '#'+ pid_1;
@@ -227,7 +227,7 @@ $(document).ready(function(){
                $.ajax({
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){
-			$(_id).html('<button type=button class=share-button reset-button  onclick=unshareButton('+pid+',"'+tags_unshare+'");>Reset</button>');
+			$(_id).html('<button type=button class=share-button id=reset-button  onclick=unshareButton('+pid+',"'+tags_unshare+'");>Reset</button>');
                     }
                 });
             }
