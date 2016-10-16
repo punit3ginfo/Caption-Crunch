@@ -188,22 +188,24 @@ $(document).ready(function() {
 <!-- Shared Banner -->
 <script>
 $(document).ready(function(){
+    $( "#reset-button-<?php echo $p_id1; ?>" ).click( function()  {
+      $('.ribbon-<?php echo $p_id1; ?>').css( "display", "none" );
+    });
+});
+
+$(document).ready(function(){
+    $( "#share-button-<?php echo $p_id1; ?>" ).click( function()  {
+      $('.ribbon-<?php echo $p_id1; ?>').css( "display", "block" );
+    });
+});
+
+$(document).ready(function(){
     if ( $( "#reset-button-<?php echo $p_id1; ?>" ).length != 0) {
       $('.ribbon-<?php echo $p_id1; ?>').css( "display", "block" );
     } else {
       $('.ribbon-<?php echo $p_id1; ?>').css( "display", "none" );
     }
 });
-
-
-    // $( "#reset-button-<?php echo $p_id1; ?>" ).click( function()  {
-    //   $('.ribbon-<?php echo $p_id1; ?>').toggle();
-    // });
-    //
-    //
-    // $( "#share-button-<?php echo $p_id1; ?>" ).click( function()  {
-    //   $('.ribbon-<?php echo $p_id1; ?>').toggle();
-    // });
 </script>
 
 <!-- HTML Content for Product END    -->
@@ -254,7 +256,7 @@ $(document).ready(function(){
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){
 			$(_id).html('<button type=button class=reset-button id=reset-button-<?php echo $p_id1; ?>  onclick=unshareButton('+pid+',"'+tags_unshare+'");><i class="fa fa-times" aria-hidden=true></i> Reset</button>');
-      $('.ribbon-<?php echo $p_id1; ?>').css( "display", "none" );
+
                     }
                 });
             }
@@ -278,7 +280,7 @@ $(document).ready(function(){
                     success: function(data){
 
 			  $(_id).html('<button type="button" class=share-button id=share-button-<?php echo $p_id1; ?>  def onclick=shareButton('+pid+',"'+tags_1+'");><i class="fa fa-bullhorn" aria-hidden=true></i> Share</button>');
-        $('.ribbon-<?php echo $p_id1; ?>').css( "display", "block" );
+
                     }
                 });
             }
