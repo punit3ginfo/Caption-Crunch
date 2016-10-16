@@ -145,7 +145,7 @@ try
                 			var tags_1 = '"<?php echo $OrigonalTag; ?>"';
 
                 			  //$(_id).html('<button type="button" class=share-button onclick=shareButton('+pid_1+',"'+tags_1+'");>Share</button>');
-                	$(_id).html("<button type='button' class='share-button' onclick='shareButton("+pid_1+","+tags_1+");'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</button>");
+                	$(_id).html("<button type='button' class='share-button' id='share-button-<?php echo $p_id1; ?>' onclick='shareButton("+pid_1+","+tags_1+");'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</button>");
                 		}
                 	});
                 </script>
@@ -196,11 +196,11 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $( ".reset-button" ).click( function()  {
+    $( "#reset-button-<?php echo $p_id1; ?>" ).click( function()  {
       $('.ribbon-<?php echo $p_id1; ?>').css( "display", "none" );
     });
 
-    $( ".share-button" ).click( function()  {
+    $( "#share-button-<?php echo $p_id1; ?>" ).click( function()  {
       $('.ribbon-<?php echo $p_id1; ?>').css( "display", "block" );
     });
 });
@@ -276,7 +276,7 @@ $(document).ready(function(){
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){
 
-			  $(_id).html('<button type="button" class=share-button def onclick=shareButton('+pid+',"'+tags_1+'");><i class="fa fa-bullhorn" aria-hidden=true></i> Share</button>');
+			  $(_id).html('<button type="button" class=share-button id=share-button-<?php echo $p_id1; ?>  def onclick=shareButton('+pid+',"'+tags_1+'");><i class="fa fa-bullhorn" aria-hidden=true></i> Share</button>');
                     }
                 });
             }
