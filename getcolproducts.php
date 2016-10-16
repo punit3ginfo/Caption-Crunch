@@ -93,7 +93,7 @@
 
 
 		//$(_id).html('<button type=button class=share-button onclick=unshareButton('+pid_1+',"'+tags_1+'");>UnShare</button>');
-		$(_id).html("<button type='button' class='share-button' onclick='unshareButton("+pid_1+","+tags_1+");'>UnShare</button>");
+		$(_id).html("<button type=button class=share-button id=reset-button  onclick=unshareButton('+pid+',"'+tags_unshare+'");><i class="fa fa-times" aria-hidden=true></i> Reset</button>");
 
 		}else{
 			var _id = '#'+ pid_1;
@@ -109,7 +109,7 @@
 			var tags_1 = '"<?php echo $OrigonalTag; ?>"';
 
 			  //$(_id).html('<button type="button" class=share-button onclick=shareButton('+pid_1+',"'+tags_1+'");>Share</button>');
-	$(_id).html("<button type='button' class='share-button' onclick='shareButton("+pid_1+","+tags_1+");'>Share</button>");
+	$(_id).html("<button type="button" class=share-button def onclick=shareButton('+pid+',"'+tags_1+'");><i class="fa fa-bullhorn" aria-hidden=true></i> Share</button>");
 		}
 	});
 </script>
