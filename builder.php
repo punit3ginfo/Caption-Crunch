@@ -179,7 +179,7 @@
 																										</div>
 																										<div class="feed-product-sharenow-container">
 																												<a id="preview-button" class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</a>
-																												<button type='button' class='feed-product-sharenow-button'><i class="fa fa-share" aria-hidden="true"></i> Share</button>
+																												<button type='button' class='feed-product-sharenow-button'><i class="fa fa-bullhorn" aria-hidden="true"></i> Share</button>
 																										</div>
 																						</div>
 																				</div>
@@ -196,7 +196,7 @@
 																										</div>
 																										<div class="feed-product-sharenow-container">
 																												<a id="preview-button" class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</a>
-																												<button type='button' class='feed-product-sharenow-button'><i class="fa fa-share" aria-hidden="true"></i> Share</button>
+																												<button type='button' class='feed-product-sharenow-button'><i class="fa fa-bullhorn" aria-hidden="true"></i> Share</button>
 																										</div>
 																						</div>
 																				</div>
@@ -213,7 +213,7 @@
 																										</div>
 																										<div class="feed-product-sharenow-container">
 																												<a id="preview-button" class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</a>
-																												<button type='button' class='feed-product-sharenow-button'><i class="fa fa-share" aria-hidden="true"></i> Share</button>
+																												<button type='button' class='feed-product-sharenow-button'><i class="fa fa-bullhorn" aria-hidden="true"></i> Share</button>
 																										</div>
 																						</div>
 																				</div>
@@ -230,7 +230,7 @@
 																										</div>
 																										<div class="feed-product-sharenow-container">
 																												<a id="preview-button" class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</a>
-																												<button type='button' class='feed-product-sharenow-button'><i class="fa fa-share" aria-hidden="true"></i> Share</button>
+																												<button type='button' class='feed-product-sharenow-button'><i class="fa fa-bullhorn" aria-hidden="true"></i> Share</button>
 																										</div>
 																						</div>
 																				</div>
@@ -247,7 +247,7 @@
 																										</div>
 																										<div class="feed-product-sharenow-container">
 																												<a id="preview-button" class='feed-product-preview-button'><i class="fa fa-eye" aria-hidden="true"></i> Preview</a>
-																												<button type='button' class='feed-product-sharenow-button'><i class="fa fa-share" aria-hidden="true"></i> Share</button>
+																												<button type='button' class='feed-product-sharenow-button'><i class="fa fa-bullhorn" aria-hidden="true"></i> Share</button>
 																										</div>
 																						</div>
 																				</div>
