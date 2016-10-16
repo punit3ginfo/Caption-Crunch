@@ -45,6 +45,8 @@
 
 	<div class="product-card-container">
 
+          <div class="ribbon ribbon-<?php echo $p_id1; ?>"><span>SHARED</span></div>
+
       		<div class="product-card-image-container product-image-<?php echo $p_id1; ?>" style='background-image: url(<?php echo $src; ?>)'>
             <!-- Opacity Layer -->
               <div class="product-card-image-container-background-hover product-opacity-<?php echo $p_id1; ?>"></div>
