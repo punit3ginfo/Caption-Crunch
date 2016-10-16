@@ -186,10 +186,10 @@ $(document).ready(function(){
 <!-- Shared Banner -->
 <script>
 $(document).ready(function(){
-      if ($( ".share-button:contains('Reset')" ) ) {
+      if $( ".share-button:contains('Reset')" ) {
       $('.ribbon').css( "display", "block" );
     } else {
-
+      $('.ribbon').css( "display", "none" );
     }
 });
 </script>
