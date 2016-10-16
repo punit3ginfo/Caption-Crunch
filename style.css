@@ -723,6 +723,17 @@ body {
     cursor: pointer;
 }
 
+.reset-button {
+  background: white;
+  color: #666;
+  border: 1px solid #666;
+}
+
+.reset-button:hover {
+    background: #666;
+    color: white;
+}
+
 
 /* ------------ Collections Header --------------- */
 
