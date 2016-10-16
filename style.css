@@ -724,14 +724,14 @@ body {
 }
 
 .reset-button {
-  background: white;
-  color: #666;
-  border: 1px solid #666;
+  background: white !important;
+  color: #666 !important;
+  border: 1px solid #666 !important;
 }
 
 .reset-button:hover {
-    background: #666;
-    color: white;
+    background: #666 !important;
+    color: white !important;
 }
 
 
