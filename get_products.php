@@ -158,17 +158,19 @@ try
 
 <!-- Show / Hide Product Details -->
 <script>
-  $('.product-image-<?php echo $p_id1; ?>').hover(function() {
-    // Show / Hide Product Details Opacity Container
-      $('.product-opacity-<?php echo $p_id1; ?>').toggle();
-    // Show / Hide Product Details Container
-      $('.product-details-<?php echo $p_id1; ?>').toggle();
+$(document).ready(function() {
+      $('.product-image-<?php echo $p_id1; ?>').hover(function() {
+        // Show / Hide Product Details Opacity Container
+          $('.product-opacity-<?php echo $p_id1; ?>').toggle();
+        // Show / Hide Product Details Container
+          $('.product-details-<?php echo $p_id1; ?>').toggle();
+      });
   });
 </script>
 
 <!-- Preview Drop Down -->
 <script>
-$(document).ready(function(){
+$(document).ready(function() {
 
       $('#preview-button-<?php echo $p_id1; ?>').click(function() {
               $('#preview-container').addClass("preview-container-animate");
@@ -186,7 +188,7 @@ $(document).ready(function(){
 <!-- Shared Banner -->
 <script>
 $(document).ready(function(){
-      if $( ".share-button:contains('Reset')" ) {
+      if ( $( ".share-button:contains('Reset')" ) ) {
       $('.ribbon').css( "display", "block" );
     } else {
       $('.ribbon').css( "display", "none" );
