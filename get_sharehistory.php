@@ -111,7 +111,7 @@ $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
 
 
 		//$(_id).html('<button type=button class=share-button onclick=unshareButton('+pid_1+',"'+tags_1+'");>UnShare</button>');
-		$(_id).html("<button type='button' class='share-button' onclick='unshareButton("+pid_1+","+tags_1+");'>UnShare</button>");
+		$(_id).html("<button type='button' class='share-button'  id='reset-button' onclick='unshareButton("+pid_1+","+tags_1+");'><i class='fa fa-times' aria-hidden='true'></i> Reset</button>");
 
 		}else{
 			var _id = '#'+ pid_1;
@@ -127,7 +127,7 @@ $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
 			var tags_1 = '"<?php echo $OrigonalTag; ?>"';
 
 			  //$(_id).html('<button type="button" class=share-button onclick=shareButton('+pid_1+',"'+tags_1+'");>Share</button>');
-	$(_id).html("<button type='button' class='share-button' onclick='shareButton("+pid_1+","+tags_1+");'>Share</button>");
+	$(_id).html("<button type='button' class='share-button' onclick='shareButton("+pid_1+","+tags_1+");'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</button>");
 		}
 	});
 </script>
@@ -173,7 +173,7 @@ $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
                $.ajax({
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){
-			$(_id).html('<button type=button class=share-button onclick=unshareButton('+pid+',"'+tags_unshare+'");>UnShare</button>');
+			$(_id).html('<button type=button class=share-button id=reset-button  onclick=unshareButton('+pid+',"'+tags_unshare+'");><i class="fa fa-times" aria-hidden=true></i> Reset</button>');
                     }
                 });
             }
@@ -196,9 +196,9 @@ $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
                     success: function(data){
 
-			  $(_id).html('<button type="button" class=share-button def onclick=shareButton('+pid+',"'+tags_1+'");>Share</button>');
+			  $(_id).html('<button type="button" class=share-button def onclick=shareButton('+pid+',"'+tags_1+'");><i class="fa fa-bullhorn" aria-hidden=true></i> Share</button>');
 			      $(_id).parents('.product-card-clearfix').hide();
-			    
+
                     }
                 });
             }
