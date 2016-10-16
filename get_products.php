@@ -183,6 +183,7 @@ $(document).ready(function(){
   });
 </script>
 
+<!-- Shared Banner -->
 <script>
 $(document).ready(function(){
       $( ".share-button:contains('Reset')" ).css( "display", "block" );
