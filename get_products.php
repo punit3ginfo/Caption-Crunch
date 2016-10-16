@@ -186,8 +186,12 @@ $(document).ready(function(){
 <!-- Shared Banner -->
 <script>
 $(document).ready(function(){
-      $( ".share-button:contains('Reset')" ).css( "display", "block" );
-  });
+      if ($( ".share-button:contains('Reset')" ) ) {
+      $('.ribbon').css( "display", "block" );
+    } else {
+
+    }
+});
 </script>
 <!-- HTML Content for Product END    -->
 
