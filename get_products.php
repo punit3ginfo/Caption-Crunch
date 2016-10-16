@@ -194,6 +194,16 @@ $(document).ready(function(){
       $('.ribbon-<?php echo $p_id1; ?>').css( "display", "none" );
     }
 });
+
+$(document).ready(function(){
+    $( ".reset-button" ).click( function()  {
+      $('.ribbon-<?php echo $p_id1; ?>').css( "display", "none" );
+    });
+
+    $( ".share-button" ).click( function()  {
+      $('.ribbon-<?php echo $p_id1; ?>').css( "display", "block" );
+    });
+});
 </script>
 
 <!-- HTML Content for Product END    -->
