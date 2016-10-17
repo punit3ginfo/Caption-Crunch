@@ -259,7 +259,7 @@ body {
 }
 
 .preview-clearfix {
-      width: calc(100% - 60px);
+  width: calc(100% - 60px);
   height: 100%;
   padding-left: 30px;
   padding-right: 30px;
@@ -270,6 +270,7 @@ body {
   max-width: 400px;
   height: auto;
   float: left;
+  border: 1px solid black;
 }
 
 .preview-step-cleafix {
