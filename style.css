@@ -285,6 +285,18 @@ body {
     width: calc(100% - 60px);
 }
 
+.preview-right-clearfix {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  float: right;
+  /*border: 1px solid black;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 /* ---------------- Main Container ----------------- */
 
 .main_container_clearfix {

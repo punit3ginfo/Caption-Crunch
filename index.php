@@ -43,6 +43,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
   <meta name="msapplication-TileImage" content="./Favicon.ico/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
+  <link rel="stylesheet" href="devices.min.css" type="text/css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 </head>
@@ -122,6 +123,21 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                             </div>
                         </div>
                      <!-- END -->
+                    </div>
+                    <div class="preview-right-clearfix">
+                      <div class="marvel-device iphone6 silver">
+                              <div class="top-bar"></div>
+                              <div class="sleep"></div>
+                              <div class="volume"></div>
+                              <div class="camera"></div>
+                              <div class="sensor"></div>
+                              <div class="speaker"></div>
+                              <div class="screen">
+                              <!-- Content goes here -->
+                              </div>
+                              <div class="home"></div>
+                              <div class="bottom-bar"></div>
+                       </div>
                     </div>
                </div>
 
