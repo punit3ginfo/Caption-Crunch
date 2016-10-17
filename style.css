@@ -286,14 +286,12 @@ body {
 }
 
 .preview-right-clearfix {
-  width: 100%;
-  max-width: 300px;
+  width: auto;
   height: auto;
-  float: right;
+  position: fixed;
+  right: 15px;
+  top: 15px;
   /*border: 1px solid black;*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 
