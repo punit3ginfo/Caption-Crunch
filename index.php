@@ -56,28 +56,30 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                <div  class="preview-overflow-container">
 
                  <div class="preview-clearfix">
-                      <div class="preview-left-clearfix">
-                        <?php include 'preview.php';?>
-                      </div>
+                          <div class="preview-restrictor">
+                                  <div class="preview-left-clearfix">
+                                    <?php include 'preview.php';?>
+                                  </div>
 
-                    <div class="preview-right-clearfix">
-                      <div class="marvel-device iphone6 silver">
-                              <div class="top-bar"></div>
-                              <div class="sleep"></div>
-                              <div class="volume"></div>
-                              <div class="camera"></div>
-                              <div class="sensor"></div>
-                              <div class="speaker"></div>
-                              <div class="screen">
-                              <!-- Content goes here -->
-                                  <span>
-                                      Titties
-                                  </span>
-                              </div>
-                              <div class="home"></div>
-                              <div class="bottom-bar"></div>
-                       </div>
-                    </div>
+                                  <div class="preview-right-clearfix">
+                                    <div class="marvel-device iphone6 silver">
+                                            <div class="top-bar"></div>
+                                            <div class="sleep"></div>
+                                            <div class="volume"></div>
+                                            <div class="camera"></div>
+                                            <div class="sensor"></div>
+                                            <div class="speaker"></div>
+                                            <div class="screen">
+                                            <!-- Content goes here -->
+                                                <span>
+                                                    Titties
+                                                </span>
+                                            </div>
+                                            <div class="home"></div>
+                                            <div class="bottom-bar"></div>
+                                     </div>
+                                  </div>
+                        </div>
                </div>
 
                </div>
