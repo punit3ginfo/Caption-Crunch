@@ -294,7 +294,7 @@ body {
 
 .preview-right-clearfix {
   width: auto;
-  height: calc(100% - 30px);
+  height: calc(100vh - 120px);
   position: absolute;
   right: -90px;
   top: 15px;
