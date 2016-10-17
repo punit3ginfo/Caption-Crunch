@@ -111,7 +111,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                         <div class="preview-step-cleafix">
                           <div class="feed-upnext-clearfix">
                             <span class="conditions-title" style="line-height: 30px">
-                              Step 4 - Launch
+                              Step 4 - Share
                             </span>
                           </div>
                         </div>
