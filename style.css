@@ -267,7 +267,7 @@ body {
 
 .preview-left-clearfix {
   width: 100%;
-  max-width: 400px;
+  max-width: 650px;
   height: auto;
   float: left;
   border: 1px solid black;
@@ -275,9 +275,7 @@ body {
 
 .preview-step-cleafix {
     padding: 15px 30px;
-    padding-top: 30px;
     width: 100%;
-    max-width: 800px;
 }
 
 .preview-step-container {
@@ -285,7 +283,6 @@ body {
     background-color: white;
     box-shadow: 1px -2px 17px 0px rgba(0,0,0,0.14);
     padding: 15px 30px;
-    margin-bottom: 20px;
     width: 100%;
 }
 

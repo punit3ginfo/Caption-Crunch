@@ -57,7 +57,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                  <div class="preview-clearfix">
                       <div class="preview-left-clearfix">
                           <!-- Preview Title - Step 1  -->
-                           <div class="preview-step-cleafix">
+                           <div class="preview-step-cleafix" style="padding-top: 30px;">
                              <div class="feed-upnext-clearfix">
                                <span class="conditions-title" style="line-height: 30px">
                                  Step 1 - Choose Account
