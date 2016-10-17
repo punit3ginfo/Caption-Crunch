@@ -53,6 +53,8 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
     <div id="preview-container">
              <div class="preview-container">
                <div  class="preview-overflow-container">
+
+                 <div class="preview-clearfix">
                  <!-- Feed Up Next -->
                    <div class="preview-step-cleafix">
                      <div class="feed-upnext-clearfix">
@@ -76,6 +78,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                        </div>
                    </div>
                  <!-- END -->
+               </div>
 
                </div>
          </div>
