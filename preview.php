@@ -1,6 +1,6 @@
-<form style="display: block; padding: 15px;">
+<form class="preview-form-container">
 <!-- CONDITIONS -->
-<div class="builder-main-conatiner">
+<div class="preview-form-conatiner">
   <div class="builder-main-clearfix" style="border-bottom: 0px;">
       <div class="builder-conditions-container" style="height: 30px;">
 
@@ -68,7 +68,7 @@
 
  </div>
 <!-- TEMPLATE -->
- <div class="builder-main-conatiner" style="height: auto;">
+ <div class="preview-form-conatiner" style="height: auto;">
     <div class="builder-main-clearfix" style="border-bottom: 0px;">
         <div class="builder-conditions-container" style="height: 30px;">
             <span class="conditions-title conditions-title-hover templates-show-hide-button" style="line-height: 30px; cursor: pointer;">
@@ -91,7 +91,7 @@
         </div>
     </div>
 <!-- PRODUCTS -->
- <div class="builder-main-conatiner" style="height: auto;">
+ <div class="preview-form-conatiner" style="height: auto;">
       <div class="builder-main-clearfix" style="border-bottom: 0px;">
           <div class="builder-conditions-container" style="height: 30px;">
               <span class="conditions-title conditions-title-hover products-show-hide-button" style="line-height: 30px; cursor: pointer;">
