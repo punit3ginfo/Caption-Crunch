@@ -259,13 +259,19 @@ body {
 }
 
 .preview-clearfix {
-  width: calc(100% - 60px);
   height: 100%;
   padding-left: 30px;
   padding-right: 30px;
   position: relative;
   overflow-x: hidden;
   overflow-y: scroll;
+  width: auto;
+  margin: auto;
+}
+
+.preview-restrictor {
+  height: 100%;
+  position: relative;
   width: auto;
   margin: auto;
   max-width: 850px;
