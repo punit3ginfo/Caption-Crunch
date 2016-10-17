@@ -54,7 +54,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
              <div class="preview-container">
                <div  class="preview-overflow-container">
                  <!-- Feed Up Next -->
-                   <div class="feed-upnext-container">
+                   <div class="preview-step-cleafix">
                      <div class="feed-upnext-clearfix">
                        <span class="conditions-title" style="line-height: 30px">
                          Up Next
@@ -63,7 +63,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                    </div>
 
                  <!-- Feed Product Card -->
-                   <div class="feed-product-main-conatiner">
+                   <div class="preview-step-container">
                        <div class="feed-product-main-clearfix">
                                <div class="feed-product-titledate-container">
                                    <div class="feed-product-title-container">
