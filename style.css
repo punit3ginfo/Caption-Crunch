@@ -252,7 +252,7 @@ body {
 .preview-overflow-container {
     box-sizing: border-box;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: scroll;
     position: relative;
     width: 100%;
     height: calc(100vh - 63px);
@@ -264,6 +264,8 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .preview-left-clearfix {
@@ -290,7 +292,7 @@ body {
   width: auto;
   height: auto;
   position: absolute;
-  right: 15px;
+  right: 30px;
   top: 15px;
   /*border: 1px solid black;*/
 }
