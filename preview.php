@@ -200,3 +200,32 @@
           </div>
       </div>
 </form>
+
+<!-- Show / Hide Script -->
+<script type="text/javascript">
+
+	// Condition - Show / Hide
+	$('.conditions-show-hide-button').click(function() {
+		// Show / Hide Conditions Container
+	    $('.conditions-show-hide').slideToggle("slow");
+		// Rotate Arrow 180 Degree / Click
+			$('#condition-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+	});
+
+	// Templates - Show / Hide
+	$('.templates-show-hide-button').click(function() {
+		// Show / Hide Conditions Container
+	    $('.template-show-hide').slideToggle("slow");
+		// Rotate Arrow 180 Degree / Click
+			$('#template-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+	});
+
+	// Products - Show / Hide
+	$('.products-show-hide-button').click(function() {
+		// Show / Hide Conditions Container
+	    $('.products-show-hide').slideToggle("slow");
+		// Rotate Arrow 180 Degree / Click
+			$('#products-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+	});
+
+</script>
