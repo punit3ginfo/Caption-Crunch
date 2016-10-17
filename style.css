@@ -290,11 +290,21 @@ body {
 
 .preview-right-clearfix {
   width: auto;
-  height: auto;
+  height: calc(100% - 30px);
   position: absolute;
   right: 30px;
   top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   /*border: 1px solid black;*/
+}
+
+.marvel-device.iphone6 {
+    -ms-transform: scale(0.5,0.5) !important;
+    -webkit-transform: scale(0.5,0.5) !important;
+    transform: scale(0.5,0.5) !important;
+
 }
 
 
