@@ -134,6 +134,9 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                               <div class="speaker"></div>
                               <div class="screen">
                               <!-- Content goes here -->
+                                  <span>
+                                      Titties
+                                  </span>
                               </div>
                               <div class="home"></div>
                               <div class="bottom-bar"></div>
