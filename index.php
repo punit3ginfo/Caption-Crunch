@@ -57,73 +57,44 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 
                  <div class="preview-clearfix">
                       <div class="preview-left-clearfix">
-                          <!-- Preview Title - Step 1  -->
-                           <div class="preview-step-cleafix" style="padding-top: 30px;">
-                             <div class="feed-upnext-clearfix">
-                               <span class="conditions-title" style="line-height: 30px">
-                                 Step 1 - <i class="fa fa-user" aria-hidden="true"></i> Choose Account
-                               </span>
-                             </div>
-                           </div>
-
-                         <!--  Preview Input Container - Step 1  -->
+                          <!--  Step 1  -->
                            <div class="preview-step-container">
                                <div class="feed-product-main-clearfix">
-
+                                 <span class="conditions-title" style="line-height: 30px">
+                                   Step 1 | <i class="fa fa-user" aria-hidden="true"></i> Choose Account
+                                 </span>
                                </div>
                            </div>
 
-                           <!-- Preview Title - Step 2  -->
-                            <div class="preview-step-cleafix">
-                              <div class="feed-upnext-clearfix">
-                                <span class="conditions-title" style="line-height: 30px">
-                                  Step 2 - Caption
-                                </span>
-                              </div>
-                            </div>
-
-                          <!--  Preview Input Container - Step 2  -->
+                          <!--  Step 2  -->
                             <div class="preview-step-container">
                                 <div class="feed-product-main-clearfix">
-
+                                  <span class="conditions-title" style="line-height: 30px">
+                                      Step 2 | Caption
+                                  </span>
                                 </div>
                             </div>
-                         <!-- END -->
 
-                         <!-- Preview Title - Step 3  -->
-                          <div class="preview-step-cleafix">
-                            <div class="feed-upnext-clearfix">
-                              <span class="conditions-title" style="line-height: 30px">
-                                Step 3 - <i class="fa fa-plus" aria-hidden="true"></i> Add Image
-                              </span>
-                            </div>
-                          </div>
-
-                        <!--  Preview Input Container - Step 3  -->
+                        <!--  Step 3  -->
                           <div class="preview-step-container">
                               <div class="feed-product-main-clearfix">
-
+                                <span class="conditions-title" style="line-height: 30px">
+                                  Step 3 | <i class="fa fa-plus" aria-hidden="true"></i> Add An Image
+                                </span>
                               </div>
                           </div>
-                       <!-- END -->
 
-                       <!-- Preview Title - Step 4  -->
-                        <div class="preview-step-cleafix">
-                          <div class="feed-upnext-clearfix">
-                            <span class="conditions-title" style="line-height: 30px">
-                              Step 4 - <i class="fa fa-bullhorn" aria-hidden="true"></i> Share
-                            </span>
-                          </div>
-                        </div>
-
-                      <!--  Preview Input Container - Step 4  -->
+                      <!--  Step 4  -->
                         <div class="preview-step-container">
                             <div class="feed-product-main-clearfix">
-
+                              <span class="conditions-title" style="line-height: 30px">
+                                Step 4 | <i class="fa fa-bullhorn" aria-hidden="true"></i> Share
+                              </span>
                             </div>
                         </div>
-                     <!-- END -->
+                     <!-- END --> 
                     </div>
+
                     <div class="preview-right-clearfix">
                       <div class="marvel-device iphone6 silver">
                               <div class="top-bar"></div>
