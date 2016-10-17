@@ -301,9 +301,9 @@ body {
 }
 
 .marvel-device.iphone6 {
-    -ms-transform: scale(0.5,0.5) !important;
-    -webkit-transform: scale(0.5,0.5) !important;
-    transform: scale(0.5,0.5) !important;
+    -ms-transform: scale(0.55, 0.55) !important;
+    -webkit-transform: scale(0.55, 0.55) !important;
+    transform: scale(0.55, 0.55) !important;
 
 }
 
