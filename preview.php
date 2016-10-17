@@ -192,3 +192,20 @@
 	});
 
 </script>
+
+<!-- Iphone Fixed Position Script -->
+<script>
+          // you only need this function
+          function sticky( _el ){
+          _el.parentElement.addEventListener("scroll", function(){
+          _el.style.transform = "translateY("+this.scrollTop+"px)";
+          });
+          }
+
+
+          // how to make it work:
+          // get the element you want to be sticky
+          var el = document.querySelector(".preview-right-clearfix");
+          // give the element as argument, done.
+          sticky(el);
+</script>

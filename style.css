@@ -274,7 +274,7 @@ body {
   position: relative;
   width: auto;
   margin: auto;
-  max-width: 850px;
+  max-width: 880px;
   min-width: 850px;
 }
 
@@ -283,7 +283,6 @@ body {
   max-width: 610px;
   height: auto;
   float: left;
-  /*border: 1px solid black;*/
 }
 
 .preview-step-cleafix {
