@@ -55,22 +55,74 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                <div  class="preview-overflow-container">
 
                  <div class="preview-clearfix">
-                 <!-- Feed Up Next -->
-                   <div class="preview-step-cleafix">
-                     <div class="feed-upnext-clearfix">
-                       <span class="conditions-title" style="line-height: 30px">
-                         Choose Account
-                       </span>
-                     </div>
-                   </div>
+                      <div class="preview-left-clearfix">
+                          <!-- Preview Title - Step 1  -->
+                           <div class="preview-step-cleafix">
+                             <div class="feed-upnext-clearfix">
+                               <span class="conditions-title" style="line-height: 30px">
+                                 Step 1 - Choose Account
+                               </span>
+                             </div>
+                           </div>
 
-                 <!-- Feed Product Card -->
-                   <div class="preview-step-container">
-                       <div class="feed-product-main-clearfix">
+                         <!--  Preview Input Container - Step 1  -->
+                           <div class="preview-step-container">
+                               <div class="feed-product-main-clearfix">
 
-                       </div>
-                   </div>
-                 <!-- END -->
+                               </div>
+                           </div>
+
+                           <!-- Preview Title - Step 2  -->
+                            <div class="preview-step-cleafix">
+                              <div class="feed-upnext-clearfix">
+                                <span class="conditions-title" style="line-height: 30px">
+                                  Step 2 - Caption
+                                </span>
+                              </div>
+                            </div>
+
+                          <!--  Preview Input Container - Step 2  -->
+                            <div class="preview-step-container">
+                                <div class="feed-product-main-clearfix">
+
+                                </div>
+                            </div>
+                         <!-- END -->
+
+                         <!-- Preview Title - Step 3  -->
+                          <div class="preview-step-cleafix">
+                            <div class="feed-upnext-clearfix">
+                              <span class="conditions-title" style="line-height: 30px">
+                                Step 3 - Add Image
+                              </span>
+                            </div>
+                          </div>
+
+                        <!--  Preview Input Container - Step 3  -->
+                          <div class="preview-step-container">
+                              <div class="feed-product-main-clearfix">
+
+                              </div>
+                          </div>
+                       <!-- END -->
+
+                       <!-- Preview Title - Step 4  -->
+                        <div class="preview-step-cleafix">
+                          <div class="feed-upnext-clearfix">
+                            <span class="conditions-title" style="line-height: 30px">
+                              Step 4 - Launch
+                            </span>
+                          </div>
+                        </div>
+
+                      <!--  Preview Input Container - Step 4  -->
+                        <div class="preview-step-container">
+                            <div class="feed-product-main-clearfix">
+
+                            </div>
+                        </div>
+                     <!-- END -->
+                    </div>
                </div>
 
                </div>

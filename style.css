@@ -259,10 +259,17 @@ body {
 }
 
 .preview-clearfix {
-  width: 100%;
+      width: calc(100% - 60px);
   height: 100%;
   padding-left: 30px;
-  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.preview-left-clearfix {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  float: left;
 }
 
 .preview-step-cleafix {
