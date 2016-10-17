@@ -61,7 +61,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                            <div class="preview-step-cleafix" style="padding-top: 30px;">
                              <div class="feed-upnext-clearfix">
                                <span class="conditions-title" style="line-height: 30px">
-                                 Step 1 - Choose Account
+                                 Step 1 - <i class="fa fa-user" aria-hidden="true"></i> Choose Account
                                </span>
                              </div>
                            </div>
@@ -94,7 +94,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                           <div class="preview-step-cleafix">
                             <div class="feed-upnext-clearfix">
                               <span class="conditions-title" style="line-height: 30px">
-                                Step 3 - Add Image
+                                Step 3 - <i class="fa fa-plus" aria-hidden="true"></i> Add Image
                               </span>
                             </div>
                           </div>
@@ -111,7 +111,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                         <div class="preview-step-cleafix">
                           <div class="feed-upnext-clearfix">
                             <span class="conditions-title" style="line-height: 30px">
-                              Step 4 - Share
+                              Step 4 - <i class="fa fa-bullhorn" aria-hidden="true"></i> Share
                             </span>
                           </div>
                         </div>
