@@ -282,14 +282,14 @@ body {
 
 .preview-step-cleafix {
     padding: 15px 30px;
-    width: 100%;
+    width: 510px;
 }
 
 .preview-step-container {
     background-color: white;
     box-shadow: 1px -2px 17px 0px rgba(0,0,0,0.14);
     padding: 15px 30px;
-    width: calc(100% - 60px);
+    width: 510px;
 }
 
 .preview-right-clearfix {
