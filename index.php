@@ -55,12 +55,12 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
               <div class="preview-container">
               <div  class="preview-overflow-container">
               <div class="preview-clearfix">
-                          <div class="preview-restrictor">
+                          <div class="preview-restrictor" style="z-index: 86;">
                                   <div class="preview-left-clearfix">
                                     <?php include 'preview.php';?>
                                   </div>
                           </div>
-                          <div class="preview-restrictor" style="position: fixed;">
+                          <div class="preview-restrictor" style="position: fixed; z-index: 85;">
                                   <div class="preview-right-clearfix">
                                     <div class="marvel-device iphone6 silver">
                                             <div class="top-bar"></div>
