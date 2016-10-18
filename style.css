@@ -271,11 +271,15 @@ body {
 
 .preview-restrictor {
   height: 100%;
-  position: relative;
+  position: absolute;
   width: auto;
   margin: auto;
   max-width: 880px;
   min-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 
 .preview-left-clearfix {

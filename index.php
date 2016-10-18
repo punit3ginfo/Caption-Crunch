@@ -60,7 +60,8 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                                   <div class="preview-left-clearfix">
                                     <?php include 'preview.php';?>
                                   </div>
-
+                          </div>
+                          <div class="preview-restrictor">
                                   <div class="preview-right-clearfix">
                                     <div class="marvel-device iphone6 silver">
                                             <div class="top-bar"></div>
@@ -71,20 +72,19 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                                             <div class="speaker"></div>
                                             <div class="screen">
                                             <!-- Content goes here -->
-                                                <span>
+                                                <span style="color: black;">
                                                     Titties
                                                 </span>
                                             </div>
                                             <div class="home"></div>
                                             <div class="bottom-bar"></div>
-                                     </div>
+                                  </div>
                                   </div>
                         </div>
+                        </div>
                </div>
-
                </div>
          </div>
-    </div>
 
     <div id="help-menu-container">
 
