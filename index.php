@@ -62,22 +62,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                           </div>
                           <div class="preview-restrictor" style="position: fixed; z-index: 85;">
                                   <div class="preview-right-clearfix">
-                                    <div class="marvel-device iphone6 silver">
-                                            <div class="top-bar"></div>
-                                            <div class="sleep"></div>
-                                            <div class="volume"></div>
-                                            <div class="camera"></div>
-                                            <div class="sensor"></div>
-                                            <div class="speaker"></div>
-                                            <div class="screen">
-                                            <!-- Content goes here -->
-                                                <span style="color: black;">
-                                                    Titties
-                                                </span>
-                                            </div>
-                                            <div class="home"></div>
-                                            <div class="bottom-bar"></div>
-                                  </div>
+                                          <?php include 'iphone-preview.php';?>
                                   </div>
                         </div>
                         </div>
