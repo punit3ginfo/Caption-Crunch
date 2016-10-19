@@ -76,23 +76,22 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 
     <!-- Sidebar Nav -->
 		<aside class="sidebar_nav">
-          	<a  class="sidebar-link" href="javascript:void(0)" onclick="getdashboard()">
+          	<!-- <a  class="sidebar-link" href="javascript:void(0)" onclick="getdashboard()">
             	<div class="sidebar-nav-container">
                   	<span class="sidebar-span">
                     <i style="font-size: 20px;" class="fa fa-tachometer" aria-hidden="true"></i><br>
                   	Dashboard
                   	</span>
               	</div>
-            </a>
-			<a  class="sidebar-link" href="javascript:void(0)" onclick="getbuilder()">
-
+            </a> -->
+			<!-- <a  class="sidebar-link" href="javascript:void(0)" onclick="getbuilder()">
             	<div class="sidebar-nav-container">
                   	<span class="sidebar-span">
                     <i style="font-size: 20px;" class="fa fa-pencil-square-o" aria-hidden="true"></i><br>
                   	Builder
                   	</span>
               	</div>
-            </a>
+            </a> -->
             <a class="sidebar-link" href="javascript:void(0)" onclick="getproducts()" >
             	<div class="sidebar-nav-container">
                   	<span class="sidebar-span">
