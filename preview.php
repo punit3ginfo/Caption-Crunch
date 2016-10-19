@@ -13,9 +13,7 @@
           </div>
                 <div class="account-show-hide">
                         <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
-                                <div class="builder-conditions-container" style="height: auto;">
-                                        <div class="condition-allorany-clearfix" style="height: auto;">
-                                                    <div class="condition-allorany-container-s" style="height: auto; width: 100%;">
+                                <div class="builder-conditions-container" style="height: auto; width: 100%;">
                                                       <!-- Account Bubbles -->
                                                             <div class="account-bubble-clearfix">
                                                                     <a href="/#">
@@ -57,8 +55,6 @@
                                                                     </a>
                                                             </div>
                                                       <!-- Account Bubbles -->
-                                                    </div>
-                                        </div>
                                 </div>
                         </div>
 
@@ -83,12 +79,8 @@
                 </div>
                       <div class="caption-show-hide"  style="display: none;">
                               <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
-                                      <div class="builder-conditions-container">
-                                              <div class="condition-allorany-clearfix">
-                                                          <div class="condition-allorany-container-s">
-                                                                  <textarea style="width: 100%; min-height: 100px; border-bottom: 1px solid #666;">Caption is autofilled here.</textarea>
-                                                          </div>
-                                              </div>
+                                      <div class="builder-conditions-container" style="height: auto; width: 100%;">
+                                                                  <textarea style="width: 100%; min-height: 100px; border-bottom: 0px; border-bottom: 1px solid #666;">Caption is autofilled here.</textarea>
                                       </div>
                               </div>
 
