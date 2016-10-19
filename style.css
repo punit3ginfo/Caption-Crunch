@@ -309,7 +309,7 @@ body {
   float: left;
 }
 
-.account-bubble-clearfix {
+.account-bubble {
   width: 40px;
   height: 40px;
   border-radius: 50%;
