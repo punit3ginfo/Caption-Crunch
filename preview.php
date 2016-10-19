@@ -41,7 +41,7 @@
 
                     </div>
                 </div>
-                      <div class="caption-show-hide">
+                      <div class="caption-show-hide"  style="display: none;">
                               <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
                                       <div class="builder-conditions-container">
                                               <div class="condition-allorany-clearfix">
@@ -71,7 +71,7 @@
 
                           </div>
                       </div>
-                            <div class="image-show-hide">
+                            <div class="image-show-hide" style="display: none;">
                                     <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
                                             <div class="builder-conditions-container">
                                                     <div class="condition-allorany-clearfix">
