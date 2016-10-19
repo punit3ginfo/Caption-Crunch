@@ -18,33 +18,43 @@
                                                     <div class="condition-allorany-container-s" style="height: auto; width: 100%;">
                                                       <!-- Account Bubbles -->
                                                             <div class="account-bubble-clearfix">
-                                                                    <div href="/#" class="account-bubble">
+                                                                    <a href="/#">
+                                                                              <div class="account-bubble">
 
-                                                                    </div>
+                                                                              </div>
+                                                                    </a>
                                                             </div>
 
                                                             <div class="account-bubble-clearfix">
-                                                                    <div href="/#" class="account-bubble">
+                                                                    <a href="/#">
+                                                                              <div class="account-bubble">
 
-                                                                    </div>
+                                                                              </div>
+                                                                    </a>
                                                             </div>
 
                                                             <div class="account-bubble-clearfix">
-                                                                    <div href="/#" class="account-bubble">
+                                                                    <a href="/#">
+                                                                              <div class="account-bubble">
 
-                                                                    </div>
+                                                                              </div>
+                                                                    </a>
                                                             </div>
 
                                                             <div class="account-bubble-clearfix">
-                                                                    <div href="/#" class="account-bubble">
+                                                                    <a href="/#">
+                                                                              <div class="account-bubble">
 
-                                                                    </div>
+                                                                              </div>
+                                                                    </a>
                                                             </div>
 
                                                             <div class="account-bubble-clearfix">
-                                                                    <div href="/#" class="account-bubble">
+                                                                    <a href="/#">
+                                                                              <div class="account-bubble">
 
-                                                                    </div>
+                                                                              </div>
+                                                                    </a>
                                                             </div>
                                                       <!-- Account Bubbles -->
                                                     </div>
