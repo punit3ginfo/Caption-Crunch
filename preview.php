@@ -15,7 +15,7 @@
                         <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
                                 <div class="builder-conditions-container" style="height: auto;">
                                         <div class="condition-allorany-clearfix" style="height: auto;">
-                                                    <div class="condition-allorany-container-s" style="height: auto;">
+                                                    <div class="condition-allorany-container-s" style="height: auto; width: 100%;">
                                                       <!-- Account Bubbles -->
                                                             <div class="account-bubble-clearfix">
                                                                     <a href="/#" class="account-bubble">
