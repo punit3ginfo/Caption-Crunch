@@ -274,7 +274,7 @@ function gethistory(){
 <script>
 (function($) {
     $(document).ready(function() {
-        getdashboard(); // start the loop
+        getproducts(); // start the loop
     });
 })(jQuery);
 </script>
