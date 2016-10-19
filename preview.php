@@ -22,6 +22,30 @@
 
                                                                     </a>
                                                             </div>
+
+                                                            <div class="account-bubble-clearfix">
+                                                                    <a href="/#" class="account-bubble">
+
+                                                                    </a>
+                                                            </div>
+
+                                                            <div class="account-bubble-clearfix">
+                                                                    <a href="/#" class="account-bubble">
+
+                                                                    </a>
+                                                            </div>
+
+                                                            <div class="account-bubble-clearfix">
+                                                                    <a href="/#" class="account-bubble">
+
+                                                                    </a>
+                                                            </div>
+
+                                                            <div class="account-bubble-clearfix">
+                                                                    <a href="/#" class="account-bubble">
+
+                                                                    </a>
+                                                            </div>
                                                       <!-- Account Bubbles -->
                                                     </div>
                                         </div>
