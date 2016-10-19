@@ -13,10 +13,16 @@
           </div>
                 <div class="account-show-hide">
                         <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
-                                <div class="builder-conditions-container">
-                                        <div class="condition-allorany-clearfix">
-                                                    <div class="condition-allorany-container-s">
-                                                            <span>Random Text</span>
+                                <div class="builder-conditions-container" style="height: auto;">
+                                        <div class="condition-allorany-clearfix" style="height: auto;">
+                                                    <div class="condition-allorany-container-s" style="height: auto;">
+                                                      <!-- Account Bubbles -->
+                                                            <div class="account-bubble-clearfix">
+                                                                    <a href="/#" class="account-bubble">
+
+                                                                    </a>
+                                                            </div>
+                                                      <!-- Account Bubbles -->
                                                     </div>
                                         </div>
                                 </div>
@@ -46,7 +52,7 @@
                                       <div class="builder-conditions-container">
                                               <div class="condition-allorany-clearfix">
                                                           <div class="condition-allorany-container-s">
-                                                                  <span>Random Text</span>
+                                                                  <textarea style="width: 100%; min-height: 100px; border-bottom: 1px solid #666;">Caption is autofilled here.</textarea>
                                                           </div>
                                               </div>
                                       </div>
