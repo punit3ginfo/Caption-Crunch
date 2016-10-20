@@ -118,17 +118,17 @@
                     </div>
                 </div>
                       <div class="caption-show-hide"  style="display: none;">
-                              <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
+                              <div class="builder-main-clearfix" style="border-top: 1px solid #eee; border-bottom: 0px;">
                                       <div class="builder-conditions-container" style="height: auto; width: 100%;">
                                               <span>Caption: Jackets 40% OFF Fall Sale</span>
                                       </div>
                               </div>
 
                               <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
-                                      <div class="builder-conditions-container" style="height: auto; width: 100%;">
-                                                <span>Caption for: Facebook, Google+, Pinterest</span>
+                                      <div class="builder-conditions-container" style="height: auto; width: 100%; display: block;">
+                                                <span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
                                                 <textarea class="caption-textarea">Facebook, Google+, Pinterest, etc. caption is autofilled here.</textarea>
-                                                <span>Caption for: Twitter (Character Limit: 140)</span>
+                                                <span class="cc-text-small">Caption for: Twitter (Character Limit: 140)</span>
                                                 <textarea class="caption-textarea">Twitter caption is autofilled here.</textarea>
                                       </div>
                               </div>
