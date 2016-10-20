@@ -180,7 +180,7 @@
                             </div>
                   </div>
                   <!--  Step 4  -->
-                          <div id="step4" class="preview-form-conatiner">
+                          <div id="step4" class="preview-form-conatiner" style="margin-bottom: 50vh;">
                             <div class="builder-main-clearfix" style="border-bottom: 0px;">
                                 <div class="builder-conditions-container" style="height: 30px;">
 
