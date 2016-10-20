@@ -127,9 +127,13 @@
                               <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
                                       <div class="builder-conditions-container" style="height: auto; width: 100%; display: block;">
                                                 <span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
-                                                <textarea class="caption-textarea">Facebook, Google+, Pinterest, etc. caption is autofilled here.</textarea>
+                                                <div class="caption-textarea-container">
+                                                      <textarea class="caption-textarea" style="margin-bottom: 30px;">Facebook, Google+, Pinterest, etc. caption is autofilled here.</textarea>
+                                                </div>
                                                 <span class="cc-text-small">Caption for: Twitter (Character Limit: 140)</span>
-                                                <textarea class="caption-textarea">Twitter caption is autofilled here.</textarea>
+                                                <div class="caption-textarea-container">
+                                                      <textarea class="caption-textarea">Twitter caption is autofilled here.</textarea>
+                                                </div>
                                       </div>
                               </div>
 
