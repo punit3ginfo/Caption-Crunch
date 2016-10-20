@@ -182,7 +182,7 @@
                             </div>
                   </div>
                   <!--  Step 4  -->
-                          <div class="preview-form-conatiner" style="margin-bottom: 50vh;">
+                          <div class="preview-form-conatiner">
                             <div id="step4" class="preview-anchor"></div>
                             <div class="builder-main-clearfix" style="border-bottom: 0px;">
                                 <div class="builder-conditions-container" style="height: 30px;">
@@ -202,12 +202,6 @@
                                                                               <span>Random Text</span>
                                                                       </div>
                                                           </div>
-                                                  </div>
-                                          </div>
-
-                                          <div class="builder-main-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
-                                                  <div class="builder-conditions-container" style="text-align: center;">
-                                                        <a href="#" class="add-condition-button">Share Now</a>
                                                   </div>
                                           </div>
                                   </div>
