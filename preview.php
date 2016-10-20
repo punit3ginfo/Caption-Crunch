@@ -165,6 +165,14 @@
                                                 </div>
                                     </div>
 
+                                    <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
+                                                <div class="addimage-clearfix">
+                                                        <div class="addimage-container">
+                                                                    <i class="fa fa-plus" aria-hidden="true" style="line-height: ; font-size: 48px;"></i>
+                                                        </div>
+                                                </div>
+                                    </div>
+
                                     <div class="builder-main-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
                                             <div class="builder-conditions-container" style="text-align: center;">
                                                   <a href="#Step4" class="add-condition-button">Continue to Step 4 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
