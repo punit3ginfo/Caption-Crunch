@@ -120,7 +120,13 @@
                       <div class="caption-show-hide"  style="display: none;">
                               <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
                                       <div class="builder-conditions-container" style="height: auto; width: 100%;">
-                                                <textarea class="caption-textarea">Caption is autofilled here.</textarea>
+                                              <span>Caption: Jackets 40% OFF Fall Sale</span>
+                                      </div>
+                                      <div class="builder-conditions-container" style="height: auto; width: 100%;">
+                                                <span>Caption for: Facebook, Google+, Pinterest</span>
+                                                <textarea class="caption-textarea">Facebook, Google+, Pinterest, etc. caption is autofilled here.</textarea>
+                                                <span>Caption for: Twitter (Character Limit: 140)</span>
+                                                <textarea class="caption-textarea">Twitter caption is autofilled here.</textarea>
                                       </div>
                               </div>
 
