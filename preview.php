@@ -180,11 +180,11 @@
                             </div>
                   </div>
                   <!--  Step 4  -->
-                          <div id="step4" class="preview-form-conatiner" style="margin-bottom: 50vh;">
+                          <div class="preview-form-conatiner" style="margin-bottom: 50vh;">
                             <div class="builder-main-clearfix" style="border-bottom: 0px;">
                                 <div class="builder-conditions-container" style="height: 30px;">
 
-                                      <span class="conditions-title conditions-title-hover share-show-hide-button" style="line-height: 30px; cursor: pointer;">
+                                      <span  id="step4"  class="conditions-title conditions-title-hover share-show-hide-button" style="line-height: 30px; cursor: pointer;">
                                         Step 4 | Share
                                         <i id="share-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
                                       </span>
