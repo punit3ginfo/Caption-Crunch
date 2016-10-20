@@ -166,7 +166,7 @@
 
                                                 <div class="addimage-clearfix">
                                                         <div class="addimage-container">
-                                                                    <i class="fa fa-plus" aria-hidden="true" style="line-height: 150px; font-size: 48px;"></i>
+                                                                    <i class="fa fa-plus addimage-plus-icon" aria-hidden="true"></i>
                                                         </div>
                                                 </div>
                                     </div>
