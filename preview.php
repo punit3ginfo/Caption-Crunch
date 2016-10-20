@@ -182,7 +182,7 @@
                             </div>
                   </div>
                   <!--  Step 4  -->
-                          <div class="preview-form-conatiner" style="margin-bottom: 50vh; display: none;">
+                          <div class="preview-form-conatiner" style="margin-bottom: 50vh;">
                             <div id="step4" class="preview-anchor"></div>
                             <div class="builder-main-clearfix" style="border-bottom: 0px;">
                                 <div class="builder-conditions-container" style="height: 30px;">
@@ -194,7 +194,7 @@
 
                                 </div>
                             </div>
-                                  <div class="share-show-hide">
+                                  <div class="share-show-hide" style="display: none;">
                                           <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
                                                   <div class="builder-conditions-container">
                                                           <div class="condition-allorany-clearfix">
