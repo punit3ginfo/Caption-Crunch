@@ -100,7 +100,7 @@
 
                         <div class="builder-main-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
                                 <div class="builder-conditions-container" style="text-align: center;">
-                                      <a href="#Step2" class="add-condition-button">Next Step <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                      <a href="#Step2" class="add-condition-button" style="display: inline-block; width: calc(100% - 40px);">Next Step <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                 </div>
                         </div>
                 </div>
