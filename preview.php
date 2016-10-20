@@ -166,18 +166,6 @@
 
                                                 <div class="addimage-clearfix">
                                                         <div class="addimage-container">
-
-                                                        </div>
-                                                </div>
-
-                                                <div class="addimage-clearfix">
-                                                        <div class="addimage-container">
-
-                                                        </div>
-                                                </div>
-
-                                                <div class="addimage-clearfix">
-                                                        <div class="addimage-container">
                                                                     <i class="fa fa-plus addimage-plus-icon" aria-hidden="true"></i>
                                                         </div>
                                                 </div>

@@ -357,16 +357,16 @@ body {
 }
 
 .addimage-clearfix {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   padding: 10px;
   padding-left: 0px;
   display: inline-block;
 }
 
 .addimage-container {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   border: 1px solid #666;
   position: relative;
   cursor: pointer;
