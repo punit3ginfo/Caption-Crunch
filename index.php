@@ -55,7 +55,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
               <div class="preview-container">
               <div  class="preview-overflow-container">
               <div class="preview-clearfix">
-                          <div class="preview-restrictor" style="z-index: 86;  padding-bottom: 360px;">
+                          <div class="preview-restrictor" style="z-index: 86;">
                                   <div class="preview-left-clearfix">
                                     <?php include 'preview.php';?>
                                   </div>
