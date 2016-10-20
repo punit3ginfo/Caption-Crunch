@@ -122,6 +122,9 @@
                                       <div class="builder-conditions-container" style="height: auto; width: 100%;">
                                               <span>Caption: Jackets 40% OFF Fall Sale</span>
                                       </div>
+                              </div>
+
+                              <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
                                       <div class="builder-conditions-container" style="height: auto; width: 100%;">
                                                 <span>Caption for: Facebook, Google+, Pinterest</span>
                                                 <textarea class="caption-textarea">Facebook, Google+, Pinterest, etc. caption is autofilled here.</textarea>
