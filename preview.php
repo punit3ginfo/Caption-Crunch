@@ -107,10 +107,11 @@
       </div>
       <!--  Step 2  -->
               <div class="preview-form-conatiner">
+                <div id="step2" class="preview-anchor"></div>
                 <div class="builder-main-clearfix" style="border-bottom: 0px;">
                     <div class="builder-conditions-container" style="height: 30px;">
 
-                          <span id="step2"  class="conditions-title conditions-title-hover caption-show-hide-button" style="line-height: 30px; cursor: pointer;">
+                          <span class="conditions-title conditions-title-hover caption-show-hide-button" style="line-height: 30px; cursor: pointer;">
                             Step 2 | Choose Caption
                             <i id="caption-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
                           </span>
@@ -146,10 +147,11 @@
             </div>
             <!--  Step 3  -->
                     <div class="preview-form-conatiner">
+                      <div id="step3" class="preview-anchor"></div>
                       <div class="builder-main-clearfix" style="border-bottom: 0px;">
                           <div class="builder-conditions-container" style="height: 30px;">
 
-                                <span id="step3" class="conditions-title conditions-title-hover image-show-hide-button" style="line-height: 30px; cursor: pointer;">
+                                <span class="conditions-title conditions-title-hover image-show-hide-button" style="line-height: 30px; cursor: pointer;">
                                   Step 3 | Add Image
                                   <i id="image-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
                                 </span>
@@ -181,10 +183,11 @@
                   </div>
                   <!--  Step 4  -->
                           <div class="preview-form-conatiner" style="margin-bottom: 50vh;">
+                            <div id="step4" class="preview-anchor"></div>
                             <div class="builder-main-clearfix" style="border-bottom: 0px;">
                                 <div class="builder-conditions-container" style="height: 30px;">
 
-                                      <span  id="step4"  class="conditions-title conditions-title-hover share-show-hide-button" style="line-height: 30px; cursor: pointer;">
+                                      <span  class="conditions-title conditions-title-hover share-show-hide-button" style="line-height: 30px; cursor: pointer;">
                                         Step 4 | Share
                                         <i id="share-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
                                       </span>
