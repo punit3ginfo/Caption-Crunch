@@ -413,7 +413,7 @@ body {
 
 .facebook-mobile-ios-header {
     width: 100%;
-    height: 60px;
+    height: 19px;
     background-image: url('./images/facebook-mobile-ios-header.jpg');
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -421,7 +421,7 @@ body {
 
 .facebook-mobile-header {
     width: 100%;
-    height: 60px;
+    height: 45px;
     background-image: url('./images/facebook-mobile-header.jpg');
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -429,10 +429,22 @@ body {
 
 .facebook-mobile-main-container {
   width: 100%;
-  height: 557px;
+  height: 598px;
   background: #ccced3;
   overflow-x: hidden;
   overflow-y: scroll;
+}
+
+.facebook-mobile-post-clearfix {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.facebook-mobile-post-container {
+  width: 100%;
+  background: white;
+  height: 100px;
 }
 
 .facebook-mobile-nav {

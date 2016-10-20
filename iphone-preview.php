@@ -16,6 +16,10 @@
                     <div class="facebook-mobile-header">
 
                     </div>
+
+                    <div class="facebook-mobile-post-clearfix">
+
+                    </div>
         </div>
 
         <div class="facebook-mobile-nav">
