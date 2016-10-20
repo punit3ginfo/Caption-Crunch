@@ -302,16 +302,16 @@ body {
 }
 
 .account-bubble-clearfix {
-  width: 60px;
-  height: 60px;
+  width: 94px;
+  height: 94px;
   padding: 5px;
   display: inline-block;
   float: left;
 }
 
 .account-bubble {
-  width: 60px;
-  height: 60px;
+  width: 85px;
+  height: 85px;
   border-radius: 50%;
   background-color: #65D35B;
 }
