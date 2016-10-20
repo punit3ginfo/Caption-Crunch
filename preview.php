@@ -140,7 +140,7 @@
 
                               <div class="builder-main-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
                                       <div class="builder-conditions-container" style="text-align: center;">
-                                            <a href="#step3" class="add-condition-button">Continue to Step 3 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                            <a href="#step3" class="add-condition-button" id="step3button">Continue to Step 3 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                       </div>
                               </div>
                       </div>
@@ -176,13 +176,13 @@
 
                                     <div class="builder-main-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
                                             <div class="builder-conditions-container" style="text-align: center;">
-                                                  <a href="#step4" class="add-condition-button">Continue to Step 4 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                                  <a href="#step4" class="add-condition-button" id="step4button">Continue to Step 4 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                             </div>
                                     </div>
                             </div>
                   </div>
                   <!--  Step 4  -->
-                          <div class="preview-form-conatiner" style="margin-bottom: 50vh;">
+                          <div class="preview-form-conatiner" style="margin-bottom: 50vh; display: none;">
                             <div id="step4" class="preview-anchor"></div>
                             <div class="builder-main-clearfix" style="border-bottom: 0px;">
                                 <div class="builder-conditions-container" style="height: 30px;">
@@ -280,6 +280,30 @@ $('#step2button').click(function() {
       $('.account-show-hide').slideToggle("slow");
     // Rotate Arrow 180 Degree / Click
       $('#account-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+});
+
+// Next Step 2 - 3 | Show / Hide
+$('#step3button').click(function() {
+  // Show / Hide Conditions Container
+    $('.image-show-hide').slideToggle("slow");
+  // Rotate Arrow 180 Degree / Click
+    $('#image-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+    // Show / Hide Conditions Container
+      $('.caption-show-hide').slideToggle("slow");
+    // Rotate Arrow 180 Degree / Click
+      $('#caption-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+});
+
+// Next Step 3 - 4 | Show / Hide
+$('#step4button').click(function() {
+  // Show / Hide Conditions Container
+    $('.image-show-hide').slideToggle("slow");
+  // Rotate Arrow 180 Degree / Click
+    $('#image-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+    // Show / Hide Conditions Container
+      $('.share-show-hide').slideToggle("slow");
+    // Rotate Arrow 180 Degree / Click
+      $('#share-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
 });
 
 </script>
