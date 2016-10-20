@@ -375,8 +375,8 @@ body {
 }
 
 .addimage-plus-icon {
-    line-height: 48px;
-    font-size: 48px;
+    line-height: 48px !important;
+    font-size: 48px !important;
     position: absolute;
     left: 50%;
     top: 50%;
