@@ -165,7 +165,7 @@
                                                 </div>
 
                                                 <div class="addimage-clearfix">
-                                                        <div class="addimage-container">
+                                                        <div class="addimage-container addimage-active">
                                                                     <i class="fa fa-plus addimage-plus-icon" aria-hidden="true"></i>
                                                         </div>
                                                 </div>
