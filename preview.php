@@ -189,11 +189,12 @@
 
                                       <span  class="preview-steps-text share-show-hide-button" style="line-height: 30px; cursor: pointer;">
                                         Step 4 | Share
+                                        <i id="share-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
                                       </span>
 
                                 </div>
                             </div>
-                                  <div class="share-show-hide">
+                                  <div class="share-show-hide" style="display: none;">
                                           <div class="builder-main-clearfix" style="border-top: 1px solid #eee; border-bottom: 0px; padding-bottom: 5px;">
                                                   <div class="builder-conditions-container" style="text-align: center;">
                                                         <a href="#" class="add-condition-button">Share Now</a>
@@ -228,6 +229,14 @@
       $('.image-show-hide').slideToggle("slow");
     // Rotate Arrow 180 Degree / Click
       $('#image-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+  });
+
+  // Step 4 | Share - Show / Hide
+  $('.share-show-hide-button').click(function() {
+    // Show / Hide Conditions Container
+      $('.share-show-hide').slideToggle("slow");
+    // Rotate Arrow 180 Degree / Click
+      $('#share-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
   });
 
 </script>
@@ -281,6 +290,10 @@ $('#step4button').click(function() {
     $('.image-show-hide').slideToggle("slow");
   // Rotate Arrow 180 Degree / Click
     $('#image-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+    // Show / Hide Conditions Container
+      $('.share-show-hide').slideToggle("slow");
+    // Rotate Arrow 180 Degree / Click
+      $('#share-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
 });
 
 </script>
