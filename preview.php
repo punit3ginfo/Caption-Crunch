@@ -241,5 +241,6 @@
       $('#share-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
   });
 
+$('caption-textarea').autogrow();
 
 </script>
