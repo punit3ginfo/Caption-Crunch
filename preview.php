@@ -189,7 +189,6 @@
 
                                       <span  class="preview-steps-text share-show-hide-button" style="line-height: 30px; cursor: pointer;">
                                         Step 4 | Share
-                                        <i id="share-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
                                       </span>
 
                                 </div>
@@ -229,14 +228,6 @@
       $('.image-show-hide').slideToggle("slow");
     // Rotate Arrow 180 Degree / Click
       $('#image-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-  });
-
-  // Step 4 | Share - Show / Hide
-  $('.share-show-hide-button').click(function() {
-    // Show / Hide Conditions Container
-      $('.share-show-hide').slideToggle("slow");
-    // Rotate Arrow 180 Degree / Click
-      $('#share-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
   });
 
 </script>
@@ -290,10 +281,6 @@ $('#step4button').click(function() {
     $('.image-show-hide').slideToggle("slow");
   // Rotate Arrow 180 Degree / Click
     $('#image-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-    // Show / Hide Conditions Container
-      $('.share-show-hide').slideToggle("slow");
-    // Rotate Arrow 180 Degree / Click
-      $('#share-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
 });
 
 </script>
