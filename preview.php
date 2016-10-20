@@ -163,15 +163,14 @@
 
                                                         </div>
                                                 </div>
-                                    </div>
 
-                                    <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
                                                 <div class="addimage-clearfix">
                                                         <div class="addimage-container">
-                                                                    <i class="fa fa-plus" aria-hidden="true" style="line-height: ; font-size: 48px;"></i>
+                                                                    <i class="fa fa-plus" aria-hidden="true" style="line-height: 150px; font-size: 48px;"></i>
                                                         </div>
                                                 </div>
                                     </div>
+
 
                                     <div class="builder-main-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
                                             <div class="builder-conditions-container" style="text-align: center;">
