@@ -4,7 +4,7 @@
           <div class="builder-main-clearfix" style="border-bottom: 0px;">
               <div class="builder-conditions-container" style="height: 30px;">
 
-                    <span class="conditions-title conditions-title-hover account-show-hide-button" style="line-height: 30px; cursor: pointer;">
+                    <span class="preview-steps-text account-show-hide-button" style="line-height: 30px; cursor: pointer;">
                       Step 1 | Choose Account
                       <i id="account-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
                     </span>
@@ -111,7 +111,7 @@
                 <div class="builder-main-clearfix" style="border-bottom: 0px;">
                     <div class="builder-conditions-container" style="height: 30px;">
 
-                          <span class="conditions-title conditions-title-hover caption-show-hide-button" style="line-height: 30px; cursor: pointer;">
+                          <span class="preview-steps-text caption-show-hide-button" style="line-height: 30px; cursor: pointer;">
                             Step 2 | Choose Caption
                             <i id="caption-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
                           </span>
@@ -151,7 +151,7 @@
                       <div class="builder-main-clearfix" style="border-bottom: 0px;">
                           <div class="builder-conditions-container" style="height: 30px;">
 
-                                <span class="conditions-title conditions-title-hover image-show-hide-button" style="line-height: 30px; cursor: pointer;">
+                                <span class="preview-steps-text image-show-hide-button" style="line-height: 30px; cursor: pointer;">
                                   Step 3 | Add Image
                                   <i id="image-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
                                 </span>
@@ -187,7 +187,7 @@
                             <div class="builder-main-clearfix" style="border-bottom: 0px;">
                                 <div class="builder-conditions-container" style="height: 30px;">
 
-                                      <span  class="conditions-title conditions-title-hover share-show-hide-button" style="line-height: 30px; cursor: pointer;">
+                                      <span  class="preview-steps-text share-show-hide-button" style="line-height: 30px; cursor: pointer;">
                                         Step 4 | Share
                                         <i id="share-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
                                       </span>
