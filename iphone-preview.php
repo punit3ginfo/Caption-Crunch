@@ -8,12 +8,14 @@
         <div class="screen">
         <!-- Content goes here -->
 
-        <div class="facebook-mobile-header">
+        <div class="facebook-mobile-ios-header">
 
         </div>
 
         <div class="facebook-mobile-main-container">
+                    <div class="facebook-mobile-header">
 
+                    </div>
         </div>
 
         <div class="facebook-mobile-nav">
