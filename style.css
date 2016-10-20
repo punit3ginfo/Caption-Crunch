@@ -40,6 +40,25 @@ body {
   color: #666;
 }
 
+/* ------------------- Type / Fonts --------------------*/
+
+.cc-text-small {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #666;
+}
+
+.cc-text-medium {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  color: #666;
+  font-weight: 500;
+}
+
+/* ------------------- Type / Fonts --------------------*/
+
 .back {
   max-width: 100vw;
   max-height: 100vh;
@@ -315,21 +334,6 @@ body {
   height: 85px;
   border-radius: 50%;
   background-color: #65D35B;
-}
-
-.cc-text-small {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #666;
-}
-
-.cc-text-medium {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 30px;
-  color: #666;
-  font-weight: 500;
 }
 
 .caption-textarea {
