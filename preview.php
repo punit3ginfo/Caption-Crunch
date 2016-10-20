@@ -100,7 +100,7 @@
 
                         <div class="builder-main-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
                                 <div class="builder-conditions-container" style="text-align: center;">
-                                      <a href="#step2" class="add-condition-button" style="display: inline-block; width: calc(100% - 40px);">Continue to Step 2 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                      <a href="#step2" class="add-condition-button" id="step2button" style="display: inline-block; width: calc(100% - 40px);">Continue to Step 2 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                 </div>
                         </div>
                 </div>
@@ -250,19 +250,33 @@
 
 <script>
 
+
+// Smooth Scroll Function
 $(function() {
-$('a[href*="#"]:not([href="#"])').click(function() {
-  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-    var target = $(this.hash);
-    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-    if (target.length) {
-      $('.preview-clearfix').animate({
-        scrollTop: target.offset().top
-      }, 1000);
-      return false;
-    }
-  }
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('.preview-clearfix').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
 });
+
+// Next Step 1 - 2 | Show / Hide
+$('#step2button').click(function() {
+    // Show / Hide Conditions Container
+      $('.caption-show-hide').slideToggle("slow");
+    // Rotate Arrow 180 Degree / Click
+      $('#caption-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+    // Show / Hide Conditions Container
+      $('.account-show-hide').slideToggle("slow");
+    // Rotate Arrow 180 Degree / Click
+      $('#account-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
 });
 
 </script>
