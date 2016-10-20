@@ -120,7 +120,7 @@
                       <div class="caption-show-hide"  style="display: none;">
                               <div class="builder-main-clearfix" style="border-top: 1px solid #eee; border-bottom: 0px;">
                                       <div class="builder-conditions-container" style="height: auto; width: 100%;">
-                                              <span>Caption: Jackets 40% OFF Fall Sale</span>
+                                              <span class="cc-text-medium">Caption: Jackets 40% OFF Fall Sale</span>
                                       </div>
                               </div>
 
