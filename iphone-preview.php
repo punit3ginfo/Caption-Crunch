@@ -10,11 +10,11 @@
 
         <div class="facebook-mobile-header">
 
-        </dav>
+        </div>
 
         <div class="facebook-mobile-nav">
 
-        </dav>
+        </div>
 
         <!-- Content goes here -->
         </div>

@@ -415,6 +415,7 @@ body {
     width: 100%;
     height: auto;
     background-image: url('./images/facebook-mobile-header.jpg');
+    background-size: 100% auto;
     background-repeat: no-repeat;
 }
 
@@ -422,6 +423,7 @@ body {
   width: 100%;
   height: auto;
   background-image: url('./images/facebook-mobile-nav.jpg');
+  background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
