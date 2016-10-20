@@ -316,6 +316,17 @@ body {
   background-color: #65D35B;
 }
 
+.caption-textarea {
+  width: 100%;
+  min-height: 100px;
+  max-height: 100px;
+  border: 0px;
+  border-bottom: 2px solid #65D35B;
+  letter-spacing: 0.82px;
+  line-height: 30px;
+  font-size: 16px; color: #666;
+}
+
 .preview-right-clearfix {
   width: auto;
   height: calc(100vh - 120px);
