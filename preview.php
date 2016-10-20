@@ -128,7 +128,7 @@
                                       <div class="builder-conditions-container" style="height: auto; width: 100%; display: block;">
                                                 <span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
                                                 <div class="caption-textarea-container"style="margin-bottom: 30px;">
-                                                      <textarea class="caption-textarea" style="height: 40px;">Facebook, Google+, Pinterest, etc. caption is autofilled here.</textarea>
+                                                      <textarea class="caption-textarea" style="height: 54px;">Facebook, Google+, Pinterest, etc. caption is autofilled here.</textarea>
                                                 </div>
                                                 <span class="cc-text-small">Caption for: Twitter (Character Limit: 140)</span>
                                                 <div class="caption-textarea-container">
@@ -240,7 +240,5 @@
     // Rotate Arrow 180 Degree / Click
       $('#share-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
   });
-
-$('caption-textarea').autogrow();
 
 </script>
