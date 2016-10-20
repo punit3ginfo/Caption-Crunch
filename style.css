@@ -340,7 +340,7 @@ body {
     width: calc(100% - 30px);
     padding: 15px;
     border: 2px solid #65D35B;
-    border-radius: 15px
+    border-radius: 15px;
     height: auto;
     margin-top: 15px;
 }
@@ -353,6 +353,7 @@ body {
   font-size: 16px;
   color: black;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 0px;
 }
 
 .preview-right-clearfix {
