@@ -158,13 +158,11 @@
                       </div>
                             <div class="image-show-hide" style="display: none;">
                                     <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
-                                            <div class="builder-conditions-container">
-                                                    <div class="condition-allorany-clearfix">
-                                                                <div class="condition-allorany-container-s">
-                                                                        <span>Random Text</span>
-                                                                </div>
-                                                    </div>
-                                            </div>
+                                                <div class="addimage-clearfix">
+                                                        <div class="addimage-container">
+
+                                                        </div>
+                                                </div>
                                     </div>
 
                                     <div class="builder-main-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">

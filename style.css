@@ -356,6 +356,19 @@ body {
   overflow: auto;
 }
 
+.addimage-clearfix {
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+}
+
+.addimage-container {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #666;
+  border-radius: 15px;
+}
+
 .preview-right-clearfix {
   width: auto;
   height: calc(100vh - 120px);
