@@ -120,7 +120,7 @@
                       <div class="caption-show-hide"  style="display: none;">
                               <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
                                       <div class="builder-conditions-container" style="height: auto; width: 100%;">
-                                                                  <textarea style="width: 100%; min-height: 100px; border-bottom: 0px; border-bottom: 1px solid #666;">Caption is autofilled here.</textarea>
+                                                <textarea style="width: 100%; min-height: 100px; max-height: 100px; border: 0px; border-bottom: 2px solid #65D35B;">Caption is autofilled here.</textarea>
                                       </div>
                               </div>
 
