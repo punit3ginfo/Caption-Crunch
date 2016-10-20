@@ -352,7 +352,7 @@ body {
   color: black;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 0px;
-  resize: vertical;
+  resize: none;
   overflow: auto;
 }
 
