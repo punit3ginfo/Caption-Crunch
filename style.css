@@ -342,6 +342,7 @@ body {
     border: 2px solid #65D35B;
     border-radius: 15px
     height: auto;
+    margin-top: 15px;
 }
 
 .caption-textarea {
@@ -351,7 +352,6 @@ body {
   line-height: 25px;
   font-size: 16px;
   color: black;
-  margin-top: 15px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
