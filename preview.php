@@ -193,7 +193,7 @@
 
                                 </div>
                             </div>
-                                  <div class="share-show-hide" style="display: none;">
+                                  <div class="share-show-hide">
                                           <div class="builder-main-clearfix" style="border-top: 1px solid #eee; border-bottom: 0px; padding-bottom: 5px;">
                                                   <div class="builder-conditions-container" style="text-align: center;">
                                                         <a href="#" class="add-condition-button">Share Now</a>
