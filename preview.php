@@ -1,6 +1,7 @@
 <form class="preview-form-container">
 <!--  Step 1  -->
         <div class="preview-form-conatiner">
+          <div id="step1" class="preview-anchor-3"></div>
           <div class="builder-main-clearfix" style="border-bottom: 0px;">
               <div class="builder-conditions-container" style="height: 30px;">
 
@@ -176,14 +177,14 @@
 
                                     <div class="builder-main-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
                                             <div class="builder-conditions-container" style="text-align: center;">
-                                                  <a href="#step4" class="add-condition-button" id="step4button">Continue to Step 4 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                                  <a href="#step1" class="add-condition-button" id="step4button">Continue to Step 4 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                             </div>
                                     </div>
                             </div>
                   </div>
                   <!--  Step 4  -->
                           <div class="preview-form-conatiner">
-                            <div id="step4" class="preview-anchor"></div>
+
                             <div class="builder-main-clearfix" style="border-bottom: 0px;">
                                 <div class="builder-conditions-container" style="height: 30px;">
 

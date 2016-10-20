@@ -477,6 +477,11 @@ body {
   left: 0px;
 }
 
+.preview-anchor-3 {
+  position: absolute;
+  top: -405px;
+  left: 0px;
+}
 /* ---------------- Preview Form ----------------- */
 
 .preview-form-container {
