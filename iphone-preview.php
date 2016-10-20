@@ -18,7 +18,9 @@
                     </div>
 
                     <div class="facebook-mobile-post-clearfix">
+                                <div class="facebook-mobile-post-container">
 
+                                </div>
                     </div>
         </div>
 
