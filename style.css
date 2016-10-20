@@ -360,6 +360,7 @@ body {
   width: 150px;
   height: 150px;
   padding: 10px;
+  padding-left: 0px;
   display: inline-block;
 }
 
@@ -368,6 +369,7 @@ body {
   height: 150px;
   border: 1px solid #666;
   position: relative;
+  cursor: pointer;
 }
 
 .addimage-container:hover {
@@ -375,8 +377,8 @@ body {
 }
 
 .addimage-plus-icon {
-    line-height: 48px !important;
-    font-size: 48px !important;
+    line-height: 16px !important;
+    font-size: 16px !important;
     position: absolute;
     left: 50%;
     top: 50%;
