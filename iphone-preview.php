@@ -8,12 +8,15 @@
         <div class="screen">
         <!-- Content goes here -->
 
+        <div class="facebook-mobile-header">
 
+        </dav>
+
+        <div class="facebook-mobile-nav">
+
+        </dav>
 
         <!-- Content goes here -->
-            <span style="color: black;">
-                Titties
-            </span>
         </div>
         <div class="home"></div>
         <div class="bottom-bar"></div>

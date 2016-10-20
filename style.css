@@ -409,8 +409,24 @@ body {
     -ms-transform: scale(0.55, 0.55) !important;
     -webkit-transform: scale(0.55, 0.55) !important;
     transform: scale(0.55, 0.55) !important;
-
 }
+
+.facebook-mobile-header {
+    width: 100%;
+    height: auto;
+    background-image: url('./images/facebook-mobile-header.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.facebook-mobile-nav {
+  width: 100%;
+  height: auto;
+  background-image: url('./images/facebook-mobile-nav.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
 /* ---------------- Preview Form ----------------- */
 
 .preview-form-container {
