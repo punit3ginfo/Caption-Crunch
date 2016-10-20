@@ -174,13 +174,13 @@
 
                                     <div class="builder-main-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
                                             <div class="builder-conditions-container" style="text-align: center;">
-                                                  <a href="#Step4" class="add-condition-button">Continue to Step 4 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                                  <a href="#step4" class="add-condition-button">Continue to Step 4 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                             </div>
                                     </div>
                             </div>
                   </div>
                   <!--  Step 4  -->
-                          <div class="preview-form-conatiner">
+                          <div id="step4" class="preview-form-conatiner">
                             <div class="builder-main-clearfix" style="border-bottom: 0px;">
                                 <div class="builder-conditions-container" style="height: 30px;">
 
@@ -245,5 +245,20 @@
     // Rotate Arrow 180 Degree / Click
       $('#share-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
   });
+
+  $(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
 
 </script>
