@@ -120,7 +120,7 @@ try
           });
 
           $('#close-preview-button').click(function() {
-                  $("#preview-container").empty();
+                  // $("#preview-container").empty();
                   $("#caption-textarea-large").empty();
           });
 
