@@ -570,7 +570,15 @@ body {
 .facebook-mobile-post-container {
   width: 100%;
   background: white;
-  height: 500px;
+  height: auto;
+}
+
+.facebook-mobile-action-bar {
+  width: 100%;
+  height: 50px;
+  background-image: url('./images/facebook-mobile-action-bar.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .facebook-mobile-nav {

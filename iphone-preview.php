@@ -19,7 +19,9 @@
 
                     <div class="facebook-mobile-post-clearfix">
                                 <div class="facebook-mobile-post-container">
+                                            <div class="facebook-mobile-action-bar">
 
+                                            </div>
                                 </div>
                     </div>
         </div>
