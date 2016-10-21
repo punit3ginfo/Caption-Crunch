@@ -116,8 +116,8 @@ try
 
           $("#share-button-<?php echo $p_id1; ?>").click(function(){
 
-              var CaptionLong = "<?php echo $title; ?> | $<?php echo $price; ?> Long Caption";
-              var CaptionShort = "<?php echo $title; ?> | $<?php echo $price; ?> Short Caption";
+              var CaptionLong = "<?php echo $title; ?> | $<?php echo $price; ?> | Long Caption";
+              var CaptionShort = "<?php echo $title; ?> | $<?php echo $price; ?> | Short Caption";
 
               $("#caption-textarea-large").ready(function() {
                     $("#caption-textarea-large").html(CaptionLong);
