@@ -125,7 +125,7 @@
 
                               <div class="builder-main-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
                                       <div class="builder-conditions-container" style="text-align: center;">
-                                            <a href="#step3" class="prev-step-button" id="step2prevbutton"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Back to Step 1</a>
+                                            <a href="#step1" class="prev-step-button" id="step2prevbutton"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Back to Step 1</a>
                                             <a href="#step3" class="next-step-button" id="step3button">Continue to Step 3 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                       </div>
                               </div>
@@ -162,7 +162,7 @@
 
                                     <div class="builder-main-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
                                             <div class="builder-conditions-container" style="text-align: center;">
-                                                  <a href="#step3" class="prev-step-button" id="step3prevbutton"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Back to Step 2</a>
+                                                  <a href="#step2" class="prev-step-button" id="step3prevbutton"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Back to Step 2</a>
                                                   <a href="#step1" class="next-step-button" id="step4button">Continue to Step 4 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                             </div>
                                     </div>
