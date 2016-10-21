@@ -442,16 +442,16 @@ body {
 }
 
 .addimage-clearfix {
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   padding: 10px;
   padding-left: 0px;
   display: inline-block;
 }
 
 .addimage-container {
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   border: 1px solid #666;
   position: relative;
   cursor: pointer;
