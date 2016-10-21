@@ -451,7 +451,7 @@ body {
 .addimage-container {
   width: 180px;
   height: 180px;
-  /*border: 1px solid #666;*/
+  border: 1px solid transparent;
   position: relative;
   cursor: pointer;
   background-size: 100% 100%;
