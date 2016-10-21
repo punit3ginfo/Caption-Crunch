@@ -203,17 +203,17 @@ $(document).ready(function() {
 
 <!-- Shared Banner -->
 <script>
-$(document).ready(function(){
-    $( "#reset-button-<?php echo $p_id1; ?>" ).click( function()  {
-      $('.ribbon-<?php echo $p_id1; ?>').css( "display", "none" );
-    });
-});
+// $(document).ready(function(){
+//     $( "#reset-button-<?php echo $p_id1; ?>" ).click( function()  {
+//       $('.ribbon-<?php echo $p_id1; ?>').css( "display", "none" );
+//     });
+// });
 
-$(document).ready(function(){
-    $( "#share-button-<?php echo $p_id1; ?>" ).click( function()  {
-      $('.ribbon-<?php echo $p_id1; ?>').css( "display", "block" );
-    });
-});
+// $(document).ready(function(){
+//     $( "#share-button-<?php echo $p_id1; ?>" ).click( function()  {
+//       $('.ribbon-<?php echo $p_id1; ?>').css( "display", "block" );
+//     });
+// });
 
 $(document).ready(function(){
     if ( $( "#reset-button-<?php echo $p_id1; ?>" ).length != 0) {
