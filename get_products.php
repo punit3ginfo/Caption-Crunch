@@ -116,12 +116,12 @@ try
 
           $("#share-button-<?php echo $p_id1; ?>").click(function(){
               $("#preview-container").load('preview.php');
-              $('#caption-textarea-large').val("<?php echo $title; ?> | <?php echo $price; ?>");
+              $('#caption-textarea-large').html("<?php echo $title; ?> | <?php echo $price; ?>");
           });
 
           $('#close-preview-button').click(function() {
                   $("#preview-container").empty();
-                  $('#caption-textarea-large').val("")
+                  $("#caption-textarea-large").empty();
           });
 
           </script>
