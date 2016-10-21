@@ -108,7 +108,9 @@ try
               </div>
           </div>
 
-          <div id="<?php echo $p_id1; ?>"  class="share-button-container?>" >
+          <button type='button' class='share-button' id='share-button-<?php echo $p_id1; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</button>
+
+          <!-- <div id="<?php echo $p_id1; ?>"  class="share-button-container?>" >
 
                 <script>
                 	$(document).ready(function(){
@@ -150,7 +152,7 @@ try
                 	});
                 </script>
 
-	         </div>
+	         </div> -->
 
         </div>
 
@@ -255,7 +257,7 @@ $(document).ready(function(){
  <?php
 
 	       ?>
-<script>
+<!-- <script>
 	function shareButton(pid,tags){
 
                var access_token='<?php echo $access_token ?>';
@@ -274,9 +276,9 @@ $(document).ready(function(){
                     }
                 });
             }
-</script>
+</script> -->
 
-<script>
+<!-- <script>
 
 	var tags;
 	function unshareButton(pid,tags){
@@ -298,7 +300,7 @@ $(document).ready(function(){
                     }
                 });
             }
-    </script>
+    </script> -->
 
 <?php if((isset($_REQUEST['colid']) && $_REQUEST['colid']!='' && ($_REQUEST['page_id']=='')) || (($_REQUEST['page_id']=='') &&
 												($_REQUEST['colid']==''))){?>
