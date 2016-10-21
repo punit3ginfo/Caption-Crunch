@@ -116,10 +116,10 @@ try
 
           $("#share-button-<?php echo $p_id1; ?>").click(function(){
 
-              var $CaptionLarger = "<?php echo $title; ?> | <?php echo $price; ?>";
+              var CaptionLarger = "<?php echo $title; ?> | <?php echo $price; ?>";
 
               $("#caption-textarea-large").ready(function() {
-                    $("#caption-textarea-large").html("$CaptionLarger");
+                    $("#caption-textarea-large").html(CaptionLarger);
               });
 
           });
