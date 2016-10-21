@@ -98,7 +98,7 @@
 
                           <span class="preview-steps-text caption-show-hide-button" style="line-height: 30px; cursor: pointer;">
                             Step 2 | Choose Caption
-                            <i id="caption-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
+                            <i id="caption-arrow-icon" class="fa fa-chevron-down" aria-hidden="true" style="float: right; line-height: 30px;"></i>
                           </span>
 
                     </div>
@@ -139,7 +139,7 @@
 
                                 <span class="preview-steps-text image-show-hide-button" style="line-height: 30px; cursor: pointer;">
                                   Step 3 | Add Image
-                                  <i id="image-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
+                                  <i id="image-arrow-icon" class="fa fa-chevron-down" aria-hidden="true" style="float: right; line-height: 30px;"></i>
                                 </span>
 
                           </div>
