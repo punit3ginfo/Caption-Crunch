@@ -114,7 +114,7 @@
                                       <div class="builder-conditions-container" style="height: auto; width: 100%; display: block;">
                                                 <span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
                                                 <div class="caption-textarea-container"style="margin-bottom: 30px;">
-                                                      <textarea class="caption-textarea" style="height: 54px;"><?php echo $title; ?> | <?php echo $price; ?></textarea>
+                                                      <textarea id="caption-textarea-large" class="caption-textarea" style="height: 54px;"></textarea>
                                                 </div>
                                                 <span class="cc-text-small">Caption for: Twitter (Character Limit: 140)</span>
                                                 <div class="caption-textarea-container">
