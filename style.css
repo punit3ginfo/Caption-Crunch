@@ -573,6 +573,23 @@ body {
   height: auto;
 }
 
+.facebook-mobile-caption-container {
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.facebook-mobile-caption-text {
+  font-size: 28px;
+  font-family: "Helvetica Neue";
+  color: rgb(29, 33, 41);
+  line-height: 1.321;
+  width: 100%;
+  height: auto;
+}
+
+
 .facebook-mobile-image {
   width: 100%;
   padding-top: 100%;
