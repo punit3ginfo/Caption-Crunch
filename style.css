@@ -250,12 +250,13 @@ body {
     width: 100vw;
     height: calc(100vh - 63px);
     padding-top: 63px;
-    background: #F8F9F9;
     z-index: 80;
     box-shadow: 1px -2px 17px 0px rgba(0,0,0,0.34);
     animation-direction: normal;
     transition-timing-function: ease;
     transition-duration: 0.5s;
+    background-image: url(./images/background.jpg);
+    background-size: 100%;
 }
 
 .preview-container-animate {
@@ -265,7 +266,6 @@ body {
 .preview-container {
     width: 100%;
     height: calc(100vh - 63px);
-    background: #F8F9F9;
     position: relative;
 }
 
