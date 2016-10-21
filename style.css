@@ -313,7 +313,7 @@ body {
 	  border: 1px solid #666;
   	padding: 11px auto;
   	font-family: HelveticaNeue-Bold;
-    font-size: 16px;
+    font-size: 12px;
     color: #666;
     letter-spacing: 0.82px;
     text-transform: uppercase;
@@ -330,7 +330,7 @@ body {
 
 .next-step-button {
 	border: 1px solid #65D35B;
-  	padding: 11px auto;
+  	padding: 12px;
   	font-family: HelveticaNeue-Bold;
     font-size: 16px;
     color: #65D35B;
