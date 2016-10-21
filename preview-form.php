@@ -147,7 +147,7 @@
                             <div class="image-show-hide" style="display: none;">
                                     <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
                                                 <div class="addimage-clearfix">
-                                                        <div class="addimage-container" style='background-image: url(<?php echo $src; ?>)'>
+                                                        <div id="addimage-image-one" class="addimage-container">
 
                                                         </div>
                                                 </div>

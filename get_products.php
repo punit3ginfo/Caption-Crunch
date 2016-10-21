@@ -124,12 +124,17 @@ try
                     $("#caption-textarea-small").html(CaptionShort);
               });
 
+              $("#addimage-image-one").ready(function() {
+                    $("#addimage-image-one").css('background-image', 'url(<?php echo $src; ?>)')
+              });
+
           });
 
           $('#close-preview-button').click(function() {
                   // $("#preview-container").empty();
                   $("#caption-textarea-large").empty();
                   $("#caption-textarea-small").empty();
+                  $("#addimage-image-one").empty();
           });
 
           </script>
