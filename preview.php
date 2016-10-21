@@ -141,7 +141,8 @@
 
                               <div class="builder-main-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
                                       <div class="builder-conditions-container" style="text-align: center;">
-                                            <a href="#step3" class="add-condition-button" id="step3button">Continue to Step 3 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                            <a href="#step3" class="prev-step-button" id="step2prevbutton"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Back to Step 1</a>
+                                            <a href="#step3" class="next-step-button" id="step3button">Continue to Step 3 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                       </div>
                               </div>
                       </div>

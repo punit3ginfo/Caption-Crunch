@@ -309,6 +309,43 @@ body {
   float: left;
 }
 
+.prev-step-button {
+	  border: 1px solid #666;
+  	padding: 11px auto;
+  	font-family: HelveticaNeue-Bold;
+    font-size: 16px;
+    color: #666;
+    letter-spacing: 0.82px;
+    text-transform: uppercase;
+  	background: white;
+  	width: calc(50% - 8px);
+    float: left;
+}
+
+.prev-step-button:hover {
+    color: white;
+  	background: #666;
+}
+
+
+.next-step-button {
+	border: 1px solid #65D35B;
+  	padding: 11px auto;
+  	font-family: HelveticaNeue-Bold;
+    font-size: 16px;
+    color: #65D35B;
+    letter-spacing: 0.82px;
+    text-transform: uppercase;
+  	background: white;
+    width: calc(50% - 8px);
+    float: right;
+}
+
+.next-step-button:hover {
+    color: white;
+  	background: #65D35B;
+}
+
 .preview-step-cleafix {
     padding: 15px 30px;
     width: 510px;
