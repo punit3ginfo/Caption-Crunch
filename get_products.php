@@ -116,7 +116,10 @@ try
 
           $("#share-button-<?php echo $p_id1; ?>").click(function(){
               $("#preview-container").load('preview.php');
-              $('#caption-textarea-large').html("<?php echo $title; ?> | <?php echo $price; ?>");
+
+              $("#caption-textarea-large").ready(function() {
+                    $("#caption-textarea-large").html("<?php echo $title; ?> | <?php echo $price; ?>");
+              });
           });
 
           $('#close-preview-button').click(function() {
