@@ -51,13 +51,9 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 <body>
 	<div class="back">
 
-    <div id="preview-container">
-              
-    </div>
+    <div id="preview-container"></div>
 
-    <div id="help-menu-container">
-
-    </div>
+    <div id="help-menu-container"></div>
 
     <!-- Sidebar Nav -->
 		<aside class="sidebar_nav">

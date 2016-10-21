@@ -114,7 +114,7 @@
                                       <div class="builder-conditions-container" style="height: auto; width: 100%; display: block;">
                                                 <span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
                                                 <div class="caption-textarea-container"style="margin-bottom: 30px;">
-                                                      <textarea class="caption-textarea" style="height: 54px;">Facebook, Google+, Pinterest, etc. caption is autofilled here.</textarea>
+                                                      <textarea class="caption-textarea" style="height: 54px;"><?php echo $title; ?> | <?php echo $price; ?></textarea>
                                                 </div>
                                                 <span class="cc-text-small">Caption for: Twitter (Character Limit: 140)</span>
                                                 <div class="caption-textarea-container">
@@ -147,7 +147,7 @@
                             <div class="image-show-hide" style="display: none;">
                                     <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
                                                 <div class="addimage-clearfix">
-                                                        <div class="addimage-container">
+                                                        <div class="addimage-container" style='background-image: url(<?php echo $src; ?>)'>
 
                                                         </div>
                                                 </div>

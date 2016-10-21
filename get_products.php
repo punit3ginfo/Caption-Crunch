@@ -118,6 +118,10 @@ try
               $("#preview-container").load('preview.php');
           });
 
+          $('#close-preview-button').click(function() {
+                  $("#preview-container").empty();
+          });
+
           </script>
 
           <!-- <div id="<?php echo $p_id1; ?>"  class="share-button-container?>" >
