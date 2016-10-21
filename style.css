@@ -318,7 +318,7 @@ body {
     letter-spacing: 0.82px;
     text-transform: uppercase;
   	background: white;
-  	width: calc(50% - 8px);
+  	width: calc(50% - 33px);
     float: left;
 }
 
@@ -337,7 +337,7 @@ body {
     letter-spacing: 0.82px;
     text-transform: uppercase;
   	background: white;
-    width: calc(50% - 8px);
+    width: calc(50% - 33px);
     float: right;
 }
 
