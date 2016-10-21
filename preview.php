@@ -183,7 +183,7 @@
                             </div>
                                   <div class="share-show-hide" style="display: none;">
                                           <div class="builder-main-clearfix" style="border-top: 1px solid #eee; border-bottom: 0px; padding-bottom: 5px;">
-                                                  <div class="builder-conditions-container" style="display: flex; justify-content: space-between;">
+                                                  <div class="builder-conditions-container">
                                                         <a href="#" class="preview-share-button">Share Now</a>
                                                         <a href="#" class="preview-sharelater-button">Share Later</a>
                                                         <a href="#" class="preview-schedule-button">Schedule</a>
