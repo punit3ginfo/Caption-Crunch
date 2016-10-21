@@ -19,7 +19,7 @@
                                                             <div class="account-bubble-clearfix">
                                                                     <a href="/#">
                                                                               <div class="account-bubble">
-
+                                                                                        <i class="fa fa-facebook" aria-hidden="true"></i>
                                                                               </div>
                                                                     </a>
                                                             </div>
@@ -27,7 +27,7 @@
                                                             <div class="account-bubble-clearfix">
                                                                     <a href="/#">
                                                                               <div class="account-bubble">
-
+                                                                                        <i class="fa fa-twitter" aria-hidden="true"></i>
                                                                               </div>
                                                                     </a>
                                                             </div>
@@ -35,7 +35,7 @@
                                                             <div class="account-bubble-clearfix">
                                                                     <a href="/#">
                                                                               <div class="account-bubble">
-
+                                                                                        <i class="fa fa-google-plus" aria-hidden="true"></i>
                                                                               </div>
                                                                     </a>
                                                             </div>
@@ -43,7 +43,7 @@
                                                             <div class="account-bubble-clearfix">
                                                                     <a href="/#">
                                                                               <div class="account-bubble">
-
+                                                                                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
                                                                               </div>
                                                                     </a>
                                                             </div>
@@ -51,7 +51,7 @@
                                                             <div class="account-bubble-clearfix">
                                                                     <a href="/#">
                                                                               <div class="account-bubble">
-
+                                                                                        <i class="fa fa-facebook" aria-hidden="true"></i>
                                                                               </div>
                                                                     </a>
                                                             </div>
@@ -59,7 +59,7 @@
                                                             <div class="account-bubble-clearfix">
                                                                     <a href="/#">
                                                                               <div class="account-bubble">
-
+                                                                                        <i class="fa fa-instagram" aria-hidden="true"></i>
                                                                               </div>
                                                                     </a>
                                                             </div>
@@ -67,7 +67,7 @@
                                                             <div class="account-bubble-clearfix">
                                                                     <a href="/#">
                                                                               <div class="account-bubble">
-
+                                                                                        <i class="fa fa-google-plus" aria-hidden="true"></i>
                                                                               </div>
                                                                     </a>
                                                             </div>
@@ -75,23 +75,7 @@
                                                             <div class="account-bubble-clearfix">
                                                                     <a href="/#">
                                                                               <div class="account-bubble">
-
-                                                                              </div>
-                                                                    </a>
-                                                            </div>
-
-                                                            <div class="account-bubble-clearfix">
-                                                                    <a href="/#">
-                                                                              <div class="account-bubble">
-
-                                                                              </div>
-                                                                    </a>
-                                                            </div>
-
-                                                            <div class="account-bubble-clearfix">
-                                                                    <a href="/#">
-                                                                              <div class="account-bubble">
-
+                                                                                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
                                                                               </div>
                                                                     </a>
                                                             </div>
