@@ -128,6 +128,10 @@ try
                     $("#addimage-image-one").css('background-image', 'url(<?php echo $src; ?>)')
               });
 
+              $(".facebook-mobile-image").ready(function() {
+                    $(".facebook-mobile-image").css('background-image', 'url(<?php echo $src; ?>)')
+              });
+
           });
 
           $('#close-preview-button').click(function() {
@@ -135,6 +139,7 @@ try
                   $("#caption-textarea-large").empty();
                   $("#caption-textarea-small").empty();
                   $("#addimage-image-one").empty();
+                  $(".facebook-mobile-image").css('background-image', 'none')
           });
 
           </script>
