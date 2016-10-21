@@ -185,8 +185,8 @@
                                           <div class="builder-main-clearfix" style="border-top: 1px solid #eee; border-bottom: 0px; padding-bottom: 5px;">
                                                   <div class="builder-conditions-container">
                                                         <a href="#" class="button-three-col preview-share-button"><i class="fa fa-bullhorn" aria-hidden="true"></i> Share Now</a>
-                                                        <a href="#" class="button-three-col preview-sharelater-button"><i class="fa fa-list-ol" aria-hidden="true"></i> Share Later</a>
-                                                        <a href="#" class="button-three-col preview-schedule-button"><i class="fa fa-clock-o" aria-hidden="true"></i> Schedule</a>
+                                                        <a href="#" class="button-three-col preview-sharelater-button"><i class="fa fa-clock-o" aria-hidden="true"></i> Share Later</a>
+                                                        <a href="#" class="button-three-col preview-schedule-button"><i class="fa fa-calendar" aria-hidden="true"></i> Schedule</a>
                                                   </div>
                                           </div>
                                   </div>
