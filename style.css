@@ -478,16 +478,20 @@ body {
     color: #65D35B;
 }
 
+.button-three-col {
+  padding: 11px 0px;
+  font-family: HelveticaNeue-Bold;
+  font-size: 16px;
+  letter-spacing: 0.82px;
+  text-transform: uppercase;
+  background: white;
+  width: 31%;
+  text-align: center;
+}
+
 .preview-share-button {
 	  border: 1px solid #65D35B;
-  	padding: 11px 20px;
-  	font-family: HelveticaNeue-Bold;
-    font-size: 16px;
     color: #65D35B;
-    letter-spacing: 0.82px;
-    text-transform: uppercase;
-  	background: white;
-  	width: 32%;
 }
 
 .preview-share-button:hover {
@@ -497,14 +501,7 @@ body {
 
 .preview-sharelater-button {
 	  border: 1px solid #666;
-  	padding: 11px 20px;
-  	font-family: HelveticaNeue-Bold;
-    font-size: 16px;
     color: #666;
-    letter-spacing: 0.82px;
-    text-transform: uppercase;
-  	background: white;
-  	width: 32%;
 }
 
 .preview-sharelater-button:hover {
@@ -514,14 +511,7 @@ body {
 
 .preview-schedule-button {
 	  border: 1px solid #666;
-  	padding: 11px 20px;
-  	font-family: HelveticaNeue-Bold;
-    font-size: 16px;
     color: #666;
-    letter-spacing: 0.82px;
-    text-transform: uppercase;
-  	background: white;
-  	width: 32%;
 }
 
 .preview-schedule-button:hover {
