@@ -83,6 +83,14 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                     </span>
                 </div>
             </a>
+            <a class="sidebar-link" href="javascript:void(0)" onclick="getaccount()" >
+                  <div class="sidebar-nav-container">
+                      <span class="sidebar-span">
+                          <i style="font-size: 20px;" class="fa fa-user" aria-hidden="true"></i><br>
+                          Account
+                      </span>
+                  </div>
+            </a>
             <!-- <a class="sidebar-link" href="/?page=autopilot">
             	<div class="sidebar-nav-container">
 					<span class="sidebar-span">
@@ -101,16 +109,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                     </span>
                 </div>
               </a>-->
-			  <a class="sidebar-link" href="javascript:void(0)" onclick="getaccount()" >
-
-                  <div class="sidebar-nav-container">
-                      <span class="sidebar-span">
-                      <i style="font-size: 20px;" class="fa fa-user" aria-hidden="true"></i><br>
-                      Account
-                      </span>
-                  </div>
-              </a>
-            </div> -->
+            </div>
         </aside>
     <!-- /.Sidebar Nav -->
 
