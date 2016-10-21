@@ -37,7 +37,6 @@
 
 <script>
 
-
 // Smooth Scroll Function
 $(function() {
       $('a[href*="#"]:not([href="#"])').click(function() {
@@ -53,6 +52,10 @@ $(function() {
         }
       });
 });
+
+</script>
+
+<script>
 
 // Next Step 1 - 2 | Show / Hide
 $('#step2button').click(function() {
@@ -88,6 +91,34 @@ $('#step4button').click(function() {
       $('.share-show-hide').slideToggle("slow");
     // Rotate Arrow 180 Degree / Click
       $('#share-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+});
+
+</script>
+
+<script>
+
+// Prev Step 1 - 2 | Show / Hide
+$('#step2prevbutton').click(function() {
+    // Show / Hide Conditions Container
+      $('.caption-show-hide').slideToggle("slow");
+    // Rotate Arrow 180 Degree / Click
+      $('#caption-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+    // Show / Hide Conditions Container
+      $('.account-show-hide').slideToggle("slow");
+    // Rotate Arrow 180 Degree / Click
+      $('#account-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+});
+
+// Prev Step 2 - 1 | Show / Hide
+$('#step3prevbutton').click(function() {
+  // Show / Hide Conditions Container
+    $('.image-show-hide').slideToggle("slow");
+  // Rotate Arrow 180 Degree / Click
+    $('#image-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+    // Show / Hide Conditions Container
+      $('.caption-show-hide').slideToggle("slow");
+    // Rotate Arrow 180 Degree / Click
+      $('#caption-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
 });
 
 </script>
