@@ -144,15 +144,13 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 
     <!-- /.Page Container -->
     <div class="main_container_clearfix">
-      <div id="main-padded-container" class="">
-    	<div class="main_container">
-			  <div class="content-container">
+             <div id="main-padded-container" class="">
+                      	<div class="main_container">
+                            			  <div class="content-container">
 
-
-
-        </div>
-    	</div>
-    </div>
+                                    </div>
+                      	</div>
+              </div>
     </div>
 
     <!-- /.Page Container -->
