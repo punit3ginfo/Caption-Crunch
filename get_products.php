@@ -110,6 +110,16 @@ try
 
           <button type='button' class='share-button' id='share-button-<?php echo $p_id1; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</button>
 
+
+          <!-- Preview -->
+          <script>
+
+          $("#share-button-<?php echo $p_id1; ?>").click(function(){
+              $("#preview-container").load('preview.php');
+          });
+
+          </script>
+
           <!-- <div id="<?php echo $p_id1; ?>"  class="share-button-container?>" >
 
                 <script>
@@ -364,12 +374,3 @@ if(size_li<=4)
 	});
 </script>
 <?php } ?>
-
-<!-- Preview -->
-<script>
-
-$("#share-button-<?php echo $p_id1; ?>").click(function(){
-    $("#preview-container").load('./preview.php');
-});
-
-</script>
