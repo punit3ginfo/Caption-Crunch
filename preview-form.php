@@ -118,7 +118,7 @@
                                                 </div>
                                                 <span class="cc-text-small">Caption for: Twitter (Character Limit: 140)</span>
                                                 <div class="caption-textarea-container">
-                                                      <textarea class="caption-textarea">Twitter caption is autofilled here.</textarea>
+                                                      <textarea id="caption-textarea-small" class="caption-textarea"></textarea>
                                                 </div>
                                       </div>
                               </div>
