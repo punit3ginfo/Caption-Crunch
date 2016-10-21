@@ -364,3 +364,12 @@ if(size_li<=4)
 	});
 </script>
 <?php } ?>
+
+<!-- Preview -->
+<script>
+
+$("#share-button-<?php echo $p_id1; ?>").click(function(){
+    $("#preview-container").load('./preview.php');
+});
+
+</script>
