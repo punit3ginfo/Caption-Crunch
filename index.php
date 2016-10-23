@@ -78,8 +78,8 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
             <a class="sidebar-link" href="javascript:void(0)" onclick="getproducts()" >
             	<div class="sidebar-nav-container">
                   	<span class="sidebar-span">
-                      <i style="font-size: 20px;" class="fa fa-sitemap" aria-hidden="true"></i><br>
-                      Collections
+                      <i style="font-size: 20px;" class="fa fa-bullhorn" aria-hidden="true"></i><br>
+                      Share
                     </span>
                 </div>
             </a>
