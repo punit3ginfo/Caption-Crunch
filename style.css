@@ -274,6 +274,14 @@ body {
     margin-bottom: 15px;
 }
 
+.help-header-link:hover {
+	color:#FFFFFF;
+}
+
+.help-header-link {
+	color:#666;
+}
+
 .help-link {
   color: #65D35B;
 }
