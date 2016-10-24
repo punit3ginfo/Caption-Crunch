@@ -84,7 +84,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                   	<span class="sidebar-span">
                     <!-- <img class="sidebar-hammer-img" src="./images/sidebar-Hammer.png"/><br> -->
                     <div class="sidebar-hammer-img"></div>
-                  	Builder
+                  	Captions
                   	</span>
               	</div>
             </a>
