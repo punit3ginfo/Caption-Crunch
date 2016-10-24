@@ -67,14 +67,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                   	</span>
               	</div>
             </a> -->
-			      <a  class="sidebar-link" href="javascript:void(0)" onclick="getbuilder()">
-            	<div class="sidebar-nav-container">
-                  	<span class="sidebar-span">
-                    <img class="sidebar-hammer-img" src="./images/Caption-Crunch-Hammer.jpg"/><br>
-                  	Builder
-                  	</span>
-              	</div>
-            </a>
+
             <a class="sidebar-link" href="javascript:void(0)" onclick="getproducts()" >
             	<div class="sidebar-nav-container">
                   	<span class="sidebar-span">
@@ -83,6 +76,16 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                     </span>
                 </div>
             </a>
+            
+			      <a  class="sidebar-link" href="javascript:void(0)" onclick="getbuilder()">
+            	<div class="sidebar-nav-container">
+                  	<span class="sidebar-span">
+                    <img class="sidebar-hammer-img" src="./images/Caption-Crunch-Hammer.jpg"/><br>
+                  	Builder
+                  	</span>
+              	</div>
+            </a>
+
             <a class="sidebar-link" href="javascript:void(0)" onclick="getaccount()" >
                   <div class="sidebar-nav-container">
                       <span class="sidebar-span">
