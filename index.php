@@ -80,7 +80,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 			      <a  class="sidebar-link" href="javascript:void(0)" onclick="getbuilder()">
             	<div class="sidebar-nav-container">
                   	<span class="sidebar-span">
-                    <img class="sidebar-hammer-img" src="./images/Caption-Crunch-Hammer.svg"/><br>
+                    <img class="sidebar-hammer-img" src="./images/sidebar-Hammer.svg"/><br>
                   	Builder
                   	</span>
               	</div>
