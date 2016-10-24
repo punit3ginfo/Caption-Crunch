@@ -225,6 +225,11 @@ $(document).ready(function() {
               $('.close-preview-container').css('display', 'none');
       });
 
+      $('.sidebar-link').click(function() {
+              $('#preview-container').removeClass("preview-container-animate");
+              $('.close-preview-container').css('display', 'none');
+      });
+
   });
 
   $(document).ready(function() {
