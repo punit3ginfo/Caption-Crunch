@@ -620,7 +620,7 @@ body {
 
 .facebook-mobile-post-header-container {
   width: calc(100% - 30px);
-  height: auto;
+  height: 45px;
   padding-bottom: 15px;
   padding-top: 15px;
   text-align: left;
@@ -679,6 +679,7 @@ body {
   float: left;
   height: 45px;
   width: auto;
+  padding-left: 15px;
 }
 
 .facebook-mobile-page-name {
