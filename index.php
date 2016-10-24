@@ -120,7 +120,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
     <!-- /.Sidebar Nav -->
 
     <!-- Navigation -->
-    <header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <header class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="top: 0px;">
 
             <!-- Brand and toggle get grouped for better mobile display -->
 
