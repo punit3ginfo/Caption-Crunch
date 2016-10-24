@@ -124,7 +124,7 @@ try
                     $("#caption-textarea-small").html(CaptionShort);
               });
 
-              $(".share-button").click(function() {
+              $(".facebook-mobile-caption-text").click(function() {
                     $(".facebook-mobile-caption-text").html(CaptionLong);
               });
 
