@@ -254,6 +254,21 @@ body {
     right: 0px !important;
 }
 
+.help-clearfix {
+    padding: 15px;
+    padding-bottom: 0px;
+    width: 100%;
+    height: calc(100% - 15px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.help-container {
+    width: calc(100% - 30px);
+    padding: 15px;
+    height: auto;
+}
+
 /* ---------------- Preview Dropdown ----------------- */
 
 #preview-container {
