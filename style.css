@@ -630,7 +630,7 @@ body {
 
 .facebook-mobile-post-header-container {
   width: calc(100% - 30px);
-  height: 45px;
+  height: 40px;
   padding-bottom: 15px;
   padding-top: 15px;
   text-align: left;
@@ -677,8 +677,8 @@ body {
 }
 
 .facebook-mobile-profile {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   background: black;
   display: inline-block;
   float: left;
@@ -687,14 +687,14 @@ body {
 .facebook-mobile-page-name-container {
   display: inline-block;
   float: left;
-  height: 45px;
+  height: 40px;
   width: auto;
   padding-left: 15px;
 }
 
 .facebook-mobile-page-name {
   width: auto;
-  line-height: 45px;
+  line-height: 40px;
   color: black;
   font-size: 18px;
   font-family: "Helvetica Neue";
