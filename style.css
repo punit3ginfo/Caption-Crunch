@@ -1023,11 +1023,10 @@ body {
   height: calc(100vh - 173px);
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 15px;
 }
 
 .product-card-clearfix {
-  	margin-bottom: 15px;
+  	margin-top: 15px;
   	display: inline-block;
   	width: calc(33% - 1px);
   	padding-left: 5px;
