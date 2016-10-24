@@ -231,16 +231,6 @@ $(document).ready(function() {
 
   $(document).ready(function() {
 
-        // $('#share-button-<?php echo $p_id1; ?>').click(function() {
-        //         $('#preview-container').addClass("preview-container-animate");
-        //         $('.close-preview-container').css('display', 'flex');
-        // });
-        //
-        // $('#close-preview-button').click(function() {
-        //         $('#preview-container').removeClass("preview-container-animate");
-        //         $('.close-preview-container').css('display', 'none');
-        // });
-
         $('.sidebar-link').click(function() {
                $('#preview-container').removeClass("preview-container-animate");
                $('.close-preview-container').css('display', 'none');
