@@ -174,7 +174,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
-			    $('.main_container').html(data);
+			    $('.content-container').html(data);
                     }
                 });
             }
@@ -188,7 +188,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
-			    $('.main_container').html(data);
+			    $('.content-container').html(data);
                     }
                 });
             }
@@ -202,7 +202,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
-			    $('.main_container').html(data);
+			    $('.content-container').html(data);
                     }
                 });
             }
@@ -216,7 +216,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
-			    $('.main_container').html(data);
+			    $('.content-container').html(data);
                     }
                 });
             }
@@ -230,7 +230,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
-			    $('.main_container').html(data);
+			    $('.content-container').html(data);
                     }
                 });
             }
@@ -246,7 +246,7 @@ function gethistory(){
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
-			    $('.main_container').html(data);
+			    $('.content-container').html(data);
                     }
                 });
             }
