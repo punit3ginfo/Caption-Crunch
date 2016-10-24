@@ -253,7 +253,7 @@ function gethistory(){
 </script>
 
 
-
+<!-- Initial Page On Load -->
 <script>
 (function($) {
     $(document).ready(function() {
@@ -274,18 +274,5 @@ $(document).ready(function(){
   });
 });
 </script>
-
-<!-- Help Slide -->
-
-<!--
-<script>
-var hammerHover = "./images/sidebar-hover-Hammer.png";
-
-$(document).ready(function(){
-  $('.sidebar-hammer').hover(function() {
-      $(".sidebar-hammer-img").attr("src", hammerHover);
-  });
-});
-</script> -->
 
 </body>
