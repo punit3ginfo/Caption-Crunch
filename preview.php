@@ -12,18 +12,12 @@
 
                                             <div class="chat_selector_overflow_container">
                                                   <div class="chat_selector_overflow" style="height: calc(100% - 160px);">
+                                                      <!-- Preview Section -->
 
-                                                      <!-- Collection Card -->
 
 
-                                                          <?php
 
-                                        // echo "Product's go here"
-                                        require __DIR__.'/get_collectionlist.php'; //GET PRODUCTS
-                                          ?>
-
-                                                       <!-- Collection Card -->
-
+                                                       <!-- Preview Section -->
                                                   </div>
                                         </div>
                                  </div>
@@ -66,19 +60,12 @@
 
                         <div class="product-grid-container scroll-grid">
                             <div  class="product-grid-overflow-container">
+                              <!-- Form Section -->
 
-                              <?php
 
-                                       //  Products List Here
-                                        if($_REQUEST['status']=="search"){
-                                             require __DIR__.'/history.php';
-                                        }
-                                              if(($_REQUEST['status']!="search")|| ($_REQUEST['status']=="")){
-                                           require __DIR__.'/get_products.php';
-                                        }
 
-                              ?>
 
+                               <!-- Form Section -->
                             </div>
                         </div>
                       </div>
