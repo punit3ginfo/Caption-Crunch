@@ -256,6 +256,7 @@ body {
 
 .help-clearfix {
     padding: 15px;
+    padding-top: 80px;
     padding-bottom: 0px;
     width: calc(100% - 30px);
     height: calc(100% - 15px);
