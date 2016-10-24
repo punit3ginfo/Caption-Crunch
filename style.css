@@ -672,6 +672,17 @@ body {
   background: black;
 }
 
+.facebook-mobile-page-name {
+  width: auto;
+  line-height: 45px;
+  color: black;
+  font-size: 18px;
+  font-family: "Helvetica Neue";
+  color: rgb(20, 24, 35);
+  font-weight: bold;
+
+}
+
 .preview-anchor {
   position: absolute;
   top: -405px;
@@ -680,7 +691,7 @@ body {
 
 .preview-anchor-2 {
   position: absolute;
-      top: -315px;
+  top: -315px;
   left: 0px;
 }
 
