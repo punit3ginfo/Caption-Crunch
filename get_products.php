@@ -128,8 +128,10 @@ try
                     $("#addimage-image-one").css('background-image', 'url(<?php echo $src; ?>)')
               });
 
+              var facebookImageSource = "<?php echo $src; ?>";
+
               $(".facebook-mobile-image").ready(function() {
-                    $(".facebook-mobile-image").css('background-image', 'url(<?php echo $src; ?>)')
+                    $(".facebook-mobile-image").attr("src", src1);
               });
 
           });
