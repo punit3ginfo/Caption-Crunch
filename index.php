@@ -51,9 +51,9 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 <body>
 	<div class="back">
 
-    <!-- <div id="preview-container">
+    <div id="preview-container">
               <?php include 'preview.php';?>
-    </div> -->
+    </div>
 
     <div id="help-menu-container">
               <?php include 'help.php';?>
