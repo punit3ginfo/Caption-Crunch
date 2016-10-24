@@ -1,32 +1,31 @@
 
-
-<div class="chat_container" style="overflow: hidden;">
-  <div class="collection-sidebar-container">
-              		<div class="collection_title_selector">
-                            <div class="collection_title_container">
-                                <span class="collection_title_text">Collections</span>
-                            </div>
-                    </div>
-
-                	<div class="chat_selector_overflow_container">
-                        <div class="chat_selector_overflow" style="height: calc(100% - 160px);">
-
-                          	<!-- Collection Card -->
-
-
-                                <?php
-
-       				// echo "Product's go here"
-       				require __DIR__.'/get_collectionlist.php'; //GET PRODUCTS
-        				?>
-
-                             <!-- Collection Card -->
-
+<div class="collections-animation-container">
+    <div class="chat_container" style="overflow: hidden;">
+          <div class="collection-sidebar-container">
+                  		<div class="collection_title_selector">
+                                <div class="collection_title_container">
+                                    <span class="collection_title_text">Collections</span>
+                                </div>
                         </div>
-                  	</div>
-              </div>
+
+                    	<div class="chat_selector_overflow_container">
+                            <div class="chat_selector_overflow" style="height: calc(100% - 160px);">
+
+                              	<!-- Collection Card -->
 
 
+                                    <?php
+
+           				// echo "Product's go here"
+           				require __DIR__.'/get_collectionlist.php'; //GET PRODUCTS
+            				?>
+
+                                 <!-- Collection Card -->
+
+                            </div>
+                	</div>
+           </div>
+    </div>
 
 
 						<div class="collection_title_header">
@@ -80,4 +79,8 @@
 
       </div>
   </div>
+</div>
+
+<div id="preview-container">
+          <?php include 'preview.php';?>
 </div>
