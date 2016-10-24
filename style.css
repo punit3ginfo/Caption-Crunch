@@ -276,6 +276,10 @@ body {
     border: 1px solid #65D35B;
 }
 
+.help-link {
+  color: #65D35B;
+}
+
 /* ---------------- Preview Dropdown ----------------- */
 
 #preview-container {
