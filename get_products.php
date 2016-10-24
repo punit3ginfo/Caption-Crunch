@@ -246,6 +246,16 @@ $(document).ready(function() {
                $('.close-preview-container').css('display', 'none');
         });
 
+        $('#share-button-<?php echo $p_id1; ?>').click(function() {
+                $('.collections-animation-container').addClass("collections-animation");
+                $('.close-preview-container').css('display', 'flex');
+        });
+
+        $('#close-preview-button').click(function() {
+                $('.collections-animation-container').removeClass("collections-animation");
+                $('.close-preview-container').css('display', 'none');
+        });
+
     });
 </script>
 

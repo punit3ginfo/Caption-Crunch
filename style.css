@@ -292,6 +292,13 @@ body {
   position: absolute;
   left: 0px;
   top: 0px;
+  animation-direction: normal;
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
+}
+
+.collections-animation {
+    top: 100vh;
 }
 
 #preview-container {
