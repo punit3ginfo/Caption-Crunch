@@ -124,7 +124,7 @@ try
                     $("#caption-textarea-small").html(CaptionShort);
               });
 
-              $(".facebook-mobile-caption-text").ready(function() {
+              $(".share-button").click(function() {
                     $(".facebook-mobile-caption-text").html(CaptionLong);
               });
 
@@ -145,7 +145,8 @@ try
                   $("#caption-textarea-large").empty();
                   $("#caption-textarea-small").empty();
                   $("#addimage-image-one").empty();
-                  $(".facebook-mobile-image").css('background-image', 'none')
+                  $(".facebook-mobile-caption-text").empty();
+                  $(".facebook-mobile-image").attr("src", "");
           });
 
           </script>
