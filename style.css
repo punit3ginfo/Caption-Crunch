@@ -229,7 +229,7 @@ body {
   background-size: 100%;
 }
 
-.sidebar-hammer-img:hover {
+.sidebar-hammer:hover .sidebar-hammer-img {
   background-image: url("./images/sidebar-hover-Hammer.png");
 }
 
