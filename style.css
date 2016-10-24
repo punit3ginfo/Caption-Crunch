@@ -221,6 +221,13 @@ body {
 	color:#666;
 }
 
+.sidebar-hammer-img {
+  height: 20px;
+  width: auto;
+  margin: auto;
+
+}
+
 /* ------------- Help Menu -------------- */
 
 #help-menu-container {
