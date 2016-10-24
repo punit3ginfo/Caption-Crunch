@@ -278,11 +278,11 @@ $(document).ready(function(){
 
 
 <script>
-var $hammer-hover = "./images/sidebar-hover-Hammer.png";
+var hammer-hover = "./images/sidebar-hover-Hammer.png";
 
 $(document).ready(function(){
   $('.sidebar-hammer').hover(function() {
-      $(".sidebar-hammer-img").attr('src', $hammer-hover);
+      $(".sidebar-hammer-img").attr('src', hammer-hover);
   });
 });
 </script>
