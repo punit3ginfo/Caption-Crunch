@@ -24,7 +24,7 @@
                                             </div>
                                             <div class="facebook-mobile-caption-container">
                                                         <span class="facebook-mobile-caption-text">
-                                                                    Yo Yo
+                                                                  
                                                         </span>
                                             </div>
                                             <img class="facebook-mobile-image">
