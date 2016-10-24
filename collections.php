@@ -25,7 +25,7 @@
                             </div>
                 	</div>
            </div>
-    </div>
+  
 
 
 						<div class="collection_title_header">
