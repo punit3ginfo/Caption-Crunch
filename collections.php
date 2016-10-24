@@ -25,7 +25,7 @@
                             </div>
                 	</div>
            </div>
-  
+
 
 
 						<div class="collection_title_header">
@@ -79,8 +79,4 @@
 
       </div>
   </div>
-</div>
-
-<div id="preview-container">
-          <?php include 'preview.php';?>
 </div>
