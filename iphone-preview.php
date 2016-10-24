@@ -21,7 +21,7 @@
                                 <div class="facebook-mobile-post-container">
                                             <div class="facebook-mobile-post-header-container">
                                                       <div class="facebook-mobile-profile"></div>
-                                                      <span class="facebook-mobile-page-name"></span>
+                                                      <span class="facebook-mobile-page-name">Facebook Page Name</span>
                                             </div>
                                             <div class="facebook-mobile-caption-container">
                                                         <span class="facebook-mobile-caption-text">
