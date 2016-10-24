@@ -226,13 +226,6 @@ body {
   width: 20px;
   margin: auto;
   background-image: url("./images/sidebar-Hammer.png");
-}
-
-.sidebar-hammer-img {
-  height: 20px;
-  width: 20px;
-  margin: auto;
-  background-image: url("./images/sidebar-Hammer.png");\
   background-size: 100%;
 }
 
