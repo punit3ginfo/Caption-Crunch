@@ -77,7 +77,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                 </div>
             </a>
 
-			      <a  class="sidebar-link" href="javascript:void(0)" onclick="getbuilder()">
+			      <a  class="sidebar-link sidebar-hammer" href="javascript:void(0)" onclick="getbuilder()">
             	<div class="sidebar-nav-container">
                   	<span class="sidebar-span">
                     <img class="sidebar-hammer-img" src="./images/sidebar-Hammer.png"/><br>
@@ -274,6 +274,17 @@ $(document).ready(function(){
 });
 </script>
 
+<!-- Help Slide -->
 
+
+<script>
+var $hammer-hover = "./images/sidebar-hover-Hammer.png";
+
+$(document).ready(function(){
+  $('.sidebar-hammer').hover(function() {
+      $(".sidebar-hammer-img").attr('src', $hammer-hover);
+  });
+});
+</script>
 
 </body>
