@@ -621,8 +621,8 @@ body {
 .facebook-mobile-post-header-container {
   width: calc(100% - 30px);
   height: auto;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-top: 15px;
   text-align: left;
   padding-left: 15px;
   padding-right: 15px;
@@ -638,7 +638,7 @@ body {
 }
 
 .facebook-mobile-caption-text {
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Helvetica Neue";
   color: rgb(29, 33, 41);
   line-height: 1.321;
@@ -667,9 +667,9 @@ body {
 }
 
 .facebook-mobile-profile {
-  width: 20px;
-  height: 20px;
-  background: red;  
+  width: 45px;
+  height: 45px;
+  background: black;
 }
 
 .preview-anchor {
