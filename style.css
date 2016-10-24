@@ -573,6 +573,16 @@ body {
   height: auto;
 }
 
+.facebook-mobile-post-header-container {
+  width: calc(100% - 30px);
+  height: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .facebook-mobile-caption-container {
   width: calc(100% - 30px);
   height: auto;

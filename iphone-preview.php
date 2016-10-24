@@ -19,6 +19,9 @@
 
                     <div class="facebook-mobile-post-clearfix">
                                 <div class="facebook-mobile-post-container">
+                                            <div class="facebook-mobile-post-header-container">
+                                                        
+                                            </div>
                                             <div class="facebook-mobile-caption-container">
                                                         <span class="facebook-mobile-caption-text">
                                                                     Yo Yo
