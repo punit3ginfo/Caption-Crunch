@@ -774,8 +774,7 @@ body {
 	 width:  calc(100% - 30%);
 	 height: 100%;
 	 min-height: 200px;
-	 background-color: white;
-	 background: white;
+	 /*background-color: white;*/
 	 box-shadow: 1px 4px 13px 0px rgba(0,0,0,0.06);
    position: relative;
    padding-left: 30%;
@@ -1011,7 +1010,7 @@ body {
 .product-grid-container {
   width: 100%;
   height: calc(100% - 80px);
-  background: #F8F9F9;
+  /*background: #F8F9F9;*/
   position: relative;
 }
 
