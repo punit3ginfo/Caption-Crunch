@@ -666,6 +666,13 @@ body {
   background-repeat: no-repeat;
 }
 
+.facebook-mobile-profile {
+  width: 20px;
+  height: 20px;
+  background: red;
+  
+}
+
 .preview-anchor {
   position: absolute;
   top: -405px;
