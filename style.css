@@ -671,7 +671,7 @@ body {
   background-image: url('./images/facebook-mobile-nav.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
-  position: absolute;
+  position: fixed;
   bottom: 88px;
 }
 
