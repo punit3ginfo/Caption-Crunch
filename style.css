@@ -627,14 +627,14 @@ body {
 }
 
 .facebook-mobile-post-header-container {
-  width: calc(100% - 30px);
-  height: 40px;
+  width: calc(100% - 10px);
+  height: 30px;
   padding: 5px;
   text-align: left;
 }
 
 .facebook-mobile-caption-container {
-  width: calc(100% - 30px);
+  width: calc(100% - 10px);
   height: auto;
   padding-bottom: 5px;
   text-align: left;
