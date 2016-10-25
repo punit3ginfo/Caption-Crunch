@@ -630,7 +630,7 @@ body {
 
 .facebook-mobile-post-header-container {
   width: calc(100% - 10px);
-  height: 30px;
+  height: 25px;
   padding: 5px;
   text-align: left;
 }
@@ -645,7 +645,7 @@ body {
 }
 
 .facebook-mobile-caption-text {
-  font-size: 12px;
+  font-size: 10px;
   font-family: "Helvetica Neue";
   color: rgb(29, 33, 41);
   line-height: 1.321;
@@ -674,8 +674,8 @@ body {
 }
 
 .facebook-mobile-profile {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   background: black;
   display: inline-block;
   float: left;
@@ -684,16 +684,16 @@ body {
 .facebook-mobile-page-name-container {
   display: inline-block;
   float: left;
-  height: 30px;
+  height: 25px;
   width: auto;
   padding-left: 5px;
 }
 
 .facebook-mobile-page-name {
   width: auto;
-  line-height: 30px;
+  line-height: 25px;
   color: black;
-  font-size: 12px;
+  font-size: 10px;
   font-family: "Helvetica Neue";
   color: rgb(20, 24, 35);
   font-weight: bold;
