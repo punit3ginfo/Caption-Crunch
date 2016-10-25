@@ -1864,13 +1864,6 @@ cursor:pointer;
   box-sizing: border-box;
 }
 
-body {
-  background: #34abfa;
-  padding-top: 5%;
-  font-size: 5px;
-  font-family: 'Open Sans', sans-serif;
-}
-
 .wrapper {
   max-width: 800px;
   margin: 0 auto;
@@ -1991,18 +1984,6 @@ body {
   border-radius: .3em;
   width: 45%;
   height: 45%;
-}
-
-@media screen and (min-width: 28em ) {
-  body{ font-size: 8px; }
-}
-
-@media screen and (min-width: 34em ) {
-  body{ font-size: 10px; }
-}
-
-@media screen and (min-width: 48em ) {
-  body{ font-size: 14px; }
 }
 
 @keyframes lighten {
