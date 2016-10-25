@@ -591,7 +591,7 @@ body {
 }
 
 .facebook-mobile-ios-header {
-    width: 225px;
+    width: 223px;
     height: 12px;
     background-image: url('./images/facebook-mobile-ios-header.jpg');
     background-size: 100% auto;
@@ -600,7 +600,7 @@ body {
 }
 
 .facebook-mobile-header {
-    width: 225px;
+    width: 223px;
     height: 26px;
     background-image: url('./images/facebook-mobile-header.jpg');
     background-size: 100% auto;
@@ -665,7 +665,7 @@ body {
 }
 
 .facebook-mobile-nav {
-  width: 225px;
+  width: 223px;
   height: 31px;
   background-image: url('./images/facebook-mobile-nav.jpg');
   background-size: 100% auto;
@@ -1950,7 +1950,7 @@ cursor:pointer;
 }
 
 .iphone-screen-overflow {
-  width: 225px;
+  width: 223px;
   height: calc(100% - 43px);
   overflow-x: hidden;
   overflow-y: scroll;

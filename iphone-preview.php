@@ -92,7 +92,5 @@
                       <div class="facebook-mobile-nav"></div>
 
                   </div>
-              <div class="button">
-          <!-- <div class="square"></div> -->
-      </div>
+              <div class="button"></div>
   </div>
