@@ -1859,15 +1859,15 @@ cursor:pointer;
   height: 480px;
   margin: 0 auto;
   border-radius:40px;
-  box-shadow: 1px -2px 17px 0px rgba(0,0,0,0.34);
+  border: 2px solid #d9dbdc;
 }
 
 .power {
   position: absolute;
   background: #d9dbdc;
   width: 13%;
-  height: .5%;
-  top: -.5%;
+  height: .8%;
+  top: -.8%;
   right: 17%;
   border-top-left-radius: .5em;
   border-top-right-radius: .5em;
@@ -1879,7 +1879,7 @@ cursor:pointer;
   width: 1%;
   height: 5%;
   top: 12.5%;
-  left: -1%;
+  left: -1.4%;
   border-top-left-radius: .5em;
   border-bottom-left-radius: .5em;
 }
@@ -1890,7 +1890,7 @@ cursor:pointer;
   width: 1%;
   height: 4%;
   top: 23%;
-  left: -1%;
+  left: -1.4%;
   border-top-left-radius: .5em;
   border-bottom-left-radius: .5em;
 }
@@ -1915,7 +1915,7 @@ cursor:pointer;
   background: #3f3f3f;
   width: 15%;
   height: 0;
-  padding-top: 3%;
+  padding-top: 2%;
   border-radius: 1em;
 }
 
@@ -1939,13 +1939,14 @@ cursor:pointer;
 
 .screen {
   background: #2f2f2f;
-  width: 225px;
+  width: 223px;
   height: 75%;
   position: absolute;
   top: 12.5%;
   left: 5%;
   animation: lighten 5s infinite alternate;
   overflow: hidden;
+      border: 2px solid black;
 }
 
 .iphone-screen-overflow {
@@ -1958,7 +1959,7 @@ cursor:pointer;
 
 .button {
   position: absolute;
-  bottom: 2.75%;
+  bottom: 1.8%;
   left: 42.5%;
   background: white;
   /* border: 1px solid #3f3f3f; */

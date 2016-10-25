@@ -61,7 +61,7 @@
     <div class="speaker"></div>
     <div class="screen">
               <div class="facebook-mobile-ios-header"></div>
-              
+
               <div class="iphone-screen-overflow">
       <!-- Put screen stuff in here -->
                         <div class="facebook-mobile-main-container">
@@ -93,6 +93,6 @@
 
                   </div>
               <div class="button">
-          <div class="square"></div>
+          <!-- <div class="square"></div> -->
       </div>
   </div>
