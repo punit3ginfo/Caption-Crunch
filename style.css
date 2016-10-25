@@ -591,13 +591,12 @@ body {
 }
 
 .facebook-mobile-ios-header {
-    width: 100%;
+    width: 225px;
     height: 12px;
     background-image: url('./images/facebook-mobile-ios-header.jpg');
     background-size: 100% auto;
     background-repeat: no-repeat;
     position: fixed;
-    top: 0px;
 }
 
 .facebook-mobile-header {
