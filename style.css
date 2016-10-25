@@ -596,7 +596,7 @@ body {
     background-image: url('./images/facebook-mobile-ios-header.jpg');
     background-size: 100% auto;
     background-repeat: no-repeat;
-    position: fixed;
+    position: relative;
 }
 
 .facebook-mobile-header {
@@ -615,17 +615,6 @@ body {
   overflow-y: scroll;
   margin-top: 12px;
   margin-bottom: 31px;
-}
-
-.facebook-mobile-main-container::-webkit-scrollbar
-{
-    width: 0px;
-}
-
-.facebook-mobile-main-container::-webkit-scrollbar-track-piece
-{
-    background-color: transparent;
-    -webkit-border-radius: 6px;
 }
 
 .facebook-mobile-post-clearfix {
@@ -683,8 +672,7 @@ body {
   background-image: url('./images/facebook-mobile-nav.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
-  position: fixed;
-  bottom: 88px;
+  position: relative;
 }
 
 .facebook-mobile-profile {
@@ -1963,7 +1951,7 @@ cursor:pointer;
 
 .iphone-screen-overflow {
   width: 225px;
-  height: 100%;
+  height: calc(100% - 43px);
   overflow-x: hidden;
   overflow-y: scroll;
   position: relative;
