@@ -1852,13 +1852,14 @@ cursor:pointer;
 
 .iphone {
   position: relative;
-  background: #202020;
+  background: white;
   width: 250px;
   min-width: 250px;
   min-height: 480px;
   height: 480px;
   margin: 0 auto;
   border-radius:40px;
+  box-shadow: 1px -2px 17px 0px rgba(0,0,0,0.34);
 }
 
 .power {
