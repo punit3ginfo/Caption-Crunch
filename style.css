@@ -1857,16 +1857,11 @@ cursor:pointer;
 
 /* Iphone Preview */
 
-.wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 .iphone {
   position: relative;
   background: #202020;
-  width: 45%;
-  height: 0;
+  width: 250px;
+  height: 480px;
   padding-top: 95%;
   margin: 0 auto;
   border-radius: 3em;

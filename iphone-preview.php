@@ -52,8 +52,6 @@
         <div class="bottom-bar"></div>
 </div> -->
 
-
-<div class="wrapper">
   <div class="iphone">
     <div class="power"></div>
     <div class="lock"></div>
@@ -100,10 +98,9 @@
       <div class="facebook-mobile-nav">
 
       </div>
-      
+
     </div>
     <div class="button">
       <div class="square"></div>
     </div>
   </div>
-</div>
