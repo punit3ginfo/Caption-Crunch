@@ -1858,7 +1858,7 @@ cursor:pointer;
   min-height: 480px;
   height: 480px;
   margin: 0 auto;
-  border-radius: 3em;
+  border-radius:40px;
 }
 
 .power {
@@ -1973,8 +1973,8 @@ cursor:pointer;
   left: 27.5%;
   border: 2px solid #d7d7d7;
   border-radius: .3em;
-  width: 45%;
-  height: 45%;
+  width: 13px;
+  height: 13px;
 }
 
 @keyframes lighten {
