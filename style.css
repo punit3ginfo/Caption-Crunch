@@ -1864,7 +1864,7 @@ cursor:pointer;
 
 .power {
   position: absolute;
-  background: #202020;
+  background: #d9dbdc;
   width: 13%;
   height: .5%;
   top: -.5%;
@@ -1875,7 +1875,7 @@ cursor:pointer;
 
 .lock {
   position: absolute;
-  background: #202020;
+  background: #d9dbdc;
   width: 1%;
   height: 5%;
   top: 12.5%;
@@ -1886,7 +1886,7 @@ cursor:pointer;
 
 .volume {
   position: absolute;
-  background: #202020;
+  background: #d9dbdc;
   width: 1%;
   height: 4%;
   top: 23%;
@@ -1960,12 +1960,13 @@ cursor:pointer;
   position: absolute;
   bottom: 2.75%;
   left: 42.5%;
-  background: #3f3f3f;
+  background: white;
   /* border: 1px solid #3f3f3f; */
   width: 15%;
   height: 0;
   padding-top: 15%;
   border-radius: 50%;
+  border: 2px solid #d9dbdc;
 }
 
 .square {
