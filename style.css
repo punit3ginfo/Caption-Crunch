@@ -601,7 +601,7 @@ body {
 }
 
 .facebook-mobile-header {
-    width: 100%;
+    width: 225px;
     height: 26px;
     background-image: url('./images/facebook-mobile-header.jpg');
     background-size: 100% auto;
@@ -1939,8 +1939,8 @@ cursor:pointer;
 
 .screen {
   background: #2f2f2f;
-  width: 90%;
-  height: 225px;
+  width: 225px;
+  height: 75%;
   position: absolute;
   top: 12.5%;
   left: 5%;
