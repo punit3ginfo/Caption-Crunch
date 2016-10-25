@@ -11,7 +11,8 @@
                                               </div>
 
                                             <div class="chat_selector_overflow_container">
-                                                  <div class="chat_selector_overflow" style="height: calc(100% - 160px); overflow: hidden;">
+                                                  <div class="chat_selector_overflow" style="height: calc(100% - 160px); overflow: hidden; display: flex;
+                                                  justify-content: center; align-items: center;">
                                                       <!-- Preview Section -->
 
                                                         <?php include 'iphone-preview.php';?>
