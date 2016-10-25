@@ -614,6 +614,19 @@ body {
   background: #ccced3;
   overflow-x: hidden;
   overflow-y: scroll;
+  margin-top: 12px;
+  margin-bottom: 31px;
+}
+
+.facebook-mobile-main-container::-webkit-scrollbar
+{
+    width: 0px;
+}
+
+.facebook-mobile-main-container::-webkit-scrollbar-track-piece
+{
+    background-color: transparent;
+    -webkit-border-radius: 6px;
 }
 
 .facebook-mobile-post-clearfix {
