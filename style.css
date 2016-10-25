@@ -1853,8 +1853,8 @@ cursor:pointer;
 .iphone {
   position: relative;
   background: white;
-  width: 250px;
-  min-width: 250px;
+  width: 240px;
+  min-width: 240px;
   min-height: 480px;
   height: 480px;
   margin: 0 auto;
