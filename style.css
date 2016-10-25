@@ -1861,6 +1861,8 @@ cursor:pointer;
   position: relative;
   background: #202020;
   width: 250px;
+  min-width: 250px;
+  min-height: 480px;
   height: 480px;
   margin: 0 auto;
   border-radius: 3em;
@@ -1872,7 +1874,7 @@ cursor:pointer;
   width: 13%;
   height: .5%;
   top: -.5%;
-  right: 12%;
+  right: 17%;
   border-top-left-radius: .5em;
   border-top-right-radius: .5em;
 }
