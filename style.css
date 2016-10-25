@@ -1942,6 +1942,7 @@ cursor:pointer;
   top: 12.5%;
   left: 5%;
   animation: lighten 5s infinite alternate;
+  overflow: hidden;
 }
 
 .iphone-screen-overflow {
