@@ -709,19 +709,19 @@ body {
 
 .preview-anchor {
   position: absolute;
-  top: -405px;
+  top: 0px;
   left: 0px;
 }
 
 .preview-anchor-2 {
   position: absolute;
-  top: -315px;
+  top: 0px;
   left: 0px;
 }
 
 .preview-anchor-3 {
   position: absolute;
-  top: -405px;
+  top: 0px;
   left: 0px;
 }
 /* ---------------- Preview Form ----------------- */
