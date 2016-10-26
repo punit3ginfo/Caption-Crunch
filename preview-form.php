@@ -169,7 +169,7 @@
                             </div>
                   </div>
                   <!--  Step 4  -->
-                          <div class="preview-form-conatiner">
+                          <!-- <div class="preview-form-conatiner">
 
                             <div class="builder-main-clearfix" style="border-bottom: 0px;">
                                 <div class="builder-conditions-container" style="height: 30px;">
@@ -190,7 +190,7 @@
                                                   </div>
                                           </div>
                                   </div>
-                        </div>
+                        </div> -->
 </form>
 
 
