@@ -54,13 +54,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 
 	<div class="back">
 
-    <div id="help-menu-container">
-              <?php include 'help.php';?>
-    </div>
 
-    <div id="preview-container">
-              <?php include 'preview.php';?>
-    </div>
 
 
 
@@ -163,6 +157,15 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
     </header>
 
     <!-- /.Page Container -->
+
+    <div id="help-menu-container">
+              <?php include 'help.php';?>
+    </div>
+
+    <div id="preview-container">
+              <?php include 'preview.php';?>
+    </div>
+
     <div class="main_container_clearfix">
              <div id="main-padded-container" class="">
                       	<div class="main_container">
