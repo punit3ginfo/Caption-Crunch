@@ -97,7 +97,7 @@
 
                     </div>
                 </div>
-                      <div class="caption-show-hide"  style="display: none;">
+                      <div class="caption-show-hide">
                               <!-- <div class="builder-main-clearfix" style="border-top: 1px solid #eee; border-bottom: 0px;">
                                       <div class="builder-conditions-container" style="height: auto; width: 100%;">
                                               <span class="cc-text-medium">Caption: Jackets 40% OFF Fall Sale</span>
@@ -131,7 +131,7 @@
 
                           </div>
                       </div>
-                            <div class="image-show-hide" style="display: none;">
+                            <div class="image-show-hide">
                                     <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
                                                 <div class="addimage-clearfix">
                                                         <div id="addimage-image-one" class="addimage-container">
