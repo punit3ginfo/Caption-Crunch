@@ -89,7 +89,7 @@
                                 </div>
                         </div>
                 </div>
-      </div>
+      
       <!--  Step 2  -->
 
                 <div id="step2" class="preview-anchor"></div>
