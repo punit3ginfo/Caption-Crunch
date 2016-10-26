@@ -446,8 +446,8 @@ body {
 }
 
 .account-bubble-clearfix {
-  width: 94px;
-  height: 94px;
+  width: 90px;
+  height: 90px;
   padding: 5px;
   display: inline-block;
   float: left;
@@ -460,6 +460,7 @@ body {
   background-color: white;
   border: 2px solid #666;
   position: relative;
+  margin: auto;
 }
 
 .account-bubble:hover {
