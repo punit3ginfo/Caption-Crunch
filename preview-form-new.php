@@ -2,7 +2,7 @@
 <!--  Step 1  -->
         <div class="preview-form-conatiner">
 
-          <div class="builder-main-clearfix" style="border-bottom: 0px;">
+          <div class="builder-main-clearfix" style="border-bottom: 1px solid #eee;">
               <div class="builder-conditions-container" style="height: 30px;">
 
                     <span class="preview-steps-text account-show-hide-button" style="line-height: 30px; cursor: pointer;">
@@ -13,7 +13,7 @@
               </div>
           </div>
                 <div class="account-show-hide">
-                        <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
+                        <div class="builder-main-clearfix" style="">
                                 <div class="builder-conditions-container" style="height: auto; width: 100%; display: inline-block;">
                                                       <!-- Account Bubbles -->
                                                             <div class="account-bubble-clearfix">
