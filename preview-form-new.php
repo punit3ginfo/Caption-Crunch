@@ -87,7 +87,7 @@
       <!--  Step 2  -->
 
                 <div id="step2" class="preview-anchor"></div>
-                <div class="builder-main-clearfix" style="border-bottom: 0px;">
+                <div class="builder-main-clearfix" style="">
                     <div class="builder-conditions-container" style="height: 30px;">
 
                           <span class="preview-steps-text caption-show-hide-button" style="line-height: 30px; cursor: pointer;">
@@ -104,7 +104,7 @@
                                       </div>
                               </div> -->
 
-                              <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
+                              <div class="builder-main-clearfix" style="">
                                       <div class="builder-conditions-container" style="height: auto; width: 100%; display: block;">
                                                 <span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
                                                 <div class="caption-textarea-container"style="margin-bottom: 30px;">
