@@ -56,7 +56,7 @@
 
 			<div class="builder-grid-container">
         		<div  class="builder-grid-overflow-container">
-                  <form style="display: block; padding: 15px;">
+                  <form style="display: block; padding: 15px; padding-bottom: 0px;">
                   <!-- CONDITIONS -->
                   <div class="builder-main-conatiner">
                     <div class="builder-main-clearfix" style="border-bottom: 0px;">
