@@ -485,6 +485,7 @@ body {
 
 .account-bubble:hover .account-icon {
     color: #65D35B;
+    border: 2px solid #65D35B;
 }
 
 .caption-textarea-container {
