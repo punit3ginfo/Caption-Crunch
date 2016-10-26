@@ -518,18 +518,18 @@ body {
 .addimage-container {
   width: 180px;
   height: 180px;
-  border: 1px solid white;
+  border: 2px solid white;
   position: relative;
   cursor: pointer;
   background-size: 100% 100%;
 }
 
 .addimage-container:hover {
-  border: 1px solid #65D35B;
+  border: 2px solid #65D35B;
 }
 
 .addimage-active {
-  border: 1px solid #65D35B;
+  border: 2px solid #65D35B;
 }
 
 .addimage-plus-icon {
