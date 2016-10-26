@@ -468,13 +468,19 @@ body {
 }
 
 .account-icon {
-    line-height: 16px !important;
-    font-size: 16px !important;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: #666;
+  line-height: 27px !important;
+  font-size: 14px !important;
+  position: absolute;
+  left: 80%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  color: #666;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid #666;
+  background: white;
+  text-align: center;
 }
 
 .account-bubble:hover .account-icon {
