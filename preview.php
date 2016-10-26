@@ -37,7 +37,7 @@
                         <div class="product-grid-container scroll-grid">
                             <div  class="product-grid-overflow-container">
                               <!-- Form Section -->
-                                      
+                                      <?php include 'preview-form.php';?>
                                <!-- Form Section -->
                             </div>
                         </div>
