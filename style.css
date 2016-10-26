@@ -1946,12 +1946,12 @@ cursor:pointer;
 }
 
 .screen {
-  background: #2f2f2f;
+  background: white;
   width: 209px;
   height: 75%;
   position: absolute;
   top: 12.5%;
-  left: 8px;
+  left: 6px;
   animation: lighten 5s infinite alternate;
   overflow: hidden;
   border: 2px solid black;
@@ -1959,7 +1959,7 @@ cursor:pointer;
 
 .iphone-screen-overflow {
   width:  100%;
-  height: calc(100% - 41px);
+  height: calc(100% - 40px);
   overflow-x: hidden;
   overflow-y: scroll;
   position: relative;
@@ -1986,14 +1986,4 @@ cursor:pointer;
   border-radius: .3em;
   width: 13px;
   height: 13px;
-}
-
-@keyframes lighten {
-  0%, 45% { background: #2f2f2f; }
-  65%, 100% { background: #f7f7f7; }
-}
-
-@keyframes unhide {
-  0%, 55% { opacity: 0 }
-  75%, 100% { opacity: 1 }
 }
