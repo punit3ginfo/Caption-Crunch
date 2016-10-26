@@ -209,7 +209,7 @@ body {
     text-align: center;
 }
 
-.sidebar-nav-container-header:hover {
+.sidebar-nav-container-header-active {
 	background-color: #666;
 }
 
@@ -275,7 +275,7 @@ body {
     background: white;
 }
 
-.help-header-link:hover {
+.help-header-link-active {
 	color:#FFFFFF;
 }
 
