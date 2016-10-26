@@ -276,7 +276,7 @@ body {
 }
 
 .help-header-link-active {
-	color:#FFFFFF;
+	color:#FFFFFF !important;
 }
 
 .help-header-link {
