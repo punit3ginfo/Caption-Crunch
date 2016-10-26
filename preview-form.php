@@ -132,7 +132,7 @@
                       </div>
             </div>
             <!--  Step 3  -->
-                    <div class="preview-form-conatiner">
+                    <div class="preview-form-conatiner" style="margin-bottom: 0px;">
                       <div id="step3" class="preview-anchor-2"></div>
                       <div class="builder-main-clearfix" style="border-bottom: 0px;">
                           <div class="builder-conditions-container" style="height: 30px;">
