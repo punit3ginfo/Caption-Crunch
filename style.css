@@ -446,7 +446,7 @@ body {
 }
 
 .account-bubble-clearfix {
-  width: 90px;
+  width: 77px;
   height: 90px;
   padding: 5px;
   display: inline-block;
@@ -454,8 +454,8 @@ body {
 }
 
 .account-bubble {
-  width: 85px;
-  height: 85px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background-color: white;
   border: 2px solid #666;
