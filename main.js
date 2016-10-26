@@ -8,7 +8,7 @@ $(document).ready(function(){
       } else {
           $('#help-menu-container').addClass("help-menu-animate");
           $('.sidebar-nav-container-header').addClass("sidebar-nav-container-header-active");
-          $('.help-header-link').css("color", "white");
+          $('.help-header-link').css("color", "#666");
       };
   });
 });
