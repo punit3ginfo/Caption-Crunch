@@ -553,7 +553,7 @@ body {
   letter-spacing: 0.82px;
   text-transform: uppercase;
   background: white;
-  width: 31%;
+  width: 23%;
   text-align: center;
 }
 
@@ -565,6 +565,16 @@ body {
 .preview-share-button:hover {
     color: white;
   	background: #65D35B;
+}
+
+.preview-sharenext-button {
+    border: 1px solid #666;
+    color: #666;
+}
+
+.preview-sharenext-button:hover {
+    color: white;
+  	background: #666;
 }
 
 .preview-sharelater-button {
