@@ -242,10 +242,10 @@ body {
   position: absolute;
   right: -292px;
   top: 0px;
-  background: #666;
+  background: white;
   z-index: 85;
   margin-top: 63px;
-  /* box-shadow: 1px -2px 17px 0px rgba(0,0,0,0.34); */
+   box-shadow: 1px -2px 17px 0px rgba(0,0,0,0.34);
   animation-direction: normal;
   transition-timing-function: ease;
   transition-duration: 0.3s;
@@ -270,7 +270,7 @@ body {
     padding: 15px;
     border-radius: 15px;
     height: auto;
-    /*border: 2px solid #666;*/
+    border: 2px solid #666;
     margin-bottom: 15px;
     background: white;
 }
