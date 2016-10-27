@@ -16,14 +16,14 @@
                                 <div class="builder-conditions-container" style="width: 100%; display: flex; height: calc(100vh - 320px); align-items: center; justify-content: center;">
                                           <div class="connect-clearfix">
                                                       <div class="connect-container" style="margin-right: 15px;">
-                                                                <div class="account-bubble-clearfix">
+                                                                <div class="account-bubble-clearfix" style="margin: auto;">
                                                                           <div class="account-bubble">
                                                                           </div>
                                                                 </div>
                                                                 <a href="#" class="button-four-col connected-button"><i class="fa fa-check" aria-hidden="true"></i> Connected</a>
                                                       </div>
                                                       <div class="connect-container">
-                                                                  <div class="account-bubble-clearfix">
+                                                                  <div class="account-bubble-clearfix" style="margin: auto;">
                                                                             <div class="account-bubble">
                                                                             </div>
                                                                   </div>
