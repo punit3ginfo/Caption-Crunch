@@ -19,8 +19,9 @@
                                                                       </div>
                                                                       <div class="notification-container">
                                                                           <div class="chat_notification_container">
-
-                                                                              <span class="notif_number"><i class="fa fa-puzzle-piece" aria-hidden="true"></i></span>
+                                                                                    <span class="notif_number">
+                                                                                                <i class="fa fa-sign-in settings-menu-icon" aria-hidden="true"></i>
+                                                                                    </span>
                                                                           </div>
                                                                       </div>
                                                                   </div>
