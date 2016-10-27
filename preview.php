@@ -38,7 +38,7 @@
 
 
                         <div class="product-grid-container scroll-grid">
-                            <div  class="product-grid-overflow-container" style="position: relative;">
+                            <div  class="product-grid-overflow-container" style="position: relative; padding-left: 0px; padding-right: 0px;">
                               <!-- Form Section -->
                                       <?php include 'preview-form-new.php';?>
                                <!-- Form Section -->
