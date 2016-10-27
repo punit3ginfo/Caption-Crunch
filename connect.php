@@ -18,7 +18,7 @@
 
                        </div>
 
-                       <button type='button' class='connect-button' id='shopify-connect-button'><i class='fa fa-sign-in settings-menu-icon' aria-hidden='true'></i> Connect</button>
+                       <button type='button' class='connect-button' id='shopify-connect-button'><i class='fa fa-sign-in' aria-hidden='true'></i> Connect</button>
              </div>
   </div>
 
