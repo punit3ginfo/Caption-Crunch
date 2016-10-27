@@ -10,7 +10,7 @@
 <?php
 try
 	{
-		# Making an API request can throw an exception
+		# Making an API request can throw an exception 
 		if(isset($_REQUEST['colid']) && $_REQUEST['colid']!='' && $_REQUEST['status']=='' && !(isset($_REQUEST['page_id']))){
 
 

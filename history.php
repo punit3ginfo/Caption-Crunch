@@ -12,7 +12,7 @@
 try
 	{
 		# Making an API request can throw an exception
-		         
+
 				 $query_title =str_replace('"','',$query_title);
 				 if($_REQUEST['page_id']=='')
 				 {
@@ -20,7 +20,7 @@ try
 				 }else{
 					 $search_products = $shopify('GET /admin/products.json', array('title'=>$query_title ,'limit'=>'50','page'=>$_REQUEST['page_id']));
 				 }
-				 
+
 			foreach($search_products as $singleproduct)
 		{
 			$title=$singleproduct['title']; // Product Title
@@ -102,7 +102,7 @@ try
 			}
 			?>
 			var tags_1 = '"<?php echo $OrigonalTag; ?>"';
-			
+
 
 			  //$(_id).html('<button type="button" class=share-button onclick=shareButton('+pid_1+',"'+tags_1+'");>Share</button>');
 	$(_id).html("<button type='button' class='share-button' onclick='shareButton("+pid_1+","+tags_1+");'>Share</button>");
@@ -115,7 +115,7 @@ try
 <!-- HTML Content for Product END    -->
 
 	<?php
-	
+
 		}
 	}
 	catch (shopify\ApiException $e)
@@ -143,10 +143,10 @@ try
                var access_token='<?php echo $access_token ?>';
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
                var tags_unshare = tags.replace('shared', "");
-	       
+
 	       var tags_unshare = tags_unshare.replace('shared', "");
 		var tags_unshare = tags_unshare.replace(' ', "");
-		
+
 	       var _id = '#'+ pid;
                $.ajax({
                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
@@ -188,7 +188,7 @@ try
 	      var shop='<?php echo $_REQUEST['shop'] ?>';
 	      var col_id='<?php echo $_REQUEST['colid'] ?>';
 	      var title='<?php echo $_REQUEST['title'] ?>';
-		
+
 		 $.ajax({
                     url: '/pagination_search_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id+'&title='+title,
                     success: function(data){
@@ -230,7 +230,7 @@ try
             $('#showLess').hide();
         }
     });
-                    }
+                    } 
                 });
 	});
 </script>

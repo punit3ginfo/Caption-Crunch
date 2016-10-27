@@ -23,7 +23,7 @@ try
 						$MultipleProduct_id[]=$singleproduct['id'];
 					}
 				}
-
+ 
 
 
 $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
