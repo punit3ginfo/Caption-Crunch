@@ -11,8 +11,21 @@
                                                   <div class="chat_selector_overflow" style="height: calc(100% - 160px);">
                                                       <!-- Preview Section -->
 
+                                                      <a href="javascript:void(0)" onclick="">
+                                                              <div class="chat_select_container">
+                                                                  <div class="chat_personal_info_container">
+                                                                      <div class="chat_user_info">
+                                                                          <span class="collection_list_text">Connect</span>
+                                                                      </div>
+                                                                      <div class="notification-container">
+                                                                          <div class="chat_notification_container">
 
-
+                                                                              <span class="notif_number"><i class="fa fa-puzzle-piece" aria-hidden="true"></i></span>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </a>
 
                                                        <!-- Preview Section -->
                                                   </div>
