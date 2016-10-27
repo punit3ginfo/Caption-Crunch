@@ -2036,12 +2036,12 @@ cursor:pointer;
   background: white;
   width: calc(100% - 40px);
   cursor: pointer;
-  color: white;
-  background: #666;
+  color: #666;
 }
 
 .connected-button:hover {
-
+  color: white;
+  background: #666;
 }
 
 .connect-button {
