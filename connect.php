@@ -85,7 +85,3 @@
                 </div>
         </div>
 </form>
-
-
-<!-- Scripts -->
-<?php include 'preview-js.php';?>
