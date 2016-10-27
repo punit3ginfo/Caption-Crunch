@@ -2001,6 +2001,6 @@ cursor:pointer;
 /* Settings */
 
 .settings-menu-icon {
-  line-height: 40px;
-  font-size: 20px;
+  line-height: 40px !important;
+  font-size: 20px !important;
 }
