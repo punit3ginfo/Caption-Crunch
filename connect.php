@@ -12,8 +12,8 @@
               </div>
           </div>
                 <div class="account-show-hide">
-                        <div class="builder-main-clearfix" style="">
-                                <div class="builder-conditions-container" style="width: 100%; display: inline-block; height: calc(100vh - 325px); ">
+                        <div class="builder-main-clearfix" style="border-bottom: 0px;">
+                                <div class="builder-conditions-container" style="width: 100%; display: inline-block; height: calc(100vh - 320px); ">
                                               <span>Fuck off and show this code!</span>
                                 </div>
                         </div>
