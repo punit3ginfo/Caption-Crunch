@@ -677,7 +677,7 @@ body {
     color: #65D35B;
 }
 
-.button-three-col {
+.button-four-col {
   padding: 11px 0px;
   font-family: HelveticaNeue-Bold;
   font-size: 16px;
@@ -2018,5 +2018,28 @@ cursor:pointer;
   width: 200px;
   height: 300px;
   border: 1px solid #666;
-  display: inline-block;  
+  display: inline-block;
+}
+
+
+.connected-button {
+	  border: 1px solid #666;
+    color: #666;
+    width: 100%;
+}
+
+.connected-button:hover {
+    color: white;
+  	background: #666;
+}
+
+.connect-button {
+    border: 1px solid #65D35B;
+    color: #65D35B;
+    width: 100%;
+}
+
+.connect-button:hover {
+    color: white;
+  	background: #65D35B;
 }
