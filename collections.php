@@ -22,7 +22,7 @@
                                                 <div class="notification-container">
                                                     <div class="chat_notification_container">
 
-                                                        <span class="notif_number"><?php echo $noOfProduct; ?></span>
+                                                        <span class="notif_number">X</span>
                                                     </div>
                                                 </div>
                                             </div>
