@@ -38,7 +38,7 @@
                                   <div class="collection_title_header">
                                                 <div class="collection_header_container">
 
-                                                    <span class="preview-steps-text" style="line-height: 30px; cursor: pointer;">
+                                                    <span class="preview-steps-text" style="line-height: 80px; cursor: pointer; padding-left: 15px;">
                                                     Connect Your Accounts
                                                     </span>
 
