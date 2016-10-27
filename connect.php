@@ -7,6 +7,7 @@
                                 <div class="connect-image shopify-icon">
 
                                 </div>
+                                <span class="cc-text-medium">SHOPIFY</span>
                       </div>
 
                       <button type='button' class='connected-button' id='shopify-connect-button'><i class='fa fa-check' aria-hidden='true'></i> Connected</button>
@@ -20,6 +21,7 @@
                                    <div class="connect-image buffer-icon">
 
                                    </div>
+                                   <span class="cc-text-medium">BUFFER</span>
                        </div>
 
                        <button type='button' class='connect-button' id='shopify-connect-button'><i class='fa fa-sign-in' aria-hidden='true'></i> Connect</button>
