@@ -13,8 +13,15 @@
           </div>
                 <div class="account-show-hide">
                         <div class="builder-main-clearfix" style="border-bottom: 0px;">
-                                <div class="builder-conditions-container" style="width: 100%; display: inline-block; height: calc(100vh - 320px); ">
-                                              <span>Fuck off and show this code!</span>
+                                <div class="builder-conditions-container" style="width: 100%; display: flex; height: calc(100vh - 320px); align-items: center; justify-content: center;">
+                                          <div class="connect-clearfix">
+                                                      <div class="connect-container" style="margin-right: 15px;">
+
+                                                      </div>
+                                                      <div class="connect-container">
+
+                                                      </div>
+                                          </div>
                                 </div>
                         </div>
                 </div>
