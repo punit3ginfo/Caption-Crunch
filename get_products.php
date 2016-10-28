@@ -106,7 +106,7 @@ try
 
           <script>
 
-          <!-- Preview -->
+          // Preview 
           $("#share-button-<?php echo $p_id1; ?>").click(function(){
 
               var CaptionLong = "<?php echo $title; ?> | $<?php echo $price; ?> | Long Caption";
@@ -142,7 +142,7 @@ try
                   $(".facebook-mobile-image").attr("src", "");
           });
 
-          <!-- Show / Hide Product Details -->
+          // Show / Hide Product Details
           $(document).ready(function() {
                 $('.product-image-<?php echo $p_id1; ?>').hover(function() {
                   // Show / Hide Product Details Opacity Container
@@ -152,7 +152,7 @@ try
                 });
             });
 
-            <!-- Preview Drop Down -->
+            // Preview Drop Down
             $(document).ready(function() {
 
                   $('.sidebar-link').click(function() {
