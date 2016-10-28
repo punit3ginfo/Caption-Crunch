@@ -144,6 +144,7 @@ $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
 
                         $('.sidebar-link').click(function() {
                                $('#preview-container').removeClass("preview-container-animate");
+                               $('.collections-animation-container').removeClass("collections-animation");
                                $('.close-preview-container').css('display', 'none');
                         });
 

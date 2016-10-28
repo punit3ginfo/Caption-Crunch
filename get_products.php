@@ -154,6 +154,7 @@ try
 
                   $('.sidebar-link').click(function() {
                          $('#preview-container').removeClass("preview-container-animate");
+                         $('.collections-animation-container').removeClass("collections-animation");
                          $('.close-preview-container').css('display', 'none');
                   });
 
