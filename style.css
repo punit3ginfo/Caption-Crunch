@@ -413,6 +413,10 @@ body {
 	color:#666;
 }
 
+.help-header-link:hover {
+	color: white;
+}
+
 .help-link {
   color: #65D35B;
 }
