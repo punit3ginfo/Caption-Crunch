@@ -1083,8 +1083,11 @@ body {
 	height: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
-	float: left;
+	  float: left;
   	padding-left: 10px;
+    width: calc(100% - 50px);
+    overflow-x: hidden;
+    word-break: break-all;
 }
 
 .collection_list_text {
@@ -1095,7 +1098,7 @@ body {
 	line-height: 40px;
 	display: block;
 	width: 100%;
-  	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .chat_select_container:hover .collection_list_text {
