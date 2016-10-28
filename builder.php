@@ -3,7 +3,7 @@
 			 <div class="collection-sidebar-container">
               		<div class="collection_title_selector">
                             <div class="collection_title_container">
-                                <span class="collection_title_text">Captions</span>
+                                <span class="collection_title_text" id="share-captions">Captions</span>
                             </div>
                     </div>
 

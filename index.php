@@ -69,7 +69,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
               	</div>
             </a> -->
 
-            <a class="sidebar-link" href="javascript:void(0)" onclick="getproducts()" >
+            <a class="sidebar-link" href="javascript:void(0)" onclick="getproducts()" id="share-link">
             	<div class="sidebar-nav-container">
                   	<span class="sidebar-span">
                       <i style="font-size: 20px;" class="fa fa-bullhorn" aria-hidden="true"></i><br>

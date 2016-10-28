@@ -42,6 +42,8 @@
                                     </div>
                                 </a>
 
+                                
+
 		<?php }
 	}
 	catch (shopify\ApiException $e)

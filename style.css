@@ -315,6 +315,14 @@ body {
   	text-decoration: none;
 }
 
+.sidebar-link-active {
+    	color: white;
+}
+
+.sidebar-link-active .sidebar-nav-container-active  {
+    background-color: #666;
+}
+
 .sidebar-nav-container {
     height: 80px;
 	width: 80px;
