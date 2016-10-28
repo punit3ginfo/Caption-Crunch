@@ -1043,21 +1043,21 @@ body {
     height: 100%;
 }
 
-.chat_select_container {
+.menu-container {
 	width: calc(100% - 30px);
 	height: 75px;
 	padding:15px;
 	padding-bottom: 0px;
 }
 
-.chat_select_container-active {
+.menu-container-active {
   background-color: #65D35B;
 	background-image: url("./images/menu-background.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
 
-.chat_select_container:hover {
+.menu-container:hover {
 	background-color: #65D35B;
 	background-image: url("./images/menu-background.png");
 	background-size: 100%;
@@ -1072,22 +1072,22 @@ body {
     padding-bottom: 0px;
 }
 
-.chat_personal_info_container {
+.menu-clearfix {
 	width: auto;
 	height: 75px;
 	border-bottom: 1px solid #F2F3F3;
   position: relative;
 }
 
-.chat_select_container:hover .chat_personal_info_container {
+.menu-container:hover .menu-clearfix {
 	border-bottom: 0px;
 }
 
-.chat_select_container-active .chat_personal_info_container {
+.menu-container-active .menu-clearfix {
 	border-bottom: 0px;
 }
 
-.chat_user_info {
+.menu-font-container {
 	display: inline-block;
 	width: auto;
 	height: 50px;
@@ -1101,7 +1101,7 @@ body {
     word-break: break-all;
 }
 
-.collection_list_text {
+.menu-font {
 	font-family: HelveticaNeue-Medium;
 	font-size: 18px;
 	color: #666;
@@ -1112,22 +1112,22 @@ body {
   text-transform: uppercase;
 }
 
-.chat_select_container:hover .collection_list_text {
+.menu-container:hover .menu-font {
 	color: white;
 }
 
-.chat_select_container-active .collection_list_text {
+.menu-container-active .menu-font {
 	color: white;
 }
 
-.notification-container {
+.menu-icon-clearfix {
 	width: 60px;
 	height: 60px;
 	position: absolute;
   right: 0px;
 }
 
-.chat_notification_container {
+.menu-icon-container {
 	float: right;
 	background: #666;
 	border-radius: 50%;
@@ -1137,11 +1137,11 @@ body {
 	text-align:center;
 }
 
-.chat_notification_container-active {
+.menu-icon-container-active {
 	background: #D577C3;
 }
 
-.notif_number {
+.menu-icon {
 	font-family: HelveticaNeue-Bold;
 	font-size: 14px;
 	line-height: 40px;
@@ -1156,11 +1156,11 @@ body {
     padding-left: 0px;
 }
 
-.chat_select_container:hover .chat_notification_container {
+.menu-container:hover .menu-icon-container {
 	background-color: #D577C3;
 }
 
-.chat_select_container:hover .dashboard-menu-icon-circle {
+.menu-container:hover .dashboard-menu-icon-circle {
 	background-color: #D577C3;
 }
 

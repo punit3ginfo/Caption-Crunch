@@ -13,22 +13,21 @@
 
                               	<!-- Collection Card -->
 
-                                <a href="javascript:void(0)" onclick="getproducts()">
-                                        <div class="chat_select_container">
-                                            <div class="chat_personal_info_container">
-                                                <div class="chat_user_info">
-                                                    <span class="collection_list_text">ALL PRODUCTS</span>
-                                                </div>
-                                                <div class="notification-container">
-                                                    <div class="chat_notification_container">
+                                    <a href="javascript:void(0)" onclick="getproducts()">
+                                            <div class="chat_select_container">
+                                                <div class="menu-clearfix">
+                                                    <div class="menu-font-container">
+                                                        <span class="menu-font">ALL PRODUCTS</span>
+                                                    </div>
+                                                    <div class="menu-icon-clearfix">
+                                                        <div class="menu-icon-container">
 
-                                                        <span class="notif_number">X</span>
+                                                            <span class="menu-icon">X</span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </a>
-
+                                        </a>
 
                                     <?php
 

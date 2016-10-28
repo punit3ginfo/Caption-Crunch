@@ -28,21 +28,21 @@
 
 			                      <a href="javascript:void(0)" onclick="getcolproduct(<?php echo $id;?>,'<?php echo $handle;?>')">
                                     <div class="chat_select_container">
-                                        <div class="chat_personal_info_container">
-                                            <div class="chat_user_info">
-                                                <span class="collection_list_text"><?php echo $title;  ?></span>
+                                        <div class="menu-clearfix">
+                                            <div class="menu-font-container">
+                                                <span class="menu-font"><?php echo $title;  ?></span>
                                             </div>
-                                            <div class="notification-container">
-                                                <div class="chat_notification_container">
+                                            <div class="menu-icon-clearfix">
+                                                <div class="menu-icon-container">
 
-                                                    <span class="notif_number"><?php echo $noOfProduct; ?></span>
+                                                    <span class="menu-icon"><?php echo $noOfProduct; ?></span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
 
-                                
+
 
 		<?php }
 	}

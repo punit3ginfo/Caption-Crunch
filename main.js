@@ -12,9 +12,3 @@ $(document).ready(function(){
       };
   });
 });
-
-$(document).ready(function(){
-        if($(".collection_title_text").is("#share-captions") function() {
-              $("#share-link").addClass("sidebar-link-active")
-        });
-});
