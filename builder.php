@@ -7,8 +7,9 @@
                             </div>
                     </div>
 
-                	<div class="chat_selector_overflow_container">
-                        <div class="chat_selector_overflow">
+                	<div class="menu-overflow-container">
+                        <div class="menu-overflow">
+
 													<!-- Caption Menu Item  -->
                           		<a href="javascript:void(0)">
                                     <div class="menu-container" >
@@ -20,6 +21,7 @@
                                     </div>
                               </a>
 													<!-- Caption Menu Item  -->
+
                         </div>
                   	</div>
               </div>

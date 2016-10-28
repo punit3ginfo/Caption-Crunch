@@ -1029,7 +1029,7 @@ body {
 	text-transform: uppercase;
 }
 
-.chat_selector_overflow_container{
+.menu-overflow-container {
 	position:absolute;
 	width: 100%;
 	top: 0;
@@ -1037,10 +1037,10 @@ body {
   height: 100%;
 }
 
-.chat_selector_overflow{
+.menu-overflow {
 	width: 100%;
 	overflow:scroll;
-  height: 100%;
+  height: calc(100% - 160px);
 }
 
 .menu-container {

@@ -7,8 +7,9 @@
                                                       </div>
                                               </div>
 
-                                            <div class="chat_selector_overflow_container">
-                                                  <div class="chat_selector_overflow" style="height: calc(100% - 160px);">
+                                            <div class="menu-overflow-container">
+                                                  <div class="menu-overflow">
+                                                    
                                                       <!-- Preview Section -->
 
                                                       <a href="javascript:void(0)" onclick="">
