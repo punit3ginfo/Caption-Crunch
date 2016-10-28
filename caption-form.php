@@ -31,6 +31,7 @@
     <div class="builder-conditions-container">
       <div class="conditions-container-s select-style">
               <select class="condition-select">
+                  <option>Collection Title</option>
                   <option>Product Title</option>
                   <option>Product Type</option>
                   <option>Product Vendor</option>
