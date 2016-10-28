@@ -96,9 +96,6 @@ try
                         <span class="product-card-price-text" style="font-size: 12px; color: #888;">$<?php echo $price; ?></span>
                       </div>
                   </div>
-                  <!-- <div class="preview-button-container">
-                    <a id="preview-button-<?php echo $p_id1; ?>" class="preview-button" style="height: 19px; width: calc(100% - 42px);"><i class="fa fa-eye" aria-hidden="true"></i> Preview</a>
-                  </div> -->
               </div>
           </div>
 
@@ -106,7 +103,7 @@ try
 
           <script>
 
-          // Preview 
+          // Preview
           $("#share-button-<?php echo $p_id1; ?>").click(function(){
 
               var CaptionLong = "<?php echo $title; ?> | $<?php echo $price; ?> | Long Caption";
