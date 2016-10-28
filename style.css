@@ -1031,6 +1031,13 @@ body {
 	padding-bottom: 0px;
 }
 
+.chat_select_container-active {
+  background-color: #65D35B;
+	background-image: url("./images/menu-background.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
 .chat_select_container:hover {
 	background-color: #65D35B;
 	background-image: url("./images/menu-background.png");
@@ -1056,6 +1063,9 @@ body {
 	border-bottom: 0px;
 }
 
+.chat_select_container-active .chat_personal_info_container {
+	border-bottom: 0px;
+}
 
 .chat_user_info {
 	display: inline-block;
@@ -1081,6 +1091,11 @@ body {
 .chat_select_container:hover .collection_list_text {
 	color: white;
 }
+
+.chat_select_container-active .collection_list_text {
+	color: white;
+}
+
 .notification-container {
 	width: 60px;
 	height: 60px;
