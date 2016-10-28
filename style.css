@@ -417,6 +417,10 @@ body {
 	color: white;
 }
 
+.help-header-link:hover .sidebar-nav-container-header-active {
+    background-color: #666;
+}
+
 .help-link {
   color: #65D35B;
 }
