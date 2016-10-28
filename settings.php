@@ -12,7 +12,7 @@
                                                       <!-- Preview Section -->
 
                                                       <a href="javascript:void(0)" onclick="">
-                                                              <div class="chat_select_container">
+                                                              <div class="chat_select_container-active">
                                                                   <div class="chat_personal_info_container">
                                                                       <div class="chat_user_info">
                                                                           <span class="collection_list_text">Connect</span>
