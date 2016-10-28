@@ -78,15 +78,17 @@
         </div>
     </div>
         <div class="template-show-hide">
-          <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
-              <div class="builder-conditions-container">
-                  <span class="" style="line-height: 46px; color: #666;"><i class="fa fa-info-circle" aria-hidden="true" style="margin-right: 10px;"></i> Create a custom caption template or use one of our premade templates</span>
-              </div>
-          </div>
-          <div class="builder-main-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
-            <div class="builder-conditions-container" style="height: auto; min-height: 100px;">
-                <textarea style="width: 100%; min-height: 100px; border: 1px solid #666;"></textarea>
-              </div>
+          <div class="builder-main-clearfix" style="">
+                  <div class="builder-conditions-container" style="height: auto; width: 100%; display: block;">
+                            <span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
+                            <div class="caption-textarea-container"style="margin-bottom: 30px;">
+                                  <textarea id="caption-textarea-large" class="caption-textarea" style="height: 54px;"></textarea>
+                            </div>
+                            <span class="cc-text-small">Caption for: Twitter (Character Limit: 140)</span>
+                            <div class="caption-textarea-container">
+                                  <textarea id="caption-textarea-small" class="caption-textarea"></textarea>
+                            </div>
+                  </div>
           </div>
         </div>
     </div>
@@ -154,7 +156,7 @@
                                           <span class="feed-product-title" style="line-height: 46px;">Product Title Goes Here</span>
                                   </div>
                                   <div class="feed-product-sharenow-container">
-                                       
+
                                       <button type='button' class='feed-product-sharenow-button'><i class="fa fa-bullhorn" aria-hidden="true"></i> Share</button>
                                   </div>
                           </div>
