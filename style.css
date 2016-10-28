@@ -649,7 +649,7 @@ body {
 .addimage-container {
   width: 180px;
   height: 180px;
-  border: 2px solid white;
+  border: 2px solid #65D35B;
   position: relative;
   cursor: pointer;
   background-size: 100%;
