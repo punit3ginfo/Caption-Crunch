@@ -40,12 +40,6 @@ try
 
 		}
 
-
-
-
-
-
-
                 $count=0;
 		foreach($products as $singleproduct)
 		{
@@ -110,9 +104,9 @@ try
 
           <button type='button' class='share-button' id='share-button-<?php echo $p_id1; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</button>
 
-          <!-- Preview -->
           <script>
 
+          <!-- Preview -->
           $("#share-button-<?php echo $p_id1; ?>").click(function(){
 
               var CaptionLong = "<?php echo $title; ?> | $<?php echo $price; ?> | Long Caption";
@@ -148,48 +142,43 @@ try
                   $(".facebook-mobile-image").attr("src", "");
           });
 
+          <!-- Show / Hide Product Details -->
+          $(document).ready(function() {
+                $('.product-image-<?php echo $p_id1; ?>').hover(function() {
+                  // Show / Hide Product Details Opacity Container
+                    $('.product-opacity-<?php echo $p_id1; ?>').toggle();
+                  // Show / Hide Product Details Container
+                    $('.product-details-<?php echo $p_id1; ?>').toggle();
+                });
+            });
+
+            <!-- Preview Drop Down -->
+            $(document).ready(function() {
+
+                  $('.sidebar-link').click(function() {
+                         $('#preview-container').removeClass("preview-container-animate");
+                         $('.close-preview-container').css('display', 'none');
+                  });
+
+                  $('#share-button-<?php echo $p_id1; ?>').click(function() {
+                          $('.collections-animation-container').addClass("collections-animation");
+                          $('#preview-container').addClass("preview-container-animate");
+                          $('.close-preview-container').css('display', 'flex');
+                  });
+
+                  $('#close-preview-button').click(function() {
+                          $('.collections-animation-container').removeClass("collections-animation");
+                          $('#preview-container').removeClass("preview-container-animate");
+                          $('.close-preview-container').css('display', 'none');
+                  });
+
+              });
+
           </script>
 
         </div>
 
     </div>
-
-<!-- Show / Hide Product Details -->
-<script>
-$(document).ready(function() {
-      $('.product-image-<?php echo $p_id1; ?>').hover(function() {
-        // Show / Hide Product Details Opacity Container
-          $('.product-opacity-<?php echo $p_id1; ?>').toggle();
-        // Show / Hide Product Details Container
-          $('.product-details-<?php echo $p_id1; ?>').toggle();
-      });
-  });
-</script>
-
-<!-- Preview Drop Down -->
-<script>
-  $(document).ready(function() {
-
-        $('.sidebar-link').click(function() {
-               $('#preview-container').removeClass("preview-container-animate");
-               $('.close-preview-container').css('display', 'none');
-        });
-
-        $('#share-button-<?php echo $p_id1; ?>').click(function() {
-                $('.collections-animation-container').addClass("collections-animation");
-                $('#preview-container').addClass("preview-container-animate");
-                $('.close-preview-container').css('display', 'flex');
-        });
-
-        $('#close-preview-button').click(function() {
-                $('.collections-animation-container').removeClass("collections-animation");
-                $('#preview-container').removeClass("preview-container-animate");
-                $('.close-preview-container').css('display', 'none');
-        });
-
-    });
-</script>
-
 <!-- HTML Content for Product END    -->
 
 <!-- Pagination -->
