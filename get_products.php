@@ -143,17 +143,17 @@ try
           });
 
           <!-- Show / Hide Product Details -->
-          
+          $(document).ready(function() {
                 $('.product-image-<?php echo $p_id1; ?>').hover(function() {
                   // Show / Hide Product Details Opacity Container
                     $('.product-opacity-<?php echo $p_id1; ?>').toggle();
                   // Show / Hide Product Details Container
                     $('.product-details-<?php echo $p_id1; ?>').toggle();
                 });
-
+            });
 
             <!-- Preview Drop Down -->
-
+            $(document).ready(function() {
 
                   $('.sidebar-link').click(function() {
                          $('#preview-container').removeClass("preview-container-animate");
@@ -172,6 +172,7 @@ try
                           $('.close-preview-container').css('display', 'none');
                   });
 
+              });
 
           </script>
 
