@@ -11,10 +11,10 @@
                         <div class="chat_selector_overflow">
 													<!-- Caption Menu Item  -->
                           		<a href="javascript:void(0)">
-                                    <div class="chat_select_container" >
-                                        <div class="chat_personal_info_container">
-                                            <div class="chat_user_info">
-                                                <span class="collection_list_text">Caption title go here</span>
+                                    <div class="menu-container" >
+                                        <div class="menu-clearfix">
+                                            <div class="menu-font-container">
+                                                <span class="menu-font">Caption title go here</span>
                                             </div>
                                         </div>
                                     </div>
