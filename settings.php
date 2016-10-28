@@ -18,7 +18,7 @@
                                                                           <span class="collection_list_text">Connect</span>
                                                                       </div>
                                                                       <div class="notification-container">
-                                                                          <div class="chat_notification_container">
+                                                                          <div class="chat_notification_container chat_notification_container-active">
                                                                                     <span class="notif_number">
                                                                                                 <i class="fa fa-sign-in settings-menu-icon" aria-hidden="true"></i>
                                                                                     </span>
