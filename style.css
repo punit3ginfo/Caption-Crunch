@@ -873,7 +873,8 @@ body {
   padding: 15px;
   z-index: 2;
   position: absolute;
-  width: calc(100% - 50px);
+  width: calc(100% - 32px);
+  padding-right: 0px;
 }
 
 .preview-form-conatiner {
