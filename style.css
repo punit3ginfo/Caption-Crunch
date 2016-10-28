@@ -1066,6 +1066,7 @@ body {
 	width: auto;
 	height: 75px;
 	border-bottom: 1px solid #F2F3F3;
+  position: relative;
 }
 
 .chat_select_container:hover .chat_personal_info_container {
@@ -1108,8 +1109,8 @@ body {
 .notification-container {
 	width: 60px;
 	height: 60px;
-	float: right;
-	position: relative;
+	position: absolute;
+  right: 0px;
 }
 
 .chat_notification_container {
