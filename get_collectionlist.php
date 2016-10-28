@@ -34,7 +34,6 @@
                                             </div>
                                             <div class="menu-icon-clearfix">
                                                 <div class="menu-icon-container">
-
                                                     <span class="menu-icon"><?php echo $noOfProduct; ?></span>
                                                 </div>
                                             </div>
