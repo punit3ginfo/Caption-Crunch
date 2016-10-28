@@ -1087,6 +1087,7 @@ body {
   	padding-left: 10px;
     width: calc(100% - 50px);
     overflow-x: hidden;
+    overflow-y: hidden;
     word-break: break-all;
 }
 
