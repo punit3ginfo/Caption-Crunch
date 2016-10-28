@@ -1113,6 +1113,10 @@ body {
 	text-align:center;
 }
 
+.chat_notification_container-active {
+	background: #D577C3;
+}
+
 .notif_number {
 	font-family: HelveticaNeue-Bold;
 	font-size: 14px;
