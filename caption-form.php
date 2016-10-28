@@ -78,7 +78,7 @@
         </div>
     </div>
         <div class="template-show-hide">
-          <div class="builder-main-clearfix" style="">
+          <div class="builder-main-clearfix" style="border-bottom: 0px; border-top: 1px solid #eee;">
                   <div class="builder-conditions-container" style="height: auto; width: 100%; display: block;">
                             <span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
                             <div class="caption-textarea-container"style="margin-bottom: 30px;">
