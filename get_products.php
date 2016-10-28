@@ -222,9 +222,7 @@ $(document).ready(function() {
 	}
 	?>
 
- <?php
-
-	       ?>
+ <?php ?>
 
 <?php if((isset($_REQUEST['colid']) && $_REQUEST['colid']!='' && ($_REQUEST['page_id']=='')) || (($_REQUEST['page_id']=='') &&
 												($_REQUEST['colid']==''))){?>
