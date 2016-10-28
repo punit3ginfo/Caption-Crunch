@@ -108,11 +108,11 @@
                                       <div class="builder-conditions-container" style="height: auto; width: 100%; display: block;">
                                                 <span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
                                                 <div class="caption-textarea-container"style="margin-bottom: 30px;">
-                                                      <textarea id="caption-textarea-large" class="caption-textarea" style="height: 54px;"></textarea>
+                                                      <textarea id="caption-textarea-large" class="caption-textarea"></textarea>
                                                 </div>
                                                 <span class="cc-text-small">Caption for: Twitter (Character Limit: 140)</span>
                                                 <div class="caption-textarea-container">
-                                                      <textarea id="caption-textarea-small" class="caption-textarea"></textarea>
+                                                      <textarea id="caption-textarea-small" class="caption-textarea" style="margin-bottom: 0px;"></textarea>
                                                 </div>
                                       </div>
                               </div>
