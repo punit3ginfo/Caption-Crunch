@@ -12,14 +12,14 @@
                                                       <!-- Preview Section -->
 
                                                       <a href="javascript:void(0)" onclick="">
-                                                              <div class="chat_select_container chat_select_container-active">
-                                                                  <div class="chat_personal_info_container">
-                                                                      <div class="chat_user_info">
-                                                                          <span class="collection_list_text">Connect</span>
+                                                              <div class="menu-container menu-container-active">
+                                                                  <div class="menu-clearfix">
+                                                                      <div class="menu-font-container">
+                                                                          <span class="menu-font">Connect</span>
                                                                       </div>
-                                                                      <div class="notification-container">
-                                                                          <div class="chat_notification_container chat_notification_container-active">
-                                                                                    <span class="notif_number">
+                                                                      <div class="menu-icon-clearfix">
+                                                                          <div class="menu-icon-container menu-icon-container-active">
+                                                                                    <span class="menu-icon">
                                                                                                 <i class="fa fa-sign-in settings-menu-icon" aria-hidden="true"></i>
                                                                                     </span>
                                                                           </div>
