@@ -14,7 +14,7 @@
                               	<!-- Collection Card -->
 
                                     <a href="javascript:void(0)" onclick="getproducts()">
-                                            <div class="chat_select_container">
+                                            <div class="menu-container">
                                                 <div class="menu-clearfix">
                                                     <div class="menu-font-container">
                                                         <span class="menu-font">ALL PRODUCTS</span>
