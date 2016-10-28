@@ -417,7 +417,7 @@ body {
 	color: white;
 }
 
-.help-header-link:hover .sidebar-nav-container-header-active {
+.help-header-link:hover .sidebar-nav-container-header {
     background-color: #666;
 }
 
