@@ -48,71 +48,117 @@ try
 			?>
 
 
-<!-- HTML Content for Product  START      -->
+      <!-- HTML Content for Product  START      -->
 
-<div class="product-card-clearfix">
+      <div class="product-card-clearfix">
 
-	<div class="product-card-container">
+      	<div class="product-card-container">
 
-      		<div class="product-card-image-container" style='background-image: url(<?php echo $src; ?>)'>
-      		</div>
+                <div class="ribbon ribbon-<?php echo $p_id1; ?>"><span>SHARED</span></div>
 
-      		<div class="product-card-details-section">
-      			<div class="product-card-details-container">
-                  	<span class="product-title-text"><?php echo $title; ?></span>
-                  	<div class="product-card-price-container">
-                  		<span class="product-card-price-text" style="margin-right: 3px;">$<?php echo $price; ?></span>
-                      <span class="product-card-price-text" style="font-size: 14px; color: #888;">$<?php echo $price; ?></span>
-                  	</div>
-      			</div>
-      		</div>
+            		<div class="product-card-image-container product-image-<?php echo $p_id1; ?>" style='background-image: url(<?php echo $src; ?>)'>
+                  <!-- Opacity Layer -->
+                    <div class="product-card-image-container-background-hover product-opacity-<?php echo $p_id1; ?>"></div>
+                  <!-- Product Details Layer -->
+                    <div class="product-card-image-container-content-hover product-details-<?php echo $p_id1; ?>">
+                        <div class="product-details-container">
+                            <div class="product-icon-container" style="margin-bottom: 15px;">
+                               <span class="product-icon-clearfix">
 
-          <div id="<?php echo $p_id1; ?>"  class="share-button-container">
+                               </span>
+                            </div>
 
-			<script>
-	$(document).ready(function(){
-		var OrigonalTag = '<?php echo $OrigonalTag; ?>';
+                            <div style="margin-top: 15px;">
+                              <span class="product-title-text"><?php echo $title; ?></span>
+                            </div>
 
-		var pid_1 = '<?php echo $p_id1; ?>';
-		//alert(pid_1);
-		var pattern = /shared/;
-		var pattern1 = / shared/;
+                            <div style="margin-top: 15px;">
+                              <span class="product-card-price-text" style="margin-right: 3px;">$<?php echo $price; ?></span>
+                              <span class="product-card-price-text" style="font-size: 12px; color: #888;">$<?php echo $price; ?></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		var exists = pattern.test(OrigonalTag);
-		var exists1 = pattern1.test(OrigonalTag);
-		if(exists || exists1 ){
-			var tags_1 = '"<?php echo $tags; ?>"';
-			//alert(tags_1);
+                <button type='button' class='share-button' id='share-button-<?php echo $p_id1; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</button>
 
-		        var _id = '#'+ pid_1;
+                <script>
 
+                // Preview
+                $("#share-button-<?php echo $p_id1; ?>").click(function(){
 
-		//$(_id).html('<button type=button class=share-button onclick=unshareButton('+pid_1+',"'+tags_1+'");>UnShare</button>');
-		$(_id).html("<button type='button' class='share-button' onclick='unshareButton("+pid_1+","+tags_1+");'>UnShare</button>");
+                    var CaptionLong = "<?php echo $title; ?> | $<?php echo $price; ?> | Long Caption";
+                    var CaptionShort = "<?php echo $title; ?> | $<?php echo $price; ?> | Short Caption";
 
-		}else{
-			var _id = '#'+ pid_1;
-			<?php
-			if($OrigonalTag == '')
-			{
-			  $OrigonalTag="shared";
-			}
-			else{
-			   $OrigonalTag=$OrigonalTag.",shared";
-			}
-			?>
-			var tags_1 = '"<?php echo $OrigonalTag; ?>"';
+                    $("#caption-textarea-large").ready(function() {
+                          $("#caption-textarea-large").html(CaptionLong);
+                          $("#caption-textarea-small").html(CaptionShort);
+                    });
 
+                    $(".facebook-mobile-caption-text").ready(function() {
+                          $(".facebook-mobile-caption-text").html(CaptionLong);
+                    });
 
-			  //$(_id).html('<button type="button" class=share-button onclick=shareButton('+pid_1+',"'+tags_1+'");>Share</button>');
-	$(_id).html("<button type='button' class='share-button' onclick='shareButton("+pid_1+","+tags_1+");'>Share</button>");
-		}
-	});
-</script>
-	   </div>
-      </div>
-</div>
-<!-- HTML Content for Product END    -->
+                    $("#addimage-image-one").ready(function() {
+                          $("#addimage-image-one").css('background-image', 'url(<?php echo $src; ?>)')
+                    });
+
+                    var $facebookImageSource = "<?php echo $src; ?>";
+
+                    $(".facebook-mobile-image").ready(function() {
+                          $(".facebook-mobile-image").attr("src", $facebookImageSource);
+                    });
+
+                });
+
+                $('#close-preview-button').click(function() {
+                        // $("#preview-container").empty();
+                        $("#caption-textarea-large").empty();
+                        $("#caption-textarea-small").empty();
+                        $("#addimage-image-one").empty();
+                        $(".facebook-mobile-caption-text").empty();
+                        $(".facebook-mobile-image").attr("src", "");
+                });
+
+                // Show / Hide Product Details
+                $(document).ready(function() {
+                      $('.product-image-<?php echo $p_id1; ?>').hover(function() {
+                        // Show / Hide Product Details Opacity Container
+                          $('.product-opacity-<?php echo $p_id1; ?>').toggle();
+                        // Show / Hide Product Details Container
+                          $('.product-details-<?php echo $p_id1; ?>').toggle();
+                      });
+                  });
+
+                  // Preview Drop Down
+                  $(document).ready(function() {
+
+                        $('.sidebar-link').click(function() {
+                               $('#preview-container').removeClass("preview-container-animate");
+                               $('.collections-animation-container').removeClass("collections-animation");
+                               $('.close-preview-container').css('display', 'none');
+                        });
+
+                        $('#share-button-<?php echo $p_id1; ?>').click(function() {
+                                $('.collections-animation-container').addClass("collections-animation");
+                                $('#preview-container').addClass("preview-container-animate");
+                                $('.close-preview-container').css('display', 'flex');
+                        });
+
+                        $('#close-preview-button').click(function() {
+                                $('.collections-animation-container').removeClass("collections-animation");
+                                $('#preview-container').removeClass("preview-container-animate");
+                                $('.close-preview-container').css('display', 'none');
+                        });
+
+                    });
+
+                </script>
+
+              </div>
+
+          </div>
+      <!-- HTML Content for Product END    -->
 
 	<?php
 
@@ -230,7 +276,7 @@ try
             $('#showLess').hide();
         }
     });
-                    } 
+                    }
                 });
 	});
 </script>
