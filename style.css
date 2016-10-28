@@ -1773,6 +1773,7 @@ a:hover {
     background-image: none;
     -webkit-appearance: none;
   	margin-left: 11px;
+    color: #666;
 }
 
 .select-style select:focus {
