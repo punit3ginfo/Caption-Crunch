@@ -68,11 +68,11 @@ try
                                </span>
                             </div>
 
-                            <div style="margin-top: 15px;">
+                            <div class="product-title-container">
                               <span class="product-title-text"><?php echo $title; ?></span>
                             </div>
 
-                            <div style="margin-top: 15px;">
+                            <div class="product-title-container">
                               <span class="product-card-price-text" style="margin-right: 3px;">$<?php echo $price; ?></span>
                               <span class="product-card-price-text" style="font-size: 12px; color: #888;">$<?php echo $price; ?></span>
                             </div>

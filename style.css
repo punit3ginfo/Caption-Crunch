@@ -1287,6 +1287,11 @@ body {
     margin: auto;
 }
 
+.product-title-container {
+  margin-top: 15px;
+  width: 100%;
+}
+
 .product-icon-clearfix {
     font-family: HelveticaNeue-Bold;
     font-size: 14px;
