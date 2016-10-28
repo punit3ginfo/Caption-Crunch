@@ -86,7 +86,7 @@
                                   <textarea id="caption-textarea-large" class="caption-textarea"></textarea>
                             </div>
                             <span class="cc-text-small">Caption for: Twitter (Character Limit: 140)</span>
-                            <div class="caption-textarea-container">
+                            <div class="caption-textarea-container" style="margin-bottom: 0px;">
                                   <textarea id="caption-textarea-small" class="caption-textarea"></textarea>
                             </div>
                   </div>
