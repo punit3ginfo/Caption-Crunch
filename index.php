@@ -22,7 +22,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 ?>
 
 <head>
-  <title>Caption Crunch</title>
+  <title>CaptionCrunch</title>
   <link rel="stylesheet" href="/style.css">
 
   <link rel="apple-touch-icon" sizes="57x57" href="./Favicon.ico/apple-icon-57x57.png">
