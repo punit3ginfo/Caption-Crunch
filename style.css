@@ -1298,6 +1298,10 @@ position: relative;
     justify-content: center;
 }
 
+.product-icon-container:hover {
+    background: #D577C3;
+}
+
 .product-icon-clearfix {
     font-family: HelveticaNeue-Bold;
     font-size: 20px;
