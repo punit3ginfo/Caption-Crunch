@@ -1076,6 +1076,7 @@ position: relative;
 	height: 75px;
 	border-bottom: 1px solid #F2F3F3;
   position: relative;
+  box-sizing: border-box;
 }
 
 .menu-container:hover .menu-clearfix {
