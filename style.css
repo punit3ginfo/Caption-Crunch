@@ -1198,12 +1198,14 @@ body {
   width: 100%;
   height: calc(100% - 80px);
   position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .content-overflow  {
   box-sizing: border-box;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: hidden;
   position: relative;
   width: 100%;
   height: calc(100vh - 173px);
