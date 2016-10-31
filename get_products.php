@@ -81,7 +81,7 @@ try
             <!-- Product Details Layer -->
               <div class="product-card-image-container-content-hover product-details-<?php echo $p_id1; ?>">
                   <div class="product-details-container">
-                      <a class="product-icon-container">
+                      <a href="" class="product-icon-container">
                          <span class="product-icon-clearfix">
                                 <i class="fa fa-link" aria-hidden="true"></i>
                          </span>
