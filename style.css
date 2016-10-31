@@ -307,16 +307,12 @@ body {
     box-shadow: 1px 4px 10px 0px rgba(0,0,0,0.07);
 }
 
-.sidebar-nav-container:hover {
-	background-color: #666;
-}
-
 .sidebar-nav-container {
     height: 80px;
-	width: 80px;
-	background-size: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
+  	width: 80px;
+  	background-size: 100%;
+  	background-position: center;
+  	background-repeat: no-repeat;
   	display: flex;
     align-items: center;
     justify-content: center;
@@ -325,10 +321,10 @@ body {
 
 .sidebar-nav-container-header {
     height: 100%;
-	width: 80px;
-	background-size: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
+	  width: 80px;
+	  background-size: 100%;
+	  background-position: center;
+	  background-repeat: no-repeat;
   	display: flex;
     align-items: center;
     justify-content: center;
@@ -342,19 +338,19 @@ body {
 .sidebar-link {
 	color:#666;
   text-decoration: none;
+  display: block
+  background-color: white;
 }
 
 .sidebar-link:hover {
 	color:#FFFFFF;
   text-decoration: none;
+  background-color: #666;
 }
 
 .sidebar-link-active {
     	color: white;
-}
-
-.sidebar-link-active .sidebar-nav-container  {
-    background-color: #666;
+      background-color: #666;
 }
 
 .sidebar-hammer-img {
