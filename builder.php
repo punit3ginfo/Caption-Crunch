@@ -56,8 +56,8 @@
                   </div>
         	</div>
 
-			<div class="builder-grid-container">
-        		<div  class="builder-grid-overflow-container">
+			<div class="content-overflow-container">
+        		<div  class="content-overflow">
                   <?php include 'caption-form.php';?>
     			  </div>
   	  </div>
