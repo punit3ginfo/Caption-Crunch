@@ -173,6 +173,9 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
 			    $('.content-container').html(data);
+          $('#share-link').addClass('sidebar-link-active');
+          $('#captions-link').removeClass('sidebar-link-active');
+          $('#settings-link').removeClass('sidebar-link-active');
                     }
                 });
             }
