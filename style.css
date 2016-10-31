@@ -1197,14 +1197,13 @@ body {
 .content-overflow-container {
   width: 100%;
   height: calc(100% - 80px);
-  /*background: #F8F9F9;*/
   position: relative;
 }
 
 .content-overflow  {
   box-sizing: border-box;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
   position: relative;
   width: 100%;
   height: calc(100vh - 173px);
@@ -1815,10 +1814,6 @@ a:hover {
 
 form {
     margin-bottom: 0px;
-}
-
-.content-overflow-container.scroll-grid {
-  overflow: scroll;
 }
 
 .unshare-button {
