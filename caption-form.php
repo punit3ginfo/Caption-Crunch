@@ -1,4 +1,4 @@
-<form class="preview-form-container">
+<form class="form-container">
 <!-- CONDITIONS -->
 <div class="builder-main-conatiner">
   <div class="builder-main-clearfix" style="border-bottom: 0px;">

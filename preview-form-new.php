@@ -1,6 +1,6 @@
-<form class="preview-form-container">
+<form class="form-container">
 <!--  Step 1  -->
-        <div class="preview-form-conatiner" style="padding-bottom: 0px">
+        <div class="preview-form-container" style="padding-bottom: 0px">
 
           <div class="builder-main-clearfix" style="border-bottom: 1px solid #eee;">
               <div class="builder-conditions-container" style="height: 30px;">
