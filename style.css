@@ -1209,7 +1209,7 @@ body {
   width: 100%;
   height: calc(100vh - 173px);
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 5px;
 }
 
 .product-card-clearfix {
