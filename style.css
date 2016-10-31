@@ -888,11 +888,9 @@ body {
 
 .preview-form-container {
   display: block;
-  padding: 15px;
   z-index: 2;
   position: absolute;
-  width: calc(100% - 32px);
-  padding-right: 0px;
+  width: 100%;
 }
 
 .preview-form-conatiner {
