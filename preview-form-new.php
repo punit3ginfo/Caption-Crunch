@@ -6,7 +6,7 @@
               <div class="builder-conditions-container" style="height: 30px;">
 
                     <span class="preview-steps-text account-show-hide-button" style="line-height: 30px; cursor: pointer;">
-                      Step 1 | Choose Account
+                      Step 1 | Choose Profile
                       <i id="account-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
                     </span>
 
@@ -147,29 +147,6 @@
                                     </div>
                             </div>
                   </div>
-                  <!--  Step 4  -->
-                          <!-- <div class="preview-form-conatiner">
-
-                            <div class="builder-main-clearfix" style="border-bottom: 0px;">
-                                <div class="builder-conditions-container" style="height: 30px;">
-
-                                      <span  class="preview-steps-text share-show-hide-button" style="line-height: 30px; cursor: pointer;">
-                                        Step 4 | Share
-                                        <i id="share-arrow-icon" class="fa fa-chevron-down" aria-hidden="true" style="float: right; line-height: 30px;"></i>
-                                      </span>
-
-                                </div>
-                            </div>
-                                  <div class="share-show-hide" style="display: none;">
-                                          <div class="builder-main-clearfix" style="border-top: 1px solid #eee; border-bottom: 0px; padding-bottom: 5px;">
-                                                  <div class="builder-conditions-container">
-                                                        <a href="#" class="button-three-col preview-share-button"><i class="fa fa-bullhorn" aria-hidden="true"></i> Share Now</a>
-                                                        <a href="#" class="button-three-col preview-sharelater-button"><i class="fa fa-clock-o" aria-hidden="true"></i> Share Later</a>
-                                                        <a href="#" class="button-three-col preview-schedule-button"><i class="fa fa-calendar" aria-hidden="true"></i> Schedule</a>
-                                                  </div>
-                                          </div>
-                                  </div>
-                        </div> -->
 </form>
 
 

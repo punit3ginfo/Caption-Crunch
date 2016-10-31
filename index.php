@@ -78,7 +78,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                 </div>
             </a>
 
-			      <a  class="sidebar-link sidebar-hammer" href="javascript:void(0)" onclick="getbuilder()">
+			      <a  class="sidebar-link sidebar-hammer" href="javascript:void(0)" onclick="getcaptions()">
             	<div class="sidebar-nav-container">
                   	<span class="sidebar-span">
                     <div class="sidebar-hammer-img"></div>
@@ -95,34 +95,14 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                       </span>
                 </div>
               </a>
-
-            <!-- <a class="sidebar-link" href="javascript:void(0)" onclick="getaccount()" >
-                  <div class="sidebar-nav-container">
-                      <span class="sidebar-span">
-                          <i style="font-size: 20px;" class="fa fa-user" aria-hidden="true"></i><br>
-                          Account
-                      </span>
-                  </div>
-            </a> -->
             <!-- <a class="sidebar-link" href="/?page=autopilot">
             	<div class="sidebar-nav-container">
-					<span class="sidebar-span">
+					          <span class="sidebar-span">
                       <i style="font-size: 20px;" class="fa fa-paper-plane-o" aria-hidden="true"></i><br>
                       Autopilot
                     </span>
                 </div>
             </a> -->
-
-            <div  style="position: absolute; bottom: 0px;">
-            <!--   <a class="sidebar-link" href="javascript:void(0)" onclick="getsettings()" >
-            	<div class="sidebar-nav-container">
-					<span class="sidebar-span">
-                      <i style="font-size: 20px;" class="fa fa-cogs" aria-hidden="true"></i><br>
-                      Settings
-                    </span>
-                </div>
-              </a>-->
-            </div>
         </aside>
     <!-- /.Sidebar Nav -->
 
@@ -180,6 +160,8 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 
 <script>
 // Load Pages
+
+// Get Collections / Share Page
 	function getproducts(){
 
                var access_token='<?php echo $access_token ?>';
@@ -194,6 +176,8 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                     }
                 });
             }
+
+// Get Dashboard Page
 			function getdashboard(){
 
                var access_token='<?php echo $access_token ?>';
@@ -208,13 +192,15 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                     }
                 });
             }
-			function getbuilder(){
+
+// Get Captions Page
+			function getcaptions(){
 
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 
                 $.ajax({
-                    url: '/builder.php?access_token='+access_token+'&shop='+shop,
+                    url: '/captions.php?access_token='+access_token+'&shop='+shop,
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
@@ -222,6 +208,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                     }
                 });
             }
+// Get Settings Page
 			function getsettings(){
 
                var access_token='<?php echo $access_token ?>';
@@ -236,22 +223,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                     }
                 });
             }
-			function getaccount(){
-
-               var access_token='<?php echo $access_token ?>';
-		var shop='<?php echo $_REQUEST['shop'] ?>';
-
-                $.ajax({
-                    url: '/account.php?access_token='+access_token+'&shop='+shop,
-                    success: function(data){
-                     //console.log(data);
-			   // var data1= data.find('.chat_container').html()
-			    $('.content-container').html(data);
-                    }
-                });
-            }
-
-
+// Get Share History
 function gethistory(){
 
                var access_token='<?php echo $access_token ?>';
