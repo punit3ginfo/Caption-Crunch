@@ -1817,9 +1817,9 @@ form {
     margin-bottom: 0px;
 }
 
-/*.content-overflow-container.scroll-grid {
+.content-overflow-container.scroll-grid {
   overflow: scroll;
-}*/
+}
 
 .unshare-button {
   background: white none repeat scroll 0 0;
