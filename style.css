@@ -353,7 +353,7 @@ body {
     	color: white;
 }
 
-.sidebar-link-active .sidebar-nav-container-active  {
+.sidebar-link-active .sidebar-nav-container  {
     background-color: #666;
 }
 
