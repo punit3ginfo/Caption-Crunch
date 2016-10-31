@@ -1080,11 +1080,11 @@ body {
 }
 
 .menu-container:hover .menu-clearfix {
-	border-bottom: 0px;
+	border-bottom: 0px !important;
 }
 
 .menu-container-active .menu-clearfix {
-	border-bottom: 0px;
+	border-bottom: 0px !important;
 }
 
 .menu-font-container {
