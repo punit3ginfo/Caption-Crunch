@@ -311,18 +311,6 @@ body {
 	background-color: #666;
 }
 
-.sidebar-link:hover {
-  	text-decoration: none;
-}
-
-.sidebar-link-active {
-    	color: white;
-}
-
-.sidebar-link-active .sidebar-nav-container-active  {
-    background-color: #666;
-}
-
 .sidebar-nav-container {
     height: 80px;
 	width: 80px;
@@ -351,12 +339,22 @@ body {
 	background-color: #666;
 }
 
-.sidebar-link:hover {
-	color:#FFFFFF;
-}
-
 .sidebar-link {
 	color:#666;
+  text-decoration: none;
+}
+
+.sidebar-link:hover {
+	color:#FFFFFF;
+  text-decoration: none;
+}
+
+.sidebar-link-active {
+    	color: white;
+}
+
+.sidebar-link-active .sidebar-nav-container-active  {
+    background-color: #666;
 }
 
 .sidebar-hammer-img {
