@@ -361,7 +361,11 @@ body {
   background-size: 100%;
 }
 
-.sidebar-hammer:hover .sidebar-hammer-img {
+.sidebar-link:hover .sidebar-hammer-img {
+  background-image: url("./images/sidebar-hover-Hammer.png");
+}
+
+.sidebar-link-active .sidebar-hammer-img {
   background-image: url("./images/sidebar-hover-Hammer.png");
 }
 
