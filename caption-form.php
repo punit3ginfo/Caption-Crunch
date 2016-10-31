@@ -1,4 +1,4 @@
-<form style="display: block; padding: 15px; padding-bottom: 0px; padding-right: 0px;">
+<form class="preview-form-container">
 <!-- CONDITIONS -->
 <div class="builder-main-conatiner">
   <div class="builder-main-clearfix" style="border-bottom: 0px;">
