@@ -1209,6 +1209,7 @@ body {
   width: 100%;
   height: calc(100vh - 173px);
   padding-left: 10px;
+  padding-right: 10px;
 }
 
 .product-card-clearfix {
@@ -2122,16 +2123,4 @@ cursor:pointer;
 .connect-button:hover {
     color: white;
   	background: #65D35B;
-}
-
-/* Scroll Bar */
-
-.menu-overflow::-webkit-scrollbar
-{
-    width: 0px;
-}
-.menu-overflow::-webkit-scrollbar-track-piece
-{
-    background-color: transparent;
-    -webkit-border-radius: 6px;
 }
