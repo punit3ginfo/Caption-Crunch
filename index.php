@@ -78,7 +78,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                 </div>
             </a>
 
-			      <a  class="sidebar-link sidebar-hammer" href="javascript:void(0)" onclick="getcaptions()">
+			      <a  class="sidebar-link sidebar-hammer" href="javascript:void(0)" onclick="getcaptions()" id="captions-link">
             	<div class="sidebar-nav-container">
                   	<span class="sidebar-span">
                     <div class="sidebar-hammer-img"></div>
@@ -87,7 +87,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
               	</div>
             </a>
 
-              <a class="sidebar-link" href="javascript:void(0)" onclick="getsettings()" >
+              <a class="sidebar-link" href="javascript:void(0)" onclick="getsettings()" id="settings-link">
                 <div class="sidebar-nav-container">
                       <span class="sidebar-span">
                       <i style="font-size: 20px;" class="fa fa-cogs" aria-hidden="true"></i><br>
