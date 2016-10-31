@@ -81,11 +81,11 @@ try
             <!-- Product Details Layer -->
               <div class="product-card-image-container-content-hover product-details-<?php echo $p_id1; ?>">
                   <div class="product-details-container">
-                      <div class="product-icon-container" style="margin-bottom: 15px;">
+                      <a class="product-icon-container">
                          <span class="product-icon-clearfix">
-
+                                <i class="fa fa-link" aria-hidden="true"></i>
                          </span>
-                      </div>
+                      </a>
 
                       <div class="product-title-container">
                         <span class="product-title-text"><?php echo $title; ?></span>

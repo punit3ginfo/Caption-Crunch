@@ -1294,6 +1294,8 @@ position: relative;
     margin: 10px;
     text-align:center;
     margin: auto;
+    margin-bottom: 15px;
+    display: block;
 }
 
 .product-title-container {
