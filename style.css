@@ -1291,16 +1291,11 @@ position: relative;
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    margin: 10px;
-    text-align:center;
+    text-align: center;
     margin: auto;
-    margin-bottom: 15px;
-    display: block;
-}
-
-.product-title-container {
-  margin-top: 15px;
-  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .product-icon-clearfix {
@@ -1310,6 +1305,11 @@ position: relative;
     color: #FFFFFF;
     letter-spacing: 0.87px;
     display: block;
+}
+
+.product-title-container {
+  margin-top: 15px;
+  width: 100%;
 }
 
 .product-card-details-container {
