@@ -2123,3 +2123,15 @@ cursor:pointer;
     color: white;
   	background: #65D35B;
 }
+
+/* Scroll Bar */
+
+.menu-overflow::-webkit-scrollbar
+{
+    width: 0px;
+}
+.menu-overflow::-webkit-scrollbar-track-piece
+{
+    background-color: transparent;
+    -webkit-border-radius: 6px;
+}
