@@ -76,7 +76,7 @@
 
 
 
-  <div class="content-overflow-container scroll-grid">
+  <div class="content-overflow-container">
       <div  class="content-overflow">
 
         <?php
