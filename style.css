@@ -890,15 +890,18 @@ body {
   display: block;
   z-index: 2;
   position: absolute;
-  width: 100%;
+  width: calc(100% - 30px);
+  padding-right: 10px;
+  padding-top: 15px;
+  padding-left: 5px;
 }
 
 .preview-form-conatiner {
-  width: calc(100% - 45px);
-  background-color: white;
-  box-shadow: 1px -2px 17px 0px rgba(0,0,0,0.14);
-  padding: 15px 30px;
-  position: relative;
+  width: calc(100% - 60px);
+background-color: white;
+box-shadow: 1px -2px 17px 0px rgba(0,0,0,0.14);
+padding: 15px 30px;
+position: relative;
 }
 
 /* ---------------- Main Container ----------------- */
