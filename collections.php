@@ -76,8 +76,8 @@
 
 
 
-  <div class="product-grid-container scroll-grid">
-      <div  class="product-grid-overflow-container">
+  <div class="content-overflow-container scroll-grid">
+      <div  class="content-overflow">
 
         <?php
 

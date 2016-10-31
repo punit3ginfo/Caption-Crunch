@@ -1194,14 +1194,14 @@ body {
 
 /*   Product Cards    */
 
-.product-grid-container {
+.content-overflow-container {
   width: 100%;
   height: calc(100% - 80px);
   /*background: #F8F9F9;*/
   position: relative;
 }
 
-.product-grid-overflow-container  {
+.content-overflow  {
   box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: auto;
@@ -1817,9 +1817,9 @@ form {
     margin-bottom: 0px;
 }
 
-.product-grid-container.scroll-grid {
+/*.content-overflow-container.scroll-grid {
   overflow: scroll;
-}
+}*/
 
 .unshare-button {
   background: white none repeat scroll 0 0;
