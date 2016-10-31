@@ -11,7 +11,7 @@
                                               </div>
 
                                               <div class="menu-overflow-container">
-                                                    <div class="menu-overflow">
+                                                    <div class="menu-overflow" style="overflow: hidden; display: flex; justify-content: center; align-items: center;">
                                                       <!-- Preview Section -->
 
                                                         <?php include 'iphone-preview.php';?>
