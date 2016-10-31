@@ -9,7 +9,7 @@
 
                                             <div class="menu-overflow-container">
                                                   <div class="menu-overflow">
-                                                    
+
                                                       <!-- Preview Section -->
 
                                                       <a href="javascript:void(0)" onclick="">
@@ -50,8 +50,8 @@
 
 
 
-                        <div class="product-grid-container scroll-grid">
-                            <div  class="product-grid-overflow-container">
+                          <div class="content-overflow-container">
+                            <div  class="content-overflow">
                               <!-- Form Section -->
                                 <?php include 'connect.php';?>
                                <!-- Form Section -->
