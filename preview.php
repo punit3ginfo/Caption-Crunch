@@ -10,9 +10,8 @@
                                                       </div>
                                               </div>
 
-                                            <div class="chat_selector_overflow_container">
-                                                  <div class="chat_selector_overflow" style="height: calc(100% - 160px); overflow: hidden; display: flex;
-                                                  justify-content: center; align-items: center;">
+                                              <div class="menu-overflow-container">
+                                                    <div class="menu-overflow">
                                                       <!-- Preview Section -->
 
                                                         <?php include 'iphone-preview.php';?>
