@@ -1486,6 +1486,25 @@ position: relative;
   text-align: center;
 }
 
+.content-header-container {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  display: inline-block;
+}
+
+.share-history-container {
+  padding-top: 20px;
+}
+
+.search-container {
+  padding-top: 20px;
+}
+
+.pagination-container {
+  padding-top: 20px;
+}
+
 .search-text-box {
 	width: 100%;
   	height: 40px;

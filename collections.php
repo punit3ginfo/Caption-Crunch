@@ -45,19 +45,25 @@
 						<div class="content-header">
 
                           <div class="content-header-3col-container">
-                            <a href="javascript:void(0)" onclick="getsharehistory()" class="sidebar-span share-history-button">
-				                        <i class="fa fa-history" aria-hidden="true"></i>
-				                         History
-			                      </a>
+                                    <div class="content-header-container share-history-container">
+                                                  <a href="javascript:void(0)" onclick="getsharehistory()" class="sidebar-span share-history-button">
+                      				                        <i class="fa fa-history" aria-hidden="true"></i>
+                      				                         History
+                      			                      </a>
+                                      </div>
                           </div>
 
                           <div class="content-header-3col-container">
-                                      <input class="search-text-box" onKeyDown="if(event.keyCode==13) search(document.getElementById('formValueId').value);" id="formValueId" type="text" name="q_name" placeholder="Search" />
-                                      <i class="fa fa-search search-button" onclick="search(document.getElementById('formValueId').value);"></i>
+                                    <div class="content-header-container search-container">
+                                                <input class="search-text-box" onKeyDown="if(event.keyCode==13) search(document.getElementById('formValueId').value);" id="formValueId" type="text" name="q_name" placeholder="Search" />
+                                                <i class="fa fa-search search-button" onclick="search(document.getElementById('formValueId').value);"></i>
+                                    </div>
                           </div>
 
                           <div class="content-header-3col-container">
-                                      <div class="text-center" id="pagination"></div>
+                                  <div class="content-header-container pagination-container">
+                                          <div class="text-center" id="pagination"></div>
+                                  <div>
                           </div>
 
                             <!-- <div class="collection_title_header_container">
