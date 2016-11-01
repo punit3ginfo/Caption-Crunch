@@ -21,9 +21,7 @@
                                                                               </div>
                                                                    </div>
                                                      </div>
-
-
-
+                                                     
                                                       <div class="content-header preview-header">
                                                                 <a href="#" class="button-four-col preview-share-button"><i class="fa fa-bullhorn" aria-hidden="true"></i> Share Now</a>
                                                                 <a href="#" class="button-four-col preview-sharenext-button"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i> Share Next</a>
