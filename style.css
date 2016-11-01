@@ -1482,7 +1482,7 @@ position: relative;
 .content-header-3col-container {
   position: relative;
   display: inline-block;
-  width: 33%;
+  width: calc(33% - 10px);
   text-align: center;
 }
 
