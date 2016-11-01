@@ -1482,8 +1482,9 @@ position: relative;
 .content-header-3col-container {
   position: relative;
   display: inline-block;
-  width: calc(33% - 10px);
+  width: 33%;
   text-align: center;
+  float: left;
 }
 
 .content-header-container {
@@ -1494,15 +1495,21 @@ position: relative;
 }
 
 .share-history-container {
-  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-container {
-  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pagination-container {
-  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-text-box {
