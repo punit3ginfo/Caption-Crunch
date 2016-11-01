@@ -1491,22 +1491,6 @@ position: relative;
   position: relative;
   width: 100%;
   height: 80px;
-  display: inline-block;
-}
-
-.share-history-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.search-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.pagination-container {
   display: flex;
   align-items: center;
   justify-content: center;
