@@ -27,39 +27,41 @@
               </div>
 
 
-			<div class="collection_title_header">
-                 <div class="collection_header_container">
-                     <div class="caption-header-container">
+			<div class="content-header">
 
-													 <div class="builder-title-header-container">
-														 	<div class="builder-title-clearfix">
-																	<a href="javascript:void(0)" class="sidebar-span share-history-button">
-		 																 <i class="fa fa-plus" aria-hidden="true"></i>
-		 																   New Caption
-		 														 	</a>
-															</div>
-													 </div>
-
-													<div class="builder-title-header-container">
-														<!-- <div class="builder-title-clearfix" style="text-align: center;">
-																<span class="collection_list_text">Caption title go here</span>
-														</div> -->
-													</div>
-
-													<div class="builder-title-header-container">
-														<div class="builder-title-clearfix">
-																	<a href="javascript:void(0)" class="save-button"><i class="fa fa-unlock-alt" aria-hidden="true"></i> SAVE CAPTION</a>
+								<div class="content-header-3col-container">
+													<div class="content-header-container">
+																			<a href="javascript:void(0)" class="sidebar-span share-history-button">
+																				 <i class="fa fa-plus" aria-hidden="true"></i>
+																					 New Caption
+																			</a>
 														</div>
-												  </div>
+								</div>
 
-                     </div>
-                  </div>
-        	</div>
+								<div class="content-header-3col-container">
+													<div class="content-header-container">
+																				<input class="search-text-box" onKeyDown="if(event.keyCode==13) search(document.getElementById('formValueId').value);" id="formValueId" type="text" name="q_name" placeholder="Search" />
+																				<i class="fa fa-search search-button" onclick="search(document.getElementById('formValueId').value);"></i>
+														</div>
+								</div>
+
+								<div class="content-header-3col-container">
+													<div class="content-header-container">
+																				<a href="javascript:void(0)" class="save-button">
+																								<i class="fa fa-unlock-alt" aria-hidden="true"></i>
+																								 SAVE CAPTION
+																				</a>
+														</div>
+								</div>
+
+	   </div>
 
 			<div class="content-overflow-container">
+
         		<div  class="content-overflow">
                   <?php include 'caption-form.php';?>
     			  </div>
+
   	  </div>
 </div>
 
