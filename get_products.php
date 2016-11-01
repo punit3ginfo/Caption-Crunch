@@ -88,7 +88,7 @@ try
                       </a>
 
                       <div class="product-title-container">
-                        <span class="product-title-text"><?php echo $title; ?></span>
+                        <span class="cc-text-medium"><?php echo $title; ?></span>
                       </div>
 
                       <div class="product-title-container">

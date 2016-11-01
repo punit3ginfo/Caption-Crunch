@@ -1243,15 +1243,6 @@ position: relative;
   	overflow: hidden;
 }
 
-.product-title-text {
-  	word-wrap: normal;
-    font-family: HelveticaNeue-Bold;
-    font-size: 16px;
-    color: #666;
-    letter-spacing: 0.82px;
-    text-transform: uppercase;
-}
-
 .product-icon-container {
     background: #65D35B;
     border-radius: 50%;
