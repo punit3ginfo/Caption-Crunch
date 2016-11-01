@@ -1,10 +1,11 @@
-
 <div class="collections-animation-container">
-    <div class="chat_container" style="overflow: hidden;">
-          <div class="collection-sidebar-container">
-                  		<div class="collection_title_selector">
-                                <div class="collection_title_container">
-                                    <span class="collection_title_text" id="share-page">Collections</span>
+        <div class="chat_container" style="overflow: hidden;">
+                <div class="sidbar-content-header">
+                        <div class="content-header-title-container">
+                                <div class="content-header-title">
+                                        <span class="cc-text-large">
+                                          COLLECTIONS
+                                        </span>
                                 </div>
                         </div>
 
@@ -40,9 +41,7 @@
                 	</div>
            </div>
 
-
-
-						<div class="content-header">
+  				 <div class="content-header">
 
                           <div class="content-header-3col-container">
                                     <div class="content-header-container">
@@ -75,27 +74,23 @@
 
                                </div>
                             </div> -->
-        				</div>
+        			</div>
 
+              <div class="content-overflow-container">
+                      <div  class="content-overflow">
 
+                        <?php
 
+                                 //  Products List Here
+                                	if($_REQUEST['status']=="search"){
+                                       require __DIR__.'/history.php';
+                                	}
+                                	      if(($_REQUEST['status']!="search")|| ($_REQUEST['status']=="")){
+                                		 require __DIR__.'/get_products.php';
+                                	}
 
+                        ?>
 
-  <div class="content-overflow-container">
-      <div  class="content-overflow">
-
-        <?php
-
-                 //  Products List Here
-                	if($_REQUEST['status']=="search"){
-                       require __DIR__.'/history.php';
-                	}
-                	      if(($_REQUEST['status']!="search")|| ($_REQUEST['status']=="")){
-                		 require __DIR__.'/get_products.php';
-                	}
-
-        ?>
-
-      </div>
-  </div>
+                      </div>
+          </div>
 </div>

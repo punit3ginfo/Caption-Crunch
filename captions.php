@@ -1,9 +1,11 @@
 
 <div class="chat_container" style="overflow: hidden;">
-			 <div class="collection-sidebar-container">
-              		<div class="collection_title_selector">
-                            <div class="collection_title_container">
-                                <span class="collection_title_text" id="share-captions">Captions</span>
+						<div class="sidbar-content-header">
+										<div class="content-header-title-container">
+															<div class="content-header-title">
+																			<span class="cc-text-large">
+																				CAPTIONS
+																			</span>
                             </div>
                     </div>
 
