@@ -982,7 +982,7 @@ position: relative;
 	  z-index: 9;
   	margin-right: 30px;
   	position: relative;
-  	background-color: #F8F9F9;
+  	background-color: white;
 }
 
 .collection_title_container {
@@ -999,14 +999,6 @@ position: relative;
   position: relative;
   text-align: center;
   width: 100%;
-}
-
-.collection_title_header_container {
-	width: 30.5%;
-	height: 80px;
-	position: relative;
-  	margin: auto;
-
 }
 
 .collection_title_text {
@@ -1494,13 +1486,10 @@ position: relative;
 }
 
 .content-header-3col-container {
-	  position: relative;
-  	display: inline-block;
-  	width: 32%;
-  	height: 100%;
- 	  display: flex;
-    align-items: center;
-  	justify-content: center;
+  position: relative;
+  display: inline-block;
+  width: 32%;
+  text-align: center;
 }
 
 .collection-header-search-clearfix {
