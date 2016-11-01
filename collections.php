@@ -63,7 +63,7 @@
                           <div class="content-header-3col-container">
                                   <div class="content-header-container pagination-container">
                                           <div class="text-center" id="pagination"></div>
-                                  <div>
+                                  </div>
                           </div>
 
                             <!-- <div class="collection_title_header_container">
