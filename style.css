@@ -1963,7 +1963,6 @@ form {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   border: medium none;
   float: left;
-  margin-top: 14px;
 }
 
 ul#pagination-list {
@@ -1971,6 +1970,8 @@ ul#pagination-list {
   padding: 0 10px;
   text-align: center;
   width: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 #pagination > button i {
