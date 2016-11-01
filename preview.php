@@ -4,10 +4,10 @@
                               <div class="preview-template-container">
                                       <div class="chat_container" style="overflow: hidden;">
 
-                                                <div class="collection-sidebar-container">
-                                                                <div class="collection_title_selector">
-                                                                          <div class="collection_title_container">
-                                                                              <span class="cc-text-medium">Preview</span>
+                                                <div class="sidbar-content-header">
+                                                                <div class="content-header-title-container">
+                                                                          <div class="content-header-title">
+                                                                              <span class="cc-text-large">Preview</span>
                                                                           </div>
                                                                   </div>
 
@@ -21,7 +21,7 @@
                                                                               </div>
                                                                    </div>
                                                      </div>
-                                                     
+
                                                       <div class="content-header preview-header">
                                                                 <a href="#" class="button-four-col preview-share-button"><i class="fa fa-bullhorn" aria-hidden="true"></i> Share Now</a>
                                                                 <a href="#" class="button-four-col preview-sharenext-button"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i> Share Next</a>

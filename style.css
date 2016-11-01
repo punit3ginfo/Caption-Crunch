@@ -57,6 +57,15 @@ body {
   font-weight: 500;
 }
 
+.cc-text-large {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #666;
+    font-weight: 500;
+    letter-spacing: 0.82px;
+}
+
 /* ------------------- Type / Fonts --------------------*/
 
 .back {
@@ -949,7 +958,7 @@ position: relative;
 
 /*   Collections Menu    */
 
-.collection-sidebar-container {
+.sidbar-content-header {
 	width: 30%;
   	height: 100%;
   	position: absolute;
@@ -961,23 +970,25 @@ position: relative;
   	z-index: 10;
 }
 
-.collection_title_selector {
+.content-header-title-container {
 	width: 90%;
 	margin: auto;
 	padding-left: 5%;
 	padding-right: 5%;
 	height: 79px;
 	position: absolute;
-    background-color: white;
-    top: 0;
+  background-color: white;
+  top: 0;
 	z-index: 5;
 }
 
-.collection_title_container {
+.content-header-title {
 	width: 100%;
 	height: 100%;
 	border-bottom: 1px solid #eee;
-	text-align: center;
+	display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .collection_title_container-active {
