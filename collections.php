@@ -1,6 +1,6 @@
 <div class="collections-animation-container">
         <div class="chat_container" style="overflow: hidden;">
-                <div class="sidbar-content-header">
+                <div class="sidebar-content-header">
                         <div class="content-header-title-container">
                                 <div class="content-header-title">
                                         <span class="cc-text-large">

@@ -958,7 +958,7 @@ position: relative;
 
 /*   Collections Menu    */
 
-.sidbar-content-header {
+.sidebar-content-header {
 	width: 30%;
   	height: 100%;
   	position: absolute;
@@ -989,24 +989,6 @@ position: relative;
 	display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.collection_title_container-active {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  position: relative;
-  text-align: center;
-  width: 100%;
-}
-
-.collection_title_text {
-	line-height: 80px;
-	font-family: HelveticaNeue-Bold;
-	font-size: 16px;
-	color: #666;
-	letter-spacing: 0.82px;
-	text-transform: uppercase;
 }
 
 .menu-overflow-container {
