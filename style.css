@@ -1517,6 +1517,12 @@ textarea:focus, input:focus{
     outline: none;
 }
 
+#pagination {
+  width: 50%;
+  margin: auto;
+  height: auto;
+}
+
 .active {
 	background-color: #65D35B !important;
 	background-image: url("{{ 'button.png' |  asset_url }}");
