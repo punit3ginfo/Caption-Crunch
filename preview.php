@@ -23,7 +23,7 @@
 
 
 
-                                  <div class="content-header" style="display: flex; justify-content: space-around; align-items: center; padding-left: 15px; padding-right: 15px; width: calc(100% - 30px);">
+                                  <div class="content-header preview-header">
                                                           <a href="#" class="button-four-col preview-share-button"><i class="fa fa-bullhorn" aria-hidden="true"></i> Share Now</a>
                                                           <a href="#" class="button-four-col preview-sharenext-button"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i> Share Next</a>
                                                           <a href="#" class="button-four-col preview-sharelater-button"><i class="fa fa-clock-o" aria-hidden="true"></i> Share Later</a>
