@@ -53,13 +53,13 @@
 
                           <div class="content-header-3col-container">
                                       <input class="search-text-box" onKeyDown="if(event.keyCode==13) search(document.getElementById('formValueId').value);" id="formValueId" type="text" name="q_name" placeholder="Search" />
-                                      <i style="position: absolute; right: 10px;  color: #666;" class="fa fa-search" onclick="search(document.getElementById('formValueId').value);"></i>
+                                      <i class="fa fa-search search-button" onclick="search(document.getElementById('formValueId').value);"></i>
                           </div>
 
                           <div class="content-header-3col-container">
                                       <div class="text-center" id="pagination"></div>
                           </div>
-                          
+
                             <!-- <div class="collection_title_header_container">
                                <div class="collection_title_container-active">
 
