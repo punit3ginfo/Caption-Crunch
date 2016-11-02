@@ -182,7 +182,6 @@ try
                           // Help
                           $(".help-clearfix").empty();
                           $(".help-clearfix").load("help/share.php");
-
                   });
 
               });
