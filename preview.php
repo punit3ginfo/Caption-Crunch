@@ -24,10 +24,10 @@
                                                      </div>
 
                                                       <div class="content-header preview-header">
-                                                                <a href="javascript:void(0)" id="back-link" class="button-four-col preview-share-button"><i class="fa fa-bullhorn" aria-hidden="true"></i> Share Now</a>
-                                                                <a href="javascript:void(0)" id="back-link" class="button-four-col preview-sharenext-button"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i> Share Next</a>
-                                                                <a href="javascript:void(0)" id="back-link" class="button-four-col preview-sharelater-button"><i class="fa fa-clock-o" aria-hidden="true"></i> Share Later</a>
-                                                                <a href="javascript:void(0)" id="back-link" class="button-four-col preview-schedule-button"><i class="fa fa-calendar" aria-hidden="true"></i> Schedule</a>
+                                                                <a href="javascript:void(0)" class="button-four-col preview-share-button back-link"><i class="fa fa-bullhorn" aria-hidden="true"></i> Share Now</a>
+                                                                <a href="javascript:void(0)" class="button-four-col preview-sharenext-button back-link"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i> Share Next</a>
+                                                                <a href="javascript:void(0)" class="button-four-col preview-sharelater-button back-link"><i class="fa fa-clock-o" aria-hidden="true"></i> Share Later</a>
+                                                                <a href="javascript:void(0)" class="button-four-col preview-schedule-button back-link"><i class="fa fa-calendar" aria-hidden="true"></i> Schedule</a>
                                                       </div>
 
                                                       <div class="content-overflow-container">

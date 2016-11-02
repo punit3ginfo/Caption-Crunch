@@ -78,7 +78,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                 </div>
             </a>
 
-            <a class="sidebar-link-active" href="javascript:void(0)" id="back-link" style="display: none;">
+            <a class="sidebar-link-active back-link" href="javascript:void(0)" style="display: none;">
             	<div class="sidebar-nav-container">
                   	<span class="sidebar-span" style="color: white;">
                       <i style="font-size: 20px;" class="fa fa-times" aria-hidden="true"></i><br>

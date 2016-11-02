@@ -173,7 +173,7 @@ try
                           $(".help-clearfix").load("help/preview.php");
                   });
 
-                  $('#back-link').click(function() {
+                  $('.back-link').click(function() {
                           $('.collections-animation-container').removeClass("collections-animation");
                           $('#preview-container').removeClass("preview-container-animate");
                           // Back Button
