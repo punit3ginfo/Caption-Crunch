@@ -20,33 +20,33 @@
                                               <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Price
                                       </div>
                                       <div class="condition-allorany-container-s">
-                                              <input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Compare Price
+                                              <input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Compare At Price
                                       </div>
                               </div>
                     </div>
                     <div class="builder-conditions-container">
                               <div class="condition-allorany-clearfix">
                                       <div class="condition-allorany-container-s">
-                                              <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Title
+                                              <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Type
                                       </div>
                                       <div class="condition-allorany-container-s">
-                                              <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Price
+                                              <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Vendor
                                       </div>
                                       <div class="condition-allorany-container-s">
-                                              <input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Compare Price
+                                              <input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Product Url
                                       </div>
                               </div>
                     </div>
                     <div class="builder-conditions-container">
                               <div class="condition-allorany-clearfix">
                                       <div class="condition-allorany-container-s">
-                                              <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Title
+                                              <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Description
                                       </div>
                                       <div class="condition-allorany-container-s">
-                                              <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Price
+                                              <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Collection Title
                                       </div>
                                       <div class="condition-allorany-container-s">
-                                              <input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Compare Price
+                                              <input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Percent Off
                                       </div>
                               </div>
                     </div>
