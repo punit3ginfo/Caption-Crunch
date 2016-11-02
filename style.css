@@ -1637,6 +1637,8 @@ a:hover {
 	  border-top: 1px solid #eee;
     padding: 20px 0px;
     min-height: 46px;
+    height: auto;
+    overflow: hidden;
 }
 
 .form-text-header {
