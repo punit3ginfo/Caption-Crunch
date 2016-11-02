@@ -1634,10 +1634,9 @@ a:hover {
 
 .form-clearfix {
 	  width: 100%;
-  	height: auto;
 	  border-top: 1px solid #eee;
     padding: 20px 0px;
-    height: 30px;
+    min-height: 30px;
 }
 
 .builder-grid-container {
