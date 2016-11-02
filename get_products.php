@@ -157,7 +157,7 @@ try
                          $('.collections-animation-container').removeClass("collections-animation");
                          // Back Button
                          $("#share-link").css("display", "block");
-                         $("#back-link").css("display", "none");
+                         $(".back-link").css("display", "none");
                   });
 
                   $('#share-button-<?php echo $p_id1; ?>').click(function() {
@@ -167,7 +167,7 @@ try
                           $(".preview-header").load("share-buttons.php");
                           // Back Button
                           $("#share-link").css("display", "none");
-                          $("#back-link").css("display", "block");
+                          $(".back-link").css("display", "block");
                           // Help
                           $(".help-clearfix").empty();
                           $(".help-clearfix").load("help/preview.php");
@@ -178,7 +178,7 @@ try
                           $('#preview-container').removeClass("preview-container-animate");
                           // Back Button
                           $("#share-link").css("display", "block");
-                          $("#back-link").css("display", "none");
+                          $(".back-link").css("display", "none");
                           // Help
                           $(".help-clearfix").empty();
                           $(".help-clearfix").load("help/share.php");
