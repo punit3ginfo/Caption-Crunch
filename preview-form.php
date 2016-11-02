@@ -5,7 +5,7 @@
           <div class="builder-main-clearfix" style="border-bottom: 1px solid #eee;">
               <div class="builder-conditions-container" style="height: 30px;">
 
-                    <span class="preview-steps-text account-show-hide-button" style="line-height: 30px; cursor: pointer;">
+                    <span class="cc-text-medium account-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
                       Step 1 | Choose Profile
                       <i id="account-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
                     </span>
@@ -51,31 +51,7 @@
                                                             <div class="account-bubble-clearfix">
                                                                     <a href="/#">
                                                                               <div class="account-bubble">
-                                                                                        <i class="fa fa-facebook account-icon" aria-hidden="true"></i>
-                                                                              </div>
-                                                                    </a>
-                                                            </div>
-
-                                                            <div class="account-bubble-clearfix">
-                                                                    <a href="/#">
-                                                                              <div class="account-bubble">
                                                                                         <i class="fa fa-instagram account-icon" aria-hidden="true"></i>
-                                                                              </div>
-                                                                    </a>
-                                                            </div>
-
-                                                            <div class="account-bubble-clearfix">
-                                                                    <a href="/#">
-                                                                              <div class="account-bubble">
-                                                                                        <i class="fa fa-google-plus account-icon" aria-hidden="true"></i>
-                                                                              </div>
-                                                                    </a>
-                                                            </div>
-
-                                                            <div class="account-bubble-clearfix">
-                                                                    <a href="/#">
-                                                                              <div class="account-bubble">
-                                                                                        <i class="fa fa-pinterest-p account-icon" aria-hidden="true"></i>
                                                                               </div>
                                                                     </a>
                                                             </div>
@@ -90,7 +66,7 @@
                 <div class="builder-main-clearfix" style="">
                     <div class="builder-conditions-container" style="height: 30px;">
 
-                          <span class="preview-steps-text caption-show-hide-button" style="line-height: 30px; cursor: pointer;">
+                          <span class="cc-text-medium caption-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
                             Step 2 | Choose Caption
                             <i id="caption-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
                           </span>
@@ -124,7 +100,7 @@
                       <div class="builder-main-clearfix" style="border-bottom: 0px;">
                           <div class="builder-conditions-container" style="height: 30px;">
 
-                                <span class="preview-steps-text image-show-hide-button" style="line-height: 30px; cursor: pointer;">
+                                <span class="cc-text-medium image-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
                                   Step 3 | Add Image
                                   <i id="image-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
                                 </span>
