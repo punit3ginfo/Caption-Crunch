@@ -1,10 +1,35 @@
 <form class="form-container">
+  <!-- TEMPLATE -->
+   <div class="builder-main-conatiner" style="height: auto;">
+      <div class="builder-main-clearfix" style="border-bottom: 0px;">
+          <div class="builder-conditions-container" style="height: 30px;">
+              <span class="cc-text-medium templates-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
+                Template
+                <i id="template-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
+              </span>
+          </div>
+      </div>
+          <div class="template-show-hide">
+            <div class="builder-main-clearfix" style="border-bottom: 0px; border-top: 1px solid #eee; padding-bottom: 0px;">
+                    <div class="builder-conditions-container" style="height: auto; width: 100%; display: block;">
+                              <span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
+                              <div class="caption-textarea-container">
+                                    <textarea id="caption-textarea-large" class="caption-textarea"></textarea>
+                              </div>
+                              <span class="cc-text-small">Caption for: Twitter (Character Limit: 140)</span>
+                              <div class="caption-textarea-container" style="margin-bottom: 0px;">
+                                    <textarea id="caption-textarea-small" class="caption-textarea"></textarea>
+                              </div>
+                    </div>
+            </div>
+          </div>
+      </div>
 <!-- CONDITIONS -->
 <div class="builder-main-conatiner">
   <div class="builder-main-clearfix" style="border-bottom: 0px;">
       <div class="builder-conditions-container" style="height: 30px;">
 
-            <span class="conditions-title conditions-title-hover conditions-show-hide-button" style="line-height: 30px; cursor: pointer;">
+            <span class="cc-text-medium conditions-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
               Conditions
               <i id="condition-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
             </span>
@@ -68,36 +93,11 @@
 </div>
 
  </div>
-<!-- TEMPLATE -->
- <div class="builder-main-conatiner" style="height: auto;">
-    <div class="builder-main-clearfix" style="border-bottom: 0px;">
-        <div class="builder-conditions-container" style="height: 30px;">
-            <span class="conditions-title conditions-title-hover templates-show-hide-button" style="line-height: 30px; cursor: pointer;">
-              Template
-              <i id="template-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
-            </span>
-        </div>
-    </div>
-        <div class="template-show-hide">
-          <div class="builder-main-clearfix" style="border-bottom: 0px; border-top: 1px solid #eee; padding-bottom: 0px;">
-                  <div class="builder-conditions-container" style="height: auto; width: 100%; display: block;">
-                            <span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
-                            <div class="caption-textarea-container">
-                                  <textarea id="caption-textarea-large" class="caption-textarea"></textarea>
-                            </div>
-                            <span class="cc-text-small">Caption for: Twitter (Character Limit: 140)</span>
-                            <div class="caption-textarea-container" style="margin-bottom: 0px;">
-                                  <textarea id="caption-textarea-small" class="caption-textarea"></textarea>
-                            </div>
-                  </div>
-          </div>
-        </div>
-    </div>
 <!-- PRODUCTS -->
  <div class="builder-main-conatiner" style="height: auto;">
       <div class="builder-main-clearfix" style="border-bottom: 0px;">
           <div class="builder-conditions-container" style="height: 30px;">
-              <span class="conditions-title conditions-title-hover products-show-hide-button" style="line-height: 30px; cursor: pointer;">
+              <span class="cc-text-medium products-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
                   Products
                   <i id="products-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
               </span>
