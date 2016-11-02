@@ -1,6 +1,6 @@
-<form class="form-container">
+<form class="form">
   <!-- TEMPLATE -->
-   <div class="builder-main-conatiner" style="height: auto;">
+   <div class="form-container" style="height: auto;">
       <div class="builder-main-clearfix" style="border-bottom: 0px;">
           <div class="builder-conditions-container" style="height: 30px;">
               <span class="cc-text-medium templates-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
@@ -66,7 +66,7 @@
           </div>
       </div>
 <!-- CONDITIONS -->
-<div class="builder-main-conatiner">
+<div class="form-container">
   <div class="builder-main-clearfix" style="border-bottom: 0px;">
       <div class="builder-conditions-container" style="height: 30px;">
 
@@ -135,7 +135,7 @@
 
  </div>
 <!-- PRODUCTS -->
- <div class="builder-main-conatiner" style="height: auto;">
+ <div class="form-container" style="height: auto;">
       <div class="builder-main-clearfix" style="border-bottom: 0px;">
           <div class="builder-conditions-container" style="height: 30px;">
               <span class="cc-text-medium products-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">

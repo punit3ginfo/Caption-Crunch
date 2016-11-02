@@ -67,7 +67,25 @@ body {
     letter-spacing: 0.82px;
 }
 
-/* ------------------- Type / Fonts --------------------*/
+/* ------------------- Columns --------------------*/
+
+.3col-container {
+  position: relative;
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  float: left;
+}
+
+.4col-container {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  float: left;
+}
+
+/* ------------------- Caption Crunch--------------------*/
 
 .back {
   max-width: 100vw;
@@ -894,7 +912,7 @@ body {
 }
 /* ---------------- Preview Form ----------------- */
 
-.form-container {
+.form {
   display: block;
   z-index: 2;
   position: absolute;
@@ -1614,16 +1632,13 @@ a:hover {
 }
 
 
-.builder-main-conatiner {
+.form-container {
 	  width: calc(100% - 60px);
   	background-color: white;
   	box-shadow: 1px -2px 17px 0px rgba(0,0,0,0.14);
   	padding: 15px 30px;
-  	margin-bottom: 20px;
-}
-
-.builder-main-conatiner:last-child {
-  	margin-bottom: 0px;
+    height: auto;
+    margin-top: 15px;
 }
 
 .builder-main-clearfix {

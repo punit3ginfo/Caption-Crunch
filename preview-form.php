@@ -1,4 +1,4 @@
-<form class="form-container">
+<form class="form">
 <!--  Step 1  -->
         <div class="preview-form-container" style="padding-bottom: 0px">
 
