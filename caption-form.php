@@ -10,41 +10,37 @@
           <div class="template-show-hide">
             <div class="form-clearfix">
 
-                              <div class="form-3col-clearfix">
-                                      <div class="condition-allorany-container-s">
+                                      <div class="form-3col-clearfix">
                                               <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Title
                                       </div>
-                                      <div class="condition-allorany-container-s">
+                                      <div class="form-3col-clearfix">
                                               <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Price
                                       </div>
-                                      <div class="condition-allorany-container-s">
+                                      <div class="form-3col-clearfix">
                                               <input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Compare At Price
                                       </div>
-                              </div>
 
-                              <div class="form-3col-clearfix">
-                                      <div class="condition-allorany-container-s">
+                                      <div class="form-3col-clearfix">
                                               <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Type
                                       </div>
-                                      <div class="condition-allorany-container-s">
+                                      <div class="form-3col-clearfix">
                                               <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Vendor
                                       </div>
-                                      <div class="condition-allorany-container-s">
+                                      <div class="form-3col-clearfix">
                                               <input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Product Url
                                       </div>
-                              </div>
 
-                              <div class="form-3col-clearfix">
-                                      <div class="condition-allorany-container-s">
+                                      <div class="form-3col-clearfix">
                                               <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Description
                                       </div>
-                                      <div class="condition-allorany-container-s">
+
+                                      <div class="form-3col-clearfix">
                                               <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Collection Title
                                       </div>
-                                      <div class="condition-allorany-container-s">
+
+                                      <div class="form-3col-clearfix">
                                               <input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Percent Off
                                       </div>
-                              </div>
             </div>
             <div class="form-clearfix">
                               <span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
@@ -71,19 +67,13 @@
 <div class="conditions-show-hide">
   <div class="form-clearfix">
         <div class="form-3col-clearfix">
-            <div class="condition-allorany-container-s">
                   <span>Products must match: </span>
-              </div>
         </div>
         <div class="form-3col-clearfix">
-            <div class="condition-allorany-container-s">
                   <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>All conditions
-            </div>
         </div>
         <div class="form-3col-clearfix">
-            <div class="condition-allorany-container-s">
                 <input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Any condition
-            </div>
         </div>
   </div>
   <div class="form-clearfix">

@@ -1657,6 +1657,9 @@ a:hover {
     display: inline-block;
   	height: 46px;
     float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .condition-allorany-container-s {
