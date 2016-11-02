@@ -176,6 +176,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
           $('#share-link').addClass('sidebar-link-active');
           $('#captions-link').removeClass('sidebar-link-active');
           $('#settings-link').removeClass('sidebar-link-active');
+          $(".help-clearfix").empty();
           $(".help-clearfix").load("help/share.php");
                     }
                 });
@@ -212,6 +213,8 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
           $('#captions-link').addClass('sidebar-link-active');
           $('#share-link').removeClass('sidebar-link-active');
           $('#settings-link').removeClass('sidebar-link-active');
+          $(".help-clearfix").empty();
+          $(".help-clearfix").load("help/captions.php");
                     }
                 });
             }
@@ -230,6 +233,8 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
           $('#settings-link').addClass('sidebar-link-active');
           $('#share-link').removeClass('sidebar-link-active');
           $('#captions-link').removeClass('sidebar-link-active');
+          $(".help-clearfix").empty();
+          $(".help-clearfix").load("help/settings.php");
                     }
                 });
             }
