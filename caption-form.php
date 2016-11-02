@@ -8,8 +8,8 @@
               </span>
       </div>
           <div class="template-show-hide">
-            <div class="form-clearfix" style="border-bottom: 0px; border-top: 1px solid #eee;">
-                    <div class="builder-conditions-container">
+            <div class="form-clearfix">
+
                               <div class="condition-allorany-clearfix">
                                       <div class="condition-allorany-container-s">
                                               <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Title
@@ -21,8 +21,7 @@
                                               <input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Compare At Price
                                       </div>
                               </div>
-                    </div>
-                    <div class="builder-conditions-container">
+
                               <div class="condition-allorany-clearfix">
                                       <div class="condition-allorany-container-s">
                                               <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Type
@@ -34,8 +33,7 @@
                                               <input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Product Url
                                       </div>
                               </div>
-                    </div>
-                    <div class="builder-conditions-container">
+
                               <div class="condition-allorany-clearfix">
                                       <div class="condition-allorany-container-s">
                                               <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Description
@@ -47,7 +45,6 @@
                                               <input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Percent Off
                                       </div>
                               </div>
-                    </div>
             </div>
             <div class="form-clearfix" style="border-bottom: 0px; border-top: 1px solid #eee; padding-bottom: 0px;">
                     <div class="builder-conditions-container" style="height: auto; width: 100%; display: block;">

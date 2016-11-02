@@ -1645,12 +1645,12 @@ a:hover {
     width: 100%;
 }
 
-/*.builder-conditions-container {
+.builder-conditions-container {
 	  width: 100%;
   	height: 46px;
   	display: flex;
   	justify-content: space-between;
-}*/
+}
 
 .condition-allorany-clearfix {
 	  width: 100%;
