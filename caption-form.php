@@ -10,7 +10,7 @@
           </div>
       </div>
           <div class="template-show-hide">
-            <div class="builder-main-clearfix" style="border-bottom: 0px; border-top: 1px solid #eee; padding-bottom: 0px;">
+            <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
                     <div class="builder-conditions-container">
                               <div class="condition-allorany-clearfix">
                                       <div class="condition-allorany-container-s">
@@ -24,6 +24,8 @@
                                       </div>
                               </div>
                     </div>
+            </div>
+            <div class="builder-main-clearfix" style="border-bottom: 0px; border-top: 1px solid #eee; padding-bottom: 0px;">
                     <div class="builder-conditions-container" style="height: auto; width: 100%; display: block;">
                               <span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
                               <div class="caption-textarea-container">
