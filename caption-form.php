@@ -2,12 +2,10 @@
   <!-- TEMPLATE -->
    <div class="form-container" style="height: auto;">
       <div class="form-clearfix" style="border-top: 0px;">
-          <div class="builder-conditions-container" style="height: 30px;">
               <span class="cc-text-medium templates-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
                 Template
                 <i id="template-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
               </span>
-          </div>
       </div>
           <div class="template-show-hide">
             <div class="form-clearfix" style="border-bottom: 0px; border-top: 1px solid #eee;">
@@ -68,14 +66,12 @@
 <!-- CONDITIONS -->
 <div class="form-container">
   <div class="form-clearfix" style="border-top: 0px;">
-      <div class="builder-conditions-container" style="height: 30px;">
 
             <span class="cc-text-medium conditions-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
               Conditions
               <i id="condition-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
             </span>
 
-      </div>
   </div>
 <div class="conditions-show-hide">
   <div class="form-clearfix">
@@ -137,12 +133,10 @@
 <!-- PRODUCTS -->
  <div class="form-container" style="height: auto;">
       <div class="form-clearfix" style="border-top: 0px;">
-          <div class="builder-conditions-container" style="height: 30px;">
               <span class="cc-text-medium products-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
                   Products
                   <i id="products-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
               </span>
-          </div>
       </div>
           <div class="products-show-hide">
               <div class="form-clearfix" style="border-top: 1px solid #eee;">
@@ -153,22 +147,6 @@
               <div class="form-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
                     <div class="builder-conditions-container" style="height: auto; min-height: 100px; display: block;">
                       <!-- Product List -->
-                      <div class="feed-product-main-conatiner" style="width: calc(100% - 60px);">
-                          <div class="feed-product-main-clearfix">
-                                  <div class="feed-product-image" style="background: #65D35B;">
-                                    <div class="feed-product-image-zoom" style="background: #65D35B;">
-
-                                    </div>
-                                  </div>
-                                  <div class="feed-product-titledate-container">
-                                          <span class="feed-product-title" style="line-height: 46px;">Product Title Goes Here</span>
-                                  </div>
-                                  <div class="feed-product-sharenow-container">
-
-                                      <button type='button' class='feed-product-sharenow-button'><i class="fa fa-bullhorn" aria-hidden="true"></i> Share</button>
-                                  </div>
-                          </div>
-                      </div>
 
                       <div class="feed-product-main-conatiner" style="width: calc(100% - 60px);">
                           <div class="feed-product-main-clearfix">
@@ -182,55 +160,6 @@
                                   </div>
                                   <div class="feed-product-sharenow-container">
 
-                                      <button type='button' class='feed-product-sharenow-button'><i class="fa fa-bullhorn" aria-hidden="true"></i> Share</button>
-                                  </div>
-                          </div>
-                      </div>
-
-                      <div class="feed-product-main-conatiner" style="width: calc(100% - 60px);">
-                          <div class="feed-product-main-clearfix">
-                                  <div class="feed-product-image" style="background: #65D35B;">
-                                    <div class="feed-product-image-zoom" style="background: #65D35B;">
-
-                                    </div>
-                                  </div>
-                                  <div class="feed-product-titledate-container">
-                                          <span class="feed-product-title" style="line-height: 46px;">Product Title Goes Here</span>
-                                  </div>
-                                  <div class="feed-product-sharenow-container">
-
-                                      <button type='button' class='feed-product-sharenow-button'><i class="fa fa-bullhorn" aria-hidden="true"></i> Share</button>
-                                  </div>
-                          </div>
-                      </div>
-
-                      <div class="feed-product-main-conatiner" style="width: calc(100% - 60px);">
-                          <div class="feed-product-main-clearfix">
-                                  <div class="feed-product-image" style="background: #65D35B;">
-                                    <div class="feed-product-image-zoom" style="background: #65D35B;">
-
-                                    </div>
-                                  </div>
-                                  <div class="feed-product-titledate-container">
-                                          <span class="feed-product-title" style="line-height: 46px;">Product Title Goes Here</span>
-                                  </div>
-                                  <div class="feed-product-sharenow-container">
-                                      <button type='button' class='feed-product-sharenow-button'><i class="fa fa-bullhorn" aria-hidden="true"></i> Share</button>
-                                  </div>
-                          </div>
-                      </div>
-
-                      <div class="feed-product-main-conatiner" style="width: calc(100% - 60px);">
-                          <div class="feed-product-main-clearfix">
-                                  <div class="feed-product-image" style="background: #65D35B;">
-                                    <div class="feed-product-image-zoom" style="background: #65D35B;">
-
-                                    </div>
-                                  </div>
-                                  <div class="feed-product-titledate-container">
-                                          <span class="feed-product-title" style="line-height: 46px;">Product Title Goes Here</span>
-                                  </div>
-                                  <div class="feed-product-sharenow-container">
                                       <button type='button' class='feed-product-sharenow-button'><i class="fa fa-bullhorn" aria-hidden="true"></i> Share</button>
                                   </div>
                           </div>
