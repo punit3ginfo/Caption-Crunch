@@ -1,8 +1,8 @@
 <form class="form">
 <!--  Step 1  -->
-        <div class="preview-form-container" style="padding-bottom: 0px">
+        <div class="form-container" style="padding-bottom: 0px">
 
-          <div class="builder-main-clearfix" style="border-bottom: 1px solid #eee;">
+          <div class="form-clearfix" style="border-bottom: 1px solid #eee;">
               <div class="builder-conditions-container" style="height: 30px;">
 
                     <span class="cc-text-medium account-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
@@ -13,7 +13,7 @@
               </div>
           </div>
                 <div class="account-show-hide">
-                        <div class="builder-main-clearfix" style="">
+                        <div class="form-clearfix" style="">
                                 <div class="builder-conditions-container" style="height: auto; width: 100%; display: inline-block;">
                                                       <!-- Account Bubbles -->
                                                             <div class="account-bubble-clearfix">
@@ -63,7 +63,7 @@
       <!--  Step 2  -->
 
                 <div id="step2" class="preview-anchor"></div>
-                <div class="builder-main-clearfix" style="">
+                <div class="form-clearfix" style="">
                     <div class="builder-conditions-container" style="height: 30px;">
 
                           <span class="cc-text-medium caption-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
@@ -74,13 +74,13 @@
                     </div>
                 </div>
                       <div class="caption-show-hide">
-                              <!-- <div class="builder-main-clearfix" style="border-top: 1px solid #eee; border-bottom: 0px;">
+                              <!-- <div class="form-clearfix" style="border-top: 1px solid #eee; border-bottom: 0px;">
                                       <div class="builder-conditions-container" style="height: auto; width: 100%;">
                                               <span class="cc-text-medium">Caption: Jackets 40% OFF Fall Sale</span>
                                       </div>
                               </div> -->
 
-                              <div class="builder-main-clearfix" style="">
+                              <div class="form-clearfix" style="">
                                       <div class="builder-conditions-container" style="height: auto; width: 100%; display: block;">
                                                 <span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
                                                 <div class="caption-textarea-container"style="margin-bottom: 30px;">
@@ -97,7 +97,7 @@
             <!--  Step 3  -->
 
                       <div id="step3" class="preview-anchor-2"></div>
-                      <div class="builder-main-clearfix" style="border-bottom: 0px;">
+                      <div class="form-clearfix" style="border-bottom: 0px;">
                           <div class="builder-conditions-container" style="height: 30px;">
 
                                 <span class="cc-text-medium image-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
@@ -108,7 +108,7 @@
                           </div>
                       </div>
                             <div class="image-show-hide">
-                                    <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
+                                    <div class="form-clearfix" style="border-top: 1px solid #eee;">
                                                 <div class="addimage-clearfix">
                                                         <div id="addimage-image-one" class="addimage-container">
 

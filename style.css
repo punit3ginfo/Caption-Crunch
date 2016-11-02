@@ -910,24 +910,6 @@ body {
   top: 0px;
   left: 0px;
 }
-/* ---------------- Preview Form ----------------- */
-
-.form {
-  display: block;
-  z-index: 2;
-  position: absolute;
-  width: calc(100% - 30px);
-  padding-right: 10px;
-  padding-left: 5px;
-}
-
-.preview-form-container {
-  width: calc(100% - 60px);
-background-color: white;
-box-shadow: 1px -2px 17px 0px rgba(0,0,0,0.14);
-padding: 15px 30px;
-position: relative;
-}
 
 /* ---------------- Main Container ----------------- */
 
@@ -1630,6 +1612,16 @@ a:hover {
   	text-decoration: none;
 }
 
+/* ---------------- Form ----------------- */
+
+.form {
+  display: block;
+  z-index: 2;
+  position: absolute;
+  width: calc(100% - 30px);
+  padding-right: 10px;
+  padding-left: 5px;
+}
 
 .form-container {
 	  width: calc(100% - 60px);
@@ -1640,10 +1632,10 @@ a:hover {
     margin-top: 15px;
 }
 
-.builder-main-clearfix {
+.form-clearfix {
 	  width: 100%;
   	height: auto;
-	  border-bottom: 1px solid #eee;
+	  border-top: 1px solid #eee;
     padding: 20px 0px;
 }
 

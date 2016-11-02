@@ -1,7 +1,7 @@
 <form class="form">
   <!-- TEMPLATE -->
    <div class="form-container" style="height: auto;">
-      <div class="builder-main-clearfix" style="border-bottom: 0px;">
+      <div class="form-clearfix" style="border-top: 0px;">
           <div class="builder-conditions-container" style="height: 30px;">
               <span class="cc-text-medium templates-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
                 Template
@@ -10,7 +10,7 @@
           </div>
       </div>
           <div class="template-show-hide">
-            <div class="builder-main-clearfix" style="border-bottom: 0px; border-top: 1px solid #eee;">
+            <div class="form-clearfix" style="border-bottom: 0px; border-top: 1px solid #eee;">
                     <div class="builder-conditions-container">
                               <div class="condition-allorany-clearfix">
                                       <div class="condition-allorany-container-s">
@@ -51,7 +51,7 @@
                               </div>
                     </div>
             </div>
-            <div class="builder-main-clearfix" style="border-bottom: 0px; border-top: 1px solid #eee; padding-bottom: 0px;">
+            <div class="form-clearfix" style="border-bottom: 0px; border-top: 1px solid #eee; padding-bottom: 0px;">
                     <div class="builder-conditions-container" style="height: auto; width: 100%; display: block;">
                               <span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
                               <div class="caption-textarea-container">
@@ -67,7 +67,7 @@
       </div>
 <!-- CONDITIONS -->
 <div class="form-container">
-  <div class="builder-main-clearfix" style="border-bottom: 0px;">
+  <div class="form-clearfix" style="border-bottom: 0px;">
       <div class="builder-conditions-container" style="height: 30px;">
 
             <span class="cc-text-medium conditions-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
@@ -78,7 +78,7 @@
       </div>
   </div>
 <div class="conditions-show-hide">
-  <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
+  <div class="form-clearfix" style="border-top: 1px solid #eee;">
       <div class="builder-conditions-container">
         <div class="condition-allorany-clearfix">
             <div class="condition-allorany-container-s">
@@ -93,7 +93,7 @@
         </div>
       </div>
   </div>
-  <div class="builder-main-clearfix">
+  <div class="form-clearfix">
     <div class="builder-conditions-container">
       <div class="conditions-container-s select-style">
               <select class="condition-select">
@@ -126,7 +126,7 @@
       </div>
     </div>
   </div>
-  <div class="builder-main-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
+  <div class="form-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
     <div class="builder-conditions-container" style="text-align: center;">
           <a href="#" class="add-condition-button"><i class="fa fa-plus" aria-hidden="true"></i> Add another condition</a>
     </div>
@@ -136,7 +136,7 @@
  </div>
 <!-- PRODUCTS -->
  <div class="form-container" style="height: auto;">
-      <div class="builder-main-clearfix" style="border-bottom: 0px;">
+      <div class="form-clearfix" style="border-bottom: 0px;">
           <div class="builder-conditions-container" style="height: 30px;">
               <span class="cc-text-medium products-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
                   Products
@@ -145,12 +145,12 @@
           </div>
       </div>
           <div class="products-show-hide">
-              <div class="builder-main-clearfix" style="border-top: 1px solid #eee;">
+              <div class="form-clearfix" style="border-top: 1px solid #eee;">
                     <div class="builder-conditions-container">
                         <span class="" style="line-height: 46px; color: #666;"><i class="fa fa-info-circle" aria-hidden="true" style="margin-right: 10px;"></i> Listed below are the products with matching conditions</span>
                     </div>
               </div>
-              <div class="builder-main-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
+              <div class="form-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
                     <div class="builder-conditions-container" style="height: auto; min-height: 100px; display: block;">
                       <!-- Product List -->
                       <div class="feed-product-main-conatiner" style="width: calc(100% - 60px);">
