@@ -78,6 +78,15 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                 </div>
             </a>
 
+            <a class="sidebar-link" href="javascript:void(0)" onclick="getproducts()" id="back-link">
+            	<div class="sidebar-nav-container">
+                  	<span class="sidebar-span">
+                      <i style="font-size: 20px;" class="fa fa-angle-double-left" aria-hidden="true"></i><br>
+                      Back
+                    </span>
+                </div>
+            </a>
+
 			      <a  class="sidebar-link sidebar-hammer" href="javascript:void(0)" onclick="getcaptions()" id="captions-link">
             	<div class="sidebar-nav-container">
                   	<span class="sidebar-span">
@@ -176,6 +185,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
           $('#share-link').addClass('sidebar-link-active');
           $('#captions-link').removeClass('sidebar-link-active');
           $('#settings-link').removeClass('sidebar-link-active');
+          // Help
           $(".help-clearfix").empty();
           $(".help-clearfix").load("help/share.php");
                     }
@@ -213,6 +223,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
           $('#captions-link').addClass('sidebar-link-active');
           $('#share-link').removeClass('sidebar-link-active');
           $('#settings-link').removeClass('sidebar-link-active');
+          // Help
           $(".help-clearfix").empty();
           $(".help-clearfix").load("help/captions.php");
                     }
@@ -233,6 +244,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
           $('#settings-link').addClass('sidebar-link-active');
           $('#share-link').removeClass('sidebar-link-active');
           $('#captions-link').removeClass('sidebar-link-active');
+          // Help
           $(".help-clearfix").empty();
           $(".help-clearfix").load("help/settings.php");
                     }

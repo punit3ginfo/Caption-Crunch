@@ -155,23 +155,32 @@ try
                   $('.sidebar-link').click(function() {
                          $('#preview-container').removeClass("preview-container-animate");
                          $('.collections-animation-container').removeClass("collections-animation");
-                         $('.close-preview-container').css('display', 'none');
+                         // Back Button
+                         $("#share-link").css("display", "block");
+                         $("#back-link").css("display", "none");
                   });
 
                   $('#share-button-<?php echo $p_id1; ?>').click(function() {
                           $('.collections-animation-container').addClass("collections-animation");
                           $('#preview-container').addClass("preview-container-animate");
-                          $('.close-preview-container').css('display', 'flex');
+                          // Back Button
+                          $("#share-link").css("display", "none");
+                          $("#back-link").css("display", "block");
+                          // Help
                           $(".help-clearfix").empty();
                           $(".help-clearfix").load("help/preview.php");
                   });
 
-                  $('#close-preview-button').click(function() {
+                  $('#back-link').click(function() {
                           $('.collections-animation-container').removeClass("collections-animation");
                           $('#preview-container').removeClass("preview-container-animate");
-                          $('.close-preview-container').css('display', 'none');
+                          // Back Button
+                          $("#share-link").css("display", "block");
+                          $("#back-link").css("display", "none");
+                          // Help
                           $(".help-clearfix").empty();
                           $(".help-clearfix").load("help/share.php");
+
                   });
 
               });
