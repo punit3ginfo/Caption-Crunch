@@ -1636,11 +1636,11 @@ a:hover {
 	  width: 100%;
 	  border-top: 1px solid #eee;
     padding: 20px 0px;
-    min-height: 30px;
+    min-height: 46px;
 }
 
 .form-text-header {
-    line-height: 30px;
+    line-height: 46px;
     cursor: pointer;
     width: 100%;
 }
