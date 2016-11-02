@@ -78,9 +78,9 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
                 </div>
             </a>
 
-            <a class="sidebar-link" href="javascript:void(0)" onclick="getproducts()" id="back-link">
+            <a class="sidebar-link-active" href="javascript:void(0)" id="back-link">
             	<div class="sidebar-nav-container">
-                  	<span class="sidebar-span">
+                  	<span class="sidebar-span" style="color: #65D35B;">
                       <i style="font-size: 20px;" class="fa fa-angle-double-left" aria-hidden="true"></i><br>
                       Back
                     </span>
@@ -128,10 +128,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 
         <!-- Collect the nav links, forms, and other content for toggling -->
      		<nav class="main-nav-container">
-        <div class="close-preview-container">
-            <a id="close-preview-button" class='close-button'><i class="fa fa-times" aria-hidden="true"></i> Close Preview</a>
-        </div>
-				<a id="help-button" class="help-header-link" style="text-decoration: none; float: right; cursor:pointer;">
+				      <a id="help-button" class="help-header-link" style="text-decoration: none; float: right; cursor:pointer;">
                   <div class="sidebar-nav-container-header">
                       <span class="sidebar-span">
                       <i style="font-size: 20px;" class="fa fa-info" aria-hidden="true"></i><br>
