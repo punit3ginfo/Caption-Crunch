@@ -163,6 +163,9 @@ try
                   $('#share-button-<?php echo $p_id1; ?>').click(function() {
                           $('.collections-animation-container').addClass("collections-animation");
                           $('#preview-container').addClass("preview-container-animate");
+                          // Preview | Share Button(s)
+                          $(".preview-header").html('
+                          <a href="#" class="button-four-col preview-share-button"><i class="fa fa-bullhorn" aria-hidden="true"></i> Share Now</a><a href="#" class="button-four-col preview-sharenext-button"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i> Share Next</a><a href="#" class="button-four-col preview-sharelater-button"><i class="fa fa-clock-o" aria-hidden="true"></i> Share Later</a><a href="#" class="button-four-col preview-schedule-button"><i class="fa fa-calendar" aria-hidden="true"></i> Schedule</a>');
                           // Back Button
                           $("#share-link").css("display", "none");
                           $("#back-link").css("display", "block");
