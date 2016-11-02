@@ -170,6 +170,8 @@ try
                           $('.collections-animation-container').removeClass("collections-animation");
                           $('#preview-container').removeClass("preview-container-animate");
                           $('.close-preview-container').css('display', 'none');
+                          $(".help-clearfix").empty();
+                          $(".help-clearfix").load("help/share.php");
                   });
 
               });
