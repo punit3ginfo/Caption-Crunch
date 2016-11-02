@@ -176,6 +176,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
           $('#share-link').addClass('sidebar-link-active');
           $('#captions-link').removeClass('sidebar-link-active');
           $('#settings-link').removeClass('sidebar-link-active');
+          $(".help-clearfix").append(' <?php include "help/share.php";?> ');
                     }
                 });
             }
