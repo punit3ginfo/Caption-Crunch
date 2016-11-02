@@ -10,7 +10,7 @@
           <div class="template-show-hide">
             <div class="form-clearfix">
 
-                              <div class="condition-allorany-clearfix">
+                              <div class="form-3col-clearfix">
                                       <div class="condition-allorany-container-s">
                                               <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Title
                                       </div>
@@ -22,7 +22,7 @@
                                       </div>
                               </div>
 
-                              <div class="condition-allorany-clearfix">
+                              <div class="form-3col-clearfix">
                                       <div class="condition-allorany-container-s">
                                               <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Type
                                       </div>
@@ -34,7 +34,7 @@
                                       </div>
                               </div>
 
-                              <div class="condition-allorany-clearfix">
+                              <div class="form-3col-clearfix">
                                       <div class="condition-allorany-container-s">
                                               <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Description
                                       </div>
@@ -46,8 +46,7 @@
                                       </div>
                               </div>
             </div>
-            <div class="form-clearfix" style="border-bottom: 0px; border-top: 1px solid #eee; padding-bottom: 0px;">
-                    <div class="builder-conditions-container" style="height: auto; width: 100%; display: block;">
+            <div class="form-clearfix">
                               <span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
                               <div class="caption-textarea-container">
                                     <textarea id="caption-textarea-large" class="caption-textarea"></textarea>
@@ -56,7 +55,6 @@
                               <div class="caption-textarea-container" style="margin-bottom: 0px;">
                                     <textarea id="caption-textarea-small" class="caption-textarea"></textarea>
                               </div>
-                    </div>
             </div>
           </div>
       </div>
@@ -72,22 +70,24 @@
   </div>
 <div class="conditions-show-hide">
   <div class="form-clearfix">
-      <div class="builder-conditions-container">
-        <div class="condition-allorany-clearfix">
+        <div class="form-3col-clearfix">
             <div class="condition-allorany-container-s">
-              <span>Products must match: </span>
+                  <span>Products must match: </span>
               </div>
+        </div>
+        <div class="form-3col-clearfix">
             <div class="condition-allorany-container-s">
                   <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>All conditions
             </div>
+        </div>
+        <div class="form-3col-clearfix">
             <div class="condition-allorany-container-s">
-              <input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Any condition
+                <input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Any condition
             </div>
         </div>
-      </div>
   </div>
   <div class="form-clearfix">
-    <div class="builder-conditions-container">
+
       <div class="conditions-container-s select-style">
               <select class="condition-select">
                   <option>Collection Title</option>
@@ -117,7 +117,7 @@
           <div class="conditions-container-s">
 <input class="condition-input" type="text-box" placeholder="Enter condition"/>
       </div>
-    </div>
+
   </div>
   <div class="form-clearfix" style="padding-bottom: 5px;">
     <div class="builder-conditions-container" style="text-align: center;">

@@ -1652,12 +1652,11 @@ a:hover {
   	justify-content: space-between;
 }
 
-.condition-allorany-clearfix {
-	  width: 100%;
+.form-3col-clearfix {
+	  width: 33%;
+    display: inline-block;
   	height: 46px;
-  	display: flex;
-  	justify-content: space-between;
-  	line-height: 46px;
+    float: left;
 }
 
 .condition-allorany-container-s {
