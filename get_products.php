@@ -162,6 +162,8 @@ try
                           $('.collections-animation-container').addClass("collections-animation");
                           $('#preview-container').addClass("preview-container-animate");
                           $('.close-preview-container').css('display', 'flex');
+                          $(".help-clearfix").empty();
+                          $(".help-clearfix").load("help/preview.php");
                   });
 
                   $('#close-preview-button').click(function() {
