@@ -1639,6 +1639,12 @@ a:hover {
     min-height: 30px;
 }
 
+.form-text-header {
+    line-height: 30px;
+    cursor: pointer;
+    width: 100%;
+}
+
 .builder-grid-container {
   width: 100%;
   height: calc(100% - 80px);

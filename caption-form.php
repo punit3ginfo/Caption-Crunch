@@ -2,7 +2,7 @@
   <!-- TEMPLATE -->
    <div class="form-container" style="height: auto;">
       <div class="form-clearfix" style="border-top: 0px;">
-              <span class="cc-text-medium templates-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
+              <span class="cc-text-medium form-text-header templates-show-hide-button">
                 Template
                 <i id="template-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
               </span>
@@ -67,7 +67,7 @@
 <div class="form-container">
   <div class="form-clearfix" style="border-top: 0px;">
 
-            <span class="cc-text-medium conditions-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
+            <span class="cc-text-medium form-text-header conditions-show-hide-button">
               Conditions
               <i id="condition-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
             </span>
@@ -133,7 +133,7 @@
 <!-- PRODUCTS -->
  <div class="form-container" style="height: auto;">
       <div class="form-clearfix" style="border-top: 0px;">
-              <span class="cc-text-medium products-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
+              <span class="cc-text-medium form-text-header products-show-hide-button">
                   Products
                   <i id="products-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
               </span>
