@@ -1645,41 +1645,12 @@ a:hover {
     width: 100%;
 }
 
-.builder-grid-container {
-  width: 100%;
-  height: calc(100% - 80px);
-  position: relative;
-}
-
-.builder-grid-overflow-container {
-  box-sizing: border-box;
-  overflow-x: hidden;
-  overflow-y: auto;
-  position: relative;
-  width: 100%;
-  height: calc(100vh - 173px);
-}
-
-.builder-conditions-container {
+/*.builder-conditions-container {
 	  width: 100%;
   	height: 46px;
   	display: flex;
   	justify-content: space-between;
-}
-
-.conditions-title {
-	  line-height: 46px;
-  	font-family: HelveticaNeue-Bold;
-    font-size: 16px;
-    color: #666;
-    letter-spacing: 0.82px;
-    text-transform: uppercase;
-  	width: 100%;
-}
-
-.conditions-title:hover {
-	 color: #65D35B;
-}
+}*/
 
 .condition-allorany-clearfix {
 	  width: 100%;
