@@ -67,7 +67,7 @@
       </div>
 <!-- CONDITIONS -->
 <div class="form-container">
-  <div class="form-clearfix" style="border-bottom: 0px;">
+  <div class="form-clearfix" style="border-top: 0px;">
       <div class="builder-conditions-container" style="height: 30px;">
 
             <span class="cc-text-medium conditions-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
@@ -78,7 +78,7 @@
       </div>
   </div>
 <div class="conditions-show-hide">
-  <div class="form-clearfix" style="border-top: 1px solid #eee;">
+  <div class="form-clearfix">
       <div class="builder-conditions-container">
         <div class="condition-allorany-clearfix">
             <div class="condition-allorany-container-s">
@@ -126,7 +126,7 @@
       </div>
     </div>
   </div>
-  <div class="form-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
+  <div class="form-clearfix" style="padding-bottom: 5px;">
     <div class="builder-conditions-container" style="text-align: center;">
           <a href="#" class="add-condition-button"><i class="fa fa-plus" aria-hidden="true"></i> Add another condition</a>
     </div>
@@ -136,7 +136,7 @@
  </div>
 <!-- PRODUCTS -->
  <div class="form-container" style="height: auto;">
-      <div class="form-clearfix" style="border-bottom: 0px;">
+      <div class="form-clearfix" style="border-top: 0px;">
           <div class="builder-conditions-container" style="height: 30px;">
               <span class="cc-text-medium products-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
                   Products
