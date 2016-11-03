@@ -114,19 +114,13 @@
 
  </div>
 <!-- PRODUCTS -->
- <div class="form-container" style="height: auto;">
+ <div class="form-container">
       <div class="form-clearfix" style="border-top: 0px;">
               <span class="cc-text-medium form-text-header products-show-hide-button">
                   Products
                   <i id="products-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
               </span>
       </div>
-          <div class="products-show-hide">
-              <div class="form-clearfix">
-                      <!-- Product List -->
-                      
-                      <!-- Product List End -->
-              </div>
-          </div>
-      </div>
+</div>
+
 </form>
