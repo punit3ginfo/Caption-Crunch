@@ -62,7 +62,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 		<aside class="sidebar_nav">
           	<!-- <a  class="sidebar-link" href="javascript:void(0)" onclick="getdashboard()">
             	<div class="sidebar-nav-container">
-                  	<span class="sidebar-span">
+                  	<span >
                     <i style="font-size: 20px;" class="fa fa-tachometer" aria-hidden="true"></i><br>
                   	Dashboard
                   	</span>
@@ -71,7 +71,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 
             <a class="sidebar-link" href="javascript:void(0)" onclick="getproducts()" id="share-link">
             	<div class="sidebar-nav-container">
-                  	<span class="sidebar-span">
+                  	<span >
                       <i style="font-size: 20px;" class="fa fa-bullhorn" aria-hidden="true"></i><br>
                       Share
                     </span>
@@ -80,7 +80,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 
             <a class="sidebar-link-active back-link" href="javascript:void(0)" style="display: none;">
             	<div class="sidebar-nav-container">
-                  	<span class="sidebar-span" style="color: white;">
+                  	<span  style="color: white;">
                       <i style="font-size: 20px;" class="fa fa-times" aria-hidden="true"></i><br>
                       Back
                     </span>
@@ -89,7 +89,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 
 			      <a  class="sidebar-link sidebar-hammer" href="javascript:void(0)" onclick="getcaptions()" id="captions-link">
             	<div class="sidebar-nav-container">
-                  	<span class="sidebar-span">
+                  	<span>
                     <div class="sidebar-hammer-img"></div>
                   	Captions
                   	</span>
@@ -98,7 +98,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 
               <a class="sidebar-link" href="javascript:void(0)" onclick="getsettings()" id="settings-link">
                 <div class="sidebar-nav-container">
-                      <span class="sidebar-span">
+                      <span >
                       <i style="font-size: 20px;" class="fa fa-cogs" aria-hidden="true"></i><br>
                       Settings
                       </span>
@@ -106,7 +106,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
               </a>
             <!-- <a class="sidebar-link" href="/?page=autopilot">
             	<div class="sidebar-nav-container">
-					          <span class="sidebar-span">
+					          <span >
                       <i style="font-size: 20px;" class="fa fa-paper-plane-o" aria-hidden="true"></i><br>
                       Autopilot
                     </span>
@@ -130,7 +130,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
      		<nav class="main-nav-container">
 				      <a id="help-button" class="help-header-link" style="text-decoration: none; float: right; cursor:pointer;">
                   <div class="sidebar-nav-container-header">
-                      <span class="sidebar-span">
+                      <span >
                       <i style="font-size: 20px;" class="fa fa-info" aria-hidden="true"></i><br>
                       Help
                       </span>
