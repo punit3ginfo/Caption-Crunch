@@ -1612,6 +1612,11 @@ a:hover {
   	text-decoration: none;
 }
 
+.caption-block {
+  background-color: yellow;
+  
+}
+
 /* ---------------- Form ----------------- */
 
 .form {
