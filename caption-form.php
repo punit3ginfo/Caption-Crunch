@@ -11,13 +11,13 @@
             <div class="form-clearfix">
 
                                       <div class="form-3col-clearfix">
-                                              <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Title
+                                              <input id="product-title-check" type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Title
                                       </div>
                                       <div class="form-3col-clearfix">
-                                              <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Price
+                                              <input id="product-price-check" type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Price
                                       </div>
                                       <div class="form-3col-clearfix">
-                                              <input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Compare At Price
+                                              <input id="product-comp-price-check" type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Compare At Price
                                       </div>
 
                                       <div class="form-3col-clearfix">
@@ -126,3 +126,15 @@
 <!-- HTML Content for Product END    -->
 
 </form>
+
+<script>
+
+$('#product-title-check').click(function(){
+    if (this.checked) {
+        console.log("checked");
+    } else {
+        console.log("not checked");
+    }
+});
+
+</script>
