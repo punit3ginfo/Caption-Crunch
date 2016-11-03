@@ -129,7 +129,7 @@
 
 <script>
 
-var $productTitle = "{{ product.title }}"
+var $productTitle = "{{ product.title }}";
 
 $('#product-title-check').click(function(){
     if (this.checked) {
