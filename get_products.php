@@ -164,7 +164,7 @@ try
                           $('.collections-animation-container').addClass("collections-animation");
                           $('#preview-container').addClass("preview-container-animate");
                           // Preview | Share Button(s)
-                          $(".preview-header").load("share-buttons.php");
+                                        // $(".preview-header").load("share-buttons.php");
                           // Back Button
                           $("#share-link").css("display", "none");
                           $(".back-link").css("display", "block");
