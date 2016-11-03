@@ -45,7 +45,7 @@ body {
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,500,700');
 
 .cc-text-small {
-    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    /*font-family:  'Ubuntu', sans-serif;*/
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
@@ -54,7 +54,7 @@ body {
 }
 
 .cc-text-medium {
-  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  /*font-family:  'Ubuntu', sans-serif;*/
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -683,7 +683,7 @@ body {
   line-height: 25px;
   font-size: 16px;
   color: black;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:  'Ubuntu', sans-serif;
   border: 0px;
   resize: none;
   overflow: auto;
@@ -1305,7 +1305,7 @@ body {
 .product-card-price-text {
     color: #666;
     text-transform: uppercase;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family:  'Ubuntu', sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
 }
@@ -1850,7 +1850,7 @@ form {
 
 .feed-product-date {
   line-height: 23px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:  'Ubuntu', sans-serif;
   font-size: 14px;
   color: #666;
 }
