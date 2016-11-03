@@ -70,7 +70,7 @@
                   <span>Products must match: </span>
         </div>
         <div class="form-3col-clearfix">
-                  <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>All conditions
+                  <input class="roundedOne" type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>All conditions
         </div>
         <div class="form-3col-clearfix">
                 <input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Any condition
