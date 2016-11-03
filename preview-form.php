@@ -2,7 +2,7 @@
 <!--  Step 1  -->
         <div class="form-container" style="padding-bottom: 0px">
 
-          <div class="form-clearfix" style="border-bottom: 1px solid #eee;">
+
               <div class="form-clearfix" style="border-top: 0px;">
 
                     <span class="cc-text-medium form-text-header account-show-hide-button">
@@ -11,7 +11,7 @@
                     </span>
 
               </div>
-          </div>
+
                 <div class="account-show-hide">
                         <div class="form-clearfix">
 
