@@ -136,16 +136,9 @@ $('#product-title-check').click(function(){
         $('#caption-textarea-large').val($productTitle);
         console.log("checked");
     } else {
+        $('#caption-textarea-large').val();
         console.log("not checked");
     }
-});
-
-var productTitleBlock = '{{ product.title }}';
-$(document).ready(function () {
-    $("#caption-textarea-large:contains('"+productTitleBlock+"')").each(function () {
-        var regex = new RegExp(search,'gi');
-        $(this).html($(this).text().replace(regex, "<span class='caption-block'>"+productTitleBlock+"</span>"));
-    });
 });
 
 </script>
