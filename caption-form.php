@@ -77,38 +77,36 @@
         </div>
   </div>
   <div class="form-clearfix">
-
-      <div class="conditions-container-s select-style">
-              <select class="condition-select">
-                  <option>Collection Title</option>
-                  <option>Product Title</option>
-                  <option>Product Type</option>
-                  <option>Product Vendor</option>
-                  <option>Product Price</option>
-                  <option>Product Tag</option>
-                  <option>Compare At Price</option>
-                  <option>Weight</option>
-                  <option>Inventory Stock</option>
-                  <option>Varient Title</option>
-              </select>
-      </div>
-          <div class="conditions-container-s select-style">
-<select class="condition-select">
-                  <option>is equal to</option>
-                  <option>is not equal to</option>
-                  <option>is greater than</option>
-                  <option>is less than</option>
-                  <option>starts with</option>
-                  <option>ends with</option>
-                  <option>contains</option>
-                  <option>does not contain</option>
-              </select>
-      </div>
-          <div class="conditions-container-s">
-<input class="condition-input" type="text-box" placeholder="Enter condition"/>
-      </div>
-
-  </div>
+        <div class="form-3col-clearfix">
+                    <select class="condition-select">
+                            <option>Collection Title</option>
+                            <option>Product Title</option>
+                            <option>Product Type</option>
+                            <option>Product Vendor</option>
+                            <option>Product Price</option>
+                            <option>Product Tag</option>
+                            <option>Compare At Price</option>
+                            <option>Weight</option>
+                            <option>Inventory Stock</option>
+                            <option>Varient Title</option>
+                    </select>
+         </div>
+         <div class="form-3col-clearfix">
+                    <select class="condition-select">
+                              <option>is equal to</option>
+                              <option>is not equal to</option>
+                              <option>is greater than</option>
+                              <option>is less than</option>
+                              <option>starts with</option>
+                              <option>ends with</option>
+                              <option>contains</option>
+                              <option>does not contain</option>
+                    </select>
+         </div>
+         <div class="form-3col-clearfix">
+            <input class="condition-input" type="text-box" placeholder="Enter condition"/>
+         </div>
+</div>
   <div class="form-clearfix" style="padding-bottom: 5px;">
     <div class="builder-conditions-container" style="text-align: center;">
           <a href="#" class="add-condition-button"><i class="fa fa-plus" aria-hidden="true"></i> Add another condition</a>

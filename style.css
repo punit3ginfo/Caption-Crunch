@@ -1647,13 +1647,6 @@ a:hover {
     width: 100%;
 }
 
-.builder-conditions-container {
-	  width: 100%;
-  	height: 46px;
-  	display: flex;
-  	justify-content: space-between;
-}
-
 .form-3col-clearfix {
 	  width: 33%;
     display: inline-block;
@@ -1664,19 +1657,8 @@ a:hover {
     justify-content: center;
 }
 
-.condition-allorany-container-s {
-	width: 31%;
-  	height: 46px;
-  	text-align: center;
-}
-
-.conditions-container-s {
-  	width: 31%;
-  	height: 46px;
-}
-
 .condition-select {
-	width: 100%;
+	  width: 100%;
   	height: 46px;
 }
 
