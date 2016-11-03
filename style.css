@@ -375,6 +375,7 @@ body {
   text-decoration: none;
   display: block;
   background-color: white;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .sidebar-link:hover {
