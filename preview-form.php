@@ -63,7 +63,7 @@
       <!--  Step 2  -->
       <div class="form-container" style="padding-bottom: 0px">
                 <div id="step2" class="preview-anchor"></div>
-                <div class="form-clearfix">
+                <div class="form-clearfix"  style="border-top: 0px">
 
                           <span class="cc-text-medium caption-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
                             Step 2 | Choose Caption
@@ -88,7 +88,7 @@
             <!--  Step 3  -->
 
                       <div id="step3" class="preview-anchor-2"></div>
-                      <div class="form-clearfix" style="border-bottom: 0px;">
+                      <div class="form-clearfix"  style="border-top: 0px">
                                 <span class="cc-text-medium image-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
                                   Step 3 | Add Image
                                   <i id="image-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
