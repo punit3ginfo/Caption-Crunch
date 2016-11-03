@@ -39,7 +39,7 @@
 
 
                                   <div class="content-header" style="text-align: center;">
-                                          <span class="preview-steps-text" style="line-height: 80px; cursor: pointer;">
+                                          <span class="cc-text-large" style="line-height: 80px;">
                                           Connect Your Accounts
                                           </span>
                                   </div>

@@ -2015,6 +2015,7 @@ cursor:pointer;
   width: calc(100% - 40px);
   cursor: pointer;
   color: #666;
+  font-weight: bold;
 }
 
 .connected-button:hover {
@@ -2037,6 +2038,7 @@ cursor:pointer;
   background: white;
   width: calc(100% - 40px);
   cursor: pointer;
+  font-weight: bold;
 }
 
 .connect-button:hover {
