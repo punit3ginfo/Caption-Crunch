@@ -64,7 +64,7 @@ body {
 }
 
 .cc-text-large {
-    /*font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;*/
+    /*font-family: "'Ubuntu', sans-serif", Helvetica, Arial, sans-serif;*/
     font-size: 18px;
     line-height: 20px;
     color: #666;
@@ -136,7 +136,7 @@ body {
 }
 
 .header-help, .header-central {
-	font-family: HelveticaNeue-Bold;
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 18px;
 	letter-spacing: 0.31px;
 	line-height: 63px;
@@ -160,7 +160,7 @@ body {
 .close-button {
     border: 1px solid #666;
     padding: 12px 20px;
-    font-family: HelveticaNeue-Bold;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     color: #666;
     letter-spacing: 0.82px;
@@ -551,7 +551,7 @@ body {
 .prev-step-button {
 	  border: 1px solid #666;
   	padding: 12px;
-  	font-family: HelveticaNeue-Bold;
+  	font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     color: #666;
     letter-spacing: 0.82px;
@@ -570,7 +570,7 @@ body {
 .next-step-button {
 	border: 1px solid #65D35B;
   	padding: 12px;
-  	font-family: HelveticaNeue-Bold;
+  	font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     color: #65D35B;
     letter-spacing: 0.82px;
@@ -588,7 +588,7 @@ body {
 .step1-next-step-button {
 	border: 1px solid #65D35B;
   	padding: 11px 20px;
-  	font-family: HelveticaNeue-Bold;
+  	font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     color: #65D35B;
     letter-spacing: 0.82px;
@@ -617,7 +617,7 @@ body {
 
 .preview-steps-text {
     line-height: 30px;
-    font-family: HelveticaNeue-Bold;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     color: #666;
     letter-spacing: 0.82px;
@@ -730,7 +730,7 @@ body {
 
 .button-four-col {
   padding: 11px 0px;
-  font-family: HelveticaNeue-Bold;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
   letter-spacing: 0.82px;
   text-transform: uppercase;
@@ -1114,7 +1114,7 @@ body {
 }
 
 .menu-icon {
-	font-family: HelveticaNeue-Bold;
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 12px;
 	line-height: 40px;
 	color: #FFFFFF;
@@ -1267,7 +1267,7 @@ body {
 }
 
 .product-icon-clearfix {
-    font-family: HelveticaNeue-Bold;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     line-height: 40px;
     color: #FFFFFF;
@@ -1328,7 +1328,7 @@ body {
   	bottom: 0px;
   	left: 0px;
   	right: 0px;
-    font-family: HelveticaNeue-Bold;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     color: #666;
     letter-spacing: 0.82px;
@@ -1387,7 +1387,7 @@ body {
   bottom: 20px;
   left: 20px;
   right: 20px;
-  font-family: HelveticaNeue-Bold;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
   letter-spacing: 0.82px;
   text-transform: uppercase;
@@ -1574,7 +1574,7 @@ a:hover {
 
 .caption-title-text {
 	line-height: 80px;
-	font-family: HelveticaNeue-Bold;
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 16px;
 	color: #666;
 	letter-spacing: 0.82px;
@@ -1587,7 +1587,7 @@ a:hover {
   	height: 40px;
   	border: 0px;
   	border-bottom: 1px solid #65D35B;
-  	font-family: HelveticaNeue-Bold;
+  	font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     color: #666;
     letter-spacing: 0.82px;
@@ -1596,7 +1596,7 @@ a:hover {
 
 .caption-title-text-box::-webkit-input-placeholder {
 	color: #666;
-  	font-family: HelveticaNeue-Bold;
+  	font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     color: #666;
     letter-spacing: 0.82px;
@@ -1606,7 +1606,7 @@ a:hover {
 .save-button {
 	border: 1px solid #65D35B;
   	padding: 11px 20px;
-  	font-family: HelveticaNeue-Bold;
+  	font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     color: #65D35B;
     letter-spacing: 0.82px;
@@ -1715,7 +1715,7 @@ select:focus {
 .add-condition-button {
 	  border: 1px solid #666;
   	padding: 11px 20px;
-  	font-family: HelveticaNeue-Bold;
+  	font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     color: #666;
     letter-spacing: 0.82px;
@@ -1741,7 +1741,7 @@ form {
   border: 1px solid #65d35b;
   bottom: 20px;
   color: #65d35b;
-  font-family: HelveticaNeue-Bold;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
   left: 20px;
   letter-spacing: 0.82px;
@@ -1775,7 +1775,7 @@ form {
 }
 
 .dashboard-menu-icon {
-    font-family: HelveticaNeue-Bold;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     line-height: 40px;
     color: #FFFFFF;
@@ -1838,7 +1838,7 @@ form {
 
 .feed-product-title {
   line-height: 23px;
-  font-family: HelveticaNeue-Bold;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
   color: #666;
   letter-spacing: 0.82px;
@@ -1879,7 +1879,7 @@ form {
 .feed-product-sharenow-button {
     border: 1px solid #65D35B;
     padding: 12px 20px;
-    font-family: HelveticaNeue-Bold;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     color: #65D35B;
     letter-spacing: 0.82px;
@@ -1896,7 +1896,7 @@ form {
 .feed-product-preview-button {
     border: 1px solid #666;
     padding: 12px 20px;
-    font-family: HelveticaNeue-Bold;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     color: #666;
     letter-spacing: 0.82px;
@@ -2010,7 +2010,7 @@ cursor:pointer;
   bottom: 20px;
   left: 20px;
   right: 20px;
-  font-family: HelveticaNeue-Bold;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
   letter-spacing: 0.82px;
   text-transform: uppercase;
@@ -2032,7 +2032,7 @@ cursor:pointer;
   bottom: 20px;
   left: 20px;
   right: 20px;
-  font-family: HelveticaNeue-Bold;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
   color: #65D35B;
   letter-spacing: 0.82px;
