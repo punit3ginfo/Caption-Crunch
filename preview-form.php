@@ -73,6 +73,28 @@
                 </div>
                       <div class="caption-show-hide">
                               <div class="form-clearfix">
+                                      <a href="javascript:void(0)" class="button-four-col"><i class="fa fa-check" aria-hidden="true"></i> Caption 1</a>
+                                      <a href="javascript:void(0)" class="button-four-col"><i class="fa fa-times" aria-hidden="true"></i> Caption 2</a>
+                                      <a href="javascript:void(0)" class="button-four-col"><i class="fa fa-times" aria-hidden="true"></i> Caption 3</a>
+                                      <a href="javascript:void(0)" class="button-four-col"><i class="fa fa-times" aria-hidden="true"></i> Caption 4</a>
+
+                                      <a href="javascript:void(0)" class="button-four-col"><i class="fa fa-times" aria-hidden="true"></i> Caption 5</a>
+                                      <a href="javascript:void(0)" class="button-four-col"><i class="fa fa-times" aria-hidden="true"></i> Caption 6</a>
+                                      <a href="javascript:void(0)" class="button-four-col"><i class="fa fa-times" aria-hidden="true"></i> Caption 7</a>
+                                      <a href="javascript:void(0)" class="button-four-col"><i class="fa fa-times" aria-hidden="true"></i> Caption X</a>
+
+                                      <a href="javascript:void(0)" class="button-four-col"><i class="fa fa-times" aria-hidden="true"></i> Caption X</a>
+                                      <a href="javascript:void(0)" class="button-four-col"><i class="fa fa-times" aria-hidden="true"></i> Caption X</a>
+                                      <a href="javascript:void(0)" class="button-four-col"><i class="fa fa-times" aria-hidden="true"></i> Caption X</a>
+                                      <a href="javascript:void(0)" class="button-four-col"><i class="fa fa-times" aria-hidden="true"></i> Caption X</a>
+
+                                      <a href="javascript:void(0)" class="button-four-col"><i class="fa fa-times" aria-hidden="true"></i> Caption X</a>
+                                      <a href="javascript:void(0)" class="button-four-col"><i class="fa fa-times" aria-hidden="true"></i> Caption X</a>
+                                      <a href="javascript:void(0)" class="button-four-col"><i class="fa fa-times" aria-hidden="true"></i> Caption X</a>
+                                      <a href="javascript:void(0)" class="button-four-col"><i class="fa fa-times" aria-hidden="true"></i> Caption X</a>
+
+                              </div>
+                              <div class="form-clearfix">
                                                 <span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
                                                 <div class="caption-textarea-container"style="margin-bottom: 30px;">
                                                       <textarea id="preview-textarea-large" class="caption-textarea"></textarea>
@@ -103,10 +125,10 @@
                                                 </div>
 
                                                 <!-- <div class="addimage-clearfix">
-                                                        <div class="addimage-container addimage-active">
-                                                                    <i class="fa fa-plus addimage-plus-icon" aria-hidden="true"></i>
-                                                        </div>
-                                                </div> -->
+                                                                                  <div class="addimage-container addimage-active">
+                                                                                              <i class="fa fa-plus addimage-plus-icon" aria-hidden="true"></i>
+                                                                                  </div>
+                                                                          </div> -->
                                     </div>
                             </div>
                   </div>
