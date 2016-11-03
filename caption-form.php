@@ -45,7 +45,7 @@
             <div class="form-clearfix">
                               <span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
                               <div class="caption-textarea-container">
-                                    <textarea id="captions-textarea-large" class="caption-textarea"></textarea>
+                                    <textarea id="caption-textarea-large" class="caption-textarea"></textarea>
                               </div>
                               <span class="cc-text-small">Caption for: Twitter (Character Limit: 140)</span>
                               <div class="captions-textarea-container" style="margin-bottom: 0px;">
@@ -133,7 +133,7 @@ var $productTitle = "{{ product.title }}";
 
 $('#product-title-check').click(function(){
     if (this.checked) {
-        $('#captions-textarea-large').val($productTitle);
+        $('#caption-textarea-large').val($productTitle);
         console.log("checked");
     } else {
         console.log("not checked");

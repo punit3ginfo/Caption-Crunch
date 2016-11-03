@@ -110,8 +110,8 @@ try
               var CaptionShort = "<?php echo $title; ?> | $<?php echo $price; ?> | Short Caption";
 
               $("#caption-textarea-large").ready(function() {
-                    $("#caption-textarea-large").html(CaptionLong);
-                    $("#caption-textarea-small").html(CaptionShort);
+                    $("#preview-textarea-large").html(CaptionLong);
+                    $("#preview-textarea-small").html(CaptionShort);
               });
 
               $(".facebook-mobile-caption-text").ready(function() {

@@ -72,14 +72,14 @@
 
                 </div>
                       <div class="caption-show-hide">
-                              <div class="form-clearfix" style="">
+                              <div class="form-clearfix">
                                                 <span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
                                                 <div class="caption-textarea-container"style="margin-bottom: 30px;">
-                                                      <textarea id="caption-textarea-large" class="caption-textarea"></textarea>
+                                                      <textarea id="preview-textarea-large" class="caption-textarea"></textarea>
                                                 </div>
                                                 <span class="cc-text-small">Caption for: Twitter (Character Limit: 140)</span>
                                                 <div class="caption-textarea-container" style="margin-bottom: 0px;">
-                                                      <textarea id="caption-textarea-small" class="caption-textarea"></textarea>
+                                                      <textarea id="preview-textarea-small" class="caption-textarea"></textarea>
                                                 </div>
                               </div>
                       </div>
@@ -95,7 +95,7 @@
                                 </span>
                       </div>
                             <div class="image-show-hide">
-                                    <div class="form-clearfix" style="border-top: 1px solid #eee;">
+                                    <div class="form-clearfix">
                                                 <div class="addimage-clearfix">
                                                         <div id="addimage-image-one" class="addimage-container">
 
