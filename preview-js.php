@@ -33,30 +33,6 @@
       $('#share-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
   });
 
-</script>
-
-<script>
-
-// Smooth Scroll Function
-$(function() {
-      $('a[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('.preview-clearfix').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-          }
-        }
-      });
-});
-
-</script>
-
-<script>
-
 // Next Step 1 - 2 | Show / Hide
 $('#step2button').click(function() {
     // Show / Hide Conditions Container
@@ -92,10 +68,6 @@ $('#step4button').click(function() {
     // Rotate Arrow 180 Degree / Click
       $('#share-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
 });
-
-</script>
-
-<script>
 
 // Prev Step 1 - 2 | Show / Hide
 $('#step2prevbutton').click(function() {
