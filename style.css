@@ -1687,9 +1687,8 @@ a:hover {
 }
 
 .form-input {
-	width: 100%;
+	  width: calc(100% - 30px);
   	height: 46px;
-  	padding-left: 10px;
   	border: 1px solid #666;
 }
 
