@@ -42,15 +42,20 @@ body {
 
 /* ------------------- Type / Fonts --------------------*/
 
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,500,700');
+
 .cc-text-small {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #666;
+    font-weight: 300;
 }
 
 .cc-text-medium {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #666;
@@ -59,12 +64,13 @@ body {
 }
 
 .cc-text-large {
-    font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
+    /*font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;*/
     font-size: 18px;
     line-height: 20px;
     color: #666;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 0.82px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /* ------------------- Columns --------------------*/
