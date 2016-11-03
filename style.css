@@ -1649,7 +1649,6 @@ a:hover {
 
 .form-3col-clearfix {
 	  width: 33%;
-    display: inline-block;
   	height: 46px;
     float: left;
     display: flex;
@@ -1697,7 +1696,7 @@ a:hover {
 }
 
 .add-condition-button {
-	border: 1px solid #666;
+	  border: 1px solid #666;
   	padding: 11px 20px;
   	font-family: HelveticaNeue-Bold;
     font-size: 16px;
@@ -1705,7 +1704,10 @@ a:hover {
     letter-spacing: 0.82px;
     text-transform: uppercase;
   	background: white;
-  	width: 100%;
+    display: block;
+  	width: calc(100% - 75px);
+    margin: auto;
+    text-align: center;
 }
 
 .add-condition-button:hover {
