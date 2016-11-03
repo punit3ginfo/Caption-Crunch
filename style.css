@@ -1669,7 +1669,7 @@ a:hover {
   	border: 1px solid #65D35B;
 }
 
-.form-select select {
+.form-select {
     padding: 5px 8px;
     width: 100%;
     border: none;
@@ -1681,7 +1681,7 @@ a:hover {
     color: #666;
 }
 
-.form-select select:focus {
+.form-select:focus {
     outline: none;
 }
 
