@@ -129,7 +129,7 @@
 
 <script>
 
-var $productTitle = "<span class='caption-block'>Product Title</span>";
+var $productTitle = "{{ product.title }}";
 
 $('#product-title-check').click(function(){
     if (this.checked) {
@@ -138,6 +138,14 @@ $('#product-title-check').click(function(){
     } else {
         console.log("not checked");
     }
+});
+
+var productTitleBlock = '{{ product.title }}';
+$(document).ready(function () {
+    $("#caption-textarea-large:contains('"+productTitleBlock+"')").each(function () {
+        var regex = new RegExp(search,'gi');
+        $(this).html($(this).text().replace(regex, "<span class='caption-block'>"+productTitleBlock+"</span>"));
+    });
 });
 
 </script>
