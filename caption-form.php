@@ -129,9 +129,11 @@
 
 <script>
 
+var $productTitle = "{{ product.title }}"
+
 $('#product-title-check').click(function(){
     if (this.checked) {
-        console.log("checked");
+        $('#caption-textarea-large').append($productTitle);
     } else {
         console.log("not checked");
     }
