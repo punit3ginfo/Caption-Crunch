@@ -1081,6 +1081,7 @@ body {
 	display: block;
 	width: 100%;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .menu-container:hover .menu-font {
@@ -1369,6 +1370,7 @@ body {
   	background: white;
     width: calc(100% - 40px);
     cursor: pointer;
+    font-weight: bold;
 }
 
 .share-button:hover {
