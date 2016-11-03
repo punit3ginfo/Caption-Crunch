@@ -1657,7 +1657,7 @@ a:hover {
 }
 
 select {
-    padding: 5px 8px;
+    padding: 10px 8px;
     width: 100%;
     border: none;
     box-shadow: none;
@@ -1666,6 +1666,7 @@ select {
     -webkit-appearance: none;
   	margin-left: 11px;
     color: #666;
+
 }
 
 select:focus {
@@ -1679,6 +1680,7 @@ select:focus {
     overflow: hidden;
     background: white url("https://cdn.shopify.com/s/files/1/1484/1256/files/arrow-down.png?9258385709659661406") no-repeat 95% 50%;
   	background-size: 16px 16px;
+    border-radius: 0px;
 }
 
 .form-select:hover {
@@ -1689,6 +1691,7 @@ select:focus {
 	  width: calc(100% - 30px);
   	height: 46px;
   	border: 1px solid #666;
+    padding-left: 10px;
 }
 
 .form-input:hover {
