@@ -134,10 +134,8 @@ var $productTitle = "{{ product.title }}";
 $('#product-title-check').click(function(){
     if (this.checked) {
         $('#caption-textarea-large').val($productTitle);
-        console.log("checked");
     } else {
-        $('#caption-textarea-large').val();
-        console.log("not checked");
+        $('#caption-textarea-large').val().empty();
     }
 });
 
