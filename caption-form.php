@@ -122,15 +122,8 @@
               </span>
       </div>
           <div class="products-show-hide">
-              <div class="form-clearfix" style="border-top: 1px solid #eee;">
-                    <div class="builder-conditions-container">
-                        <span class="" style="line-height: 46px; color: #666;"><i class="fa fa-info-circle" aria-hidden="true" style="margin-right: 10px;"></i> Listed below are the products with matching conditions</span>
-                    </div>
-              </div>
-              <div class="form-clearfix" style="border-bottom: 0px; padding-bottom: 5px;">
-                    <div class="builder-conditions-container" style="height: auto; min-height: 100px; display: block;">
+              <div class="form-clearfix">
                       <!-- Product List -->
-
                       <div class="feed-product-main-conatiner" style="width: calc(100% - 60px);">
                           <div class="feed-product-main-clearfix">
                                   <div class="feed-product-image" style="background: #65D35B;">
@@ -147,9 +140,7 @@
                                   </div>
                           </div>
                       </div>
-
                       <!-- Product List End -->
-                    </div>
               </div>
           </div>
       </div>
