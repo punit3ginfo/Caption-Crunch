@@ -78,7 +78,7 @@
   </div>
   <div class="form-clearfix">
         <div class="form-3col-clearfix">
-                    <select class="condition-select select-style">
+                    <select class="form-select">
                             <option>Collection Title</option>
                             <option>Product Title</option>
                             <option>Product Type</option>
@@ -92,7 +92,7 @@
                     </select>
          </div>
          <div class="form-3col-clearfix">
-                    <select class="condition-select">
+                    <select class="form-select">
                               <option>is equal to</option>
                               <option>is not equal to</option>
                               <option>is greater than</option>
@@ -104,13 +104,11 @@
                     </select>
          </div>
          <div class="form-3col-clearfix">
-            <input class="condition-input" type="text-box" placeholder="Enter condition"/>
+            <input class="form-input" type="text-box" placeholder="Enter condition"/>
          </div>
 </div>
-  <div class="form-clearfix" style="padding-bottom: 5px;">
-    <div class="builder-conditions-container" style="text-align: center;">
+  <div class="form-clearfix">
           <a href="#" class="add-condition-button"><i class="fa fa-plus" aria-hidden="true"></i> Add another condition</a>
-    </div>
   </div>
 </div>
 
