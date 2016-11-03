@@ -1656,20 +1656,7 @@ a:hover {
     justify-content: center;
 }
 
-.form-select {
-	  width: calc(100% - 30px);
-  	height: 46px;
-    border: 1px solid #666;
-    overflow: hidden;
-    background: white url("https://cdn.shopify.com/s/files/1/1484/1256/files/arrow-down.png?9258385709659661406") no-repeat 95% 50%;
-  	background-size: 16px 16px;
-}
-
-.form-select:hover {
-  	border: 1px solid #65D35B;
-}
-
-.form-select {
+select {
     padding: 5px 8px;
     width: 100%;
     border: none;
@@ -1681,8 +1668,21 @@ a:hover {
     color: #666;
 }
 
-.form-select:focus {
+select:focus {
     outline: none;
+}
+
+.form-select {
+	  width: calc(100% - 30px);
+  	height: 46px;
+    border: 1px solid #666;
+    overflow: hidden;
+    background: white url("https://cdn.shopify.com/s/files/1/1484/1256/files/arrow-down.png?9258385709659661406") no-repeat 95% 50%;
+  	background-size: 16px 16px;
+}
+
+.form-select:hover {
+  	border: 1px solid #65D35B;
 }
 
 .form-input {
