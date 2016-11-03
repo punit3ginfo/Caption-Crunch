@@ -59,9 +59,9 @@
 
                         </div>
                 </div>
-
+      </div>
       <!--  Step 2  -->
-
+      <div class="form-container" style="padding-bottom: 0px">
                 <div id="step2" class="preview-anchor"></div>
                 <div class="form-clearfix">
 
@@ -83,7 +83,8 @@
                                                 </div>
                               </div>
                       </div>
-
+</div>
+<div class="form-container" style="padding-bottom: 0px">
             <!--  Step 3  -->
 
                       <div id="step3" class="preview-anchor-2"></div>
