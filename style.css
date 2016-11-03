@@ -1658,8 +1658,9 @@ a:hover {
 }
 
 .condition-select {
-	  width: 100%;
+	  width: calc(100% - 30px);
   	height: 46px;
+    /*border: 1px solid #666;*/
 }
 
 .select-style {

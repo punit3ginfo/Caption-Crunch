@@ -78,7 +78,7 @@
   </div>
   <div class="form-clearfix">
         <div class="form-3col-clearfix">
-                    <select class="condition-select">
+                    <select class="condition-select select-style">
                             <option>Collection Title</option>
                             <option>Product Title</option>
                             <option>Product Type</option>
