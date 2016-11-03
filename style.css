@@ -734,6 +734,7 @@ body {
   background: white;
   width: 23%;
   text-align: center;
+  font-weight: bold;
 }
 
 .preview-share-button {
