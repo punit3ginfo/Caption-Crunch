@@ -1675,7 +1675,6 @@ a:hover {
 }
 
 .form-caption-list-clearfix {
-    width: 100%;
     min-height: 46px;
     display: flex;
     align-items: center;
@@ -1686,6 +1685,10 @@ a:hover {
     max-height: 168px;
     overflow-x: hidden;
     overflow-y: scroll;
+    width: calc(100% - 30px);
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
 }
 
 .button-three-col {
