@@ -1782,6 +1782,7 @@ select:focus {
   	width: calc(100% - 75px);
     margin: auto;
     text-align: center;
+    font-weight: bold;
 }
 
 .add-condition-button:hover {
