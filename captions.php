@@ -51,7 +51,7 @@
 													<div class="content-header-container">
 																				<a href="javascript:void(0)" class="save-button">
 																								<i class="fa fa-unlock-alt" aria-hidden="true"></i>
-																								 SAVE CAPTION
+																								 SAVE
 																				</a>
 														</div>
 								</div>

@@ -1631,6 +1631,7 @@ a:hover {
     letter-spacing: 0.82px;
     text-transform: uppercase;
   	background: white;
+    font-weight: bold;
 }
 
 .save-button:hover {
