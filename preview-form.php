@@ -73,27 +73,7 @@
                 </div>
                       <div class="caption-show-hide">
                               <div class="form-clearfix">
-                                          <div class="caption-select-container">
-                                                      <a href="javascript:void(0)" class="button-four-col grey-button"><i class="fa fa-check" aria-hidden="true"></i> Caption 1</a>
-                                                      <a href="javascript:void(0)" class="button-four-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption 2</a>
-                                                      <a href="javascript:void(0)" class="button-four-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption 3</a>
-                                                      <a href="javascript:void(0)" class="button-four-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption 4</a>
-
-                                                      <a href="javascript:void(0)" class="button-four-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption 5</a>
-                                                      <a href="javascript:void(0)" class="button-four-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption 6</a>
-                                                      <a href="javascript:void(0)" class="button-four-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption 7</a>
-                                                      <a href="javascript:void(0)" class="button-four-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption X</a>
-
-                                                      <a href="javascript:void(0)" class="button-four-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption X</a>
-                                                      <a href="javascript:void(0)" class="button-four-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption X</a>
-                                                      <a href="javascript:void(0)" class="button-four-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption X</a>
-                                                      <a href="javascript:void(0)" class="button-four-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption X</a>
-
-                                                      <a href="javascript:void(0)" class="button-four-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption X</a>
-                                                      <a href="javascript:void(0)" class="button-four-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption X</a>
-                                                      <a href="javascript:void(0)" class="button-four-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption X</a>
-                                                      <a href="javascript:void(0)" class="button-four-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption X</a>
-                                          </div>
+                                          
                               </div>
                               <div class="form-clearfix">
                                                 <span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
