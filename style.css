@@ -1675,11 +1675,30 @@ a:hover {
 }
 
 .form-caption-list-clearfix {
-  width: 100%;
-  height: 46px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    width: 100%;
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    max-height: 168px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.button-three-col {
+    padding: 11px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.82px;
+    text-transform: uppercase;
+    background: white;
+    width: 32%;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 select {

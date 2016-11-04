@@ -74,10 +74,26 @@
                       <div class="caption-show-hide">
                               <div class="form-clearfix">
                                       <div class="form-caption-list-clearfix">
-                                          <a href="javascript:void(0)" class="button-four-col grey-button"><i class="fa fa-check" aria-hidden="true"></i> Caption Title</a>
-                                          <a href="javascript:void(0)" class="button-four-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
-                                          <a href="javascript:void(0)" class="button-four-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
-                                          <a href="javascript:void(0)" class="button-four-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+                                          <a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+                                          <a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+                                          <a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+                                          <a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+                                          <a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+                                          <a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+                                          <a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+                                          <a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+                                          <a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+                                          <a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+                                          <a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+                                          <a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+                                          <a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+                                          <a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+                                          <a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+                                          <a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+                                          <a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+                                          <a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+                                          <a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+                                          <a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
                                       </div>
                               </div>
                               <div class="form-clearfix">
