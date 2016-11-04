@@ -90,6 +90,16 @@ body {
 
 /* ------------------- Caption Crunch--------------------*/
 
+.grey-button {
+  border: 1px solid #666;
+  color: #666;
+}
+
+.grey-button:hover {
+  background-color: #666;
+  color: white;
+}
+
 .back {
   max-width: 100vw;
   max-height: 100vh;
