@@ -1630,11 +1630,6 @@ a:hover {
   	text-decoration: none;
 }
 
-.caption-block {
-  background-color: yellow;
-  display: block;
-}
-
 /* ---------------- Form ----------------- */
 
 .form {
@@ -1741,10 +1736,6 @@ select:focus {
   	background: #666;
 }
 
-form {
-    margin-bottom: 0px;
-}
-
 .unshare-button {
   background: white none repeat scroll 0 0;
   border: 1px solid #65d35b;
@@ -1761,164 +1752,17 @@ form {
   width: calc(100% - 40px);
 }
 
-/* ------------------------ Dashboard ------------------------------------*/
-
-.dashboard-menu-icon-container {
-  width: 60px;
-  height: 60px;
-  float: right;
-  position: relative;
-}
-
-.dashboard-menu-icon-circle {
-    float: left;
-    background: #666;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin: 10px;
-    text-align: center;
+.caption-select-container {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: calc(100% - 30px);
+    height: 160px;
 }
 
-.dashboard-menu-icon {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 14px;
-    line-height: 40px;
-    color: #FFFFFF;
-    letter-spacing: 0.87px;
-    display: block;
-}
-
-.feed-product-main-conatiner {
-    /*width: calc(100% - 60px);*/
-    max-width: 800px;
-    margin: auto;
-    background-color: white;
-    box-shadow: 1px -2px 17px 0px rgba(0,0,0,0.14);
-    padding: 15px 30px;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-.feed-product-main-clearfix {
-    width: 100%;
-    height: 46px;
-    position: relative;
-}
-
-.feed-product-image {
-    width: 46px;
-    height: 46px;
-    border-radius: 5px;
-    display: inline-block;
-    float: left;
-    position: relative;
-}
-
-.feed-product-image-zoom {
-  position: absolute;
-  left: -22px;
-  top: -20px;
-  width: 86px;
-  height: 86px;
-  border-radius: 5px;
-  display: none;
-}
-
-.feed-product-image:hover .feed-product-image-zoom {
-  display: block;
-}
-
-.feed-product-titledate-container {
-  float: left;
-  display: inline-block;
-  width: auto;
-  height: 46px;
-  padding-left: 10px;
-}
-
-.feed-product-title-container {
-  height: 23px;
-  width: auto;
-}
-
-.feed-product-title {
-  line-height: 23px;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 16px;
-  color: #666;
-  letter-spacing: 0.82px;
-  text-transform: uppercase;
-}
-
-.feed-product-date-container {
-  height: 23px;
-  width: auto;
-}
-
-.feed-product-date {
-  line-height: 23px;
-  font-family:  'Ubuntu', sans-serif;
-  font-size: 14px;
-  color: #666;
-}
-
-.feed-upnext-container {
-    /*width: calc(100% - 60px);*/
-    padding: 15px 30px;
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
-}
-
-.feed-upnext-clearfix {
-    width: 100%;
-    height: 30px;
-}
-
-.feed-product-sharenow-container {
-  position: absolute;
-  right: 0px;
-  width: auto;
-}
-
-.feed-product-sharenow-button {
-    border: 1px solid #65D35B;
-    padding: 12px 20px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 16px;
-    color: #65D35B;
-    letter-spacing: 0.82px;
-    text-transform: uppercase;
-    background: white;
-    cursor: pointer;
-}
-
-.feed-product-sharenow-button:hover {
-    color: white;
-    background: #65D35B;
-}
-
-.feed-product-preview-button {
-    border: 1px solid #666;
-    padding: 12px 20px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 16px;
-    color: #666;
-    letter-spacing: 0.82px;
-    text-transform: uppercase;
-    background: white;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-.feed-product-preview-button:hover {
-    color: white;
-    background: #666;
-}
+/* ------------------------ Dashboard ------------------------------------*/
 
 /* Pgination 12-10-2017 START*/
 
