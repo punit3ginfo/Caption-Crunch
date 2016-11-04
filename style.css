@@ -147,7 +147,8 @@ body {
 	font-size: 18px;
 	letter-spacing: 0.31px;
 	line-height: 63px;
-  	margin-left: -4px;
+  margin-left: -4px;
+  font-weight: bold;
 }
 
 .main-nav-container {
