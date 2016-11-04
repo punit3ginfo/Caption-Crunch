@@ -1674,6 +1674,14 @@ a:hover {
     justify-content: center;
 }
 
+.form-caption-list-clearfix {
+  width: 100%;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 select {
     padding: 10px 8px;
     width: 100%;
