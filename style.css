@@ -1704,6 +1704,18 @@ a:hover {
     margin-top: 10px;
 }
 
+.button-three-col:nth-child(1) {
+    margin-top: 0px;
+}
+
+.button-three-col:nth-child(2) {
+    margin-top: 0px;
+}
+
+.button-three-col:nth-child(3) {
+    margin-top: 0px;
+}
+
 select {
     padding: 10px 8px;
     width: 100%;
