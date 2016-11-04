@@ -60,7 +60,7 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
 
     <!-- Sidebar Nav -->
 		<aside class="sidebar_nav">
-          	<a  class="sidebar-link" href="https://buffer.com">
+          	<a  class="sidebar-link" href="https://buffer.com" target="_blank">
             	<div class="sidebar-nav-container">
                   	<span >
                     <i style="font-size: 20px;" class="fa fa-tachometer" aria-hidden="true"></i><br>
