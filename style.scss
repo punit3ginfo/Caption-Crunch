@@ -1935,6 +1935,7 @@ cursor:pointer;
   cursor: pointer;
   color: $secondary-color;
   font-weight: bold;
+  border-radius: 23px;
 }
 
 .connected-button:hover {
@@ -1958,6 +1959,7 @@ cursor:pointer;
   width: calc(100% - 40px);
   cursor: pointer;
   font-weight: bold;
+  border-radius: 23px;
 }
 
 .connect-button:hover {
