@@ -83,11 +83,11 @@ body {
   color: white; }
 
 .green-button {
-  border: 1px solid #7ab55c;
-  color: #7ab55c; }
+  border: 1px solid #F77C47;
+  color: #F77C47; }
 
 .green-button:hover {
-  background-color: #7ab55c;
+  background-color: #F77C47;
   color: white; }
 
 .back {
@@ -118,7 +118,7 @@ body {
   margin-bottom: -2px; }
 
 .header-help {
-  color: #7ab55c; }
+  color: #F77C47; }
 
 .header-central {
   color: #666;
@@ -411,7 +411,7 @@ body {
   background-color: #666; }
 
 .help-link {
-  color: #7ab55c; }
+  color: #F77C47; }
 
 /* ---------------- Preview Dropdown ----------------- */
 .collections-animation-container {
@@ -501,11 +501,11 @@ body {
   background: #666; }
 
 .next-step-button {
-  border: 1px solid #7ab55c;
+  border: 1px solid #F77C47;
   padding: 12px;
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
-  color: #7ab55c;
+  color: #F77C47;
   letter-spacing: 0.82px;
   text-transform: uppercase;
   background: white;
@@ -514,14 +514,14 @@ body {
 
 .next-step-button:hover {
   color: white;
-  background: #7ab55c; }
+  background: #F77C47; }
 
 .step1-next-step-button {
-  border: 1px solid #7ab55c;
+  border: 1px solid #F77C47;
   padding: 11px 20px;
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
-  color: #7ab55c;
+  color: #F77C47;
   letter-spacing: 0.82px;
   text-transform: uppercase;
   background: white;
@@ -530,7 +530,7 @@ body {
 
 .step1-next-step-button:hover {
   color: white;
-  background: #7ab55c; }
+  background: #F77C47; }
 
 .preview-step-cleafix {
   padding: 15px 30px;
@@ -568,7 +568,7 @@ body {
   margin: auto; }
 
 .account-bubble:hover {
-  border: 2px solid #7ab55c; }
+  border: 2px solid #F77C47; }
 
 .account-icon {
   line-height: 27px !important;
@@ -586,12 +586,12 @@ body {
   text-align: center; }
 
 .account-bubble:hover .account-icon {
-  color: #7ab55c;
-  border: 2px solid #7ab55c; }
+  color: #F77C47;
+  border: 2px solid #F77C47; }
 
 .caption-textarea-container {
   width: 100%;
-  border-bottom: 2px solid #7ab55c;
+  border-bottom: 2px solid #F77C47;
   height: auto;
   margin-top: 15px;
   margin-bottom: 30px; }
@@ -617,7 +617,7 @@ body {
 .addimage-container {
   width: 180px;
   height: 180px;
-  border: 2px solid #7ab55c;
+  border: 2px solid #F77C47;
   position: relative;
   cursor: pointer;
   background-size: contain;
@@ -625,10 +625,10 @@ body {
   background-repeat: no-repeat; }
 
 .addimage-container:hover {
-  border: 2px solid #7ab55c; }
+  border: 2px solid #F77C47; }
 
 .addimage-active {
-  border: 2px solid #7ab55c; }
+  border: 2px solid #F77C47; }
 
 .addimage-plus-icon {
   line-height: 16px !important;
@@ -639,7 +639,7 @@ body {
   transform: translate(-50%, -50%); }
 
 .addimage-container:hover .addimage-plus-icon {
-  color: #7ab55c; }
+  color: #F77C47; }
 
 .button-four-col {
   padding: 11px 0px;
@@ -653,12 +653,12 @@ body {
   font-weight: bold; }
 
 .preview-share-button {
-  border: 1px solid #7ab55c;
-  color: #7ab55c; }
+  border: 1px solid #F77C47;
+  color: #F77C47; }
 
 .preview-share-button:hover {
   color: white;
-  background: #7ab55c; }
+  background: #F77C47; }
 
 .preview-sharenext-button {
   border: 1px solid #666;
@@ -894,13 +894,13 @@ body {
   padding-bottom: 0px; }
 
 .menu-container-active {
-  background-color: #7ab55c;
+  background-color: #F77C47;
   background-image: url("./images/menu-background.png");
   background-size: 100%;
   background-repeat: no-repeat; }
 
 .menu-container:hover {
-  background-color: #7ab55c;
+  background-color: #F77C47;
   background-image: url("./images/menu-background.png");
   background-size: 100%;
   background-repeat: no-repeat; }
@@ -1005,12 +1005,12 @@ body {
   color: #666; }
 
 .paginate-link-active {
-  color: #7ab55c !important;
+  color: #F77C47 !important;
   font-weight: 700; }
 
 .paginate-link:hover {
   text-decoration: none;
-  color: #7ab55c;
+  color: #F77C47;
   font-weight: 700; }
 
 /*   Product Cards    */
@@ -1090,7 +1090,7 @@ body {
   overflow: hidden; }
 
 .product-icon-container {
-  background: #7ab55c;
+  background: #F77C47;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -1183,7 +1183,7 @@ body {
   left: 0; }
 
 .share-button {
-  border: 1px solid #7ab55c;
+  border: 1px solid #F77C47;
   padding: 11px 20px;
   position: absolute;
   bottom: 20px;
@@ -1191,7 +1191,7 @@ body {
   right: 20px;
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
-  color: #7ab55c;
+  color: #F77C47;
   letter-spacing: 0.82px;
   text-transform: uppercase;
   background: white;
@@ -1200,8 +1200,8 @@ body {
   font-weight: bold; }
 
 .share-button:hover {
-  border: 1px solid #7ab55c;
-  background: #7ab55c;
+  border: 1px solid #F77C47;
+  background: #F77C47;
   color: white;
   text-decoration: none;
   cursor: pointer; }
@@ -1252,7 +1252,7 @@ body {
   width: 100px;
   display: block;
   background: #79A70A;
-  background: linear-gradient(#7ab55c 0%, #7ab55c 100%);
+  background: linear-gradient(#F77C47 0%, #F77C47 100%);
   box-shadow: 0 3px 10px -5px black;
   position: absolute;
   top: 19px;
@@ -1264,10 +1264,10 @@ body {
   left: 0px;
   top: 100%;
   z-index: -1;
-  border-left: 3px solid #7ab55c;
+  border-left: 3px solid #F77C47;
   border-right: 3px solid transparent;
   border-bottom: 3px solid transparent;
-  border-top: 3px solid #7ab55c; }
+  border-top: 3px solid #F77C47; }
 
 .ribbon span::after {
   content: "";
@@ -1276,9 +1276,9 @@ body {
   top: 100%;
   z-index: -1;
   border-left: 3px solid transparent;
-  border-right: 3px solid #7ab55c;
+  border-right: 3px solid #F77C47;
   border-bottom: 3px solid transparent;
-  border-top: 3px solid #7ab55c; }
+  border-top: 3px solid #F77C47; }
 
 /* Ribbon End */
 /* ------------ Collections Header --------------- */
@@ -1321,7 +1321,7 @@ body {
   width: 100%;
   height: 40px;
   border: 0px;
-  border-bottom: 2px solid #7ab55c;
+  border-bottom: 2px solid #F77C47;
   padding-left: 10px; }
 
 .search-text-box::-webkit-input-placeholder {
@@ -1344,7 +1344,7 @@ textarea:focus, input:focus {
   outline: none; }
 
 .active {
-  background-color: #7ab55c !important;
+  background-color: #F77C47 !important;
   background-image: url("{{ 'button.png' |  asset_url }}");
   background-size: 100%;
   background-repeat: no-repeat; }
@@ -1366,7 +1366,7 @@ a:hover {
   color: #666; }
 
 .share-history-button:hover {
-  color: #7ab55c; }
+  color: #F77C47; }
 
 /* --------------- BUILDER PAGE ---------------------- */
 .caption-header-container {
@@ -1388,7 +1388,7 @@ a:hover {
   width: auto;
   height: 40px;
   border: 0px;
-  border-bottom: 1px solid #7ab55c;
+  border-bottom: 1px solid #F77C47;
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
   color: #666;
@@ -1404,19 +1404,19 @@ a:hover {
   text-transform: uppercase; }
 
 .save-button {
-  border: 1px solid #7ab55c;
+  border: 1px solid #F77C47;
   padding: 11px 20px;
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
-  color: #7ab55c;
+  color: #F77C47;
   letter-spacing: 0.82px;
   text-transform: uppercase;
   background: white;
   font-weight: bold; }
 
 .save-button:hover {
-  border: 1px solid #7ab55c;
-  background: #7ab55c;
+  border: 1px solid #F77C47;
+  background: #F77C47;
   color: white;
   text-decoration: none; }
 
@@ -1519,7 +1519,7 @@ select:focus {
   border-radius: 0px; }
 
 .form-select:hover {
-  border: 1px solid #7ab55c; }
+  border: 1px solid #F77C47; }
 
 .form-input {
   width: calc(100% - 20px);
@@ -1528,7 +1528,7 @@ select:focus {
   padding-left: 10px; }
 
 .form-input:hover {
-  border: 1px solid #7ab55c; }
+  border: 1px solid #F77C47; }
 
 .add-condition-button {
   border: 1px solid #666;
@@ -1551,9 +1551,9 @@ select:focus {
 
 .unshare-button {
   background: white none repeat scroll 0 0;
-  border: 1px solid #7ab55c;
+  border: 1px solid #F77C47;
   bottom: 20px;
-  color: #7ab55c;
+  color: #F77C47;
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
   left: 20px;
@@ -1669,7 +1669,7 @@ ul#pagination-list li {
   background: #666; }
 
 .connect-button {
-  border: 1px solid #7ab55c;
+  border: 1px solid #F77C47;
   padding: 11px 20px;
   position: absolute;
   bottom: 20px;
@@ -1677,7 +1677,7 @@ ul#pagination-list li {
   right: 20px;
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
-  color: #7ab55c;
+  color: #F77C47;
   letter-spacing: 0.82px;
   text-transform: uppercase;
   background: white;
@@ -1687,6 +1687,6 @@ ul#pagination-list li {
 
 .connect-button:hover {
   color: white;
-  background: #7ab55c; }
+  background: #F77C47; }
 
 /*# sourceMappingURL=style.css.map */
