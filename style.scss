@@ -1,4 +1,5 @@
 $brand-color:  #7ab55c;
+$secondary-color: #30373b;
 
 // #65D35B
 
@@ -41,7 +42,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #666;
+  color: $secondary-color;
   font-weight: 100;
 }
 
@@ -53,7 +54,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
-    color: #666;
+    color: $secondary-color;
     font-weight: 100;
 }
 
@@ -61,7 +62,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
   line-height: 18px;
-  color: #666;
+  color: $secondary-color;
   font-weight: 500;
   letter-spacing: 0.82px;
 }
@@ -69,7 +70,7 @@ body {
 .cc-text-large {
     font-size: 18px;
     line-height: 20px;
-    color: #666;
+    color: $secondary-color;
     font-weight: 700;
     letter-spacing: 0.82px;
     font-family: 'Ubuntu', sans-serif;
@@ -96,12 +97,12 @@ body {
 /* ------------------- Caption Crunch--------------------*/
 
 .grey-button {
-  border: 1px solid #666;
-  color: #666;
+  border: 1px solid $secondary-color;
+  color: $secondary-color;
 }
 
 .grey-button:hover {
-  background-color: #666;
+  background-color: $secondary-color;
   color: white;
 }
 
@@ -153,7 +154,7 @@ body {
 }
 
 .header-central {
-	color: #666;
+	color: $secondary-color;
   margin-left: -4px;
 }
 
@@ -181,11 +182,11 @@ body {
 }
 
 .close-button {
-    border: 1px solid #666;
+    border: 1px solid $secondary-color;
     padding: 12px 20px;
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
-    color: #666;
+    color: $secondary-color;
     letter-spacing: 0.82px;
     text-transform: uppercase;
     background: white;
@@ -193,9 +194,9 @@ body {
 }
 
 .close-button:hover {
-    border: 1px solid #666;
+    border: 1px solid $secondary-color;
     color: white;
-    background: #666;
+    background: $secondary-color;
 }
 
 .nav-container {
@@ -389,11 +390,11 @@ body {
 }
 
 .sidebar-nav-container-header-active {
-	background-color: #666;
+	background-color: $secondary-color;
 }
 
 .sidebar-link {
-	color:#666;
+	color:$secondary-color;
   text-decoration: none;
   display: block;
   background-color: white;
@@ -403,12 +404,12 @@ body {
 .sidebar-link:hover {
 	color:#FFFFFF;
   text-decoration: none;
-  background-color: #666;
+  background-color: $secondary-color;
 }
 
 .sidebar-link-active {
     	color: white;
-      background-color: #666;
+      background-color: $secondary-color;
 }
 
 .sidebar-hammer-img {
@@ -474,7 +475,7 @@ body {
 }
 
 .help-header-link {
-	color:#666;
+	color:$secondary-color;
 }
 
 .help-header-link:hover {
@@ -482,7 +483,7 @@ body {
 }
 
 .help-header-link:hover .sidebar-nav-container-header {
-    background-color: #666;
+    background-color: $secondary-color;
 }
 
 .help-link {
@@ -572,11 +573,11 @@ body {
 }
 
 .prev-step-button {
-	  border: 1px solid #666;
+	  border: 1px solid $secondary-color;
   	padding: 12px;
   	font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
-    color: #666;
+    color: $secondary-color;
     letter-spacing: 0.82px;
     text-transform: uppercase;
   	background: white;
@@ -586,7 +587,7 @@ body {
 
 .prev-step-button:hover {
     color: white;
-  	background: #666;
+  	background: $secondary-color;
 }
 
 
@@ -642,7 +643,7 @@ body {
     line-height: 30px;
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
-    color: #666;
+    color: $secondary-color;
     letter-spacing: 0.82px;
     text-transform: uppercase;
     width: 100%;
@@ -661,7 +662,7 @@ body {
   height: 70px;
   border-radius: 50%;
   background-color: white;
-  border: 2px solid #666;
+  border: 2px solid $secondary-color;
   position: relative;
   margin: auto;
 }
@@ -677,11 +678,11 @@ body {
   left: 80%;
   top: 80%;
   transform: translate(-50%, -50%);
-  color: #666;
+  color: $secondary-color;
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  border: 2px solid #666;
+  border: 2px solid $secondary-color;
   background: white;
   text-align: center;
 }
@@ -774,33 +775,33 @@ body {
 }
 
 .preview-sharenext-button {
-    border: 1px solid #666;
-    color: #666;
+    border: 1px solid $secondary-color;
+    color: $secondary-color;
 }
 
 .preview-sharenext-button:hover {
     color: white;
-  	background: #666;
+  	background: $secondary-color;
 }
 
 .preview-sharelater-button {
-	  border: 1px solid #666;
-    color: #666;
+	  border: 1px solid $secondary-color;
+    color: $secondary-color;
 }
 
 .preview-sharelater-button:hover {
     color: white;
-  	background: #666;
+  	background: $secondary-color;
 }
 
 .preview-schedule-button {
-	  border: 1px solid #666;
-    color: #666;
+	  border: 1px solid $secondary-color;
+    color: $secondary-color;
 }
 
 .preview-schedule-button:hover {
     color: white;
-  	background: #666;
+  	background: $secondary-color;
 }
 
 .preview-right-clearfix {
@@ -1100,7 +1101,7 @@ body {
 .menu-font {
   font-family: 'Ubuntu', sans-serif;
 	font-size: 16px;
-	color: #666;
+	color: $secondary-color;
 	letter-spacing: 0.82px;
 	line-height: 40px;
 	display: block;
@@ -1126,7 +1127,7 @@ body {
 
 .menu-icon-container {
 	float: right;
-	background: #666;
+	background: $secondary-color;
 	border-radius: 50%;
 	width: 40px;
 	height: 40px;
@@ -1174,7 +1175,7 @@ body {
 }
 
 .paginate-link {
-	 color:#666;
+	 color:$secondary-color;
 
 }
 
@@ -1329,7 +1330,7 @@ body {
 }
 
 .product-card-price-text {
-    color: #666;
+    color: $secondary-color;
     text-transform: uppercase;
     font-family:  'Ubuntu', sans-serif;
     font-size: 14px;
@@ -1347,7 +1348,7 @@ body {
 }
 
 .preview-button {
-  	border: 1px solid #666;
+  	border: 1px solid $secondary-color;
   	padding: 11px 20px;
   	position: absolute;
   	bottom: 0px;
@@ -1355,7 +1356,7 @@ body {
   	right: 0px;
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
-    color: #666;
+    color: $secondary-color;
     letter-spacing: 0.82px;
     text-transform: uppercase;
   	background: white;
@@ -1364,8 +1365,8 @@ body {
 }
 
 .preview-button:hover {
-  	border: 1px solid #666;
-	  background: #666;
+  	border: 1px solid $secondary-color;
+	  background: $secondary-color;
     color: white;
   	text-decoration: none;
     cursor: pointer;
@@ -1419,14 +1420,14 @@ body {
   width: calc(100% - 40px);
   cursor: pointer;
   background: white;
-  color: #666;
-  border: 1px solid #666;
+  color: $secondary-color;
+  border: 1px solid $secondary-color;
 }
 
 .reset-button:hover {
     text-decoration: none;
     cursor: pointer;
-    background: #666;
+    background: $secondary-color;
     color: white;
 }
 
@@ -1533,7 +1534,7 @@ body {
 }
 
 .search-text-box::-webkit-input-placeholder {
-	color: #666;
+	color: $secondary-color;
 }
 
 .search-button {
@@ -1542,12 +1543,12 @@ body {
     position: absolute;
     right: 10px;
     top: 33px;
-    color: #666;
+    color: $secondary-color;
 }
 
 input[type="submit"] {
     font-family: FontAwesome;
-  	color: #666;
+  	color: $secondary-color;
   	font-size: 14px;
 }
 
@@ -1576,12 +1577,12 @@ textarea:focus, input:focus{
 }
 
 a:hover {
-    color: #666;
+    color: $secondary-color;
     text-decoration: none;
 }
 
 .share-history-button {
-	color: #666;
+	color: $secondary-color;
 }
 
 .share-history-button:hover {
@@ -1601,7 +1602,7 @@ a:hover {
 	line-height: 80px;
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 16px;
-	color: #666;
+	color: $secondary-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
   	margin-right: 20px;
@@ -1614,16 +1615,16 @@ a:hover {
   	border-bottom: 1px solid $brand-color;
   	font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
-    color: #666;
+    color: $secondary-color;
     letter-spacing: 0.82px;
     text-transform: uppercase;
 }
 
 .caption-title-text-box::-webkit-input-placeholder {
-	color: #666;
+	color: $secondary-color;
   	font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
-    color: #666;
+    color: $secondary-color;
     letter-spacing: 0.82px;
     text-transform: uppercase;
 }
@@ -1742,7 +1743,7 @@ select {
     background-image: none;
     -webkit-appearance: none;
   	margin-left: 11px;
-    color: #666;
+    color: $secondary-color;
 
 }
 
@@ -1753,7 +1754,7 @@ select:focus {
 .form-select {
 	  width: calc(100% - 30px);
   	height: 46px;
-    border: 1px solid #666;
+    border: 1px solid $secondary-color;
     overflow: hidden;
     background: white url("https://cdn.shopify.com/s/files/1/1484/1256/files/arrow-down.png?9258385709659661406") no-repeat 95% 50%;
   	background-size: 16px 16px;
@@ -1767,7 +1768,7 @@ select:focus {
 .form-input {
 	  width: calc(100% - 20px);
   	height: 46px;
-  	border: 1px solid #666;
+  	border: 1px solid $secondary-color;
     padding-left: 10px;
 }
 
@@ -1776,11 +1777,11 @@ select:focus {
 }
 
 .add-condition-button {
-	  border: 1px solid #666;
+	  border: 1px solid $secondary-color;
   	padding: 11px 20px;
   	font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
-    color: #666;
+    color: $secondary-color;
     letter-spacing: 0.82px;
     text-transform: uppercase;
   	background: white;
@@ -1793,7 +1794,7 @@ select:focus {
 
 .add-condition-button:hover {
     color: white;
-  	background: #666;
+  	background: $secondary-color;
 }
 
 .unshare-button {
@@ -1865,16 +1866,16 @@ ul#pagination-list li {
 
 .page-link{
 	cursor:pointer;
-  color: #666;
+  color: $secondary-color;
 }
 
 #loadMore{
 	cursor:pointer;
-  color: #666;
+  color: $secondary-color;
 }
 #showLess{
   cursor:pointer;
-  color: #666;
+  color: $secondary-color;
 }
 
 .fa-search{
@@ -1917,7 +1918,7 @@ cursor:pointer;
 }
 
 .connected-button {
-  border: 1px solid #666;
+  border: 1px solid $secondary-color;
   padding: 11px 20px;
   position: absolute;
   bottom: 20px;
@@ -1930,13 +1931,13 @@ cursor:pointer;
   background: white;
   width: calc(100% - 40px);
   cursor: pointer;
-  color: #666;
+  color: $secondary-color;
   font-weight: bold;
 }
 
 .connected-button:hover {
   color: white;
-  background: #666;
+  background: $secondary-color;
 }
 
 .connect-button {
