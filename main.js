@@ -14,5 +14,9 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $(".header-cc-hammer-img").css("fill","#7ab55c");
+    document.getElementById("svg1").addEventListener("load", function() {
+        var doc = this.getSVGDocument();
+        var rect = doc.querySelector("rect"); // suppose our image contains a <rect>
+        rect.setAttribute("fill", "green");
+    });
 });
