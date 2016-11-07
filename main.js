@@ -12,3 +12,7 @@ $(document).ready(function(){
       };
   });
 });
+
+$(document).ready(function(){
+  $('#help-button').css("fill","#7ab55c");
+});
