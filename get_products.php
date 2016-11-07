@@ -83,7 +83,7 @@ try
             <!-- Product Details Layer -->
               <div class="product-card-image-container-content-hover product-details-<?php echo $p_id1; ?>">
                   <div class="product-details-container">
-                      <a href="mens.fashiondeals.today/collections/accessories/products/7x-flat-brow-sunglasses-in-black" class="product-icon-container" target="_blank">
+                      <a href="http://mens.fashiondeals.today/collections/accessories/products/7x-flat-brow-sunglasses-in-black" class="product-icon-container" target="_blank">
                          <span class="product-icon-clearfix">
                                 <i class="fa fa-link" aria-hidden="true"></i>
                          </span>
