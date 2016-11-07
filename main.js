@@ -12,7 +12,3 @@ $(document).ready(function(){
       };
   });
 });
-
-$(document).ready(function(){
-  $('path').css("fill","#7ab55c");
-});
