@@ -48,6 +48,7 @@ try
 		        $p_id1=$singleproduct['id'];
 		        $tags=$singleproduct['tags'];
 			   $OrigonalTag=$singleproduct['tags'];
+         $ComparePrice=$singleproduct['compare_at_price'];
 
 
 		        $tags = str_replace('shared', '', $tags);
@@ -58,6 +59,7 @@ try
 			//$tags = str_replace(',', 'AA', $tags);
 			foreach($variants as $variants){
 				$price=$variants['price']; // Product PRice
+        $ComparePrice=$variants['compare_at_price'];
 			}
 		        $images=$singleproduct['images'];
 
@@ -93,7 +95,7 @@ try
 
                       <div class="product-title-container">
                         <span class="product-card-price-text" style="margin-right: 3px;">$<?php echo $price; ?></span>
-                        <span class="product-card-price-text" style="font-size: 12px; color: #888;">$<?php echo $price; ?></span>
+                        <span class="product-card-price-text" style="font-size: 12px; color: #888;">$<?php echo $ComparePrice; ?></span>
                       </div>
                   </div>
               </div>
