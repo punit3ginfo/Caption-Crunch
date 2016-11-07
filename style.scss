@@ -416,16 +416,16 @@ body {
   height: 20px;
   width: 20px;
   margin: auto;
-  background-image: url("./images/sidebar-Hammer.png");
+  background-image: url("./images/hammer-grey.svg");
   background-size: 100%;
 }
 
 .sidebar-link:hover .sidebar-hammer-img {
-  background-image: url("./images/sidebar-hover-Hammer.png");
+  background-image: url("./images/hammer-white.svg");
 }
 
 .sidebar-link-active .sidebar-hammer-img {
-  background-image: url("./images/sidebar-hover-Hammer.png");
+  background-image: url("./images/hammer-white.svg");
 }
 
 
