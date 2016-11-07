@@ -44,10 +44,12 @@ try
 
                 $count=0;
 
-    foreach($shop as $shopdetails)
-    {
-        $domain=$shopdetails['domain'];
-    }
+    // foreach($shop as $shopdetails)
+    // {
+    //     $domain=$shopdetails['domain'];
+    // }
+
+    $productUrl = "http://mens.fashiondeals.today/products/<?php echo $handle; ?>";
 
 		foreach($products as $singleproduct)
 		{
@@ -78,6 +80,7 @@ try
 
 			?>
 
+
 <!-- HTML Content for Product  START      -->
 
 <div class="product-card-clearfix">
@@ -92,7 +95,7 @@ try
             <!-- Product Details Layer -->
               <div class="product-card-image-container-content-hover product-details-<?php echo $p_id1; ?>">
                   <div class="product-details-container">
-                      <a href="http://<?php echo $domain; ?>/products/<?php echo $handle; ?>" class="product-icon-container" target="_blank">
+                      <a href="<?php echo $productUrl; ?>" class="product-icon-container" target="_blank">
                          <span class="product-icon-clearfix">
                                 <i class="fa fa-link" aria-hidden="true"></i>
                          </span>
