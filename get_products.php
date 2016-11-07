@@ -21,7 +21,7 @@ try
 		if($_REQUEST['colid']=='' && $_REQUEST['status']=='' && !isset($_REQUEST['page_id']) ) {
 
 	     // $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
-		$products = $shopify('GET /admin/products.json', array('limit'='21','page'=>'1'));
+		$products = $shopify('GET /admin/products.json', array('limit'=>'21','page'=>'1'));
 			//GET /admin/products.json&limit=50=&page=1
 
 		}
@@ -40,7 +40,15 @@ try
 
 		}
 
+    $shop = $shopify('GET /admin/shop.json', array('limit'=>$_REQUEST['limit'],'page'=>$_REQUEST['page_id']));
+
                 $count=0;
+
+    foreach($shop as $shopdetails)
+    {
+        $domain=$shopdetails['domain'];
+    }
+
 		foreach($products as $singleproduct)
 		{
 			$title=$singleproduct['title']; // Product Title
@@ -84,7 +92,7 @@ try
             <!-- Product Details Layer -->
               <div class="product-card-image-container-content-hover product-details-<?php echo $p_id1; ?>">
                   <div class="product-details-container">
-                      <a href="http://mens.fashiondeals.today/products/<?php echo $handle; ?>" class="product-icon-container" target="_blank">
+                      <a href="http://<?php echo $domain; ?>/products/<?php echo $handle; ?>" class="product-icon-container" target="_blank">
                          <span class="product-icon-clearfix">
                                 <i class="fa fa-link" aria-hidden="true"></i>
                          </span>
