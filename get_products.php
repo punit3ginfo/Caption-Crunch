@@ -49,8 +49,6 @@ try
     //     $domain=$shopdetails['domain'];
     // }
 
-    $productUrl = "http://mens.fashiondeals.today/products/$handle";
-
 		foreach($products as $singleproduct)
 		{
 			$title=$singleproduct['title']; // Product Title
@@ -77,6 +75,8 @@ try
 			foreach($images as $images){
 				$src=$images['src']; //Image Source
 			}
+
+      $productUrl = "http://mens.fashiondeals.today/products/$handle";
 
 			?>
 
