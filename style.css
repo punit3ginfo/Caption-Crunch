@@ -117,6 +117,9 @@ body {
   display: inline-block;
   margin-right: 2px; }
 
+path {
+  fill: #7ab55c; }
+
 .header-help {
   color: #7ab55c; }
 
