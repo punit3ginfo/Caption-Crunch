@@ -121,8 +121,9 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
             <!-- Brand and toggle get grouped for better mobile display -->
 
                 <a class="navbar-brand" href="/">
-                  	<img class="header-cc-hammer-img" src="./images/Caption-Crunch-Hammer.jpg"/>
-                	<span class="header-help">Caption</span>
+                  	<!-- <img class="header-cc-hammer-img" src="./images/Caption-Crunch-Hammer.jpg"/> -->
+                    <object type="image/svg+xml" class="header-cc-hammer-img" fill="green" data="./images/hammer.svg"></object>
+                	  <span class="header-help">Caption</span>
                     <span class="header-central">Crunch</span>
                 </a>
 
