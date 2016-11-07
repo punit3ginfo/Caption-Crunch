@@ -49,7 +49,7 @@ try
     //     $domain=$shopdetails['domain'];
     // }
 
-    $productUrl = "http://mens.fashiondeals.today/products/<?php echo $handle; ?>";
+    $productUrl = "http://mens.fashiondeals.today/products/$handle";
 
 		foreach($products as $singleproduct)
 		{
