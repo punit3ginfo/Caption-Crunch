@@ -14,5 +14,5 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $('svg').css("fill","#7ab55c");
+  $('path').css("fill","#7ab55c");
 });
