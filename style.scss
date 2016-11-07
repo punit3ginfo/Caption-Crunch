@@ -144,9 +144,13 @@ body {
 }
 
 .header-cc-hammer-img {
-  height: 18px;
+  height: 14px;
   display: inline-block;
-  margin-bottom: -2px;
+  margin-right: 2px;
+}
+
+.header-cc-hammer-img svg {
+  fill: $brand-color;
 }
 
 .header-help {

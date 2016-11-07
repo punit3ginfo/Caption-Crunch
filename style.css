@@ -113,9 +113,12 @@ body {
   padding-left: 20px; }
 
 .header-cc-hammer-img {
-  height: 18px;
+  height: 14px;
   display: inline-block;
-  margin-bottom: -2px; }
+  margin-right: 2px; }
+
+.header-cc-hammer-img svg {
+  fill: #7ab55c; }
 
 .header-help {
   color: #7ab55c; }
