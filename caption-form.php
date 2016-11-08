@@ -10,7 +10,17 @@
           <div class="template-show-hide">
             <div class="form-clearfix">
 
-                                      <div class="form-3col-clearfix">
+				<a href="javascript:void(0)" class="button-three-col green-button"><i class="fa fa-check" aria-hidden="true"></i> Caption Title</a>
+				<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+				<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+				<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+				<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+				<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+				<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+				<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+				<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+
+                                      <!-- <div class="form-3col-clearfix">
                                               <input id="product-title-check" type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Title
                                       </div>
                                       <div class="form-3col-clearfix">
@@ -40,7 +50,7 @@
 
                                       <div class="form-3col-clearfix">
                                               <input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Percent Off
-                                      </div>
+                                      </div> -->
             </div>
             <div class="form-clearfix">
                               <span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
