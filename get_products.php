@@ -144,7 +144,7 @@ try
 
           });
 
-          $('#close-preview-button').click(function() {
+          $('.back-link').click(function() {
                   // $("#preview-container").empty();
                   $("#caption-textarea-large").empty();
                   $("#caption-textarea-small").empty();
