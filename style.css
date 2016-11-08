@@ -118,18 +118,18 @@ body {
   margin-right: 2px; }
 
 .header-help {
-  color: #7ab55c; }
+  color: #7ab55c;
+  margin-left: -4px; }
 
 .header-central {
   color: #555555;
-  margin-left: -4px; }
+  margin-left: -2px; }
 
 .header-help, .header-central {
   font-family: 'Ubuntu', sans-serif;
   font-size: 18px;
   letter-spacing: 0.31px;
   line-height: 63px;
-  margin-left: -4px;
   font-weight: bold; }
 
 .main-nav-container {
