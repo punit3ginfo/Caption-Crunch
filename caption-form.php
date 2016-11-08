@@ -10,48 +10,16 @@
           <div class="template-show-hide">
             <div class="form-clearfix">
 					<div class="form-caption-list-clearfix">
-							<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Product Title</a>
-							<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Product Price</a>
-							<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Compare Price</a>
-							<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Product Type</a>
-							<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Product Url</a>
-							<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Description</a>
-							<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Collection Title</a>
-							<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Precent Off</a>
-							<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Dollars Saved</a>
+							<a id="product-title-btn" href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Product Title</a>
+							<a id="product-price-btn" href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Product Price</a>
+							<a id="product-comp-price-btn" href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Compare Price</a>
+							<a id="product-type-btn" href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Product Type</a>
+							<a id="product-url-btn" href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Product Url</a>
+							<a id="product-description-btn" href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Description</a>
+							<a id="product-collection-btn" href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Collection Title</a>
+							<a id="product-percent-btn" href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Precent Off</a>
+							<a id="product-dollars-btn" href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Dollars Saved</a>
 				    </div>
-
-                                      <!-- <div class="form-3col-clearfix">
-                                              <input id="product-title-check" type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Title
-                                      </div>
-                                      <div class="form-3col-clearfix">
-                                              <input id="product-price-check" type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Price
-                                      </div>
-                                      <div class="form-3col-clearfix">
-                                              <input id="product-comp-price-check" type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Compare At Price
-                                      </div>
-
-                                      <div class="form-3col-clearfix">
-                                              <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Type
-                                      </div>
-                                      <div class="form-3col-clearfix">
-                                              <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Vendor
-                                      </div>
-                                      <div class="form-3col-clearfix">
-                                              <input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Product Url
-                                      </div>
-
-                                      <div class="form-3col-clearfix">
-                                              <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Description
-                                      </div>
-
-                                      <div class="form-3col-clearfix">
-                                              <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Collection Title
-                                      </div>
-
-                                      <div class="form-3col-clearfix">
-                                              <input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Percent Off
-                                      </div> -->
             </div>
             <div class="form-clearfix">
                               <span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
@@ -142,8 +110,8 @@
 
 var $productTitle = "{{ product.title }}";
 
-$('#product-title-check').click(function(){
-    if (this.checked) {
+$('#product-title-btn').click(function(){
+    if (this.hasClass('grey-button')) {
         $('#caption-textarea-large').val($productTitle);
     } else {
         $('#caption-textarea-large').val().empty();
