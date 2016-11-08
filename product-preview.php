@@ -2,7 +2,7 @@
           <div  class="preview-overflow-container">
                     <div class="preview-clearfix">
                               <div class="preview-template-container">
-                                          <iframe id="product-preview" src="//www.google.ca" style="width: 100%; height: 100%;"></iframe>
+                                          <iframe id="product-preview" src="//www.google.ca" style="width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
                                  </div>
                       </div>
            </div>
