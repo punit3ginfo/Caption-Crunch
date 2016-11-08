@@ -130,15 +130,6 @@ try
             // Preview Drop Down
             $(document).ready(function() {
 
-                  $('.sidebar-link').click(function() {
-                         $('#preview-container').removeClass("preview-container-animate");
-                         $('.collections-animation-container').removeClass("collections-animation");
-                         // Back Button
-                         $("#share-link").css("display", "block");
-                         $(".back-link").css("display", "none");
-                         $("#preview-container").empty();
-                  });
-
                   $('#share-button-<?php echo $p_id1; ?>').click(function() {
                             //  Load
                            $("#preview-container").load("/preview.php");
@@ -153,6 +144,29 @@ try
                           //  Animate
                            $('.collections-animation-container').addClass("collections-animation");
                            $('#preview-container').addClass("preview-container-animate");
+                         //  Preview
+                         var CaptionLong = "<?php echo $title; ?> is on sale for $<?php echo $price; ?>! Was $<?php echo $ComparePrice; ?>! Check it out: <?php echo $productUrl; ?>";
+                         var CaptionShort = "<?php echo $title; ?>. Now $<?php echo $price; ?>! Was $<?php echo $ComparePrice; ?>! Link ---> <?php echo $productUrl; ?>";
+
+                         $("#caption-textarea-large").ready(function() {
+                               $("#preview-textarea-large").html(CaptionLong);
+                               $("#preview-textarea-small").html(CaptionShort);
+                         });
+
+                         $(".facebook-mobile-caption-text").ready(function() {
+                               $(".facebook-mobile-caption-text").html(CaptionLong);
+                         });
+
+                         $("#addimage-image-one").ready(function() {
+                               $("#addimage-image-one").css('background-image', 'url(<?php echo $src; ?>)')
+                         });
+
+                         var $facebookImageSource = "<?php echo $src; ?>";
+
+                         $(".facebook-mobile-image").ready(function() {
+                               $(".facebook-mobile-image").attr("src", $facebookImageSource);
+                         });
+
                   });
 
                   $('#product-preview-button-<?php echo $p_id1; ?>').click(function() {
@@ -182,43 +196,23 @@ try
                           $(".help-clearfix").empty();
                           $(".help-clearfix").load("help/share.php");
                           $("#preview-container").empty();
+                      //  Clear
+                      $("#caption-textarea-large").empty();
+                      $("#caption-textarea-small").empty();
+                      $("#addimage-image-one").empty();
+                      $(".facebook-mobile-caption-text").empty();
+                      $(".facebook-mobile-image").attr("src", "");
                   });
 
-                  // Preview
-                  $("#share-button-<?php echo $p_id1; ?>").click(function(){
 
-                      var CaptionLong = "<?php echo $title; ?> is on sale for $<?php echo $price; ?>! Was $<?php echo $ComparePrice; ?>! Check it out: <?php echo $productUrl; ?>";
-                      var CaptionShort = "<?php echo $title; ?>. Now $<?php echo $price; ?>! Was $<?php echo $ComparePrice; ?>! Link ---> <?php echo $productUrl; ?>";
-
-                      $("#caption-textarea-large").ready(function() {
-                            $("#preview-textarea-large").html(CaptionLong);
-                            $("#preview-textarea-small").html(CaptionShort);
-                      });
-
-                      $(".facebook-mobile-caption-text").ready(function() {
-                            $(".facebook-mobile-caption-text").html(CaptionLong);
-                      });
-
-                      $("#addimage-image-one").ready(function() {
-                            $("#addimage-image-one").css('background-image', 'url(<?php echo $src; ?>)')
-                      });
-
-                      var $facebookImageSource = "<?php echo $src; ?>";
-
-                      $(".facebook-mobile-image").ready(function() {
-                            $(".facebook-mobile-image").attr("src", $facebookImageSource);
-                      });
-
-                  });
-
-                  $('.back-link').click(function() {
-                          $("#caption-textarea-large").empty();
-                          $("#caption-textarea-small").empty();
-                          $("#addimage-image-one").empty();
-                          $(".facebook-mobile-caption-text").empty();
-                          $(".facebook-mobile-image").attr("src", "");
-                  });
-
+                  $('.sidebar-link').click(function() {
+                            $('#preview-container').removeClass("preview-container-animate");
+                            $('.collections-animation-container').removeClass("collections-animation");
+                            // Back Button
+                            $("#share-link").css("display", "block");
+                            $(".back-link").css("display", "none");
+                            $("#preview-container").empty();
+                   });
               });
 
           </script>
