@@ -149,7 +149,8 @@ $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHO
     </div>
 
     <div id="preview-container">
-              <?php include 'preview.php';?>
+              <!-- <?php include 'preview.php';?> -->
+              <!-- <?php include 'product-preview.php';?> -->
     </div>
 
     <div class="main_container_clearfix">

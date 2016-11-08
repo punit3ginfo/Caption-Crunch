@@ -95,7 +95,7 @@ try
             <!-- Product Details Layer -->
               <div class="product-card-image-container-content-hover product-details-<?php echo $p_id1; ?>">
                   <div class="product-details-container">
-                      <a href="<?php echo $productUrl; ?>" class="product-icon-container" target="_blank">
+                      <a href="<?php echo $productUrl; ?>" id="product-preview-button-<?php echo $p_id1; ?>" class="product-icon-container" target="_blank">
                          <span class="product-icon-clearfix">
                                 <i class="fa fa-link" aria-hidden="true"></i>
                          </span>
@@ -177,6 +177,9 @@ try
                   $('#share-button-<?php echo $p_id1; ?>').click(function() {
                           $('.collections-animation-container').addClass("collections-animation");
                           $('#preview-container').addClass("preview-container-animate");
+                          //  Load
+                         $("#preview-container").empty();
+                         $("#preview-container").load("preview.php");
                           // Preview | Share Button(s)
                                         // $(".preview-header").load("share-buttons.php");
                           // Back Button
@@ -185,6 +188,22 @@ try
                           // Help
                           $(".help-clearfix").empty();
                           $(".help-clearfix").load("help/preview.php");
+                  });
+
+                  $('#product-preview-button-<?php echo $p_id1; ?>').click(function() {
+                          $('.collections-animation-container').addClass("collections-animation");
+                          $('#preview-container').addClass("preview-container-animate");
+                           //  Load
+                          $("#preview-container").empty();
+                          $("#preview-container").load("product-preview.php");
+                          // Preview | Share Button(s)
+                                        // $(".preview-header").load("share-buttons.php");
+                          // Back Button
+                          $("#share-link").css("display", "none");
+                          $(".back-link").css("display", "block");
+                          // Help
+                          $(".help-clearfix").empty();
+                          $(".help-clearfix").load("help/product-preview.php");
                   });
 
                   $('.back-link').click(function() {

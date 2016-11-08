@@ -436,7 +436,21 @@ body {
   z-index: 80;
   animation-direction: normal;
   transition-timing-function: ease;
-  transition-duration: 0.5s; }
+  transition-duration: 0.5s;
+  display: none; }
+
+#product-preview-container {
+  position: absolute;
+  top: -100vh;
+  left: 0px;
+  width: 100vw;
+  height: calc(100vh - 63px);
+  padding-top: 63px;
+  z-index: 80;
+  animation-direction: normal;
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
+  display: none; }
 
 .preview-container-animate {
   top: 0px !important; }
