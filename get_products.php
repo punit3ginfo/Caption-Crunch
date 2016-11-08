@@ -199,7 +199,8 @@ try
                       $(".facebook-mobile-caption-text").empty();
                       $(".facebook-mobile-image").attr("src", "");
 
-                      $("#preview-container").empty();
+                      $("#product-preview-container").css("display","none");
+                      $("#post-preview-container").css("display","none");
                   });
 
 
@@ -211,7 +212,6 @@ try
                             $(".back-link").css("display", "none");
                             $("#product-preview-container").css("display","none");
                             $("#post-preview-container").css("display","none");
-                            $("#preview-container").empty();
                    });
               });
 
