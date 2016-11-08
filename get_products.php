@@ -190,6 +190,7 @@ try
                           // Help
                           $(".help-clearfix").empty();
                           $(".help-clearfix").load("help/share.php");
+
                           $("#product-preview-container").css("display","none");
                           $("#post-preview-container").css("display","none");
                       //  Clear
@@ -198,9 +199,6 @@ try
                       $("#addimage-image-one").empty();
                       $(".facebook-mobile-caption-text").empty();
                       $(".facebook-mobile-image").attr("src", "");
-
-                      $("#product-preview-container").css("display","none");
-                      $("#post-preview-container").css("display","none");
                   });
 
 
@@ -210,8 +208,15 @@ try
                             // Back Button
                             $("#share-link").css("display", "block");
                             $(".back-link").css("display", "none");
+
                             $("#product-preview-container").css("display","none");
                             $("#post-preview-container").css("display","none");
+                            //  Clear
+                            $("#caption-textarea-large").empty();
+                            $("#caption-textarea-small").empty();
+                            $("#addimage-image-one").empty();
+                            $(".facebook-mobile-caption-text").empty();
+                            $(".facebook-mobile-image").attr("src", "");
                    });
               });
 
