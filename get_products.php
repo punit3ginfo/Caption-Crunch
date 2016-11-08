@@ -191,14 +191,16 @@ try
                           $(".help-clearfix").empty();
                           $(".help-clearfix").load("help/share.php");
 
+                          setTimeout(function(){
                           $("#product-preview-container").css("display","none");
                           $("#post-preview-container").css("display","none");
-                      //  Clear
-                      $("#caption-textarea-large").empty();
-                      $("#caption-textarea-small").empty();
-                      $("#addimage-image-one").empty();
-                      $(".facebook-mobile-caption-text").empty();
-                      $(".facebook-mobile-image").attr("src", "");
+                          //  Clear
+                          $("#caption-textarea-large").empty();
+                          $("#caption-textarea-small").empty();
+                          $("#addimage-image-one").empty();
+                          $(".facebook-mobile-caption-text").empty();
+                          $(".facebook-mobile-image").attr("src", "");
+                          }, 800);
                   });
 
 
@@ -209,6 +211,7 @@ try
                             $("#share-link").css("display", "block");
                             $(".back-link").css("display", "none");
 
+                            setTimeout(function(){
                             $("#product-preview-container").css("display","none");
                             $("#post-preview-container").css("display","none");
                             //  Clear
@@ -217,6 +220,7 @@ try
                             $("#addimage-image-one").empty();
                             $(".facebook-mobile-caption-text").empty();
                             $(".facebook-mobile-image").attr("src", "");
+                            }, 800);
                    });
               });
 
