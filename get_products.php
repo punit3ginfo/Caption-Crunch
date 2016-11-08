@@ -117,42 +117,6 @@ try
 
           <script>
 
-          // Preview
-          $("#share-button-<?php echo $p_id1; ?>").click(function(){
-
-              var CaptionLong = "<?php echo $title; ?> is on sale for $<?php echo $price; ?>! Was $<?php echo $ComparePrice; ?>! Check it out: <?php echo $productUrl; ?>";
-              var CaptionShort = "<?php echo $title; ?>. Now $<?php echo $price; ?>! Was $<?php echo $ComparePrice; ?>! Link ---> <?php echo $productUrl; ?>";
-
-              $("#caption-textarea-large").ready(function() {
-                    $("#preview-textarea-large").html(CaptionLong);
-                    $("#preview-textarea-small").html(CaptionShort);
-              });
-
-              $(".facebook-mobile-caption-text").ready(function() {
-                    $(".facebook-mobile-caption-text").html(CaptionLong);
-              });
-
-              $("#addimage-image-one").ready(function() {
-                    $("#addimage-image-one").css('background-image', 'url(<?php echo $src; ?>)')
-              });
-
-              var $facebookImageSource = "<?php echo $src; ?>";
-
-              $(".facebook-mobile-image").ready(function() {
-                    $(".facebook-mobile-image").attr("src", $facebookImageSource);
-              });
-
-          });
-
-          $('.back-link').click(function() {
-                  // $("#preview-container").empty();
-                  $("#caption-textarea-large").empty();
-                  $("#caption-textarea-small").empty();
-                  $("#addimage-image-one").empty();
-                  $(".facebook-mobile-caption-text").empty();
-                  $(".facebook-mobile-image").attr("src", "");
-          });
-
           // Show / Hide Product Details
           $(document).ready(function() {
                 $('.product-image-<?php echo $p_id1; ?>').hover(function() {
@@ -218,6 +182,41 @@ try
                           $(".help-clearfix").empty();
                           $(".help-clearfix").load("help/share.php");
                           $("#preview-container").empty();
+                  });
+
+                  // Preview
+                  $("#share-button-<?php echo $p_id1; ?>").click(function(){
+
+                      var CaptionLong = "<?php echo $title; ?> is on sale for $<?php echo $price; ?>! Was $<?php echo $ComparePrice; ?>! Check it out: <?php echo $productUrl; ?>";
+                      var CaptionShort = "<?php echo $title; ?>. Now $<?php echo $price; ?>! Was $<?php echo $ComparePrice; ?>! Link ---> <?php echo $productUrl; ?>";
+
+                      $("#caption-textarea-large").ready(function() {
+                            $("#preview-textarea-large").html(CaptionLong);
+                            $("#preview-textarea-small").html(CaptionShort);
+                      });
+
+                      $(".facebook-mobile-caption-text").ready(function() {
+                            $(".facebook-mobile-caption-text").html(CaptionLong);
+                      });
+
+                      $("#addimage-image-one").ready(function() {
+                            $("#addimage-image-one").css('background-image', 'url(<?php echo $src; ?>)')
+                      });
+
+                      var $facebookImageSource = "<?php echo $src; ?>";
+
+                      $(".facebook-mobile-image").ready(function() {
+                            $(".facebook-mobile-image").attr("src", $facebookImageSource);
+                      });
+
+                  });
+
+                  $('.back-link').click(function() {
+                          $("#caption-textarea-large").empty();
+                          $("#caption-textarea-small").empty();
+                          $("#addimage-image-one").empty();
+                          $(".facebook-mobile-caption-text").empty();
+                          $(".facebook-mobile-image").attr("src", "");
                   });
 
               });
