@@ -95,7 +95,7 @@ try
             <!-- Product Details Layer -->
               <div class="product-card-image-container-content-hover product-details-<?php echo $p_id1; ?>">
                   <div class="product-details-container">
-                      <a href="<?php echo $productUrl; ?>" id="product-preview-button-<?php echo $p_id1; ?>" class="product-icon-container" target="_blank">
+                      <a href="javascript:void(0)" id="product-preview-button-<?php echo $p_id1; ?>" class="product-icon-container" target="_blank">
                          <span class="product-icon-clearfix">
                                 <i class="fa fa-link" aria-hidden="true"></i>
                          </span>
