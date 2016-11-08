@@ -132,7 +132,8 @@ try
 
                   $('#share-button-<?php echo $p_id1; ?>').click(function() {
                             //  Load
-                           $("#preview-container").load("/preview.php");
+                          //  $("#preview-container").load("/preview.php");
+                           $("#post-preview-container").css("display","block");
                           // Preview | Share Button(s)
                                         // $(".preview-header").load("share-buttons.php");
                           // Back Button
@@ -171,8 +172,9 @@ try
 
                   $('#product-preview-button-<?php echo $p_id1; ?>').click(function() {
                            //  Load
-                          $("#preview-container").load("/product-preview.php");
-                          $("#product-preview").attr('src', '<?php echo $productUrl; ?>');
+                          // $("#preview-container").load("/product-preview.php");
+                          // $("#product-preview").attr('src', '<?php echo $productUrl; ?>');
+                          $("#product-preview-container").css("display","block");
                           // Preview | Share Button(s)
                                         // $(".preview-header").load("share-buttons.php");
                           // Back Button
@@ -195,13 +197,16 @@ try
                           // Help
                           $(".help-clearfix").empty();
                           $(".help-clearfix").load("help/share.php");
-                          $("#preview-container").empty();
+                          $("#product-preview-container").css("display","none");
+                          $("#post-preview-container").css("display","none");
                       //  Clear
                       $("#caption-textarea-large").empty();
                       $("#caption-textarea-small").empty();
                       $("#addimage-image-one").empty();
                       $(".facebook-mobile-caption-text").empty();
                       $(".facebook-mobile-image").attr("src", "");
+
+                      $("#preview-container").empty();
                   });
 
 
@@ -211,6 +216,8 @@ try
                             // Back Button
                             $("#share-link").css("display", "block");
                             $(".back-link").css("display", "none");
+                            $("#product-preview-container").css("display","none");
+                            $("#post-preview-container").css("display","none");
                             $("#preview-container").empty();
                    });
               });

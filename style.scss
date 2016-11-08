@@ -519,6 +519,14 @@ body {
     transition-duration: 0.5s;
 }
 
+#post-preview-container {
+   display: none;
+}
+
+#product-preview-container {
+   display: none;
+}
+
 .preview-container-animate {
     top: 0px !important;
 }

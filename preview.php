@@ -1,4 +1,4 @@
-<div class="preview-container">
+<div class="preview-container" id="post-preview-container">
           <div  class="preview-overflow-container">
                     <div class="preview-clearfix">
                               <div class="preview-template-container">
