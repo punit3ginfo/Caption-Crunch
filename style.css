@@ -1471,7 +1471,7 @@ a:hover {
   min-height: 46px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
   flex-flow: row wrap;
