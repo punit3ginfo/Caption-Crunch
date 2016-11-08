@@ -95,7 +95,8 @@ try
             <!-- Product Details Layer -->
               <div class="product-card-image-container-content-hover product-details-<?php echo $p_id1; ?>">
                   <div class="product-details-container">
-                      <a href="javascript:void(0)" id="product-preview-button-<?php echo $p_id1; ?>" class="product-icon-container" target="_blank">
+                     <a href="<?php echo $productUrl; ?>" id="product-preview-button-<?php echo $p_id1; ?>" class="product-icon-container" target="_blank">
+                      <!-- <a href="javascript:void(0)" id="product-preview-button-<?php echo $p_id1; ?>" class="product-icon-container" target="_blank"> -->
                          <span class="product-icon-clearfix">
                                 <i class="fa fa-link" aria-hidden="true"></i>
                          </span>
@@ -167,19 +168,19 @@ try
 
                   });
 
-                  $('#product-preview-button-<?php echo $p_id1; ?>').click(function() {
-                           //  Load
-                          $("#product-preview-container").css("display","block");
-                          // Back Button
-                          $("#share-link").css("display", "none");
-                          $(".back-link").css("display", "block");
-                          // Help
-                          $(".help-clearfix").empty();
-                          $(".help-clearfix").load("help/product-preview.php");
-                          //  Animate
-                         $('.collections-animation-container').addClass("collections-animation");
-                         $('#preview-container').addClass("preview-container-animate");
-                  });
+                  // $('#product-preview-button-<?php echo $p_id1; ?>').click(function() {
+                  //          //  Load
+                  //         $("#product-preview-container").css("display","block");
+                  //         // Back Button
+                  //         $("#share-link").css("display", "none");
+                  //         $(".back-link").css("display", "block");
+                  //         // Help
+                  //         $(".help-clearfix").empty();
+                  //         $(".help-clearfix").load("help/product-preview.php");
+                  //         //  Animate
+                  //        $('.collections-animation-container').addClass("collections-animation");
+                  //        $('#preview-container').addClass("preview-container-animate");
+                  // });
 
                   $('.back-link').click(function() {
                           $('.collections-animation-container').removeClass("collections-animation");
