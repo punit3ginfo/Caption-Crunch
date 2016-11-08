@@ -120,8 +120,8 @@ try
           // Preview
           $("#share-button-<?php echo $p_id1; ?>").click(function(){
 
-              var CaptionLong = "<?php echo $title; ?> | $<?php echo $price; ?> | Long Caption";
-              var CaptionShort = "<?php echo $title; ?> | $<?php echo $price; ?> | Short Caption";
+              var CaptionLong = "<?php echo $title; ?> is on sale for $<?php echo $price; ?>! Was $<?php echo $ComparePrice; ?>! Get it here ---> <?php echo $productUrl; ?>";
+              var CaptionShort = "<?php echo $title; ?>. Now $<?php echo $price; ?>! Was $<?php echo $ComparePrice; ?>! Link ---> <?php echo $productUrl; ?>";
 
               $("#caption-textarea-large").ready(function() {
                     $("#preview-textarea-large").html(CaptionLong);
