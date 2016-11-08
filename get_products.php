@@ -177,7 +177,7 @@ try
                   $('#share-button-<?php echo $p_id1; ?>').click(function() {
                             //  Load
                            $("#preview-container").empty();
-                           $("#preview-container").load("/preview.php");
+                           $("#preview-container").load("./preview.php");
                           // Preview | Share Button(s)
                                         // $(".preview-header").load("share-buttons.php");
                           // Back Button
@@ -194,7 +194,7 @@ try
                   $('#product-preview-button-<?php echo $p_id1; ?>').click(function() {
                            //  Load
                           $("#preview-container").empty();
-                          $("#preview-container").load("/product-preview.php");
+                          $("#preview-container").load("./product-preview.php");
                           // Preview | Share Button(s)
                                         // $(".preview-header").load("share-buttons.php");
                           // Back Button
