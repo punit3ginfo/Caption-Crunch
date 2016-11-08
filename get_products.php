@@ -175,11 +175,9 @@ try
                   });
 
                   $('#share-button-<?php echo $p_id1; ?>').click(function() {
-                          $('.collections-animation-container').addClass("collections-animation");
-                          $('#preview-container').addClass("preview-container-animate");
-                          //  Load
-                         $("#preview-container").empty();
-                         $("#preview-container").load("preview.php");
+                            //  Load
+                           $("#preview-container").empty();
+                           $("#preview-container").load("/preview.php");
                           // Preview | Share Button(s)
                                         // $(".preview-header").load("share-buttons.php");
                           // Back Button
@@ -188,14 +186,15 @@ try
                           // Help
                           $(".help-clearfix").empty();
                           $(".help-clearfix").load("help/preview.php");
+                          //  Animate
+                           $('.collections-animation-container').addClass("collections-animation");
+                           $('#preview-container').addClass("preview-container-animate");
                   });
 
                   $('#product-preview-button-<?php echo $p_id1; ?>').click(function() {
-                          $('.collections-animation-container').addClass("collections-animation");
-                          $('#preview-container').addClass("preview-container-animate");
                            //  Load
                           $("#preview-container").empty();
-                          $("#preview-container").load("product-preview.php");
+                          $("#preview-container").load("/product-preview.php");
                           // Preview | Share Button(s)
                                         // $(".preview-header").load("share-buttons.php");
                           // Back Button
@@ -204,6 +203,9 @@ try
                           // Help
                           $(".help-clearfix").empty();
                           $(".help-clearfix").load("help/product-preview.php");
+                          //  Animate
+                         $('.collections-animation-container').addClass("collections-animation");
+                         $('#preview-container').addClass("preview-container-animate");
                   });
 
                   $('.back-link').click(function() {
