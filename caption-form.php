@@ -9,17 +9,17 @@
       </div>
           <div class="template-show-hide">
             <div class="form-clearfix">
-
-				<a href="javascript:void(0)" class="button-three-col green-button"><i class="fa fa-check" aria-hidden="true"></i> Caption Title</a>
-				<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
-				<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
-				<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
-				<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
-				<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
-				<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
-				<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
-				<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
-				
+					<div class="form-caption-list-clearfix">
+							<a href="javascript:void(0)" class="button-three-col green-button"><i class="fa fa-check" aria-hidden="true"></i> Caption Title</a>
+							<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+							<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+							<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+							<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+							<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+							<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+							<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+							<a href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Caption Title</a>
+				    </div>
 
                                       <!-- <div class="form-3col-clearfix">
                                               <input id="product-title-check" type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>Product Title
