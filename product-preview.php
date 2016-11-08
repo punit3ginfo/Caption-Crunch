@@ -2,7 +2,7 @@
           <div  class="preview-overflow-container">
                     <div class="preview-clearfix">
                               <div class="preview-template-container">
-                                          <iframe src="<?php echo $productUrl; ?>" style="width: 100%; height: 100%;"></iframe>
+                                          <iframe id="product-preview" src="" style="width: 100%; height: 100%;"></iframe>
                                  </div>
                       </div>
            </div>

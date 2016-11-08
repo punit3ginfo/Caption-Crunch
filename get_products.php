@@ -194,6 +194,7 @@ try
                   $('#product-preview-button-<?php echo $p_id1; ?>').click(function() {
                            //  Load
                           $("#preview-container").load("/product-preview.php");
+                          $("#product-preview").attr('src', '<?php echo $productUrl; ?>');
                           // Preview | Share Button(s)
                                         // $(".preview-header").load("share-buttons.php");
                           // Back Button
