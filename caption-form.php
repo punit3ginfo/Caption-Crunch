@@ -127,6 +127,14 @@
 <script>
 
 var $productTitle = "{{ product.title }}";
+var $productPrice = "{{ product.price }}";
+var $productComparePrice = "{{ product.compareprice }}";
+var $productType = "{{ product.type }}";
+var $productUrl = "{{ product.url }}";
+var $productDescription = "{{ product.description }}";
+var $collectionTitle = "{{ collection.title }}";
+var $percentOff = "{{ percent.off }}";
+var $dollarsOff = "{{ dollars.off }}";
 
 $('#product-title-btn').click(function(){
     if ($("#product-title-btn").hasClass('grey-button')) {
@@ -142,6 +150,21 @@ $('#product-title-btn').click(function(){
 		$("#product-title-icon").removeClass("fa-check");
 		$("#product-title-icon").addClass("fa-times");
     }
+
+	$('#product-price-btn').click(function(){
+	    if ($("#product-price-btn").hasClass('grey-button')) {
+	        $('#caption-textarea-large').val($productTitle);
+			$("#product-price-btn").removeClass("grey-button");
+			$("#product-price-btn").addClass("green-button");
+			$("#product-price-icon").removeClass("fa-times");
+			$("#product-price-icon").addClass("fa-check");
+	    } else if ($("#product-price-btn").hasClass('green-button')) {
+			$('#caption-textarea-large').val(" ");
+			$("#product-price-btn").removeClass("green-button");
+			$("#product-price-btn").addClass("grey-button");
+			$("#product-price-icon").removeClass("fa-check");
+			$("#product-price-icon").addClass("fa-times");
+	    }
 });
 
 </script>
