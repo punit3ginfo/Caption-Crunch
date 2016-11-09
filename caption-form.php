@@ -233,79 +233,79 @@ $('#product-url-btn').click(function(){
 	};
 });
 
-$('#produc-description-btn').click(function(){
-	if ($("#produc-description-btn").hasClass('grey-button')) {
+$('#product-description-btn').click(function(){
+	if ($("#product-description-btn").hasClass('grey-button')) {
 		$($textAreaLarge).val($($textAreaLarge).val() + $productDescription);
-		$("#produc-description-btn").removeClass("grey-button");
-		$("#produc-description-btn").addClass("green-button");
-		$("#produc-description-icon").removeClass("fa-times");
-		$("#produc-description-icon").addClass("fa-check");
+		$("#product-description-btn").removeClass("grey-button");
+		$("#product-description-btn").addClass("green-button");
+		$("#product-description-icon").removeClass("fa-times");
+		$("#product-description-icon").addClass("fa-check");
 	} else if ($("#product-url-btn").hasClass('green-button')) {
 			// get the content of the #result textarea
 		val = $('#caption-textarea-large').val();
 			// remove all occurence of content of #name in #result
 		$('#caption-textarea-large').val(val.replace($productDescription, ""));
-		$("#produc-description-btn").removeClass("green-button");
-		$("#produc-description-btn").addClass("grey-button");
-		$("#produc-description-icon").removeClass("fa-check");
-		$("#produc-description-icon").addClass("fa-times");
+		$("#product-description-btn").removeClass("green-button");
+		$("#product-description-btn").addClass("grey-button");
+		$("#product-description-icon").removeClass("fa-check");
+		$("#product-description-icon").addClass("fa-times");
 	};
 });
 
-$('#produc-collection-btn').click(function(){
-	if ($("#produc-collection-btn").hasClass('grey-button')) {
+$('#product-collection-btn').click(function(){
+	if ($("#product-collection-btn").hasClass('grey-button')) {
 		$($textAreaLarge).val($($textAreaLarge).val() + $collectionTitle);
-		$("#produc-collection-btn").removeClass("grey-button");
-		$("#produc-collection-btn").addClass("green-button");
-		$("#produc-collection-icon").removeClass("fa-times");
-		$("#produc-collection-icon").addClass("fa-check");
+		$("#product-collection-btn").removeClass("grey-button");
+		$("#product-collection-btn").addClass("green-button");
+		$("#product-collection-icon").removeClass("fa-times");
+		$("#product-collection-icon").addClass("fa-check");
 	} else if ($("#product-url-btn").hasClass('green-button')) {
 			// get the content of the #result textarea
 		val = $('#caption-textarea-large').val();
 			// remove all occurence of content of #name in #result
 		$('#caption-textarea-large').val(val.replace($collectionTitle, ""));
-		$("#produc-collection-btn").removeClass("green-button");
-		$("#produc-collection-btn").addClass("grey-button");
-		$("#produc-collection-icon").removeClass("fa-check");
-		$("#produc-collection-icon").addClass("fa-times");
+		$("#product-collection-btn").removeClass("green-button");
+		$("#product-collection-btn").addClass("grey-button");
+		$("#product-collection-icon").removeClass("fa-check");
+		$("#product-collection-icon").addClass("fa-times");
 	};
 });
 
-$('#produc-percent-btn').click(function(){
-	if ($("#produc-percent-btn").hasClass('grey-button')) {
+$('#product-percent-btn').click(function(){
+	if ($("#product-percent-btn").hasClass('grey-button')) {
 		$($textAreaLarge).val($($textAreaLarge).val() + $percentOff);
-		$("#produc-percent-btn").removeClass("grey-button");
-		$("#produc-percent-btn").addClass("green-button");
-		$("#produc-percent-icon").removeClass("fa-times");
-		$("#produc-percent-icon").addClass("fa-check");
+		$("#product-percent-btn").removeClass("grey-button");
+		$("#product-percent-btn").addClass("green-button");
+		$("#product-percent-icon").removeClass("fa-times");
+		$("#product-percent-icon").addClass("fa-check");
 	} else if ($("#product-url-btn").hasClass('green-button')) {
 			// get the content of the #result textarea
 		val = $('#caption-textarea-large').val();
 			// remove all occurence of content of #name in #result
 		$('#caption-textarea-large').val(val.replace($percentOff, ""));
-		$("#produc-percent-btn").removeClass("green-button");
-		$("#produc-percent-btn").addClass("grey-button");
-		$("#produc-percent-icon").removeClass("fa-check");
-		$("#produc-percent-icon").addClass("fa-times");
+		$("#product-percent-btn").removeClass("green-button");
+		$("#product-percent-btn").addClass("grey-button");
+		$("#product-percent-icon").removeClass("fa-check");
+		$("#product-percent-icon").addClass("fa-times");
 	};
 });
 
-$('#produc-dollars-btn').click(function(){
-	if ($("#produc-dollars-btn").hasClass('grey-button')) {
+$('#product-dollars-btn').click(function(){
+	if ($("#product-dollars-btn").hasClass('grey-button')) {
 		$($textAreaLarge).val($($textAreaLarge).val() + $dollarsOff);
-		$("#produc-dollars-btn").removeClass("grey-button");
-		$("#produc-dollars-btn").addClass("green-button");
-		$("#produc-dollars-icon").removeClass("fa-times");
-		$("#produc-dollars-icon").addClass("fa-check");
+		$("#product-dollars-btn").removeClass("grey-button");
+		$("#product-dollars-btn").addClass("green-button");
+		$("#product-dollars-icon").removeClass("fa-times");
+		$("#product-dollars-icon").addClass("fa-check");
 	} else if ($("#product-url-btn").hasClass('green-button')) {
 			// get the content of the #result textarea
 		val = $('#caption-textarea-large').val();
 			// remove all occurence of content of #name in #result
 		$('#caption-textarea-large').val(val.replace($dollarsOff, ""));
-		$("#produc-dollars-btn").removeClass("green-button");
-		$("#produc-dollars-btn").addClass("grey-button");
-		$("#produc-dollars-icon").removeClass("fa-check");
-		$("#produc-dollars-icon").addClass("fa-times");
+		$("#product-dollars-btn").removeClass("green-button");
+		$("#product-dollars-btn").addClass("grey-button");
+		$("#product-dollars-icon").removeClass("fa-check");
+		$("#product-dollars-icon").addClass("fa-times");
 	};
 });
 
