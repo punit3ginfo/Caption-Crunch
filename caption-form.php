@@ -176,4 +176,23 @@ $('#product-price-btn').click(function(){
 	};
 });
 
+$('#product-comp-price-btn').click(function(){
+	if ($("#product-comp-price-btn").hasClass('grey-button')) {
+		$($textAreaLarge).val($($textAreaLarge).val() + $productComparePrice);
+		$("#product-comp-price-btn").removeClass("grey-button");
+		$("#product-comp-price-btn").addClass("green-button");
+		$("#product-comp-price-icon").removeClass("fa-times");
+		$("#product-comp-price-icon").addClass("fa-check");
+	} else if ($("#product-comp-price-btn").hasClass('green-button')) {
+			// get the content of the #result textarea
+		val = $('#caption-textarea-large').val();
+			// remove all occurence of content of #name in #result
+		$('#caption-textarea-large').val(val.replace($productComparePrice, ""));
+		$("#product-comp-price-btn").removeClass("green-button");
+		$("#product-comp-price-btn").addClass("grey-button");
+		$("#product-comp-price-icon").removeClass("fa-check");
+		$("#product-comp-price-icon").addClass("fa-times");
+	};
+});
+
 </script>
