@@ -113,8 +113,12 @@ var $productTitle = "{{ product.title }}";
 $('#product-title-btn').click(function(){
     if ($("#product-title-btn").hasClass('grey-button')) {
         $('#caption-textarea-large').val($productTitle);
-    } else {
-        $('#caption-textarea-large').val().empty();
+		$("#product-title-btn").removeClass("grey-button");
+		$("#product-title-btn").addClass("green-button");
+    } else if ($("#product-title-btn").hasClass('green-button')) {
+		$('#caption-textarea-large').val(" ");
+		$("#product-title-btn").removeClass("green-button");
+		$("#product-title-btn").addClass("grey-button");
     }
 });
 
