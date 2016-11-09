@@ -48,15 +48,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 </head>
 
 <body>
-
-
-
 	<div class="back">
-
-
-
-
-
 		<!-- Sidebar Nav -->
 		<aside class="sidebar_nav">
 			<a  class="sidebar-link" href="https://buffer.com" target="_blank">
