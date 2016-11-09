@@ -111,7 +111,7 @@
 var $productTitle = "{{ product.title }}";
 
 $('#product-title-btn').click(function(){
-    if (this.hasClass('grey-button')) {
+    if ($("#product-title-btn").hasClass('grey-button')) {
         $('#caption-textarea-large').val($productTitle);
     } else {
         $('#caption-textarea-large').val().empty();
