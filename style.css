@@ -16,7 +16,7 @@ select {
   font-size: 14px; }
 
 select option {
-  margin-left: 5px; }
+  margin-left: -5px; }
 
 input {
   font-size: 14px; }
