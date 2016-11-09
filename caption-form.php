@@ -240,7 +240,7 @@ $('#product-description-btn').click(function(){
 		$("#product-description-btn").addClass("green-button");
 		$("#product-description-icon").removeClass("fa-times");
 		$("#product-description-icon").addClass("fa-check");
-	} else if ($("#product-url-btn").hasClass('green-button')) {
+	} else if ($("#product-description-btn").hasClass('green-button')) {
 			// get the content of the #result textarea
 		val = $('#caption-textarea-large').val();
 			// remove all occurence of content of #name in #result
