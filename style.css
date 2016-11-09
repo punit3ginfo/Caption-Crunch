@@ -758,7 +758,8 @@ body {
   line-height: 1.321;
   width: 100%;
   height: auto;
-  font-weight: normal; }
+  font-weight: normal;
+  word-wrap: break-word; }
 
 .facebook-mobile-image {
   width: 100%; }
