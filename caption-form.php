@@ -10,15 +10,33 @@
           <div class="template-show-hide">
             <div class="form-clearfix">
 					<div class="form-caption-list-clearfix">
-							<a id="product-title-btn" href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Product Title</a>
-							<a id="product-price-btn" href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Product Price</a>
-							<a id="product-comp-price-btn" href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Compare Price</a>
-							<a id="product-type-btn" href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Product Type</a>
-							<a id="product-url-btn" href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Product Url</a>
-							<a id="product-description-btn" href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Description</a>
-							<a id="product-collection-btn" href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Collection Title</a>
-							<a id="product-percent-btn" href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Precent Off</a>
-							<a id="product-dollars-btn" href="javascript:void(0)" class="button-three-col grey-button"><i class="fa fa-times" aria-hidden="true"></i> Dollars Saved</a>
+							<a id="product-title-btn" href="javascript:void(0)" class="button-three-col grey-button">
+								<i id="product-title-icon" class="fa fa-times" aria-hidden="true"></i> Product Title
+							</a>
+							<a id="product-price-btn" href="javascript:void(0)" class="button-three-col grey-button">
+								<i id="product-price-icon" class="fa fa-times" aria-hidden="true"></i> Product Price
+							</a>
+							<a id="product-comp-price-btn" href="javascript:void(0)" class="button-three-col grey-button">
+								<i id="product-comp-price-icon" class="fa fa-times" aria-hidden="true"></i> Compare Price
+							</a>
+							<a id="product-type-btn" href="javascript:void(0)" class="button-three-col grey-button">
+								<i  id="product-type-icon" class="fa fa-times" aria-hidden="true"></i> Product Type
+							</a>
+							<a id="product-url-btn" href="javascript:void(0)" class="button-three-col grey-button">
+								<i id="product-url-icon" class="fa fa-times" aria-hidden="true"></i> Product Url
+							</a>
+							<a id="product-description-btn" href="javascript:void(0)" class="button-three-col grey-button">
+								<i id="product-description-icon" class="fa fa-times" aria-hidden="true"></i> Description
+							</a>
+							<a id="product-collection-btn" href="javascript:void(0)" class="button-three-col grey-button">
+								<i id="product-collection-icon" class="fa fa-times" aria-hidden="true"></i> Collection Title
+							</a>
+							<a id="product-percent-btn" href="javascript:void(0)" class="button-three-col grey-button">
+								<i id="product-percent-icon" class="fa fa-times" aria-hidden="true"></i> Precent Off
+							</a>
+							<a id="product-dollars-btn" href="javascript:void(0)" class="button-three-col grey-button">
+								<i id="product-dollars-icon" class="fa fa-times" aria-hidden="true"></i> Dollars Saved
+							</a>
 				    </div>
             </div>
             <div class="form-clearfix">
@@ -115,10 +133,14 @@ $('#product-title-btn').click(function(){
         $('#caption-textarea-large').val($productTitle);
 		$("#product-title-btn").removeClass("grey-button");
 		$("#product-title-btn").addClass("green-button");
+		$("#product-title-icon").removeClass("fa-times");
+		$("#product-title-icon").addClass("fa-check");
     } else if ($("#product-title-btn").hasClass('green-button')) {
 		$('#caption-textarea-large').val(" ");
 		$("#product-title-btn").removeClass("green-button");
 		$("#product-title-btn").addClass("grey-button");
+		$("#product-title-icon").removeClass("fa-check");
+		$("#product-title-icon").addClass("fa-times");
     }
 });
 
