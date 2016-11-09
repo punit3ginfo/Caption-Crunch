@@ -29,6 +29,21 @@
                                             </div>
                                         </a>
 
+										<a href="javascript:void(0)" onclick="">
+	                                            <div class="menu-container">
+	                                                <div class="menu-clearfix">
+	                                                    <div class="menu-font-container">
+	                                                        <span class="menu-font">NEW PRODUCTS</span>
+	                                                    </div>
+	                                                    <div class="menu-icon-clearfix">
+	                                                        <div class="menu-icon-container">
+	                                                            <span class="menu-icon">X</span>
+	                                                        </div>
+	                                                    </div>
+	                                                </div>
+	                                            </div>
+	                                        </a>
+
                                     <?php
 
            				// echo "Product's go here"
