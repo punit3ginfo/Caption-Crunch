@@ -1536,7 +1536,8 @@ select:focus {
   width: calc(100% - 20px);
   height: 46px;
   border: 1px solid #555555;
-  padding-left: 10px; }
+  padding-left: 16px;
+  border-radius: 23px; }
 
 .form-input:hover {
   border: 1px solid #7ab55c; }
