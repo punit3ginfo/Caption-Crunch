@@ -15,6 +15,9 @@ html {
 select {
   font-size: 14px; }
 
+select option {
+  margin-left: 5px; }
+
 input {
   font-size: 14px; }
 
@@ -1538,6 +1541,9 @@ select:focus {
   border: 1px solid #555555;
   padding-left: 16px;
   border-radius: 23px; }
+
+.form-input::placeholder {
+  color: #555555; }
 
 .form-input:hover {
   border: 1px solid #7ab55c; }
