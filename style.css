@@ -1520,13 +1520,14 @@ select:focus {
   outline: none; }
 
 .form-select {
-  width: calc(100% - 30px);
+  width: calc(100% - 32px);
   height: 46px;
   border: 1px solid #555555;
   overflow: hidden;
   background: white url(https://cdn.shopify.com/s/files/1/1484/1256/files/arrow-down.png?9258385709659661406) no-repeat 92% 50%;
   background-size: 16px 16px;
-  border-radius: 23px; }
+  border-radius: 23px;
+  padding: 10px 16px; }
 
 .form-select:hover {
   border: 1px solid #7ab55c; }
