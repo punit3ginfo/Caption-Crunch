@@ -136,9 +136,11 @@ var $collectionTitle = "{{ collection.title }}";
 var $percentOff = "{{ percent.off }}";
 var $dollarsOff = "{{ dollars.off }}";
 
+var $textAreaLarge = $("#caption-textarea-large");
+
 $('#product-title-btn').click(function(){
 	if ($("#product-title-btn").hasClass('grey-button')) {
-		$('#caption-textarea-large').val($productTitle);
+		$($textAreaLarge).val($($textAreaLarge).val() + $productTitle);
 		$("#product-title-btn").removeClass("grey-button");
 		$("#product-title-btn").addClass("green-button");
 		$("#product-title-icon").removeClass("fa-times");
@@ -154,7 +156,7 @@ $('#product-title-btn').click(function(){
 
 $('#product-price-btn').click(function(){
 	if ($("#product-price-btn").hasClass('grey-button')) {
-		$('#caption-textarea-large').val($productPrice);
+		$($textAreaLarge).val($($textAreaLarge).val() + $productPrice);
 		$("#product-price-btn").removeClass("grey-button");
 		$("#product-price-btn").addClass("green-button");
 		$("#product-price-icon").removeClass("fa-times");
