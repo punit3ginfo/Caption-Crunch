@@ -165,7 +165,10 @@ $('#product-price-btn').click(function(){
 		$("#product-price-icon").removeClass("fa-times");
 		$("#product-price-icon").addClass("fa-check");
 	} else if ($("#product-price-btn").hasClass('green-button')) {
-		$('#caption-textarea-large').val(" ");
+			// get the content of the #result textarea
+		val = $('#caption-textarea-large').val();
+			// remove all occurence of content of #name in #result
+		$('#caption-textarea-large').val(val.replace($productPrice, ""));
 		$("#product-price-btn").removeClass("green-button");
 		$("#product-price-btn").addClass("grey-button");
 		$("#product-price-icon").removeClass("fa-check");
