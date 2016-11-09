@@ -149,11 +149,11 @@ $('#product-title-btn').click(function(){
 		$("#product-title-btn").addClass("grey-button");
 		$("#product-title-icon").removeClass("fa-check");
 		$("#product-title-icon").addClass("fa-times");
-    }
+    };
 
 	$('#product-price-btn').click(function(){
 	    if ($("#product-price-btn").hasClass('grey-button')) {
-	        $('#caption-textarea-large').val($productTitle);
+	        $('#caption-textarea-large').val($productPrice);
 			$("#product-price-btn").removeClass("grey-button");
 			$("#product-price-btn").addClass("green-button");
 			$("#product-price-icon").removeClass("fa-times");
@@ -164,7 +164,7 @@ $('#product-title-btn').click(function(){
 			$("#product-price-btn").addClass("grey-button");
 			$("#product-price-icon").removeClass("fa-check");
 			$("#product-price-icon").addClass("fa-times");
-	    }
+	    };
 });
 
 </script>
