@@ -214,4 +214,23 @@ $('#product-type-btn').click(function(){
 	};
 });
 
+$('#product-url-btn').click(function(){
+	if ($("#product-url-btn").hasClass('grey-button')) {
+		$($textAreaLarge).val($($textAreaLarge).val() + $productUrl);
+		$("#product-url-btn").removeClass("grey-button");
+		$("#product-url-btn").addClass("green-button");
+		$("#product-url-icon").removeClass("fa-times");
+		$("#product-url-icon").addClass("fa-check");
+	} else if ($("#product-url-btn").hasClass('green-button')) {
+			// get the content of the #result textarea
+		val = $('#caption-textarea-large').val();
+			// remove all occurence of content of #name in #result
+		$('#caption-textarea-large').val(val.replace($productUrl, ""));
+		$("#product-url-btn").removeClass("green-button");
+		$("#product-url-btn").addClass("grey-button");
+		$("#product-url-icon").removeClass("fa-check");
+		$("#product-url-icon").addClass("fa-times");
+	};
+});
+
 </script>
