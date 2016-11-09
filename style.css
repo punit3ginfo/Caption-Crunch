@@ -1553,7 +1553,8 @@ select:focus {
   width: calc(100% - 75px);
   margin: auto;
   text-align: center;
-  font-weight: bold; }
+  font-weight: bold;
+  border-radius: 23px; }
 
 .add-condition-button:hover {
   color: white;
