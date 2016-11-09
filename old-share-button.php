@@ -1,4 +1,4 @@
-<!-- <div id="<?php echo $p_id1; ?>"  class="share-button-container?>" >
+<div id="<?php echo $p_id1; ?>"  class="share-button-container?>" >
 
       <script>
         $(document).ready(function(){
@@ -40,10 +40,10 @@
         });
       </script>
 
- </div> -->
+ </div>
 
 
- <!-- <script>
+ <script>
  	function shareButton(pid,tags){
 
                 var access_token='<?php echo $access_token ?>';
@@ -62,9 +62,9 @@
                      }
                  });
              }
- </script> -->
+ </script>
 
- <!-- <script>
+ <script>
 
  	var tags;
  	function unshareButton(pid,tags){
@@ -86,4 +86,4 @@
                      }
                  });
              }
-     </script> -->
+     </script>

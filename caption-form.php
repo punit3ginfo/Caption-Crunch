@@ -259,7 +259,7 @@ $('#product-collection-btn').click(function(){
 		$("#product-collection-btn").addClass("green-button");
 		$("#product-collection-icon").removeClass("fa-times");
 		$("#product-collection-icon").addClass("fa-check");
-	} else if ($("#product-url-btn").hasClass('green-button')) {
+	} else if ($("#product-collection-btn").hasClass('green-button')) {
 			// get the content of the #result textarea
 		val = $('#caption-textarea-large').val();
 			// remove all occurence of content of #name in #result
@@ -278,7 +278,7 @@ $('#product-percent-btn').click(function(){
 		$("#product-percent-btn").addClass("green-button");
 		$("#product-percent-icon").removeClass("fa-times");
 		$("#product-percent-icon").addClass("fa-check");
-	} else if ($("#product-url-btn").hasClass('green-button')) {
+	} else if ($("#product-percent-btn").hasClass('green-button')) {
 			// get the content of the #result textarea
 		val = $('#caption-textarea-large').val();
 			// remove all occurence of content of #name in #result
@@ -297,7 +297,7 @@ $('#product-dollars-btn').click(function(){
 		$("#product-dollars-btn").addClass("green-button");
 		$("#product-dollars-icon").removeClass("fa-times");
 		$("#product-dollars-icon").addClass("fa-check");
-	} else if ($("#product-url-btn").hasClass('green-button')) {
+	} else if ($("#product-dollars-btn").hasClass('green-button')) {
 			// get the content of the #result textarea
 		val = $('#caption-textarea-large').val();
 			// remove all occurence of content of #name in #result
