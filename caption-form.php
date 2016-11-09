@@ -195,4 +195,23 @@ $('#product-comp-price-btn').click(function(){
 	};
 });
 
+$('#product-type-btn').click(function(){
+	if ($("#product-type-btn").hasClass('grey-button')) {
+		$($textAreaLarge).val($($textAreaLarge).val() + $productType);
+		$("#product-type-btn").removeClass("grey-button");
+		$("#product-type-btn").addClass("green-button");
+		$("#product-type-icon").removeClass("fa-times");
+		$("#product-type-icon").addClass("fa-check");
+	} else if ($("#product-type-btn").hasClass('green-button')) {
+			// get the content of the #result textarea
+		val = $('#caption-textarea-large').val();
+			// remove all occurence of content of #name in #result
+		$('#caption-textarea-large').val(val.replace($productType, ""));
+		$("#product-type-btn").removeClass("green-button");
+		$("#product-type-btn").addClass("grey-button");
+		$("#product-type-icon").removeClass("fa-check");
+		$("#product-type-icon").addClass("fa-times");
+	};
+});
+
 </script>
