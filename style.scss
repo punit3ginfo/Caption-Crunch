@@ -1987,3 +1987,7 @@ ul#pagination-list li {
 	color: white;
 	background: $brand-color;
 }
+
+.template-tip::after {
+    content: " - Use the selectors below to add autofilled variables to your caption.";
+}
