@@ -4,6 +4,7 @@
 		<div class="form-clearfix" style="border-top: 0px;">
 			<span class="cc-text-medium form-text-header templates-show-hide-button">
 				Template
+				<span class="cc-text-small" style="float: right; line-height: 30px;">Caption - Use the selectors above to add autofilled variables to your caption.</span>
 				<i id="template-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
 			</span>
 		</div>
@@ -40,7 +41,7 @@
 				</div>
 			</div>
 			<div class="form-clearfix" style="margin-bottom: 0px;">
-				<span class="cc-text-small">Caption - Use the selectors above to add autofilled variables to your caption.</span>
+				<span class="cc-text-small">Caption:</span>
 				<div class="caption-textarea-container" style="margin-bottom: 0px;">
 					<textarea id="caption-textarea-large" class="caption-textarea"></textarea>
 				</div>
