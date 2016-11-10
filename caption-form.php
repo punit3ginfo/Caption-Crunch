@@ -2,10 +2,13 @@
 	<!-- TEMPLATE -->
 	<div class="form-container" style="height: auto;">
 		<div class="form-clearfix" style="border-top: 0px;">
-			<span class="cc-text-medium form-text-header templates-show-hide-button">
+			<span class="cc-text-medium form-text-header templates-show-hide-button" style="float: left;">
 				Template
-				<span class="cc-text-small" style="float: right; line-height: 30px;">Caption - Use the selectors above to add autofilled variables to your caption.</span>
-				<i id="template-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
+		    </span>
+		    <span class="cc-text-small" style="float: left; line-height: 30px;">
+				Caption - Use the selectors above to add autofilled variables to your caption.
+			</span>
+			<i id="template-arrow-icon" class="fa fa-chevron-up cc-text-medium" aria-hidden="true" style="float: right; line-height: 30px;"></i>
 			</span>
 		</div>
 		<div class="template-show-hide">
