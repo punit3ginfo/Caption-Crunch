@@ -40,7 +40,7 @@
 				</div>
 			</div>
 			<div class="form-clearfix" style="margin-bottom: 0px;">
-				<span class="cc-text-small">Caption - Use the selectors above to add autofilled Titles, prices, and urls. </span>
+				<span class="cc-text-small">Caption - Use the selectors above to add autofilled variables to your caption.</span>
 				<div class="caption-textarea-container" style="margin-bottom: 0px;">
 					<textarea id="caption-textarea-large" class="caption-textarea"></textarea>
 				</div>
