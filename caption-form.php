@@ -39,7 +39,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="form-clearfix">
+			<div class="form-clearfix" style="margin-bottom: 0px;">
 				<span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
 				<div class="caption-textarea-container" style="margin-bottom: 0px;">
 					<textarea id="caption-textarea-large" class="caption-textarea"></textarea>
