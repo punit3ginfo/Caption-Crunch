@@ -41,13 +41,13 @@
 			</div>
 			<div class="form-clearfix">
 				<span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
-				<div class="caption-textarea-container">
+				<div class="caption-textarea-container" style="margin-bottom: 0px;">
 					<textarea id="caption-textarea-large" class="caption-textarea"></textarea>
 				</div>
-				<span class="cc-text-small">Caption for: Twitter (Character Limit: 140)</span>
+				<!-- <span class="cc-text-small">Caption for: Twitter (Character Limit: 140)</span>
 				<div class="caption-textarea-container" style="margin-bottom: 0px;">
 					<textarea id="caption-textarea-small" class="caption-textarea"></textarea>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
