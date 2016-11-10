@@ -119,7 +119,7 @@
 		</div>
 	</div>
 	<!-- PRODUCT LIST -->
-
+	<?php echo "Display products that match conditions here." ?>
 	<!-- HTML Content for Product END    -->
 
 </form>
