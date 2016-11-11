@@ -361,17 +361,17 @@ $('#all-conditions-btn').click(function(){
 	};
 });
 
-$('#any-conditions-btn').click(function(){
-	if ($("#any-conditions-btn").hasClass('grey-button')) {
-		$("#any-conditions-btn").removeClass("grey-button");
-		$("#any-conditions-btn").addClass("green-button");
-		$("#any-conditions-icon").removeClass("fa-times");
-		$("#any-conditions-icon").addClass("fa-check");
-	} else if ($("#any-conditions-btn").hasClass('green-button')) {
-		$("#any-conditions-btn").removeClass("green-button");
-		$("#any-conditions-btn").addClass("grey-button");
-		$("#any-conditions-icon").removeClass("fa-check");
-		$("#any-conditions-icon").addClass("fa-times");
+$('#any-condition-btn').click(function(){
+	if ($("#any-condition-btn").hasClass('grey-button')) {
+		$("#any-condition-btn").removeClass("grey-button");
+		$("#any-condition-btn").addClass("green-button");
+		$("#any-condition-icon").removeClass("fa-times");
+		$("#any-condition-icon").addClass("fa-check");
+	} else if ($("#any-condition-btn").hasClass('green-button')) {
+		$("#any-condition-btn").removeClass("green-button");
+		$("#any-condition-btn").addClass("grey-button");
+		$("#any-condition-icon").removeClass("fa-check");
+		$("#any-condition-icon").addClass("fa-times");
 	};
 });
 
