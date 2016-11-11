@@ -159,11 +159,11 @@ $('#product-title-btn').click(function(){
 		$("#product-title-icon").addClass("fa-check");
 	} else if ($("#product-title-btn").hasClass('green-button')) {
 			// get the content of the #result textarea
-	    val = $('#caption-textarea-large').val();
-		val = $('#caption-textarea-small').val();
+	    valLarge = $('#caption-textarea-large').val();
+		valSmall = $('#caption-textarea-small').val();
 	        // remove all occurence of content of #name in #result
-	    $('#caption-textarea-large').val(val.replace($productTitle, ""));
-		$('#caption-textarea-small').val(val.replace($productTitle, ""));
+	    $('#caption-textarea-large').val(valLarge.replace($productTitle, ""));
+		$('#caption-textarea-small').val(valSmall.replace($productTitle, ""));
 		$("#product-title-btn").removeClass("green-button");
 		$("#product-title-btn").addClass("grey-button");
 		$("#product-title-icon").removeClass("fa-check");
