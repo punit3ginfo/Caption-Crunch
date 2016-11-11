@@ -1802,12 +1802,15 @@ select:focus {
 
 .form-condition-remove {
 	font-size: 16px !important;
-	position: absolute;
-	top: 21px;
-	right: -5px;
-	transform: translateY(-50%);
-	cursor: pointer;
-	color: $secondary-color;
+    position: absolute;
+    top: 21px;
+    right: -5px;
+    transform: translate(0%, -50%);
+    cursor: pointer;
+    color: #555555;
+    text-align: center;
+	width: 20px;
+
 	-webkit-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
