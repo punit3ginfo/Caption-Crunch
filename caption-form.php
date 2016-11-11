@@ -72,14 +72,14 @@
 				</div>
 				<div class="form-3col-clearfix">
 					<!-- <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>All conditions -->
-					<a id="-btn" href="javascript:void(0)" class="button-three-col grey-button" style="width: calc(100% - 32px);">
-						<i id="-icon" class="fa fa-times" aria-hidden="true"></i> All conditions
+					<a id="all-conditions-btn" href="javascript:void(0)" class="button-three-col grey-button" style="width: calc(100% - 32px);">
+						<i id="all-conditions-icon" class="fa fa-times" aria-hidden="true"></i> All conditions
 					</a>
 				</div>
 				<div class="form-3col-clearfix">
 					<!-- <input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Any condition -->
-					<a id="-btn" href="javascript:void(0)" class="button-three-col grey-button" style="width: calc(100% - 32px);">
-						<i id="-icon" class="fa fa-times" aria-hidden="true"></i> Any condition
+					<a id="any-condition-btn" href="javascript:void(0)" class="button-three-col grey-button" style="width: calc(100% - 32px);">
+						<i id="any-condition-icon" class="fa fa-times" aria-hidden="true"></i> Any condition
 					</a>
 				</div>
 			</div>
@@ -346,5 +346,36 @@ $('#product-dollars-btn').click(function(){
 		$("#product-dollars-icon").addClass("fa-times");
 	};
 });
+
+$('#all-conditions-btn').click(function(){
+	if ($("#all-conditions-btn").hasClass('grey-button')) {
+		$("#all-conditions-btn").removeClass("grey-button");
+		$("#all-conditions-btn").addClass("green-button");
+		$("#all-conditions-icon").removeClass("fa-times");
+		$("#all-conditions-icon").addClass("fa-check");
+	} else if ($("#all-conditions-btn").hasClass('green-button')) {
+		$("#all-conditions-btn").removeClass("green-button");
+		$("#all-conditions-btn").addClass("grey-button");
+		$("#all-conditions-icon").removeClass("fa-check");
+		$("#all-conditions-icon").addClass("fa-times");
+	};
+});
+
+$('#any-conditions-btn').click(function(){
+	if ($("#any-conditions-btn").hasClass('grey-button')) {
+		$("#any-conditions-btn").removeClass("grey-button");
+		$("#any-conditions-btn").addClass("green-button");
+		$("#any-conditions-icon").removeClass("fa-times");
+		$("#any-conditions-icon").addClass("fa-check");
+	} else if ($("#any-conditions-btn").hasClass('green-button')) {
+		$("#any-conditions-btn").removeClass("green-button");
+		$("#any-conditions-btn").addClass("grey-button");
+		$("#any-conditions-icon").removeClass("fa-check");
+		$("#any-conditions-icon").addClass("fa-times");
+	};
+});
+
+any-conditions-btn
+any-conditions-icon
 
 </script>
