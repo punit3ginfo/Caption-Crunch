@@ -72,7 +72,7 @@
 				</div>
 				<div class="form-3col-clearfix">
 					<!-- <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>All conditions -->
-					<a id="all-conditions-btn" href="javascript:void(0)" class="button-three-col grey-button" style="width: calc(100% - 32px);">
+					<a id="all-conditions-btn" href="javascript:void(0)" class="button-three-col green-button" style="width: calc(100% - 32px);">
 						<i id="all-conditions-icon" class="fa fa-times" aria-hidden="true"></i> All conditions
 					</a>
 				</div>
