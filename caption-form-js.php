@@ -250,7 +250,7 @@ $('#any-condition-btn').click(function(){
 });
 
 $('.add-condition-button').click(function(){
-		$("#add-condition-container").before("<span>tits</span>");
+		$("#add-condition-container").before("<div class='form-clearfix'></div>");
 });
 
 
