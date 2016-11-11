@@ -347,10 +347,6 @@ $('#product-dollars-btn').click(function(){
 	};
 });
 
-</script>
-
-<script>
-
 $('#all-conditions-btn').click(function(){
 	if ($("#all-conditions-btn").hasClass('grey-button')) {
 		$("#all-conditions-btn").removeClass("grey-button");
@@ -388,5 +384,6 @@ $('#any-condition-btn').click(function(){
 		$("#any-condition-icon").addClass("fa-times");
 	};
 });
+
 
 </script>
