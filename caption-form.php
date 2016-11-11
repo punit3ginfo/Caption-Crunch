@@ -375,7 +375,4 @@ $('#any-conditions-btn').click(function(){
 	};
 });
 
-any-conditions-btn
-any-conditions-icon
-
 </script>
