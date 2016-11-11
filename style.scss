@@ -1800,6 +1800,14 @@ select:focus {
 	border: 1px solid $brand-color;
 }
 
+.form-condition-remove {
+	font-size: 20px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: $brand-color;
+}
+
 .add-condition-button {
 	border: 1px solid $secondary-color;
 	padding: 11px 20px;
