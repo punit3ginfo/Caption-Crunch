@@ -7,7 +7,7 @@
 
                     <span class="cc-text-medium form-text-header account-show-hide-button">
                       Step 1 | Choose Profile
-                      <i id="account-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
+                      <i id="account-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 46px;"></i>
                     </span>
 
               </div>
@@ -67,7 +67,7 @@
 
                           <span class="cc-text-medium caption-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
                             Step 2 | Choose Caption
-                            <i id="caption-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
+                            <i id="caption-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 46px;"></i>
                           </span>
 
                 </div>
@@ -109,7 +109,7 @@
                       <div class="form-clearfix"  style="border-top: 0px">
                                 <span class="cc-text-medium image-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
                                   Step 3 | Add Image
-                                  <i id="image-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 30px;"></i>
+                                  <i id="image-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 46px;"></i>
                                 </span>
                       </div>
                             <div class="image-show-hide">
