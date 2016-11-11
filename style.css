@@ -1531,7 +1531,8 @@ select:focus {
   background: white url(https://cdn.shopify.com/s/files/1/1484/1256/files/arrow-down.png?9258385709659661406) no-repeat 92% 50%;
   background-size: 16px 16px;
   border-radius: 23px;
-  padding: 10px 16px; }
+  padding: 10px 16px;
+  margin: auto; }
 
 .form-select:hover {
   border: 1px solid #7ab55c; }
