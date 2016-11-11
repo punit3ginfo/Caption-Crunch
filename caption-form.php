@@ -348,7 +348,6 @@ $('#product-dollars-btn').click(function(){
 });
 
 $('#all-conditions-btn').click(function(){
-	if ($("#all-conditions-btn").hasClass('grey-button')) {
 		$("#all-conditions-btn").removeClass("grey-button");
 		$("#all-conditions-btn").addClass("green-button");
 		$("#all-conditions-icon").removeClass("fa-times");
@@ -358,13 +357,9 @@ $('#all-conditions-btn').click(function(){
 		$("#any-condition-btn").addClass("grey-button");
 		$("#any-condition-icon").removeClass("fa-check");
 		$("#any-condition-icon").addClass("fa-times");
-	} else if ($("#all-conditions-btn").hasClass('green-button')) {
-
-	};
 });
 
 $('#any-condition-btn').click(function(){
-	if ($("#any-condition-btn").hasClass('grey-button')) {
 		$("#any-condition-btn").removeClass("grey-button");
 		$("#any-condition-btn").addClass("green-button");
 		$("#any-condition-icon").removeClass("fa-times");
@@ -374,7 +369,6 @@ $('#any-condition-btn').click(function(){
 		$("#all-conditions-btn").addClass("grey-button");
 		$("#all-conditions-icon").removeClass("fa-check");
 		$("#all-conditions-icon").addClass("fa-times");
-	} else if ($("#any-condition-btn").hasClass('green-button')) {
 
 	};
 });
