@@ -564,8 +564,7 @@ body {
   width: 77px;
   height: 77px;
   padding: 5px;
-  display: inline-block;
-  float: left; }
+  display: inline-block; }
 
 .account-bubble {
   width: 70px;
