@@ -92,7 +92,7 @@
                               </div>
                               <div class="form-clearfix">
                                                 <span class="cc-text-small">Caption:</span>
-                                                <div class="caption-textarea-container" style="margin-bottom: 0px;">
+                                                <div class="caption-textarea-container" style="padding-bottom: 0px;">
                                                       <textarea id="preview-textarea-large" class="caption-textarea"></textarea>
                                                 </div>
                                                 <!-- <span class="cc-text-small">Caption for: Twitter (Character Limit: 140)</span>
