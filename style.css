@@ -1456,7 +1456,8 @@ a:hover {
   padding: 20px 0px;
   min-height: 46px;
   height: auto;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 .form-text-header {
   line-height: 46px;
