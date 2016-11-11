@@ -145,11 +145,11 @@ try
 						$('#preview-container').addClass("preview-container-animate");
 						//  Preview
 						var CaptionLong = "<?php echo $title; ?> is on sale for $<?php echo $price; ?>! Was $<?php echo $ComparePrice; ?>! Check it out: <?php echo $productUrl; ?>";
-						var CaptionShort = "<?php echo $title; ?>. Now $<?php echo $price; ?>! Was $<?php echo $ComparePrice; ?>! Link ---> <?php echo $productUrl; ?>";
+						// var CaptionShort = "<?php echo $title; ?>. Now $<?php echo $price; ?>! Was $<?php echo $ComparePrice; ?>! Link ---> <?php echo $productUrl; ?>";
 
 						$("#caption-textarea-large").ready(function() {
 							$("#preview-textarea-large").html(CaptionLong);
-							$("#preview-textarea-small").html(CaptionShort);
+							// $("#preview-textarea-small").html(CaptionShort);
 						});
 
 						$(".facebook-mobile-caption-text").ready(function() {
