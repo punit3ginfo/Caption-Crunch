@@ -349,7 +349,7 @@ $('#product-dollars-btn').click(function(){
 
 </script>
 
-<!-- <script>
+<script>
 
 $('#all-conditions-btn').click(function(){
 	if ($("#all-conditions-btn").hasClass('grey-button')) {
@@ -389,4 +389,4 @@ $('#any-condition-btn').click(function(){
 	};
 });
 
-</script> -->
+</script>
