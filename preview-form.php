@@ -91,7 +91,7 @@
                                       </div>
                               </div>
                               <div class="form-clearfix">
-                                                <span class="cc-text-small">Caption for: Facebook, Google+, Pinterest</span>
+                                                <span class="cc-text-small">Caption:</span>
                                                 <div class="caption-textarea-container" style="margin-bottom: 0px;">
                                                       <textarea id="preview-textarea-large" class="caption-textarea"></textarea>
                                                 </div>
