@@ -1561,9 +1561,9 @@ select:focus {
   color: #555555;
   text-align: center;
   width: 20px;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out; }
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out; }
 
 .form-condition-remove:hover {
   font-size: 20px !important;

@@ -250,8 +250,11 @@ $('#any-condition-btn').click(function(){
 });
 
 $('.add-condition-button').click(function(){
-		$("#add-condition-container").before("<div class='form-clearfix' style='border-top: 0px; padding-top: 0px;'><i class='fa fa-times form-condition-remove' aria-hidden='true'></i><div class='form-3col-clearfix'><select class='form-select'><option>Collection Title</option><option>Product Title</option><option>Product Type</option><option>Product Vendor</option><option>Product Price</option><option>Product Tag</option><option>Compare At Price</option><option>Weight</option><option>Inventory Stock</option><option>Varient Title</option></select></div><div class='form-3col-clearfix'><select class='form-select'><option>is equal to</option><option>is not equal to</option><option>is greater than</option><option>is less than</option><option>starts with</option><option>ends with</option><option>contains</option><option>does not contain</option></select></div><div class='form-3col-clearfix'><input class='form-input' type='text-box' placeholder='Enter condition'/></div></div>");
+		$("#add-condition-container").before("<div id='form-condition-row-1' class='form-clearfix' style='border-top: 0px; padding-top: 0px;'><i id='form-condition-remove-btn-1' class='fa fa-times form-condition-remove' aria-hidden='true'></i><div class='form-3col-clearfix'><select class='form-select'><option>Collection Title</option><option>Product Title</option><option>Product Type</option><option>Product Vendor</option><option>Product Price</option><option>Product Tag</option><option>Compare At Price</option><option>Weight</option><option>Inventory Stock</option><option>Varient Title</option></select></div><div class='form-3col-clearfix'><select class='form-select'><option>is equal to</option><option>is not equal to</option><option>is greater than</option><option>is less than</option><option>starts with</option><option>ends with</option><option>contains</option><option>does not contain</option></select></div><div class='form-3col-clearfix'><input class='form-input' type='text-box' placeholder='Enter condition'/></div></div>");
 });
 
+$('#form-condition-remove-btn-1').click(function(){
+		$("#form-condition-row-1").remove();
+});
 
 </script>
