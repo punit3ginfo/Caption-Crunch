@@ -71,10 +71,16 @@
 					<span>Products must match: </span>
 				</div>
 				<div class="form-3col-clearfix">
-					<input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>All conditions
+					<!-- <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>All conditions -->
+					<a id="-btn" href="javascript:void(0)" class="button-three-col grey-button">
+						<i id="-icon" class="fa fa-times" aria-hidden="true"></i> All conditions
+					</a>
 				</div>
 				<div class="form-3col-clearfix">
-					<input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Any condition
+					<!-- <input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Any condition -->
+					<a id="-btn" href="javascript:void(0)" class="button-three-col grey-button">
+						<i id="-icon" class="fa fa-times" aria-hidden="true"></i> Any condition
+					</a>
 				</div>
 			</div>
 			<div class="form-clearfix">
