@@ -1552,10 +1552,19 @@ select:focus {
   border: 1px solid #7ab55c; }
 
 .form-condition-remove {
-  font-size: 20px;
+  font-size: 16px !important;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 21px;
+  right: -5px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #555555;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out; }
+
+.form-condition-remove:hover {
+  font-size: 20px !important;
   color: #7ab55c; }
 
 .add-condition-button {
