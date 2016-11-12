@@ -254,7 +254,7 @@ $('.add-condition-button').click(function(){
 });
 
 $('#form-condition-remove-btn-one').click(function(){
-		$("div").remove("#form-condition-row-one");
+		$("#form-condition-row-one").remove();
 });
 
 </script>
