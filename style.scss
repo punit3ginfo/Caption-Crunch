@@ -52,6 +52,16 @@ body {
 
 /* ------------------- Type / Fonts --------------------*/
 
+$font-text-medium: 16px;
+@media (max-width: 1000px) {
+	$font-text-medium: 14px;
+}
+@media (max-width: 700px) {
+	$font-text-medium: 12px;
+}
+
+$font-text-large: 18px;
+
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,500,700');
 
 .cc-text-small {
@@ -64,7 +74,7 @@ body {
 
 .cc-text-medium {
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 16px;
+	font-size: $font-text-medium;
 	line-height: 18px;
 	color: $secondary-color;
 	font-weight: 500;
@@ -72,7 +82,7 @@ body {
 }
 
 .cc-text-large {
-	font-size: 18px;
+	font-size: $font-text-large;
 	line-height: 20px;
 	color: $secondary-color;
 	font-weight: 700;
@@ -189,7 +199,7 @@ body {
 	border: 1px solid $secondary-color;
 	padding: 12px 20px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 16px;
+	font-size: $font-text-medium;
 	color: $secondary-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
@@ -594,7 +604,7 @@ body {
 	border: 1px solid $secondary-color;
 	padding: 12px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 16px;
+	font-size: $font-text-medium;
 	color: $secondary-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
@@ -613,7 +623,7 @@ body {
 	border: 1px solid $brand-color;
 	padding: 12px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 16px;
+	font-size: $font-text-medium;
 	color: $brand-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
@@ -631,7 +641,7 @@ body {
 	border: 1px solid $brand-color;
 	padding: 11px 20px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 16px;
+	font-size: $font-text-medium;
 	color: $brand-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
@@ -660,7 +670,7 @@ body {
 .preview-steps-text {
 	line-height: 30px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 16px;
+	font-size: $font-text-medium;
 	color: $secondary-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
@@ -721,7 +731,7 @@ body {
 	height: 80px;
 	letter-spacing: 0.82px;
 	line-height: 25px;
-	font-size: 16px;
+	font-size: $font-text-medium;
 	color: black;
 	font-family:  'Ubuntu', sans-serif;
 	border: 0px;
@@ -771,7 +781,7 @@ body {
 .button-four-col {
 	padding: 11px 0px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 16px;
+	font-size: $font-text-medium;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
 	background: white;
@@ -1118,7 +1128,7 @@ body {
 
 .menu-font {
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 16px;
+	font-size: $font-text-medium;
 	color: $secondary-color;
 	letter-spacing: 0.82px;
 	line-height: 40px;
@@ -1373,7 +1383,7 @@ body {
 	left: 0px;
 	right: 0px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 16px;
+	font-size: $font-text-medium;
 	color: $secondary-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
@@ -1407,7 +1417,7 @@ body {
 	left: 20px;
 	right: 20px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 16px;
+	font-size: $font-text-medium;
 	color: $brand-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
@@ -1433,7 +1443,7 @@ body {
 	left: 20px;
 	right: 20px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 16px;
+	font-size: $font-text-medium;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
 	width: calc(100% - 40px);
@@ -1620,7 +1630,7 @@ a:hover {
 .caption-title-text {
 	line-height: 80px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 16px;
+	font-size: $font-text-medium;
 	color: $secondary-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
@@ -1633,7 +1643,7 @@ a:hover {
 	border: 0px;
 	border-bottom: 1px solid $brand-color;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 16px;
+	font-size: $font-text-medium;
 	color: $secondary-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
@@ -1642,7 +1652,7 @@ a:hover {
 .caption-title-text-box::-webkit-input-placeholder {
 	color: $secondary-color;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 16px;
+	font-size: $font-text-medium;
 	color: $secondary-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
@@ -1652,7 +1662,7 @@ a:hover {
 	border: 1px solid $brand-color;
 	padding: 11px 20px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 16px;
+	font-size: $font-text-medium;
 	color: $brand-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
@@ -1733,7 +1743,7 @@ a:hover {
 .button-three-col {
 	padding: 11px 0px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 16px;
+	font-size: $font-text-medium;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
 	background: white;
@@ -1830,7 +1840,7 @@ select:focus {
 	border: 1px solid $secondary-color;
 	padding: 11px 20px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 16px;
+	font-size: $font-text-medium;
 	color: $secondary-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
@@ -1854,7 +1864,7 @@ select:focus {
 	bottom: 20px;
 	color: $brand-color;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 16px;
+	font-size: $font-text-medium;
 	left: 20px;
 	letter-spacing: 0.82px;
 	padding: 11px 20px;
@@ -1976,7 +1986,7 @@ ul#pagination-list li {
 	left: 20px;
 	right: 20px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 16px;
+	font-size: $font-text-medium;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
 	background: white;
@@ -2000,7 +2010,7 @@ ul#pagination-list li {
 	left: 20px;
 	right: 20px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 16px;
+	font-size: $font-text-medium;
 	color: $brand-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
