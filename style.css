@@ -1077,6 +1077,9 @@ body {
   box-sizing: border-box;
   position: relative; }
 
+@media (max-width: 950px) {
+  .product-card-clearfix {
+    width: calc(50% - 12px); } }
 .product-card-container {
   background: white none repeat scroll 0 0;
   box-shadow: 1px -2px 17px 0 rgba(0, 0, 0, 0.14);
