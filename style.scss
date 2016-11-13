@@ -51,13 +51,15 @@ body {
 }
 
 /* ------------------- Type / Fonts --------------------*/
-
-$font-text-medium: 16px;
+$medium-text: 16px;
+@media (min-width: 1001px) {
+	$medium-text: 16px;
+}
 @media (max-width: 1000px) {
-	$font-text-medium: 14px;
+	$medium-text: 14px;
 }
 @media (max-width: 835px) {
-	$font-text-medium: 12px;
+	$medium-text: 12px;
 }
 
 $font-text-large: 18px;
@@ -74,7 +76,7 @@ $font-text-large: 18px;
 
 .cc-text-medium {
 	font-family: 'Ubuntu', sans-serif;
-	font-size: $font-text-medium;
+	font-size: $medium-text;
 	line-height: 18px;
 	color: $secondary-color;
 	font-weight: 500;
@@ -109,6 +111,37 @@ $font-text-large: 18px;
 }
 
 /* ------------------- Caption Crunch--------------------*/
+$tiny-text: 12px;
+$small-text: 14px;
+$medium-text: 16px;
+$large-text: 18px;
+
+@media (min-width: 1001px) {
+	.btn {
+		padding: 11px 0px;
+		font-family: 'Ubuntu', sans-serif;
+		font-size: $medium-text;
+		letter-spacing: 0.82px;
+		text-transform: uppercase;
+		background: white;
+		text-align: center;
+		font-weight: bold; 
+		margin-top: 10px;
+		border-radius: 23px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.btn {
+		font-size: $small-text;
+	}
+}
+
+@media (max-width: 835px) {
+	.btn {
+		font-size: $tiny-text;
+	}
+}
 
 .grey-button {
 	border: 1px solid $secondary-color;
@@ -199,7 +232,7 @@ $font-text-large: 18px;
 	border: 1px solid $secondary-color;
 	padding: 12px 20px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: $font-text-medium;
+	font-size: $medium-text;
 	color: $secondary-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
@@ -604,7 +637,7 @@ $font-text-large: 18px;
 	border: 1px solid $secondary-color;
 	padding: 12px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: $font-text-medium;
+	font-size: $medium-text;
 	color: $secondary-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
@@ -623,7 +656,7 @@ $font-text-large: 18px;
 	border: 1px solid $brand-color;
 	padding: 12px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: $font-text-medium;
+	font-size: $medium-text;
 	color: $brand-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
@@ -641,7 +674,7 @@ $font-text-large: 18px;
 	border: 1px solid $brand-color;
 	padding: 11px 20px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: $font-text-medium;
+	font-size: $medium-text;
 	color: $brand-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
@@ -670,7 +703,7 @@ $font-text-large: 18px;
 .preview-steps-text {
 	line-height: 30px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: $font-text-medium;
+	font-size: $medium-text;
 	color: $secondary-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
@@ -731,7 +764,7 @@ $font-text-large: 18px;
 	height: 80px;
 	letter-spacing: 0.82px;
 	line-height: 25px;
-	font-size: $font-text-medium;
+	font-size: $medium-text;
 	color: black;
 	font-family:  'Ubuntu', sans-serif;
 	border: 0px;
@@ -781,7 +814,7 @@ $font-text-large: 18px;
 .button-four-col {
 	padding: 11px 0px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: $font-text-medium;
+	font-size: $medium-text;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
 	background: white;
@@ -795,7 +828,7 @@ $font-text-large: 18px;
 	border: 1px solid $brand-color;
 	color: $brand-color;
 }
- 
+
 .preview-share-button:hover {
 	color: white;
 	background: $brand-color;
@@ -1128,7 +1161,7 @@ $font-text-large: 18px;
 
 .menu-font {
 	font-family: 'Ubuntu', sans-serif;
-	font-size: $font-text-medium;
+	font-size: $medium-text;
 	color: $secondary-color;
 	letter-spacing: 0.82px;
 	line-height: 40px;
@@ -1383,7 +1416,7 @@ $font-text-large: 18px;
 	left: 0px;
 	right: 0px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: $font-text-medium;
+	font-size: $medium-text;
 	color: $secondary-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
@@ -1410,30 +1443,11 @@ $font-text-large: 18px;
 }
 
 .share-button {
-	border: 1px solid $brand-color;
-	padding: 11px 20px;
 	position: absolute;
 	bottom: 20px;
 	left: 20px;
 	right: 20px;
-	font-family: 'Ubuntu', sans-serif;
-	font-size: $font-text-medium;
-	color: $brand-color;
-	letter-spacing: 0.82px;
-	text-transform: uppercase;
-	background: white;
 	width: calc(100% - 80px);
-	cursor: pointer;
-	font-weight: bold;
-	border-radius: 23px;
-}
-
-.share-button:hover {
-	border: 1px solid $brand-color;
-	background: $brand-color;
-	color: white;
-	text-decoration: none;
-	cursor: pointer;
 }
 
 .reset-button {
@@ -1443,7 +1457,7 @@ $font-text-large: 18px;
 	left: 20px;
 	right: 20px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: $font-text-medium;
+	font-size: $medium-text;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
 	width: calc(100% - 40px);
@@ -1630,7 +1644,7 @@ a:hover {
 .caption-title-text {
 	line-height: 80px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: $font-text-medium;
+	font-size: $medium-text;
 	color: $secondary-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
@@ -1643,7 +1657,7 @@ a:hover {
 	border: 0px;
 	border-bottom: 1px solid $brand-color;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: $font-text-medium;
+	font-size: $medium-text;
 	color: $secondary-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
@@ -1652,7 +1666,7 @@ a:hover {
 .caption-title-text-box::-webkit-input-placeholder {
 	color: $secondary-color;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: $font-text-medium;
+	font-size: $medium-text;
 	color: $secondary-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
@@ -1662,7 +1676,7 @@ a:hover {
 	border: 1px solid $brand-color;
 	padding: 11px 20px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: $font-text-medium;
+	font-size: $medium-text;
 	color: $brand-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
@@ -1743,7 +1757,7 @@ a:hover {
 .button-three-col {
 	padding: 11px 0px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: $font-text-medium;
+	font-size: $medium-text;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
 	background: white;
@@ -1840,7 +1854,7 @@ select:focus {
 	border: 1px solid $secondary-color;
 	padding: 11px 20px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: $font-text-medium;
+	font-size: $medium-text;
 	color: $secondary-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
@@ -1864,7 +1878,7 @@ select:focus {
 	bottom: 20px;
 	color: $brand-color;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: $font-text-medium;
+	font-size: $medium-text;
 	left: 20px;
 	letter-spacing: 0.82px;
 	padding: 11px 20px;
@@ -1986,7 +2000,7 @@ ul#pagination-list li {
 	left: 20px;
 	right: 20px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: $font-text-medium;
+	font-size: $medium-text;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
 	background: white;
@@ -2010,7 +2024,7 @@ ul#pagination-list li {
 	left: 20px;
 	right: 20px;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: $font-text-medium;
+	font-size: $medium-text;
 	color: $brand-color;
 	letter-spacing: 0.82px;
 	text-transform: uppercase;
