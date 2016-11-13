@@ -60,7 +60,7 @@ $large-text: 18px;
 
 .cc-text-small {
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 14px;
+	font-size: $small-text;
 	line-height: 1.42857143;
 	color: $secondary-color;
 	font-weight: 100;
@@ -73,6 +73,18 @@ $large-text: 18px;
 	color: $secondary-color;
 	font-weight: 500;
 	letter-spacing: 0.82px;
+}
+
+@media (max-width: 1000px) {
+	.cc-text-medium {
+		font-size: $small-text;
+	}
+}
+
+@media (max-width: 835px) {
+	.cc-text-medium {
+		font-size: $tiny-text;
+	}
 }
 
 .cc-text-large {
