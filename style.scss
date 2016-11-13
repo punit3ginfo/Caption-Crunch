@@ -51,18 +51,10 @@ body {
 }
 
 /* ------------------- Type / Fonts --------------------*/
+$tiny-text: 12px;
+$small-text: 14px;
 $medium-text: 16px;
-@media (min-width: 1001px) {
-	$medium-text: 16px;
-}
-@media (max-width: 1000px) {
-	$medium-text: 14px;
-}
-@media (max-width: 835px) {
-	$medium-text: 12px;
-}
-
-$font-text-large: 18px;
+$large-text: 18px;
 
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,500,700');
 
@@ -84,7 +76,7 @@ $font-text-large: 18px;
 }
 
 .cc-text-large {
-	font-size: $font-text-large;
+	font-size: $large-text;
 	line-height: 20px;
 	color: $secondary-color;
 	font-weight: 700;
@@ -111,24 +103,18 @@ $font-text-large: 18px;
 }
 
 /* ------------------- Caption Crunch--------------------*/
-$tiny-text: 12px;
-$small-text: 14px;
-$medium-text: 16px;
-$large-text: 18px;
 
-@media (min-width: 1001px) {
-	.btn {
-		padding: 11px 0px;
-		font-family: 'Ubuntu', sans-serif;
-		font-size: $medium-text;
-		letter-spacing: 0.82px;
-		text-transform: uppercase;
-		background: white;
-		text-align: center;
-		font-weight: bold;
-		margin-top: 10px;
-		border-radius: 23px;
-	}
+.btn {
+	padding: 11px 0px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: $medium-text;
+	letter-spacing: 0.82px;
+	text-transform: uppercase;
+	background: white;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 10px;
+	border-radius: 23px;
 }
 
 @media (max-width: 1000px) {
@@ -1159,7 +1145,6 @@ $large-text: 18px;
 	word-break: break-all;
 }
 
-@media (min-width: 1001px) {
 	.menu-font {
 		font-family: 'Ubuntu', sans-serif;
 		font-size: $medium-text;
@@ -1171,7 +1156,6 @@ $large-text: 18px;
 		text-transform: uppercase;
 		font-weight: 600;
 	}
-}
 
 @media (max-width: 1000px) {
 	.menu-font {

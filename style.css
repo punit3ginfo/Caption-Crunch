@@ -77,18 +77,18 @@ body {
   float: left; }
 
 /* ------------------- Caption Crunch--------------------*/
-@media (min-width: 1001px) {
-  .btn {
-    padding: 11px 0px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.82px;
-    text-transform: uppercase;
-    background: white;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 10px;
-    border-radius: 23px; } }
+.btn {
+  padding: 11px 0px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.82px;
+  text-transform: uppercase;
+  background: white;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 23px; }
+
 @media (max-width: 1000px) {
   .btn {
     font-size: 14px; } }
@@ -968,17 +968,17 @@ body {
   overflow-y: hidden;
   word-break: break-all; }
 
-@media (min-width: 1001px) {
-  .menu-font {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 16px;
-    color: #555555;
-    letter-spacing: 0.82px;
-    line-height: 40px;
-    display: block;
-    width: 100%;
-    text-transform: uppercase;
-    font-weight: 600; } }
+.menu-font {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  color: #555555;
+  letter-spacing: 0.82px;
+  line-height: 40px;
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 600; }
+
 @media (max-width: 1000px) {
   .menu-font {
     font-size: 14px; } }
