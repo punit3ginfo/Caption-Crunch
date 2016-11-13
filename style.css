@@ -190,6 +190,9 @@ body {
   border-radius: 40px;
   border: 2px solid #d9dbdc; }
 
+@media (max-width: 1000px) {
+  .iphone {
+    transform: scale(0.9); } }
 .power {
   position: absolute;
   background: #d9dbdc;
