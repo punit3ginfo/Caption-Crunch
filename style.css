@@ -968,17 +968,23 @@ body {
   overflow-y: hidden;
   word-break: break-all; }
 
-.menu-font {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 16px;
-  color: #555555;
-  letter-spacing: 0.82px;
-  line-height: 40px;
-  display: block;
-  width: 100%;
-  text-transform: uppercase;
-  font-weight: 600; }
-
+@media (min-width: 1001px) {
+  .menu-font {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    color: #555555;
+    letter-spacing: 0.82px;
+    line-height: 40px;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600; } }
+@media (max-width: 1000px) {
+  .menu-font {
+    font-size: 14px; } }
+@media (max-width: 835px) {
+  .menu-font {
+    font-size: 12px; } }
 .menu-container:hover .menu-font {
   color: white; }
 
