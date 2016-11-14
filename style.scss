@@ -1892,20 +1892,9 @@ select:focus {
 }
 
 .add-condition-button {
-	border: 1px solid $secondary-color;
-	padding: 11px 20px;
-	font-family: 'Ubuntu', sans-serif;
-	font-size: $medium-text;
-	color: $secondary-color;
-	letter-spacing: 0.82px;
-	text-transform: uppercase;
-	background: white;
-	display: block;
 	width: calc(100% - 75px);
 	margin: auto;
 	text-align: center;
-	font-weight: bold;
-	border-radius: 23px;
 }
 
 .add-condition-button:hover {

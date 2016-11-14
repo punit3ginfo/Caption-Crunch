@@ -115,7 +115,7 @@
 				</div>
 			</div>
 			<div class="form-clearfix" id="add-condition-container">
-				<a href="#" class="add-condition-button"><i class="fa fa-plus" aria-hidden="true"></i> Add another condition</a>
+				<a href="#" class="add-condition-button btn grey-button"><i class="fa fa-plus" aria-hidden="true"></i> Add another condition</a>
 			</div>
 		</div>
 

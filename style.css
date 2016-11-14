@@ -1617,20 +1617,9 @@ select:focus {
   color: #7ab55c; }
 
 .add-condition-button {
-  border: 1px solid #555555;
-  padding: 11px 20px;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 16px;
-  color: #555555;
-  letter-spacing: 0.82px;
-  text-transform: uppercase;
-  background: white;
-  display: block;
   width: calc(100% - 75px);
   margin: auto;
-  text-align: center;
-  font-weight: bold;
-  border-radius: 23px; }
+  text-align: center; }
 
 .add-condition-button:hover {
   color: white;
