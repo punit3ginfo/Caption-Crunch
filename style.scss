@@ -812,6 +812,12 @@ $large-text: 18px;
 	width: 23%;
 }
 
+@media (max-width: 1000px) {
+	.button-four-col {
+		font-size: $tiny-text;
+	}
+}
+
 .preview-right-clearfix {
 	width: auto;
 	height: calc(100vh - 120px);
