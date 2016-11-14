@@ -144,16 +144,16 @@ try
 						$('.collections-animation-container').addClass("collections-animation");
 						$('#preview-container').addClass("preview-container-animate");
 						//  Preview
-						var CaptionLong = "Grab the <?php echo $title; ?> for $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here --> <?php echo $productUrl; ?>";
+						var CaptionOne = "Grab the <?php echo $title; ?> for $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: <?php echo $productUrl; ?>";
 						// var CaptionShort = "<?php echo $title; ?>. Now $<?php echo $price; ?>! Was $<?php echo $ComparePrice; ?>! Link ---> <?php echo $productUrl; ?>";
 
 						$("#caption-textarea-large").ready(function() {
-							$("#preview-textarea-large").html(CaptionLong);
+							$("#preview-textarea-large").html(CaptionOne);
 							// $("#preview-textarea-small").html(CaptionShort);
 						});
 
 						$(".facebook-mobile-caption-text").ready(function() {
-							$(".facebook-mobile-caption-text").html(CaptionLong);
+							$(".facebook-mobile-caption-text").html(CaptionOne);
 						});
 
 						$("#addimage-image-one").ready(function() {
