@@ -114,7 +114,7 @@ try
 					</div>
 				</div>
 
-				<a class='btn green-button share-button' id='share-button-<?php echo $p_id1; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
+				<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
 
 				<script>
 
