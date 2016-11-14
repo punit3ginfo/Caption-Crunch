@@ -141,7 +141,7 @@ $large-text: 18px;
 }
 
 /* Grey Button*/
-.green-button {
+.grey-button {
   border: 1px solid $secondary-color;
   color: $secondary-color;
   display: inline-block;
@@ -156,7 +156,7 @@ $large-text: 18px;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-.green-button:before {
+.grey-button:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -175,10 +175,10 @@ $large-text: 18px;
   transition-timing-function: ease-out;
   border-radius: 23px;
 }
-.green-button:hover, .green-button:focus, .green-button:active {
+.grey-button:hover, .grey-button:focus, .grey-button:active {
   color: white;
 }
-.green-button:hover:before, .green-button:focus:before, .green-button:active:before {
+.grey-button:hover:before, .grey-button:focus:before, .grey-button:active:before {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
