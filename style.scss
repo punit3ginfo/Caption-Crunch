@@ -810,56 +810,7 @@ $large-text: 18px;
 }
 
 .button-four-col {
-	padding: 11px 0px;
-	font-family: 'Ubuntu', sans-serif;
-	font-size: $medium-text;
-	letter-spacing: 0.82px;
-	text-transform: uppercase;
-	background: white;
 	width: 23%;
-	text-align: center;
-	font-weight: bold;
-	border-radius: 23px;
-}
-
-.preview-share-button {
-	border: 1px solid $brand-color;
-	color: $brand-color;
-}
-
-.preview-share-button:hover {
-	color: white;
-	background: $brand-color;
-}
-
-.preview-sharenext-button {
-	border: 1px solid $secondary-color;
-	color: $secondary-color;
-}
-
-.preview-sharenext-button:hover {
-	color: white;
-	background: $secondary-color;
-}
-
-.preview-sharelater-button {
-	border: 1px solid $secondary-color;
-	color: $secondary-color;
-}
-
-.preview-sharelater-button:hover {
-	color: white;
-	background: $secondary-color;
-}
-
-.preview-schedule-button {
-	border: 1px solid $secondary-color;
-	color: $secondary-color;
-}
-
-.preview-schedule-button:hover {
-	color: white;
-	background: $secondary-color;
 }
 
 .preview-right-clearfix {
