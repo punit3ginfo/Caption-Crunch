@@ -602,6 +602,7 @@ $large-text: 18px;
 	position: relative;
 	overflow: hidden;
 	width: auto;
+	padding-right: 0px;
 }
 
 .preview-template-container {
@@ -977,7 +978,7 @@ $large-text: 18px;
 	height: 100%;
 }
 .main_container {
-	width: calc(100% - 30px);
+	width: calc(100% - 15px);
 	height: 100%;
 	padding: 15px;
 	display: inline-table;
@@ -1503,7 +1504,7 @@ $large-text: 18px;
 /* ------------ Collections Header --------------- */
 
 .content-header {
-	width: 100%;
+	width: calc(100% - 18px);
 	margin: auto;
 	height: 80px;
 	position: absolute;
