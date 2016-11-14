@@ -1612,7 +1612,7 @@ select:focus {
   text-align: center; }
 
 .add-condition-button {
-  width: calc(100% - 75px);
+  width: calc(100% - 35px);
   margin: auto;
   text-align: center; }
 
