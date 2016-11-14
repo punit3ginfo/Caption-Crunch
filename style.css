@@ -1608,6 +1608,9 @@ select:focus {
   font-size: 20px !important;
   color: #7ab55c; }
 
+#add-condition-container {
+  text-align: center; }
+
 .add-condition-button {
   width: calc(100% - 75px);
   margin: auto;

@@ -1886,6 +1886,10 @@ select:focus {
 	color: $brand-color;
 }
 
+#add-condition-container {
+	text-align: center;
+}
+
 .add-condition-button {
 	width: calc(100% - 75px);
 	margin: auto;
