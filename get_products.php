@@ -144,7 +144,7 @@ try
 						$('.collections-animation-container').addClass("collections-animation");
 						$('#preview-container').addClass("preview-container-animate");
 						//  Preview
-						var CaptionLong = "<?php echo $title; ?> is on sale for $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Check it out: <?php echo $productUrl; ?>";
+						var CaptionLong = "Grab the <?php echo $title; ?> for $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Check it out: <?php echo $productUrl; ?>";
 						// var CaptionShort = "<?php echo $title; ?>. Now $<?php echo $price; ?>! Was $<?php echo $ComparePrice; ?>! Link ---> <?php echo $productUrl; ?>";
 
 						$("#caption-textarea-large").ready(function() {
