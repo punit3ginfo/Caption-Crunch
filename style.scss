@@ -1617,7 +1617,8 @@ $large-text: 18px;
 /* ------------ Collections Header --------------- */
 
 .content-header {
-	width: calc(100% - 18px);
+	width: calc(100% - 33px);
+	padding-left: 15px;
 	margin: auto;
 	height: 80px;
 	position: absolute;
