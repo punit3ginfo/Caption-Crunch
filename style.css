@@ -116,6 +116,9 @@ body {
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s; }
 
+.grey-button:hover {
+  background-color: #555555; }
+
 .grey-button:before {
   content: "";
   position: absolute;
@@ -157,6 +160,9 @@ body {
   transition-property: color;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s; }
+
+.grey-button:hover {
+  background-color: #7ab55c; }
 
 .green-button:before {
   content: "";
@@ -1463,21 +1469,7 @@ a:hover {
   text-transform: uppercase; }
 
 .save-button {
-  border: 1px solid #7ab55c;
-  padding: 11px 20px;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 16px;
-  color: #7ab55c;
-  letter-spacing: 0.82px;
-  text-transform: uppercase;
-  background: white;
-  font-weight: bold; }
-
-.save-button:hover {
-  border: 1px solid #7ab55c;
-  background: #7ab55c;
-  color: white;
-  text-decoration: none; }
+  padding: 11px 20px; }
 
 /* ---------------- Form ----------------- */
 .form {
@@ -1620,10 +1612,6 @@ select:focus {
   width: calc(100% - 75px);
   margin: auto;
   text-align: center; }
-
-.add-condition-button:hover {
-  color: white;
-  background: #555555; }
 
 .unshare-button {
   background: white none repeat scroll 0 0;
