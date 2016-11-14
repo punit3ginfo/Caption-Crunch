@@ -37,6 +37,11 @@ body {
   color: #555555;
   font-weight: 100; }
 
+.fa:hover,
+.fa:focus,
+.fa:active {
+  transform: scale(1.1); }
+
 /* ------------------- Type / Fonts --------------------*/
 .cc-text-small {
   font-family: 'Ubuntu', sans-serif;
