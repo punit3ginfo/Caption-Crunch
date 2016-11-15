@@ -157,6 +157,9 @@ try
 							$("#preview-textarea-large").html($CaptionOne);
 							$(".facebook-mobile-caption-text").html();
 							$(".facebook-mobile-caption-text").html($CaptionOne);
+							$("#caption-one").addClass('green-button');
+							$("#caption-two").removeClass('grey-button');
+							$("#caption-three").removeClass('grey-button');
 						});
 
 						$("#caption-two").click(function() {
@@ -164,6 +167,9 @@ try
 							$("#preview-textarea-large").html($CaptionTwo);
 							$(".facebook-mobile-caption-text").html();
 							$(".facebook-mobile-caption-text").html($CaptionTwo);
+							$("#caption-two").addClass('green-button');
+							$("#caption-one").removeClass('grey-button');
+							$("#caption-three").removeClass('grey-button');
 						});
 
 						$("#caption-three").click(function() {
@@ -171,6 +177,9 @@ try
 							$("#preview-textarea-large").html($CaptionThree);
 							$(".facebook-mobile-caption-text").html();
 							$(".facebook-mobile-caption-text").html($CaptionThree);
+							$("#caption-three").addClass('green-button');
+							$("#caption-two").removeClass('grey-button');
+							$("#caption-one").removeClass('grey-button');
 						});
 
 						$("#addimage-image-one").ready(function() {
