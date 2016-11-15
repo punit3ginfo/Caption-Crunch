@@ -148,9 +148,9 @@ try
 						// Money Calc
 						var dollarsOff = "<?php echo $price; ?> - <?php echo $ComparePrice; ?>";
 
-						var $CaptionOne = "Grab the <?php echo $title; ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: <?php echo $productUrl; ?>";
-						var $CaptionTwo = "STEAL ALERT! <?php echo $title; ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> <?php echo $productUrl; ?>";
-						var $CaptionThree = "Take $<?php echo $dollarsOff; ?> off the <?php echo $title; ?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> <?php echo $productUrl; ?>";
+						var $CaptionOne = "Grab the <?php echo $title; ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: http://buff.ly/2fVq7rY";
+						var $CaptionTwo = "STEAL ALERT! <?php echo $title; ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> http://buff.ly/2fVq7rY";
+						var $CaptionThree = "Take $<?php echo $dollarsOff; ?> off the <?php echo $title; ?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> http://buff.ly/2fVq7rY";
 
 						$("#preview-textarea-large").ready(function() {
 							$("#preview-textarea-large").html();
