@@ -1,4 +1,4 @@
-@import "url('https://fonts.googleapis.com/css?family=Ubuntu:300","500","700')";
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300','500','700');
 
 $brand-color     : #7ab55c;
 $secondary-color : #555555;
@@ -38,7 +38,7 @@ select option {
 
 input {
 		font-size : 14px;
-} 
+}
 
 body {
 		position         : relative;
