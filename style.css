@@ -842,7 +842,8 @@ body {
   float: left;
   width: 25px;
   height: 25px;
-  background: black; }
+  background-image: url("https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/14344257_952172971578006_3031811389932783738_n.jpg?oh=1f82cc4f8b30588c9d38ad64e16707ce&oe=58C6F479");
+  background-size: 100% 100%; }
 
 .facebook-mobile-page-name-container {
   display: inline-block;
@@ -859,7 +860,7 @@ body {
   font-family: "Helvetica Neue";
   font-size: 10px;
   font-weight: bold;
-  line-height: 25px; }
+  line-height: 12px; }
 
 .facebook-mobile-page-time {
   display: block;
