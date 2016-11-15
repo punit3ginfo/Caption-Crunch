@@ -1,42 +1,40 @@
 /*
-Error: File to import not found or unreadable: url('https://fonts.googleapis.com/css?family=Ubuntu:300','500','700').
-        on line 3 of style.scss
+Error: Invalid CSS after "...-image  : url('": expected ")", was "./images/facebo..."
+        on line 945 of style.scss
 
-1: @charset "UTF-8";
-2: 
-3: @import "url('https://fonts.googleapis.com/css?family=Ubuntu:300','500','700')";
-4: 
-5: $brand-color     : #7ab55c;
-6: $secondary-color : #555555;
-7: $tiny-text       : 12px;
-8: $small-text      : 14px;
+940: 
+941: .facebook-mobile-ios-header {
+942: 		position          : relative;
+943: 		width             : 100%;
+944: 		height            : 11px;
+945: 		background-image  : url('./images/facebook-mobile-ios-header.jpg');
+946: 		background-repeat : no-repeat;
+947: 		background-size   : 100% auto;
+948: }
+949: 
+950: .facebook-mobile-header {
 
 Backtrace:
-style.scss:3
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:45:in `import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+style.scss:945
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/lexer.rb:229:in `expected!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/parser.rb:711:in `assert_tok'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/parser.rb:535:in `funcall'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/parser.rb:702:in `assert_expr'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/parser.rb:223:in `parse_string'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1051:in `sass_script'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:384:in `import_arg'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1103:in `expr!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:371:in `block in import_directive'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:370:in `loop'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:370:in `import_directive'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:222:in `special_directive'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:197:in `directive'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
@@ -55,4 +53,4 @@ style.scss:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: url('https://fonts.googleapis.com/css?family=Ubuntu:300','500','700').\A         on line 3 of style.scss\A \A 1: @charset \"UTF-8\";\A 2: \A 3: @import \"url('https://fonts.googleapis.com/css?family=Ubuntu:300','500','700')\";\A 4: \A 5: $brand-color     : #7ab55c;\A 6: $secondary-color : #555555;\A 7: $tiny-text       : 12px;\A 8: $small-text      : 14px;"; }
+  content: "Error: Invalid CSS after \"...-image  : url('\": expected \")\", was \"./images/facebo...\"\A         on line 945 of style.scss\A \A 940: \A 941: .facebook-mobile-ios-header {\A 942: 		position          : relative;\A 943: 		width             : 100%;\A 944: 		height            : 11px;\A 945: 		background-image  : url('./images/facebook-mobile-ios-header.jpg');\A 946: 		background-repeat : no-repeat;\A 947: 		background-size   : 100% auto;\A 948: }\A 949: \A 950: .facebook-mobile-header {"; }
