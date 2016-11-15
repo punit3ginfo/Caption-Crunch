@@ -1,0 +1,239 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'node-sass',
+1 verbose cli   '-g' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'node-sass', null ]
+7 verbose cache add spec node-sass
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'node-sass',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'node-sass',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed node-sass@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for node-sass
+11 info addNameTag [ 'node-sass', 'latest' ]
+12 silly mapToRegistry name node-sass
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'node-sass',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'node-sass',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/node-sass
+17 verbose addNameTag registry:https://registry.npmjs.org/node-sass not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/node-sass
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 8:58:19 PM
+21 verbose request id 5a66ad6d41ba33fb
+22 verbose etag W/"58286cf3-31427"
+23 verbose lastModified Sun, 13 Nov 2016 13:38:59 GMT
+24 http request GET https://registry.npmjs.org/node-sass
+25 http 200 https://registry.npmjs.org/node-sass
+26 verbose headers { server: 'nginx/1.10.1',
+26 verbose headers   'content-type': 'application/json',
+26 verbose headers   'last-modified': 'Tue, 15 Nov 2016 03:30:08 GMT',
+26 verbose headers   etag: 'W/"582a8140-34f91"',
+26 verbose headers   'content-encoding': 'gzip',
+26 verbose headers   'cache-control': 'max-age=300',
+26 verbose headers   'content-length': '22438',
+26 verbose headers   'accept-ranges': 'bytes',
+26 verbose headers   date: 'Tue, 15 Nov 2016 04:58:19 GMT',
+26 verbose headers   via: '1.1 varnish',
+26 verbose headers   age: '142',
+26 verbose headers   connection: 'keep-alive',
+26 verbose headers   'x-served-by': 'cache-sea1923-SEA',
+26 verbose headers   'x-cache': 'HIT',
+26 verbose headers   'x-cache-hits': '5',
+26 verbose headers   'x-timer': 'S1479185899.473444,VS0,VE0',
+26 verbose headers   vary: 'Accept-Encoding' }
+27 silly get cb [ 200,
+27 silly get   { server: 'nginx/1.10.1',
+27 silly get     'content-type': 'application/json',
+27 silly get     'last-modified': 'Tue, 15 Nov 2016 03:30:08 GMT',
+27 silly get     etag: 'W/"582a8140-34f91"',
+27 silly get     'content-encoding': 'gzip',
+27 silly get     'cache-control': 'max-age=300',
+27 silly get     'content-length': '22438',
+27 silly get     'accept-ranges': 'bytes',
+27 silly get     date: 'Tue, 15 Nov 2016 04:58:19 GMT',
+27 silly get     via: '1.1 varnish',
+27 silly get     age: '142',
+27 silly get     connection: 'keep-alive',
+27 silly get     'x-served-by': 'cache-sea1923-SEA',
+27 silly get     'x-cache': 'HIT',
+27 silly get     'x-cache-hits': '5',
+27 silly get     'x-timer': 'S1479185899.473444,VS0,VE0',
+27 silly get     vary: 'Accept-Encoding' } ]
+28 verbose get saving node-sass to /Users/LucasJSailer/.npm/registry.npmjs.org/node-sass/.cache.json
+29 verbose correctMkdir /Users/LucasJSailer/.npm correctMkdir not in flight; initializing
+30 silly addNameTag next cb for node-sass with tag latest
+31 silly addNamed node-sass@3.12.5
+32 verbose addNamed "3.12.5" is a plain semver version for node-sass
+33 silly mapToRegistry name node-sass
+34 silly mapToRegistry using default registry
+35 silly mapToRegistry registry https://registry.npmjs.org/
+36 silly mapToRegistry data Result {
+36 silly mapToRegistry   raw: 'node-sass',
+36 silly mapToRegistry   scope: null,
+36 silly mapToRegistry   name: 'node-sass',
+36 silly mapToRegistry   rawSpec: '',
+36 silly mapToRegistry   spec: 'latest',
+36 silly mapToRegistry   type: 'tag' }
+37 silly mapToRegistry uri https://registry.npmjs.org/node-sass
+38 verbose addRemoteTarball https://registry.npmjs.org/node-sass/-/node-sass-3.12.5.tgz not in flight; adding
+39 verbose addRemoteTarball [ 'https://registry.npmjs.org/node-sass/-/node-sass-3.12.5.tgz',
+39 verbose addRemoteTarball   '5d7c4bd205d670422793c4b0597dd04d4537452b' ]
+40 info retry fetch attempt 1 at 8:58:19 PM
+41 info attempt registry request try #1 at 8:58:19 PM
+42 http fetch GET https://registry.npmjs.org/node-sass/-/node-sass-3.12.5.tgz
+43 http fetch 200 https://registry.npmjs.org/node-sass/-/node-sass-3.12.5.tgz
+44 silly fetchAndShaCheck shasum 5d7c4bd205d670422793c4b0597dd04d4537452b
+45 verbose addTmpTarball /var/folders/v6/6jmbvgxd0vn8lm3z336jynsw0000gn/T/npm-14614-76f31eb5/registry.npmjs.org/node-sass/-/node-sass-3.12.5.tgz not in flight; adding
+46 verbose addTmpTarball already have metadata; skipping unpack for node-sass@3.12.5
+47 verbose correctMkdir /Users/LucasJSailer/.npm correctMkdir not in flight; initializing
+48 silly cache afterAdd node-sass@3.12.5
+49 verbose afterAdd /Users/LucasJSailer/.npm/node-sass/3.12.5/package/package.json not in flight; writing
+50 verbose correctMkdir /Users/LucasJSailer/.npm correctMkdir not in flight; initializing
+51 verbose afterAdd /Users/LucasJSailer/.npm/node-sass/3.12.5/package/package.json written
+52 silly install resolved [ { name: 'node-sass',
+52 silly install resolved     version: '3.12.5',
+52 silly install resolved     libsass: '3.3.6',
+52 silly install resolved     description: 'Wrapper around libsass',
+52 silly install resolved     license: 'MIT',
+52 silly install resolved     bugs: { url: 'https://github.com/sass/node-sass/issues' },
+52 silly install resolved     homepage: 'https://github.com/sass/node-sass',
+52 silly install resolved     repository:
+52 silly install resolved      { type: 'git',
+52 silly install resolved        url: 'git+https://github.com/sass/node-sass.git' },
+52 silly install resolved     author:
+52 silly install resolved      { name: 'Andrew Nesbitt',
+52 silly install resolved        email: 'andrewnez@gmail.com',
+52 silly install resolved        url: 'http://andrew.github.com' },
+52 silly install resolved     engines: { node: '>=0.10.0' },
+52 silly install resolved     main: 'lib/index.js',
+52 silly install resolved     nodeSassConfig: { binarySite: 'https://github.com/sass/node-sass/releases/download' },
+52 silly install resolved     bin: { 'node-sass': 'bin/node-sass' },
+52 silly install resolved     gypfile: true,
+52 silly install resolved     scripts:
+52 silly install resolved      { coverage: 'node scripts/coverage.js',
+52 silly install resolved        install: 'node scripts/install.js',
+52 silly install resolved        postinstall: 'node scripts/build.js',
+52 silly install resolved        lint: 'eslint bin/node-sass lib scripts test',
+52 silly install resolved        test: 'mocha test/{*,**/**}.js',
+52 silly install resolved        build: 'node scripts/build.js --force',
+52 silly install resolved        prepublish: 'not-in-install && node scripts/prepublish.js || in-install' },
+52 silly install resolved     files: [ 'bin', 'binding.gyp', 'lib', 'scripts', 'src', 'test', 'vendor' ],
+52 silly install resolved     keywords: [ 'css', 'libsass', 'preprocessor', 'sass', 'scss', 'style' ],
+52 silly install resolved     dependencies:
+52 silly install resolved      { 'async-foreach': '^0.1.3',
+52 silly install resolved        chalk: '^1.1.1',
+52 silly install resolved        'cross-spawn': '^3.0.0',
+52 silly install resolved        gaze: '^1.0.0',
+52 silly install resolved        'get-stdin': '^4.0.1',
+52 silly install resolved        glob: '^7.0.3',
+52 silly install resolved        'in-publish': '^2.0.0',
+52 silly install resolved        'lodash.assign': '^4.2.0',
+52 silly install resolved        'lodash.clonedeep': '^4.3.2',
+52 silly install resolved        meow: '^3.7.0',
+52 silly install resolved        mkdirp: '^0.5.1',
+52 silly install resolved        nan: '^2.3.2',
+52 silly install resolved        'node-gyp': '^3.3.1',
+52 silly install resolved        npmlog: '^4.0.0',
+52 silly install resolved        request: '^2.61.0',
+52 silly install resolved        'sass-graph': '^2.1.1' },
+52 silly install resolved     devDependencies:
+52 silly install resolved      { coveralls: '^2.11.8',
+52 silly install resolved        eslint: '^3.4.0',
+52 silly install resolved        istanbul: '^0.4.2',
+52 silly install resolved        mocha: '^3.1.2',
+52 silly install resolved        'mocha-lcov-reporter': '^1.2.0',
+52 silly install resolved        'object-merge': '^2.5.1',
+52 silly install resolved        'read-yaml': '^1.0.0',
+52 silly install resolved        rimraf: '^2.5.2',
+52 silly install resolved        'sass-spec': '^3.3.6-3' },
+52 silly install resolved     gitHead: '79237e6090f90d9ec0cc6ea026a7d09760b6b415',
+52 silly install resolved     _id: 'node-sass@3.12.5',
+52 silly install resolved     _shasum: '5d7c4bd205d670422793c4b0597dd04d4537452b',
+52 silly install resolved     _from: 'node-sass@latest',
+52 silly install resolved     _npmVersion: '3.10.3',
+52 silly install resolved     _nodeVersion: '6.5.0',
+52 silly install resolved     _npmUser: { name: 'xzyfer', email: 'xzyfer@gmail.com' },
+52 silly install resolved     dist:
+52 silly install resolved      { shasum: '5d7c4bd205d670422793c4b0597dd04d4537452b',
+52 silly install resolved        tarball: 'https://registry.npmjs.org/node-sass/-/node-sass-3.12.5.tgz' },
+52 silly install resolved     maintainers:
+52 silly install resolved      [ [Object],
+52 silly install resolved        [Object],
+52 silly install resolved        [Object],
+52 silly install resolved        [Object],
+52 silly install resolved        [Object],
+52 silly install resolved        [Object],
+52 silly install resolved        [Object] ],
+52 silly install resolved     _npmOperationalInternal:
+52 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+52 silly install resolved        tmp: 'tmp/node-sass-3.12.5.tgz_1479180608183_0.14344063214957714' },
+52 silly install resolved     directories: {},
+52 silly install resolved     _resolved: 'https://registry.npmjs.org/node-sass/-/node-sass-3.12.5.tgz' } ]
+53 info install node-sass@3.12.5 into /usr/local/lib
+54 info installOne node-sass@3.12.5
+55 verbose installOne of node-sass to /usr/local/lib not in flight; installing
+56 verbose correctMkdir /Users/LucasJSailer/.npm/_locks correctMkdir not in flight; initializing
+57 verbose lock using /Users/LucasJSailer/.npm/_locks/node-sass-42055b1ce46574a3.lock for /usr/local/lib/node_modules/node-sass
+58 silly install write writing node-sass 3.12.5 to /usr/local/lib/node_modules/node-sass
+59 verbose unbuild lib/node_modules/node-sass
+60 silly gentlyRm /usr/local/lib/node_modules/node-sass is being purged from base /usr/local
+61 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/node-sass
+62 verbose tar unpack /Users/LucasJSailer/.npm/node-sass/3.12.5/package.tgz
+63 verbose tar unpacking to /usr/local/lib/node_modules/node-sass
+64 silly gentlyRm /usr/local/lib/node_modules/node-sass is being purged
+65 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/node-sass
+66 silly gunzTarPerm modes [ '755', '644' ]
+67 error tar.unpack untar error /Users/LucasJSailer/.npm/node-sass/3.12.5/package.tgz
+68 verbose unlock done using /Users/LucasJSailer/.npm/_locks/node-sass-42055b1ce46574a3.lock for /usr/local/lib/node_modules/node-sass
+69 verbose fstream_path /usr/local/lib/node_modules/node-sass
+70 verbose fstream_type Directory
+71 verbose fstream_class DirWriter
+72 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/node-sass'
+72 verbose stack     at Error (native)
+73 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+73 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+73 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+74 verbose cwd /Users/LucasJSailer/Desktop/Caption-Crunch
+75 error Darwin 16.1.0
+76 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "node-sass" "-g"
+77 error node v4.4.5
+78 error npm  v2.15.5
+79 error path /usr/local/lib/node_modules/node-sass
+80 error code EACCES
+81 error errno -13
+82 error syscall mkdir
+83 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/node-sass'
+83 error     at Error (native)
+83 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/node-sass']
+83 error   errno: -13,
+83 error   code: 'EACCES',
+83 error   syscall: 'mkdir',
+83 error   path: '/usr/local/lib/node_modules/node-sass',
+83 error   fstream_type: 'Directory',
+83 error   fstream_path: '/usr/local/lib/node_modules/node-sass',
+83 error   fstream_class: 'DirWriter',
+83 error   fstream_stack:
+83 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+83 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+83 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+84 error Please try running this command again as root/Administrator.
+85 verbose exit [ -13, true ]
+86 verbose unbuild lib/node_modules/node-sass
+87 silly gentlyRm /usr/local/lib/node_modules/node-sass is being purged from base /usr/local
+88 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/node-sass
