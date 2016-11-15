@@ -328,3 +328,4 @@ catch (shopify\CurlException $e)
 	});
 	</script>
 	<?php } ?>
+ 
