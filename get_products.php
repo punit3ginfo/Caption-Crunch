@@ -146,15 +146,19 @@ try
 
 						//  Preview
 
-						var $CaptionOne = "Grab the <?php echo $title; ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: <span style='color: #365899;''>http://buff.ly/2fVq7rY</span>";
-						var $CaptionTwo = "STEAL ALERT! <?php echo $title; ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> <span style='color: #365899;''>http://buff.ly/2fVq7rY</span>";
-						var $CaptionThree = "Take 20% OFF the <?php echo $title; ?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> <span style='color: #365899;''>http://buff.ly/2fVq7rY</span>";
+						var $CaptionOneFB = "Grab the <?php echo $title; ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: <span style='color: #365899;''>http://buff.ly/2fVq7rY</span>";
+						var $CaptionTwoFB = "STEAL ALERT! <?php echo $title; ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> <span style='color: #365899;''>http://buff.ly/2fVq7rY</span>";
+						var $CaptionThreeFB = "Take 20% OFF the <?php echo $title; ?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> <span style='color: #365899;''>http://buff.ly/2fVq7rY</span>";
+
+						var $CaptionOne = "Grab the <?php echo $title; ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: http://buff.ly/2fVq7rY";
+						var $CaptionTwo = "STEAL ALERT! <?php echo $title; ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> http://buff.ly/2fVq7rY";
+						var $CaptionThree = "Take 20% OFF the <?php echo $title; ?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> http://buff.ly/2fVq7rY";
 
 						$("#preview-textarea-large").ready(function() {
 							$("#preview-textarea-large").html();
 							$("#preview-textarea-large").html($CaptionOne);
 							$(".facebook-mobile-caption-text").html();
-							$(".facebook-mobile-caption-text").html($CaptionOne);
+							$(".facebook-mobile-caption-text").html($CaptionOneFB);
 							$("#caption-one").addClass('green-button');
 							$("#caption-two").removeClass('green-button');
 							$("#caption-three").removeClass('green-button');
@@ -164,7 +168,7 @@ try
 							$("#preview-textarea-large").html();
 							$("#preview-textarea-large").html($CaptionOne);
 							$(".facebook-mobile-caption-text").html();
-							$(".facebook-mobile-caption-text").html($CaptionOne);
+							$(".facebook-mobile-caption-text").html($CaptionOneFB);
 							$("#caption-one").addClass('green-button');
 							$("#caption-two").removeClass('green-button');
 							$("#caption-three").removeClass('green-button');
@@ -174,7 +178,7 @@ try
 							$("#preview-textarea-large").html();
 							$("#preview-textarea-large").html($CaptionTwo);
 							$(".facebook-mobile-caption-text").html();
-							$(".facebook-mobile-caption-text").html($CaptionTwo);
+							$(".facebook-mobile-caption-text").html($CaptionTwoFB);
 							$("#caption-one").removeClass('green-button');
 							$("#caption-three").removeClass('green-button');
 							$("#caption-two").addClass('green-button');
@@ -184,7 +188,7 @@ try
 							$("#preview-textarea-large").html();
 							$("#preview-textarea-large").html($CaptionThree);
 							$(".facebook-mobile-caption-text").html();
-							$(".facebook-mobile-caption-text").html($CaptionThree);
+							$(".facebook-mobile-caption-text").html($CaptionThreeFB);
 							$("#caption-two").removeClass('green-button');
 							$("#caption-one").removeClass('green-button');
 							$("#caption-three").addClass('green-button');
