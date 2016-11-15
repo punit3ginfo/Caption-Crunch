@@ -42,15 +42,19 @@ input {
 
 body {
 		position         : relative;
+
+		overflow         : hidden;
+		overflow         : hidden;
+
 		width            : 100vw;
 		max-width        : 100vw;
 		height           : 100vh;
 		max-height       : 100vh;
 		margin           : 0;
+
 		color            : $secondary-color;
-		overflow         : hidden;
-		overflow         : hidden;
 		background-color : #D9E0E0;
+
 		font-family      : 'Ubuntu',
 		                   sans-serif;
 		font-size        : 14px;
@@ -62,6 +66,7 @@ body {
 
 .cc-text-small {
 		color       : $secondary-color;
+
 		font-family : 'Ubuntu',
 		              sans-serif;
 		font-size   : $small-text;
@@ -70,13 +75,15 @@ body {
 }
 
 .cc-text-medium {
+		letter-spacing : 0.82px;
+
 		color          : $secondary-color;
+
 		font-family    : 'Ubuntu',
 		                 sans-serif;
 		font-size      : $medium-text;
 		font-weight    : 500;
 		line-height    : 18px;
-		letter-spacing : 0.82px;
 }
 
 @media (max-width: 1000px) {
@@ -92,30 +99,38 @@ body {
 }
 
 .cc-text-large {
+		letter-spacing : 0.82px;
+
 		color          : $secondary-color;
+
 		font-family    : 'Ubuntu',
 		                 sans-serif;
 		font-size      : $large-text;
 		font-weight    : 700;
 		line-height    : 20px;
-		letter-spacing : 0.82px;
 }
 
 /* ------------------- Columns -------------------- */
 
 .three-col-container {
-		display    : inline-block;
 		position   : relative;
-		width      : 33%;
+
+		display    : inline-block;
 		float      : left;
+
+		width      : 33%;
+
 		text-align : center;
 }
 
 .four-col-container {
-		display    : inline-block;
 		position   : relative;
-		width      : 25%;
+
+		display    : inline-block;
 		float      : left;
+
+		width      : 25%;
+
 		text-align : center;
 }
 
@@ -123,15 +138,18 @@ body {
 
 .btn {
 		padding        : 11px 0px;
+
+		text-align     : center;
+		letter-spacing : 0.82px;
+		text-transform : uppercase;
+
 		border-radius  : 23px;
 		background     : white;
-		text-align     : center;
-		text-transform : uppercase;
+
 		font-family    : 'Ubuntu',
 		                 sans-serif;
 		font-size      : $medium-text;
 		font-weight    : bold;
-		letter-spacing : 0.82px;
 }
 
 @media (max-width: 1000px) {
@@ -149,44 +167,49 @@ body {
 /* Grey Button */
 
 .grey-button {
-		display                     : inline-block;
 		position                    : relative;
+
+		display                     : inline-block;
+
+		-webkit-transition-duration : 0.2s;
+		transition-duration         : 0.2s;
+		-webkit-transition-property : color;
+		transition-property         : color;
+		-webkit-transform           : perspective(1px) translateZ(0);
+		transform                   : perspective(1px) translateZ(0);
+		vertical-align              : middle;
+
 		color                       : $secondary-color;
 		border                      : 1px solid $secondary-color;
 		background-color         : white;
 		box-shadow                  : 0 0 1px transparent;
-		vertical-align              : middle;
-		-webkit-transform           : perspective(1px) translateZ(0);
-		transform                   : perspective(1px) translateZ(0);
-		-webkit-transition-property : color;
-		transition-property         : color;
-		-webkit-transition-duration : 0.2s;
-		transition-duration         : 0.2s;
 }
 
 .grey-button:hover {
-		background-color : $secondary-color;
 		color : white;
+		background-color : $secondary-color;
 }
 
 .grey-button:before {
-		z-index                            : -1;
-		content                            : "";
 		position                           : absolute;
+		z-index                            : -1;
 		top                                : 0;
 		right                              : 0;
 		bottom                             : 0;
 		left                               : 0;
-		border-radius                      : 23px;
-		background                         : $secondary-color;
-		-webkit-transform                  : scale(0);
-		transform                          : scale(0);
-		-webkit-transition-property        : transform;
-		transition-property                : transform;
-		-webkit-transition-duration        : 0.3s;
-		transition-duration                : 0.3s;
+
+		content                            : "";
 		-webkit-transition-timing-function : ease-out;
 		transition-timing-function         : ease-out;
+		-webkit-transition-duration        : 0.3s;
+		transition-duration                : 0.3s;
+		-webkit-transition-property        : transform;
+		transition-property                : transform;
+		-webkit-transform                  : scale(0);
+		transform                          : scale(0);
+
+		border-radius                      : 23px;
+		background                         : $secondary-color;
 }
 
 .grey-button:hover:before {
@@ -197,44 +220,49 @@ body {
 /* Green Button */
 
 .green-button {
-		display                     : inline-block;
 		position                    : relative;
+
+		display                     : inline-block;
+
+		-webkit-transition-duration : 0.2s;
+		transition-duration         : 0.2s;
+		-webkit-transition-property : color;
+		transition-property         : color;
+		-webkit-transform           : perspective(1px) translateZ(0);
+		transform                   : perspective(1px) translateZ(0);
+		vertical-align              : middle;
+
 		color                       : $brand-color;
 		border                      : 1px solid $brand-color;
 		background-color                  : white;
 		box-shadow                  : 0 0 1px transparent;
-		vertical-align              : middle;
-		-webkit-transform           : perspective(1px) translateZ(0);
-		transform                   : perspective(1px) translateZ(0);
-		-webkit-transition-property : color;
-		transition-property         : color;
-		-webkit-transition-duration : 0.2s;
-		transition-duration         : 0.2s;
 }
 
 .green-button:hover {
-		background-color : $brand-color;
 		color : white;
+		background-color : $brand-color;
 }
 
 .green-button:before {
-		z-index                            : -1;
-		content                            : "";
 		position                           : absolute;
+		z-index                            : -1;
 		top                                : 0;
 		right                              : 0;
 		bottom                             : 0;
 		left                               : 0;
-		border-radius                      : 23px;
-		background                         : $brand-color;
-		-webkit-transform                  : scale(0);
-		transform                          : scale(0);
-		-webkit-transition-property        : transform;
-		transition-property                : transform;
-		-webkit-transition-duration        : 0.3s;
-		transition-duration                : 0.3s;
+
+		content                            : "";
 		-webkit-transition-timing-function : ease-out;
 		transition-timing-function         : ease-out;
+		-webkit-transition-duration        : 0.3s;
+		transition-duration                : 0.3s;
+		-webkit-transition-property        : transform;
+		transition-property                : transform;
+		-webkit-transform                  : scale(0);
+		transform                          : scale(0);
+
+		border-radius                      : 23px;
+		background                         : $brand-color;
 }
 
 .green-button:hover:before {
@@ -246,6 +274,7 @@ body {
 
 .back {
 		position   : relative;
+
 		max-width  : 100vw;
 		max-height : 100vh;
 }
@@ -253,10 +282,12 @@ body {
 /* Header Nav */
 
 .navbar {
-		z-index       : 100;
 		position      : fixed;
+		z-index       : 100;
+
 		width         : 100vw;
 		height        : 63px;
+
 		border-bottom : 0px;
 		background    : #FFFFFF;
 		box-shadow    : 1px -2px 17px 0px rgba(0,0,0,0.34);
@@ -273,55 +304,65 @@ body {
 
 .header-cc-hammer-img {
 		display      : inline-block;
+
 		height       : 14px;
 		margin-right : 2px;
 }
 
 .header-help {
 		margin-left : -4px;
+
 		color       : $brand-color;
 }
 
 .header-central {
 		margin-left : -2px;
+
 		color       : $secondary-color;
 }
 
 .header-central,
 .header-help {
+		letter-spacing : 0.31px;
+
 		font-family    : 'Ubuntu',
 		                 sans-serif;
 		font-size      : 18px;
 		font-weight    : bold;
 		line-height    : 63px;
-		letter-spacing : 0.31px;
 }
 
 .main-nav-container {
-		height : 63px;
 		float  : right;
+
+		height : 63px;
 }
 
 .close-preview-container {
 		display      : none;
+		float        : left;
+
 		width        : auto;
 		height       : 63px;
-		float        : left;
 		margin-right : 10px;
+
 		align-items  : center;
 }
 
 .close-button {
 		padding        : 12px 20px;
+
+		cursor         : pointer;
+		letter-spacing : 0.82px;
+		text-transform : uppercase;
+
 		color          : $secondary-color;
 		border         : 1px solid $secondary-color;
 		background     : white;
-		text-transform : uppercase;
+
 		font-family    : 'Ubuntu',
 		                 sans-serif;
 		font-size      : $medium-text;
-		letter-spacing : 0.82px;
-		cursor         : pointer;
 }
 
 .close-button:hover {
@@ -331,11 +372,14 @@ body {
 }
 
 .nav-container {
-		display     : inline-block;
 		position    : relative;
+
+		display     : inline-block;
+		float       : right;
+
 		width       : 63px;
 		height      : 63px;
-		float       : right;
+
 		border-left : 1px solid #F2F3F3;
 }
 
@@ -347,6 +391,7 @@ body {
 		position  : absolute;
 		top       : 50%;
 		left      : 50%;
+
 		transform : translate(-50%, -50%);
 }
 
@@ -354,9 +399,11 @@ body {
 
 .iphone {
 		position      : relative;
+
 		width         : 225px;
 		height        : 440px;
 		margin        : 0 auto;
+
 		border        : 2px solid #d9dbdc;
 		border-radius : 40px;
 		background    : white;
@@ -372,8 +419,10 @@ body {
 		position                : absolute;
 		top                     : -.8%;
 		right                   : 17%;
+
 		width                   : 13%;
 		height                  : .8%;
+
 		border-top-left-radius  : .5em;
 		border-top-right-radius : .5em;
 		background              : #d9dbdc;
@@ -383,8 +432,10 @@ body {
 		position                  : absolute;
 		top                       : 12.5%;
 		left                      : -1.4%;
+
 		width                     : 1%;
 		height                    : 5%;
+
 		border-top-left-radius    : .5em;
 		border-bottom-left-radius : .5em;
 		background                : #d9dbdc;
@@ -394,8 +445,10 @@ body {
 		position                  : absolute;
 		top                       : 23%;
 		left                      : -1.4%;
+
 		width                     : 1%;
 		height                    : 4%;
+
 		border-top-left-radius    : .5em;
 		border-bottom-left-radius : .5em;
 		background                : #d9dbdc;
@@ -409,9 +462,11 @@ body {
 		position      : absolute;
 		top           : 4%;
 		left          : 48.5%;
+
 		width         : 3%;
 		height        : 0;
 		padding-top   : 3%;
+
 		border-radius : 50%;
 		background    : #3f3f3f;
 }
@@ -420,17 +475,21 @@ body {
 		position      : absolute;
 		top           : 7%;
 		left          : 42.5%;
+
 		width         : 15%;
 		height        : 0;
 		padding-top   : 2%;
+
 		border-radius : 1em;
 		background    : #3f3f3f;
 }
 
 .appleicon {
 		padding-top : 25%;
-		opacity     : 0;
+
 		animation   : unhide 5s infinite alternate;
+
+		opacity     : 0;
 }
 
 .appleicon img {
@@ -439,39 +498,49 @@ body {
 }
 
 .text {
-		opacity    : 0;
-		text-align : center;
-		font-size  : 1.25rem;
 		animation  : unhide 5s infinite alternate;
+		text-align : center;
+
+		opacity    : 0;
+
+		font-size  : 1.25rem;
 }
 
 .screen {
 		position   : absolute;
 		top        : 12.5%;
 		left       : 6px;
+
+		overflow   : hidden;
+
 		width      : 209px;
 		height     : 75%;
-		overflow   : hidden;
+
+		animation  : lighten 5s infinite alternate;
+
 		border     : 2px solid black;
 		background : white;
-		animation  : lighten 5s infinite alternate;
 }
 
 .iphone-screen-overflow {
 		position   : relative;
-		width      : 100%;
-		height     : calc(100% - 40px);
+
 		overflow-x : hidden;
 		overflow-y : scroll;
+
+		width      : 100%;
+		height     : calc(100% - 40px);
 }
 
 .button {
 		position      : absolute;
 		bottom        : 1.8%;
 		left          : 42.5%;
+
 		width         : 15%;
 		height        : 0;
 		padding-top   : 15%;
+
 		border        : 2px solid #d9dbdc;
 		border-radius : 50%;
 		background    : white;
@@ -482,8 +551,10 @@ body {
 		position      : absolute;
 		top           : 27.5%;
 		left          : 27.5%;
+
 		width         : 13px;
 		height        : 13px;
+
 		border        : 2px solid #d7d7d7;
 		border-radius : .3em;
 }
@@ -491,39 +562,50 @@ body {
 /* Sidebar Nav */
 
 .sidebar_nav {
-		z-index     : 85;
 		position    : fixed;
+		z-index     : 85;
 		top         : 0;
 		left        : 0;
+
+		overflow    : auto;
+
 		width       : 80px;
 		height      : calc(100% - 63px);
 		min-height  : 550px;
 		padding-top : 63px;
-		overflow    : auto;
+
 		background  : #FFFFFF;
 		box-shadow  : 1px 4px 10px 0px rgba(0,0,0,0.07);
 }
 
 .sidebar-nav-container {
 		display             : flex;
+
 		width               : 80px;
 		height              : 80px;
+
+		text-align          : center;
+
 		background-repeat   : no-repeat;
 		background-position : center;
 		background-size     : 100%;
-		text-align          : center;
+
 		align-items         : center;
 		justify-content     : center;
 }
 
 .sidebar-nav-container-header {
 		display             : flex;
+
 		width               : 80px;
 		height              : 100%;
+
+		text-align          : center;
+
 		background-repeat   : no-repeat;
 		background-position : center;
 		background-size     : 100%;
-		text-align          : center;
+
 		align-items         : center;
 		justify-content     : center;
 }
@@ -534,17 +616,21 @@ body {
 
 .sidebar-link {
 		display          : block;
+
+		text-decoration  : none;
+
 		color            : $secondary-color;
 		background-color : white;
-		text-decoration  : none;
+
 		font-family      : 'Ubuntu',
 		                   sans-serif;
 }
 
 .sidebar-link:hover {
+		text-decoration  : none;
+
 		color            : #FFFFFF;
 		background-color : $secondary-color;
-		text-decoration  : none;
 }
 
 .sidebar-link-active {
@@ -556,6 +642,7 @@ body {
 		width            : 20px;
 		height           : 20px;
 		margin           : auto;
+
 		background-image : url("./images/hammer-grey.svg");
 		background-size  : 100%;
 }
@@ -571,18 +658,21 @@ body {
 /* ------------- Help Menu -------------- */
 
 #help-menu-container {
-		z-index                    : 85;
 		position                   : absolute;
+		z-index                    : 85;
 		top                        : 0px;
 		right                      : -250px;
+
 		width                      : 250px;
 		height                     : calc(100vh - 63px);
 		margin-top                 : 63px;
+
+		transition-timing-function : ease;
+		transition-duration        : 0.3s;
+		animation-direction        : normal;
+
 		background                 : white;
 		box-shadow                 : 1px -2px 17px 0px rgba(0,0,0,0.34);
-		animation-direction        : normal;
-		transition-duration        : 0.3s;
-		transition-timing-function : ease;
 }
 
 .help-menu-animate {
@@ -591,12 +681,14 @@ body {
 
 .help-clearfix {
 		position       : relative;
+
+		overflow-x     : hidden;
+		overflow-y     : scroll;
+
 		width          : calc(100% - 30px);
 		height         : calc(100% - 15px);
 		padding        : 15px;
 		padding-bottom : 0px;
-		overflow-x     : hidden;
-		overflow-y     : scroll;
 }
 
 .help-container {
@@ -604,6 +696,7 @@ body {
 		height        : auto;
 		margin-bottom : 15px;
 		padding       : 15px;
+
 		border        : 1px solid #eee;
 		border-radius : 15px;
 		background    : white;
@@ -635,10 +728,12 @@ body {
 		position                   : absolute;
 		top                        : 0px;
 		left                       : 0px;
+
 		width                      : 100%;
-		animation-direction        : normal;
-		transition-duration        : 0.5s;
+
 		transition-timing-function : ease;
+		transition-duration        : 0.5s;
+		animation-direction        : normal;
 }
 
 .collections-animation {
@@ -646,16 +741,18 @@ body {
 }
 
 #preview-container {
-		z-index                    : 80;
 		position                   : absolute;
+		z-index                    : 80;
 		top                        : -100vh;
 		left                       : 0px;
+
 		width                      : 100vw;
 		height                     : calc(100vh - 63px);
 		padding-top                : 63px;
-		animation-direction        : normal;
-		transition-duration        : 0.5s;
+
 		transition-timing-function : ease;
+		transition-duration        : 0.5s;
+		animation-direction        : normal;
 }
 
 #post-preview-container {
@@ -672,30 +769,36 @@ body {
 
 .preview-container {
 		position     : relative;
+
 		width        : calc(100% - 80px);
 		height       : calc(100vh - 63px);
 		padding-left : 80px;
 }
 
 .preview-overflow-container {
-		box-sizing : border-box;
 		position   : relative;
+
+		overflow   : hidden;
+
+		box-sizing : border-box;
 		width      : 100%;
 		height     : calc(100vh - 63px);
-		overflow   : hidden;
 }
 
 .preview-clearfix {
 		position      : relative;
+
+		overflow      : hidden;
+
 		width         : auto;
 		height        : calc(100% - 30px);
 		padding       : 15px;
 		padding-right : 0px;
-		overflow      : hidden;
 }
 
 .preview-template-container {
 		position : relative;
+
 		width    : 100%;
 		height   : 100%;
 }
@@ -704,6 +807,7 @@ body {
 		position     : absolute;
 		right        : 0;
 		left         : 0;
+
 		width        : auto;
 		min-width    : 850px;
 		max-width    : 880px;
@@ -714,24 +818,29 @@ body {
 }
 
 .preview-left-clearfix {
+		float     : left;
+
 		width     : 100%;
 		max-width : 610px;
 		height    : auto;
-		float     : left;
 }
 
 .prev-step-button {
-		width          : calc(50% - 33px);
 		float          : left;
+
+		width          : calc(50% - 33px);
 		padding        : 12px;
+
+		letter-spacing : 0.82px;
+		text-transform : uppercase;
+
 		color          : $secondary-color;
 		border         : 1px solid $secondary-color;
 		background     : white;
-		text-transform : uppercase;
+
 		font-family    : 'Ubuntu',
 		                 sans-serif;
 		font-size      : $medium-text;
-		letter-spacing : 0.82px;
 }
 
 .prev-step-button:hover {
@@ -740,17 +849,21 @@ body {
 }
 
 .next-step-button {
-		width          : calc(50% - 33px);
 		float          : right;
+
+		width          : calc(50% - 33px);
 		padding        : 12px;
+
+		letter-spacing : 0.82px;
+		text-transform : uppercase;
+
 		color          : $brand-color;
 		border         : 1px solid $brand-color;
 		background     : white;
-		text-transform : uppercase;
+
 		font-family    : 'Ubuntu',
 		                 sans-serif;
 		font-size      : $medium-text;
-		letter-spacing : 0.82px;
 }
 
 .next-step-button:hover {
@@ -760,16 +873,20 @@ body {
 
 .step1-next-step-button {
 		display        : inline-block;
+
 		width          : calc(100% - 40px);
 		padding        : 11px 20px;
+
+		letter-spacing : 0.82px;
+		text-transform : uppercase;
+
 		color          : $brand-color;
 		border         : 1px solid $brand-color;
 		background     : white;
-		text-transform : uppercase;
+
 		font-family    : 'Ubuntu',
 		                 sans-serif;
 		font-size      : $medium-text;
-		letter-spacing : 0.82px;
 }
 
 .step1-next-step-button:hover {
@@ -785,23 +902,28 @@ body {
 .preview-step-container {
 		width            : 510px;
 		padding          : 15px 30px;
+
 		background-color : white;
 		box-shadow       : 1px -2px 17px 0px rgba(0,0,0,0.14);
 }
 
 .preview-steps-text {
 		width          : 100%;
-		color          : $secondary-color;
+
+		letter-spacing : 0.82px;
 		text-transform : uppercase;
+
+		color          : $secondary-color;
+
 		font-family    : 'Ubuntu',
 		                 sans-serif;
 		font-size      : $medium-text;
 		line-height    : 30px;
-		letter-spacing : 0.82px;
 }
 
 .account-bubble-clearfix {
 		display : inline-block;
+
 		width   : 77px;
 		height  : 77px;
 		padding : 5px;
@@ -809,9 +931,11 @@ body {
 
 .account-bubble {
 		position         : relative;
+
 		width            : 70px;
 		height           : 70px;
 		margin           : auto;
+
 		border           : 2px solid $secondary-color;
 		border-radius    : 50%;
 		background-color : white;
@@ -825,16 +949,20 @@ body {
 		position      : absolute;
 		top           : 80%;
 		left          : 80%;
+
 		width         : 25px;
 		height        : 25px;
+
+		transform     : translate(-50%, -50%);
+		text-align    : center;
+
 		color         : $secondary-color;
 		border        : 2px solid $secondary-color;
 		border-radius : 50%;
 		background    : white;
-		text-align    : center;
+
 		font-size     : 14px !important;
 		line-height   : 27px !important;
-		transform     : translate(-50%, -50%);
 }
 
 .account-bubble:hover .account-icon {
@@ -846,25 +974,31 @@ body {
 		width         : 100%;
 		height        : auto;
 		padding       : 20px 0px;
+
 		border-bottom : 2px solid $brand-color;
 }
 
 .caption-textarea {
+		overflow       : auto;
+
 		width          : 100%;
 		height         : 80px;
+
+		resize         : none;
+		letter-spacing : 0.82px;
+
 		color          : black;
-		overflow       : auto;
 		border         : 0px;
+
 		font-family    : 'Ubuntu',
 		                 sans-serif;
 		font-size      : $medium-text;
 		line-height    : 25px;
-		letter-spacing : 0.82px;
-		resize         : none;
 }
 
 .addimage-clearfix {
 		display       : inline-block;
+
 		width         : 180px;
 		height        : 180px;
 		padding-right : 10px;
@@ -872,13 +1006,16 @@ body {
 
 .addimage-container {
 		position            : relative;
+
 		width               : 180px;
 		height              : 180px;
+
+		cursor              : pointer;
+
 		border              : 2px solid $brand-color;
 		background-repeat   : no-repeat;
 		background-position : center;
 		background-size     : contain;
-		cursor              : pointer;
 }
 
 .addimage-container:hover {
@@ -893,9 +1030,11 @@ body {
 		position    : absolute;
 		top         : 50%;
 		left        : 50%;
+
+		transform   : translate(-50%, -50%);
+
 		font-size   : 16px !important;
 		line-height : 16px !important;
-		transform   : translate(-50%, -50%);
 }
 
 .addimage-container:hover .addimage-plus-icon {
@@ -913,12 +1052,15 @@ body {
 }
 
 .preview-right-clearfix {
-		display         : flex;
 		position        : absolute;
 		top             : 15px;
 		right           : -90px;
+
+		display         : flex;
+
 		width           : auto;
 		height          : calc(100vh - 120px);
+
 		align-items     : center;
 		justify-content : center;
 		/* border: 1px solid black; */
@@ -926,8 +1068,10 @@ body {
 
 .facebook-mobile-ios-header {
 		position          : relative;
+
 		width             : 100%;
 		height            : 11px;
+
 		background-image  : url('./images/facebook-mobile-ios-header.jpg');
 		background-repeat : no-repeat;
 		background-size   : 100% auto;
@@ -936,16 +1080,19 @@ body {
 .facebook-mobile-header {
 		width             : 100%;
 		height            : 24px;
+
 		background-image  : url('./images/facebook-mobile-header.jpg');
 		background-repeat : no-repeat;
 		background-size   : 100% auto;
 }
 
 .facebook-mobile-main-container {
-		width      : 100%;
-		height     : auto;
 		overflow-x : hidden;
 		overflow-y : scroll;
+
+		width      : 100%;
+		height     : auto;
+
 		background : #ccced3;
 }
 
@@ -958,6 +1105,7 @@ body {
 .facebook-mobile-post-container {
 		width      : 100%;
 		height     : auto;
+
 		background : white;
 }
 
@@ -965,6 +1113,7 @@ body {
 		width      : calc(100% - 10px);
 		height     : 25px;
 		padding    : 5px;
+
 		text-align : left;
 }
 
@@ -974,18 +1123,22 @@ body {
 		padding-right  : 5px;
 		padding-bottom : 5px;
 		padding-left   : 5px;
+
 		text-align     : left;
 }
 
 .facebook-mobile-caption-text {
 		width       : 100%;
 		height      : auto;
+
+		word-wrap   : break-word;
+
 		color       : rgb(29, 33, 41);
+
 		font-family : "Helvetica Neue";
 		font-size   : 10px;
 		font-weight : normal;
 		line-height : 1.321;
-		word-wrap   : break-word;
 }
 
 .facebook-mobile-image {
@@ -995,6 +1148,7 @@ body {
 .facebook-mobile-action-bar {
 		width             : 100%;
 		height            : 23px;
+
 		background-image  : url('./images/facebook-mobile-action-bar.jpg');
 		background-repeat : no-repeat;
 		background-size   : 100% auto;
@@ -1002,8 +1156,10 @@ body {
 
 .facebook-mobile-nav {
 		position          : relative;
+
 		width             : 100%;
 		height            : 30px;
+
 		background-image  : url('./images/facebook-mobile-nav.jpg');
 		background-repeat : no-repeat;
 		background-size   : 100% auto;
@@ -1011,24 +1167,29 @@ body {
 
 .facebook-mobile-profile {
 		display    : inline-block;
+		float      : left;
+
 		width      : 25px;
 		height     : 25px;
-		float      : left;
+
 		background : black;
 }
 
 .facebook-mobile-page-name-container {
 		display      : inline-block;
+		float        : left;
+
 		width        : auto;
 		height       : 25px;
-		float        : left;
 		padding-left : 5px;
 }
 
 .facebook-mobile-page-name {
 		width       : auto;
+
 		color       : black;
 		color       : rgb(20, 24, 35);
+
 		font-family : "Helvetica Neue";
 		font-size   : 10px;
 		font-weight : bold;
@@ -1058,10 +1219,12 @@ body {
 .main_container_clearfix {
 		position         : fixed;
 		top              : 0;
+
 		width            : calc(100vw - 80px);
 		height           : calc(100vh - 63px);
 		padding-top      : 63px;
 		padding-left     : 80px;
+
 		background-image : url("./images/background.jpg");
 		background-size  : 100% 100%;
 }
@@ -1073,6 +1236,7 @@ body {
 
 .main_container {
 		display : inline-table;
+
 		width   : calc(100% - 15px);
 		height  : 100%;
 		padding : 15px;
@@ -1080,12 +1244,14 @@ body {
 
 .content-container {
 		position : relative;
+
 		width    : 100%;
 		height   : 100%;
 }
 
 .chat_container {
 		position     : relative;
+
 		width        : calc(100% - 30%);
 		height       : 100%;
 		min-height   : 200px;
@@ -1103,34 +1269,41 @@ body {
 /* Collections Menu */
 
 .sidebar-content-header {
-		z-index     : 10;
 		position    : absolute;
+		z-index     : 10;
 		top         : 0;
 		left        : 0px;
+
 		width       : 30%;
 		height      : 100%;
 		padding-top : 80px;
+
 		background  : white;
 		box-shadow  : 1px 4px 10px 0px rgba(0,0,0,0.07);
 }
 
 .content-header-title-container {
-		z-index          : 5;
 		position         : absolute;
+		z-index          : 5;
 		top              : 0;
+
 		width            : 90%;
 		height           : 79px;
 		margin           : auto;
 		padding-right    : 5%;
 		padding-left     : 5%;
+
 		background-color : white;
 }
 
 .content-header-title {
 		display         : flex;
+
 		width           : 100%;
 		height          : 100%;
+
 		border-bottom   : 1px solid #eee;
+
 		align-items     : center;
 		justify-content : center;
 }
@@ -1138,15 +1311,17 @@ body {
 .menu-overflow-container {
 		position    : absolute;
 		top         : 0;
+
 		width       : 100%;
 		height      : 100%;
 		padding-top : 80px;
 }
 
 .menu-overflow {
+		overflow : scroll;
+
 		width    : 100%;
 		height   : calc(100% - 160px);
-		overflow : scroll;
 }
 
 .menu-container {
@@ -1157,15 +1332,15 @@ body {
 }
 
 .menu-container-active {
-		background-image  : url("./images/menu-background.png");
 		background-color  : $brand-color;
+		background-image  : url("./images/menu-background.png");
 		background-repeat : no-repeat;
 		background-size   : 100%;
 }
 
 .menu-container:hover {
-		background-image  : url("./images/menu-background.png");
 		background-color  : $brand-color;
+		background-image  : url("./images/menu-background.png");
 		background-repeat : no-repeat;
 		background-size   : 100%;
 }
@@ -1178,10 +1353,12 @@ body {
 }
 
 .menu-clearfix {
-		box-sizing    : border-box;
 		position      : relative;
+
+		box-sizing    : border-box;
 		width         : auto;
 		height        : 75px;
+
 		border-bottom : 1px solid #F2F3F3;
 }
 
@@ -1195,29 +1372,35 @@ body {
 
 .menu-font-container {
 		display       : inline-block;
+		float         : left;
+		overflow-x    : hidden;
+		overflow-y    : hidden;
+
 		width         : calc(100% - 50px);
 		width         : auto;
 		height        : 50px;
-		float         : left;
 		margin-top    : 10px;
 		margin-bottom : 10px;
 		padding-left  : 10px;
-		overflow-x    : hidden;
-		overflow-y    : hidden;
+
 		word-break    : break-all;
 }
 
 .menu-font {
 		display        : block;
+
 		width          : 100%;
-		color          : $secondary-color;
+
+		letter-spacing : 0.82px;
 		text-transform : uppercase;
+
+		color          : $secondary-color;
+
 		font-family    : 'Ubuntu',
 		                 sans-serif;
 		font-size      : $medium-text;
 		font-weight    : 600;
 		line-height    : 40px;
-		letter-spacing : 0.82px;
 }
 
 @media (max-width: 1000px) {
@@ -1243,18 +1426,22 @@ body {
 .menu-icon-clearfix {
 		position : absolute;
 		right    : 0px;
+
 		width    : 60px;
 		height   : 60px;
 }
 
 .menu-icon-container {
+		float         : right;
+
 		width         : 40px;
 		height        : 40px;
-		float         : right;
 		margin        : 10px;
+
+		text-align    : center;
+
 		border-radius : 50%;
 		background    : $secondary-color;
-		text-align    : center;
 }
 
 .menu-icon-container-active {
@@ -1263,17 +1450,22 @@ body {
 
 .menu-icon {
 		display        : block;
+
+		letter-spacing : 0.87px;
+
 		color          : #FFFFFF;
+
 		font-family    : 'Ubuntu',
 		                 sans-serif;
 		font-size      : 12px;
 		line-height    : 40px;
-		letter-spacing : 0.87px;
 }
 
 .paginate-style {
 		display         : inline-flex;
+
 		padding-left    : 0px;
+
 		list-style-type : none;
 }
 
@@ -1289,7 +1481,9 @@ body {
 		margin-right  : 3px;
 		padding-right : 5px;
 		padding-left  : 5px;
+
 		border-radius : 3px;
+
 		line-height   : 30px;
 }
 
@@ -1303,12 +1497,15 @@ body {
 
 .paginate-link-active {
 		color       : $brand-color !important;
+
 		font-weight : 700;
 }
 
 .paginate-link:hover {
-		color           : $brand-color;
 		text-decoration : none;
+
+		color           : $brand-color;
+
 		font-weight     : 700;
 }
 
@@ -1316,25 +1513,30 @@ body {
 
 .content-overflow-container {
 		position : relative;
+
 		width    : 100%;
 		height   : calc(100% - 80px);
 }
 
 .content-overflow {
-		box-sizing    : border-box;
 		position      : relative;
+
+		overflow-x    : hidden;
+		overflow-y    : scroll;
+
+		box-sizing    : border-box;
 		width         : 100%;
 		height        : calc(100vh - 173px);
 		padding-right : 5px;
 		padding-left  : 10px;
-		overflow-x    : hidden;
-		overflow-y    : scroll;
 }
 
 .product-card-clearfix {
-		display      : inline-block;
-		box-sizing   : border-box;
 		position     : relative;
+
+		display      : inline-block;
+
+		box-sizing   : border-box;
 		width        : calc(33% - 12px);
 		height       : 100%;
 		max-height   : 320px;
@@ -1350,79 +1552,96 @@ body {
 }
 
 .product-card-container {
-		box-sizing : border-box;
 		position   : relative;
+
+		box-sizing : border-box;
 		width      : 100%;
 		height     : 100%;
 		padding    : 20px;
+
+		text-align : center;
+
 		background : white none repeat scroll 0 0;
 		box-shadow : 1px -2px 17px 0 rgba(0, 0, 0, 0.14);
-		text-align : center;
 }
 
 .product-card-image-container {
 		position            : relative;
+
 		width               : 100%;
 		height              : 100%;
 		max-height          : 220px;
+
 		background-repeat   : no-repeat;
 		background-position : center;
 		background-size     : contain;
 }
 
 .product-card-image-container-background-hover {
-		z-index    : 5;
-		display    : none;
 		position   : absolute;
+		z-index    : 5;
 		top        : 0;
 		left       : 0;
+
+		display    : none;
+
 		width      : 100%;
 		height     : 220px;
+
 		opacity    : 1;
 		background : white;
 }
 
 .product-card-image-container-content-hover {
-		z-index        : 10;
-		display        : none;
 		position       : relative;
 		position       : absolute;
+		z-index        : 10;
 		top            : 0;
 		left           : 0;
+
+		display        : none;
+
 		width          : calc(100% - 12px);
 		height         : 220px;
 		padding        : 6px;
 		padding-bottom : 0px;
+
 		text-align     : center;
 }
 
 .product-card-details-section {
+		overflow : hidden;
+
 		width    : 100%;
 		height   : 76px;
 		padding  : 10px 0px;
-		overflow : hidden;
 }
 
 /* Poduct Icon */
 
 .product-icon-container {
-		display                     : flex;
 		position                    : relative;
+
+		display                     : flex;
+
 		width                       : 40px;
 		height                      : 40px;
 		margin                      : auto;
+
+		-webkit-transition-duration : 0.2s;
+		transition-duration         : 0.2s;
+		-webkit-transition-property : color;
+		transition-property         : color;
+		-webkit-transform           : perspective(1px) translateZ(0);
+		transform                   : perspective(1px) translateZ(0);
+		text-align                  : center;
+
 		border-radius               : 50%;
 		background-color            : $brand-color;
 		box-shadow                  : 0 0 1px transparent;
-		text-align                  : center;
+
 		align-items                 : center;
 		justify-content             : center;
-		-webkit-transform           : perspective(1px) translateZ(0);
-		transform                   : perspective(1px) translateZ(0);
-		-webkit-transition-property : color;
-		transition-property         : color;
-		-webkit-transition-duration : 0.2s;
-		transition-duration         : 0.2s;
 }
 
 .product-icon-container:hover {
@@ -1430,23 +1649,25 @@ body {
 }
 
 .product-icon-container:before {
-		z-index                            : -1;
-		content                            : "";
 		position                           : absolute;
+		z-index                            : -1;
 		top                                : 0;
 		right                              : 0;
 		bottom                             : 0;
 		left                               : 0;
-		border-radius                      : 23px;
-		background                         : #D577C3;
-		-webkit-transform                  : scale(0);
-		transform                          : scale(0);
-		-webkit-transition-property        : transform;
-		transition-property                : transform;
-		-webkit-transition-duration        : 0.3s;
-		transition-duration                : 0.3s;
+
+		content                            : "";
 		-webkit-transition-timing-function : ease-out;
 		transition-timing-function         : ease-out;
+		-webkit-transition-duration        : 0.3s;
+		transition-duration                : 0.3s;
+		-webkit-transition-property        : transform;
+		transition-property                : transform;
+		-webkit-transform                  : scale(0);
+		transform                          : scale(0);
+
+		border-radius                      : 23px;
+		background                         : #D577C3;
 }
 
 .product-icon-container:active,
@@ -1464,12 +1685,15 @@ body {
 
 .product-icon-clearfix {
 		display        : block;
+
+		letter-spacing : 0.87px;
+
 		color          : #FFFFFF;
+
 		font-family    : 'Ubuntu',
 		                 sans-serif;
 		font-size      : 20px;
 		line-height    : 40px;
-		letter-spacing : 0.87px;
 }
 
 .product-title-container {
@@ -1479,15 +1703,19 @@ body {
 
 .product-card-details-container {
 		position   : relative;
+
 		width      : 100%;
 		height     : 100%;
+
 		text-align : center;
 }
 
 .product-details-container {
 		display         : flex;
+
 		width           : 100%;
 		height          : 220px;
+
 		align-items     : center;
 		flex-wrap       : wrap;
 		justify-content : center;
@@ -1496,13 +1724,16 @@ body {
 .product-card-price-container {
 		position : absolute;
 		bottom   : 10px;
+
 		width    : 100%;
 		height   : 18px;
 }
 
 .product-card-price-text {
-		color          : $secondary-color;
 		text-transform : uppercase;
+
+		color          : $secondary-color;
+
 		font-family    : 'Ubuntu',
 		                 sans-serif;
 		font-size      : 14px;
@@ -1510,12 +1741,14 @@ body {
 }
 
 .preview-button-container {
-		z-index    : 6;
 		position   : absolute;
+		z-index    : 6;
 		bottom     : 0;
 		left       : 0;
+
 		width      : 100%;
 		height     : 43px;
+
 		text-align : center;
 }
 
@@ -1524,33 +1757,40 @@ body {
 		right          : 0px;
 		bottom         : 0px;
 		left           : 0px;
+
 		width          : calc(100% - 40px);
 		padding        : 11px 20px;
+
+		cursor         : pointer;
+		letter-spacing : 0.82px;
+		text-transform : uppercase;
+
 		color          : $secondary-color;
 		border         : 1px solid $secondary-color;
 		background     : white;
-		text-transform : uppercase;
+
 		font-family    : 'Ubuntu',
 		                 sans-serif;
 		font-size      : $medium-text;
-		letter-spacing : 0.82px;
-		cursor         : pointer;
 }
 
 .preview-button:hover {
+		cursor          : pointer;
+		text-decoration : none;
+
 		color           : white;
 		border          : 1px solid $secondary-color;
 		background      : $secondary-color;
-		text-decoration : none;
-		cursor          : pointer;
 }
 
 .share-button-container {
 		position   : absolute;
 		bottom     : 0;
 		left       : 0;
+
 		width      : 100%;
 		height     : 65px;
+
 		text-align : center;
 }
 
@@ -1559,6 +1799,7 @@ body {
 		right    : 20px;
 		bottom   : 20px;
 		left     : 20px;
+
 		width    : calc(100% - 42px);
 }
 
@@ -1567,46 +1808,62 @@ body {
 		right          : 20px;
 		bottom         : 20px;
 		left           : 20px;
+
 		width          : calc(100% - 40px);
 		padding        : 11px 20px;
+
+		cursor         : pointer;
+		letter-spacing : 0.82px;
+		text-transform : uppercase;
+
 		color          : $secondary-color;
 		border         : 1px solid $secondary-color;
 		background     : white;
-		text-transform : uppercase;
+
 		font-family    : 'Ubuntu',
 		                 sans-serif;
 		font-size      : $medium-text;
-		letter-spacing : 0.82px;
-		cursor         : pointer;
 }
 
 .reset-button:hover {
+		cursor          : pointer;
+		text-decoration : none;
+
 		color           : white;
 		background      : $secondary-color;
-		text-decoration : none;
-		cursor          : pointer;
 }
 
 /* Ribbon */
 
 .ribbon {
-		z-index    : 20;
-		display    : none;
 		position   : absolute;
+		z-index    : 20;
 		top        : -5px;
 		left       : -5px;
+
+		display    : none;
+		overflow   : hidden;
+
 		width      : 75px;
 		height     : 75px;
-		overflow   : hidden;
+
 		text-align : right;
 }
 
 .ribbon span {
-		display           : block;
 		position          : absolute;
 		top               : 19px;
 		left              : -21px;
+
+		display           : block;
+
 		width             : 100px;
+
+		-webkit-transform : rotate(-45deg);
+		transform         : rotate(-45deg);
+		text-align        : center;
+		text-transform    : uppercase;
+
 		color             : #FFF;
 		background        : #79A70A;
 		background        : linear-gradient(
@@ -1614,21 +1871,20 @@ body {
 		                    		$brand-color 100%
 		                    );
 		box-shadow        : 0 3px 10px -5px rgba(0, 0, 0, 1);
-		text-align        : center;
-		text-transform    : uppercase;
+
 		font-size         : 10px;
 		font-weight       : bold;
 		line-height       : 20px;
-		-webkit-transform : rotate(-45deg);
-		transform         : rotate(-45deg);
 }
 
 .ribbon span::before {
-		z-index       : -1;
-		content       : "";
 		position      : absolute;
+		z-index       : -1;
 		top           : 100%;
 		left          : 0px;
+
+		content       : "";
+
 		border-top    : 3px solid $brand-color;
 		border-right  : 3px solid transparent;
 		border-bottom : 3px solid transparent;
@@ -1636,11 +1892,13 @@ body {
 }
 
 .ribbon span::after {
-		z-index       : -1;
-		content       : "";
 		position      : absolute;
+		z-index       : -1;
 		top           : 100%;
 		right         : 0px;
+
+		content       : "";
+
 		border-top    : 3px solid $brand-color;
 		border-right  : 3px solid $brand-color;
 		border-bottom : 3px solid transparent;
@@ -1652,41 +1910,51 @@ body {
 /* ------------ Collections Header --------------- */
 
 .content-header {
-		z-index          : 9;
 		position         : relative;
+		z-index          : 9;
 		// position         : absolute;
 		top              : 0;
+
 		width            : calc(100% - 33px);
 		height           : 80px;
 		margin           : auto;
 		margin-right     : 30px;
 		padding-left     : 15px;
+
 		background-color : white;
 		box-shadow       : 1px -2px 17px 0px rgba(0,0,0,0.34);
 }
 
 .preview-header {
 		display         : flex;
+
 		width           : calc(100% - 48px);
 		padding-right   : 15px;
 		padding-left    : 15px;
+
 		align-items     : center;
 		justify-content : space-around;
 }
 
 .content-header-3col-container {
-		display    : inline-block;
 		position   : relative;
-		width      : 33%;
+
+		display    : inline-block;
 		float      : left;
+
+		width      : 33%;
+
 		text-align : center;
 }
 
 .content-header-container {
-		display         : flex;
 		position        : relative;
+
+		display         : flex;
+
 		width           : 100%;
 		height          : 80px;
+
 		align-items     : center;
 		justify-content : center;
 }
@@ -1695,6 +1963,7 @@ body {
 		width         : 100%;
 		height        : 40px;
 		padding-left  : 10px;
+
 		border        : 0px;
 		border-bottom : 2px solid $brand-color;
 }
@@ -1707,6 +1976,7 @@ body {
 		position   : absolute;
 		top        : 33px;
 		right      : 10px;
+
 		color      : $secondary-color;
 		border     : 0px;
 		background : transparent;
@@ -1714,6 +1984,7 @@ body {
 
 input[type="submit"] {
 		color       : $secondary-color;
+
 		font-family : FontAwesome;
 		font-size   : 14px;
 }
@@ -1724,8 +1995,8 @@ textarea:focus {
 }
 
 .active {
-		background-image  : url("{{ 'button.png' | asset_url }}");
 		background-color  : $brand-color !important;
+		background-image  : url("{{ 'button.png' | asset_url }}");
 		background-repeat : no-repeat;
 		background-size   : 100%;
 }
@@ -1743,8 +2014,9 @@ textarea:focus {
 }
 
 a:hover {
-		color           : $secondary-color;
 		text-decoration : none;
+
+		color           : $secondary-color;
 }
 
 .share-history-button {
@@ -1766,36 +2038,44 @@ a:hover {
 
 .caption-title-text {
 		margin-right   : 20px;
-		color          : $secondary-color;
+
+		letter-spacing : 0.82px;
 		text-transform : uppercase;
+
+		color          : $secondary-color;
+
 		font-family    : 'Ubuntu',
 		                 sans-serif;
 		font-size      : $medium-text;
 		line-height    : 80px;
-		letter-spacing : 0.82px;
 }
 
 .caption-title-text-box {
 		width          : auto;
 		height         : 40px;
+
+		letter-spacing : 0.82px;
+		text-transform : uppercase;
+
 		color          : $secondary-color;
 		border         : 0px;
 		border-bottom  : 1px solid $brand-color;
-		text-transform : uppercase;
+
 		font-family    : 'Ubuntu',
 		                 sans-serif;
 		font-size      : $medium-text;
-		letter-spacing : 0.82px;
 }
 
 .caption-title-text-box::-webkit-input-placeholder {
-		color          : $secondary-color;
-		color          : $secondary-color;
+		letter-spacing : 0.82px;
 		text-transform : uppercase;
+
+		color          : $secondary-color;
+		color          : $secondary-color;
+
 		font-family    : 'Ubuntu',
 		                 sans-serif;
 		font-size      : $medium-text;
-		letter-spacing : 0.82px;
 }
 
 .save-button {
@@ -1805,9 +2085,11 @@ a:hover {
 /* ---------------- Form ----------------- */
 
 .form {
-		z-index       : 2;
-		display       : block;
 		position      : absolute;
+		z-index       : 2;
+
+		display       : block;
+
 		width         : calc(100% - 30px);
 		margin-bottom : 0px;
 		padding-right : 10px;
@@ -1819,47 +2101,57 @@ a:hover {
 		height           : auto;
 		margin-top       : 15px;
 		padding          : 15px 30px;
+
 		background-color : white;
 		box-shadow       : 1px -2px 17px 0px rgba(0,0,0,0.14);
 }
 
 .form-clearfix {
 		position   : relative;
+
+		overflow   : visible;
+
 		width      : 100%;
 		height     : auto;
 		min-height : 46px;
 		padding    : 20px 0px;
-		overflow   : visible;
+
 		border-top : 1px solid #eee;
 }
 
 .form-text-header {
 		width       : 100%;
-		line-height : 46px;
+
 		cursor      : pointer;
+
+		line-height : 46px;
 }
 
 .form-3col-clearfix {
 		display         : flex;
+		float           : left;
+
 		width           : 33%;
 		height          : 46px;
-		float           : left;
+
 		align-items     : center;
 		justify-content : center;
 }
 
 .form-caption-list-clearfix {
 		display         : flex;
+		overflow-x      : hidden;
+		overflow-y      : scroll;
+		flex-direction  : row;
+
 		width           : calc(100% - 30px);
 		min-height      : 46px;
 		max-height      : 158px;
 		margin          : auto;
 		padding-right   : 15px;
 		padding-left    : 15px;
-		overflow-x      : hidden;
-		overflow-y      : scroll;
+
 		align-items     : center;
-		flex-direction  : row;
 		flex-flow       : row wrap;
 		flex-wrap       : wrap;
 		justify-content : space-around;
@@ -1869,15 +2161,18 @@ a:hover {
 		width          : 32%;
 		margin-top     : 10px;
 		padding        : 11px 0px;
+
+		text-align     : center;
+		letter-spacing : 0.82px;
+		text-transform : uppercase;
+
 		border-radius  : 23px;
 		background     : white;
-		text-align     : center;
-		text-transform : uppercase;
+
 		font-family    : 'Ubuntu',
 		                 sans-serif;
 		font-size      : $medium-text;
 		font-weight    : bold;
-		letter-spacing : 0.82px;
 }
 
 .button-three-col:nth-child(1) {
@@ -1893,15 +2188,17 @@ a:hover {
 }
 
 select {
-		-webkit-appearance : none;
 		width              : 100%;
 		margin-left        : 11px;
 		padding            : 10px 8px;
+
 		color              : $secondary-color;
 		border             : none;
 		background         : transparent;
 		background-image   : none;
 		box-shadow         : none;
+
+		-webkit-appearance : none;
 }
 
 select:focus {
@@ -1909,11 +2206,13 @@ select:focus {
 }
 
 .form-select {
+		overflow        : hidden;
+
 		width           : calc(100% - 32px);
 		height          : 46px;
 		margin          : auto;
 		padding         : 10px 16px;
-		overflow        : hidden;
+
 		border          : 1px solid #555555;
 		border-radius   : 23px;
 		background      : white url(https://cdn.shopify.com/s/files/1/1484/1256/files/arrow-down.png?9258385709659661406) no-repeat 92% 50%;
@@ -1928,6 +2227,7 @@ select:focus {
 		width         : calc(100% - 20px);
 		height        : 46px;
 		padding-left  : 16px;
+
 		border        : 1px solid $secondary-color;
 		border-radius : 23px;
 }
@@ -1944,19 +2244,24 @@ select:focus {
 		position           : absolute;
 		top                : 21px;
 		right              : -5px;
+
 		width              : 20px;
-		color              : #555555;
-		text-align         : center;
-		font-size          : 16px !important;
-		transform          : translate(0%, -50%);
+
+		cursor             : pointer;
+		-webkit-transition : all 0.2s ease-in-out;
 		-moz-transition    : all 0.2s ease-in-out;
 		-o-transition      : all 0.2s ease-in-out;
-		-webkit-transition : all 0.2s ease-in-out;
-		cursor             : pointer;
+		transform          : translate(0%, -50%);
+		text-align         : center;
+
+		color              : #555555;
+
+		font-size          : 16px !important;
 }
 
 .form-condition-remove:hover {
 		color     : $brand-color;
+
 		font-size : 20px !important;
 }
 
@@ -1967,6 +2272,7 @@ select:focus {
 .add-condition-button {
 		width      : calc(100% - 35px);
 		margin     : auto;
+
 		text-align : center;
 }
 
@@ -1975,24 +2281,30 @@ select:focus {
 		right          : 20px;
 		bottom         : 20px;
 		left           : 20px;
+
 		width          : calc(100% - 40px);
 		padding        : 11px 20px;
+
+		letter-spacing : 0.82px;
+		text-transform : uppercase;
+
 		color          : $brand-color;
 		border         : 1px solid $brand-color;
 		background     : white none repeat scroll 0 0;
-		text-transform : uppercase;
+
 		font-family    : 'Ubuntu',
 		                 sans-serif;
 		font-size      : $medium-text;
-		letter-spacing : 0.82px;
 }
 
 .caption-select-container {
 		display         : flex;
+
 		width           : calc(100% - 30px);
 		height          : 160px;
 		padding-right   : 15px;
 		padding-left    : 15px;
+
 		align-items     : center;
 		justify-content : space-around;
 }
@@ -2002,28 +2314,33 @@ select:focus {
 /* Pgination 12-10-2017 START */
 
 .grid-item.pagination-border-top {
-		width : 200px;
 		float : left;
+
+		width : 200px;
 }
 
 #pagination {
 		display : inline-block;
+
 		height  : auto;
 		margin  : auto;
 }
 
 #pagination > button {
 		float      : left;
+
 		border     : medium none;
 		background : rgba(0, 0, 0, 0) none repeat scroll 0 0;
 }
 
 ul#pagination-list {
-		width         : auto;
 		float         : left;
+
+		width         : auto;
 		margin-top    : 0px;
 		margin-bottom : 0px;
 		padding       : 0 10px;
+
 		text-align    : center;
 }
 
@@ -2038,18 +2355,21 @@ ul#pagination-list li {
 }
 
 .page-link {
-		color  : $secondary-color;
 		cursor : pointer;
+
+		color  : $secondary-color;
 }
 
 #loadMore {
-		color  : $secondary-color;
 		cursor : pointer;
+
+		color  : $secondary-color;
 }
 
 #showLess {
-		color  : $secondary-color;
 		cursor : pointer;
+
+		color  : $secondary-color;
 }
 
 .fa-search {
@@ -2066,19 +2386,24 @@ ul#pagination-list li {
 /* Connect */
 
 .connect-image-container {
-		display         : flex;
 		position        : relative;
+
+		display         : flex;
+
 		width           : 100%;
 		height          : 100%;
 		max-height      : 220px;
+
 		align-items     : center;
 		justify-content : center;
 }
 
 .connect-image {
 		position          : relative;
+
 		width             : 150px;
 		height            : 150px;
+
 		background-repeat : no-repeat;
 		background-size   : 100% 100%;
 }
@@ -2096,19 +2421,23 @@ ul#pagination-list li {
 		right          : 20px;
 		bottom         : 20px;
 		left           : 20px;
+
 		width          : calc(100% - 40px);
 		padding        : 11px 20px;
+
+		cursor         : pointer;
+		letter-spacing : 0.82px;
+		text-transform : uppercase;
+
 		color          : $secondary-color;
 		border         : 1px solid $secondary-color;
 		border-radius  : 23px;
 		background     : white;
-		text-transform : uppercase;
+
 		font-family    : 'Ubuntu',
 		                 sans-serif;
 		font-size      : $medium-text;
 		font-weight    : bold;
-		letter-spacing : 0.82px;
-		cursor         : pointer;
 }
 
 .connected-button:hover {
@@ -2121,19 +2450,23 @@ ul#pagination-list li {
 		right          : 20px;
 		bottom         : 20px;
 		left           : 20px;
+
 		width          : calc(100% - 40px);
 		padding        : 11px 20px;
+
+		cursor         : pointer;
+		letter-spacing : 0.82px;
+		text-transform : uppercase;
+
 		color          : $brand-color;
 		border         : 1px solid $brand-color;
 		border-radius  : 23px;
 		background     : white;
-		text-transform : uppercase;
+
 		font-family    : 'Ubuntu',
 		                 sans-serif;
 		font-size      : $medium-text;
 		font-weight    : bold;
-		letter-spacing : 0.82px;
-		cursor         : pointer;
 }
 
 .connect-button:hover {
