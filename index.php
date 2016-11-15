@@ -24,6 +24,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 <head>
 	<title>CaptionCrunch</title>
 	<link rel="stylesheet" href="/style.css">
+
 	<link rel="apple-touch-icon" sizes="57x57" href="./Favicon.ico/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="./Favicon.ico/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="./Favicon.ico/apple-icon-72x72.png">
