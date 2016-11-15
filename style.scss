@@ -1185,6 +1185,8 @@ body {
 }
 
 .facebook-mobile-page-name {
+		display: block;
+
 		width       : auto;
 
 		color       : black;
@@ -1194,6 +1196,19 @@ body {
 		font-size   : 10px;
 		font-weight : bold;
 		line-height : 25px;
+}
+
+.facebook-mobile-page-time {
+	        display: block;
+
+		width: auto;
+
+	        color: #90949c;
+
+	        font-family: "Helvetica Neue";
+	        font-size: 10px;
+	        font-weight: 400;
+	        line-height: 12px;
 }
 
 .preview-anchor {
