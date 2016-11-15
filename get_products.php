@@ -152,6 +152,16 @@ try
 						var $CaptionTwo = "STEAL ALERT! <?php echo $title; ?> for $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> <?php echo $productUrl; ?>";
 						var $CaptionThree = "Take $<?php echo $dollarsOff; ?> off the <?php echo $title; ?>! On sale for $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> <?php echo $productUrl; ?>";
 
+						$("#preview-textarea-large").ready(function() {
+							$("#preview-textarea-large").html();
+							$("#preview-textarea-large").html($CaptionOne);
+							$(".facebook-mobile-caption-text").html();
+							$(".facebook-mobile-caption-text").html($CaptionOne);
+							$("#caption-one").addClass('green-button');
+							$("#caption-two").removeClass('green-button');
+							$("#caption-three").removeClass('green-button');
+						});
+
 						$("#caption-one").click(function() {
 							$("#preview-textarea-large").html();
 							$("#preview-textarea-large").html($CaptionOne);
