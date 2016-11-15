@@ -146,7 +146,7 @@ try
 
 						//  Preview
 						// Money Calc
-						var $dollarsOff = "<?php echo $price; ?> - <?php echo $ComparePrice; ?>";
+						var $dollarsOff = <?php echo $ComparePrice; ?> - <?php echo $price; ?>;
 
 						var $CaptionOne = "Grab the <?php echo $title; ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: http://buff.ly/2fVq7rY";
 						var $CaptionTwo = "STEAL ALERT! <?php echo $title; ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> http://buff.ly/2fVq7rY";
