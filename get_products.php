@@ -147,11 +147,11 @@ try
 						//  Preview
 
 						var $CaptionOneFB = "Grab the <?php echo $title; ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: <span style='color: #365899;''>http://buff.ly/2fVq7rY</span>";
-						var $CaptionTwoFB = "STEAL ALERT! <?php echo $title; ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> <span style='color: #365899;''>http://buff.ly/2fVq7rY</span>";
+						var $CaptionTwoFB = "STEAL ALERT! <?php echo $title; ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Link: <span style='color: #365899;''>http://buff.ly/2fVq7rY</span>";
 						var $CaptionThreeFB = "Take 20% OFF the <?php echo $title; ?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> <span style='color: #365899;''>http://buff.ly/2fVq7rY</span>";
 
 						var $CaptionOne = "Grab the <?php echo $title; ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: http://buff.ly/2fVq7rY";
-						var $CaptionTwo = "STEAL ALERT! <?php echo $title; ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> http://buff.ly/2fVq7rY";
+						var $CaptionTwo = "STEAL ALERT! <?php echo $title; ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Link: http://buff.ly/2fVq7rY";
 						var $CaptionThree = "Take 20% OFF the <?php echo $title; ?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> http://buff.ly/2fVq7rY";
 
 						$("#preview-textarea-large").ready(function() {
