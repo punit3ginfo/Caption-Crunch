@@ -188,8 +188,6 @@ body {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out; }
 
-.green-button:active:before,
-.green-button:focus:before,
 .green-button:hover:before {
   -webkit-transform: scale(1);
   transform: scale(1); }
