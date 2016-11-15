@@ -106,7 +106,7 @@ body {
   position: relative;
   color: #555555;
   border: 1px solid #555555;
-  background: white;
+  background-color: white;
   box-shadow: 0 0 1px transparent;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -117,7 +117,8 @@ body {
   transition-duration: 0.2s; }
 
 .grey-button:hover {
-  background-color: #555555; }
+  background-color: #555555;
+  color: white; }
 
 .grey-button:before {
   z-index: -1;
@@ -138,13 +139,6 @@ body {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out; }
 
-.grey-button:active,
-.grey-button:focus,
-.grey-button:hover {
-  color: white; }
-
-.grey-button:active:before,
-.grey-button:focus:before,
 .grey-button:hover:before {
   -webkit-transform: scale(1);
   transform: scale(1); }
