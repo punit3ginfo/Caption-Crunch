@@ -1398,7 +1398,6 @@ body {
 .content-header {
   z-index: 9;
   position: relative;
-  position: absolute;
   top: 0;
   width: calc(100% - 33px);
   height: 80px;
