@@ -105,6 +105,10 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 	</div>
 </a> -->
 </aside>
+
+</div>
+
+</div>
 <!-- /.Sidebar Nav -->
 
 <!-- Navigation -->
