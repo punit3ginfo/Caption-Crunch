@@ -143,17 +143,34 @@ try
 						//  Animate
 						$('.collections-animation-container').addClass("collections-animation");
 						$('#preview-container').addClass("preview-container-animate");
-						//  Preview
-						var CaptionOne = "Grab the <?php echo $title; ?> for $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: <?php echo $productUrl; ?>";
-						// var CaptionShort = "<?php echo $title; ?>. Now $<?php echo $price; ?>! Was $<?php echo $ComparePrice; ?>! Link ---> <?php echo $productUrl; ?>";
 
-						$("#caption-textarea-large").ready(function() {
-							$("#preview-textarea-large").html(CaptionOne);
-							// $("#preview-textarea-small").html(CaptionShort);
+						//  Preview
+						// Money Calc
+						var dollarsOff = "<?php echo $price; ?> - <?php echo $ComparePrice; ?>";
+
+						var $CaptionOne = "Grab the <?php echo $title; ?> for $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: <?php echo $productUrl; ?>";
+						var $CaptionTwo = "STEAL ALERT! <?php echo $title; ?> for $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> <?php echo $productUrl; ?>";
+						var $CaptionThree = "Take $<?php echo $dollarsOff; ?> off the <?php echo $title; ?>! On sale for $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> <?php echo $productUrl; ?>";
+
+						$("#caption-one").click(function() {
+							$("#preview-textarea-large").html();
+							$("#preview-textarea-large").html($CaptionOne);
+							$(".facebook-mobile-caption-text").html();
+							$(".facebook-mobile-caption-text").html($CaptionOne);
 						});
 
-						$(".facebook-mobile-caption-text").ready(function() {
-							$(".facebook-mobile-caption-text").html(CaptionOne);
+						$("#caption-two").click(function() {
+							$("#preview-textarea-large").html();
+							$("#preview-textarea-large").html($CaptionTwo);
+							$(".facebook-mobile-caption-text").html();
+							$(".facebook-mobile-caption-text").html($CaptionTwo);
+						});
+
+						$("#caption-three").click(function() {
+							$("#preview-textarea-large").html();
+							$("#preview-textarea-large").html($CaptionThree);
+							$(".facebook-mobile-caption-text").html();
+							$(".facebook-mobile-caption-text").html($CaptionThree);
 						});
 
 						$("#addimage-image-one").ready(function() {
@@ -328,4 +345,3 @@ catch (shopify\CurlException $e)
 	});
 	</script>
 	<?php } ?>
- 
