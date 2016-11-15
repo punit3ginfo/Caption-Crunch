@@ -145,12 +145,10 @@ try
 						$('#preview-container').addClass("preview-container-animate");
 
 						//  Preview
-						// Money Calc
-						var $dollarsOff = <?php echo $ComparePrice; ?> - <?php echo $price; ?>;
 
 						var $CaptionOne = "Grab the <?php echo $title; ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: http://buff.ly/2fVq7rY";
 						var $CaptionTwo = "STEAL ALERT! <?php echo $title; ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> http://buff.ly/2fVq7rY";
-						var $CaptionThree = "Take $<?php echo $dollarsOff; ?> off the <?php echo $title; ?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> http://buff.ly/2fVq7rY";
+						var $CaptionThree = "Take 20% OFF the <?php echo $title; ?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> http://buff.ly/2fVq7rY";
 
 						$("#preview-textarea-large").ready(function() {
 							$("#preview-textarea-large").html();
