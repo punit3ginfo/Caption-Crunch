@@ -20,6 +20,7 @@
 							<div class="facebook-mobile-profile"></div>
 							<div class="facebook-mobile-page-name-container">
 								<span class="facebook-mobile-page-name">Facebook Page Name</span>
+								<span class="facebook-mobile-page-time">2 mins</span>
 							</div>
 						</div>
 						<div class="facebook-mobile-caption-container">
