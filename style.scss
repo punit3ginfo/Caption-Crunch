@@ -2487,7 +2487,7 @@ ul#pagination-list li {
 }
 
 .connect-button:hover {
-		color      : white;
+		color      : white; 
 		background : $brand-color;
 }
 
@@ -2495,5 +2495,6 @@ ul#pagination-list li {
 		width: 100%;
 		height: 30px;
 		margin-top: 15px;
+
 		border: 1px solid red;
 }

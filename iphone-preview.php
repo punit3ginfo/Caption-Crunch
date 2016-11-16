@@ -37,8 +37,8 @@
 		</div>
 		<div class="button"></div>
 	</div>
-	
-	<div class="preview-buttons-container">
 
-	</div>
+	<!-- <div class="preview-buttons-container">
+
+	</div> -->
 </div>
