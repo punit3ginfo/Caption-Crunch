@@ -1587,12 +1587,10 @@ a:hover {
   overflow-x: hidden;
   overflow-y: scroll;
   flex-direction: row;
-  width: calc(100% - 30px);
+  width: 100%;
   min-height: 46px;
   max-height: 158px;
   margin: auto;
-  padding-right: 15px;
-  padding-left: 15px;
   align-items: center;
   flex-flow: row wrap;
   flex-wrap: wrap;
