@@ -97,11 +97,9 @@ $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
                 $("#share-button-<?php echo $p_id1; ?>").click(function(){
 
                     var CaptionLong = "<?php echo $title; ?> | $<?php echo $price; ?> | Long Caption";
-                    var CaptionShort = "<?php echo $title; ?> | $<?php echo $price; ?> | Short Caption";
 
                     $("#caption-textarea-large").ready(function() {
                           $("#caption-textarea-large").html(CaptionLong);
-                          $("#caption-textarea-small").html(CaptionShort);
                     });
 
                     $(".facebook-mobile-caption-text").ready(function() {
@@ -123,7 +121,6 @@ $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
                 $('#close-preview-button').click(function() {
                         // $("#preview-container").empty();
                         $("#caption-textarea-large").empty();
-                        $("#caption-textarea-small").empty();
                         $("#addimage-image-one").empty();
                         $(".facebook-mobile-caption-text").empty();
                         $(".facebook-mobile-image").attr("src", "");
