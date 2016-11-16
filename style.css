@@ -1807,4 +1807,9 @@ ul#pagination-list li {
   color: white;
   background: #7ab55c; }
 
+.preview-buttons-container {
+  width: 100%;
+  height: 46px;
+  border: 1px solid red; }
+
 /*# sourceMappingURL=style.css.map */
