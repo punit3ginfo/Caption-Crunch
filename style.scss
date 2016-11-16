@@ -6,7 +6,11 @@ $brand-color     : #7ab55c;
 $secondary-color : #555555;
 $tiny-text       : 12px;
 $small-text      : 14px;
+// Medium Text (Responsive)
 $medium-text     : 16px;
+$medium-s-text     : 12px;
+$medium-t-text     : 10px;
+// Large Text (Responsive)
 $large-text      : 18px;
 
 // #65D35B
@@ -154,13 +158,13 @@ body {
 
 @media (max-width: 1000px) {
 		.btn {
-				font-size : $small-text;
+				font-size : $medium-t-text;
 		}
 }
 
 @media (max-width: 835px) {
 		.btn {
-				font-size : $tiny-text;
+				font-size : $medium-t-text;
 		}
 }
 
@@ -2203,7 +2207,7 @@ a:hover {
 .button-three-col:nth-child(1) {
 		margin-top : 0px;
 }
- 
+
 .button-three-col:nth-child(2) {
 		margin-top : 0px;
 }
