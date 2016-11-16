@@ -1594,10 +1594,7 @@ a:hover {
   letter-spacing: 0.82px;
   text-transform: uppercase;
   border-radius: 23px;
-  background: white;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 16px;
-  font-weight: bold; }
+  background: white; }
 
 .button-three-col:nth-child(1) {
   margin-top: 0px; }
@@ -1772,50 +1769,6 @@ ul#pagination-list li {
 
 .buffer-icon {
   background-image: url("./images/connect-buffer-icon.jpg"); }
-
-.connected-button {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  left: 20px;
-  width: calc(100% - 40px);
-  padding: 11px 20px;
-  cursor: pointer;
-  letter-spacing: 0.82px;
-  text-transform: uppercase;
-  color: #555555;
-  border: 1px solid #555555;
-  border-radius: 23px;
-  background: white;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 16px;
-  font-weight: bold; }
-
-.connected-button:hover {
-  color: white;
-  background: #555555; }
-
-.connect-button {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  left: 20px;
-  width: calc(100% - 40px);
-  padding: 11px 20px;
-  cursor: pointer;
-  letter-spacing: 0.82px;
-  text-transform: uppercase;
-  color: #7ab55c;
-  border: 1px solid #7ab55c;
-  border-radius: 23px;
-  background: white;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 16px;
-  font-weight: bold; }
-
-.connect-button:hover {
-  color: white;
-  background: #7ab55c; }
 
 .preview-buttons-container {
   width: 100%;
