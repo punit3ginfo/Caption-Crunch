@@ -696,6 +696,13 @@ body {
   color: #7ab55c;
   border: 2px solid #7ab55c; }
 
+.account-bubble-active {
+  border: 2px solid #7ab55c; }
+
+.account-bubble-active .account-icon {
+  color: #7ab55c;
+  border: 2px solid #7ab55c; }
+
 .caption-textarea-container {
   width: 100%;
   height: auto;

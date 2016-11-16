@@ -971,6 +971,15 @@ body {
 		border : 2px solid $brand-color;
 }
 
+.account-bubble-active {
+		border : 2px solid $brand-color;
+}
+
+.account-bubble-active .account-icon {
+		color  : $brand-color;
+		border : 2px solid $brand-color;
+}
+
 .caption-textarea-container {
 		width         : 100%;
 		height        : auto;
