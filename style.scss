@@ -2198,11 +2198,6 @@ a:hover {
 
 		border-radius  : 23px;
 		background     : white;
-
-		font-family    : 'Ubuntu',
-		                 sans-serif;
-		font-size      : $medium-text;
-		font-weight    : bold;
 }
 
 .button-three-col:nth-child(1) {
@@ -2444,64 +2439,6 @@ ul#pagination-list li {
 
 .buffer-icon {
 		background-image : url('./images/connect-buffer-icon.jpg');
-}
-
-.connected-button {
-		position       : absolute;
-		right          : 20px;
-		bottom         : 20px;
-		left           : 20px;
-
-		width          : calc(100% - 40px);
-		padding        : 11px 20px;
-
-		cursor         : pointer;
-		letter-spacing : 0.82px;
-		text-transform : uppercase;
-
-		color          : $secondary-color;
-		border         : 1px solid $secondary-color;
-		border-radius  : 23px;
-		background     : white;
-
-		font-family    : 'Ubuntu',
-		                 sans-serif;
-		font-size      : $medium-text;
-		font-weight    : bold;
-}
-
-.connected-button:hover {
-		color      : white;
-		background : $secondary-color;
-}
-
-.connect-button {
-		position       : absolute;
-		right          : 20px;
-		bottom         : 20px;
-		left           : 20px;
-
-		width          : calc(100% - 40px);
-		padding        : 11px 20px;
-
-		cursor         : pointer;
-		letter-spacing : 0.82px;
-		text-transform : uppercase;
-
-		color          : $brand-color;
-		border         : 1px solid $brand-color;
-		border-radius  : 23px;
-		background     : white;
-
-		font-family    : 'Ubuntu',
-		                 sans-serif;
-		font-size      : $medium-text;
-		font-weight    : bold;
-}
-
-.connect-button:hover {
-		color      : white;
-		background : $brand-color;
 }
 
 .preview-buttons-container {
