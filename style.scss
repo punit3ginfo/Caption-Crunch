@@ -69,6 +69,11 @@ body {
 /* ------------------- Type / Fonts -------------------- */
 
 .cc-text-small {
+                -webkit-transition:all 0.5s ease-in-out;
+    		-moz-transition:all 0.5s ease-in-out;
+    		-o-transition:all 0.5s ease-in-out;
+		transition:all 0.5s ease-in-out;
+
 		color       : $secondary-color;
 
 		font-family : 'Ubuntu',
@@ -79,6 +84,10 @@ body {
 }
 
 .cc-text-medium {
+	        -webkit-transition:all 0.5s ease-in-out;
+	        -moz-transition:all 0.5s ease-in-out;
+	        -o-transition:all 0.5s ease-in-out;
+		transition:all 0.5s ease-in-out;
 		letter-spacing : 0.82px;
 
 		color          : $secondary-color;
@@ -103,6 +112,10 @@ body {
 }
 
 .cc-text-large {
+	        -webkit-transition:all 0.5s ease-in-out;
+	        -moz-transition:all 0.5s ease-in-out;
+	        -o-transition:all 0.5s ease-in-out;
+		transition:all 0.5s ease-in-out;
 		letter-spacing : 0.82px;
 
 		color          : $secondary-color;

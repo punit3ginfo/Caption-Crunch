@@ -39,6 +39,10 @@ body {
 
 /* ------------------- Type / Fonts -------------------- */
 .cc-text-small {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   color: #555555;
   font-family: 'Ubuntu', sans-serif;
   font-size: 14px;
@@ -46,6 +50,10 @@ body {
   line-height: 1.42857143; }
 
 .cc-text-medium {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   letter-spacing: 0.82px;
   color: #555555;
   font-family: 'Ubuntu', sans-serif;
@@ -60,6 +68,10 @@ body {
   .cc-text-medium {
     font-size: 12px; } }
 .cc-text-large {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   letter-spacing: 0.82px;
   color: #555555;
   font-family: 'Ubuntu', sans-serif;
