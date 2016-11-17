@@ -71,7 +71,7 @@
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
-			    $('.content-overflow-container').html(data);
+			    $('.content-overflow').html(data);
                     }
                 });
             }
@@ -88,7 +88,7 @@
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
-			    $('.content-overflow-container').html(data);
+			    $('.content-overflow').html(data);
 			     $('#pagination').html('');
 
                     }
@@ -107,7 +107,7 @@
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
-			    $('.content-overflow-container').html(data);
+			    $('.content-overflow').html(data);
                     }
                 });
             }
@@ -124,7 +124,7 @@
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
-			    $('.content-overflow-container').html(data);
+			    $('.content-overflow').html(data);
 
 
 
@@ -153,7 +153,7 @@
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
-			    $('.content-overflow-container').html(data);
+			    $('.content-overflow').html(data);
 
 
 
@@ -180,7 +180,7 @@
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
-			    $('.content-overflow-container').html(data);
+			    $('.content-overflow').html(data);
 
 
 
