@@ -102,6 +102,7 @@ body {
   text-transform: uppercase;
   border-radius: 23px;
   background: white;
+  white-space: nowrap;
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
   font-weight: bold;
@@ -1343,7 +1344,7 @@ body {
   right: 20px;
   bottom: 20px;
   left: 20px;
-  width: calc(100% - 42px); }
+  width: calc(100% - 64px); }
 
 .reset-button {
   position: absolute;
@@ -1601,9 +1602,8 @@ a:hover {
   justify-content: space-around; }
 
 .button-three-col {
-  width: 32%;
+  width: calc(32% - 22px);
   margin-top: 10px;
-  padding: 11px 0px;
   text-align: center;
   letter-spacing: 0.82px;
   text-transform: uppercase;

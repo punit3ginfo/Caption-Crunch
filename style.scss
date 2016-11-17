@@ -162,6 +162,7 @@ body {
 
 		border-radius  : 23px;
 		background     : white;
+		white-space: nowrap;
 
 		font-family    : 'Ubuntu',
 		                 sans-serif;
@@ -1852,7 +1853,7 @@ body {
 		bottom   : 20px;
 		left     : 20px;
 
-		width    : calc(100% - 42px);
+		width    : calc(100% - 64px);
 }
 
 .reset-button {
@@ -2208,9 +2209,8 @@ a:hover {
 }
 
 .button-three-col {
-		width          : 32%;
+		width: calc(32% - 22px);
 		margin-top     : 10px;
-		padding        : 11px 0px;
 
 		text-align     : center;
 		letter-spacing : 0.82px;
