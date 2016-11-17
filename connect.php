@@ -12,7 +12,7 @@
                            </div>
                       </div>
 
-                      <button type='button' class='btn grey-button' id='shopify-connect-button'><i class='fa fa-check' aria-hidden='true'></i> Connected</button>
+                      <button type='button' class='btn grey-button' id='shopify-connect-button' style="width: calc(100% - 30px);"><i class='fa fa-check' aria-hidden='true'></i> Connected</button>
             </div>
  </div>
 
@@ -28,7 +28,7 @@
                               </div>
                        </div>
 
-                       <button type='button' class='btn green-button' id='shopify-connect-button'><i class='fa fa-sign-in' aria-hidden='true'></i> Connect</button>
+                       <button type='button' class='btn green-button' id='shopify-connect-button' style="width: calc(100% - 30px);"><i class='fa fa-sign-in' aria-hidden='true'></i> Connect</button>
              </div>
   </div>
 
