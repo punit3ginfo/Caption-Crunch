@@ -329,7 +329,7 @@ catch (shopify\CurlException $e)
 				x=3;
 				jQuery('#pagination-list li:lt('+x+')').show();
 				jQuery('#loadMore').click(function () {
-
+                                       alert(1);
 					x= (x+4 <= size_li) ? x+4 : size_li;
 					y= (x-4 <= size_li) ? x-4 : size_li;
 					jQuery('#pagination-list li:lt('+x+')').show();
