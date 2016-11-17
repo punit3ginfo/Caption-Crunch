@@ -1635,10 +1635,11 @@ select:focus {
 
 .form-select {
   overflow: hidden;
-  width: calc(100% - 32px);
-  height: 46px;
+  width: calc(100% - 8px);
+  height: 44px;
   margin: auto;
-  padding: 10px 16px;
+  padding: 11px 11px;
+  padding-left: 16px;
   border: 1px solid #555555;
   border-radius: 23px;
   background: white url(https://cdn.shopify.com/s/files/1/1484/1256/files/arrow-down.png?9258385709659661406) no-repeat 92% 50%;
