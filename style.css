@@ -1800,31 +1800,6 @@ ul#pagination-list li {
   position: relative;
   width: 100%; }
 
-#pagination2 .first, #pagination2 .last, #pagination1 .first, #pagination1 .last {
-  display: none; }
-
-#pagination2 .prev a, #pagination1 .prev a {
-  background: transparent url("./images/left-arrow.png") no-repeat scroll center center !important;
-  font-size: 0;
-  height: 36px;
-  padding: 0;
-  width: 30px; }
-
-#pagination2 .next a, #pagination1 .next a {
-  background: transparent url("./images/right-arrow.png") no-repeat scroll center center !important;
-  font-size: 0;
-  height: 36px;
-  padding: 0;
-  width: 30px;
-  display: block !important; }
-
-#pagination2 .next, #pagination1 .next {
-  display: block !important;
-  float: left; }
-
-ul.pagination.text-center li.active, ul.pagination.text-center li.active a {
-  color: #7ab55c !important; }
-
 .pagination {
   width: 100%;
   display: flex;
