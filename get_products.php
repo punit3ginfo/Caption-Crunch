@@ -146,13 +146,13 @@ try
 
 						//  Preview
 
-						var $CaptionOneFB = 'Grab the <?php echo htmlentities($title); ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
-						var $CaptionTwoFB = 'STEAL ALERT! <?php echo htmlentities($title); ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Link: <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
-						var $CaptionThreeFB = 'Take 20% OFF the <?php echo htmlentities($title);?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
+						var $CaptionOneFB = 'Grab the <?php echo $title; ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
+						var $CaptionTwoFB = 'STEAL ALERT! <?php echo $title; ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Link: <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
+						var $CaptionThreeFB = 'Take 20% OFF the <?php echo $title; ?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
 
-						var $CaptionOne = 'Grab the <?php echo htmlentities($title); ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: http://buff.ly/2fVq7rY';
-						var $CaptionTwo = 'STEAL ALERT! <?php echo htmlentities($title); ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Link: http://buff.ly/2fVq7rY';
-						var $CaptionThree = 'Take 20% OFF the <?php echo htmlentities($title); ?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> http://buff.ly/2fVq7rY';
+						var $CaptionOne = 'Grab the <?php echo $title; ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: http://buff.ly/2fVq7rY';
+						var $CaptionTwo = 'STEAL ALERT! <?php echo $title; ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Link: http://buff.ly/2fVq7rY';
+						var $CaptionThree = 'Take 20% OFF the <?php echo $title; ?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> http://buff.ly/2fVq7rY';
 
 						$("#preview-textarea-large").ready(function() {
 							$("#preview-textarea-large").html();
@@ -205,20 +205,6 @@ try
 						});
 
 					});
-
-					// $('#product-preview-button-<?php echo $p_id1; ?>').click(function() {
-					//          //  Load
-					//         $("#product-preview-container").css("display","block");
-					//         // Back Button
-					//         $("#share-link").css("display", "none");
-					//         $(".back-link").css("display", "block");
-					//         // Help
-					//         $(".help-clearfix").empty();
-					//         $(".help-clearfix").load("help/product-preview.php");
-					//         //  Animate
-					//        $('.collections-animation-container').addClass("collections-animation");
-					//        $('#preview-container').addClass("preview-container-animate");
-					// });
 
 					$('.back-link').click(function() {
 						$('.collections-animation-container').removeClass("collections-animation");
@@ -315,7 +301,7 @@ catch (shopify\CurlException $e)
 		$.ajax({
 			url: '/pagination_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id,
 			success: function(data){
-					var totolpageno = $($.parseHTML(data)).filter(".totolpageno"); 
+					var totolpageno = $($.parseHTML(data)).filter(".totolpageno");
 					//var totolpageno = $('.totolpageno', data);
 					    console.log(totolpageno.html());
 					//alert(totolpageno.html());
