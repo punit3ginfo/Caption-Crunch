@@ -114,6 +114,7 @@
 </div>
 <script type="text/javascript">
     $(function () {
+	    alert($('.totolpageno').html());
         var obj = $('#pagination1').twbsPagination({
             totalPages: 35,
             visiblePages:3,
