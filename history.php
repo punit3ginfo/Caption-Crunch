@@ -324,13 +324,14 @@ try
 			    var totolpageno = $($.parseHTML(data)).filter(".totolpageno"); 
 					//var totolpageno = $('.totolpageno', data);
 					    console.log(totolpageno.html());
-					//alert(totolpageno.html());
+					
 			    			if(totolpageno!=''){
 						   totolpageno =parseInt(totolpageno.html());
 						}
 					    else {
 					    totolpageno=1;
 					    }
+			    alert(totolpageno);
 					console.info(totolpageno);
 					var obj = $('#pagination1').twbsPagination({
 					    totalPages: totolpageno,
