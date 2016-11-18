@@ -329,7 +329,7 @@ catch (shopify\CurlException $e)
 						console.info(page);
 					    }
 					});
-        			console.info(obj.data());
+        			/*console.info(obj.data());
 				$('#pagination').html(data);
 				$('ul li:lt(1)').addClass("paginate-link-active");
 				$('ul li:gt(3)').hide();
@@ -374,7 +374,7 @@ catch (shopify\CurlException $e)
 					if(x == 3){
 						$('#showLess').hide();
 					}
-				});
+				}); */
 			}
 		});
 
