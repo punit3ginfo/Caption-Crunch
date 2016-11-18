@@ -34,12 +34,13 @@ try
 
 		<?php
 		}else{
-                              echo '<h1 class="totolpageno" style="display:none">'.$noofPages.'</h1>';
+                              
 							$TotalnoOfProduct = $shopify('GET /admin/products/count.json');
 							//echo "total products=".$TotalnoOfProduct=sizeof($products);
 							$limit=21; // Number of product per page
 							$noofPages=$TotalnoOfProduct/$limit;
 							$noofPages=abs(round($noofPages));
+			echo '<h1 class="totolpageno" style="display:none">'.$noofPages.'</h1>';
 
 		?>
 
