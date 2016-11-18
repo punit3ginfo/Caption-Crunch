@@ -112,16 +112,4 @@
                       </div>
           </div>
 </div>
-<script type="text/javascript">
-    $(function () {
-        var obj = $('#pagination1').twbsPagination({
-            totalPages: 35,
-            visiblePages:3,
-            onPageClick: function (event, page) {
-		    function getPagingALLProduct(page,21);
-                console.info(page);
-            }
-        });
-        console.info(obj.data());
-    });
-</script>
+
