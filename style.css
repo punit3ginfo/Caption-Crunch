@@ -1800,4 +1800,15 @@ ul#pagination-list li {
   position: relative;
   width: 100%;
 }
+#pagination2 .first, #pagination2 .last {
+  display: none;
+}
+#pagination2 .prev a {
+  background: rgba(0, 0, 0, 0) url("./images/left-arrow.png") repeat scroll 0 0;
+  font-size: 0;
+}
+#pagination2 .next a {
+  background: rgba(0, 0, 0, 0) url("./images/right-arrow.png") repeat scroll 0 0;
+  font-size: 0;
+}
 /*# sourceMappingURL=style.css.map */
