@@ -321,7 +321,7 @@ try
 		 $.ajax({
                     url: '/pagination_search_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id+'&title='+title,
                     success: function(data){
-			    $('#pagination1').empty();
+			    //$('#pagination1').empty();
 			    var totolpageno = $($.parseHTML(data)).filter(".totolpageno"); 
 					//var totolpageno = $('.totolpageno', data);
 					    console.log(totolpageno.html());
@@ -342,7 +342,7 @@ try
 						console.info(page);
 					    }
 					});
-        			console.info(obj.data());
+        			
 			$('#pagination').html(data);
 			    $('ul li:gt(3)').hide();
 	$('#showLess').hide();
