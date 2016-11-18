@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,500,700");
 /* CSS Document */
+*, *::after, *::before {
+    box-sizing: unset;
+}
 a {
   text-decoration: none; }
 
