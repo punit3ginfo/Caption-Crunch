@@ -72,6 +72,16 @@
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
 			    $('.content-overflow').html(data);
+			    alert($('.totolpageno').html());
+        var obj = $('#pagination1').twbsPagination({
+            totalPages: 35,
+            visiblePages:3,
+            onPageClick: function (event, page) {
+		   getPagingALLProduct(page,21);
+                console.info(page);
+            }
+        });
+        console.info(obj.data());
                     }
                 });
             }
