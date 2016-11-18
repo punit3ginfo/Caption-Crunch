@@ -1832,7 +1832,8 @@ ul.pagination.text-center li.active, ul.pagination.text-center li.active a {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  padding: 0px; }
+  padding: 0px;
+  margin: 0; }
 
 .page-item {
   display: flex;
