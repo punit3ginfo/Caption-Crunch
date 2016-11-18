@@ -336,7 +336,7 @@ try
 			    alert(totolpageno);
 					console.info(totolpageno);
 					var obj = $('#pagination2').twbsPagination({
-					    totalPages: totolpageno,
+					    totalPages: 1,
 					    visiblePages:3,
 					    onPageClick: function (event, page) {
 						//   getPagingALLProduct(page,21);
