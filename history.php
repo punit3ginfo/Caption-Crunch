@@ -321,6 +321,21 @@ try
 		 $.ajax({
                     url: '/pagination_search_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id+'&title='+title,
                     success: function(data){
+			    var totolpageno = $($.parseHTML(data)).filter(".totolpageno"); 
+					//var totolpageno = $('.totolpageno', data);
+					    console.log(totolpageno.html());
+					//alert(totolpageno.html());
+					totolpageno =parseInt(totolpageno.html());
+					console.info(totolpageno);
+					var obj = $('#pagination1').twbsPagination({
+					    totalPages: totolpageno,
+					    visiblePages:3,
+					    onPageClick: function (event, page) {
+						   getPagingALLProduct(page,21);
+						console.info(page);
+					    }
+					});
+        			console.info(obj.data());
 			$('#pagination').html(data);
 			    $('ul li:gt(3)').hide();
 	$('#showLess').hide();
