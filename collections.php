@@ -79,7 +79,7 @@
 					  <nav aria-label="Page navigation">
        						 <ul class="pagination" id="pagination1"></ul>
    					 </nav>
-                                          <div class="text-center" id="pagination"></div>
+                                          <!--div class="text-center" id="pagination"--></div>
                                   </div>
                           </div>
 
