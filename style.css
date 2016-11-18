@@ -1800,15 +1800,16 @@ ul#pagination-list li {
   position: relative;
   width: 100%;
 }
-#pagination2 .first, #pagination2 .last {
+#pagination2 .first, #pagination2 .last ,#pagination1 .first, #pagination1 .last {
   display: none;
 }
-#pagination2 .prev a {
+#pagination2 .prev a ,#pagination1 .prev a {
   background: rgba(0, 0, 0, 0) url("./images/left-arrow.png") repeat scroll 0 0;
   font-size: 0;
 }
-#pagination2 .next a {
+#pagination2 .next a , #pagination1 .next a {
   background: rgba(0, 0, 0, 0) url("./images/right-arrow.png") repeat scroll 0 0;
   font-size: 0;
+    display:block !important;
 }
 /*# sourceMappingURL=style.css.map */
