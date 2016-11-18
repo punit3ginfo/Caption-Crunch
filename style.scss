@@ -2050,12 +2050,12 @@ textarea:focus {
 		outline : none;
 }
 
-.active {
-		background-color  : $brand-color !important;
-		background-image  : url("{{ 'button.png' | asset_url }}");
-		background-repeat : no-repeat;
-		background-size   : 100%;
-}
+// .active {
+// 		background-color  : $brand-color !important;
+// 		background-image  : url("{{ 'button.png' | asset_url }}");
+// 		background-repeat : no-repeat;
+// 		background-size   : 100%;
+// }
 
 .active-text {
 		color : white;
