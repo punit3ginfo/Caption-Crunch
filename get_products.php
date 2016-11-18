@@ -315,12 +315,12 @@ catch (shopify\CurlException $e)
 		$.ajax({
 			url: '/pagination_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id,
 			success: function(data){
-				
-				var totolpageno = $('.totolpageno', data);
+				var totolpageno = $($.parseHTML(data)).filter(".totolpageno"); 
+				//var totolpageno = $('.totolpageno', data);
 					    console.log(totolpageno);
 				console.info(totolpageno);
 					var obj = $('#pagination1').twbsPagination({
-					    totalPages: 35,
+					    totalPages: totolpageno,
 					    visiblePages:3,
 					    onPageClick: function (event, page) {
 						   getPagingALLProduct(page,21);
