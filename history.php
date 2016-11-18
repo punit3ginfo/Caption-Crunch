@@ -328,15 +328,14 @@ try
 					    console.log(totolpageno.html());
 					
 			    			if(totolpageno!=''){
-						   totolpageno =parseInt(totolpageno.html());
+						   var totolpageno1 =parseInt(totolpageno.html());
 						}
 					    else {
-					    totolpageno=1;
+					    var totolpageno1=1;
 					    }
-			    alert(totolpageno);
-					console.info(totolpageno);
+			             console.info(totolpageno);
 					var obj = $('#pagination2').twbsPagination({
-					    totalPages:10,
+					    totalPages:totolpageno1,
 					    visiblePages:3,
 					    onPageClick: function (event, page) {
 						//   getPagingALLProduct(page,21);
