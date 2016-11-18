@@ -1827,5 +1827,7 @@ ul.pagination.text-center li, ul.pagination.text-center li a {
     display:block !important;
     float: left;
 }
-
+ul.pagination.text-center li.active, ul.pagination.text-center li.active a {
+  color: rgb(122, 181, 92) !important;
+}
 /*# sourceMappingURL=style.css.map */
