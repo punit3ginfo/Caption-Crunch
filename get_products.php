@@ -146,13 +146,13 @@ try
 
 						//  Preview
 
-						var $CaptionOneFB = 'Grab the <?php echo html_entity_decode($title , ENT_COMPAT, 'UTF-8'); ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
-						var $CaptionTwoFB = 'STEAL ALERT! <?php echo html_entity_decode($title , ENT_COMPAT, 'UTF-8'); ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Link: <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
-						var $CaptionThreeFB = 'Take 20% OFF the <?php echo html_entity_decode($title , ENT_COMPAT, 'UTF-8');?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
+						var $CaptionOneFB = 'Grab the <?php echo htmlentities($title); ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
+						var $CaptionTwoFB = 'STEAL ALERT! <?php echo htmlentities($title); ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Link: <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
+						var $CaptionThreeFB = 'Take 20% OFF the <?php echo htmlentities($title);?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
 
-						var $CaptionOne = 'Grab the <?php echo html_entity_decode($title , ENT_COMPAT, 'UTF-8'); ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: http://buff.ly/2fVq7rY';
-						var $CaptionTwo = 'STEAL ALERT! <?php echo html_entity_decode($title , ENT_COMPAT, 'UTF-8'); ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Link: http://buff.ly/2fVq7rY';
-						var $CaptionThree = 'Take 20% OFF the <?php echo html_entity_decode($title , ENT_COMPAT, 'UTF-8'); ?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> http://buff.ly/2fVq7rY';
+						var $CaptionOne = 'Grab the <?php echo htmlentities($title); ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: http://buff.ly/2fVq7rY';
+						var $CaptionTwo = 'STEAL ALERT! <?php echo htmlentities($title); ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Link: http://buff.ly/2fVq7rY';
+						var $CaptionThree = 'Take 20% OFF the <?php echo htmlentities($title); ?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> http://buff.ly/2fVq7rY';
 
 						$("#preview-textarea-large").ready(function() {
 							$("#preview-textarea-large").html();
