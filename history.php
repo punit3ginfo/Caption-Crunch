@@ -323,6 +323,7 @@ try
                     success: function(data){
 			    //$('#pagination1').empty();
 			    var totolpageno = $($.parseHTML(data)).filter(".totolpageno"); 
+			     var search_term = $($.parseHTML(data)).filter(".search_term"); 
 					//var totolpageno = $('.totolpageno', data);
 					    console.log(totolpageno.html());
 					
@@ -334,11 +335,12 @@ try
 					    }
 			    alert(totolpageno);
 					console.info(totolpageno);
-					var obj = $('#pagination1').twbsPagination({
+					var obj = $('#pagination2').twbsPagination({
 					    totalPages: totolpageno,
 					    visiblePages:3,
 					    onPageClick: function (event, page) {
-						   getPagingALLProduct(page,21);
+						//   getPagingALLProduct(page,21);
+						    getPagingSearch(page,21,search_term)
 						console.info(page);
 					    }
 					});
