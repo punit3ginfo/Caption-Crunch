@@ -1811,7 +1811,7 @@ ul#pagination-list li {
   width: 30px;
 }
 #pagination2 .next a , #pagination1 .next a {
-  background: rgba(0, 0, 0, 0) url("./images/right-arrow.png") repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) url("./images/right-arrow.png") no-repeat scroll center center;
   font-size: 0;
   height: 36px;
   padding: 0;
