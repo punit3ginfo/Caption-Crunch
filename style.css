@@ -1820,4 +1820,10 @@ ul#pagination-list li {
 .active .page-link {
   color: #7ab55c; }
 
+.last {
+  display: none; }
+
+.first {
+  display: none; }
+
 /*# sourceMappingURL=style.css.map */
