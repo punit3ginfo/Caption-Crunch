@@ -76,7 +76,7 @@
 
                           <div class="content-header-3col-container">
                                   <div class="content-header-container">
-					  <nav aria-label="Page navigation">
+					  <nav aria-label="Page navigation" class="page">
        						 <ul class="pagination text-center" id="pagination1"></ul>
 						   <ul class="pagination text-center" id="pagination2"></ul>
    					 </nav>
