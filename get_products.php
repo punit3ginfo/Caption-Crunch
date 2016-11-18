@@ -315,6 +315,16 @@ catch (shopify\CurlException $e)
 		$.ajax({
 			url: '/pagination_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id,
 			success: function(data){
+					    alert($('.totolpageno').html());
+					var obj = $('#pagination1').twbsPagination({
+					    totalPages: 35,
+					    visiblePages:3,
+					    onPageClick: function (event, page) {
+						   getPagingALLProduct(page,21);
+						console.info(page);
+					    }
+					});
+        			console.info(obj.data());
 				$('#pagination').html(data);
 				$('ul li:lt(1)').addClass("paginate-link-active");
 				$('ul li:gt(3)').hide();
