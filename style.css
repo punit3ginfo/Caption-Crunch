@@ -1788,12 +1788,6 @@ ul#pagination-list li {
   margin-top: 15px;
   border: 1px solid red; }
 
-.content-overflow-container {
-  height: calc(100vh - 173px);
-  overflow-y: scroll;
-  position: relative;
-  width: 100%; }
-
 .pagination {
   width: 100%;
   display: flex;
