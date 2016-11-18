@@ -325,7 +325,12 @@ try
 					//var totolpageno = $('.totolpageno', data);
 					    console.log(totolpageno.html());
 					//alert(totolpageno.html());
-					totolpageno =parseInt(totolpageno.html());
+			    			if(totolpageno!=''){
+						   totolpageno =parseInt(totolpageno.html());
+						}
+					    else {
+					    totolpageno=1;
+					    }
 					console.info(totolpageno);
 					var obj = $('#pagination1').twbsPagination({
 					    totalPages: totolpageno,
