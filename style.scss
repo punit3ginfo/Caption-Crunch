@@ -2509,3 +2509,16 @@ ul.pagination.text-center li, ul.pagination.text-center li a {
 ul.pagination.text-center li.active, ul.pagination.text-center li.active a {
   color: rgb(122, 181, 92) !important;
 }
+
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+}
+
+.page-item {
+	display: flex;
+	padding: 0px 6px;
+	align-items: center;
+}
