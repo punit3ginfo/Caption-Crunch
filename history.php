@@ -345,7 +345,7 @@ try
 					    }
 					});
         			
-			$('#pagination').html(data);
+		/*	$('#pagination').html(data);
 			    $('ul li:gt(3)').hide();
 	$('#showLess').hide();
     size_li =jQuery("#pagination-list li").length;
@@ -382,7 +382,7 @@ try
         if(x == 3){
             $('#showLess').hide();
         }
-    });
+    });*/
                     }
                 });
 	});
