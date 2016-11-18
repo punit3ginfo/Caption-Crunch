@@ -118,6 +118,7 @@
             totalPages: 35,
             visiblePages:3,
             onPageClick: function (event, page) {
+		    function getPagingALLProduct(page,21);
                 console.info(page);
             }
         });
