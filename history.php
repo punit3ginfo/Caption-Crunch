@@ -322,6 +322,8 @@ try
                     url: '/pagination_search_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id+'&title='+title,
                     success: function(data){
 			    $('#pagination1').empty();
+			     $('#pagination2').remove();
+			    $('nav.page').append("<ul id='pagination2'></ul>");
 			    var totolpageno = $($.parseHTML(data)).filter(".totolpageno"); 
 			     var search_term = $($.parseHTML(data)).filter(".search_term").html(); 
 					//var totolpageno = $('.totolpageno', data);
