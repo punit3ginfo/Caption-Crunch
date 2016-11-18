@@ -18,6 +18,7 @@ try
 							$noofPages=$TotalnoOfProduct/$limit;
 							$noofPages=abs(round($noofPages));
 			echo '<h1 class="totolpageno" style="display:none">'.$noofPages.'</h1>';
+			echo '<h1 class="search_term" style="display:none">'$query_title.'</h1>'; 
 			?>
 			<button type="button" id="showLess"><i class="fa fa-long-arrow-left"></i></button> <ul id="pagination-list">
 
@@ -46,7 +47,7 @@ try
 							$limit=21; // Number of product per page
 							$noofPages=$TotalnoOfProduct/$limit;
 							$noofPages=abs(round($noofPages));
-			echo '<h1 class="totolpageno1" style="display:none">'.$noofPages.'</h1>';
+			echo '<h1 class="totolpageno" style="display:none">'.$noofPages.'</h1>';
 
 		?>
 
