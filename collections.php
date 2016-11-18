@@ -80,7 +80,7 @@
        						 <ul class="pagination text-center" id="pagination1"></ul>
 						   <ul class="pagination text-center" id="pagination2"></ul>
    					 </nav>
-                                          <div class="text-center" id="pagination"></div>
+                                          <!--div class="text-center" id="pagination"></div-->
                                   </div>
                           </div>
 
