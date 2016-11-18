@@ -2542,5 +2542,7 @@ ul#pagination-list li {
 }
 
 .active {
-	color: $brand-color;
+	.page-link {
+		color: $brand-color;
+	}
 }
