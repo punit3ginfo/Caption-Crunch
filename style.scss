@@ -2461,7 +2461,17 @@ ul#pagination-list li {
 .buffer-icon {
 		background-image : url('./images/connect-buffer-icon.jpg');
 }
-
+#pagination2 .first, #pagination2 .last {
+  display: none;
+}
+#pagination2 .prev a {
+  background: rgba(0, 0, 0, 0) url("./images/left-arrow.png") repeat scroll 0 0;
+  font-size: 0;
+}
+#pagination2 .next a {
+  background: rgba(0, 0, 0, 0) url("./images/right-arrow.png") repeat scroll 0 0;
+  font-size: 0;
+}
 .preview-buttons-container {
 		width: 100%;
 		height: 30px;
