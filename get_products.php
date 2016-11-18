@@ -317,7 +317,8 @@ catch (shopify\CurlException $e)
 			success: function(data){
 				
 				var totolpageno = $('.totolpageno', data);
-					    alert(totolpageno);
+					    console.log(totolpageno);
+				console.info(totolpageno);
 					var obj = $('#pagination1').twbsPagination({
 					    totalPages: 35,
 					    visiblePages:3,
