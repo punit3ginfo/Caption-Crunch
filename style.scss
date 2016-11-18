@@ -209,7 +209,7 @@ body {
 }
 
 .grey-button:hover {
-		color : white;
+		color : white !important;
 		background-color : $secondary-color;
 }
 
@@ -262,7 +262,7 @@ body {
 }
 
 .green-button:hover {
-		color : white;
+		color : white !important;
 		background-color : $brand-color;
 }
 
