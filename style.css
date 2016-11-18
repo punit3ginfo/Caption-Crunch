@@ -1842,4 +1842,15 @@ ul.pagination.text-center li.active, ul.pagination.text-center li.active a {
   padding: 0px 6px;
   align-items: center; }
 
+.page-link {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: #555555;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 1.42857143; }
+
 /*# sourceMappingURL=style.css.map */
