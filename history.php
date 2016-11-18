@@ -321,7 +321,7 @@ try
 		 $.ajax({
                     url: '/pagination_search_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id+'&title='+title,
                     success: function(data){
-			    //$('#pagination1').empty();
+			    $('#pagination1').empty();
 			    var totolpageno = $($.parseHTML(data)).filter(".totolpageno"); 
 			     var search_term = $($.parseHTML(data)).filter(".search_term").html(); 
 					//var totolpageno = $('.totolpageno', data);
@@ -336,7 +336,7 @@ try
 			    alert(totolpageno);
 					console.info(totolpageno);
 					var obj = $('#pagination2').twbsPagination({
-					    totalPages: 1,
+					    totalPages:totolpageno,
 					    visiblePages:3,
 					    onPageClick: function (event, page) {
 						//   getPagingALLProduct(page,21);
