@@ -323,7 +323,7 @@ try
                     success: function(data){
 			    //$('#pagination1').empty();
 			    var totolpageno = $($.parseHTML(data)).filter(".totolpageno"); 
-			     var search_term = $($.parseHTML(data)).filter(".search_term"); 
+			     var search_term = $($.parseHTML(data)).filter(".search_term").html(); 
 					//var totolpageno = $('.totolpageno', data);
 					    console.log(totolpageno.html());
 					
@@ -335,7 +335,7 @@ try
 					    }
 			    alert(totolpageno);
 					console.info(totolpageno);
-					var obj = $('#pagination2').twbsPagination({
+					var obj = $('#pagination1').twbsPagination({
 					    totalPages: totolpageno,
 					    visiblePages:3,
 					    onPageClick: function (event, page) {
