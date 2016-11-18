@@ -315,7 +315,9 @@ catch (shopify\CurlException $e)
 		$.ajax({
 			url: '/pagination_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id,
 			success: function(data){
-					    alert($('.totolpageno').html());
+				
+				var totolpageno = $('.totolpageno', data);
+					    alert(totolpageno);
 					var obj = $('#pagination1').twbsPagination({
 					    totalPages: 35,
 					    visiblePages:3,
