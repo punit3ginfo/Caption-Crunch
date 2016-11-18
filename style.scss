@@ -2546,6 +2546,7 @@ ul#pagination-list li {
 .active {
 	.page-link {
 		color: $brand-color;
+		font-weight: bold;
 	}
 }
 

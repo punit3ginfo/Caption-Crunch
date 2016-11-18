@@ -1814,7 +1814,8 @@ ul#pagination-list li {
   line-height: 1.42857143; }
 
 .active .page-link {
-  color: #7ab55c; }
+  color: #7ab55c;
+  font-weight: bold; }
 
 .last {
   display: none; }
