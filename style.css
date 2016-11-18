@@ -1803,13 +1803,19 @@ ul#pagination-list li {
 #pagination2 .first, #pagination2 .last ,#pagination1 .first, #pagination1 .last {
   display: none;
 }
-#pagination2 .prev a ,#pagination1 .prev a {
-  background: rgba(0, 0, 0, 0) url("./images/left-arrow.png") repeat scroll 0 0;
+#pagination2 .prev a, #pagination1 .prev a {
+  background: rgba(0, 0, 0, 0) url("./images/left-arrow.png") no-repeat scroll center center;
   font-size: 0;
+  height: 36px;
+  padding: 0;
+  width: 30px;
 }
 #pagination2 .next a , #pagination1 .next a {
   background: rgba(0, 0, 0, 0) url("./images/right-arrow.png") repeat scroll 0 0;
   font-size: 0;
+  height: 36px;
+  padding: 0;
+  width: 30px;
     display:block !important;
 }
 #pagination2 .next , #pagination1 .next {
