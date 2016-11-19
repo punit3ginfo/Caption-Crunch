@@ -544,7 +544,7 @@ body {
   animation-direction: normal; }
 
 .collections-animation {
-  top: 100vh; }
+  top: 100vh !important; }
 
 #preview-container {
   position: absolute;
