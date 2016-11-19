@@ -301,23 +301,7 @@ catch (shopify\CurlException $e)
 		$.ajax({
 			url: '/pagination_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id,
 			success: function(data){
-				 $('#pagination1').remove();
-				$('nav.page').append("<ul id='pagination1'></ul>");
-					var totolpageno = $($.parseHTML(data)).filter(".totolpageno");
-					//var totolpageno = $('.totolpageno', data);
-					    console.log(totolpageno.html());
-					//alert(totolpageno.html());
-					totolpageno =parseInt(totolpageno.html());
-					console.info(totolpageno);
-					var obj = $('#pagination1').twbsPagination({
-					    totalPages: totolpageno,
-					    visiblePages:3,
-					    onPageClick: function (event, page) {
-						   getPagingALLProduct(page,21);
-						console.info(page);
-					    }
-					});
-        			console.info(obj.data());
+				
 				$('#pagination').html(data);
 				$('ul li:lt(1)').addClass("paginate-link-active");
 				$('ul li:gt(3)').hide();
