@@ -309,7 +309,7 @@ catch (shopify\CurlException $e)
 					console.info(totolpageno);
 					var obj = $('#pagination1').twbsPagination({
 					    totalPages: totolpageno,
-					    visiblePages:5,
+					    visiblePages:3,
 					    onPageClick: function (event, page) {
 						   getPagingALLProduct(page,21);
 						console.info(page);
