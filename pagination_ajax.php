@@ -14,7 +14,8 @@ try
 							//echo "total products=".$TotalnoOfProduct=sizeof($products);
 							$limit=21; // Number of product per page
 							echo $noofPages=$TotalnoOfProduct/$limit;
-							echo $noofPages=abs(round($noofPages));
+							//echo $noofPages=abs(round($noofPages));
+							echo $noofPages=ceil($noofPages);
 			
 			?>
                                  <h1 class="totolpageno" style="display:none"><?php echo $noofPages ;?></h1>
