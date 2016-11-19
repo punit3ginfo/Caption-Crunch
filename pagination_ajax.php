@@ -13,8 +13,8 @@ try
 						   $TotalnoOfProduct = $shopify('GET /admin/products/count.json', array('collection_id'=>$_REQUEST['colid']));
 							//echo "total products=".$TotalnoOfProduct=sizeof($products);
 							$limit=21; // Number of product per page
-							$noofPages=$TotalnoOfProduct/$limit;
-							$noofPages=abs(round($noofPages));
+							echo $noofPages=$TotalnoOfProduct/$limit;
+							echo $noofPages=abs(round($noofPages));
 			
 			?>
                                  <h1 class="totolpageno" style="display:none"><?php echo $noofPages ;?></h1>
