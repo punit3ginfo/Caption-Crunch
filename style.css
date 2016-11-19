@@ -1838,21 +1838,23 @@ ul#pagination-list li {
 
 .first {
   display: none; }
+
 .page-item.prev .page-link::before {
-    content: "\f190";
-    font-size: 16px;
+  content: "\f177";
   font-family: FontAwesome;
-}
+  font-size: 14px; }
+
 .page-item.prev .page-link {
-    font-size: 0;
-}
+  font-size: 0; }
 
 .page-item.next .page-link::before {
-    content: "\f18e";
-    font-size: 16px;
+  content: "\f178";
   font-family: FontAwesome;
-}
+  font-size: 14px; }
+
 .page-item.next a {
-    font-size: 0;
-}
+  font-size: 0; }
+
+/*# sourceMappingURL=style.css.map */
+
 /*# sourceMappingURL=style.css.map */

@@ -2570,3 +2570,24 @@ ul#pagination-list li {
 .first {
     display: none;
 }
+
+.page-item.prev .page-link::before {
+    content: "\f177";
+
+  font-family: FontAwesome;
+    font-size: $small-text;
+}
+.page-item.prev .page-link {
+    font-size: 0;
+}
+
+.page-item.next .page-link::before {
+    content: "\f178";
+
+  font-family: FontAwesome;
+    font-size: $small-text;
+}
+.page-item.next a {
+    font-size: 0;
+}
+/*# sourceMappingURL=style.css.map */
