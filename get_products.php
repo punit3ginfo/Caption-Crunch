@@ -83,7 +83,7 @@ try
 
 		<!-- HTML Content for Product  START      -->
 
-		<div class="product-card-clearfix bounceInUp">
+		<div class="product-card-clearfix">
 
 			<div class="product-card-container">
 
