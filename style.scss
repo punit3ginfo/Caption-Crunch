@@ -1583,6 +1583,19 @@ body {
 		padding-left  : 10px;
 }
 
+.preview-content-overflow {
+		position      : relative;
+
+		overflow-x    : hidden;
+		overflow-y    : scroll;
+
+		box-sizing    : border-box;
+		width         : 100%;
+		height        : calc(100vh - 173px);
+		padding-right : 5px;
+		padding-left  : 10px;
+}
+
 .product-card-clearfix {
 		position     : relative;
 
@@ -2477,12 +2490,12 @@ ul#pagination-list li {
 
 // New
 
-// .content-overflow-container {
-//   height: calc(100vh - 173px);
-//   overflow-y: scroll;
-//   position: relative;
-//   width: 100%;
-// }
+.content-overflow-container {
+  height: calc(100vh - 173px);
+  overflow-y: scroll;
+  position: relative;
+  width: 100%;
+}
 // #pagination2 .first, #pagination2 .last ,#pagination1 .first, #pagination1 .last {
 //   display: none;
 // }

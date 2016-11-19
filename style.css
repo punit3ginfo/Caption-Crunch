@@ -1144,6 +1144,16 @@ body {
   padding-right: 5px;
   padding-left: 10px; }
 
+.preview-content-overflow {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(100vh - 173px);
+  padding-right: 5px;
+  padding-left: 10px; }
+
 .product-card-clearfix {
   position: relative;
   display: inline-block;
@@ -1789,6 +1799,12 @@ ul#pagination-list li {
   height: 30px;
   margin-top: 15px;
   border: 1px solid red; }
+
+.content-overflow-container {
+  height: calc(100vh - 173px);
+  overflow-y: scroll;
+  position: relative;
+  width: 100%; }
 
 .pagination {
   width: 100%;

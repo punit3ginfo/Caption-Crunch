@@ -29,9 +29,9 @@
 					</div>
 
 					<div class="content-overflow-container">
-						<div  class="content-overflow">
+						<div  class="preview-content-overflow">
 							<!-- Form Section -->
-							<?php require 'preview-form.php';?>
+							<?php include 'preview-form.php';?>
 							<!-- Form Section -->
 						</div>
 					</div>
