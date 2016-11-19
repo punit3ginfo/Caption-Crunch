@@ -1841,6 +1841,7 @@ ul#pagination-list li {
 .page-item.prev .page-link::before {
     content: "\f190";
     font-size: 16px;
+  font-family: FontAwesome;
 }
 .page-item.prev .page-link {
     font-size: 0;
@@ -1849,6 +1850,7 @@ ul#pagination-list li {
 .page-item.next .page-link::before {
     content: "\f18e";
     font-size: 12px;
+  font-family: FontAwesome;
 }
 .page-item.next a {
     font-size: 0;
