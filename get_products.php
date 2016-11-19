@@ -301,7 +301,7 @@ catch (shopify\CurlException $e)
 		$.ajax({
 			url: '/pagination_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id,
 			success: function(data){
-				 $('#pagination1').empty();
+				 $('#pagination1').remove();
 				$('nav.page').append("<ul class='pagination1'></ul>");
 					var totolpageno = $($.parseHTML(data)).filter(".totolpageno");
 					//var totolpageno = $('.totolpageno', data);
@@ -317,7 +317,7 @@ catch (shopify\CurlException $e)
 						console.info(page);
 					    }
 					});
-        			/*console.info(obj.data());
+        			console.info(obj.data());
 				$('#pagination').html(data);
 				$('ul li:lt(1)').addClass("paginate-link-active");
 				$('ul li:gt(3)').hide();
@@ -362,7 +362,7 @@ catch (shopify\CurlException $e)
 					if(x == 3){
 						$('#showLess').hide();
 					}
-				}); */
+				}); 
 			}
 		});
 
