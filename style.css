@@ -775,7 +775,7 @@ body {
   color: #7ab55c; }
 
 .button-four-col {
-  width: 23%; }
+  width: calc(23% - 15px); }
 
 @media (max-width: 1000px) {
   .button-four-col {
