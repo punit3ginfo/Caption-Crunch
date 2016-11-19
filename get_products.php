@@ -132,6 +132,7 @@ try
 				$(document).ready(function() {
 
 					$('#share-button-<?php echo $p_id1; ?>').click(function() {
+						console.log("works");
 						//  Load
 						$("#post-preview-container").css("display","block");
 						// Back Button
