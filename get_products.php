@@ -301,6 +301,8 @@ catch (shopify\CurlException $e)
 		$.ajax({
 			url: '/pagination_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id,
 			success: function(data){
+				 $('#pagination1').empty();
+				$('nav.page').append("<ul class='pagination1'></ul>");
 					var totolpageno = $($.parseHTML(data)).filter(".totolpageno");
 					//var totolpageno = $('.totolpageno', data);
 					    console.log(totolpageno.html());
