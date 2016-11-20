@@ -72,7 +72,7 @@
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
 			    $('.content-overflow').html(data);
-		
+
                     }
                 });
             }
@@ -94,6 +94,8 @@
 
                     }
                 });
+
+		$(".share-history-back").html('<i class="fa fa-chevron-left" aria-hidden="true"></i> back');
             }
 	</script>
 <script>

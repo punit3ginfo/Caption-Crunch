@@ -60,7 +60,7 @@
 
 			<div class="content-header-3col-container">
 				<div class="content-header-container">
-					<a href="javascript:void(0)" onclick="getsharehistory()" class="sidebar-span share-history-button">
+					<a href="javascript:void(0)" onclick="getsharehistory()" class="sidebar-span share-history-button share-history-back">
 						<i class="fa fa-history" aria-hidden="true"></i>
 						History
 					</a>
@@ -85,31 +85,31 @@
 			</div>
 
 			<!-- <div class="collection_title_header_container">
-			<div class="collection_title_container-active">
+						<div class="collection_title_container-active">
 
-			<input class="search-text-box" onKeyDown="if(event.keyCode==13) search(document.getElementById('formValueId').value);" id="formValueId" type="text" name="q_name" placeholder="Search" />
+						<input class="search-text-box" onKeyDown="if(event.keyCode==13) search(document.getElementById('formValueId').value);" id="formValueId" type="text" name="q_name" placeholder="Search" />
 
-			<i style="position: absolute; right: 10px;  color: #666;" class="fa fa-search" onclick="search(document.getElementById('formValueId').value);"></i>
+						<i style="position: absolute; right: 10px;  color: #666;" class="fa fa-search" onclick="search(document.getElementById('formValueId').value);"></i>
 
+					</div>
+				</div> -->
 		</div>
-	</div> -->
-</div>
+		<div class="content-overflow-container">
+			<div  class="content-overflow">
 
-<div class="content-overflow-container">
-	<div  class="content-overflow">
+				<?php
 
-		<?php
+				//  Products List Here
+				if($_REQUEST['status']=="search"){
+					require __DIR__.'/history.php';
+				}
+				if(($_REQUEST['status']!="search")|| ($_REQUEST['status']=="")){
+					require __DIR__.'/get_products.php';
+				}
 
-		//  Products List Here
-		if($_REQUEST['status']=="search"){
-			require __DIR__.'/history.php';
-		}
-		if(($_REQUEST['status']!="search")|| ($_REQUEST['status']=="")){
-			require __DIR__.'/get_products.php';
-		}
+				?>
 
-		?>
-
+			</div>
+		</div>
 	</div>
-</div>
 </div>
