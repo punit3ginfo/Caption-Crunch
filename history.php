@@ -59,7 +59,7 @@ try
 
 				<div class="product-card-container">
 
-					<div class="ribbon ribbon-<?php echo $p_id1; ?>"><span>SHARED</span></div>
+					<div class="ribbon ribbon-<?php echo $p_id1; ?>" style="display: block;"><span>SHARED</span></div>
 
 					<div class="product-card-image-container product-image-<?php echo $p_id1; ?>" style='background-image: url(<?php echo $src; ?>)'>
 						<!-- Opacity Layer -->
@@ -324,11 +324,11 @@ try
 			    $('#pagination1').empty();
 			     $('#pagination2').remove();
 			    $('nav.page').append("<ul id='pagination2'></ul>");
-			    var totolpageno = $($.parseHTML(data)).filter(".totolpageno"); 
-			     var search_term = $($.parseHTML(data)).filter(".search_term").html(); 
+			    var totolpageno = $($.parseHTML(data)).filter(".totolpageno");
+			     var search_term = $($.parseHTML(data)).filter(".search_term").html();
 					//var totolpageno = $('.totolpageno', data);
 					    console.log(totolpageno.html());
-					
+
 			    			if(totolpageno!=''){
 						   var totolpageno1 =parseInt(totolpageno.html());
 						}
@@ -345,7 +345,7 @@ try
 						console.info(page);
 					    }
 					});
-        			
+
 		/*	$('#pagination').html(data);
 			    $('ul li:gt(3)').hide();
 	$('#showLess').hide();
