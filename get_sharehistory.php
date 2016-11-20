@@ -93,161 +93,161 @@ $MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
 			      </div>
 		      </div>
 
-		      <a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
-
-		      <script>
-
-		      // Show / Hide Product Details
-		      $(document).ready(function() {
-			      $('.product-image-<?php echo $p_id1; ?>').hover(function() {
-				      // Show / Hide Product Details Opacity Container
-				      $('.product-opacity-<?php echo $p_id1; ?>').toggle();
-				      // Show / Hide Product Details Container
-				      $('.product-details-<?php echo $p_id1; ?>').toggle();
-			      });
-		      });
-
-		      // Preview Drop Down
-		      $(document).ready(function() {
-
-			      $('#share-button-<?php echo $p_id1; ?>').click(function() {
-				      //  Load
-				      $("#post-preview-container").css("display","block");
-				      // Back Button
-				      $("#share-link").css("display", "none");
-				      $(".back-link").css("display", "block");
-				      // Help
-				      $(".help-clearfix").empty();
-				      $(".help-clearfix").load("help/preview.php");
-				      //  Animate
-				      $('.collections-animation-container').addClass("collections-animation");
-				      $('#preview-container').addClass("preview-container-animate");
-
-				      //  Preview
-
-				      var $CaptionOneFB = "Grab the <?php echo $title; ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: <span style='color: #365899;''>http://buff.ly/2fVq7rY</span>";
-				      var $CaptionTwoFB = "STEAL ALERT! <?php echo $title; ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Link: <span style='color: #365899;''>http://buff.ly/2fVq7rY</span>";
-				      var $CaptionThreeFB = "Take 20% OFF the <?php echo $title; ?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> <span style='color: #365899;''>http://buff.ly/2fVq7rY</span>";
-
-				      var $CaptionOne = "Grab the <?php echo $title; ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: http://buff.ly/2fVq7rY";
-				      var $CaptionTwo = "STEAL ALERT! <?php echo $title; ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Link: http://buff.ly/2fVq7rY";
-				      var $CaptionThree = "Take 20% OFF the <?php echo $title; ?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> http://buff.ly/2fVq7rY";
-
-				      $("#preview-textarea-large").ready(function() {
-					      $("#preview-textarea-large").html();
-					      $("#preview-textarea-large").html($CaptionOne);
-					      $(".facebook-mobile-caption-text").html();
-					      $(".facebook-mobile-caption-text").html($CaptionOneFB);
-					      $("#caption-one").addClass('green-button');
-					      $("#caption-two").removeClass('green-button');
-					      $("#caption-three").removeClass('green-button');
-				      });
-
-				      $("#caption-one").click(function() {
-					      $("#preview-textarea-large").html();
-					      $("#preview-textarea-large").html($CaptionOne);
-					      $(".facebook-mobile-caption-text").html();
-					      $(".facebook-mobile-caption-text").html($CaptionOneFB);
-					      $("#caption-one").addClass('green-button');
-					      $("#caption-two").removeClass('green-button');
-					      $("#caption-three").removeClass('green-button');
-				      });
-
-				      $("#caption-two").click(function() {
-					      $("#preview-textarea-large").html();
-					      $("#preview-textarea-large").html($CaptionTwo);
-					      $(".facebook-mobile-caption-text").html();
-					      $(".facebook-mobile-caption-text").html($CaptionTwoFB);
-					      $("#caption-one").removeClass('green-button');
-					      $("#caption-three").removeClass('green-button');
-					      $("#caption-two").addClass('green-button');
-				      });
-
-				      $("#caption-three").click(function() {
-					      $("#preview-textarea-large").html();
-					      $("#preview-textarea-large").html($CaptionThree);
-					      $(".facebook-mobile-caption-text").html();
-					      $(".facebook-mobile-caption-text").html($CaptionThreeFB);
-					      $("#caption-two").removeClass('green-button');
-					      $("#caption-one").removeClass('green-button');
-					      $("#caption-three").addClass('green-button');
-				      });
-
-				      $("#addimage-image-one").ready(function() {
-					      $("#addimage-image-one").css('background-image', 'url(<?php echo $src; ?>)')
-				      });
-
-				      var $facebookImageSource = "<?php echo $src; ?>";
-
-				      $(".facebook-mobile-image").ready(function() {
-					      $(".facebook-mobile-image").attr("src", $facebookImageSource);
-				      });
-
-			      });
-
-			      // $('#product-preview-button-<?php echo $p_id1; ?>').click(function() {
-			      //          //  Load
-			      //         $("#product-preview-container").css("display","block");
-			      //         // Back Button
-			      //         $("#share-link").css("display", "none");
-			      //         $(".back-link").css("display", "block");
-			      //         // Help
-			      //         $(".help-clearfix").empty();
-			      //         $(".help-clearfix").load("help/product-preview.php");
-			      //         //  Animate
-			      //        $('.collections-animation-container').addClass("collections-animation");
-			      //        $('#preview-container').addClass("preview-container-animate");
-			      // });
-
-			      $('.back-link').click(function() {
-				      $('.collections-animation-container').removeClass("collections-animation");
-				      $('#preview-container').removeClass("preview-container-animate");
-				      // Back Button
-				      $("#share-link").css("display", "block");
-				      $(".back-link").css("display", "none");
-				      // Help
-				      $(".help-clearfix").empty();
-				      $(".help-clearfix").load("help/share.php");
-
-				      setTimeout(function(){
-					      $("#product-preview-container").css("display","none");
-					      $("#post-preview-container").css("display","none");
-					      //  Clear
-					      $("#caption-textarea-large").empty();
-					      $("#caption-textarea-small").empty();
-					      $("#addimage-image-one").empty();
-					      $(".facebook-mobile-caption-text").empty();
-					      $(".facebook-mobile-image").attr("src", "");
-				      }, 800);
-			      });
-
-
-			      $('.sidebar-link').click(function() {
-				      $('#preview-container').removeClass("preview-container-animate");
-				      $('.collections-animation-container').removeClass("collections-animation");
-				      // Back Button
-				      $("#share-link").css("display", "block");
-				      $(".back-link").css("display", "none");
-
-				      setTimeout(function(){
-					      $("#product-preview-container").css("display","none");
-					      $("#post-preview-container").css("display","none");
-					      //  Clear
-					      $("#caption-textarea-large").empty();
-					      $("#caption-textarea-small").empty();
-					      $("#addimage-image-one").empty();
-					      $(".facebook-mobile-caption-text").empty();
-					      $(".facebook-mobile-image").attr("src", "");
-				      }, 800);
-			      });
-		      });
-
-		      </script>
+		      <a class='btn grey-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>'><i class='fa fa-times' aria-hidden='true'></i> Reset</a>
 
 	      </div>
 
       </div>
       <!-- HTML Content for Product END    -->
+
+      <script>
+
+      // Show / Hide Product Details
+      $(document).ready(function() {
+	      $('.product-image-<?php echo $p_id1; ?>').hover(function() {
+		      // Show / Hide Product Details Opacity Container
+		      $('.product-opacity-<?php echo $p_id1; ?>').toggle();
+		      // Show / Hide Product Details Container
+		      $('.product-details-<?php echo $p_id1; ?>').toggle();
+	      });
+      });
+
+      // Preview Drop Down
+      $(document).ready(function() {
+
+	      $('#share-button-<?php echo $p_id1; ?>').click(function() {
+		      //  Load
+		      $("#post-preview-container").css("display","block");
+		      // Back Button
+		      $("#share-link").css("display", "none");
+		      $(".back-link").css("display", "block");
+		      // Help
+		      $(".help-clearfix").empty();
+		      $(".help-clearfix").load("help/preview.php");
+		      //  Animate
+		      $('.collections-animation-container').addClass("collections-animation");
+		      $('#preview-container').addClass("preview-container-animate");
+
+		      //  Preview
+
+		      var $CaptionOneFB = "Grab the <?php echo $title; ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: <span style='color: #365899;''>http://buff.ly/2fVq7rY</span>";
+		      var $CaptionTwoFB = "STEAL ALERT! <?php echo $title; ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Link: <span style='color: #365899;''>http://buff.ly/2fVq7rY</span>";
+		      var $CaptionThreeFB = "Take 20% OFF the <?php echo $title; ?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> <span style='color: #365899;''>http://buff.ly/2fVq7rY</span>";
+
+		      var $CaptionOne = "Grab the <?php echo $title; ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: http://buff.ly/2fVq7rY";
+		      var $CaptionTwo = "STEAL ALERT! <?php echo $title; ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Link: http://buff.ly/2fVq7rY";
+		      var $CaptionThree = "Take 20% OFF the <?php echo $title; ?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> http://buff.ly/2fVq7rY";
+
+		      $("#preview-textarea-large").ready(function() {
+			      $("#preview-textarea-large").html();
+			      $("#preview-textarea-large").html($CaptionOne);
+			      $(".facebook-mobile-caption-text").html();
+			      $(".facebook-mobile-caption-text").html($CaptionOneFB);
+			      $("#caption-one").addClass('green-button');
+			      $("#caption-two").removeClass('green-button');
+			      $("#caption-three").removeClass('green-button');
+		      });
+
+		      $("#caption-one").click(function() {
+			      $("#preview-textarea-large").html();
+			      $("#preview-textarea-large").html($CaptionOne);
+			      $(".facebook-mobile-caption-text").html();
+			      $(".facebook-mobile-caption-text").html($CaptionOneFB);
+			      $("#caption-one").addClass('green-button');
+			      $("#caption-two").removeClass('green-button');
+			      $("#caption-three").removeClass('green-button');
+		      });
+
+		      $("#caption-two").click(function() {
+			      $("#preview-textarea-large").html();
+			      $("#preview-textarea-large").html($CaptionTwo);
+			      $(".facebook-mobile-caption-text").html();
+			      $(".facebook-mobile-caption-text").html($CaptionTwoFB);
+			      $("#caption-one").removeClass('green-button');
+			      $("#caption-three").removeClass('green-button');
+			      $("#caption-two").addClass('green-button');
+		      });
+
+		      $("#caption-three").click(function() {
+			      $("#preview-textarea-large").html();
+			      $("#preview-textarea-large").html($CaptionThree);
+			      $(".facebook-mobile-caption-text").html();
+			      $(".facebook-mobile-caption-text").html($CaptionThreeFB);
+			      $("#caption-two").removeClass('green-button');
+			      $("#caption-one").removeClass('green-button');
+			      $("#caption-three").addClass('green-button');
+		      });
+
+		      $("#addimage-image-one").ready(function() {
+			      $("#addimage-image-one").css('background-image', 'url(<?php echo $src; ?>)')
+		      });
+
+		      var $facebookImageSource = "<?php echo $src; ?>";
+
+		      $(".facebook-mobile-image").ready(function() {
+			      $(".facebook-mobile-image").attr("src", $facebookImageSource);
+		      });
+
+	      });
+
+	      // $('#product-preview-button-<?php echo $p_id1; ?>').click(function() {
+	      //          //  Load
+	      //         $("#product-preview-container").css("display","block");
+	      //         // Back Button
+	      //         $("#share-link").css("display", "none");
+	      //         $(".back-link").css("display", "block");
+	      //         // Help
+	      //         $(".help-clearfix").empty();
+	      //         $(".help-clearfix").load("help/product-preview.php");
+	      //         //  Animate
+	      //        $('.collections-animation-container').addClass("collections-animation");
+	      //        $('#preview-container').addClass("preview-container-animate");
+	      // });
+
+	      $('.back-link').click(function() {
+		      $('.collections-animation-container').removeClass("collections-animation");
+		      $('#preview-container').removeClass("preview-container-animate");
+		      // Back Button
+		      $("#share-link").css("display", "block");
+		      $(".back-link").css("display", "none");
+		      // Help
+		      $(".help-clearfix").empty();
+		      $(".help-clearfix").load("help/share.php");
+
+		      setTimeout(function(){
+			      $("#product-preview-container").css("display","none");
+			      $("#post-preview-container").css("display","none");
+			      //  Clear
+			      $("#caption-textarea-large").empty();
+			      $("#caption-textarea-small").empty();
+			      $("#addimage-image-one").empty();
+			      $(".facebook-mobile-caption-text").empty();
+			      $(".facebook-mobile-image").attr("src", "");
+		      }, 800);
+	      });
+
+
+	      $('.sidebar-link').click(function() {
+		      $('#preview-container').removeClass("preview-container-animate");
+		      $('.collections-animation-container').removeClass("collections-animation");
+		      // Back Button
+		      $("#share-link").css("display", "block");
+		      $(".back-link").css("display", "none");
+
+		      setTimeout(function(){
+			      $("#product-preview-container").css("display","none");
+			      $("#post-preview-container").css("display","none");
+			      //  Clear
+			      $("#caption-textarea-large").empty();
+			      $("#caption-textarea-small").empty();
+			      $("#addimage-image-one").empty();
+			      $(".facebook-mobile-caption-text").empty();
+			      $(".facebook-mobile-image").attr("src", "");
+		      }, 800);
+	      });
+      });
+
+      </script>
 
 	<?php
 
