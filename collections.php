@@ -14,26 +14,26 @@
 
                               	<!-- Collection Card -->
 
-                                    <a href="javascript:void(0)" onclick="getproducts()">
-                                            <div class="menu-container">
-                                                <div class="menu-clearfix">
-                                                    <div class="menu-font-container">
-                                                        <span class="menu-font">ALL PRODUCTS</span>
-                                                    </div>
-                                                    <div class="menu-icon-clearfix">
-                                                        <div class="menu-icon-container">
-                                                            <span class="menu-icon">X</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
+						<a href="javascript:void(0)" onclick="">
+						    <div class="menu-container">
+							<div class="menu-clearfix">
+							    <div class="menu-font-container">
+								<span class="menu-font">NEW PRODUCTS</span>
+							    </div>
+							    <div class="menu-icon-clearfix">
+								<div class="menu-icon-container">
+								    <span class="menu-icon">X</span>
+								</div>
+							    </div>
+							</div>
+						    </div>
+						</a>
 
-										<a href="javascript:void(0)" onclick="">
+	                                    <a href="javascript:void(0)" onclick="getproducts()">
 	                                            <div class="menu-container">
 	                                                <div class="menu-clearfix">
 	                                                    <div class="menu-font-container">
-	                                                        <span class="menu-font">NEW PRODUCTS</span>
+	                                                        <span class="menu-font">ALL PRODUCTS</span>
 	                                                    </div>
 	                                                    <div class="menu-icon-clearfix">
 	                                                        <div class="menu-icon-container">
@@ -42,7 +42,7 @@
 	                                                    </div>
 	                                                </div>
 	                                            </div>
-	                                        </a>
+					    </a>
 
                                     <?php
 
@@ -113,4 +113,3 @@
                       </div>
           </div>
 </div>
-
