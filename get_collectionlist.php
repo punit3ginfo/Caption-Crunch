@@ -95,7 +95,7 @@
                     }
                 });
 
-		$(".share-history-back").html('<i class="fa fa-chevron-left" aria-hidden="true"></i> back');
+		$(".share-history-back").html('<i class="fa fa-chevron-left" aria-hidden="true"></i> Back');
             }
 	</script>
 <script>
