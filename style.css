@@ -1460,6 +1460,12 @@ body {
   display: flex;
   justify-content: space-between; }
 
+@media (max-width: 1060px) {
+  .content-overflow {
+    width: calc(100% - 31px); }
+
+  .product-card-clearfix {
+    width: calc(50% - 12px); } }
 .preview-header {
   display: flex;
   width: calc(100% - 48px);
