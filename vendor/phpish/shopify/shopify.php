@@ -53,46 +53,20 @@
 
 	function access_token($shop, $api_key, $shared_secret, $code)
 	{
-
-
-  $post_data = array(
-    "client_id" => $api_key,
-    "client_secret" => $shared_secret,
-    "refresh_token" => '740952e2595503c8a27a97b0f5bb7d39-1479710418'
-  );
-  $data_string = json_encode($post_data);
-
-  $headers = array(
-    "Content-Type: application/json",
-    "Accept: application/json",
-    "Content-Length:" . strlen($data_string)
-  );
-
-  $handler = curl_init('https://shop.myshopify.com/admin/oauth/access_token.json');
-  curl_setopt($handler, CURLOPT_CUSTOMREQUEST, "POST");
-  curl_setopt($handler, CURLOPT_POSTFIELDS, $data_string);
-  curl_setopt($handler, CURLOPT_RETURNTRANSFER, true);
-  curl_setopt($handler, CURLOPT_HTTPHEADER, $headers);
-
-  $response = curl_exec($handler);
-
-    echo "access_token".$response;
-   return $response['access_token'];
-
 		
 		
 		/*echo "$shop=".$shop."<br>";
 		echo "$api_key=".$api_key."<br>";
 		echo "$shared_secret=".$shared_secret."<br>";
 		echo "$code".$code."<br>"; */
-		/*try
+		try
 		{
 			$response = http\request("POST https://$shop/admin/oauth/access_token", array(), array('client_id'=>$api_key, 'client_secret'=>$shared_secret, 'code'=>$code));
 		}
 		catch (http\CurlException $e) { throw new CurlException($e->getMessage(), $e->getCode(), $e->getRequest()); }
 		catch (http\ResponseException $e) { throw new ApiException($e->getMessage(), $e->getCode(), $e->getRequest(), $e->getResponse()); }
 
-		return $response['access_token']; */
+		return $response['access_token'];
 	}
 
 
