@@ -309,6 +309,7 @@ catch (shopify\CurlException $e)
 					//alert(totolpageno.html());
 					totolpageno =parseInt(totolpageno.html());
 					console.info(totolpageno);
+				   if(totolpageno > 1) {
 					var obj = $('#pagination1').twbsPagination({
 					    totalPages: totolpageno,
 					    visiblePages:3,
@@ -321,6 +322,7 @@ catch (shopify\CurlException $e)
 						console.info(page);
 					    }
 					});
+				   }	   
         			/*console.info(obj.data());
 				$('#pagination').html(data);
 				$('ul li:lt(1)').addClass("paginate-link-active");
