@@ -1462,7 +1462,7 @@ body {
 
 .preview-header {
   display: flex;
-  width: calc(100% - 48px);
+  width: calc(100% - 45px);
   padding-right: 15px;
   padding-left: 15px;
   align-items: center;
