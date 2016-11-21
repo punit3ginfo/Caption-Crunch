@@ -71,15 +71,16 @@
     "Content-Length:" . strlen($data_string)
   );
 
-  $handler = curl_init('https://$shop/admin/oauth/access_token.json');
+  $handler = curl_init('https://share-tag.herokuapp.com/admin/oauth/access_token.json');
   curl_setopt($handler, CURLOPT_CUSTOMREQUEST, "POST");
   curl_setopt($handler, CURLOPT_POSTFIELDS, $data_string);
   curl_setopt($handler, CURLOPT_RETURNTRANSFER, true);
   curl_setopt($handler, CURLOPT_HTTPHEADER, $headers);
 
   $response = curl_exec($handler);
-
+       
        echo $response['access_token'];
+		
     return $response['access_token'];
 
 		
