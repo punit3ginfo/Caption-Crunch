@@ -16,9 +16,9 @@ try
 				 $query_title =str_replace('"','',$query_title);
 				 if($_REQUEST['page_id']=='')
 				 {
-				 $search_products = $shopify('GET /admin/products.json', array('title'=>$query_title ,'limit'=>'50','page'=>'1'));
+				 $search_products = $shopify('GET /admin/products.json', array('title'=>$query_title ,'limit'=>'21','page'=>'1'));
 				 }else{
-					 $search_products = $shopify('GET /admin/products.json', array('title'=>$query_title ,'limit'=>'50','page'=>$_REQUEST['page_id']));
+					 $search_products = $shopify('GET /admin/products.json', array('title'=>$query_title ,'limit'=>'21','page'=>$_REQUEST['page_id']));
 				 }
 
 			foreach($search_products as $singleproduct)
