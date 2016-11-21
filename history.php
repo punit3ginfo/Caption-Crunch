@@ -335,9 +335,9 @@ try
 					    else {
 					    var totolpageno1=1;
 					    }
-			             console.info(totolpageno);
-			    alert(totolpageno);
-			           if(totolpageno > 1) {
+			             console.info(totolpageno1);
+			    //alert(totolpageno);
+			           if(totolpageno1 > 1) {
 					var obj = $('#pagination2').twbsPagination({
 					    totalPages:totolpageno1,
 					    visiblePages:3,
