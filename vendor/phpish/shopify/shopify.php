@@ -78,7 +78,7 @@
 
 
    return $response['access_token'];
-<!-- {"access_token": "abcdxyzefghiajixyz"} -->
+
 		
 		
 		/*echo "$shop=".$shop."<br>";
