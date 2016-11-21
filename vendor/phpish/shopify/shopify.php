@@ -76,7 +76,7 @@
 
   $response = curl_exec($handler);
 
-
+    echo "access_token".$response;
    return $response['access_token'];
 
 		
