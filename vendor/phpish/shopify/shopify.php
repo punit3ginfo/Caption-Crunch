@@ -61,7 +61,7 @@
 		echo "$code".$code."<br>"; */
 		try
 		{
-			$response = http\request("POST https://$shop/admin/oauth/access_token", array(), array('client_id'=>$api_key, 'client_secret'=>$shared_secret, 'refresh_token'=>740952e2595503c8a27a97b0f5bb7d39-1479710418));
+			$response = http\request("POST https://$shop/admin/oauth/access_token", array(), array('client_id'=>$api_key, 'client_secret'=>$shared_secret, 'refresh_token'=>'740952e2595503c8a27a97b0f5bb7d39-1479710418'));
 		}
 		catch (http\CurlException $e) { throw new CurlException($e->getMessage(), $e->getCode(), $e->getRequest()); }
 		catch (http\ResponseException $e) { throw new ApiException($e->getMessage(), $e->getCode(), $e->getRequest(), $e->getResponse()); }
