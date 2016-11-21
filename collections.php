@@ -59,8 +59,8 @@
 		<div class="content-header">
 
 			<div class="content-header-3col-container">
-				<div class="content-header-container">
-					<a href="javascript:void(0)" onclick="getsharehistory()" class="sidebar-span share-history-button share-history-back">
+				<div class="content-header-container" id="share-back">
+					<a href="javascript:void(0)" onclick="getsharehistory()" class="sidebar-span share-history-button">
 						<i class="fa fa-history" aria-hidden="true"></i>
 						History
 					</a>
