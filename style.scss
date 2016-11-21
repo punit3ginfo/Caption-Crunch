@@ -801,6 +801,10 @@ body {
 	padding-left : 80px;
 }
 
+.preview-container-help {
+	width        : calc(100% - 330px);
+}
+
 .preview-overflow-container {
 	position   : relative;
 
@@ -1279,6 +1283,10 @@ body {
 
 	background-image : url("./images/background.jpg");
 	background-size  : 100% 100%;
+}
+
+.main_container_clearfix-help {
+	width            : calc(100vw - 330px);
 }
 
 #main-padded-container {
