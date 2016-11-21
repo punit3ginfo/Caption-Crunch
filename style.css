@@ -1869,3 +1869,6 @@ ul#pagination-list li {
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
+.page-item.prev.disabled ,.page-item.next.disabled {
+  display: none;
+}
