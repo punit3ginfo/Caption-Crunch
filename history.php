@@ -336,6 +336,7 @@ try
 					    var totolpageno1=1;
 					    }
 			             console.info(totolpageno);
+			           if(totolpageno > 1) {
 					var obj = $('#pagination2').twbsPagination({
 					    totalPages:totolpageno1,
 					    visiblePages:3,
@@ -345,7 +346,7 @@ try
 						console.info(page);
 					    }
 					});
-
+				   }
 		/*	$('#pagination').html(data);
 			    $('ul li:gt(3)').hide();
 	$('#showLess').hide();
