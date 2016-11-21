@@ -798,6 +798,11 @@ body {
 
 	width        : calc(100% - 80px);
 	height       : calc(100vh - 63px);
+
+	transition-timing-function : ease;
+	transition-duration        : 0.3s;
+	animation-direction        : normal;
+	
 	padding-left : 80px;
 }
 
@@ -1280,6 +1285,10 @@ body {
 	height           : calc(100vh - 63px);
 	padding-top      : 63px;
 	padding-left     : 80px;
+
+	transition-timing-function : ease;
+	transition-duration        : 0.3s;
+	animation-direction        : normal;
 
 	background-image : url("./images/background.jpg");
 	background-size  : 100% 100%;
