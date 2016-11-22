@@ -195,8 +195,9 @@ function getproducts(){
 		}
 	});
 }
-function getnewproducts(this){
-         console.log(this);
+function getnewproducts(){
+         var that = $(this);
+	console.log(that);
 	var access_token='<?php echo $access_token ?>';
 	var shop='<?php echo $_REQUEST['shop'] ?>';
 
