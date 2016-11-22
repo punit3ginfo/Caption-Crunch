@@ -1585,10 +1585,10 @@ body {
 /* Product Cards */
 
 .content-overflow-container {
-	position : relative;
-
 	width    : 100%;
-	height   : calc(100% - 80px);
+	height: calc(100vh - 173px);
+	overflow-y: scroll;
+	position: relative;
 }
 
 .content-overflow {
@@ -2508,45 +2508,6 @@ ul#pagination-list li {
 
 	border: 1px solid red;
 }
-
-// New
-
-.content-overflow-container {
-	height: calc(100vh - 173px);
-	overflow-y: scroll;
-	position: relative;
-	width: 100%;
-}
-// #pagination2 .first, #pagination2 .last ,#pagination1 .first, #pagination1 .last {
-//   display: none;
-// }
-// ul.pagination.text-center li, ul.pagination.text-center li a {
-//   background: transparent none repeat scroll 0 0 !important;
-//   border: medium none !important;
-//   color: #000 !important;
-// }
-// #pagination2 .prev a, #pagination1 .prev a {
-//   background: rgba(0, 0, 0, 0) url("./images/left-arrow.png") no-repeat scroll center center !important;
-//   font-size: 0;
-//   height: 36px;
-//   padding: 0;
-//   width: 30px;
-// }
-// #pagination2 .next a , #pagination1 .next a {
-//   background: rgba(0, 0, 0, 0) url("./images/right-arrow.png") no-repeat scroll center center !important;
-//   font-size: 0;
-//   height: 36px;
-//   padding: 0;
-//   width: 30px;
-//     display:block !important;
-// }
-// #pagination2 .next , #pagination1 .next {
-//     display:block !important;
-//     float: left;
-// }
-// ul.pagination.text-center li.active, ul.pagination.text-center li.active a {
-//   color: rgb(122, 181, 92) !important;
-// }
 
 .pagination {
 	width: 100%;

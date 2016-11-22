@@ -1147,9 +1147,10 @@ body {
 
 /* Product Cards */
 .content-overflow-container {
-  position: relative;
   width: 100%;
-  height: calc(100% - 80px); }
+  height: calc(100vh - 173px);
+  overflow-y: scroll;
+  position: relative; }
 
 .content-overflow {
   position: relative;
@@ -1816,12 +1817,6 @@ ul#pagination-list li {
   height: 30px;
   margin-top: 15px;
   border: 1px solid red; }
-
-.content-overflow-container {
-  height: calc(100vh - 173px);
-  overflow-y: scroll;
-  position: relative;
-  width: 100%; }
 
 .pagination {
   width: 100%;
