@@ -25,9 +25,9 @@ try
 	}
 
 
-
+	if($MultipleProduct_id){
 	$MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
-         if($MultipleProduct_id_comma_seprated){
+   
 	$shared_products = $shopify('GET /admin/products.json', array('ids'=>$MultipleProduct_id_comma_seprated));
 
 	foreach($shared_products as $singleproduct)
