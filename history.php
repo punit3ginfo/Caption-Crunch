@@ -329,8 +329,7 @@ try
 			     var search_term = $($.parseHTML(data)).filter(".search_term").html();
 					//var totolpageno = $('.totolpageno', data);
 					    //console.log(totolpageno.html());
-
-			    			if(totolpageno!=''){
+						if(totolpageno!=''){
 						   var totolpageno1 =parseInt(totolpageno.html());
 						}
 					    else {
@@ -338,9 +337,8 @@ try
 					    }
 			            // console.info(totolpageno1);
 			    //alert(totolpageno);
-			      alert(TotalnoOfProduct);
-			    if(parseInt(TotalnoOfProduct) == 0){
-				    alert(TotalnoOfProduct);
+			     if(parseInt(TotalnoOfProduct) == 0){
+				    
 			         $('.content-overflow').html('<h1 class="nomatch">No matching results</h1>');
 			    }
 			           if(totolpageno1 > 1) {
