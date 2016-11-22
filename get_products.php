@@ -297,7 +297,7 @@ catch (shopify\CurlException $e)
 		var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 		var col_id='<?php echo $_REQUEST['colid'] ?>';
-
+                var colhandle='<?php echo $_REQUEST['colhandle'] ?>';
 		$.ajax({
 			url: '/pagination_ajax.php?access_token='+access_token+'&shop='+shop+'&colid='+col_id,
 			success: function(data){
@@ -305,11 +305,15 @@ catch (shopify\CurlException $e)
 				 $('#pagination2').remove();
 				$('nav.page').append("<ul id='pagination1'></ul>");
 					var totolpageno = $($.parseHTML(data)).filter(".totolpageno");
+				 var TotalnoOfProduct = $($.parseHTML(data)).filter(".TotalnoOfProduct").html();
 					//var totolpageno = $('.totolpageno', data);
-					    console.log(totolpageno.html());
+					    //console.log(totolpageno.html());
 					//alert(totolpageno.html());
 					totolpageno =parseInt(totolpageno.html());
 					console.info(totolpageno);
+				if(parseInt(TotalnoOfProduct) == 0){
+				  $('.content-overflow').html('<h1 class="nomatch">No products in '+colhandle+'</h1>');
+			         }
 				   if(totolpageno > 1) {
 					var obj = $('#pagination1').twbsPagination({
 					    totalPages: totolpageno,
