@@ -176,8 +176,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 
 // Get Collections / Share Page
 function getproducts(){
-$('.sidebar-content-header .menu-container').each(function(){
-
+	$('.menu-container').each(function(){
 		$(this).removeClass('menu-container-active');
 	});
 
@@ -201,7 +200,7 @@ $('.sidebar-content-header .menu-container').each(function(){
 	});
 }
 function getnewproducts(){
-	$('.sidebar-content-header .menu-container').each(function(){
+	$('.menu-container').each(function(){
 		$(this).removeClass('menu-container-active');
 	});
          $('#new-products').addClass('menu-container-active');
