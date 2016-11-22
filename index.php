@@ -167,13 +167,6 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 <script>
 // Load Pages
 
-// Initial Page Load
-(function($) {
-	$(document).ready(function() {
-		getnewproducts(); // start the loop
-	});
-})(jQuery);
-
 // Get Collections / Share Page
 function getnewproducts(){
 	$('.menu-container').each(function(){
@@ -295,6 +288,13 @@ function gethistory(){
 		}
 	});
 }
+
+// Initial Page Load
+(function($) {
+	$(document).ready(function() {
+		getnewproducts(); // start the loop
+	});
+})(jQuery);
 </script>
 
 <!-- Scripts -->
