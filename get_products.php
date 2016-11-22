@@ -18,7 +18,7 @@ try
 		//$products = $shopify('GET /admin/products.json?collection_id='.$_REQUEST['colid'], array('limit'=>'12','page'=>'2'));
 
 	}
-	if($_REQUEST['colid']=='' && $_REQUEST['status']=='' && !isset($_REQUEST['page_id']) ) {
+	if($_REQUEST['colid']=='' && $_REQUEST['status']=='' && !isset($_REQUEST['page_id']) && $_REQUEST['max']==''  && !isset($_REQUEST['max']) ) {
   // echo "<script>alert(2);</script>";
 		// $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		$products = $shopify('GET /admin/products.json', array('limit'=>'21','page'=>'1'));
@@ -32,14 +32,20 @@ try
 		//GET /admin/products.json&limit=50=&page=1
 
 	}
-	if($_REQUEST['page_id']!='' && isset($_REQUEST['page_id']) && $_REQUEST['limit']!='' && isset($_REQUEST['limit']) && $_REQUEST['colid']=='' ) {
+	if($_REQUEST['page_id']!='' && isset($_REQUEST['page_id']) && $_REQUEST['limit']!='' && isset($_REQUEST['limit']) && $_REQUEST['colid']=='' && $_REQUEST['max']==''  && !isset($_REQUEST['max'])) {
            //  echo "<script>alert(4);</script>";
 		// $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
-		$products = $shopify('GET /admin/products.json', array('limit'=>$_REQUEST['limit'],'page'=>$_REQUEST['page_id']));
+		$products = $shopify('GET /admin/products.json', array('limit'=>'21','page'=>$_REQUEST['page_id']));
 		//GET /admin/products.json&limit=50=&page=1
 
 	}
+       if($_REQUEST['max']!=''  && isset($_REQUEST['max']) ) {
+  // echo "<script>alert(2);</script>";
+		// $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
+		$products = $shopify('GET /admin/products.json', array('limit'=>'60','page'=>'1'));
+		//GET /admin/products.json&limit=50=&page=1
 
+	}
 	$shop = $shopify('GET /admin/shop.json', array('limit'=>$_REQUEST['limit'],'page'=>$_REQUEST['page_id']));
 
 	$count=0;
