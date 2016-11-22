@@ -27,7 +27,7 @@
 
 
 				<a href="javascript:void(0)" onclick="getcolproduct(<?php echo $id;?>,'<?php echo $handle;?>')">
-                                    <div class="menu-container">
+                                    <div class="menu-container <?php echo $handle;?>">
                                         <div class="menu-clearfix">
                                             <div class="menu-font-container">
                                                 <span class="menu-font"><?php echo $title;  ?></span>
