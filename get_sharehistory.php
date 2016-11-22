@@ -240,7 +240,8 @@ try
 	}
 	 }
 	else {
-		echo "<script>$('.content-overflow').html('<span class=\'cc-text-large\'>No Share History.</span>');</script>";
+		// echo "<script>$('.content-overflow').html('<span class=\'cc-text-large\'>No Share History.</span>');</script>";
+		$('.content-overflow').html('<div class="no-product-clearfix"><span class="cc-text-large no-product-container">No Share History.</span></div>');
 	}
 
 }
