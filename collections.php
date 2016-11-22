@@ -14,7 +14,7 @@
 
 					<!-- Collection Card -->
 
-					<a href="javascript:void(0)" onclick="getnewproducts()">
+					<a href="javascript:void(0)" onclick="getnewproducts(this)">
 						<div class="menu-container">
 							<div class="menu-clearfix">
 								<div class="menu-font-container">
