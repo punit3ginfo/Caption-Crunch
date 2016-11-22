@@ -179,7 +179,8 @@ function getproducts(){
 $('.menu-container').each(function(){
 		$(this).removeClass('active');
 	});
-         $('.all').addClass('active');
+	
+         $('.menu-container.all').addClass('active');
 	var access_token='<?php echo $access_token ?>';
 	var shop='<?php echo $_REQUEST['shop'] ?>';
 
@@ -202,7 +203,7 @@ function getnewproducts(){
 	$('.menu-container').each(function(){
 		$(this).removeClass('active');
 	});
-         $('.new').addClass('active');
+         $('.menu-container.new').addClass('active');
 	var access_token='<?php echo $access_token ?>';
 	var shop='<?php echo $_REQUEST['shop'] ?>';
 
