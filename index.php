@@ -170,12 +170,12 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 // Initial Page Load
 (function($) {
 	$(document).ready(function() {
-		getproducts(); // start the loop
+		getnewproducts(); // start the loop
 	});
 })(jQuery);
 
 // Get Collections / Share Page
-function getproducts(){
+function getnewproducts(){
 	$('.menu-container').each(function(){
 		$(this).removeClass('menu-container-active');
 	});
