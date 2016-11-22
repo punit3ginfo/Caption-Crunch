@@ -1868,9 +1868,11 @@ ul#pagination-list li {
   font-size: 0; }
 
 /*# sourceMappingURL=style.css.map */
-h1.nomatch {
-  background: #fff none repeat scroll 0 0;
-  padding: 10px;
+.no-product-container {
+  padding: 10px 15px;
+  background: white;
+  box-shadow: 1px -2px 17px 0 rgba(0, 0, 0, 0.14);
+  margin: auto;
   text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
