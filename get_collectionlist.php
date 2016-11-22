@@ -62,10 +62,10 @@
 	?>
 	<script>
 	function getcolproduct(id,handle){
-		$('.menu-container').each(function(){
+		$('.sidebar-content-header .menu-container').each(function(){
 		$(this).removeClass('active');
 	});
-              $('.'+handle).addClass('active');
+              $('.sidebar-content-header .menu-container.'+handle).addClass('active');
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 
