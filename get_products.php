@@ -318,7 +318,7 @@ catch (shopify\CurlException $e)
 					totolpageno =parseInt(totolpageno.html());
 					console.info(totolpageno);
 				if(parseInt(TotalnoOfProduct) == 0){
-				  $('.content-overflow').html('<span class="cc-text-large no-product-container">No products in '+colhandle+'</span>');
+				  $('.content-overflow').html('<div class="no-product-clearfix"><span class="cc-text-large no-product-container">No products in '+colhandle+'</span></div>');
 			         }
 				   if(totolpageno > 1) {
 					var obj = $('#pagination1').twbsPagination({
