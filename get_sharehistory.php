@@ -27,7 +27,7 @@ try
 
 
 	$MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
-
+         if($MultipleProduct_id_comma_seprated){
 	$shared_products = $shopify('GET /admin/products.json', array('ids'=>$MultipleProduct_id_comma_seprated));
 
 	foreach($shared_products as $singleproduct)
@@ -252,6 +252,11 @@ try
 		<?php
 
 	}
+	 }
+	else {
+		 $('.content-overflow').html('<h1 class="nomatch">No Share History.</h1>');
+	}
+	
 }
 catch (shopify\ApiException $e)
 {
