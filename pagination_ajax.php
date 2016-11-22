@@ -16,6 +16,7 @@ try
 							 $noofPages=$TotalnoOfProduct/$limit;
 							//echo $noofPages=abs(round($noofPages));
 							$noofPages=ceil($noofPages);
+			echo '<h1 class="TotalnoOfProduct" style="display:none">'.$TotalnoOfProduct.'</h1>';
 			
 			?>
                                  <h1 class="totolpageno" style="display:none"><?php echo $noofPages ;?></h1>
@@ -42,6 +43,7 @@ try
 							$noofPages=$TotalnoOfProduct/$limit;
 							//$noofPages=abs(round($noofPages));
 			 $noofPages=ceil($noofPages);
+			echo '<h1 class="TotalnoOfProduct" style="display:none">'.$TotalnoOfProduct.'</h1>';
 			echo '<h1 class="totolpageno" style="display:none">'.$noofPages.'</h1>';
 
 		?>
