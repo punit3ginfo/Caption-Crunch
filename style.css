@@ -1871,6 +1871,12 @@ h1.nomatch {
   padding: 10px;
   text-align: center;
 }
+.sidebar-content-header .menu-container.active {
+  background-color: #7ab55c;
+  background-image: url("./images/menu-background.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
