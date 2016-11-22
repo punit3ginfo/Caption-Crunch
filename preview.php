@@ -44,9 +44,7 @@ try
 		$tags = str_replace('shared', '', $tags);
 		$tags = str_replace(' ', '', $tags);
 		$tags = str_replace(',', 'AA', $tags);
-		//$tags = str_replace(',shared', '', $tags);
-		//$tags = str_replace('shared', '', $tags);
-		//$tags = str_replace(',', 'AA', $tags);
+
 		foreach($variants as $variants){
 			$price=$variants['price']; // Product PRice
 			$ComparePrice=$variants['compare_at_price'];
@@ -81,7 +79,7 @@ try
 						</div>
 					</div>
 
-					<div class="content-header preview-header" id="<?php echo $p_id1; ?>">
+					<div id="<?php echo $p_id1; ?>">
 						<script>
 							$(document).ready(function(){
 							  var OrigonalTag = '<?php echo $OrigonalTag; ?>';
@@ -95,14 +93,8 @@ try
 							  var exists1 = pattern1.test(OrigonalTag);
 							  if(exists || exists1 ){
 								var tags_1 = '"<?php echo $tags; ?>"';
-								//alert(tags_1);
-
-									  var _id = '#'+ pid_1;
-
-
-							  //$(_id).html('<button type=button class=share-button onclick=unshareButton('+pid_1+',"'+tags_1+'");>UnShare</button>');
-							  $(_id).html("<button type='button' class='reset-button'  id='reset-button-<?php echo $p_id1; ?>' onclick='unshareButton("+pid_1+","+tags_1+");'><i class='fa fa-times' aria-hidden='true'></i> Reset</button>");
-
+								var _id = '#'+ pid_1;
+								$(_id).html("<button type='button' class='reset-button'  id='reset-button-<?php echo $p_id1; ?>' onclick='unshareButton("+pid_1+","+tags_1+");'><i class='fa fa-times' aria-hidden='true'></i> Reset</button>");
 							  }else{
 								var _id = '#'+ pid_1;
 								<?php
@@ -116,15 +108,10 @@ try
 								?>
 								var tags_1 = '"<?php echo $OrigonalTag; ?>"';
 
-								  //$(_id).html('<button type="button" class=share-button onclick=shareButton('+pid_1+',"'+tags_1+'");>Share</button>');
 							$(_id).html("<button type='button' class='share-button' id='share-button-<?php echo $p_id1; ?>' onclick='shareButton("+pid_1+","+tags_1+");'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</button>");
 							  }
 							});
 						</script>
-						<!--a href="javascript:void(0)" class="btn green-button button-four-col back-link"><i class="fa fa-bullhorn" aria-hidden="true"></i> Share Now</a>
-						<a href="javascript:void(0)" class="btn grey-button button-four-col back-link"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i> Share Next</a>
-						<a href="javascript:void(0)" class="btn grey-button button-four-col back-link"><i class="fa fa-clock-o" aria-hidden="true"></i> Share Later</a>
-						<a href="javascript:void(0)" class="btn grey-button button-four-col back-link"><i class="fa fa-calendar" aria-hidden="true"></i> Schedule</a-->
 					</div>
 					
 					<script>
@@ -183,4 +170,4 @@ try
 			</div>
 		</div>
 	</div>
-</div>		
+</div>
