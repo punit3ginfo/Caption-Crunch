@@ -254,7 +254,7 @@ try
 	}
 	 }
 	else {
-		 $('.content-overflow').html('<h1 class="nomatch">No Share History.</h1>');
+		echo "<script>$('.content-overflow').html('<h1 class='nomatch'>No Share History.</h1>');</script>";
 	}
 	
 }
