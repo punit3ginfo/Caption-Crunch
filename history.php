@@ -328,7 +328,7 @@ try
 			    var TotalnoOfProduct = $($.parseHTML(data)).filter(".TotalnoOfProduct");
 			     var search_term = $($.parseHTML(data)).filter(".search_term").html();
 					//var totolpageno = $('.totolpageno', data);
-					    console.log(totolpageno.html());
+					    //console.log(totolpageno.html());
 
 			    			if(totolpageno!=''){
 						   var totolpageno1 =parseInt(totolpageno.html());
@@ -336,10 +336,12 @@ try
 					    else {
 					    var totolpageno1=1;
 					    }
-			             console.info(totolpageno1);
+			            // console.info(totolpageno1);
 			    //alert(totolpageno);
+			      alert(TotalnoOfProduct);
 			    if(TotalnoOfProduct == 0){
-			         $('.content-overflow-container').html('<h1 class="nomatch">No matching results</h1>');
+				    alert(TotalnoOfProduct);
+			         $('.content-overflow').html('<h1 class="nomatch">No matching results</h1>');
 			    }
 			           if(totolpageno1 > 1) {
 					var obj = $('#pagination2').twbsPagination({
