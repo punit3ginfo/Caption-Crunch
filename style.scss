@@ -1511,7 +1511,7 @@ body {
 	background    : $secondary-color;
 }
 
-.menu-icon-container-active {
+.menu-container-active .menu-icon-container {
 	background : #D577C3;
 }
 
@@ -2573,3 +2573,9 @@ ul#pagination-list li {
 	font-size: 0;
 }
 /*# sourceMappingURL=style.css.map */
+
+h1.nomatch {
+  background: #fff none repeat scroll 0 0;
+  padding: 10px;
+  text-align: center;
+}
