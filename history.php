@@ -325,6 +325,7 @@ try
 			     $('#pagination2').remove();
 			    $('nav.page').append("<ul id='pagination2'></ul>");
 			    var totolpageno = $($.parseHTML(data)).filter(".totolpageno");
+			    var TotalnoOfProduct = $($.parseHTML(data)).filter(".TotalnoOfProduct");
 			     var search_term = $($.parseHTML(data)).filter(".search_term").html();
 					//var totolpageno = $('.totolpageno', data);
 					    console.log(totolpageno.html());
@@ -337,6 +338,9 @@ try
 					    }
 			             console.info(totolpageno1);
 			    //alert(totolpageno);
+			    if(TotalnoOfProduct == 0){
+			         $('.content-overflow-container').html('<h1 class="nomatch">No matching results</h1>');
+			    }
 			           if(totolpageno1 > 1) {
 					var obj = $('#pagination2').twbsPagination({
 					    totalPages:totolpageno1,
