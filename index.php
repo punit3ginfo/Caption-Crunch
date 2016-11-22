@@ -176,7 +176,10 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 
 // Get Collections / Share Page
 function getproducts(){
-
+$('.menu-container').each(function(){
+		$(this).removeClass('active');
+	});
+         $('.all').addClass('active');
 	var access_token='<?php echo $access_token ?>';
 	var shop='<?php echo $_REQUEST['shop'] ?>';
 
@@ -195,9 +198,11 @@ function getproducts(){
 		}
 	});
 }
-function getnewproducts(el){
-          $(el).next().addClass('active');
-	console.log($(el));
+function getnewproducts(){
+	$('.menu-container').each(function(){
+		$(this).removeClass('active');
+	});
+         $('.new').addClass('active');
 	var access_token='<?php echo $access_token ?>';
 	var shop='<?php echo $_REQUEST['shop'] ?>';
 
