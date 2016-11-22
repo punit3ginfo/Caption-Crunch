@@ -318,7 +318,7 @@ catch (shopify\CurlException $e)
 					totolpageno =parseInt(totolpageno.html());
 					console.info(totolpageno);
 				if(parseInt(TotalnoOfProduct) == 0){
-				  $('.content-overflow').html('<h1 class="nomatch">No products in '+colhandle+'</h1>');
+				  $('.content-overflow').html('<span class="cc-text-large">No products in '+colhandle+'</span>');
 			         }
 				   if(totolpageno > 1) {
 					var obj = $('#pagination1').twbsPagination({
@@ -333,7 +333,7 @@ catch (shopify\CurlException $e)
 						console.info(page);
 					    }
 					});
-				   }	   
+				   }
         			/*console.info(obj.data());
 				$('#pagination').html(data);
 				$('ul li:lt(1)').addClass("paginate-link-active");

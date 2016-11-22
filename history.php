@@ -338,8 +338,8 @@ try
 			            // console.info(totolpageno1);
 			    //alert(totolpageno);
 			     if(parseInt(TotalnoOfProduct) == 0){
-				    
-			         $('.content-overflow').html('<h1 class="nomatch">No matching results</h1>');
+
+			         $('.content-overflow').html('<span class="cc-text-large">No matching results.</span>');
 			    }
 			           if(totolpageno1 > 1) {
 					var obj = $('#pagination2').twbsPagination({
