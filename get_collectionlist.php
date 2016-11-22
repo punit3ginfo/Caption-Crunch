@@ -184,7 +184,7 @@
                 $.ajax({
                     url: '/history.php?access_token='+access_token+'&shop='+shop+'&page_id='+id+'&limit='+limit+'&title='+title,
                     success: function(data){
-                     //console.log(data);
+                     console.log(data);
 			   // var data1= data.find('.chat_container').html()
 			    if(data){
 			    $('.content-overflow').html(data);
