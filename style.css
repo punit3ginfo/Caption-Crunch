@@ -1866,7 +1866,11 @@ ul#pagination-list li {
 
 .page-item.next a {
   font-size: 0; }
-
+h1.nomatch {
+  background: #fff none repeat scroll 0 0;
+  padding: 10px;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
