@@ -63,9 +63,9 @@
 	<script>
 	function getcolproduct(id,handle){
 		$('.sidebar-content-header .menu-container').each(function(){
-		$(this).removeClass('active');
+		$(this).removeClass('menu-container-active');
 	});
-              $('.sidebar-content-header .menu-container.'+handle).addClass('active');
+              $('.sidebar-content-header .menu-container.'+handle).addClass('menu-container-active');
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 
@@ -191,9 +191,9 @@
                     success: function(data){
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
-			  
+
 			    $('.content-overflow').html(data);
-			    
+
 
 
 
