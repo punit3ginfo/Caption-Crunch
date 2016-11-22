@@ -179,8 +179,6 @@ function getproducts(){
 	$('.menu-container').each(function(){
 		$(this).removeClass('menu-container-active');
 	});
-
-         $('#all-products').addClass('menu-container-active');
 	var access_token='<?php echo $access_token ?>';
 	var shop='<?php echo $_REQUEST['shop'] ?>';
 
@@ -193,6 +191,7 @@ function getproducts(){
 			$('#share-link').addClass('sidebar-link-active');
 			$('#captions-link').removeClass('sidebar-link-active');
 			$('#settings-link').removeClass('sidebar-link-active');
+			$('#all-products').addClass('menu-container-active');
 			// Help
 			$(".help-clearfix").empty();
 			$(".help-clearfix").load("help/share.php");
@@ -203,7 +202,7 @@ function getnewproducts(){
 	$('.menu-container').each(function(){
 		$(this).removeClass('menu-container-active');
 	});
-         $('#new-products').addClass('menu-container-active');
+
 	var access_token='<?php echo $access_token ?>';
 	var shop='<?php echo $_REQUEST['shop'] ?>';
 
@@ -216,6 +215,7 @@ function getnewproducts(){
 			$('#share-link').addClass('sidebar-link-active');
 			$('#captions-link').removeClass('sidebar-link-active');
 			$('#settings-link').removeClass('sidebar-link-active');
+			$('#new-products').addClass('menu-container-active');
 			// Help
 			$(".help-clearfix").empty();
 			$(".help-clearfix").load("help/share.php");
