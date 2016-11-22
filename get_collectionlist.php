@@ -79,9 +79,7 @@
                     }
                 });
             }
-	</script>
 
-	<script>
 	function getsharehistory(){
 
                var access_token='<?php echo $access_token ?>';
@@ -105,8 +103,7 @@
 		}, 500);
 
             }
-	</script>
-<script>
+
 	function search(p_title){
 
                var access_token='<?php echo $access_token ?>';
@@ -122,9 +119,7 @@
                     }
                 });
             }
-</script>
 
-<script>
 	function getPaging(id,limit,colid){
 
                var access_token='<?php echo $access_token ?>';
@@ -150,10 +145,7 @@
                     }
                 });
             }
-	</script>
 
-
-<script>
 	function getPagingALLProduct(id,limit){
 
                var access_token='<?php echo $access_token ?>';
@@ -178,9 +170,7 @@
                     }
                 });
             }
-</script>
 
-<script>
 	function getPagingSearch(id,limit,title){
 
                var access_token='<?php echo $access_token ?>';
