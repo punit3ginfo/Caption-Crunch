@@ -195,7 +195,26 @@ function getproducts(){
 		}
 	});
 }
+function getnewproducts(){
 
+	var access_token='<?php echo $access_token ?>';
+	var shop='<?php echo $_REQUEST['shop'] ?>';
+
+	$.ajax({
+		url: '/collections.php?access_token='+access_token+'&shop='+shop+'&max=60',
+		success: function(data){
+			//console.log(data);
+			// var data1= data.find('.chat_container').html()
+			$('.content-container').html(data);
+			$('#share-link').addClass('sidebar-link-active');
+			$('#captions-link').removeClass('sidebar-link-active');
+			$('#settings-link').removeClass('sidebar-link-active');
+			// Help
+			$(".help-clearfix").empty();
+			$(".help-clearfix").load("help/share.php");
+		}
+	});
+}
 // Get Dashboard Page
 function getdashboard(){
 
