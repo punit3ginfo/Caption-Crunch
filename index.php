@@ -170,7 +170,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 // Initial Page Load
 (function($) {
 	$(document).ready(function() {
-		getproducts(); // start the loop
+		getnewproducts(); // start the loop
 	});
 })(jQuery);
 
