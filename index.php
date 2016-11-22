@@ -181,7 +181,7 @@ $('.sidebar-content-header .menu-container').each(function(){
 		$(this).removeClass('menu-container-active');
 	});
 
-         $('.menu-container.all').addClass('menu-container-active');
+         $('#all-products').addClass('menu-container-active');
 	var access_token='<?php echo $access_token ?>';
 	var shop='<?php echo $_REQUEST['shop'] ?>';
 
@@ -204,7 +204,7 @@ function getnewproducts(){
 	$('.sidebar-content-header .menu-container').each(function(){
 		$(this).removeClass('menu-container-active');
 	});
-         $('.menu-container.new').addClass('menu-container-active');
+         $('#new-products').addClass('menu-container-active');
 	var access_token='<?php echo $access_token ?>';
 	var shop='<?php echo $_REQUEST['shop'] ?>';
 
