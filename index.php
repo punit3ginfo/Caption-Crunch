@@ -165,111 +165,111 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 </div>
 
 <script>
-// Load Pages
-
-// Get Collections / Share Page
-function getproducts(){
-
-	var access_token='<?php echo $access_token ?>';
-	var shop='<?php echo $_REQUEST['shop'] ?>';
-
-	$.ajax({
-		url: '/collections.php?access_token='+access_token+'&shop='+shop,
-		success: function(data){
-			//console.log(data);
-			// var data1= data.find('.chat_container').html()
-			$('.content-container').html(data);
-			$('#share-link').addClass('sidebar-link-active');
-			$('#captions-link').removeClass('sidebar-link-active');
-			$('#settings-link').removeClass('sidebar-link-active');
-			// Help
-			$(".help-clearfix").empty();
-			$(".help-clearfix").load("help/share.php");
-		}
-	});
-}
-
-// Get Dashboard Page
-function getdashboard(){
-
-	var access_token='<?php echo $access_token ?>';
-	var shop='<?php echo $_REQUEST['shop'] ?>';
-
-	$.ajax({
-		url: '/dashboard.php?access_token='+access_token+'&shop='+shop,
-		success: function(data){
-			//console.log(data);
-			// var data1= data.find('.chat_container').html()
-			$('.content-container').html(data);
-		}
-	});
-}
-
-// Get Captions Page
-function getcaptions(){
-
-	var access_token='<?php echo $access_token ?>';
-	var shop='<?php echo $_REQUEST['shop'] ?>';
-
-	$.ajax({
-		url: '/captions.php?access_token='+access_token+'&shop='+shop,
-		success: function(data){
-			//console.log(data);
-			// var data1= data.find('.chat_container').html()
-			$('.content-container').html(data);
-			$('#captions-link').addClass('sidebar-link-active');
-			$('#share-link').removeClass('sidebar-link-active');
-			$('#settings-link').removeClass('sidebar-link-active');
-			// Help
-			$(".help-clearfix").empty();
-			$(".help-clearfix").load("help/captions.php");
-		}
-	});
-}
-// Get Settings Page
-function getsettings(){
-
-	var access_token='<?php echo $access_token ?>';
-	var shop='<?php echo $_REQUEST['shop'] ?>';
-
-	$.ajax({
-		url: '/settings.php?access_token='+access_token+'&shop='+shop,
-		success: function(data){
-			//console.log(data);
-			// var data1= data.find('.chat_container').html()
-			$('.content-container').html(data);
-			$('#settings-link').addClass('sidebar-link-active');
-			$('#share-link').removeClass('sidebar-link-active');
-			$('#captions-link').removeClass('sidebar-link-active');
-			// Help
-			$(".help-clearfix").empty();
-			$(".help-clearfix").load("help/settings.php");
-		}
-	});
-}
-// Get Share History
-function gethistory(){
-
-	var access_token='<?php echo $access_token ?>';
-	var shop='<?php echo $_REQUEST['shop'] ?>';
-
-	$.ajax({
-		url: '/collections.php?access_token='+access_token+'&shop='+shop+'&status=history',
-		success: function(data){
-			//console.log(data);
-			// var data1= data.find('.chat_container').html()
-			$('.content-container').html(data);
-		}
-	});
-}
-
-
-// Initial Page Load
-(function($) {
-	$(document).ready(function() {
-		getproducts(); // start the loop
-	});
-})(jQuery);
+// // Load Pages
+//
+// // Get Collections / Share Page
+// function getproducts(){
+//
+// 	var access_token='<?php echo $access_token ?>';
+// 	var shop='<?php echo $_REQUEST['shop'] ?>';
+//
+// 	$.ajax({
+// 		url: '/collections.php?access_token='+access_token+'&shop='+shop,
+// 		success: function(data){
+// 			//console.log(data);
+// 			// var data1= data.find('.chat_container').html()
+// 			$('.content-container').html(data);
+// 			$('#share-link').addClass('sidebar-link-active');
+// 			$('#captions-link').removeClass('sidebar-link-active');
+// 			$('#settings-link').removeClass('sidebar-link-active');
+// 			// Help
+// 			$(".help-clearfix").empty();
+// 			$(".help-clearfix").load("help/share.php");
+// 		}
+// 	});
+// }
+//
+// // Get Dashboard Page
+// function getdashboard(){
+//
+// 	var access_token='<?php echo $access_token ?>';
+// 	var shop='<?php echo $_REQUEST['shop'] ?>';
+//
+// 	$.ajax({
+// 		url: '/dashboard.php?access_token='+access_token+'&shop='+shop,
+// 		success: function(data){
+// 			//console.log(data);
+// 			// var data1= data.find('.chat_container').html()
+// 			$('.content-container').html(data);
+// 		}
+// 	});
+// }
+//
+// // Get Captions Page
+// function getcaptions(){
+//
+// 	var access_token='<?php echo $access_token ?>';
+// 	var shop='<?php echo $_REQUEST['shop'] ?>';
+//
+// 	$.ajax({
+// 		url: '/captions.php?access_token='+access_token+'&shop='+shop,
+// 		success: function(data){
+// 			//console.log(data);
+// 			// var data1= data.find('.chat_container').html()
+// 			$('.content-container').html(data);
+// 			$('#captions-link').addClass('sidebar-link-active');
+// 			$('#share-link').removeClass('sidebar-link-active');
+// 			$('#settings-link').removeClass('sidebar-link-active');
+// 			// Help
+// 			$(".help-clearfix").empty();
+// 			$(".help-clearfix").load("help/captions.php");
+// 		}
+// 	});
+// }
+// // Get Settings Page
+// function getsettings(){
+//
+// 	var access_token='<?php echo $access_token ?>';
+// 	var shop='<?php echo $_REQUEST['shop'] ?>';
+//
+// 	$.ajax({
+// 		url: '/settings.php?access_token='+access_token+'&shop='+shop,
+// 		success: function(data){
+// 			//console.log(data);
+// 			// var data1= data.find('.chat_container').html()
+// 			$('.content-container').html(data);
+// 			$('#settings-link').addClass('sidebar-link-active');
+// 			$('#share-link').removeClass('sidebar-link-active');
+// 			$('#captions-link').removeClass('sidebar-link-active');
+// 			// Help
+// 			$(".help-clearfix").empty();
+// 			$(".help-clearfix").load("help/settings.php");
+// 		}
+// 	});
+// }
+// // Get Share History
+// function gethistory(){
+//
+// 	var access_token='<?php echo $access_token ?>';
+// 	var shop='<?php echo $_REQUEST['shop'] ?>';
+//
+// 	$.ajax({
+// 		url: '/collections.php?access_token='+access_token+'&shop='+shop+'&status=history',
+// 		success: function(data){
+// 			//console.log(data);
+// 			// var data1= data.find('.chat_container').html()
+// 			$('.content-container').html(data);
+// 		}
+// 	});
+// }
+//
+//
+// // Initial Page Load
+// (function($) {
+// 	$(document).ready(function() {
+// 		getproducts(); // start the loop
+// 	});
+// })(jQuery);
 </script>
 
 <!-- Scripts -->
