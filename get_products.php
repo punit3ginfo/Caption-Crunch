@@ -40,7 +40,7 @@ try
 
 	}
        if($_REQUEST['max']!=''  && isset($_REQUEST['max']) ) {
-  // echo "<script>alert(2);</script>";
+          echo "<script>alert(2);</script>";
 		// $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
 		$products = $shopify('GET /admin/products.json', array('limit'=>'60','page'=>'1'));
 		//GET /admin/products.json&limit=50=&page=1
