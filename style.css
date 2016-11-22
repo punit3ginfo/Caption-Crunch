@@ -1106,6 +1106,15 @@ body {
   font-size: 12px;
   line-height: 40px; }
 
+.menu-icon-bold {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  letter-spacing: 0.82px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700; }
+
 .paginate-style {
   display: inline-flex;
   padding-left: 0px;

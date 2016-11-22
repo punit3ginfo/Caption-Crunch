@@ -22,7 +22,7 @@
 								</div>
 								<div class="menu-icon-clearfix">
 									<div class="menu-icon-container">
-										<span class="menu-icon">X</span>
+										<span class="menu-icon menu-icon-bold">NEW</span>
 									</div>
 								</div>
 							</div>
@@ -37,7 +37,7 @@
 								</div>
 								<div class="menu-icon-clearfix">
 									<div class="menu-icon-container">
-										<span class="menu-icon">X</span>
+										<span class="menu-icon menu-icon-bold">ALL</span>
 									</div>
 								</div>
 							</div>
