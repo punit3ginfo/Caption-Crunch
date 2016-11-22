@@ -91,6 +91,8 @@
 			   // var data1= data.find('.chat_container').html()
 			    $('.content-overflow').html(data);
 			     $('#pagination').html('');
+			     $('#pagination1').empty();
+			     $('#pagination2').remove();
 
                     }
                 });
