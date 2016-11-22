@@ -27,7 +27,7 @@ try
 
 	if($MultipleProduct_id){
 	$MultipleProduct_id_comma_seprated = implode(',', $MultipleProduct_id);
-   
+
 	$shared_products = $shopify('GET /admin/products.json', array('ids'=>$MultipleProduct_id_comma_seprated));
 
 	foreach($shared_products as $singleproduct)
@@ -190,20 +190,6 @@ try
 
 			});
 
-			// $('#product-preview-button-<?php echo $p_id1; ?>').click(function() {
-			//          //  Load
-			//         $("#product-preview-container").css("display","block");
-			//         // Back Button
-			//         $("#share-link").css("display", "none");
-			//         $(".back-link").css("display", "block");
-			//         // Help
-			//         $(".help-clearfix").empty();
-			//         $(".help-clearfix").load("help/product-preview.php");
-			//         //  Animate
-			//        $('.collections-animation-container').addClass("collections-animation");
-			//        $('#preview-container').addClass("preview-container-animate");
-			// });
-
 			$('.back-link').click(function() {
 				$('.collections-animation-container').removeClass("collections-animation");
 				$('#preview-container').removeClass("preview-container-animate");
@@ -254,9 +240,9 @@ try
 	}
 	 }
 	else {
-		echo "<script>$('.content-overflow').html('<h1 class=\'nomatch\'>No Share History.</h1>');</script>";
+		echo "<script>$('.content-overflow').html('<span class=\'cc-text-large\'>No Share History.</span>');</script>";
 	}
-	
+
 }
 catch (shopify\ApiException $e)
 {
