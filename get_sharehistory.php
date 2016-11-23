@@ -39,6 +39,8 @@ try
 		$OrigonalTag=$singleproduct['tags'];
 		$ComparePrice=$singleproduct['compare_at_price'];
 		$handle=$singleproduct['handle'];
+
+
 		$tags = str_replace('shared', '', $tags);
 		$tags = str_replace(' ', '', $tags);
 		$tags = str_replace(',', 'AA', $tags);
@@ -90,8 +92,8 @@ try
 						</div>
 					</div>
 				</div>
-                    
-				<a class='btn grey-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?> 'data-shared="unshared" ><i class='fa fa-times' aria-hidden='true'></i> Reset</a>
+
+				<a class='btn grey-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared="unshared"><i class='fa fa-times' aria-hidden='true'></i> Reset</a>
 
 			</div>
 
@@ -125,10 +127,10 @@ try
 				//  Animate
 				$('.collections-animation-container').addClass("collections-animation");
 				$('#preview-container').addClass("preview-container-animate");
-                  $('.preview-header .btn').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')"); 
-							 $('.preview-header .btn').attr('data-id','share-<?php echo $p_id1; ?>');
-							var share_id = 'share-'+<?php echo $p_id1; ?>;
-							$('.preview-header .btn[data-id='+share_id+']').text('unshared');
+                 $('.preview-header .btn').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')"); 
+				$('.preview-header .btn').attr('data-id','share-<?php echo $p_id1; ?>');
+				var share_id = 'share-'+<?php echo $p_id1; ?>;
+				$('.preview-header .btn[data-id='+share_id+']').text('unshared');
 				//  Preview
 
 				var $CaptionOneFB = "Grab the <?php echo $title; ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: <span style='color: #365899;''>http://buff.ly/2fVq7rY</span>";
@@ -262,6 +264,10 @@ catch (shopify\CurlException $e)
 	print_r($e->getResponse());
 }
 ?>
+
+<?php
+
+?>
 <script>
 	function unshareButton(pid,tags){
 
@@ -277,7 +283,7 @@ catch (shopify\CurlException $e)
                      url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_unshare,
                      success: function(data){
 						
-                     $('#share-button-'+pid).parent().remove();
+                     $('#share-button-'+pid).parents().remove();
 
                      }
                  });
