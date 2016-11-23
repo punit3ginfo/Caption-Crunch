@@ -426,6 +426,7 @@ catch (shopify\CurlException $e)
                      success: function(data){
 						 var btn_text = ['Share Now',' Share Next','Share Later',' Schedule'];
 						 var i= 0;
+						  var share_id = 'share-'+pid;
 					$('.preview-header .btn[data-id='+share_id+']').each(function(){
 					$('.preview-header .btn[data-id='+share_id+']').text(btn_text[i]);	
 					i=i++;
