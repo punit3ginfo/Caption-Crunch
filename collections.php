@@ -18,7 +18,7 @@
 						<div class="menu-container" id="new-products">
 							<div class="menu-clearfix">
 								<div class="menu-font-container">
-									<span class="menu-font">NEW PRODUCTS</span>
+									<span class="menu-font">NEWEST PRODUCTS</span>
 								</div>
 								<div class="menu-icon-clearfix">
 									<div class="menu-icon-container">
