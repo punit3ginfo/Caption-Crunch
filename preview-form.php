@@ -118,6 +118,3 @@
 </div>
 </div>
 </form>
-
-
-<!-- Scripts -->
