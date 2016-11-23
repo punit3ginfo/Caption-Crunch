@@ -65,7 +65,13 @@ try
 		$ComparePrice=$singleproduct['compare_at_price'];
 		$handle=$singleproduct['handle'];
 
-
+          if(in_array('shared',$OrigonalTag, true))
+		  {
+			  $shared='unshared';
+		  }
+		  else{
+			 $shared='shared'; 
+		  }
 		$tags = str_replace('shared', '', $tags);
 		$tags = str_replace(' ', '', $tags);
 		$tags = str_replace(',', 'AA', $tags);
@@ -120,7 +126,7 @@ try
 					</div>
 				</div>
 
-				<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
+				<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared="<?php echo $shared; ?>"><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
 
 				<script>
 
@@ -149,7 +155,7 @@ try
 						//  Animate
 						$('.collections-animation-container').addClass("collections-animation");
 						$('#preview-container').addClass("preview-container-animate");
-
+                         alert($(this).attr('data-shared'));
 						//  Preview
 
 						var $CaptionOneFB = 'Grab the <?php echo str_replace("'","\'",$title); ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
@@ -386,3 +392,4 @@ catch (shopify\CurlException $e)
 	});
 	</script>
 	<?php } ?>
+
