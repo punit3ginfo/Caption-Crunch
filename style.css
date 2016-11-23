@@ -1068,12 +1068,6 @@ body {
   font-weight: 600;
   line-height: 40px; }
 
-@media (max-width: 1000px) {
-  .menu-font {
-    font-size: 14px; } }
-@media (max-width: 835px) {
-  .menu-font {
-    font-size: 12px; } }
 .menu-container:hover .menu-font {
   color: white; }
 
