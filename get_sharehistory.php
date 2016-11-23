@@ -62,7 +62,7 @@ try
 
 		<!-- HTML Content for Product  START      -->
 
-		<div class="product-card-clearfix">
+		<div class="product-card-clearfix main-<?php echo $p_id1; ?>">
 
 			<div class="product-card-container">
 
@@ -283,7 +283,7 @@ catch (shopify\CurlException $e)
                      url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_unshare,
                      success: function(data){
 						
-                     $('#share-button-'+pid).parents().remove();
+                     $('.main-'+pid).remove();
 
                      }
                  });
