@@ -98,8 +98,13 @@ try
 		<div class="product-card-clearfix">
 
 			<div class="product-card-container">
-
-				<div class="ribbon ribbon-<?php echo $p_id1; ?>"><span>SHARED</span></div>
+                <?php if($shared=='shared'){
+					$display_setting="display:none";
+				}
+				else {
+					$display_setting="display:block";	
+				}?>
+				<div class="ribbon ribbon-<?php echo $p_id1; ?>" style="<?php echo $display_setting;?>"><span>SHARED</span></div>
 
 				<div class="product-card-image-container product-image-<?php echo $p_id1; ?>" style='background-image: url(<?php echo $src; ?>)'>
 					<!-- Opacity Layer -->
@@ -419,7 +424,15 @@ catch (shopify\CurlException $e)
                 $.ajax({
                      url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_unshare,
                      success: function(data){
- 			        $('.preview-header .btna[data-id='+share_id+']').text('unshared');
+						 var btn_text = ['Share Now',' Share Next','Share Later',' Schedule'];
+						 var i= 0;
+					$('.preview-header .btn[data-id='+share_id+']').each(function(){
+					$('.preview-header .btn[data-id='+share_id+']').text(btn_text[i]);	
+					i=i++;
+					});
+ 			         $('.share-button-'+pid).text('Share');
+					 $('.share-button-'+pid).attr('data-shared','shared');
+                     $('.ribbon-'+pid).hide();
 
                      }
                  });
@@ -443,11 +456,11 @@ catch (shopify\CurlException $e)
                      url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_1,
                      success: function(data){
 					 var share_id = 'share-'+pid;
-               $('.preview-header .btna[data-id='+share_id+']').text('unshared');					 
-            
- 			  
-
-                     }
+               $('.preview-header .btn[data-id='+share_id+']').text('unshared');
+			    $('.share-button-'+pid).text('Unshared');
+				$('.share-button-'+pid).attr('data-shared','unshared');
+                 $('.ribbon-'+pid).show();
+				 }
                  });
              }
 			 </script>
