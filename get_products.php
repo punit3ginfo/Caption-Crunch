@@ -64,8 +64,8 @@ try
 		$OrigonalTag=$singleproduct['tags'];
 		$ComparePrice=$singleproduct['compare_at_price'];
 		$handle=$singleproduct['handle'];
-             echo $OrigonalTag;
-          if(in_array('shared',$OrigonalTag, true))
+             
+          if(strpos($OrigonalTag,'shared') == true)
 		  {
 			  $shared='unshared';
 		  }
