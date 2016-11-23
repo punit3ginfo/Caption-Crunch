@@ -115,10 +115,10 @@ body {
 
 @media (max-width: 1000px) {
   .btn {
-    font-size: 12px; } }
+    font-size: 1.26vw; } }
 @media (max-width: 835px) {
   .btn {
-    font-size: 12px; } }
+    font-size: 1.26vw; } }
 /* Grey Button */
 .grey-button {
   position: relative;
