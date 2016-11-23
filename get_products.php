@@ -157,11 +157,11 @@ try
 						$('#preview-container').addClass("preview-container-animate");
                          alert($(this).attr('data-shared'));
 						 if($(this).attr('data-shared') == 'shared'){
-						  $('.preview-header .btn').attr('onClick','shareButton(<?php echo $p_id1; ?>,<?php echo $OrigonalTag; ?>)');
+						  $('.preview-header .btn').attr('onClick','shareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')');
 						 }
 						 else
 						 {
-							$('.preview-header .btn').attr('onClick','unshareButton(<?php echo $p_id1; ?>,<?php echo $OrigonalTag; ?>)'); 
+							$('.preview-header .btn').attr('onClick','unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')'); 
 						 }
 						//  Preview
 
@@ -397,8 +397,14 @@ catch (shopify\CurlException $e)
 		});
 
 	});
+	
+ 	
+     </script>
+
+	
+	<?php } ?>
 	<script>
- 	function unshareButton(pid,tags){
+	function unshareButton(pid,tags){
 
                 var access_token='<?php echo $access_token ?>';
  	       var shop='<?php echo $_REQUEST['shop'] ?>';
@@ -440,7 +446,4 @@ catch (shopify\CurlException $e)
                      }
                  });
              }
-     </script>
-
-	
-	<?php } ?>
+			 </script>
