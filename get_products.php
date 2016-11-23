@@ -165,11 +165,11 @@ try
 							  $('.preview-header .btn').attr('onClick',"shareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
 							  $('.preview-header .btn').attr('data-id','share-<?php echo $p_id1; ?>');
 							   var btn_text = ['Share Now','Share Next','Share Later','Schedule'];
-								var i= 0;
+								var btn_icon = ['fa fa-bullhorn','fa fa-caret-square-o-right','fa fa-clock-o','fa-calendar'];
 								var share_id = 'share-'+<?php echo $p_id1; ?>;
 								$('.preview-header .btn[data-id='+share_id+']').each(function(index){
-									$('.preview-header .btn[data-id='+share_id+']').text(btn_text[index]);
-									i= i+1;
+									$(this).text("<i class='"+btn_icon[index]+"' aria-hidden='true'></i>' + btn_text[index]");
+									
 								});
 						 }
 						 else
@@ -434,12 +434,10 @@ catch (shopify\CurlException $e)
                      url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_unshare,
                      success: function(data){
 						 var btn_text = ['Share Now',' Share Next','Share Later',' Schedule'];
-						 var i= 0;
+						var btn_icon = ['fa fa-bullhorn','fa fa-caret-square-o-right','fa fa-clock-o','fa-calendar']; 
 						  var share_id = 'share-'+pid;
 					$('.preview-header .btn[data-id='+share_id+']').each(function(index){
-					$('.preview-header .btn[data-id='+share_id+']').text(btn_text[index]);
-									
-					 i = i+1;
+					$(this).text("<i class='"+btn_icon[index]+"' aria-hidden='true'></i>' + btn_text[index]");
 					});
  			         $('#share-button-'+pid).text('Share');
 					 $('#share-button-'+pid).attr('data-shared','shared');
