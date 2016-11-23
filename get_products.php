@@ -166,7 +166,7 @@ try
 							  $('.preview-header .btn').attr('data-id','share-<?php echo $p_id1; ?>');
 							   var btn_text = ['Share Now',' Share Next','Share Later',' Schedule'];
 								var i= 0;
-								var share_id = 'share-'+pid;
+								var share_id = 'share-'+<?php echo $p_id1; ?>;
 								$('.preview-header .btn[data-id='+share_id+']').each(function(){
 									$('.preview-header .btn[data-id='+share_id+']').text(btn_text[i]);	
 									i=i++;
