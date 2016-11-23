@@ -156,6 +156,13 @@ try
 						$('.collections-animation-container').addClass("collections-animation");
 						$('#preview-container').addClass("preview-container-animate");
                          alert($(this).attr('data-shared'));
+						 if($(this).attr('data-shared') == 'shared'){
+						  $('.preview-header .btn').attr('onClick','shareButton(<?php echo $p_id1; ?>,<?php echo $OrigonalTag; ?>)');
+						 }
+						 else
+						 {
+							$('.preview-header .btn').attr('onClick','unshareButton(<?php echo $p_id1; ?>,<?php echo $OrigonalTag; ?>)'); 
+						 }
 						//  Preview
 
 						var $CaptionOneFB = 'Grab the <?php echo str_replace("'","\'",$title); ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
@@ -390,6 +397,50 @@ catch (shopify\CurlException $e)
 		});
 
 	});
-	</script>
-	<?php } ?>
+	<script>
+ 	function unshareButton(pid,tags){
 
+                var access_token='<?php echo $access_token ?>';
+ 	       var shop='<?php echo $_REQUEST['shop'] ?>';
+                var tags_unshare = tags.replace('shared', "");
+
+ 	       var tags_unshare = tags_unshare.replace('shared', "");
+ 		var tags_unshare = tags_unshare.replace(' ', "");
+
+ 	       var _id = '#'+ pid;
+                $.ajax({
+                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
+                     success: function(data){
+ 			$(_id).html('<button type=button class=reset-button id=reset-button-<?php echo $p_id1; ?>  onclick=unshareButton('+pid+',"'+tags_unshare+'");><i class="fa fa-times" aria-hidden=true></i> Reset</button>');
+
+                     }
+                 });
+             }
+
+
+
+
+ 	var tags;
+ 	function shareButton(pid,tags){
+ 		var _id = '#'+ pid;
+                 var access_token='<?php echo $access_token ?>';
+ 	        var shop='<?php echo $_REQUEST['shop'] ?>';
+ 			var tags_1 = tags+',shared';
+ 		//var tags_1 = '<?php //echo $tags; ?>';
+ 		if(tags_1== ''){
+ 			tags_1= 'shared';
+ 		}
+
+                 $.ajax({
+                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
+                     success: function(data){
+
+ 			  $(_id).html('<button type="button" class=share-button id=share-button-<?php echo $p_id1; ?>  def onclick=shareButton('+pid+',"'+tags_1+'");><i class="fa fa-bullhorn" aria-hidden=true></i> Share</button>');
+
+                     }
+                 });
+             }
+     </script>
+
+	
+	<?php } ?>
