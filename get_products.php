@@ -415,9 +415,9 @@ catch (shopify\CurlException $e)
 
  	       var _id = '#'+ pid;
                 $.ajax({
-                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
+                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_unshare,
                      success: function(data){
- 			$(_id).html('<button type=button class=reset-button id=reset-button-<?php echo $p_id1; ?>  onclick=unshareButton('+pid+',"'+tags_unshare+'");><i class="fa fa-times" aria-hidden=true></i> Reset</button>');
+ 			        $('.preview-header .btn').text('shared');
 
                      }
                  });
@@ -438,10 +438,10 @@ catch (shopify\CurlException $e)
  		}
 
                  $.ajax({
-                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags,
+                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_1,
                      success: function(data){
 
- 			  $(_id).html('<button type="button" class=share-button id=share-button-<?php echo $p_id1; ?>  def onclick=shareButton('+pid+',"'+tags_1+'");><i class="fa fa-bullhorn" aria-hidden=true></i> Share</button>');
+ 			  $('.preview-header .btn').text('shared');
 
                      }
                  });
