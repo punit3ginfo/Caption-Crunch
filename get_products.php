@@ -169,8 +169,7 @@ try
 								var share_id = 'share-'+<?php echo $p_id1; ?>;
 								$('.preview-header .btn[data-id='+share_id+']').each(function(){
 									$('.preview-header .btn[data-id='+share_id+']').text(btn_text[i]);
-																		
-									i=i++;
+									i= i+1;
 								});
 						 }
 						 else
@@ -439,8 +438,8 @@ catch (shopify\CurlException $e)
 						  var share_id = 'share-'+pid;
 					$('.preview-header .btn[data-id='+share_id+']').each(function(){
 					$('.preview-header .btn[data-id='+share_id+']').text(btn_text[i]);
-					alert(i);					
-					i=i++;
+									
+					 i = i+1;
 					});
  			         $('#share-button-'+pid).text('Share');
 					 $('#share-button-'+pid).attr('data-shared','shared');
