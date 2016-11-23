@@ -2592,3 +2592,7 @@ ul#pagination-list li {
 	margin: auto;
 	text-align: center;
 }
+
+.page-item.prev.disabled, .page-item.next.disabled {
+  display: none;
+} 
