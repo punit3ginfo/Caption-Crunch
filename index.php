@@ -101,6 +101,15 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 					</span>
 				</div>
 			</a>
+
+			<a id="help-button" class="help-header-link" style="text-decoration: none; float: right; cursor:pointer;">
+				<div class="sidebar-nav-container-header">
+					<span >
+						<i style="font-size: 20px;" class="fa fa-info" aria-hidden="true"></i><br>
+						Help
+					</span>
+				</div>
+			</a>
 			<!-- <a class="sidebar-link" href="/?page=autopilot">
 			<div class="sidebar-nav-container">
 			<span >
@@ -129,14 +138,14 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<nav class="main-nav-container">
-		<a id="help-button" class="help-header-link" style="text-decoration: none; float: right; cursor:pointer;">
+		<!-- <a id="help-button" class="help-header-link" style="text-decoration: none; float: right; cursor:pointer;">
 			<div class="sidebar-nav-container-header">
 				<span >
 					<i style="font-size: 20px;" class="fa fa-info" aria-hidden="true"></i><br>
 					Help
 				</span>
 			</div>
-		</a>
+		</a> -->
 	</nav>
 	<!-- /.navbar-collapse -->
 
