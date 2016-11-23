@@ -24,7 +24,7 @@
     // Rotate Arrow 180 Degree / Click
       $('#image-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
   });
-
+ 
   // Step 4 | Share - Show / Hide
   $('.share-show-hide-button').click(function() {
     // Show / Hide Conditions Container
