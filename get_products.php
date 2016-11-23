@@ -168,7 +168,7 @@ try
 								var btn_icon = ['fa fa-bullhorn','fa fa-caret-square-o-right','fa fa-clock-o','fa-calendar'];
 								var share_id = 'share-'+<?php echo $p_id1; ?>;
 								$('.preview-header .btn[data-id='+share_id+']').each(function(index){
-									$(this).text("<i class='"+btn_icon[index]+"'  aria-hidden='true'></i>" + btn_text[index]);
+									$(this).text("<i class='"+btn_icon[index]+"'  aria-hidden='true'></i> " + btn_text[index]);
 									
 								});
 						 }
@@ -437,7 +437,7 @@ catch (shopify\CurlException $e)
 						var btn_icon = ['fa fa-bullhorn','fa fa-caret-square-o-right','fa fa-clock-o','fa-calendar']; 
 						  var share_id = 'share-'+pid;
 					$('.preview-header .btn[data-id='+share_id+']').each(function(index){
-					$(this).text("<i class='"+btn_icon[index]+"'  aria-hidden='true'></i>" + btn_text[index]);
+					$(this).text("<i class='"+btn_icon[index]+"'  aria-hidden='true'></i> " + btn_text[index]);
 					});
  			         $('#share-button-'+pid).text('Share');
 					 $('#share-button-'+pid).attr('data-shared','shared');
