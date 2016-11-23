@@ -162,8 +162,15 @@ try
 						$('#preview-container').addClass("preview-container-animate");
                          //alert($(this).attr('data-shared'));
 						 if($(this).attr('data-shared') == 'shared'){
-						  $('.preview-header .btn').attr('onClick',"shareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
-						  $('.preview-header .btn').attr('data-id','share-<?php echo $p_id1; ?>');
+							  $('.preview-header .btn').attr('onClick',"shareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
+							  $('.preview-header .btn').attr('data-id','share-<?php echo $p_id1; ?>');
+							   var btn_text = ['Share Now',' Share Next','Share Later',' Schedule'];
+								var i= 0;
+								var share_id = 'share-'+pid;
+								$('.preview-header .btn[data-id='+share_id+']').each(function(){
+									$('.preview-header .btn[data-id='+share_id+']').text(btn_text[i]);	
+									i=i++;
+								});
 						 }
 						 else
 						 {
