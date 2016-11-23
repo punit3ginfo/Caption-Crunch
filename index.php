@@ -168,7 +168,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 // Load Pages
 
 // Get Collections / Share Page
-function getnewproducts(){
+function getproducts(){
 	$('.menu-container').each(function(){
 		$(this).removeClass('menu-container-active');
 	});
