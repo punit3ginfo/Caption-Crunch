@@ -126,7 +126,7 @@ try
 					</div>
 				</div>
 
-				<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared="<?php echo $shared; ?>"><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
+				<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared="<?php echo $shared; ?>"><i class='fa fa-bullhorn' aria-hidden='true'></i> <?php if($shared=='shared'){ echo 'Share'; }else{echo 'Unshared'; } ?> </a>
 
 				<script>
 
@@ -419,7 +419,7 @@ catch (shopify\CurlException $e)
                 $.ajax({
                      url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_unshare,
                      success: function(data){
- 			        $('.preview-header .btn').attr('share-'+pid).text('share now');
+ 			        $('.preview-header .btna[data-id='+share_id+']').text('unshared');
 
                      }
                  });
@@ -442,7 +442,9 @@ catch (shopify\CurlException $e)
                  $.ajax({
                      url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_1,
                      success: function(data){
-            $('.preview-header .btn').attr('share-'+pid).text('unshared');
+					 var share_id = 'share-'+pid;
+               $('.preview-header .btna[data-id='+share_id+']').text('unshared');					 
+            
  			  
 
                      }
