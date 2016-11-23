@@ -167,8 +167,8 @@ try
 							   var btn_text = ['Share Now','Share Next','Share Later','Schedule'];
 								var i= 0;
 								var share_id = 'share-'+<?php echo $p_id1; ?>;
-								$('.preview-header .btn[data-id='+share_id+']').each(function(){
-									$('.preview-header .btn[data-id='+share_id+']').text(btn_text[i]);
+								$('.preview-header .btn[data-id='+share_id+']').each(function(index){
+									$('.preview-header .btn[data-id='+share_id+']').text(btn_text[index]);
 									i= i+1;
 								});
 						 }
@@ -436,8 +436,8 @@ catch (shopify\CurlException $e)
 						 var btn_text = ['Share Now',' Share Next','Share Later',' Schedule'];
 						 var i= 0;
 						  var share_id = 'share-'+pid;
-					$('.preview-header .btn[data-id='+share_id+']').each(function(){
-					$('.preview-header .btn[data-id='+share_id+']').text(btn_text[i]);
+					$('.preview-header .btn[data-id='+share_id+']').each(function(index){
+					$('.preview-header .btn[data-id='+share_id+']').text(btn_text[index]);
 									
 					 i = i+1;
 					});
