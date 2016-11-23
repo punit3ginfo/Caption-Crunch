@@ -64,7 +64,7 @@ try
 		$OrigonalTag=$singleproduct['tags'];
 		$ComparePrice=$singleproduct['compare_at_price'];
 		$handle=$singleproduct['handle'];
-
+             echo $OrigonalTag;
           if(in_array('shared',$OrigonalTag, true))
 		  {
 			  $shared='unshared';
@@ -155,14 +155,16 @@ try
 						//  Animate
 						$('.collections-animation-container').addClass("collections-animation");
 						$('#preview-container').addClass("preview-container-animate");
-                         alert($(this).attr('data-shared'));
+                         //alert($(this).attr('data-shared'));
 						 if($(this).attr('data-shared') == 'shared'){
 						  $('.preview-header .btn').attr('onClick',"shareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
+						  $('.preview-header .btn').attr('data-id','share-<?php echo $p_id1; ?>');
 						 }
 						 else
 						 {
 							$('.preview-header .btn').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')"); 
-						 }
+							 $('.preview-header .btn').attr('data-id','share-<?php echo $p_id1; ?>');
+						 } 
 						//  Preview
 
 						var $CaptionOneFB = 'Grab the <?php echo str_replace("'","\'",$title); ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
@@ -417,7 +419,7 @@ catch (shopify\CurlException $e)
                 $.ajax({
                      url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_unshare,
                      success: function(data){
- 			        $('.preview-header .btn').text('shared');
+ 			        $('.preview-header .btn').attr('share-'+pid).text('share now');
 
                      }
                  });
@@ -440,8 +442,8 @@ catch (shopify\CurlException $e)
                  $.ajax({
                      url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_1,
                      success: function(data){
-
- 			  $('.preview-header .btn').text('shared');
+            $('.preview-header .btn').attr('share-'+pid).text('unshared');
+ 			  
 
                      }
                  });
