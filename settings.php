@@ -38,7 +38,7 @@
 
 
 
-                                  <div class="content-header" style="text-align: center;">
+                                  <div class="content-header" style="text-align: center; display: flex; justify-content: center;">
                                           <span class="cc-text-large" style="line-height: 80px;">
                                           Connect Your Accounts
                                           </span>
