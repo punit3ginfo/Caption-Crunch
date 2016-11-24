@@ -460,7 +460,7 @@ catch (shopify\CurlException $e)
 			success: function(data){
 				var share_id = 'share-'+pid;
 				//        $('.preview-header .btn[data-id='+share_id+']').text('unshared');
-				$('#share-button-'+pid).replaceWith( "<a class='btn grey-button share-button hvr-shutter-out-horizontal' id='reset-button-<?php echo $p_id1; ?>' data-shared="unshared"><i class='fa fa-times' aria-hidden='true'></i> Reset</a>" );
+				$('#share-button-'+pid).replaceWith( "<a class='btn grey-button share-button hvr-shutter-out-horizontal' id='reset-button-<?php echo $p_id1; ?>' data-shared='unshared'><i class='fa fa-times' aria-hidden='true'></i> Reset</a>" );
 
 				// .html("<i class='fa fa-times' aria-hidden='true'></i> Reset");
 				// $('#share-button-'+pid).addClass("grey-button");
