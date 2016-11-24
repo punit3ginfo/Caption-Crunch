@@ -98,7 +98,7 @@ try
 		<div class="product-card-clearfix">
 
 			<div class="product-card-container">
-				
+
 				<div class="ribbon ribbon-<?php echo $p_id1; ?>"><span>SHARED</span></div>
 
 				<?php
@@ -146,17 +146,6 @@ try
 
 
 				<script>
-				// if($(this).attr('data-shared') == 'shared'){
-				// 	$('#share-button-<?php echo $p_id1; ?>').replaceWith( "<a class='btn grey-button share-button hvr-shutter-out-horizontal' id='reset-button-<?php echo $p_id1; ?>' data-shared='unshared'><i class='fa fa-times' aria-hidden='true'></i> Reset</a>" );
-				// 	$('.ribbon-<?php echo $p_id1; ?>').show();
-				// }
-
-				// if($shared=='shared'){
-				// 			$('.ribbon-<?php echo $p_id1; ?>').show();
-				// 	}
-				// 	else {
-				// 			$('.ribbon-<?php echo $p_id1; ?>').hide();
-				// }
 
 				function unshareButton(pid,tags){
 
@@ -226,6 +215,7 @@ try
 
 				// Preview Drop Down
 				$(document).ready(function() {
+					$('#reset-button-<?php echo $p_id1; ?>').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
 
 					$('#share-button-<?php echo $p_id1; ?>').click(function() {
 						//  Load
