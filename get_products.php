@@ -143,216 +143,203 @@ try
 
 				<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared="<?php echo $shared; ?>"><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
 
-
-
-				<script>
-
-				// Show / Hide Product Details
-				$(document).ready(function() {
-					$('.product-image-<?php echo $p_id1; ?>').hover(function() {
-						// Show / Hide Product Details Opacity Container
-						$('.product-opacity-<?php echo $p_id1; ?>').toggle();
-						// Show / Hide Product Details Container
-						$('.product-details-<?php echo $p_id1; ?>').toggle();
-					});
-				});
-
-				// Preview Drop Down
-				$(document).ready(function() {
-					$('#reset-button-<?php echo $p_id1; ?>').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
-
-					$('#share-button-<?php echo $p_id1; ?>').click(function() {
-						//  Load
-						$("#post-preview-container").css("display","block");
-						// Back Button
-						$("#share-link").css("display", "none");
-						$(".back-link").css("display", "block");
-						// Help
-						$(".help-clearfix").empty();
-						$(".help-clearfix").load("help/preview.php");
-						//  Animate
-						$('.collections-animation-container').addClass("collections-animation");
-						$('#preview-container').addClass("preview-container-animate");
-                         //alert($(this).attr('data-shared'));
-
-							  $('.preview-header .btn').attr('onClick',"shareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
-							  $('.preview-header .btn').attr('data-id','share-<?php echo $p_id1; ?>');
-
-							   var btn_text = ['Share Now','Share Next','Share Later','Schedule'];
-								var btn_icon = ['fa fa-bullhorn','fa fa-caret-square-o-right','fa fa-clock-o','fa fa-calendar'];
-								var share_id = 'share-'+<?php echo $p_id1; ?>;
-								$('.preview-header .btn[data-id='+share_id+']').each(function(index){
-									$(this).html("<i class='"+btn_icon[index]+"'  aria-hidden='true'></i> " + btn_text[index]);
-
-								});
-
-						//  Preview
-
-						var $CaptionOneFB = 'Grab the <?php echo str_replace("'","\'",$title); ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
-						var $CaptionTwoFB = 'STEAL ALERT! <?php echo str_replace("'","\'",$title); ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Link: <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
-						var $CaptionThreeFB = 'Take 20% OFF the <?php echo str_replace("'","\'",$title); ?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
-
-						var $CaptionOne = 'Grab the <?php echo str_replace("'","\'",$title); ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: http://buff.ly/2fVq7rY';
-						var $CaptionTwo = 'STEAL ALERT! <?php echo str_replace("'","\'",$title);  ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Link: http://buff.ly/2fVq7rY';
-						var $CaptionThree = 'Take 20% OFF the <?php echo str_replace("'","\'",$title); ?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> http://buff.ly/2fVq7rY';
-
-						$("#preview-textarea-large").ready(function() {
-							$("#preview-textarea-large").html();
-							$("#preview-textarea-large").html($CaptionOne);
-							$(".facebook-mobile-caption-text").html();
-							$(".facebook-mobile-caption-text").html($CaptionOneFB);
-							$("#caption-one").addClass('green-button');
-							$("#caption-two").removeClass('green-button');
-							$("#caption-three").removeClass('green-button');
-						});
-
-						$("#caption-one").click(function() {
-							$("#preview-textarea-large").html();
-							$("#preview-textarea-large").html($CaptionOne);
-							$(".facebook-mobile-caption-text").html();
-							$(".facebook-mobile-caption-text").html($CaptionOneFB);
-							$("#caption-one").addClass('green-button');
-							$("#caption-two").removeClass('green-button');
-							$("#caption-three").removeClass('green-button');
-						});
-
-						$("#caption-two").click(function() {
-							$("#preview-textarea-large").html();
-							$("#preview-textarea-large").html($CaptionTwo);
-							$(".facebook-mobile-caption-text").html();
-							$(".facebook-mobile-caption-text").html($CaptionTwoFB);
-							$("#caption-one").removeClass('green-button');
-							$("#caption-three").removeClass('green-button');
-							$("#caption-two").addClass('green-button');
-						});
-
-						$("#caption-three").click(function() {
-							$("#preview-textarea-large").html();
-							$("#preview-textarea-large").html($CaptionThree);
-							$(".facebook-mobile-caption-text").html();
-							$(".facebook-mobile-caption-text").html($CaptionThreeFB);
-							$("#caption-two").removeClass('green-button');
-							$("#caption-one").removeClass('green-button');
-							$("#caption-three").addClass('green-button');
-						});
-
-						$("#addimage-image-one").ready(function() {
-							$("#addimage-image-one").css('background-image', 'url(<?php echo $src; ?>)')
-						});
-
-						var $facebookImageSource = "<?php echo $src; ?>";
-
-						$(".facebook-mobile-image").ready(function() {
-							$(".facebook-mobile-image").attr("src", $facebookImageSource);
-						});
-
-					});
-
-					$('.back-link').click(function() {
-						$('.collections-animation-container').removeClass("collections-animation");
-						$('#preview-container').removeClass("preview-container-animate");
-						// Back Button
-						$("#share-link").css("display", "block");
-						$(".back-link").css("display", "none");
-						// Help
-						$(".help-clearfix").empty();
-						$(".help-clearfix").load("help/share.php");
-
-						setTimeout(function(){
-							$("#product-preview-container").css("display","none");
-							$("#post-preview-container").css("display","none");
-							//  Clear
-							$("#caption-textarea-large").empty();
-							$("#caption-textarea-small").empty();
-							$("#addimage-image-one").empty();
-							$(".facebook-mobile-caption-text").empty();
-							$(".facebook-mobile-image").attr("src", "");
-						}, 800);
-					});
-
-
-					$('.sidebar-link').click(function() {
-						$('#preview-container').removeClass("preview-container-animate");
-						$('.collections-animation-container').removeClass("collections-animation");
-						// Back Button
-						$("#share-link").css("display", "block");
-						$(".back-link").css("display", "none");
-
-						setTimeout(function(){
-							$("#product-preview-container").css("display","none");
-							$("#post-preview-container").css("display","none");
-							//  Clear
-							$("#caption-textarea-large").empty();
-							$("#caption-textarea-small").empty();
-							$("#addimage-image-one").empty();
-							$(".facebook-mobile-caption-text").empty();
-							$(".facebook-mobile-image").attr("src", "");
-						}, 800);
-					});
-				});
-
-				var tags;
-				function shareButton(pid,tags){
-					var _id = '#'+ pid;
-					var access_token='<?php echo $access_token ?>';
-					var shop='<?php echo $_REQUEST['shop'] ?>';
-					var tags_1 = tags+',shared';
-					//var tags_1 = '<?php //echo $tags; ?>';
-					if(tags_1== ''){
-						tags_1= 'shared';
-					}
-
-					$.ajax({
-						url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_1,
-						success: function(data){
-							var share_id = 'share-'+pid;
-							//        $('.preview-header .btn[data-id='+share_id+']').text('unshared');
-							$('#share-button-<?php echo $p_id1; ?>').html("tits");
-							// $('#share-button-<?php echo $p_id1; ?>').replaceWith( "<a class='btn grey-button share-button hvr-shutter-out-horizontal' id='reset-button-<?php echo $p_id1; ?>' data-shared='unshared'><i class='fa fa-times' aria-hidden='true'></i> Reset</a>" );
-							$('.ribbon-<?php echo $p_id1; ?>').show();
-							// .html("<i class='fa fa-times' aria-hidden='true'></i> Reset");
-							// $('#share-button-'+pid).addClass("grey-button");
-							// $('#share-button-'+pid).attr('data-shared','unshared');
-
-						}
-					});
-				}
-
-				function unshareButton(pid,tags){
-
-					var access_token='<?php echo $access_token ?>';
-					var shop='<?php echo $_REQUEST['shop'] ?>';
-					var tags_unshare = tags.replace('shared', "");
-
-					var tags_unshare = tags_unshare.replace('shared', "");
-					var tags_unshare = tags_unshare.replace(' ', "");
-
-					var _id = '#'+ pid;
-					$.ajax({
-						url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_unshare,
-						success: function(data){
-							//  var btn_text = ['Share Now',' Share Next','Share Later',' Schedule'];
-							// var btn_icon = ['fa fa-bullhorn','fa fa-caret-square-o-right','fa fa-clock-o','fa fa-calendar'];
-							// var share_id = 'share-'+pid;
-							// $('.preview-header .btn[data-id='+share_id+']').each(function(index){
-							// $(this).html("<i class='"+btn_icon[index]+"'  aria-hidden='true'></i> " + btn_text[index]);
-							// });
-							//   $('#share-button-'+pid).text('Share');
-							// $('#share-button-<?php echo $p_id1; ?>').attr('data-shared','shared');
-							// $('.ribbon-<?php echo $p_id1; ?>').hide();
-
-							$('#reset-button-<?php echo $p_id1; ?>').replaceWith( "<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared='<?php echo $shared; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>");
-							$('.ribbon-<?php echo $p_id1; ?>').hide();
-
-						}
-					});
-				}
-
-				</script>
-
 			</div>
 
 		</div>
+
+		<script>
+
+		// Show / Hide Product Details
+		$(document).ready(function() {
+			$('.product-image-<?php echo $p_id1; ?>').hover(function() {
+				// Show / Hide Product Details Opacity Container
+				$('.product-opacity-<?php echo $p_id1; ?>').toggle();
+				// Show / Hide Product Details Container
+				$('.product-details-<?php echo $p_id1; ?>').toggle();
+			});
+		});
+
+		// Preview Drop Down
+		$(document).ready(function() {
+			$('#reset-button-<?php echo $p_id1; ?>').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
+
+			$('#share-button-<?php echo $p_id1; ?>').click(function() {
+				//  Load
+				$("#post-preview-container").css("display","block");
+				// Back Button
+				$("#share-link").css("display", "none");
+				$(".back-link").css("display", "block");
+				// Help
+				$(".help-clearfix").empty();
+				$(".help-clearfix").load("help/preview.php");
+				//  Animate
+				$('.collections-animation-container').addClass("collections-animation");
+				$('#preview-container').addClass("preview-container-animate");
+				//  Generate Share Buttons
+				$('.preview-header .btn').attr('onClick',"shareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
+				$('.preview-header .btn').attr('data-id','share-<?php echo $p_id1; ?>');
+
+				var btn_text = ['Share Now','Share Next','Share Later','Schedule'];
+				var btn_icon = ['fa fa-bullhorn','fa fa-caret-square-o-right','fa fa-clock-o','fa fa-calendar'];
+				var share_id = 'share-'+<?php echo $p_id1; ?>;
+				$('.preview-header .btn[data-id='+share_id+']').each(function(index){
+					$(this).html("<i class='"+btn_icon[index]+"'  aria-hidden='true'></i> " + btn_text[index]);
+				});
+				//  Preview
+				var $CaptionOneFB = 'Grab the <?php echo str_replace("'","\'",$title); ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
+				var $CaptionTwoFB = 'STEAL ALERT! <?php echo str_replace("'","\'",$title); ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Link: <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
+				var $CaptionThreeFB = 'Take 20% OFF the <?php echo str_replace("'","\'",$title); ?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
+
+				var $CaptionOne = 'Grab the <?php echo str_replace("'","\'",$title); ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: http://buff.ly/2fVq7rY';
+				var $CaptionTwo = 'STEAL ALERT! <?php echo str_replace("'","\'",$title);  ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Link: http://buff.ly/2fVq7rY';
+				var $CaptionThree = 'Take 20% OFF the <?php echo str_replace("'","\'",$title); ?>! On sale for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) --> http://buff.ly/2fVq7rY';
+				//  Load Preivew Contents
+				$("#preview-textarea-large").ready(function() {
+					$("#preview-textarea-large").html();
+					$("#preview-textarea-large").html($CaptionOne);
+					$(".facebook-mobile-caption-text").html();
+					$(".facebook-mobile-caption-text").html($CaptionOneFB);
+					$("#caption-one").addClass('green-button');
+					$("#caption-two").removeClass('green-button');
+					$("#caption-three").removeClass('green-button');
+				});
+				$("#addimage-image-one").ready(function() {
+					$("#addimage-image-one").css('background-image', 'url(<?php echo $src; ?>)')
+				});
+				var $facebookImageSource = "<?php echo $src; ?>";
+				$(".facebook-mobile-image").ready(function() {
+					$(".facebook-mobile-image").attr("src", $facebookImageSource);
+				});
+				//  Change Caption Buttons
+				$("#caption-one").click(function() {
+					$("#preview-textarea-large").html();
+					$("#preview-textarea-large").html($CaptionOne);
+					$(".facebook-mobile-caption-text").html();
+					$(".facebook-mobile-caption-text").html($CaptionOneFB);
+					$("#caption-one").addClass('green-button');
+					$("#caption-two").removeClass('green-button');
+					$("#caption-three").removeClass('green-button');
+				});
+				$("#caption-two").click(function() {
+					$("#preview-textarea-large").html();
+					$("#preview-textarea-large").html($CaptionTwo);
+					$(".facebook-mobile-caption-text").html();
+					$(".facebook-mobile-caption-text").html($CaptionTwoFB);
+					$("#caption-one").removeClass('green-button');
+					$("#caption-three").removeClass('green-button');
+					$("#caption-two").addClass('green-button');
+				});
+				$("#caption-three").click(function() {
+					$("#preview-textarea-large").html();
+					$("#preview-textarea-large").html($CaptionThree);
+					$(".facebook-mobile-caption-text").html();
+					$(".facebook-mobile-caption-text").html($CaptionThreeFB);
+					$("#caption-two").removeClass('green-button');
+					$("#caption-one").removeClass('green-button');
+					$("#caption-three").addClass('green-button');
+				});
+
+			});
+				//  Back Buttons
+			$('.back-link').click(function() {
+				$('.collections-animation-container').removeClass("collections-animation");
+				$('#preview-container').removeClass("preview-container-animate");
+				// Back Button
+				$("#share-link").css("display", "block");
+				$(".back-link").css("display", "none");
+				// Help
+				$(".help-clearfix").empty();
+				$(".help-clearfix").load("help/share.php");
+
+				setTimeout(function(){
+					$("#product-preview-container").css("display","none");
+					$("#post-preview-container").css("display","none");
+					//  Clear
+					$("#caption-textarea-large").empty();
+					$("#caption-textarea-small").empty();
+					$("#addimage-image-one").empty();
+					$(".facebook-mobile-caption-text").empty();
+					$(".facebook-mobile-image").attr("src", "");
+				}, 800);
+			});
+			$('.sidebar-link').click(function() {
+				$('#preview-container').removeClass("preview-container-animate");
+				$('.collections-animation-container').removeClass("collections-animation");
+				// Back Button
+				$("#share-link").css("display", "block");
+				$(".back-link").css("display", "none");
+
+				setTimeout(function(){
+					$("#product-preview-container").css("display","none");
+					$("#post-preview-container").css("display","none");
+					//  Clear
+					$("#caption-textarea-large").empty();
+					$("#caption-textarea-small").empty();
+					$("#addimage-image-one").empty();
+					$(".facebook-mobile-caption-text").empty();
+					$(".facebook-mobile-image").attr("src", "");
+				}, 800);
+			});
+		});
+
+		var tags;
+		function shareButton(pid,tags){
+			var _id = '#'+ pid;
+			var access_token='<?php echo $access_token ?>';
+			var shop='<?php echo $_REQUEST['shop'] ?>';
+			var tags_1 = tags+',shared';
+			//var tags_1 = '<?php //echo $tags; ?>';
+			if(tags_1== ''){
+				tags_1= 'shared';
+			}
+
+			$.ajax({
+				url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_1,
+				success: function(data){
+					var share_id = 'share-'+pid;
+					//        $('.preview-header .btn[data-id='+share_id+']').text('unshared');
+					$('#share-button-<?php echo $p_id1; ?>').html("tits");
+					// $('#share-button-<?php echo $p_id1; ?>').replaceWith( "<a class='btn grey-button share-button hvr-shutter-out-horizontal' id='reset-button-<?php echo $p_id1; ?>' data-shared='unshared'><i class='fa fa-times' aria-hidden='true'></i> Reset</a>" );
+					$('.ribbon-<?php echo $p_id1; ?>').show();
+					// .html("<i class='fa fa-times' aria-hidden='true'></i> Reset");
+					// $('#share-button-'+pid).addClass("grey-button");
+					// $('#share-button-'+pid).attr('data-shared','unshared');
+
+				}
+			});
+		}
+
+		function unshareButton(pid,tags){
+
+			var access_token='<?php echo $access_token ?>';
+			var shop='<?php echo $_REQUEST['shop'] ?>';
+			var tags_unshare = tags.replace('shared', "");
+
+			var tags_unshare = tags_unshare.replace('shared', "");
+			var tags_unshare = tags_unshare.replace(' ', "");
+
+			var _id = '#'+ pid;
+			$.ajax({
+				url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_unshare,
+				success: function(data){
+					//  var btn_text = ['Share Now',' Share Next','Share Later',' Schedule'];
+					// var btn_icon = ['fa fa-bullhorn','fa fa-caret-square-o-right','fa fa-clock-o','fa fa-calendar'];
+					// var share_id = 'share-'+pid;
+					// $('.preview-header .btn[data-id='+share_id+']').each(function(index){
+					// $(this).html("<i class='"+btn_icon[index]+"'  aria-hidden='true'></i> " + btn_text[index]);
+					// });
+					//   $('#share-button-'+pid).text('Share');
+					// $('#share-button-<?php echo $p_id1; ?>').attr('data-shared','shared');
+					// $('.ribbon-<?php echo $p_id1; ?>').hide();
+
+					$('#reset-button-<?php echo $p_id1; ?>').replaceWith( "<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared='<?php echo $shared; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>");
+					$('.ribbon-<?php echo $p_id1; ?>').hide();
+
+				}
+			});
+		}
+
+		</script>
 		<!-- HTML Content for Product END    -->
 
 		<!-- Pagination -->
