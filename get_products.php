@@ -131,7 +131,7 @@ try
 					</div>
 				</div>
 
-				<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared="<?php echo $shared; ?>"><i class='fa fa-bullhorn' aria-hidden='true'></i> <?php if($shared=='shared'){ echo 'Share'; }else{echo 'Unshared'; } ?> </a>
+				<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared="<?php echo $shared; ?>"><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
 
 				<script>
 
@@ -460,11 +460,39 @@ catch (shopify\CurlException $e)
 			success: function(data){
 				var share_id = 'share-'+pid;
 				//        $('.preview-header .btn[data-id='+share_id+']').text('unshared');
-				$('#share-button-'+pid).html("<i class='fa fa-times' aria-hidden='true'></i> Reset");
-				$('#share-button-'+pid).addClass("grey-button");
-				$('#share-button-'+pid).attr('data-shared','unshared');
+				$('#share-button-'+pid).replaceWith( "<a class='btn grey-button share-button hvr-shutter-out-horizontal' id='reset-button-<?php echo $p_id1; ?>' data-shared="unshared"><i class='fa fa-times' aria-hidden='true'></i> Reset</a>" );
+
+				// .html("<i class='fa fa-times' aria-hidden='true'></i> Reset");
+				// $('#share-button-'+pid).addClass("grey-button");
+				// $('#share-button-'+pid).attr('data-shared','unshared');
 				$('.ribbon-'+pid).show();
 			}
 		});
 	}
+
+	// if($(this).attr('data-shared') == 'shared'){};
+	</script>
+
+	<script>
+		function unshareButton(pid,tags){
+
+	                var access_token='<?php echo $access_token ?>';
+	 	       var shop='<?php echo $_REQUEST['shop'] ?>';
+	                var tags_unshare = tags.replace('shared', "");
+
+	 	       var tags_unshare = tags_unshare.replace('shared', "");
+	 		var tags_unshare = tags_unshare.replace(' ', "");
+
+	 	       var _id = '#'+ pid;
+	                $.ajax({
+	                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_unshare,
+	                     success: function(data){
+
+				     $('#reset-button-'+pid).replaceWith( "<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared='<?php echo $shared; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>");
+				     $('.ribbon-'+pid).hide();
+	                //      $('.main-'+pid).remove();
+
+	                     }
+	                 });
+	         }
 	</script>
