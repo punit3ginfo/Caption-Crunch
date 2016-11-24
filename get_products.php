@@ -161,7 +161,7 @@ try
 						$('.collections-animation-container').addClass("collections-animation");
 						$('#preview-container').addClass("preview-container-animate");
                          //alert($(this).attr('data-shared'));
-						 if($(this).attr('data-shared') == 'shared'){
+
 							  $('.preview-header .btn').attr('onClick',"shareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
 							  $('.preview-header .btn').attr('data-id','share-<?php echo $p_id1; ?>');
 							  $('.ribbon-'+pid).show();
@@ -172,14 +172,7 @@ try
 									$(this).html("<i class='"+btn_icon[index]+"'  aria-hidden='true'></i> " + btn_text[index]);
 
 								});
-						 }
-						 else
-						 {
-							$('.preview-header .btn').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
-							 $('.preview-header .btn').attr('data-id','share-<?php echo $p_id1; ?>');
-							var share_id = 'share-'+<?php echo $p_id1; ?>;
-							$('.preview-header .btn[data-id='+share_id+']').text('unshared');
-						 }
+
 						//  Preview
 
 						var $CaptionOneFB = 'Grab the <?php echo str_replace("'","\'",$title); ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';

@@ -287,5 +287,5 @@ catch (shopify\CurlException $e)
 
                      }
                  });
-             }
-			 </script>
+         }
+</script>
