@@ -99,12 +99,12 @@ try
 
 			<div class="product-card-container">
                 <?php if($shared=='shared'){
-					$display_setting_+p_id1="display:none";
+					$display_setting="display:none";
 				}
 				else {
-					$display_setting_+p_id1="display:block";
+					$display_setting="display:block";
 				}?>
-				<div class="ribbon ribbon-<?php echo $p_id1; ?>" style="<?php echo $display_setting_+p_id1;?>"><span>SHARED</span></div>
+				<div class="ribbon ribbon-<?php echo $p_id1; ?>" style="<?php echo $display_setting;?>"><span>SHARED</span></div>
 
 				<div class="product-card-image-container product-image-<?php echo $p_id1; ?>" style='background-image: url(<?php echo $src; ?>)'>
 					<!-- Opacity Layer -->
