@@ -128,18 +128,35 @@ try
 
 				<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared="<?php echo $shared; ?>"><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
 
+				<?php
+				if($shared=='shared'){
+							echo '<style type="text/css">
+						        .ribbon-<?php echo $p_id1; ?> {
+						            display: block;
+						        }
+						        </style>';
+					}
+					else {
+						echo '<style type="text/css">
+						.ribbon-<?php echo $p_id1; ?> {
+						    display: none;
+						}
+						</style>';
+				}
+				?>
+
 				<script>
 				// if($(this).attr('data-shared') == 'shared'){
 				// 	$('#share-button-<?php echo $p_id1; ?>').replaceWith( "<a class='btn grey-button share-button hvr-shutter-out-horizontal' id='reset-button-<?php echo $p_id1; ?>' data-shared='unshared'><i class='fa fa-times' aria-hidden='true'></i> Reset</a>" );
 				// 	$('.ribbon-<?php echo $p_id1; ?>').show();
 				// }
 
-				if($shared=='shared'){
-							$('.ribbon-<?php echo $p_id1; ?>').show();
-					}
-					else {
-							$('.ribbon-<?php echo $p_id1; ?>').hide();
-				}
+				// if($shared=='shared'){
+				// 			$('.ribbon-<?php echo $p_id1; ?>').show();
+				// 	}
+				// 	else {
+				// 			$('.ribbon-<?php echo $p_id1; ?>').hide();
+				// }
 
 				function unshareButton(pid,tags){
 
