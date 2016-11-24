@@ -113,7 +113,7 @@ try
 		});
 
 		// Preview Drop Down
-		$(document).ready(function() {
+		// $(document).ready(function() {
 
 			// $('#reset-button-<?php echo $p_id1; ?>').click(function() {
 				//  Load
