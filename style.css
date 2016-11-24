@@ -119,49 +119,6 @@ body {
 @media (max-width: 835px) {
   .btn {
     font-size: 1.26vw; } }
-/* Grey Button */
-.grey-button {
-  position: relative;
-  display: inline-block;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  vertical-align: middle;
-  color: #555555;
-  border: 1px solid #555555;
-  background-color: white;
-  box-shadow: 0 0 1px transparent; }
-
-.grey-button:hover {
-  color: white !important;
-  background-color: #555555; }
-
-.grey-button:before {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  content: "";
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  border-radius: 23px;
-  background: #555555; }
-
-.grey-button:hover:before {
-  -webkit-transform: scale(1);
-  transform: scale(1); }
-
 /* Green Button */
 .green-button {
   position: relative;
@@ -202,6 +159,49 @@ body {
   background: #7ab55c; }
 
 .green-button:hover:before {
+  -webkit-transform: scale(1);
+  transform: scale(1); }
+
+/* Grey Button */
+.grey-button {
+  position: relative;
+  display: inline-block;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  vertical-align: middle;
+  color: #555555;
+  border: 1px solid #555555;
+  background-color: white;
+  box-shadow: 0 0 1px transparent; }
+
+.grey-button:hover {
+  color: white !important;
+  background-color: #555555; }
+
+.grey-button:before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  border-radius: 23px;
+  background: #555555; }
+
+.grey-button:hover:before {
   -webkit-transform: scale(1);
   transform: scale(1); }
 
