@@ -98,6 +98,9 @@ try
 		<div class="product-card-clearfix">
 
 			<div class="product-card-container">
+				
+				<div class="ribbon ribbon-<?php echo $p_id1; ?>"><span>SHARED</span></div>
+
 				<?php
 				if($shared=='shared'){
 							echo "
@@ -112,8 +115,6 @@ try
 						</script>";
 				}
 				?>
-
-				<div class="ribbon ribbon-<?php echo $p_id1; ?>"><span>SHARED</span></div>
 
 				<div class="product-card-image-container product-image-<?php echo $p_id1; ?>" style='background-image: url(<?php echo $src; ?>)'>
 					<!-- Opacity Layer -->
