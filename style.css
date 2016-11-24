@@ -449,7 +449,8 @@ body {
   background-position: center;
   background-size: 100%;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  border-bottom: 1px solid #eee; }
 
 .sidebar-nav-container-header-active {
   background-color: #555555; }
