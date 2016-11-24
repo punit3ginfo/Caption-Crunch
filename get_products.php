@@ -164,6 +164,7 @@ try
 						 if($(this).attr('data-shared') == 'shared'){
 							  $('.preview-header .btn').attr('onClick',"shareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
 							  $('.preview-header .btn').attr('data-id','share-<?php echo $p_id1; ?>');
+							  $('.ribbon-'+pid).show();
 							   var btn_text = ['Share Now','Share Next','Share Later','Schedule'];
 								var btn_icon = ['fa fa-bullhorn','fa fa-caret-square-o-right','fa fa-clock-o','fa fa-calendar'];
 								var share_id = 'share-'+<?php echo $p_id1; ?>;
