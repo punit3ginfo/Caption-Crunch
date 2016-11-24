@@ -159,7 +159,7 @@ try
 				$('.product-details-<?php echo $p_id1; ?>').toggle();
 			});
 
-			$('#reset-button-<?php echo $p_id1; ?>').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
+			$('#reset-button-<?php echo $p_id1; ?>').click(function unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>'));
 
 			$('#share-button-<?php echo $p_id1; ?>').click(function() {
 				//  Load
@@ -389,10 +389,7 @@ catch (shopify\CurlException $e)
 				   }
 			}
 		});
-
 	});
-
-
      </script>
 
 
