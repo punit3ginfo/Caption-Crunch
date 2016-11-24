@@ -100,18 +100,16 @@ try
 			<div class="product-card-container">
 				<?php
 				if($shared=='shared'){
-							echo '<style type="text/css">
-						        .ribbon-<?php echo $p_id1; ?> {
-						            display: block !important;
-						        }
-						        </style>';
+							echo "
+							<script>
+								$( '.ribbon-<?php echo $p_id1; ?>' ).css('display', 'block');
+						        </script>";
 					}
 					else {
-						echo '<style type="text/css">
-						.ribbon-<?php echo $p_id1; ?> {
-						    display: none;
-						}
-						</style>';
+						echo "
+						<script>
+							$( '.ribbon-<?php echo $p_id1; ?>' ).css('display', 'none');
+						</script>";
 				}
 				?>
 
