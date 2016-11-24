@@ -98,13 +98,8 @@ try
 		<div class="product-card-clearfix">
 
 			<div class="product-card-container">
-                <?php if($shared=='shared'){
-					$display_setting="display:none";
-				}
-				else {
-					$display_setting="display:block";
-				}?>
-				<div class="ribbon ribbon-<?php echo $p_id1; ?>" style="<?php echo $display_setting;?>"><span>SHARED</span></div>
+
+				<div class="ribbon ribbon-<?php echo $p_id1; ?>"><span>SHARED</span></div>
 
 				<div class="product-card-image-container product-image-<?php echo $p_id1; ?>" style='background-image: url(<?php echo $src; ?>)'>
 					<!-- Opacity Layer -->
@@ -139,6 +134,12 @@ try
 				// 	$('.ribbon-<?php echo $p_id1; ?>').show();
 				// }
 
+				if($shared=='shared'){
+							$('.ribbon-<?php echo $p_id1; ?>').show();
+					}
+					else {
+							$('.ribbon-<?php echo $p_id1; ?>').hide();
+				}
 
 				function unshareButton(pid,tags){
 
