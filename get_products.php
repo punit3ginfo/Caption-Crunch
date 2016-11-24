@@ -307,7 +307,8 @@ try
 						success: function(data){
 							var share_id = 'share-'+pid;
 							//        $('.preview-header .btn[data-id='+share_id+']').text('unshared');
-							$('#share-button-<?php echo $p_id1; ?>').replaceWith( "<a class='btn grey-button share-button hvr-shutter-out-horizontal' id='reset-button-<?php echo $p_id1; ?>' data-shared='unshared'><i class='fa fa-times' aria-hidden='true'></i> Reset</a>" );
+							$('#share-button-<?php echo $p_id1; ?>').html("tits");
+							// $('#share-button-<?php echo $p_id1; ?>').replaceWith( "<a class='btn grey-button share-button hvr-shutter-out-horizontal' id='reset-button-<?php echo $p_id1; ?>' data-shared='unshared'><i class='fa fa-times' aria-hidden='true'></i> Reset</a>" );
 							$('.ribbon-<?php echo $p_id1; ?>').show();
 							// .html("<i class='fa fa-times' aria-hidden='true'></i> Reset");
 							// $('#share-button-'+pid).addClass("grey-button");
@@ -339,7 +340,7 @@ try
 							//   $('#share-button-'+pid).text('Share');
 							// $('#share-button-<?php echo $p_id1; ?>').attr('data-shared','shared');
 							// $('.ribbon-<?php echo $p_id1; ?>').hide();
-							$('#reset-button-<?php echo $p_id1; ?>').html("tits");
+
 							$('#reset-button-<?php echo $p_id1; ?>').replaceWith( "<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared='<?php echo $shared; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>");
 							$('.ribbon-<?php echo $p_id1; ?>').hide();
 
