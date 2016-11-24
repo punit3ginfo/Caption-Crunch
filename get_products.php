@@ -137,7 +137,7 @@ try
 				if($(this).attr('data-shared') == 'shared'){
 					$('#share-button-<?php echo $p_id1; ?>').replaceWith( "<a class='btn grey-button share-button hvr-shutter-out-horizontal' id='reset-button-<?php echo $p_id1; ?>' data-shared='unshared'><i class='fa fa-times' aria-hidden='true'></i> Reset</a>" );
 					$('.ribbon-<?php echo $p_id1; ?>').show();
-				};
+				}
 
 
 				function unshareButton(pid,tags){
