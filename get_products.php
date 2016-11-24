@@ -159,8 +159,6 @@ try
 				$('.product-details-<?php echo $p_id1; ?>').toggle();
 			});
 
-			$('#reset-button-<?php echo $p_id1; ?>').click(function unshareButton(<?php echo $p_id1; ?>,<?php echo $OrigonalTag; ?>));
-
 			$('#share-button-<?php echo $p_id1; ?>').click(function() {
 				//  Load
 				$("#post-preview-container").css("display","block");
@@ -271,6 +269,8 @@ try
 				}, 800);
 			});
 		});
+
+		$('#reset-button-'+pid).click(function unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>'));
 
 		var tags;
 		function shareButton(pid,tags){
