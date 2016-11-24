@@ -177,7 +177,7 @@ try
 							$('.preview-header .btn').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
 							 $('.preview-header .btn').attr('data-id','share-<?php echo $p_id1; ?>');
 							var share_id = 'share-'+<?php echo $p_id1; ?>;
-							$('.preview-header .btn[data-id='+share_id+']').text('Reset');
+							$('.preview-header .btn[data-id='+share_id+']').text('unshared');
 						 }
 						//  Preview
 
@@ -422,54 +422,54 @@ catch (shopify\CurlException $e)
 	<script>
 	function unshareButton(pid,tags){
 
-                var access_token='<?php echo $access_token ?>';
- 	       var shop='<?php echo $_REQUEST['shop'] ?>';
-                var tags_unshare = tags.replace('shared', "");
+		var access_token='<?php echo $access_token ?>';
+		var shop='<?php echo $_REQUEST['shop'] ?>';
+		var tags_unshare = tags.replace('shared', "");
 
- 	       var tags_unshare = tags_unshare.replace('shared', "");
- 		var tags_unshare = tags_unshare.replace(' ', "");
+		var tags_unshare = tags_unshare.replace('shared', "");
+		var tags_unshare = tags_unshare.replace(' ', "");
 
- 	       var _id = '#'+ pid;
-                $.ajax({
-                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_unshare,
-                     success: function(data){
-						 var btn_text = ['Share Now',' Share Next','Share Later',' Schedule'];
-						var btn_icon = ['fa fa-bullhorn','fa fa-caret-square-o-right','fa fa-clock-o','fa fa-calendar'];
-						  var share_id = 'share-'+pid;
-					$('.preview-header .btn[data-id='+share_id+']').each(function(index){
-					$(this).html("<i class='"+btn_icon[index]+"'  aria-hidden='true'></i> " + btn_text[index]);
-					});
- 			         $('#share-button-'+pid).text('Share');
-					 $('#share-button-'+pid).attr('data-shared','shared');
-                     $('.ribbon-'+pid).hide();
+		var _id = '#'+ pid;
+		$.ajax({
+			url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_unshare,
+			success: function(data){
+				//  var btn_text = ['Share Now',' Share Next','Share Later',' Schedule'];
+				// var btn_icon = ['fa fa-bullhorn','fa fa-caret-square-o-right','fa fa-clock-o','fa fa-calendar'];
+				var share_id = 'share-'+pid;
+				// $('.preview-header .btn[data-id='+share_id+']').each(function(index){
+				// $(this).html("<i class='"+btn_icon[index]+"'  aria-hidden='true'></i> " + btn_text[index]);
+				// });
+				//   $('#share-button-'+pid).text('Share');
+				$('#share-button-'+pid).attr('data-shared','shared');
+				$('.ribbon-'+pid).hide();
 
-                     }
-                 });
-             }
-
-
+			}
+		});
+	}
 
 
- 	var tags;
- 	function shareButton(pid,tags){
- 		var _id = '#'+ pid;
-                 var access_token='<?php echo $access_token ?>';
- 	        var shop='<?php echo $_REQUEST['shop'] ?>';
- 			var tags_1 = tags+',shared';
- 		//var tags_1 = '<?php //echo $tags; ?>';
- 		if(tags_1== ''){
- 			tags_1= 'shared';
- 		}
 
-                 $.ajax({
-                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_1,
-                     success: function(data){
-					 var share_id = 'share-'+pid;
-               $('.preview-header .btn[data-id='+share_id+']').text('unshared');
-			    $('#share-button-'+pid).text('Unshared');
+
+	var tags;
+	function shareButton(pid,tags){
+		var _id = '#'+ pid;
+		var access_token='<?php echo $access_token ?>';
+		var shop='<?php echo $_REQUEST['shop'] ?>';
+		var tags_1 = tags+',shared';
+		//var tags_1 = '<?php //echo $tags; ?>';
+		if(tags_1== ''){
+			tags_1= 'shared';
+		}
+
+		$.ajax({
+			url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_1,
+			success: function(data){
+				var share_id = 'share-'+pid;
+				//        $('.preview-header .btn[data-id='+share_id+']').text('unshared');
+				$('#share-button-'+pid).text('Reset');
 				$('#share-button-'+pid).attr('data-shared','unshared');
-                 $('.ribbon-'+pid).show();
-				 }
-                 });
-             }
-			 </script>
+				$('.ribbon-'+pid).show();
+			}
+		});
+	}
+	</script>
