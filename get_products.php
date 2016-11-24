@@ -434,7 +434,10 @@ catch (shopify\CurlException $e)
 				// $(this).html("<i class='"+btn_icon[index]+"'  aria-hidden='true'></i> " + btn_text[index]);
 				// });
 				//   $('#share-button-'+pid).text('Share');
-				$('#share-button-<?php echo $p_id1; ?>').attr('data-shared','shared');
+				// $('#share-button-<?php echo $p_id1; ?>').attr('data-shared','shared');
+				// $('.ribbon-<?php echo $p_id1; ?>').hide();
+
+				$('#reset-button-<?php echo $p_id1; ?>').replaceWith( "<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared='<?php echo $shared; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>");
 				$('.ribbon-<?php echo $p_id1; ?>').hide();
 
 			}
@@ -473,26 +476,26 @@ catch (shopify\CurlException $e)
 	// if($(this).attr('data-shared') == 'shared'){};
 	</script>
 
-	<script>
-		function unshareButton(pid,tags){
-
-	                var access_token='<?php echo $access_token ?>';
-	 	       var shop='<?php echo $_REQUEST['shop'] ?>';
-	                var tags_unshare = tags.replace('shared', "");
-
-	 	       var tags_unshare = tags_unshare.replace('shared', "");
-	 		var tags_unshare = tags_unshare.replace(' ', "");
-
-	 	       var _id = '#'+ pid;
-	                $.ajax({
-	                     url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_unshare,
-	                     success: function(data){
-
-				     $('#reset-button-'+pid).replaceWith( "<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared='<?php echo $shared; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>");
-				     $('.ribbon-'+pid).hide();
-	                //      $('.main-'+pid).remove();
-
-	                     }
-	                 });
-	         }
-	</script>
+	// <script>
+	// 	function unshareButton(pid,tags){
+	//
+	//                 var access_token='<?php echo $access_token ?>';
+	//  	       var shop='<?php echo $_REQUEST['shop'] ?>';
+	//                 var tags_unshare = tags.replace('shared', "");
+	//
+	//  	       var tags_unshare = tags_unshare.replace('shared', "");
+	//  		var tags_unshare = tags_unshare.replace(' ', "");
+	//
+	//  	       var _id = '#'+ pid;
+	//                 $.ajax({
+	//                      url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_unshare,
+	//                      success: function(data){
+	//
+	// 			     $('#reset-button-<?php echo $p_id1; ?>').replaceWith( "<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared='<?php echo $shared; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>");
+	// 			     $('.ribbon-<?php echo $p_id1; ?>').hide();
+	//                 //      $('.main-'+pid).remove();
+	//
+	//                      }
+	//                  });
+	//          }
+	// </script>
