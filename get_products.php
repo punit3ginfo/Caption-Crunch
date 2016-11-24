@@ -98,6 +98,22 @@ try
 		<div class="product-card-clearfix">
 
 			<div class="product-card-container">
+				<?php
+				if($shared=='shared'){
+							echo '<style type="text/css">
+						        .ribbon-<?php echo $p_id1; ?> {
+						            display: block !important;
+						        }
+						        </style>';
+					}
+					else {
+						echo '<style type="text/css">
+						.ribbon-<?php echo $p_id1; ?> {
+						    display: none;
+						}
+						</style>';
+				}
+				?>
 
 				<div class="ribbon ribbon-<?php echo $p_id1; ?>"><span>SHARED</span></div>
 
@@ -128,22 +144,7 @@ try
 
 				<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared="<?php echo $shared; ?>"><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
 
-				<?php
-				if($shared=='shared'){
-							echo '<style type="text/css">
-						        .ribbon-<?php echo $p_id1; ?> {
-						            display: block !important;
-						        }
-						        </style>';
-					}
-					else {
-						echo '<style type="text/css">
-						.ribbon-<?php echo $p_id1; ?> {
-						    display: none;
-						}
-						</style>';
-				}
-				?>
+
 
 				<script>
 				// if($(this).attr('data-shared') == 'shared'){
