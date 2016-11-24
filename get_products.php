@@ -467,7 +467,7 @@ catch (shopify\CurlException $e)
 				var share_id = 'share-'+pid;
 				//        $('.preview-header .btn[data-id='+share_id+']').text('unshared');
 				$('#share-button-'+pid).html("<i class='fa fa-times' aria-hidden='true'></i> Reset");
-				$('#share-button-'+pid).addClass('grey-button');
+				$('#share-button-'+pid).addClass("grey-button");
 				$('#share-button-'+pid).attr('data-shared','unshared');
 				$('.ribbon-'+pid).show();
 			}
