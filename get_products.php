@@ -64,13 +64,13 @@ try
 		$OrigonalTag=$singleproduct['tags'];
 		$ComparePrice=$singleproduct['compare_at_price'];
 		$handle=$singleproduct['handle'];
-             
+
           if(strpos($OrigonalTag,'shared') == true)
 		  {
 			  $shared='unshared';
 		  }
 		  else{
-			 $shared='shared'; 
+			 $shared='shared';
 		  }
 		$tags = str_replace('shared', '', $tags);
 		$tags = str_replace(' ', '', $tags);
@@ -102,7 +102,7 @@ try
 					$display_setting="display:none";
 				}
 				else {
-					$display_setting="display:block";	
+					$display_setting="display:block";
 				}?>
 				<div class="ribbon ribbon-<?php echo $p_id1; ?>" style="<?php echo $display_setting;?>"><span>SHARED</span></div>
 
@@ -169,16 +169,16 @@ try
 								var share_id = 'share-'+<?php echo $p_id1; ?>;
 								$('.preview-header .btn[data-id='+share_id+']').each(function(index){
 									$(this).html("<i class='"+btn_icon[index]+"'  aria-hidden='true'></i> " + btn_text[index]);
-									
+
 								});
 						 }
 						 else
 						 {
-							$('.preview-header .btn').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')"); 
+							$('.preview-header .btn').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
 							 $('.preview-header .btn').attr('data-id','share-<?php echo $p_id1; ?>');
 							var share_id = 'share-'+<?php echo $p_id1; ?>;
-							$('.preview-header .btn[data-id='+share_id+']').text('unshared');
-						 } 
+							$('.preview-header .btn[data-id='+share_id+']').text('Reset');
+						 }
 						//  Preview
 
 						var $CaptionOneFB = 'Grab the <?php echo str_replace("'","\'",$title); ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
@@ -413,11 +413,11 @@ catch (shopify\CurlException $e)
 		});
 
 	});
-	
- 	
+
+
      </script>
 
-	
+
 	<?php } ?>
 	<script>
 	function unshareButton(pid,tags){
@@ -434,7 +434,7 @@ catch (shopify\CurlException $e)
                      url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_unshare,
                      success: function(data){
 						 var btn_text = ['Share Now',' Share Next','Share Later',' Schedule'];
-						var btn_icon = ['fa fa-bullhorn','fa fa-caret-square-o-right','fa fa-clock-o','fa fa-calendar']; 
+						var btn_icon = ['fa fa-bullhorn','fa fa-caret-square-o-right','fa fa-clock-o','fa fa-calendar'];
 						  var share_id = 'share-'+pid;
 					$('.preview-header .btn[data-id='+share_id+']').each(function(index){
 					$(this).html("<i class='"+btn_icon[index]+"'  aria-hidden='true'></i> " + btn_text[index]);
