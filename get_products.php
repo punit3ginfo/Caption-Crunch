@@ -291,6 +291,32 @@ try
 					});
 				});
 
+				var tags;
+				function shareButton(pid,tags){
+					var _id = '#'+ pid;
+					var access_token='<?php echo $access_token ?>';
+					var shop='<?php echo $_REQUEST['shop'] ?>';
+					var tags_1 = tags+',shared';
+					//var tags_1 = '<?php //echo $tags; ?>';
+					if(tags_1== ''){
+						tags_1= 'shared';
+					}
+
+					$.ajax({
+						url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_1,
+						success: function(data){
+							var share_id = 'share-'+pid;
+							//        $('.preview-header .btn[data-id='+share_id+']').text('unshared');
+							$('#share-button-<?php echo $p_id1; ?>').replaceWith( "<a class='btn grey-button share-button hvr-shutter-out-horizontal' id='reset-button-<?php echo $p_id1; ?>' data-shared='unshared'><i class='fa fa-times' aria-hidden='true'></i> Reset</a>" );
+							$('.ribbon-<?php echo $p_id1; ?>').show();
+							// .html("<i class='fa fa-times' aria-hidden='true'></i> Reset");
+							// $('#share-button-'+pid).addClass("grey-button");
+							// $('#share-button-'+pid).attr('data-shared','unshared');
+
+						}
+					});
+				}
+
 				function unshareButton(pid,tags){
 
 					var access_token='<?php echo $access_token ?>';
@@ -313,35 +339,9 @@ try
 							//   $('#share-button-'+pid).text('Share');
 							// $('#share-button-<?php echo $p_id1; ?>').attr('data-shared','shared');
 							// $('.ribbon-<?php echo $p_id1; ?>').hide();
-
+							$('#reset-button-<?php echo $p_id1; ?>').html("tits");
 							$('#reset-button-<?php echo $p_id1; ?>').replaceWith( "<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared='<?php echo $shared; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>");
 							$('.ribbon-<?php echo $p_id1; ?>').hide();
-
-						}
-					});
-				}
-
-				var tags;
-				function shareButton(pid,tags){
-					var _id = '#'+ pid;
-					var access_token='<?php echo $access_token ?>';
-					var shop='<?php echo $_REQUEST['shop'] ?>';
-					var tags_1 = tags+',shared';
-					//var tags_1 = '<?php //echo $tags; ?>';
-					if(tags_1== ''){
-						tags_1= 'shared';
-					}
-
-					$.ajax({
-						url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_1,
-						success: function(data){
-							var share_id = 'share-'+pid;
-							//        $('.preview-header .btn[data-id='+share_id+']').text('unshared');
-							$('#share-button-<?php echo $p_id1; ?>').replaceWith( "<a class='btn grey-button share-button hvr-shutter-out-horizontal' id='reset-button-<?php echo $p_id1; ?>' data-shared='unshared'><i class='fa fa-times' aria-hidden='true'></i> Reset</a>" );
-							$('.ribbon-<?php echo $p_id1; ?>').show();
-							// .html("<i class='fa fa-times' aria-hidden='true'></i> Reset");
-							// $('#share-button-'+pid).addClass("grey-button");
-							// $('#share-button-'+pid).attr('data-shared','unshared');
 
 						}
 					});
