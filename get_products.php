@@ -178,13 +178,6 @@ try
 				//  Generate Share Buttons
 				$('.preview-header .btn').attr('onClick',"shareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
 				$('.preview-header .btn').attr('data-id','share-<?php echo $p_id1; ?>');
-
-				var btn_text = ['Share Now','Share Next','Share Later','Schedule'];
-				var btn_icon = ['fa fa-bullhorn','fa fa-caret-square-o-right','fa fa-clock-o','fa fa-calendar'];
-				var share_id = 'share-'+<?php echo $p_id1; ?>;
-				$('.preview-header .btn[data-id='+share_id+']').each(function(index){
-					$(this).html("<i class='"+btn_icon[index]+"'  aria-hidden='true'></i> " + btn_text[index]);
-				});
 				//  Preview
 				var $CaptionOneFB = 'Grab the <?php echo str_replace("'","\'",$title); ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
 				var $CaptionTwoFB = 'STEAL ALERT! <?php echo str_replace("'","\'",$title); ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Link: <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
@@ -322,10 +315,8 @@ try
 			$.ajax({
 				url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_unshare,
 				success: function(data){
-
 					$('#reset-button-<?php echo $p_id1; ?>').replaceWith( "<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared='<?php echo $shared; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>");
 					$('.ribbon-<?php echo $p_id1; ?>').hide();
-
 				}
 			});
 		}
