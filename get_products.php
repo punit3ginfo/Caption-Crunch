@@ -132,7 +132,7 @@ try
 				if($shared=='shared'){
 							echo '<style type="text/css">
 						        .ribbon-<?php echo $p_id1; ?> {
-						            display: block;
+						            display: block !important;
 						        }
 						        </style>';
 					}
