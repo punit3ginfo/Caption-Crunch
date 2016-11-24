@@ -1172,7 +1172,7 @@ body {
   box-sizing: border-box;
   width: calc(33% - 12px);
   height: 100%;
-  max-height: 320px;
+  max-height: 300px;
   margin-top: 15px;
   margin-right: 5px;
   margin-left: 5px; }
@@ -1188,7 +1188,7 @@ body {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   background: white none repeat scroll 0 0;
   box-shadow: 1px -2px 17px 0 rgba(0, 0, 0, 0.14); }
@@ -1366,10 +1366,10 @@ body {
 
 .share-button {
   position: absolute;
-  right: 20px;
-  bottom: 20px;
-  left: 20px;
-  width: calc(100% - 64px); }
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  width: calc(100% - 54px); }
 
 .reset-button {
   position: absolute;
@@ -1874,5 +1874,8 @@ ul#pagination-list li {
   box-shadow: 1px -2px 17px 0 rgba(0, 0, 0, 0.14);
   margin: auto;
   text-align: center; }
+
+.page-item.prev.disabled, .page-item.next.disabled {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
