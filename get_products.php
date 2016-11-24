@@ -149,18 +149,16 @@ try
 
 		<script>
 
-		// Show / Hide Product Details
+		// Preview Drop Down
 		$(document).ready(function() {
+		// Show / Hide Product Details
 			$('.product-image-<?php echo $p_id1; ?>').hover(function() {
 				// Show / Hide Product Details Opacity Container
 				$('.product-opacity-<?php echo $p_id1; ?>').toggle();
 				// Show / Hide Product Details Container
 				$('.product-details-<?php echo $p_id1; ?>').toggle();
 			});
-		});
 
-		// Preview Drop Down
-		$(document).ready(function() {
 			$('#reset-button-<?php echo $p_id1; ?>').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
 
 			$('#share-button-<?php echo $p_id1; ?>').click(function() {
@@ -231,7 +229,6 @@ try
 					$("#caption-one").removeClass('green-button');
 					$("#caption-three").addClass('green-button');
 				});
-
 			});
 				//  Back Buttons
 			$('.back-link').click(function() {
