@@ -370,7 +370,9 @@ try
 					    visiblePages:3,
 					    onPageClick: function (event, page) {
 						//   getPagingALLProduct(page,21);
-						    getPagingSearch(page,21,search_term)
+						if(page>1){
+						    getPagingSearch(page,21,search_term);
+							}
 						console.info(page);
 					    }
 					});
