@@ -294,7 +294,6 @@ try
 				$('#share-button-'+pid).addClass('grey-button');
 				$('#share-button-'+pid).addClass('reset-button-'+pid);
 				$('#share-button-'+pid).removeClass('share-button-'+pid);
-				$('.reset-button-'+pid).attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
 			}
 		});
 	}
@@ -312,8 +311,12 @@ try
 		$.ajax({
 			url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_unshare,
 			success: function(data){
-				$('#reset-button-'+pid).replaceWith( "<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared='shared><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>");
-				$('.ribbon-'+pid).hide();
+				// $('#reset-button-'+pid).replaceWith( "<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared='shared><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>");
+				$('.ribbon-'+pid).css('display','none');
+				$('#share-button-'+pid).addClass('green-button');
+				$('#share-button-'+pid).removeClass('grey-button');
+				$('#share-button-'+pid).removeClass('reset-button-'+pid);
+				$('#share-button-'+pid).addClass('share-button-'+pid);
 			}
 		});
 	}
