@@ -141,7 +141,7 @@ try
 					</div>
 				</div>
 
-			          <a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared='<?php echo $shared; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
+			          <a class='btn green-button share-button hvr-shutter-out-horizontal share-button-<?php echo $p_id1; ?>' id='share-button-<?php echo $p_id1; ?>' data-shared='<?php echo $shared; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
 
 			</div>
 
@@ -159,7 +159,7 @@ try
 				$('.product-details-<?php echo $p_id1; ?>').toggle();
 			});
 
-			$('#share-button-<?php echo $p_id1; ?>').click(function() {
+			$('.share-button-<?php echo $p_id1; ?>').click(function() {
 				//  Load
 				$("#post-preview-container").css("display","block");
 				// Back Button
@@ -269,14 +269,9 @@ try
 				}, 800);
 			});
 
-
-
-		$('#reset-button-<?php echo $p_id1; ?>').click(function() {
-			unshareButton('<?php echo $p_id1; ?>',"<?php echo $OrigonalTag; ?>");
-		});
-
-
+			$('.reset-button-<?php echo $p_id1; ?>').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
 	});
+
 
 	var tags;
 	function shareButton(pid,tags){
@@ -297,6 +292,8 @@ try
 				$('.ribbon-'+pid).css('display','block');
 				$('#share-button-'+pid).removeClass('green-button');
 				$('#share-button-'+pid).addClass('grey-button');
+				$('#share-button-'+pid).addClass('reset-button-<?php echo $p_id1; ?>');
+				$('#share-button-'+pid).removeClass('share-button-<?php echo $p_id1; ?>');
 			}
 		});
 	}
