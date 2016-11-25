@@ -101,8 +101,8 @@ try
 
 				<div class="ribbon ribbon-<?php echo $p_id1; ?>"><span>SHARED</span></div>
 
-				<?php
-				if($shared=='shared'){
+
+				<!-- if($shared=='shared'){
 							echo "
 							<script>
 								$( '.ribbon-$p_id1' ).css('display', 'block');
@@ -114,7 +114,7 @@ try
 							$( '.ribbon-$p_id1' ).css('display', 'none');
 						</script>";
 				}
-				?>
+				 -->
 
 				<div class="product-card-image-container product-image-<?php echo $p_id1; ?>" style='background-image: url(<?php echo $src; ?>)'>
 					<!-- Opacity Layer -->
