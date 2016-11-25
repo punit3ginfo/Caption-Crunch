@@ -268,7 +268,7 @@ try
 					$(".facebook-mobile-image").attr("src", "");
 				}, 800);
 			});
-
+		});
 
 	$('.reset-button-<?php echo $p_id1; ?>').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
 
@@ -319,7 +319,7 @@ try
 			}
 		});
 	}
-	});
+
 		</script>
 		<!-- HTML Content for Product END    -->
 
