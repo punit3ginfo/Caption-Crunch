@@ -273,7 +273,7 @@ try
 			if(tags_1== ''){
 				tags_1= 'shared';
 			}
-             $('.box-'+pid).addClass('loading');
+             $('.box-'+pid).addClass('share-loading');
 			$.ajax({
 				url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_1,
 				success: function(data){
@@ -287,13 +287,13 @@ try
 					$('#share-button-'+pid).html("<i class='fa fa-times' aria-hidden='true'></i>   Reset");*/
 					$('#share-button-'+pid).hide();
 					$('#reset-button-'+pid).show();
-					$('.box-'+pid).removeClass('loading');
+					$('.box-'+pid).removeClass('share-loading');
 				}
 			});
 		}
 
 		function unshareButton(pid,tags){
-            $('.box-'+pid).addClass('loading');
+            $('.box-'+pid).addClass('share-loading');
 			var access_token='<?php echo $access_token ?>';
 			var shop='<?php echo $_REQUEST['shop'] ?>';
 			var tags_unshare = tags.replace('shared', "");
@@ -309,7 +309,7 @@ try
 					$('.ribbon-'+pid).css('display','none');
 					$('#share-button-'+pid).show();
 					$('#reset-button-'+pid).hide();
-					$('.box-'+pid).removeClass('loading');
+					$('.box-'+pid).removeClass('share-loading');
 				}
 			});
 		}
