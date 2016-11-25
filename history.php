@@ -60,7 +60,7 @@ try
 
 			<!-- HTML Content for Product  START      -->
 
-			<div class="product-card-clearfix">
+			<div class="product-card-clearfix box-<?php echo $p_id1; ?>">
 
 				<div class="product-card-container">
 						 <?php if($shared=='shared'){
@@ -283,6 +283,7 @@ try
 	<script>
 	var tags;
 		function shareButton(pid,tags){
+			 $('.box-'+pid).addClass('share-loading');
 			var _id = '#'+ pid;
 			var access_token='<?php echo $access_token ?>';
 			var shop='<?php echo $_REQUEST['shop'] ?>';
@@ -305,12 +306,13 @@ try
 					$('#share-button-'+pid).html("<i class='fa fa-times' aria-hidden='true'></i>   Reset");*/
 					$('#share-button-'+pid).hide();
 					$('#reset-button-'+pid).show();
+					$('.box-'+pid).removeClass('share-loading');
 				}
 			});
 		}
 
 		function unshareButton(pid,tags){
-
+             $('.box-'+pid).addClass('share-loading');
 			var access_token='<?php echo $access_token ?>';
 			var shop='<?php echo $_REQUEST['shop'] ?>';
 			var tags_unshare = tags.replace('shared', "");
@@ -326,6 +328,7 @@ try
 					$('.ribbon-'+pid).css('display','none');
 					$('#share-button-'+pid).show();
 					$('#reset-button-'+pid).hide();
+					$('.box-'+pid).removeClass('share-loading');
 					
 				}
 			});
