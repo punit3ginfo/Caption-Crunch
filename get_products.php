@@ -379,11 +379,13 @@ catch (shopify\CurlException $e)
 					    totalPages: totolpageno,
 					    visiblePages:3,
 					    onPageClick: function (event, page) {
+							if(page>1){
 						    if(col_id!=''){
 						getPaging(page,21,col_id) }
 						    else {
 						   getPagingALLProduct(page,21);
 						    }
+							}
 						console.info(page);
 					    }
 					});
