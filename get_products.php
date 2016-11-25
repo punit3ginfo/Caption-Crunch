@@ -98,24 +98,13 @@ try
 		<div class="product-card-clearfix">
 
 			<div class="product-card-container">
-
-				<div class="ribbon ribbon-<?php echo $p_id1; ?>"><span>SHARED</span></div>
-
-
-				<!-- if($shared=='shared'){
-							echo "
-							<script>
-								$( '.ribbon-$p_id1' ).css('display', 'block');
-						        </script>";
-					}
-					else {
-						echo "
-						<script>
-							$( '.ribbon-$p_id1' ).css('display', 'none');
-						</script>";
+                 <?php if($shared=='shared'){
+					$display_setting="display:none";
 				}
-				 -->
-
+				else {
+					$display_setting="display:block";	
+				}?>
+				<div class="ribbon ribbon-<?php echo $p_id1; ?>" style="<?php echo $display_setting;?>"><span>SHARED</span></div>
 				<div class="product-card-image-container product-image-<?php echo $p_id1; ?>" style='background-image: url(<?php echo $src; ?>)'>
 					<!-- Opacity Layer -->
 					<div class="product-card-image-container-background-hover product-opacity-<?php echo $p_id1; ?>"></div>
@@ -140,8 +129,12 @@ try
 						</div>
 					</div>
 				</div>
-
-			          <a class='btn green-button share-button hvr-shutter-out-horizontal share-button-<?php echo $p_id1; ?>' id='share-button-<?php echo $p_id1; ?>' data-shared='<?php echo $shared; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
+                       
+			          <a class='btn green-button share-button hvr-shutter-out-horizontal share-button-<?php echo $p_id1; ?>' id='share-button-<?php echo $p_id1; ?>' data-shared='<?php echo $shared; ?>' <?php if ($shared =='unshared') echo "style='display:none;'" ?>><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
+					  <a id="reset-button-<?php echo $p_id1; ?>" class="btn grey-button share-button hvr-shutter-out-horizontal" data-shared="unshared" onclick="unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag;?>')" <?php if ($shared =='unshared') echo "style='display:block;'" ?>>
+									<i class="fa fa-times" aria-hidden="true"></i>
+									Reset
+									</a>
 
 			</div>
 
@@ -290,11 +283,13 @@ try
 					var share_id = 'share-'+pid;
 					// $('#share-button-'+pid).replaceWith( "<a class='btn grey-button share-button hvr-shutter-out-horizontal' id='reset-button-<?php echo $p_id1; ?>' data-shared='unshared'><i class='fa fa-times' aria-hidden='true'></i> Reset</a>" );
 					$('.ribbon-'+pid).css('display','block');
-					$('#share-button-'+pid).removeClass('green-button');
+					/*$('#share-button-'+pid).removeClass('green-button');
 					$('#share-button-'+pid).addClass('grey-button');
 					$('#share-button-'+pid).removeClass('share-button-'+pid);
 					$('#share-button-'+pid).addClass('reset-button-'+pid);
-					$('#share-button-'+pid).html("<i class='fa fa-times' aria-hidden='true'></i>   Reset");
+					$('#share-button-'+pid).html("<i class='fa fa-times' aria-hidden='true'></i>   Reset");*/
+					$('#share-button-'+pid).hide();
+					$('#reset-button-'+pid).show();
 				}
 			});
 		}
@@ -314,10 +309,9 @@ try
 				success: function(data){
 					// $('#reset-button-'+pid).replaceWith( "<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared='shared><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>");
 					$('.ribbon-'+pid).css('display','none');
-					$('#share-button-'+pid).removeClass('grey-button');
-					$('#share-button-'+pid).addClass('green-button');
-					$('#share-button-'+pid).removeClass('reset-button-'+pid);
-					$('#share-button-'+pid).addClass('share-button-'+pid);
+					$('#share-button-'+pid).show();
+					$('#reset-button-'+pid).hide();
+					
 				}
 			});
 		}
