@@ -272,7 +272,7 @@ try
 
 
 		$('#reset-button-<?php echo $p_id1; ?>').click(function() {
-			function unshareButton('<?php echo $p_id1; ?>','<?php echo $OrigonalTag; ?>');
+			unshareButton('<?php echo $p_id1; ?>','<?php echo $OrigonalTag; ?>');
 		});
 
 		var tags;
