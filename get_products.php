@@ -270,6 +270,8 @@ try
 			});
 		});
 
+		// Preview Drop Down
+		$(document).ready(function() {
 	$('.reset-button-<?php echo $p_id1; ?>').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
 
 	var tags;
@@ -319,7 +321,7 @@ try
 			}
 		});
 	}
-
+});
 		</script>
 		<!-- HTML Content for Product END    -->
 
