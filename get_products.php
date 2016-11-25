@@ -105,13 +105,13 @@ try
 				if($shared=='shared'){
 							echo "
 							<script>
-								$( '.ribbon-<?php echo $p_id1; ?>' ).css('display', 'block');
+								$( '.ribbon-$p_id1' ).css('display', 'block');
 						        </script>";
 					}
 					else {
 						echo "
 						<script>
-							$( '.ribbon-<?php echo $p_id1; ?>' ).css('display', 'none');
+							$( '.ribbon-$p_id1' ).css('display', 'none');
 						</script>";
 				}
 				?>
@@ -141,7 +141,7 @@ try
 					</div>
 				</div>
 
-				  <a class='btn grey-button share-button hvr-shutter-out-horizontal' id='reset-button-$p_id1' data-shared='$shared'><i class='fa fa-times' aria-hidden='true'></i> Reset</a>
+
 
 			          <a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-$p_id1' data-shared='$shared'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
 
