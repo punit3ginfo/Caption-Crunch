@@ -141,11 +141,18 @@ try
 					</div>
 				</div>
 
-
-
-				 <a class='btn grey-button share-button hvr-shutter-out-horizontal' id='reset-button-<?php $p_id1;?>' data-shared='<?php $shared;?>'><i class='fa fa-times' aria-hidden='true'></i> Reset</a>
-				 <a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php $p_id1;?>' data-shared='<?php $shared;?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
-
+				<?php
+				if ($shared == "shared") {
+					?>
+				  <a class='btn grey-button share-button hvr-shutter-out-horizontal' id='reset-button-$p_id1' data-shared='$shared'><i class='fa fa-times' aria-hidden='true'></i> Reset</a>
+				  <?php
+					  }
+				    else{
+					 ?>
+			          <a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-$p_id1' data-shared='$shared'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
+				  <?php
+			  	}
+				?>
 
 
 			</div>
