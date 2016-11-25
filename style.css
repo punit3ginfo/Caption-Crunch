@@ -1890,11 +1890,11 @@ ul#pagination-list li {
   top: 0;
   width: 190px;
 }
-.loading {
+.share-loading {
   position: relative;
 }
-.loading::before {
-  background: rgba(0, 0, 0, 0.2) url("images/loading3.gif") no-repeat scroll center center / 60px auto;
+.share-loading::before {
+  background: rgba(255, 255, 255, 0.8) url("images/loading3.gif") no-repeat scroll center center / 310px auto;
   bottom: 0;
   content: "";
   height: 100%;
