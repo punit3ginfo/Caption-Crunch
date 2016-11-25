@@ -143,13 +143,13 @@ try
 
 				<?php
 				if ($shared == "unshared")
-				  echo "<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared='<?php echo $shared; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>";
+				  echo "<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-$p_id1' data-shared='$shared'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>";
 				?>
 
 
 				<?php
 				if ($shared == "shared")
-				  echo "<a class='btn grey-button share-button hvr-shutter-out-horizontal' id='reset-button-<?php echo $p_id1; ?>' data-shared='unshared'><i class='fa fa-times' aria-hidden='true'></i> Reset</a>";
+				  echo "<a class='btn grey-button share-button hvr-shutter-out-horizontal' id='reset-button-$p_id1' data-shared='$shared'><i class='fa fa-times' aria-hidden='true'></i> Reset</a>";
 				?>
 
 
