@@ -294,6 +294,7 @@ try
 				$('#share-button-'+pid).addClass('grey-button');
 				$('#share-button-'+pid).addClass('reset-button-'+pid);
 				$('#share-button-'+pid).removeClass('share-button-'+pid);
+				$('.reset-button-'+pid).attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
 			}
 		});
 	}
