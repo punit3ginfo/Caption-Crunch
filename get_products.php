@@ -292,8 +292,8 @@ try
 				$('.ribbon-'+pid).css('display','block');
 				$('#share-button-'+pid).removeClass('green-button');
 				$('#share-button-'+pid).addClass('grey-button');
-				$('#share-button-'+pid).addClass('reset-button-'+$p_id1);
-				$('#share-button-'+pid).removeClass('share-button-'+$p_id1);
+				$('#share-button-'+pid).addClass('reset-button-'+pid);
+				$('#share-button-'+pid).removeClass('share-button-'+pid);
 			}
 		});
 	}
