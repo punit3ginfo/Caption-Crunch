@@ -40,12 +40,8 @@ try
 
 	}
        if($_REQUEST['max']!=''  && isset($_REQUEST['max']) ) {
-          //echo "<script>alert(2);</script>";
-		// $products = $shopify('GET /admin/products.json', array('published_status'=>'published'));
-		$products = $shopify('GET /admin/products.json', array('limit'=>'60','page'=>'1'));
-		//GET /admin/products.json&limit=50=&page=1
-
-	}
+			$products = $shopify('GET /admin/products.json', array('limit'=>'30','page'=>'1'));
+		}
 	$shop = $shopify('GET /admin/shop.json', array('limit'=>$_REQUEST['limit'],'page'=>$_REQUEST['page_id']));
 
 	$count=0;
