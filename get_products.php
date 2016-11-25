@@ -274,7 +274,7 @@ try
 			});
 
 
-		$('#reset-button-<?php echo $p_id1; ?>').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
+		$('#reset-button-'+pid).click(function unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>'));
 
 		var tags;
 		function shareButton(pid,tags){
