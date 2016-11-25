@@ -141,11 +141,7 @@ try
 					</div>
 				</div>
 
-
-
-			          <a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php $p_id1; ?>' data-shared='<?php $shared; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
-
-
+			          <a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared='<?php echo $shared; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
 
 			</div>
 
@@ -274,7 +270,10 @@ try
 			});
 
 
-		$('#reset-button-<?php echo $p_id1; ?>').click(function unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>'));
+
+		$('#reset-button-<?php echo $p_id1; ?>').click(function() {
+			function unshareButton('<?php echo $p_id1; ?>','<?php echo $OrigonalTag; ?>');
+		});
 
 		var tags;
 		function shareButton(pid,tags){
