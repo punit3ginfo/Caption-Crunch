@@ -159,7 +159,7 @@ try
 				$('.product-details-<?php echo $p_id1; ?>').toggle();
 			});
 
-			$('.share-button-<?php echo $p_id1; ?>').click(function() { 
+			$('.share-button-<?php echo $p_id1; ?>').click(function() {
 				//  Load
 				$("#post-preview-container").css("display","block");
 				// Back Button
@@ -268,7 +268,7 @@ try
 					$(".facebook-mobile-image").attr("src", "");
 				}, 800);
 			});
-		});
+
 
 	$('.reset-button-<?php echo $p_id1; ?>').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
 
@@ -291,8 +291,8 @@ try
 				$('.ribbon-'+pid).css('display','block');
 				$('#share-button-'+pid).removeClass('green-button');
 				$('#share-button-'+pid).addClass('grey-button');
-				$('#share-button-'+pid).addClass('reset-button-'+pid);
 				$('#share-button-'+pid).removeClass('share-button-'+pid);
+				$('#share-button-'+pid).addClass('reset-button-'+pid);
 			}
 		});
 	}
@@ -312,13 +312,14 @@ try
 			success: function(data){
 				// $('#reset-button-'+pid).replaceWith( "<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared='shared><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>");
 				$('.ribbon-'+pid).css('display','none');
-				$('#share-button-'+pid).addClass('green-button');
 				$('#share-button-'+pid).removeClass('grey-button');
+				$('#share-button-'+pid).addClass('green-button');
 				$('#share-button-'+pid).removeClass('reset-button-'+pid);
 				$('#share-button-'+pid).addClass('share-button-'+pid);
 			}
 		});
 	}
+	});
 		</script>
 		<!-- HTML Content for Product END    -->
 
