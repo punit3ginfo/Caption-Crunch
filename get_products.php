@@ -159,6 +159,8 @@ try
 				$('.product-details-<?php echo $p_id1; ?>').toggle();
 			});
 
+			$('.reset-button-<?php echo $p_id1; ?>').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
+
 			$('.share-button-<?php echo $p_id1; ?>').click(function() {
 				//  Load
 				$("#post-preview-container").css("display","block");
@@ -174,7 +176,7 @@ try
 				//  Generate Share Buttons
 				$('.preview-header .btn').attr('onClick',"shareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
 				$('.preview-header .btn').attr('data-id','share-<?php echo $p_id1; ?>');
-				$('.reset-button-<?php echo $p_id1; ?>').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'unshared')");
+
 				//  Preview
 				var $CaptionOneFB = 'Grab the <?php echo str_replace("'","\'",$title); ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
 				var $CaptionTwoFB = 'STEAL ALERT! <?php echo str_replace("'","\'",$title); ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Link: <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
@@ -296,28 +298,6 @@ try
 			});
 		}
 
-		function unshareButton(pid,tags){
-
-			var access_token='<?php echo $access_token ?>';
-			var shop='<?php echo $_REQUEST['shop'] ?>';
-			var tags_unshare = tags.replace('shared', "");
-
-			var tags_unshare = tags_unshare.replace('shared', "");
-			var tags_unshare = tags_unshare.replace(' ', "");
-
-			var _id = '#'+ pid;
-			$.ajax({
-				url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_unshare,
-				success: function(data){
-					// $('#reset-button-'+pid).replaceWith( "<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared='shared><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>");
-					$('.ribbon-'+pid).css('display','none');
-					$('#share-button-'+pid).removeClass('grey-button');
-					$('#share-button-'+pid).addClass('green-button');
-					$('#share-button-'+pid).removeClass('reset-button-'+pid);
-					$('#share-button-'+pid).addClass('share-button-'+pid);
-				}
-			});
-		}
 		</script>
 		<!-- HTML Content for Product END    -->
 
@@ -400,3 +380,27 @@ catch (shopify\CurlException $e)
 
 
 	<?php } ?>
+<script>
+function unshareButton(pid,tags){
+
+	var access_token='<?php echo $access_token ?>';
+	var shop='<?php echo $_REQUEST['shop'] ?>';
+	var tags_unshare = tags.replace('shared', "");
+
+	var tags_unshare = tags_unshare.replace('shared', "");
+	var tags_unshare = tags_unshare.replace(' ', "");
+
+	var _id = '#'+ pid;
+	$.ajax({
+		url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_unshare,
+		success: function(data){
+			// $('#reset-button-'+pid).replaceWith( "<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared='shared><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>");
+			$('.ribbon-'+pid).css('display','none');
+			$('#share-button-'+pid).removeClass('grey-button');
+			$('#share-button-'+pid).addClass('green-button');
+			$('#share-button-'+pid).removeClass('reset-button-'+pid);
+			$('#share-button-'+pid).addClass('share-button-'+pid);
+		}
+	});
+}
+</script>
