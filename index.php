@@ -176,7 +176,7 @@ function getproducts(){
 	});
 	var access_token='<?php echo $access_token ?>';
 	var shop='<?php echo $_REQUEST['shop'] ?>';
-    var data="<img class='loading-img' src='images/loading1.gif' />"
+    var data="<img class='loading-img' src='images/loading1.gif' />";
      $('.content-container').html(data);
 	$.ajax({
 		url: '/collections.php?access_token='+access_token+'&shop='+shop,
@@ -201,7 +201,7 @@ function getnewproducts(){
 
 	var access_token='<?php echo $access_token ?>';
 	var shop='<?php echo $_REQUEST['shop'] ?>';
-	var data="<img class='loading-img' src='images/loading1.gif' />"
+	var data="<img class='loading-img' src='images/loading1.gif' />";
      $('.content-container').html(data);
 	$.ajax({
 		url: '/collections.php?access_token='+access_token+'&shop='+shop+'&max=60',
@@ -282,7 +282,7 @@ function gethistory(){
 
 	var access_token='<?php echo $access_token ?>';
 	var shop='<?php echo $_REQUEST['shop'] ?>';
-     var data="<img class='loading-img' src='images/loading1.gif' />"
+     var data="<img class='loading-img' src='images/loading1.gif' />";
      $('.content-container').html(data);
 	$.ajax({
 		url: '/collections.php?access_token='+access_token+'&shop='+shop+'&status=history',
