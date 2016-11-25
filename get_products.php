@@ -101,8 +101,8 @@ try
 
 				<div class="ribbon ribbon-<?php echo $p_id1; ?>"><span>SHARED</span></div>
 
-
-				<!-- if($shared=='shared'){
+				<?php
+				if($shared=='shared'){
 							echo "
 							<script>
 								$( '.ribbon-<?php echo $p_id1; ?>' ).css('display', 'block');
@@ -113,8 +113,8 @@ try
 						<script>
 							$( '.ribbon-<?php echo $p_id1; ?>' ).css('display', 'none');
 						</script>";
-				} -->
-
+				}
+				?>
 
 				<div class="product-card-image-container product-image-<?php echo $p_id1; ?>" style='background-image: url(<?php echo $src; ?>)'>
 					<!-- Opacity Layer -->
@@ -141,18 +141,10 @@ try
 					</div>
 				</div>
 
-				<?php
-				if ($shared === "shared") {
-					?>
 				  <a class='btn grey-button share-button hvr-shutter-out-horizontal' id='reset-button-$p_id1' data-shared='$shared'><i class='fa fa-times' aria-hidden='true'></i> Reset</a>
-				  <?php
-					  }
-				    else{
-					 ?>
+
 			          <a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-$p_id1' data-shared='$shared'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
-				  <?php
-			  	}
-				?>
+
 
 
 			</div>
