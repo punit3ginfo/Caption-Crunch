@@ -154,7 +154,7 @@ try
 		<script>
 
 		// Preview Drop Down
-		
+		$(document).ready(function() {
 		// Show / Hide Product Details
 			$('.product-image-<?php echo $p_id1; ?>').hover(function() {
 				// Show / Hide Product Details Opacity Container
@@ -315,7 +315,7 @@ try
 				}
 			});
 		}
-
+	});
 		</script>
 		<!-- HTML Content for Product END    -->
 
