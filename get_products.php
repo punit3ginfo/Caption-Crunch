@@ -98,16 +98,25 @@ try
 		<div class="product-card-clearfix">
 
 			<div class="product-card-container">
- 
-				<div class="ribbon ribbon-<?php echo $p_id1; ?>"><span>SHARED</span></div>
-				<?php if($shared=='shared'){
-					$display_setting="display:none";
-				}
-				else {
-					$display_setting="display:block";	
-				}?>
 
-				<div class="product-card-image-container product-image-<?php echo $p_id1; ?>" style='background-image: url(<?php echo $src; ?>);<?php echo $display_setting; ?>'>
+				<div class="ribbon ribbon-<?php echo $p_id1; ?>"><span>SHARED</span></div>
+
+
+				<!-- if($shared=='shared'){
+							echo "
+							<script>
+								$( '.ribbon-$p_id1' ).css('display', 'block');
+						        </script>";
+					}
+					else {
+						echo "
+						<script>
+							$( '.ribbon-$p_id1' ).css('display', 'none');
+						</script>";
+				}
+				 -->
+
+				<div class="product-card-image-container product-image-<?php echo $p_id1; ?>" style='background-image: url(<?php echo $src; ?>)'>
 					<!-- Opacity Layer -->
 					<div class="product-card-image-container-background-hover product-opacity-<?php echo $p_id1; ?>"></div>
 					<!-- Product Details Layer -->
@@ -133,14 +142,6 @@ try
 				</div>
 
 			          <a class='btn green-button share-button hvr-shutter-out-horizontal share-button-<?php echo $p_id1; ?>' id='share-button-<?php echo $p_id1; ?>' data-shared='<?php echo $shared; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
-					  <?php if($shared=='shared'){ ?>
-							<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared="<?php echo $shared; ?>"><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
-					  <?php } else { ?>
-							  <a id="reset-button-<?php echo $p_id1; ?>" class="btn grey-button share-button hvr-shutter-out-horizontal" data-shared="unshared" onclick="unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag;?>')">
-									<i class="fa fa-times" aria-hidden="true"></i>
-									Reset
-									</a>
-					  <?php } ?>
 
 			</div>
 
@@ -158,7 +159,7 @@ try
 				$('.product-details-<?php echo $p_id1; ?>').toggle();
 			});
 
-			//$('.reset-button-<?php echo $p_id1; ?>').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
+			$('.reset-button-<?php echo $p_id1; ?>').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
 
 			$('.share-button-<?php echo $p_id1; ?>').click(function() {
 				//  Load
@@ -293,6 +294,7 @@ try
 					$('#share-button-'+pid).addClass('grey-button');
 					$('#share-button-'+pid).removeClass('share-button-'+pid);
 					$('#share-button-'+pid).addClass('reset-button-'+pid);
+					$('#share-button-'+pid).html("<i class='fa fa-times' aria-hidden='true'></i>   Reset");
 				}
 			});
 		}
