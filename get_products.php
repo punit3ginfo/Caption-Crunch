@@ -142,7 +142,7 @@ try
 				</div>
 
 				<?php
-				if ($shared == "shared") {
+				if ($shared === "shared") {
 					?>
 				  <a class='btn grey-button share-button hvr-shutter-out-horizontal' id='reset-button-$p_id1' data-shared='$shared'><i class='fa fa-times' aria-hidden='true'></i> Reset</a>
 				  <?php
