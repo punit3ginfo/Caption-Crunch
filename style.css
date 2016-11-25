@@ -1879,5 +1879,15 @@ ul#pagination-list li {
 
 .page-item.prev.disabled, .page-item.next.disabled {
   display: none; }
-
+.loading-img {
+  bottom: 0;
+  height: 190px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 190px;
+}
 /*# sourceMappingURL=style.css.map */
