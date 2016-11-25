@@ -154,7 +154,7 @@ try
 		<script>
 
 		// Preview Drop Down
-		$(document).ready(function() {
+		
 		// Show / Hide Product Details
 			$('.product-image-<?php echo $p_id1; ?>').hover(function() {
 				// Show / Hide Product Details Opacity Container
@@ -272,7 +272,7 @@ try
 					$(".facebook-mobile-image").attr("src", "");
 				}, 800);
 			});
-		});
+
 
 		$('#reset-button-<?php echo $p_id1; ?>').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
 
