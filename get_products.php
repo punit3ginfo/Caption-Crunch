@@ -143,7 +143,7 @@ try
 
 
 
-			          <a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-$p_id1' data-shared='$shared'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
+			          <a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php $p_id1; ?>' data-shared='<?php $shared; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
 
 
 
