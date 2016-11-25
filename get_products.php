@@ -293,8 +293,9 @@ try
 			url: '/sharebutton.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop+'&tags='+tags_1,
 			success: function(data){
 				var share_id = 'share-'+pid;
-				$('#share-button-'+pid).replaceWith( "<a class='btn grey-button share-button hvr-shutter-out-horizontal' id='reset-button-<?php echo $p_id1; ?>' data-shared='unshared'><i class='fa fa-times' aria-hidden='true'></i> Reset</a>" );
-				$('.ribbon-'+pid).show();
+				// $('#share-button-'+pid).replaceWith( "<a class='btn grey-button share-button hvr-shutter-out-horizontal' id='reset-button-<?php echo $p_id1; ?>' data-shared='unshared'><i class='fa fa-times' aria-hidden='true'></i> Reset</a>" );
+				$('.ribbon-'+pid).css('display','block');
+
 			}
 		});
 	}
