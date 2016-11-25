@@ -297,6 +297,8 @@ function gethistory(){
 // Initial Page Load
 (function($) {
 	$(document).ready(function() {
+		var data="<img class='loading-img' src='images/loading1.gif' />";
+     $('.content-container').html(data);
 		getnewproducts(); // start the loop
 	});
 })(jQuery);
