@@ -98,14 +98,23 @@ try
 		<div class="product-card-clearfix">
 
 			<div class="product-card-container">
-     <?php if($shared=='shared'){
-					$display_setting="display:none";
+
+				<div class="ribbon ribbon-<?php echo $p_id1; ?>"><span>SHARED</span></div>
+
+
+				<!-- if($shared=='shared'){
+							echo "
+							<script>
+								$( '.ribbon-$p_id1' ).css('display', 'block');
+						        </script>";
+					}
+					else {
+						echo "
+						<script>
+							$( '.ribbon-$p_id1' ).css('display', 'none');
+						</script>";
 				}
-				else {
-					$display_setting="display:block";	
-				}?>
-				<div class="ribbon ribbon-<?php echo $p_id1; ?>" style="<?php echo $display_setting; ?>"><span>SHARED</span></div>
-				
+				 -->
 
 				<div class="product-card-image-container product-image-<?php echo $p_id1; ?>" style='background-image: url(<?php echo $src; ?>)'>
 					<!-- Opacity Layer -->
@@ -133,14 +142,6 @@ try
 				</div>
 
 			          <a class='btn green-button share-button hvr-shutter-out-horizontal share-button-<?php echo $p_id1; ?>' id='share-button-<?php echo $p_id1; ?>' data-shared='<?php echo $shared; ?>'><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
-					  <?php if($shared=='shared'){ ?>
-							<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared="<?php echo $shared; ?>"><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
-					  <?php } else { ?>
-							  <a id="reset-button-<?php echo $p_id1; ?>" class="btn grey-button share-button hvr-shutter-out-horizontal" data-shared="unshared" onclick="unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag;?>')">
-									<i class="fa fa-times" aria-hidden="true"></i>
-									Reset
-									</a>
-					  <?php } ?>
 
 			</div>
 
@@ -158,7 +159,7 @@ try
 				$('.product-details-<?php echo $p_id1; ?>').toggle();
 			});
 
-			//$('.reset-button-<?php echo $p_id1; ?>').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
+			$('.reset-button-<?php echo $p_id1; ?>').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
 
 			$('.share-button-<?php echo $p_id1; ?>').click(function() {
 				//  Load
@@ -293,6 +294,7 @@ try
 					$('#share-button-'+pid).addClass('grey-button');
 					$('#share-button-'+pid).removeClass('share-button-'+pid);
 					$('#share-button-'+pid).addClass('reset-button-'+pid);
+					$('#share-button-'+pid).html("<i class='fa fa-times' aria-hidden='true'></i>   Reset");
 				}
 			});
 		}
@@ -312,10 +314,10 @@ try
 				success: function(data){
 					// $('#reset-button-'+pid).replaceWith( "<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared='shared><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>");
 					$('.ribbon-'+pid).css('display','none');
-					$('#reset-button-'+pid).removeClass('grey-button');
-					$('#reset-button-'+pid).addClass('green-button');
-					$('#reset-button-'+pid).attr('id','share-button-'+pid);
-					
+					$('#share-button-'+pid).removeClass('grey-button');
+					$('#share-button-'+pid).addClass('green-button');
+					$('#share-button-'+pid).removeClass('reset-button-'+pid);
+					$('#share-button-'+pid).addClass('share-button-'+pid);
 				}
 			});
 		}
