@@ -98,16 +98,16 @@ try
 		<div class="product-card-clearfix">
 
 			<div class="product-card-container">
- 
-				<div class="ribbon ribbon-<?php echo $p_id1; ?>"><span>SHARED</span></div>
-				<?php if($shared=='shared'){
+     <?php if($shared=='shared'){
 					$display_setting="display:none";
 				}
 				else {
 					$display_setting="display:block";	
 				}?>
+				<div class="ribbon ribbon-<?php echo $p_id1; ?>" style="<?php echo $display_setting; ?>"><span>SHARED</span></div>
+				
 
-				<div class="product-card-image-container product-image-<?php echo $p_id1; ?>" style='background-image: url(<?php echo $src; ?>);<?php echo $display_setting; ?>'>
+				<div class="product-card-image-container product-image-<?php echo $p_id1; ?>" style='background-image: url(<?php echo $src; ?>)'>
 					<!-- Opacity Layer -->
 					<div class="product-card-image-container-background-hover product-opacity-<?php echo $p_id1; ?>"></div>
 					<!-- Product Details Layer -->
@@ -312,10 +312,10 @@ try
 				success: function(data){
 					// $('#reset-button-'+pid).replaceWith( "<a class='btn green-button share-button hvr-shutter-out-horizontal' id='share-button-<?php echo $p_id1; ?>' data-shared='shared><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>");
 					$('.ribbon-'+pid).css('display','none');
-					$('#share-button-'+pid).removeClass('grey-button');
-					$('#share-button-'+pid).addClass('green-button');
-					$('#share-button-'+pid).removeClass('reset-button-'+pid);
-					$('#share-button-'+pid).addClass('share-button-'+pid);
+					$('#reset-button-'+pid).removeClass('grey-button');
+					$('#reset-button-'+pid).addClass('green-button');
+					$('#reset-button-'+pid).attr('id','share-button-'+pid);
+					
 				}
 			});
 		}
