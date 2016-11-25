@@ -177,7 +177,7 @@ function getproducts(){
 	var access_token='<?php echo $access_token ?>';
 	var shop='<?php echo $_REQUEST['shop'] ?>';
     var data="<img class='loading-img' src='images/loading1.gif' />";
-     $('.content-container').html(data);
+     $('.content-overflow').html(data);
 	$.ajax({
 		url: '/collections.php?access_token='+access_token+'&shop='+shop,
 		success: function(data){
@@ -202,7 +202,7 @@ function getnewproducts(){
 	var access_token='<?php echo $access_token ?>';
 	var shop='<?php echo $_REQUEST['shop'] ?>';
 	var data="<img class='loading-img' src='images/loading1.gif' />";
-     $('.content-container').html(data);
+     $('.content-overflow').html(data);
 	$.ajax({
 		url: '/collections.php?access_token='+access_token+'&shop='+shop+'&max=60',
 		success: function(data){
@@ -283,7 +283,7 @@ function gethistory(){
 	var access_token='<?php echo $access_token ?>';
 	var shop='<?php echo $_REQUEST['shop'] ?>';
      var data="<img class='loading-img' src='images/loading1.gif' />";
-     $('.content-container').html(data);
+     $('.content-overflow').html(data);
 	$.ajax({
 		url: '/collections.php?access_token='+access_token+'&shop='+shop+'&status=history',
 		success: function(data){
