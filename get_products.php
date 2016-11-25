@@ -174,6 +174,7 @@ try
 				//  Generate Share Buttons
 				$('.preview-header .btn').attr('onClick',"shareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
 				$('.preview-header .btn').attr('data-id','share-<?php echo $p_id1; ?>');
+				$('.reset-button-<?php echo $p_id1; ?>').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
 				//  Preview
 				var $CaptionOneFB = 'Grab the <?php echo str_replace("'","\'",$title); ?> for ONLY $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Get it here: <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
 				var $CaptionTwoFB = 'STEAL ALERT! <?php echo str_replace("'","\'",$title); ?> for only $<?php echo $price; ?>! (Retail $<?php echo $ComparePrice; ?>) Link: <span style="color: #365899;">http://buff.ly/2fVq7rY</span>';
@@ -270,9 +271,7 @@ try
 			});
 		});
 
-		// Preview Drop Down
-		$(document).ready(function() {
-	$('.reset-button-<?php echo $p_id1; ?>').attr('onClick',"unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
+
 
 	var tags;
 	function shareButton(pid,tags){
@@ -321,7 +320,6 @@ try
 			}
 		});
 	}
-});
 		</script>
 		<!-- HTML Content for Product END    -->
 
