@@ -294,7 +294,7 @@ try
 					$('#share-button-'+pid).addClass('grey-button');
 					$('#share-button-'+pid).removeClass('share-button-'+pid);
 					$('#share-button-'+pid).addClass('reset-button-'+pid);
-					$('#share-button-'+pid).html("<i class='fa fa-times' aria-hidden='true'></i>   Reset";
+					$('#share-button-'+pid).html("<i class='fa fa-times' aria-hidden='true'></i>   Reset");
 				}
 			});
 		}
