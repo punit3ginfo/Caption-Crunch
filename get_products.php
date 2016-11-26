@@ -67,7 +67,7 @@ try
 		  else{
 			 $shared='shared';
 		  }
-		
+
 		$tags = str_replace('shared', '', $tags);
 		$tags = str_replace(' ', '', $tags);
 		$tags = str_replace(',', 'AA', $tags);
@@ -95,13 +95,13 @@ try
 
 			<div class="product-card-container">
                  <?php if($shared =='shared'){
-			
+
 					$display_setting="display:none";
-					
+
 				}
 				else {
-					
-					$display_setting="display:block";	
+
+					$display_setting="display:block";
 				}?>
 				<div class="ribbon ribbon-<?php echo $p_id1; ?>" style="<?php echo $display_setting;?>"><span>SHARED</span></div>
 				<div class="product-card-image-container product-image-<?php echo $p_id1; ?>" style='background-image: url(<?php echo $src; ?>)'>
@@ -128,12 +128,9 @@ try
 						</div>
 					</div>
 				</div>
-                       
+
 			          <a class='btn green-button share-button hvr-shutter-out-horizontal share-button-<?php echo $p_id1; ?>' id='share-button-<?php echo $p_id1; ?>' data-shared='<?php echo $shared; ?>' <?php if ($shared =='shared'){ echo "style='display:block;'";}else{ echo "style='display:none;'";} ?>><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
-					  <a id="reset-button-<?php echo $p_id1; ?>" class="btn grey-button share-button hvr-shutter-out-horizontal" data-shared="unshared" onclick="unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag;?>')" <?php if ($shared == 'unshared'){ echo "style='display:block;'";} else{ echo "style='display:none;'";} ?>>
-									<i class="fa fa-times" aria-hidden="true"></i>
-									Reset
-									</a>
+			 	  <a id="reset-button-<?php echo $p_id1; ?>" class="btn grey-button share-button hvr-shutter-out-horizontal" data-shared="unshared" onclick="unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag;?>')" <?php if ($shared == 'unshared'){ echo "style='display:block;'";} else{ echo "style='display:none;'";} ?>><i class="fa fa-times" aria-hidden="true"></i> Reset</a>
 
 			</div>
 
