@@ -1883,7 +1883,6 @@ ul#pagination-list li {
 .loading-clearfix {
   width: calc(100% - 15px);
   height: 100%;
-  background-color: red;
   position: relative;
   display: flex;
   justify-content: center;
@@ -1891,9 +1890,10 @@ ul#pagination-list li {
 
 .loading-container {
   width: 100px;
-  height: 40px;
+  height: 100px;
   background-color: white;
-  position: relative; }
+  position: relative;
+  box-shadow: 1px -2px 17px 0 rgba(0, 0, 0, 0.14); }
 
 .loading-img {
   bottom: 0;
