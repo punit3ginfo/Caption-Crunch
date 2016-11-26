@@ -2613,8 +2613,8 @@ ul#pagination-list li {
 .loading-container {
 	position: relative;
 
-	width: 100px;
-	height: 100px;
+	width: 160px;
+	height: 140px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -2623,11 +2623,11 @@ ul#pagination-list li {
 }
 
 .loading-img {
-      width: 40px;
-      height: 40px;
-      margin: auto;
-      display: block;
-      margin-bottom: 15px;
+width: 60px;
+  height: 60px;
+  margin: auto;
+  display: block;
+  margin-bottom: 15px;
 }
 
 .loader-text {
