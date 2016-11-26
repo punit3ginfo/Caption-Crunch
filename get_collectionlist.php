@@ -68,7 +68,7 @@
               $('.sidebar-content-header .menu-container.'+handle).addClass('menu-container-active');
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
-                     var data="<img class='loading-img' src='images/loading1.gif' />";
+                     var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
 				$('.content-overflow').html(data);
                 $.ajax({
                     url: '/get_products.php?access_token='+access_token+'&shop='+shop+'&colid='+id+'&colhandle='+handle,
@@ -85,7 +85,7 @@
 
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
-                   var data="<img class='loading-img' src='images/loading1.gif' />";
+                   var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
 					$('.content-overflow').html(data);
                 $.ajax({
                     url: '/get_sharehistory.php?access_token='+access_token+'&shop='+shop,
@@ -107,12 +107,12 @@
             }
 
 	function search(p_title){
-               var data="<img class='loading-img' src='images/loading1.gif' />";
+               var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
 				$('.content-overflow').html(data);
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
                 var p_title= '"'+p_title+'"';
-    
+
                 $.ajax({
                     url: '/history.php?access_token='+access_token+'&shop='+shop+'&title='+p_title+'&status=search',
                     success: function(data){
@@ -124,7 +124,7 @@
             }
 
 	function getPaging(id,limit,colid){
-            var data="<img class='loading-img' src='images/loading1.gif' />";
+            var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
 				$('.content-overflow').html(data);
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
@@ -151,7 +151,7 @@
             }
 
 	function getPagingALLProduct(id,limit){
-            var data="<img class='loading-img' src='images/loading1.gif' />";
+            var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
 				$('.content-overflow').html(data);
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
@@ -177,7 +177,7 @@
             }
 
 	function getPagingSearch(id,limit,title){
-             var data="<img class='loading-img' src='images/loading1.gif' />";
+             var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
 				$('.content-overflow').html(data);
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
