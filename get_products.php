@@ -68,6 +68,7 @@ try
 		  else{
 			 $shared='shared';
 		  }
+		echo "shared12=".$shared;
 		$tags = str_replace('shared', '', $tags);
 		$tags = str_replace(' ', '', $tags);
 		$tags = str_replace(',', 'AA', $tags);
