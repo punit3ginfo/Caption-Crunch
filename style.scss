@@ -2602,18 +2602,19 @@ ul#pagination-list li {
 	width: 100px;
 	height: 40px;
 	background-color: white;
+	position: relative;
 }
 
 .loading-img {
   bottom: 0;
-  height: 190px;
+  height: 40px;
   left: 0;
   margin: auto;
   position: absolute;
   right: 0;
   text-align: center;
   top: 0;
-  width: 190px;
+  width: 40px;
 }
 .share-loading {
   position: relative;

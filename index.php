@@ -297,7 +297,7 @@ function gethistory(){
 // Initial Page Load
 (function($) {
 	$(document).ready(function() {
-		var data="<div class='loading-container'><img class='loading-img' src='images/loading1.gif' /></div>";
+		var data="<div class='loading-container'><img class='loading-img' src='images/loading13.gif' /></div>";
      $('.content-container').html(data);
 		getnewproducts(); // start the loop
 	});
