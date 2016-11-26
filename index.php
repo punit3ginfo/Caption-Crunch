@@ -299,7 +299,7 @@ function gethistory(){
 	$(document).ready(function() {
 		var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small'>Loading</span></div></div></div>";
      $('.content-container').html(data);
-		getnewproducts(); // start the loop
+		// getnewproducts(); // start the loop
 	});
 })(jQuery);
 </script>
