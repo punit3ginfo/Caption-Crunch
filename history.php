@@ -30,7 +30,7 @@ try
 			$OrigonalTag=$singleproduct['tags'];
 			$ComparePrice=$singleproduct['compare_at_price'];
 			$handle=$singleproduct['handle'];
-             if(strpos($OrigonalTag,'shared') == true)
+             if(strpos($OrigonalTag,'shared') == true || $OrigonalTag=='shared')
 			  {
 				  $shared='unshared';
 			  }
