@@ -102,7 +102,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 			</a>
 
-			
+
 			<!-- <a class="sidebar-link" href="/?page=autopilot">
 			<div class="sidebar-nav-container">
 			<span >
@@ -240,7 +240,7 @@ function getcaptions(){
 
 	var access_token='<?php echo $access_token ?>';
 	var shop='<?php echo $_REQUEST['shop'] ?>';
-      
+
 	$.ajax({
 		url: '/captions.php?access_token='+access_token+'&shop='+shop,
 		success: function(data){
@@ -297,7 +297,7 @@ function gethistory(){
 // Initial Page Load
 (function($) {
 	$(document).ready(function() {
-		var data="<img class='loading-img' src='images/loading1.gif' />";
+		var data="<div class='loading-container'><img class='loading-img' src='images/loading1.gif' /></div>";
      $('.content-container').html(data);
 		getnewproducts(); // start the loop
 	});

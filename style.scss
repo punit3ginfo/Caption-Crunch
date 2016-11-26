@@ -2597,3 +2597,37 @@ ul#pagination-list li {
 .page-item.prev.disabled, .page-item.next.disabled {
   display: none;
 }
+
+.loading-container {
+	width: 100px;
+	height: 40px;
+	background-color: white;
+}
+
+.loading-img {
+  bottom: 0;
+  height: 190px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 190px;
+}
+.share-loading {
+  position: relative;
+}
+.share-loading::before {
+  background: rgba(255, 255, 255, 0.8) url("images/loading3.gif") no-repeat scroll center center / 310px auto;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
