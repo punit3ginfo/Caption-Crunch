@@ -60,7 +60,6 @@ try
 		$OrigonalTag=$singleproduct['tags'];
 		$ComparePrice=$singleproduct['compare_at_price'];
 		$handle=$singleproduct['handle'];
-                  echo  "OrigonalTag===".$OrigonalTag;   
           if(strpos($OrigonalTag,'shared') == true || $OrigonalTag=='shared' )
 		  {
 			  $shared='unshared';
@@ -68,7 +67,7 @@ try
 		  else{
 			 $shared='shared';
 		  }
-		echo "shared12=".$shared;
+		
 		$tags = str_replace('shared', '', $tags);
 		$tags = str_replace(' ', '', $tags);
 		$tags = str_replace(',', 'AA', $tags);
@@ -96,12 +95,12 @@ try
 
 			<div class="product-card-container">
                  <?php if($shared =='shared'){
-			echo"1";
+			
 					$display_setting="display:none";
 					
 				}
 				else {
-					echo"2";
+					
 					$display_setting="display:block";	
 				}?>
 				<div class="ribbon ribbon-<?php echo $p_id1; ?>" style="<?php echo $display_setting;?>"><span>SHARED</span></div>
