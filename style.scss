@@ -2599,8 +2599,9 @@ ul#pagination-list li {
 }
 
 .loading-clearfix {
-	width: calc(100% - 30px);
+	width: calc(100% - 15px);
 	height: 100%;
+	background-color: red;
 	position: relative;
 	display: flex;
 	justify-content: center;
