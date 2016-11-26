@@ -934,7 +934,7 @@ body {
   transition-duration: 0.3s;
   animation-direction: normal;
   background-image: url("./images/background.jpg");
-  background-size: 100% 100%; }
+  background-size: cover; }
 
 .main_container_clearfix-help {
   width: calc(100vw - 330px); }
@@ -1902,7 +1902,12 @@ ul#pagination-list li {
   width: 40px;
   height: 40px;
   margin: auto;
-  text-align: center; }
+  display: block;
+  margin-bottom: 15px; }
+
+.loader-text {
+  display: block;
+  color: #7ab55c; }
 
 .share-loading {
   position: relative; }

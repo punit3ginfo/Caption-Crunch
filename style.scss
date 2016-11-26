@@ -1297,7 +1297,7 @@ body {
 	animation-direction        : normal;
 
 	background-image : url("./images/background.jpg");
-	background-size  : 100% 100%;
+	background-size  : cover;
 }
 
 .main_container_clearfix-help {
@@ -2623,12 +2623,18 @@ ul#pagination-list li {
 }
 
 .loading-img {
-  width: 40px;
-  height: 40px;
-  margin: auto;
-
-  text-align: center;
+      width: 40px;
+      height: 40px;
+      margin: auto;
+      display: block;
+      margin-bottom: 15px;
 }
+
+.loader-text {
+	display: block;
+	color: #7ab55c;
+}
+
 .share-loading {
   position: relative;
 }
