@@ -2599,7 +2599,7 @@ ul#pagination-list li {
 }
 
 .loading-clearfix {
-	width: 100%;
+	width: calc(100% - 30px);
 	height: 100%;
 	background-color: red;
 	position: relative;
