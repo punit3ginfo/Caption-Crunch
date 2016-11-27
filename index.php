@@ -205,7 +205,7 @@ function getnewproducts(){
 	var access_token='<?php echo $access_token ?>';
 	var shop='<?php echo $_REQUEST['shop'] ?>';
 	var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-     $('.content-overflow').html(data);
+     	$('.content-overflow').html(data);
 	$.ajax({
 		url: '/collections.php?access_token='+access_token+'&shop='+shop+'&max=60',
 		success: function(data){
@@ -302,8 +302,6 @@ function gethistory(){
 // Initial Page Load
 (function($) {
 	$(document).ready(function() {
-		var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-     $('.content-container').html(data);
 		getnewproducts(); // start the loop
 	});
 })(jQuery);
