@@ -63,8 +63,8 @@
 	<script>
 	function getcolproduct(id,handle){
 		$('.sidebar-content-header .menu-container').each(function(){
-		$(this).removeClass('menu-container-active');
-	});
+			$(this).removeClass('menu-container-active');
+		});
               $('.sidebar-content-header .menu-container.'+handle).addClass('menu-container-active');
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
@@ -86,7 +86,6 @@
 
 	                    }
 	                });
-		});
             }
 
 	function getsharehistory(){
