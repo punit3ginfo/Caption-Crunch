@@ -1938,24 +1938,4 @@ ul#pagination-list li {
   background-color: white;
   background: rgba(255, 255, 255, 0.8) url("images/loading13.gif") no-repeat scroll center center/60px auto; }
 
-@-webkit-keyframes slideInRight {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    visibility: visible; }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-@keyframes slideInRight {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    visibility: visible; }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-.slideInRight {
-  -webkit-animation-name: slideInRight;
-  animation-name: slideInRight; }
-
 /*# sourceMappingURL=style.css.map */
