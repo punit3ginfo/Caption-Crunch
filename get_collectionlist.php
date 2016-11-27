@@ -70,8 +70,9 @@
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 
-		var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-		$('.content-overflow').html(data);
+		$('.product-card-clearfix').addClass(".product-card-animate-left");
+		// var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
+		// $('.content-overflow').html(data);
 
 	                $.ajax({
 	                    url: '/get_products.php?access_token='+access_token+'&shop='+shop+'&colid='+id+'&colhandle='+handle,
@@ -85,13 +86,12 @@
             }
 
 	function getsharehistory(){
-		$('product-card-clearfix').addClass("product-card-animate-left");
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 
-
-			var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-			$('.content-overflow').html(data);
+			$('.product-card-clearfix').addClass(".product-card-animate-left");
+			// var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
+			// $('.content-overflow').html(data);
 
                 $.ajax({
                     url: '/get_sharehistory.php?access_token='+access_token+'&shop='+shop,
