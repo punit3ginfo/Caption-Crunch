@@ -223,9 +223,8 @@ function getnewproducts(){
 			$(".help-clearfix").empty();
 			$(".help-clearfix").load("help/share.php");
 
-			// setTimeout(function(){ $('.product-card-clearfix').addClass("product-card-animate-left"); }, 500);
+			setTimeout(function(){ $('.product-card-clearfix').addClass("product-card-animate-left"); }, 500);
 
-			$('.product-card-clearfix').addClass("product-card-animate-left");
 		}
 	});
 }
