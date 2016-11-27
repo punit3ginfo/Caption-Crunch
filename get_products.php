@@ -91,7 +91,7 @@ try
 
 		<!-- HTML Content for Product  START      -->
 
-		<div class="product-card-clearfix box-<?php echo $p_id1; ?>">
+		<div class="product-card-clearfix box-<?php echo $p_id1; ?> slideInRight">
 
 			<div class="product-card-container">
                  <?php if($shared =='shared'){
