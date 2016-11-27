@@ -1179,13 +1179,17 @@ body {
   margin-right: 5px;
   margin-left: 5px;
   top: 0px;
+  left: 100vw;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   -moz-transition: all 0.5s; }
 
 .product-card-animate-down {
-  margin-top: 100vh !important; }
+  top: 100vh !important; }
+
+.product-card-animate-left {
+  left: 0px !important; }
 
 @media (max-width: 950px) {
   .content-overflow {

@@ -62,6 +62,7 @@
 	?>
 	<script>
 	function getcolproduct(id,handle){
+		$('product-card-clearfix').addClass("product-card-animate-left");
 		$('.sidebar-content-header .menu-container').each(function(){
 			$(this).removeClass('menu-container-active');
 		});
@@ -84,7 +85,7 @@
             }
 
 	function getsharehistory(){
-
+		$('product-card-clearfix').addClass("product-card-animate-left");
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 
@@ -177,7 +178,7 @@
             }
 
 	function getPagingSearch(id,limit,title){
-		
+
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 
