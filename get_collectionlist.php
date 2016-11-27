@@ -62,7 +62,6 @@
 	?>
 	<script>
 	function getcolproduct(id,handle){
-		$('product-card-clearfix').addClass('product-card-animate-down');
 		$('.sidebar-content-header .menu-container').each(function(){
 		$(this).removeClass('menu-container-active');
 	});
@@ -70,21 +69,24 @@
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 
-		$('product-card-clearfix').addClass('product-card-animate-down');
+		$('product-card-clearfix').animate({ margin-top: "100vh" }, 500, function() {
+
+		// $('product-card-clearfix').addClass('product-card-animate-down');
 		// setTimeout(function(){
 		// 	var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
 		// 	$('.content-overflow').html(data);
 		// }, 500);
 
-                $.ajax({
-                    url: '/get_products.php?access_token='+access_token+'&shop='+shop+'&colid='+id+'&colhandle='+handle,
-                    success: function(data){
-                     //console.log(data);
-			   // var data1= data.find('.chat_container').html()
-			    $('.content-overflow').html(data);
+	                $.ajax({
+	                    url: '/get_products.php?access_token='+access_token+'&shop='+shop+'&colid='+id+'&colhandle='+handle,
+	                    success: function(data){
+	                     //console.log(data);
+				   // var data1= data.find('.chat_container').html()
+				    $('.content-overflow').html(data);
 
-                    }
-                });
+	                    }
+	                });
+		});
             }
 
 	function getsharehistory(){
@@ -109,7 +111,7 @@
 			     $('#pagination2').remove();
 			     $("#share-back").html('<a href="javascript:void(0)" onclick="getproducts()" class="sidebar-span share-history-button"><i class="fa fa-chevron-left" aria-hidden="true"></i> Back</a>');
                     }
-                });		
+                });
             }
 
 	function search(p_title){
@@ -135,7 +137,7 @@
 
 	function getPaging(id,limit,colid){
             //var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-	//			$('.content-overflow').html(data);
+	   //			$('.content-overflow').html(data);
 	$('product-card-clearfix').addClass('product-card-animate-down');
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
