@@ -80,7 +80,7 @@
 	                     //console.log(data);
 				   // var data1= data.find('.chat_container').html()
 				    $('.content-overflow').html(data);
-
+				    $('.product-card-clearfix').addClass("product-card-animate-left");
 	                    }
 	                });
             }
@@ -99,6 +99,7 @@
                      //console.log(data);
 			   // var data1= data.find('.chat_container').html()
 			    $('.content-overflow').html(data);
+			    $('.product-card-clearfix').addClass("product-card-animate-left");
 			     $('#pagination').html('');
 			     $('#pagination1').empty();
 			     $('#pagination2').remove();
