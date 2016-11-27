@@ -210,9 +210,9 @@ function getnewproducts(){
 			//console.log(data);
 			// var data1= data.find('.chat_container').html()
 			$('.content-container').html(data);
-			$('.loading-container').unload(function() {
-				  $('.product-card-clearfix').addClass("product-card-animate-left");
-			});
+			setTimeout(function(){ $('.product-card-clearfix').addClass("product-card-animate-left"); }, 1000);
+
+
 			$('#share-link').addClass('sidebar-link-active');
 			$('#captions-link').removeClass('sidebar-link-active');
 			$('#settings-link').removeClass('sidebar-link-active');
