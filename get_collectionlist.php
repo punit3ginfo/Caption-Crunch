@@ -70,6 +70,12 @@
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 
+		$('product-card-clearfix').addClass('product-card-animate-down');
+		setTimeout(function(){
+			var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
+			$('.content-overflow').html(data);
+		}, 500);
+
                      var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
 				$('.content-overflow').html(data);
                 $.ajax({
@@ -87,9 +93,13 @@
 
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
+
 		$('product-card-clearfix').addClass('product-card-animate-down');
-                   var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-					$('.content-overflow').html(data);
+		setTimeout(function(){
+			var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
+			$('.content-overflow').html(data);
+		}, 500);
+
                 $.ajax({
                     url: '/get_sharehistory.php?access_token='+access_token+'&shop='+shop,
                     success: function(data){
@@ -111,8 +121,11 @@
 
 	function search(p_title){
 		$('product-card-clearfix').addClass('product-card-animate-down');
-               var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-				$('.content-overflow').html(data);
+		setTimeout(function(){
+			var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
+			$('.content-overflow').html(data);
+		}, 500);
+
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
                 var p_title= '"'+p_title+'"';
