@@ -69,13 +69,8 @@
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 
-		$('product-card-clearfix').css('top','100vh');
-
-		// $('product-card-clearfix').addClass('product-card-animate-down');
-		// setTimeout(function(){
-		// 	var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-		// 	$('.content-overflow').html(data);
-		// }, 500);
+		var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
+		$('.content-overflow').html(data);
 
 	                $.ajax({
 	                    url: '/get_products.php?access_token='+access_token+'&shop='+shop+'&colid='+id+'&colhandle='+handle,
@@ -93,13 +88,9 @@
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 
-		$('product-card-clearfix').css('top','100vh');
-		// $('product-card-clearfix').animate({ top:  "100vh" }, 500);
-		// $('product-card-clearfix').addClass('product-card-animate-down');
-		// setTimeout(function(){
-		// 	var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-		// 	$('.content-overflow').html(data);
-		// }, 500);
+
+			var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
+			$('.content-overflow').html(data);
 
                 $.ajax({
                     url: '/get_sharehistory.php?access_token='+access_token+'&shop='+shop,
@@ -116,13 +107,10 @@
             }
 
 	function search(p_title){
-		$('product-card-clearfix').css('top','100vh');
-		// $('product-card-clearfix').animate({ top:  "100vh" }, 500);
-		// $('product-card-clearfix').addClass('product-card-animate-down');
-		// setTimeout(function(){
-		// 	var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-		// 	$('.content-overflow').html(data);
-		// }, 500);
+
+			var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
+			$('.content-overflow').html(data);
+
 
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
@@ -139,9 +127,7 @@
             }
 
 	function getPaging(id,limit,colid){
-            //var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-	   //			$('.content-overflow').html(data);
-	$('product-card-clearfix').addClass('product-card-animate-down');
+
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 
@@ -167,9 +153,6 @@
             }
 
 	function getPagingALLProduct(id,limit){
-		$('product-card-clearfix').addClass('product-card-animate-down');
-        //    var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-	//			$('.content-overflow').html(data);
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 
@@ -194,9 +177,7 @@
             }
 
 	function getPagingSearch(id,limit,title){
-		$('product-card-clearfix').addClass('product-card-animate-down');
-          //   var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-		//		$('.content-overflow').html(data);
+		
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 
