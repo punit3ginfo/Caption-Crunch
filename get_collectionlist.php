@@ -69,7 +69,7 @@
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 
-		$('product-card-clearfix').animate({ margin-top: "100vh" }, 500, function() {
+		$('product-card-clearfix').animate({ "margin-top:"  "100vh" }, 500, function() {
 
 		// $('product-card-clearfix').addClass('product-card-animate-down');
 		// setTimeout(function(){
