@@ -76,8 +76,6 @@
 		// 	$('.content-overflow').html(data);
 		// }, 500);
 
-                     var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-				$('.content-overflow').html(data);
                 $.ajax({
                     url: '/get_products.php?access_token='+access_token+'&shop='+shop+'&colid='+id+'&colhandle='+handle,
                     success: function(data){
@@ -109,14 +107,9 @@
 			     $('#pagination').html('');
 			     $('#pagination1').empty();
 			     $('#pagination2').remove();
-
+			     $("#share-back").html('<a href="javascript:void(0)" onclick="getproducts()" class="sidebar-span share-history-button"><i class="fa fa-chevron-left" aria-hidden="true"></i> Back</a>');
                     }
-                });
-
-		setTimeout(function(){
-			$("#share-back").html('<a href="javascript:void(0)" onclick="getproducts()" class="sidebar-span share-history-button"><i class="fa fa-chevron-left" aria-hidden="true"></i> Back</a>');
-		}, 500);
-
+                });		
             }
 
 	function search(p_title){
