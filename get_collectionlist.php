@@ -62,12 +62,14 @@
 	?>
 	<script>
 	function getcolproduct(id,handle){
+		$('product-card-clearfix').addClass('product-card-animate-down');
 		$('.sidebar-content-header .menu-container').each(function(){
 		$(this).removeClass('menu-container-active');
 	});
               $('.sidebar-content-header .menu-container.'+handle).addClass('menu-container-active');
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
+
                      var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
 				$('.content-overflow').html(data);
                 $.ajax({
@@ -85,6 +87,7 @@
 
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
+		$('product-card-clearfix').addClass('product-card-animate-down');
                    var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
 					$('.content-overflow').html(data);
                 $.ajax({
@@ -107,6 +110,7 @@
             }
 
 	function search(p_title){
+		$('product-card-clearfix').addClass('product-card-animate-down');
                var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
 				$('.content-overflow').html(data);
                var access_token='<?php echo $access_token ?>';
@@ -126,6 +130,7 @@
 	function getPaging(id,limit,colid){
             //var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
 	//			$('.content-overflow').html(data);
+	$('product-card-clearfix').addClass('product-card-animate-down');
                var access_token='<?php echo $access_token ?>';
 		var shop='<?php echo $_REQUEST['shop'] ?>';
 
@@ -151,6 +156,7 @@
             }
 
 	function getPagingALLProduct(id,limit){
+		$('product-card-clearfix').addClass('product-card-animate-down');
         //    var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
 	//			$('.content-overflow').html(data);
                var access_token='<?php echo $access_token ?>';
@@ -177,6 +183,7 @@
             }
 
 	function getPagingSearch(id,limit,title){
+		$('product-card-clearfix').addClass('product-card-animate-down');
           //   var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
 		//		$('.content-overflow').html(data);
                var access_token='<?php echo $access_token ?>';

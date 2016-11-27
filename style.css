@@ -1177,7 +1177,14 @@ body {
   max-height: 310px;
   margin-top: 15px;
   margin-right: 5px;
-  margin-left: 5px; }
+  margin-left: 5px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s; }
+
+.product-card-animate-down {
+  margin-top: 100vh; }
 
 @media (max-width: 950px) {
   .content-overflow {
