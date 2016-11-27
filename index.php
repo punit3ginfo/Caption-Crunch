@@ -193,8 +193,6 @@ function getproducts(){
 			$(".help-clearfix").empty();
 			$(".help-clearfix").load("help/share.php");
 
-			setTimeout(function(){ $('.product-card-clearfix').addClass("product-card-animate-left"); }, 500);
-
 
 		}
 	});
@@ -222,8 +220,6 @@ function getnewproducts(){
 			// Help
 			$(".help-clearfix").empty();
 			$(".help-clearfix").load("help/share.php");
-
-			setTimeout(function(){ $('.product-card-clearfix').addClass("product-card-animate-left"); }, 500);
 
 		}
 	});
@@ -299,7 +295,6 @@ function gethistory(){
 			//console.log(data);
 			// var data1= data.find('.chat_container').html()
 			$('.content-container').html(data);
-			$('.product-card-clearfix').addClass("product-card-animate-left");
 		}
 	});
 }
