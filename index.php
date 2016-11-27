@@ -184,7 +184,7 @@ function getproducts(){
 			//console.log(data);
 			// var data1= data.find('.chat_container').html()
 			$('.content-container').html(data);
-			$('.product-card-clearfix').addClass("product-card-animate-left");
+
 			$('#share-link').addClass('sidebar-link-active');
 			$('#captions-link').removeClass('sidebar-link-active');
 			$('#settings-link').removeClass('sidebar-link-active');
@@ -192,6 +192,8 @@ function getproducts(){
 			// Help
 			$(".help-clearfix").empty();
 			$(".help-clearfix").load("help/share.php");
+
+			setTimeout(function(){ $('.product-card-clearfix').addClass("product-card-animate-left"); }, 500);
 		}
 	});
 }
@@ -210,8 +212,6 @@ function getnewproducts(){
 			//console.log(data);
 			// var data1= data.find('.chat_container').html()
 			$('.content-container').html(data);
-			setTimeout(function(){ $('.product-card-clearfix').addClass("product-card-animate-left"); }, 1000);
-
 
 			$('#share-link').addClass('sidebar-link-active');
 			$('#captions-link').removeClass('sidebar-link-active');
@@ -220,6 +220,8 @@ function getnewproducts(){
 			// Help
 			$(".help-clearfix").empty();
 			$(".help-clearfix").load("help/share.php");
+
+			setTimeout(function(){ $('.product-card-clearfix').addClass("product-card-animate-left"); }, 500);
 		}
 	});
 }
