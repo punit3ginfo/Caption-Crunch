@@ -18,11 +18,10 @@
 </form>
 
 
-  // Help Containers
-<script>
-$(document).ready(function(){
-  // Help Containers
 
+<script>
+  // Help Containers
+$(document).ready(function(){
         $('#getting-started-trigger').click(function() {
   	      $('#getting-started-trigger').addClass('menu-container-active');
  //  	      $('#share-trigger').removeClass('menu-container-active');
