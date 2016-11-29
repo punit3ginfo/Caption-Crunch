@@ -16,8 +16,8 @@
 
 					<!-- Collection Card -->
 
-					<a href="javascript:void(0)">
-						<div id="getting-started-trigger" class="help-menu-container">
+					<a href="javascript:void(0)" >
+						<div id="#getting-started-trigger" class="menu-container menu-container-active">
 							<div class="menu-clearfix">
 								<div class="menu-font-container">
 									<span class="menu-font">Getting Started</span>
