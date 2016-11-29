@@ -23,9 +23,15 @@ $(document).ready(function(){
   // Help Containers
 
 	$('#getting-started-trigger').click(function() {
-	  	$('.help-menu-container').addClass('menu-container-active');
+	  	$('#getting-started-trigger').addClass('menu-container-active');
+		$('#share-trigger').removeClass('menu-container-active');
 	});
-	
+
+	$('#share-trigger').click(function() {
+	  	$('#share-trigger').addClass('menu-container-active');
+		$('#getting-started-trigger').removeClass('menu-container-active');
+	});
+
 });
 
 

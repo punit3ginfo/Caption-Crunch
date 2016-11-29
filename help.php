@@ -17,7 +17,7 @@
 					<!-- Collection Card -->
 
 					<a href="javascript:void(0)" >
-						<div id="#getting-started-trigger" class="menu-container menu-container-active">
+						<div id="#getting-started-trigger" class="menu-container">
 							<div class="menu-clearfix">
 								<div class="menu-font-container">
 									<span class="menu-font">Getting Started</span>
@@ -39,7 +39,7 @@
 								</div>
 								<div class="menu-icon-clearfix">
 									<div class="menu-icon-container">
-										<span class="help-menu-icon"><i id="getting-started-icon" class="fa fa-bullhorn" style="line-height: 40px;" aria-hidden="true"></i></span>
+										<spa class="help-menu-icon"><i id="share-icon" class="fa fa-bullhorn" style="line-height: 40px;" aria-hidden="true"></i></span>
 									</div>
 								</div>
 							</div>
