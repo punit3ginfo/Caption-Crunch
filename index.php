@@ -133,7 +133,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 	<nav class="main-nav-container">
 		<a id="help-button" class="help-header-link" style="text-decoration: none; float: right; cursor:pointer;">
 			<div class="sidebar-nav-container-header">
-				<span >
+				<span id="help-title">
 					<i style="font-size: 20px;" class="fa fa-info" aria-hidden="true"></i><br>
 					Help
 				</span>

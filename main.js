@@ -8,6 +8,7 @@ $(document).ready(function(){
 	  $(".main_container_clearfix").removeClass("slide-left");
           $('.sidebar-nav-container-header').removeClass("sidebar-nav-container-header-active");
           $('.help-header-link').css("color", "#666");
+	  $("#help-title").html('<i style="font-size: 20px;" class="fa fa-info" aria-hidden="true"></i><br> Help');
       } else {
           $('#right-slide-left').addClass("right-slide-left-animate");
 	  $(".preview-container").addClass("main-container-slide-left");
@@ -15,6 +16,7 @@ $(document).ready(function(){
 	  $(".sidebar_nav").addClass("main-container-slide-left");
           $('.sidebar-nav-container-header').addClass("sidebar-nav-container-header-active");
           $('.help-header-link').css("color", "white");
+	  $("#help-title").html('<i style="font-size: 20px;" class="fa fa-times" aria-hidden="true"></i><br> Back');
       };
   });
 });
