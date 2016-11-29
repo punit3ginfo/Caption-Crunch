@@ -16,7 +16,7 @@
 
 					<!-- Collection Card -->
 					<a href="javascript:void(0)">
-						<div id="#getting-started-trigger" class="menu-container">
+						<div id="getting-started-trigger" class="menu-container">
 							<div class="menu-clearfix">
 								<div class="menu-font-container">
 									<span class="menu-font">Getting Started</span>
@@ -31,7 +31,7 @@
 					</a>
 
 					<a href="javascript:void(0)">
-						<div id="#share-trigger" class="menu-container">
+						<div id="share-trigger" class="menu-container">
 							<div class="menu-clearfix">
 								<div class="menu-font-container">
 									<span class="menu-font">Share</span>
@@ -44,7 +44,7 @@
 							</div>
 						</div>
 					</a>
-					
+
 					<!-- Collection Card -->
 
 				</div>
