@@ -1,6 +1,6 @@
 <!-- <div class="help-clearfix"></div> -->
 
-<div class="collections-animation-container">
+<div class="help-container">
 	<div class="chat_container" style="overflow: hidden;">
 		<div class="sidebar-content-header">
 			<div class="content-header-title-container">
