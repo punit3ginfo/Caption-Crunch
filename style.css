@@ -1970,4 +1970,10 @@ ul#pagination-list li {
   padding: 15px;
   padding-bottom: 0px; }
 
+.help-menu-container:hover {
+  background-color: #7ab55c;
+  background-image: url("./images/menu-background.png");
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
 /*# sourceMappingURL=style.css.map */
