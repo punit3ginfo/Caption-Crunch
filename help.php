@@ -17,7 +17,7 @@
 					<!-- Collection Card -->
 
 					<a href="javascript:void(0)"  onclick="gettingStartedTirgger();">
-						<div class="menu-containerhelp">
+						<div class="menu-container-help">
 							<div class="menu-clearfix">
 								<div class="menu-font-container">
 									<span class="menu-font">Getting Started</span>
