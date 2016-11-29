@@ -3,14 +3,16 @@ $(document).ready(function(){
   $('#help-button').click(function() {
       if ($("#right-slide-left").hasClass('right-slide-left-animate')) {
           $('#right-slide-left').removeClass("right-slide-left-animate");
-	//   $(".preview-container").removeClass("preview-container-help");
+	  $(".sidebar_nav").removeClass("main-container-slide-left");
+	  $(".preview-container").removeClass("main-container-slide-left");
 	  $("#main-padded-container").removeClass("main-container-slide-left");
           $('.sidebar-nav-container-header').removeClass("sidebar-nav-container-header-active");
           $('.help-header-link').css("color", "#666");
       } else {
           $('#right-slide-left').addClass("right-slide-left-animate");
-	//   $(".preview-container").addClass("preview-container-help");
+	  $(".preview-container").addClass("main-container-slide-left");
 	  $("#main-padded-container").addClass("main-container-slide-left");
+	  $(".sidebar_nav").addClass("main-container-slide-left");
           $('.sidebar-nav-container-header').addClass("sidebar-nav-container-header-active");
           $('.help-header-link').css("color", "white");
       };
