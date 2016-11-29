@@ -23,6 +23,11 @@ $(document).ready(function(){
 	 $('#getting-started-trigger').click( function() {
 	  	$('#getting-started-trigger').addClass('menu-container-active');
 	    	$('#share-trigger').removeClass('menu-container-active');
+
+		$('#getting-started-trigger').hover( function () {
+			$('getting-started-icon').toggleClass('fa-star');
+			$('getting-started-icon').toggleClass('fa-chevron-down');
+		});
 	});
 
           $('#share-trigger').click(function() {
