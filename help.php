@@ -41,7 +41,7 @@
 
 			<div class="content-header-3col-container">
 				<div class="content-header-container">
-					<a href="javascript:void(0)" onclick="" class="sidebar-span">
+					<a href="javascript:void(0)" onclick="" class="sidebar-span share-history-button">
 						<i class="fa fa-ticket" aria-hidden="true"></i>
 						Support
 					</a>
