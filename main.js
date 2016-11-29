@@ -22,9 +22,10 @@ $(document).ready(function(){
 
   // Help Containers
 
-$('#getting-started-trigger').click(function() {
-  	$('.help-menu-container').addClass('menu-container-active');
-  }
+	$('#getting-started-trigger').click(function() {
+	  	$('.help-menu-container').addClass('menu-container-active');
+	});
+	
 });
 
 
