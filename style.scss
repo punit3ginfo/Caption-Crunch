@@ -772,7 +772,7 @@ body {
 	top : 100vh !important;
 }
 
-#preview-container {
+#top-slide-down {
 	position                   : absolute;
 	z-index                    : 80;
 	top                        : -100vh;
@@ -795,7 +795,7 @@ body {
 	display : none;
 }
 
-.preview-container-animate {
+.top-slide-down-animate {
 	top : 0px !important;
 }
 

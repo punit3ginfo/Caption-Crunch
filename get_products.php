@@ -161,7 +161,7 @@ try
 				$(".help-clearfix").load("help/preview.php");
 				//  Animate
 				$('.collections-animation-container').addClass("collections-animation");
-				$('#preview-container').addClass("preview-container-animate");
+				$('#top-slide-down').addClass("top-slide-down-animate");
 				//  Generate Share Buttons
 				$('.preview-header .btn').attr('onClick',"shareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag; ?>')");
 				$('.preview-header .btn').attr('data-id','share-<?php echo $p_id1; ?>');
@@ -223,7 +223,7 @@ try
 				//  Back Buttons
 			$('.back-link').click(function() {
 				$('.collections-animation-container').removeClass("collections-animation");
-				$('#preview-container').removeClass("preview-container-animate");
+				$('#top-slide-down').removeClass("top-slide-down-animate");
 				// Back Button
 				$("#share-link").css("display", "block");
 				$(".back-link").css("display", "none");
@@ -243,7 +243,7 @@ try
 				}, 800);
 			});
 			$('.sidebar-link').click(function() {
-				$('#preview-container').removeClass("preview-container-animate");
+				$('#top-slide-down').removeClass("top-slide-down-animate");
 				$('.collections-animation-container').removeClass("collections-animation");
 				// Back Button
 				$("#share-link").css("display", "block");
