@@ -1325,8 +1325,8 @@ body {
 }
 
 .main-container-slide-left {
-	position: absolute;
-	left: -100vw;
+	position: absolute !important;
+	left: -100vw !important;
 }
 
 .main_container {
