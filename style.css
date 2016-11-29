@@ -32,11 +32,12 @@ body {
   max-height: 100vh;
   margin: 0;
   color: #555555;
-  background-color: #D9E0E0;
   font-family: 'Ubuntu', sans-serif;
   font-size: 14px;
   font-weight: 100;
-  line-height: 1.42857143; }
+  line-height: 1.42857143;
+  background-image: url("./images/background.jpg");
+  background-size: 100% 100%; }
 
 /* ------------------- Type / Fonts -------------------- */
 .cc-text-small {
@@ -929,16 +930,15 @@ body {
 /* ---------------- Main Container ----------------- */
 .main_container_clearfix {
   position: fixed;
-  top: 0;
+  top: 0px;
+  left: 0px;
   width: calc(100vw - 80px);
   height: calc(100vh - 63px);
   padding-top: 63px;
   padding-left: 80px;
   transition-timing-function: ease;
   transition-duration: 0.3s;
-  animation-direction: normal;
-  background-image: url("./images/background.jpg");
-  background-size: 100% 100%; }
+  animation-direction: normal; }
 
 .main_container_clearfix-help {
   left: -100vw; }
