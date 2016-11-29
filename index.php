@@ -66,7 +66,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 			</a>
 
-			<a class="sidebar-link" href="javascript:void(0)" onclick="getproducts()" id="share-link">
+			<a class="sidebar-link" href="javascript:void(0)" onclick="getnewproducts()" id="share-link">
 				<div class="sidebar-nav-container">
 					<span >
 						<i style="font-size: 20px;" class="fa fa-bullhorn" aria-hidden="true"></i><br>
