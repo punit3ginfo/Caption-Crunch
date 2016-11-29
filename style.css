@@ -940,7 +940,14 @@ body {
 
 #main-padded-container {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  transition-timing-function: ease;
+  transition-duration: 0.3s;
+  animation-direction: normal; }
+
+.main-container-slide-left {
+  position: absolute;
+  left: -100vw; }
 
 .main_container {
   display: inline-table;

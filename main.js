@@ -4,13 +4,13 @@ $(document).ready(function(){
       if ($("#right-slide-left").hasClass('right-slide-left-animate')) {
           $('#right-slide-left').removeClass("right-slide-left-animate");
 	//   $(".preview-container").removeClass("preview-container-help");
-	  $(".main_container_clearfix").removeClass("main_container_clearfix-help");
+	  $("#main-padded-container").removeClass("main-container-slide-left");
           $('.sidebar-nav-container-header').removeClass("sidebar-nav-container-header-active");
           $('.help-header-link').css("color", "#666");
       } else {
           $('#right-slide-left').addClass("right-slide-left-animate");
 	//   $(".preview-container").addClass("preview-container-help");
-	  $(".main_container_clearfix").addClass("main_container_clearfix-help");
+	  $("#main-padded-container").addClass("main-container-slide-left");
           $('.sidebar-nav-container-header').addClass("sidebar-nav-container-header-active");
           $('.help-header-link').css("color", "white");
       };
