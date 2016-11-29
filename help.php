@@ -16,7 +16,7 @@
 
 					<!-- Collection Card -->
 
-					<a href="javascript:void(0)"  id="getting-started-trigger">
+					<a href="javascript:void(0)">
 						<div id="getting-started-trigger" class="help-menu-container">
 							<div class="menu-clearfix">
 								<div class="menu-font-container">
