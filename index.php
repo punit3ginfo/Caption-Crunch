@@ -189,11 +189,6 @@ function getproducts(){
 			$('#captions-link').removeClass('sidebar-link-active');
 			$('#settings-link').removeClass('sidebar-link-active');
 			$('#all-products').addClass('menu-container-active');
-			// Help
-			$(".help-clearfix").empty();
-			$(".help-clearfix").load("help/share.php");
-
-
 		}
 	});
 }
@@ -217,10 +212,6 @@ function getnewproducts(){
 			$('#captions-link').removeClass('sidebar-link-active');
 			$('#settings-link').removeClass('sidebar-link-active');
 			$('#new-products').addClass('menu-container-active');
-			// Help
-			$(".help-clearfix").empty();
-			$(".help-clearfix").load("help/share.php");
-
 		}
 	});
 }
@@ -255,9 +246,6 @@ function getcaptions(){
 			$('#captions-link').addClass('sidebar-link-active');
 			$('#share-link').removeClass('sidebar-link-active');
 			$('#settings-link').removeClass('sidebar-link-active');
-			// Help
-			$(".help-clearfix").empty();
-			$(".help-clearfix").load("help/captions.php");
 		}
 	});
 }
@@ -276,9 +264,6 @@ function getsettings(){
 			$('#settings-link').addClass('sidebar-link-active');
 			$('#share-link').removeClass('sidebar-link-active');
 			$('#captions-link').removeClass('sidebar-link-active');
-			// Help
-			$(".help-clearfix").empty();
-			$(".help-clearfix").load("help/settings.php");
 		}
 	});
 }
