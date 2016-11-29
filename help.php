@@ -63,7 +63,7 @@
 		</div>
 		<div class="content-overflow-container">
 			<div  class="help-content-overflow">
-
+					<?php include 'help-content.php' ?>
 			</div>
 		</div>
 	</div>
