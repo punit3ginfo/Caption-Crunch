@@ -147,7 +147,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 
 <!-- /.Page Container -->
 
-<div id="help-menu-container">
+<div id="right-slide-left">
 	<?php include 'help.php';?>
 </div>
 
