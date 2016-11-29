@@ -22,10 +22,9 @@ $(document).ready(function(){
 
   // Help Containers
 
-  function gettingStartedTirgger() {
+$('#getting-started-trigger').click(function() {
   	$('.help-menu-container').addClass('menu-container-active');
   }
-
 });
 
 
