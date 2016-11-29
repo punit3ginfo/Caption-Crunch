@@ -16,78 +16,20 @@
 
 					<!-- Collection Card -->
 
-					<a href="javascript:void(0)" onclick="">
-						<div class="menu-container menu-container-active">
+					<a href="javascript:void(0)"  onclick="gettingStartedTirgger();">
+						<div class="menu-containerhelp">
 							<div class="menu-clearfix">
 								<div class="menu-font-container">
-									<span class="menu-font">Topic Title</span>
+									<span class="menu-font">Getting Started</span>
 								</div>
 								<div class="menu-icon-clearfix">
 									<div class="menu-icon-container">
-										<span class="menu-icon">ICON</span>
+										<span class="menu-icon"><i id="getting-started-icon" class="fa fa-chevron-down" aria-hidden="true"></i></span>
 									</div>
 								</div>
 							</div>
 						</div>
 					</a>
-					<a href="javascript:void(0)" onclick="">
-						<div class="menu-container">
-							<div class="menu-clearfix">
-								<div class="menu-font-container">
-									<span class="menu-font">Topic Title</span>
-								</div>
-								<div class="menu-icon-clearfix">
-									<div class="menu-icon-container">
-										<span class="menu-icon">ICON</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a href="javascript:void(0)" onclick="">
-						<div class="menu-container">
-							<div class="menu-clearfix">
-								<div class="menu-font-container">
-									<span class="menu-font">Topic Title</span>
-								</div>
-								<div class="menu-icon-clearfix">
-									<div class="menu-icon-container">
-										<span class="menu-icon">ICON</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a href="javascript:void(0)" onclick="">
-						<div class="menu-container">
-							<div class="menu-clearfix">
-								<div class="menu-font-container">
-									<span class="menu-font">Topic Title</span>
-								</div>
-								<div class="menu-icon-clearfix">
-									<div class="menu-icon-container">
-										<span class="menu-icon">ICON</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a href="javascript:void(0)" onclick="">
-						<div class="menu-container">
-							<div class="menu-clearfix">
-								<div class="menu-font-container">
-									<span class="menu-font">Topic Title</span>
-								</div>
-								<div class="menu-icon-clearfix">
-									<div class="menu-icon-container">
-										<span class="menu-icon">ICON</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</a>
-					
-
 
 					<!-- Collection Card -->
 

@@ -23,6 +23,11 @@ $(document).ready(function(){
 
 // Help Containers
 
+function gettingStartedTirgger() {
+	$('.menu-container-help')addClass('menu-container-active');
+}
+
+
 // Preview JS
 
 // Step 1 | Choose Account - Show / Hide
