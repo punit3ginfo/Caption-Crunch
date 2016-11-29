@@ -7,13 +7,13 @@ $secondary-color : #555555;
 $tiny-text       : 12px;
 $small-text      : 14px;
 // Medium Text (Responsive)
-$medium-text     : 1.26vw;
-$medium-s-text     : 1.26vw;
-$medium-t-text     : 1.26vw;
+// $medium-text     : 1.26vw;
+// $medium-s-text     : 1.26vw;
+// $medium-t-text     : 1.26vw;
 
-// $medium-text     : 16px;
-// $medium-s-text     : 14px;
-// $medium-t-text     : 12px;
+$medium-text     : 16px;
+$medium-s-text     : 14px;
+$medium-t-text     : 12px;
 // Large Text (Responsive)
 $large-text      : 18px;
 
@@ -2734,4 +2734,23 @@ ul#pagination-list li {
 	background-image  : url("./images/menu-background.png");
 	background-repeat : no-repeat;
 	background-size   : 100%;
+}
+
+.help-menu-icon {
+	display        : block;
+
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	letter-spacing: 0.82px;
+
+	color          : #FFFFFF;
+
+	font-family    : 'Ubuntu',
+	sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size      : 14px;
+	font-weight: 700;
+	line-height    : 40px;
 }

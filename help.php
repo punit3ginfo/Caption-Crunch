@@ -24,7 +24,7 @@
 								</div>
 								<div class="menu-icon-clearfix">
 									<div class="menu-icon-container">
-										<span class="menu-icon"><i id="getting-started-icon" class="fa fa-star" aria-hidden="true"></i></span>
+										<span class="help-menu-icon"><i id="getting-started-icon" class="fa fa-star" aria-hidden="true"></i></span>
 									</div>
 								</div>
 							</div>
@@ -39,7 +39,7 @@
 								</div>
 								<div class="menu-icon-clearfix">
 									<div class="menu-icon-container">
-										<span class="menu-icon"><i id="getting-started-icon" class="fa fa-bullhorn" aria-hidden="true"></i></span>
+										<span class="help-menu-icon"><i id="getting-started-icon" class="fa fa-bullhorn" aria-hidden="true"></i></span>
 									</div>
 								</div>
 							</div>

@@ -59,7 +59,7 @@ body {
   letter-spacing: 0.82px;
   color: #555555;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.26vw;
+  font-size: 16px;
   font-weight: 500;
   line-height: 18px; }
 
@@ -111,15 +111,15 @@ body {
   border-radius: 23px;
   background: white;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.26vw;
+  font-size: 16px;
   font-weight: bold; }
 
 @media (max-width: 1000px) {
   .btn {
-    font-size: 1.26vw; } }
+    font-size: 12px; } }
 @media (max-width: 835px) {
   .btn {
-    font-size: 1.26vw; } }
+    font-size: 12px; } }
 /* Green Button */
 .green-button {
   position: relative;
@@ -271,7 +271,7 @@ body {
   border: 1px solid #555555;
   background: white;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.26vw; }
+  font-size: 16px; }
 
 .close-button:hover {
   color: white;
@@ -635,7 +635,7 @@ body {
   border: 1px solid #555555;
   background: white;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.26vw; }
+  font-size: 16px; }
 
 .prev-step-button:hover {
   color: white;
@@ -651,7 +651,7 @@ body {
   border: 1px solid #7ab55c;
   background: white;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.26vw; }
+  font-size: 16px; }
 
 .next-step-button:hover {
   color: white;
@@ -667,7 +667,7 @@ body {
   border: 1px solid #7ab55c;
   background: white;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.26vw; }
+  font-size: 16px; }
 
 .step1-next-step-button:hover {
   color: white;
@@ -689,7 +689,7 @@ body {
   text-transform: uppercase;
   color: #555555;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.26vw;
+  font-size: 16px;
   line-height: 30px; }
 
 .account-bubble-clearfix {
@@ -752,7 +752,7 @@ body {
   color: black;
   border: 0px;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.26vw;
+  font-size: 16px;
   line-height: 25px; }
 
 .addimage-clearfix {
@@ -1082,7 +1082,7 @@ body {
   text-transform: uppercase;
   color: #555555;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.26vw;
+  font-size: 16px;
   font-weight: 600;
   line-height: 40px; }
 
@@ -1386,7 +1386,7 @@ body {
   border: 1px solid #555555;
   background: white;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.26vw; }
+  font-size: 16px; }
 
 .preview-button:hover {
   cursor: pointer;
@@ -1424,7 +1424,7 @@ body {
   border: 1px solid #555555;
   background: white;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.26vw; }
+  font-size: 16px; }
 
 .reset-button:hover {
   cursor: pointer;
@@ -1582,7 +1582,7 @@ a:hover {
   text-transform: uppercase;
   color: #555555;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.26vw;
+  font-size: 16px;
   line-height: 80px; }
 
 .caption-title-text-box {
@@ -1594,7 +1594,7 @@ a:hover {
   border: 0px;
   border-bottom: 1px solid #7ab55c;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.26vw; }
+  font-size: 16px; }
 
 .caption-title-text-box::-webkit-input-placeholder {
   letter-spacing: 0.82px;
@@ -1602,7 +1602,7 @@ a:hover {
   color: #555555;
   color: #555555;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.26vw; }
+  font-size: 16px; }
 
 .save-button {
   padding: 11px 20px; }
@@ -1760,7 +1760,7 @@ select:focus {
   border: 1px solid #7ab55c;
   background: white none repeat scroll 0 0;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.26vw; }
+  font-size: 16px; }
 
 .caption-select-container {
   display: flex;
@@ -1975,5 +1975,19 @@ ul#pagination-list li {
   background-image: url("./images/menu-background.png");
   background-repeat: no-repeat;
   background-size: 100%; }
+
+.help-menu-icon {
+  display: block;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  letter-spacing: 0.82px;
+  color: #FFFFFF;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 40px; }
 
 /*# sourceMappingURL=style.css.map */
