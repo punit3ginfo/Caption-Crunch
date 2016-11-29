@@ -16,7 +16,7 @@
             </div>
  </div>
 
- <div class="product-card-clearfix">
+ <div class="product-card-clearfix" id="buffer-auth">
              <div class="product-card-container">
 
                        <div class="connect-image-container">
