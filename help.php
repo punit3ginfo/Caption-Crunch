@@ -17,7 +17,7 @@
 					<!-- Collection Card -->
 
 					<a href="javascript:void(0)" onclick="">
-						<div class="menu-container" id="new-products">
+						<div class="menu-container menu-container-active">
 							<div class="menu-clearfix">
 								<div class="menu-font-container">
 									<span class="menu-font">Topic Title</span>
@@ -30,6 +30,64 @@
 							</div>
 						</div>
 					</a>
+					<a href="javascript:void(0)" onclick="">
+						<div class="menu-container">
+							<div class="menu-clearfix">
+								<div class="menu-font-container">
+									<span class="menu-font">Topic Title</span>
+								</div>
+								<div class="menu-icon-clearfix">
+									<div class="menu-icon-container">
+										<span class="menu-icon">ICON</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="javascript:void(0)" onclick="">
+						<div class="menu-container">
+							<div class="menu-clearfix">
+								<div class="menu-font-container">
+									<span class="menu-font">Topic Title</span>
+								</div>
+								<div class="menu-icon-clearfix">
+									<div class="menu-icon-container">
+										<span class="menu-icon">ICON</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="javascript:void(0)" onclick="">
+						<div class="menu-container">
+							<div class="menu-clearfix">
+								<div class="menu-font-container">
+									<span class="menu-font">Topic Title</span>
+								</div>
+								<div class="menu-icon-clearfix">
+									<div class="menu-icon-container">
+										<span class="menu-icon">ICON</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="javascript:void(0)" onclick="">
+						<div class="menu-container">
+							<div class="menu-clearfix">
+								<div class="menu-font-container">
+									<span class="menu-font">Topic Title</span>
+								</div>
+								<div class="menu-icon-clearfix">
+									<div class="menu-icon-container">
+										<span class="menu-icon">ICON</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+					
+
 
 					<!-- Collection Card -->
 
