@@ -426,7 +426,7 @@ body {
   min-height: 550px;
   padding-top: 63px;
   transition-timing-function: ease;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   animation-direction: normal;
   background: #FFFFFF;
   box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.07); }
@@ -948,7 +948,7 @@ body {
   width: 100%;
   height: 100%;
   transition-timing-function: ease;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   animation-direction: normal; }
 
 .main-container-slide-left {
