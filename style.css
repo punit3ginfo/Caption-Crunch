@@ -1964,4 +1964,10 @@ ul#pagination-list li {
   background: rgba(255, 255, 255, 0.8) url("images/loading13.gif") no-repeat scroll center center/60px auto;
   background-color: white; }
 
+.help-menu-container {
+  width: calc(100% - 29px);
+  height: 75px;
+  padding: 15px;
+  padding-bottom: 0px; }
+
 /*# sourceMappingURL=style.css.map */

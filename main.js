@@ -23,7 +23,7 @@ $(document).ready(function(){
   // Help Containers
 
   function gettingStartedTirgger() {
-  	$('.menu-container-help').addClass('menu-container-active');
+  	$('.help-menu-container').addClass('menu-container-active');
   }
 
 });
