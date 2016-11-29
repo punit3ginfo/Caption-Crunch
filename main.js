@@ -19,13 +19,16 @@ $(document).ready(function(){
 	  $("#help-title").html('<i style="font-size: 20px;" class="fa fa-times" aria-hidden="true"></i><br> Back');
       };
   });
+
+  // Help Containers
+
+  function gettingStartedTirgger() {
+  	$('.menu-container-help').addClass('menu-container-active');
+  }
+
 });
 
-// Help Containers
 
-function gettingStartedTirgger() {
-	$('.menu-container-help')addClass('menu-container-active');
-}
 
 
 // Preview JS
