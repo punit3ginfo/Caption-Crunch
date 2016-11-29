@@ -61,8 +61,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.26vw;
   font-weight: 500;
-  line-height: 18px;
-  text-transform: uppercase; }
+  line-height: 18px; }
 
 @media (max-width: 1000px) {
   .cc-text-medium {
@@ -80,8 +79,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 18px;
   font-weight: 700;
-  line-height: 20px;
-  text-transform: uppercase; }
+  line-height: 20px; }
 
 /* ------------------- Columns -------------------- */
 .three-col-container {
@@ -1639,8 +1637,7 @@ a:hover {
 .form-text-header {
   width: 100%;
   cursor: pointer;
-  line-height: 46px;
-  text-transform: uppercase; }
+  line-height: 46px; }
 
 .form-3col-clearfix {
   display: flex;

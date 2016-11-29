@@ -104,7 +104,6 @@ body {
 	font-size      : $medium-text;
 	font-weight    : 500;
 	line-height    : 18px;
-	text-transform: uppercase;
 }
 
 @media (max-width: 1000px) {
@@ -133,7 +132,6 @@ body {
 	font-size      : $large-text;
 	font-weight    : 700;
 	line-height    : 20px;
-	text-transform: uppercase;
 }
 
 /* ------------------- Columns -------------------- */
@@ -2274,7 +2272,6 @@ a:hover {
 	cursor      : pointer;
 
 	line-height : 46px;
-	text-transform: uppercase;
 }
 
 .form-3col-clearfix {
