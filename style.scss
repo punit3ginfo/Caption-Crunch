@@ -704,7 +704,6 @@ body {
 	animation-direction        : normal;
 
 	background                 : transparent;
-	box-shadow                 : 1px -2px 17px 0px rgba(0,0,0,0.34);
 }
 
 .right-slide-left-animate {
@@ -1301,7 +1300,7 @@ body {
 }
 
 .main_container_clearfix-help {
-	width            : calc(100vw - 330px);
+	left: -100vw;
 }
 
 #main-padded-container {

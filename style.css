@@ -496,8 +496,7 @@ body {
   transition-timing-function: ease;
   transition-duration: 0.3s;
   animation-direction: normal;
-  background: transparent;
-  box-shadow: 1px -2px 17px 0px rgba(0, 0, 0, 0.34); }
+  background: transparent; }
 
 .right-slide-left-animate {
   right: 0px !important; }
@@ -937,7 +936,7 @@ body {
   background-size: 100% 100%; }
 
 .main_container_clearfix-help {
-  width: calc(100vw - 330px); }
+  left: -100vw; }
 
 #main-padded-container {
   width: 100%;
