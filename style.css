@@ -1184,6 +1184,16 @@ body {
   padding-right: 5px;
   padding-left: 10px; }
 
+.help-content-overflow {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(100vh - 173px);
+  padding-right: 5px;
+  padding-left: 10px; }
+
 .product-card-clearfix {
   position: relative;
   top: 0px;

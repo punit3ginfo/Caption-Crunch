@@ -40,10 +40,10 @@
 		<div class="content-header">
 
 			<div class="content-header-3col-container">
-				<div class="content-header-container" id="share-back">
-					<a href="javascript:void(0)" onclick="getsharehistory()" class="sidebar-span share-history-button">
-						<i class="fa fa-history" aria-hidden="true"></i>
-						History
+				<div class="content-header-container">
+					<a href="javascript:void(0)" onclick="" class="sidebar-span">
+						<i class="fa fa-ticket" aria-hidden="true"></i>
+						Support
 					</a>
 				</div>
 			</div>
@@ -57,26 +57,12 @@
 
 			<div class="content-header-3col-container">
 				<div class="content-header-container">
-					<nav aria-label="Page navigation" class="page">
-						<ul class="pagination text-center" id="pagination1"></ul>
-						<ul class="pagination text-center" id="pagination2"></ul>
-					</nav>
-					<!--div class="text-center" id="pagination"></div-->
+
 				</div>
 			</div>
-
-			<!-- <div class="collection_title_header_container">
-						<div class="collection_title_container-active">
-
-						<input class="search-text-box" onKeyDown="if(event.keyCode==13) search(document.getElementById('formValueId').value);" id="formValueId" type="text" name="q_name" placeholder="Search" />
-
-						<i style="position: absolute; right: 10px;  color: #666;" class="fa fa-search" onclick="search(document.getElementById('formValueId').value);"></i>
-
-					</div>
-				</div> -->
 		</div>
 		<div class="content-overflow-container">
-			<div  class="content-overflow">
+			<div  class="help-content-overflow">
 
 			</div>
 		</div>
