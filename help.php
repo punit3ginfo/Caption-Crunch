@@ -24,7 +24,22 @@
 								</div>
 								<div class="menu-icon-clearfix">
 									<div class="menu-icon-container">
-										<span class="menu-icon"><i id="getting-started-icon" class="fa fa-chevron-down" aria-hidden="true"></i></span>
+										<span class="menu-icon"><i id="getting-started-icon" class="fa fa-star" aria-hidden="true"></i></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+
+					<a href="javascript:void(0)" >
+						<div id="#share-started-trigger" class="menu-container">
+							<div class="menu-clearfix">
+								<div class="menu-font-container">
+									<span class="menu-font">Share</span>
+								</div>
+								<div class="menu-icon-clearfix">
+									<div class="menu-icon-container">
+										<span class="menu-icon"><i id="getting-started-icon" class="fa fa-bullhorn" aria-hidden="true"></i></span>
 									</div>
 								</div>
 							</div>
@@ -63,7 +78,7 @@
 		</div>
 		<div class="content-overflow-container">
 			<div  class="help-content-overflow">
-					<?php include 'help-content.php' ?>
+				<?php include 'help-content.php' ?>
 			</div>
 		</div>
 	</div>
