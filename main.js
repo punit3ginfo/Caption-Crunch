@@ -19,19 +19,6 @@ $(document).ready(function(){
 	  $("#help-title").html('<i style="font-size: 20px;" class="fa fa-times" aria-hidden="true"></i><br> Back');
       };
   });
-
-  // Help Containers
-
-        $('#getting-started-trigger').click(function() {
-  	      $('#getting-started-trigger').addClass('menu-container-active');
- //  	      $('#share-trigger').removeClass('menu-container-active');
-        });
-
-        // $('#share-trigger').click(function() {
- //  	      $('#share-trigger').addClass('menu-container-active');
- //  	      $('#getting-started-trigger').removeClass('menu-container-active');
-        // });
-
 });
 
 // Preview JS

@@ -16,3 +16,23 @@
 	</div>
 
 </form>
+
+
+  // Help Containers
+<script>
+$(document).ready(function(){
+  // Help Containers
+
+        $('#getting-started-trigger').click(function() {
+  	      $('#getting-started-trigger').addClass('menu-container-active');
+ //  	      $('#share-trigger').removeClass('menu-container-active');
+        });
+
+        // $('#share-trigger').click(function() {
+ //  	      $('#share-trigger').addClass('menu-container-active');
+ //  	      $('#getting-started-trigger').removeClass('menu-container-active');
+        // });
+
+});
+
+</script>
