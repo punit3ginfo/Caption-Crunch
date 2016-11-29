@@ -32,7 +32,7 @@
 					</a>
 
 					<a href="javascript:void(0)" >
-						<div id="#share-started-trigger" class="menu-container">
+						<div id="#share-trigger" class="menu-container">
 							<div class="menu-clearfix">
 								<div class="menu-font-container">
 									<span class="menu-font">Share</span>
