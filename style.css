@@ -496,7 +496,7 @@ body {
   transition-timing-function: ease;
   transition-duration: 0.3s;
   animation-direction: normal;
-  background: transparent; }
+  background-color: transparent; }
 
 .right-slide-left-animate {
   right: 0px !important; }
