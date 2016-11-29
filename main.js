@@ -5,13 +5,13 @@ $(document).ready(function(){
           $('#right-slide-left').removeClass("right-slide-left-animate");
 	  $(".sidebar_nav").removeClass("main-container-slide-left");
 	  $(".preview-container").removeClass("main-container-slide-left");
-	  $(".main_container_clearfix").css("left","-100vw");
+	  $(".main_container_clearfix").removeClass("slide-left");
           $('.sidebar-nav-container-header').removeClass("sidebar-nav-container-header-active");
           $('.help-header-link').css("color", "#666");
       } else {
           $('#right-slide-left').addClass("right-slide-left-animate");
 	  $(".preview-container").addClass("main-container-slide-left");
-	  $(".main_container_clearfix")..css("left","-100vw");
+	  $(".main_container_clearfix").addClass("slide-left");
 	  $(".sidebar_nav").addClass("main-container-slide-left");
           $('.sidebar-nav-container-header').addClass("sidebar-nav-container-header-active");
           $('.help-header-link').css("color", "white");
