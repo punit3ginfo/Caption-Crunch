@@ -1984,4 +1984,13 @@ ul#pagination-list li {
   transition: all 0.5s ease-in-out;
   color: #FFFFFF; }
 
+#getting-started-icon {
+  transform: rotate(0deg);
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
+  animation-direction: normal; }
+
+.arrow-rotate {
+  transform: rotate(180deg) !important; }
+
 /*# sourceMappingURL=style.css.map */
