@@ -1990,6 +1990,12 @@ ul#pagination-list li {
   transition-duration: 0.5s;
   animation-direction: normal; }
 
+#share-icon {
+  transform: rotate(0deg);
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
+  animation-direction: normal; }
+
 .arrow-rotate {
   transform: rotate(180deg) !important; }
 
