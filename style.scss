@@ -2801,6 +2801,18 @@ ul#pagination-list li {
 	line-height: 40px;
 }
 
+.sub-menu-active {
+	background-color: #555;
+
+		.sub-menu-text {
+			color: white;
+		}
+
+		.sub-menu-arrow {
+			color: white;
+		}
+}
+
 .sub-menu:hover {
 	background-color: #555;
 

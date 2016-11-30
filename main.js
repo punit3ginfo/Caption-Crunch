@@ -56,6 +56,37 @@ $(document).ready(function(){
 		}
 	});
 
+	//  Getting Started Sub Menu
+
+	$('#gs-first-trigger').click( function() {
+			$('#gs-second-trigger').removeClass('sub-menu-active');
+			$('#gs-third-trigger').removeClass('sub-menu-active');
+			$('#gs-fourth-trigger').removeClass('sub-menu-active');
+			$('#gs-first-trigger').addClass('sub-menu-active');
+	});
+
+	$('#gs-second-trigger').click( function() {
+			$('#gs-first-trigger').removeClass('sub-menu-active');
+			$('#gs-third-trigger').removeClass('sub-menu-active');
+			$('#gs-fourth-trigger').removeClass('sub-menu-active');
+			$('#gs-second-trigger').addClass('sub-menu-active');
+	});
+
+	$('#gs-thrid-trigger').click( function() {
+			$('#gs-first-trigger').removeClass('sub-menu-active');
+			$('#gs-second-trigger').removeClass('sub-menu-active');
+			$('#gs-fourth-trigger').removeClass('sub-menu-active');
+			$('#gs-third-trigger').addClass('sub-menu-active');
+	});
+
+	$('#gs-fourth-trigger').click( function() {
+			$('#gs-first-trigger').removeClass('sub-menu-active');
+			$('#gs-second-trigger').removeClass('sub-menu-active');
+			$('#gs-thrid-trigger').removeClass('sub-menu-active');
+			$('#gs-fourth-trigger').addClass('sub-menu-active');
+	});
+
+
 	//  Share Section
 
           $('#share-trigger').click( function() {

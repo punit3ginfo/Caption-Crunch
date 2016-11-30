@@ -32,28 +32,28 @@
 
 					<div id="getting-started-dropdown">
 						<a href="javascript:void(0)">
-							<div class="sub-menu">
+							<div class="sub-menu" id="gs-first-trigger">
 								<div class="sub-menu-clearfix">
 									<span class="sub-menu-text">Help Topic<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 								</div>
 							</div>
 						</a>
 						<a href="javascript:void(0)">
-							<div class="sub-menu">
+							<div class="sub-menu" id="gs-second-trigger">
 								<div class="sub-menu-clearfix">
 									<span class="sub-menu-text">Help Topic<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 								</div>
 							</div>
 						</a>
 						<a href="javascript:void(0)">
-							<div class="sub-menu">
+							<div class="sub-menu" id="gs-third-trigger">
 								<div class="sub-menu-clearfix">
 									<span class="sub-menu-text">Help Topic<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 								</div>
 							</div>
 						</a>
 						<a href="javascript:void(0)">
-							<div class="sub-menu">
+							<div class="sub-menu" id="gs-fourth-trigger">
 								<div class="sub-menu-clearfix">
 									<span class="sub-menu-text">Help Topic<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 								</div>
@@ -78,7 +78,7 @@
 
 						<div id="share-dropdown">
 							<a href="javascript:void(0)">
-								<div class="sub-menu">
+								<div class="sub-menu" id="">
 									<div class="sub-menu-clearfix">
 										<span class="sub-menu-text">Help Topic<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 									</div>

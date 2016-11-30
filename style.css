@@ -2030,6 +2030,13 @@ ul#pagination-list li {
   float: right;
   line-height: 40px; }
 
+.sub-menu-active {
+  background-color: #555; }
+  .sub-menu-active .sub-menu-text {
+    color: white; }
+  .sub-menu-active .sub-menu-arrow {
+    color: white; }
+
 .sub-menu:hover {
   background-color: #555; }
   .sub-menu:hover .sub-menu-text {
