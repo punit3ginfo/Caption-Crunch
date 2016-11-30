@@ -38,8 +38,15 @@ function menuReset() {
 		$('#share-help-arrow-icon').removeClass('arrow-rotate');
 }
 
+function helpContentReset() {
+	// Getting Started Reset
+	$('#getting-started-dropdown').slideUp("slow");
+	// $('#share-content-dropdown').slideUp("slow");
+}
+
 	 $('#getting-started-trigger').click( function() {
 		 menuReset();
+		 helpContentReset();
 		// Show / Hide Getting Started Dropdown
 		 $('#getting-started-dropdown').slideDown("slow");
 		 // Show / Hide Getting Started Container
@@ -57,6 +64,7 @@ function menuReset() {
 
           $('#share-trigger').click( function() {
 		  menuReset();
+		  helpContentReset();
  		// Show / Hide Getting Started Dropdown
  		 $('#share-dropdown').slideDown("slow");
  		 // Show / Hide Getting Started Container
