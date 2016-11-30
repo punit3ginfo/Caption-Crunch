@@ -58,7 +58,7 @@ $(document).ready(function(){
 
 	//  Getting Started Sub Menu
 
-	$('#gs-first-trigger').click( function() {
+	$('.sub-menu:nth-child(1)').click( function() {
 			$('#gs-second-trigger').removeClass('sub-menu-active');
 			$('#gs-third-trigger').removeClass('sub-menu-active');
 			$('#gs-fourth-trigger').removeClass('sub-menu-active');
