@@ -55,6 +55,7 @@ $(document).ready(function(){
 			$('#share-trigger').removeClass('menu-container-active');
 			$('#share-icon').removeClass('fa-chevron-down');
 			$('#share-icon').removeClass('arrow-rotate');
+			$('#share-dropdown').slideToggle("slow");
 
 	      	} else {
 
@@ -64,6 +65,7 @@ $(document).ready(function(){
 			$('#share-trigger').addClass('menu-container-active');
 			$('#share-icon').addClass('fa-chevron-down');
 			$('#share-icon').addClass('arrow-rotate');
+			$('#share-dropdown').slideToggle("slow");
 
 		}
           });

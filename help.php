@@ -49,6 +49,10 @@
 						</div>
 					</a>
 
+					<div id="share-dropdown">
+
+					</div>
+
 					<!-- Collection Card -->
 
 				</div>
