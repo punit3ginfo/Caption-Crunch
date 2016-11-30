@@ -2051,4 +2051,14 @@ ul#pagination-list li {
 .hide {
   display: none !important; }
 
+.form-help {
+  padding: 15px;
+  width: calc(100% - 34px);
+  border: 2px solid transparent;
+  margin-top: 15px; }
+
+.form-active {
+  border: 2px solid #7ab55c !important;
+  border-radius: 23px; }
+
 /*# sourceMappingURL=style.css.map */
