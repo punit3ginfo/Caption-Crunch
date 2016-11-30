@@ -72,7 +72,7 @@ $(document).ready(function(){
 			$('#gs-second-trigger').addClass('sub-menu-active');
 	});
 
-	$('#gs-thrid-trigger').click( function() {
+	$('#gs-third-trigger').click( function() {
 			$('#gs-first-trigger').removeClass('sub-menu-active');
 			$('#gs-second-trigger').removeClass('sub-menu-active');
 			$('#gs-fourth-trigger').removeClass('sub-menu-active');
