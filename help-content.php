@@ -7,7 +7,7 @@
 				<i id="account-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 46px;"></i>
 			</span>
 		</div>
-		<div class="account-show-hide" style="border: 1px solid #eee;">
+		<div class="account-show-hide" style="border-top: 1px solid #eee;">
 			<div class="form-clearfix form-help">
 				<span class="cc-text-medium">Help Topics</span><br /><br />
 				<span class="cc-text-small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
