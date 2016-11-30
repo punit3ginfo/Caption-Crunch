@@ -2016,7 +2016,8 @@ ul#pagination-list li {
 .sub-menu:hover {
   background-color: #555; }
   .sub-menu:hover .sub-menu-text {
-    color: white; }
+    color: white;
+    transition: all 0s ease-in-out; }
   .sub-menu:hover .sub-menu-arrow {
     color: white; }
 
