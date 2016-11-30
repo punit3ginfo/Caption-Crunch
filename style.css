@@ -2013,6 +2013,9 @@ ul#pagination-list li {
   padding-right: 25px;
   padding-left: 25px; }
 
+.sub-menu:hover {
+  background-color: #555; }
+
 .sub-menu-clearfix {
   width: 100%;
   height: 40px;
