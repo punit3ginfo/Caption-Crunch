@@ -2015,6 +2015,10 @@ ul#pagination-list li {
 
 .sub-menu:hover {
   background-color: #555; }
+  .sub-menu:hover .sub-menu-text {
+    color: white; }
+  .sub-menu:hover .sub-menu-arrow {
+    color: white; }
 
 .sub-menu-clearfix {
   width: 100%;
