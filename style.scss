@@ -1411,7 +1411,8 @@ body {
 }
 
 .menu-overflow {
-	overflow : scroll;
+	overflow-y : scroll;
+	overflow-x: hidden;
 
 	width    : 100%;
 	height   : calc(100% - 160px);
