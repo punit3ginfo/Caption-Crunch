@@ -31,7 +31,26 @@
 					</a>
 
 					<div id="getting-started-dropdown">
-
+						<div class="sub-menu">
+							<div class="sub-menu-clearfix">
+								<span class="cc-text-medium">Help Topic</span>
+							</div>
+						</div>
+						<div class="sub-menu">
+							<div class="sub-menu-clearfix">
+								<span class="cc-text-medium">Help Topic</span>
+							</div>
+						</div>
+						<div class="sub-menu">
+							<div class="sub-menu-clearfix">
+								<span class="cc-text-medium">Help Topic</span>
+							</div>
+						</div>
+						<div class="sub-menu">
+							<div class="sub-menu-clearfix">
+								<span class="cc-text-medium">Help Topic</span>
+							</div>
+						</div>
 					</div>
 
 					<a href="javascript:void(0)">
@@ -50,7 +69,21 @@
 					</a>
 
 					<div id="share-dropdown">
-
+						<div class="sub-menu">
+							<div class="sub-menu-clearfix">
+								<span class="cc-text-medium">Help Topic</span>
+							</div>
+						</div>
+						<div class="sub-menu">
+							<div class="sub-menu-clearfix">
+								<span class="cc-text-medium">Help Topic</span>
+							</div>
+						</div>
+						<div class="sub-menu">
+							<div class="sub-menu-clearfix">
+								<span class="cc-text-medium">Help Topic</span>
+							</div>
+						</div>
 					</div>
 
 					<!-- Collection Card -->
