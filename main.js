@@ -20,9 +20,13 @@ $(document).ready(function(){
       };
   });
 
+//  Getting Started Section
+
 	 $('#getting-started-trigger').click( function() {
 	  	$('#getting-started-trigger').addClass('menu-container-active');
 	    	$('#share-trigger').removeClass('menu-container-active');
+		$('#getting-started-icon').removeClass('fa-star');
+		$('#getting-started-icon').addClass('fa-chevron-down');
 	});
 
 	$('#getting-started-trigger').hover( function () {
@@ -30,9 +34,13 @@ $(document).ready(function(){
 		$('#getting-started-icon').toggleClass('fa-chevron-down');
 	});
 
-          $('#share-trigger').click(function() {
+	//  Share Section
+
+          $('#share-trigger').click( function() {
     	      $('#share-trigger').addClass('menu-container-active');
     	      $('#getting-started-trigger').removeClass('menu-container-active');
+	      $('#share-icon').addClass('fa-chevron-down');
+	      $('#share-icon').removeClass('fa-bullhorn');
           });
 
 	  $('#share-trigger').hover( function () {
