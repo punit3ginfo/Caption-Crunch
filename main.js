@@ -63,6 +63,11 @@ $(document).ready(function(){
 			$('#gs-third-trigger').removeClass('sub-menu-active');
 			$('#gs-fourth-trigger').removeClass('sub-menu-active');
 			$('#gs-first-trigger').addClass('sub-menu-active');
+
+			$('#gs-five-trigger').removeClass('sub-menu-active');
+			$('#gs-six-trigger').removeClass('sub-menu-active');
+			$('#gs-seven-trigger').removeClass('sub-menu-active');
+			$('#gs-eight-trigger').removeClass('sub-menu-active');
 	});
 
 	$('#gs-second-trigger').click( function() {
@@ -70,6 +75,11 @@ $(document).ready(function(){
 			$('#gs-third-trigger').removeClass('sub-menu-active');
 			$('#gs-fourth-trigger').removeClass('sub-menu-active');
 			$('#gs-second-trigger').addClass('sub-menu-active');
+
+			$('#gs-five-trigger').removeClass('sub-menu-active');
+			$('#gs-six-trigger').removeClass('sub-menu-active');
+			$('#gs-seven-trigger').removeClass('sub-menu-active');
+			$('#gs-eight-trigger').removeClass('sub-menu-active');
 	});
 
 	$('#gs-third-trigger').click( function() {
@@ -77,6 +87,11 @@ $(document).ready(function(){
 			$('#gs-second-trigger').removeClass('sub-menu-active');
 			$('#gs-fourth-trigger').removeClass('sub-menu-active');
 			$('#gs-third-trigger').addClass('sub-menu-active');
+
+			$('#gs-five-trigger').removeClass('sub-menu-active');
+			$('#gs-six-trigger').removeClass('sub-menu-active');
+			$('#gs-seven-trigger').removeClass('sub-menu-active');
+			$('#gs-eight-trigger').removeClass('sub-menu-active');
 	});
 
 	$('#gs-fourth-trigger').click( function() {
@@ -84,6 +99,59 @@ $(document).ready(function(){
 			$('#gs-second-trigger').removeClass('sub-menu-active');
 			$('#gs-third-trigger').removeClass('sub-menu-active');
 			$('#gs-fourth-trigger').addClass('sub-menu-active');
+
+			$('#gs-five-trigger').removeClass('sub-menu-active');
+			$('#gs-six-trigger').removeClass('sub-menu-active');
+			$('#gs-seven-trigger').removeClass('sub-menu-active');
+			$('#gs-eight-trigger').removeClass('sub-menu-active');
+	});
+
+	$('#gs-five-trigger').click( function() {
+			$('#gs-first-trigger').removeClass('sub-menu-active');
+			$('#gs-second-trigger').removeClass('sub-menu-active');
+			$('#gs-third-trigger').removeClass('sub-menu-active');
+			$('#gs-fourth-trigger').removeClass('sub-menu-active');
+
+			$('#gs-five-trigger').addClass('sub-menu-active');
+			$('#gs-six-trigger').removeClass('sub-menu-active');
+			$('#gs-seven-trigger').removeClass('sub-menu-active');
+			$('#gs-eight-trigger').removeClass('sub-menu-active');
+	});
+
+	$('#gs-six-trigger').click( function() {
+			$('#gs-first-trigger').removeClass('sub-menu-active');
+			$('#gs-third-trigger').removeClass('sub-menu-active');
+			$('#gs-fourth-trigger').removeClass('sub-menu-active');
+			$('#gs-second-trigger').addClass('sub-menu-active');
+
+			$('#gs-five-trigger').removeClass('sub-menu-active');
+			$('#gs-six-trigger').addClass('sub-menu-active');
+			$('#gs-seven-trigger').removeClass('sub-menu-active');
+			$('#gs-eight-trigger').removeClass('sub-menu-active');
+	});
+
+	$('#gs-seven-trigger').click( function() {
+			$('#gs-first-trigger').removeClass('sub-menu-active');
+			$('#gs-second-trigger').removeClass('sub-menu-active');
+			$('#gs-fourth-trigger').removeClass('sub-menu-active');
+			$('#gs-third-trigger').addClass('sub-menu-active');
+
+			$('#gs-five-trigger').removeClass('sub-menu-active');
+			$('#gs-six-trigger').removeClass('sub-menu-active');
+			$('#gs-seven-trigger').addClass('sub-menu-active');
+			$('#gs-eight-trigger').removeClass('sub-menu-active');
+	});
+
+	$('#gs-eight-trigger').click( function() {
+			$('#gs-first-trigger').removeClass('sub-menu-active');
+			$('#gs-second-trigger').removeClass('sub-menu-active');
+			$('#gs-third-trigger').removeClass('sub-menu-active');
+			$('#gs-fourth-trigger').addClass('sub-menu-active');
+
+			$('#gs-five-trigger').removeClass('sub-menu-active');
+			$('#gs-six-trigger').removeClass('sub-menu-active');
+			$('#gs-seven-trigger').removeClass('sub-menu-active');
+			$('#gs-eight-trigger').addClass('sub-menu-active');
 	});
 
 
