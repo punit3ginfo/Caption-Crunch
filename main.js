@@ -86,11 +86,25 @@ $(document).ready(function(){
 			$('#gs-help-container > .form-help:nth-child(1)').addClass('form-active');
 	});
 
+	$('#gs-help-container > .form-help:nth-child(1)').click( function() {
+			SubMenuReset();
+			$('#getting-started-dropdown > .sub-menu:nth-child(1)').toggleClass('sub-menu-active');
+			helpSectionReset();
+			$('#gs-help-container > .form-help:nth-child(1)').toggleClass('form-active');
+	});
+
 	$('#getting-started-dropdown > .sub-menu:nth-child(2)').click( function() {
 			SubMenuReset();
 			$('#getting-started-dropdown > .sub-menu:nth-child(2)').addClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(2)').addClass('form-active');
+	});
+
+	$('#gs-help-container > .form-help:nth-child(2)').click( function() {
+			SubMenuReset();
+			$('#getting-started-dropdown > .sub-menu:nth-child(2)').toggleClass('sub-menu-active');
+			helpSectionReset();
+			$('#gs-help-container > .form-help:nth-child(2)').toggleClass('form-active');
 	});
 
 	$('#getting-started-dropdown > .sub-menu:nth-child(3)').click( function() {
