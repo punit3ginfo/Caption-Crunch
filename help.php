@@ -34,28 +34,28 @@
 						<a href="javascript:void(0)">
 							<div class="sub-menu">
 								<div class="sub-menu-clearfix">
-									<span class="cc-text-medium sub-menu-text">Help Topic</span>
+									<span class="cc-text-medium sub-menu-text">Help Topic<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 								</div>
 							</div>
 						</a>
 						<a href="javascript:void(0)">
 							<div class="sub-menu">
 								<div class="sub-menu-clearfix">
-									<span class="cc-text-medium sub-menu-text">Help Topic</span>
+									<span class="cc-text-medium sub-menu-text">Help Topic<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 								</div>
 							</div>
 						</a>
 						<a href="javascript:void(0)">
 							<div class="sub-menu">
 								<div class="sub-menu-clearfix">
-									<span class="cc-text-medium sub-menu-text">Help Topic</span>
+									<span class="cc-text-medium sub-menu-text">Help Topic<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 								</div>
 							</div>
 						</a>
 						<a href="javascript:void(0)">
 							<div class="sub-menu">
 								<div class="sub-menu-clearfix">
-									<span class="cc-text-medium sub-menu-text">Help Topic</span>
+									<span class="cc-text-medium sub-menu-text">Help Topic<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 								</div>
 							</div>
 						</a>
@@ -80,21 +80,21 @@
 							<a href="javascript:void(0)">
 								<div class="sub-menu">
 									<div class="sub-menu-clearfix">
-										<span class="cc-text-medium sub-menu-text">Help Topic</span>
+										<span class="cc-text-medium sub-menu-text">Help Topic<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 									</div>
 								</div>
 							</a>
 							<a href="javascript:void(0)">
 								<div class="sub-menu">
 									<div class="sub-menu-clearfix">
-										<span class="cc-text-medium sub-menu-text">Help Topic</span>
+										<span class="cc-text-medium sub-menu-text">Help Topic<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 									</div>
 								</div>
 							</a>
 							<a href="javascript:void(0)">
 								<div class="sub-menu">
 									<div class="sub-menu-clearfix">
-										<span class="cc-text-medium sub-menu-text">Help Topic</span>
+										<span class="cc-text-medium sub-menu-text">Help Topic<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 									</div>
 								</div>
 							</a>

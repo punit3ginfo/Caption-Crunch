@@ -2008,9 +2008,9 @@ ul#pagination-list li {
   display: none; }
 
 .sub-menu {
-  width: calc(100% - 45px);
+  width: calc(100% - 50px);
   height: 40px;
-  padding-right: 15px;
+  padding-right: 25px;
   padding-left: 25px; }
 
 .sub-menu-clearfix {
@@ -2019,6 +2019,10 @@ ul#pagination-list li {
   border-bottom: 1px solid #F2F3F3; }
 
 .sub-menu-text {
+  line-height: 40px; }
+
+.sub-menu-arrow {
+  float: right;
   line-height: 40px; }
 
 .arrow-rotate {
