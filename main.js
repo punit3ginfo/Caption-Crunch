@@ -39,8 +39,8 @@ $(document).ready(function(){
           $('#share-trigger').click( function() {
     	      $('#share-trigger').addClass('menu-container-active');
     	      $('#getting-started-trigger').removeClass('menu-container-active');
-	      $('#share-icon').addClass('fa-chevron-down');
 	      $('#share-icon').removeClass('fa-bullhorn');
+	      $('#share-icon').addClass('fa-chevron-down');
           });
 
 	  $('#share-trigger').hover( function () {
