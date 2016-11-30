@@ -2017,7 +2017,7 @@ ul#pagination-list li {
   background-color: #555; }
   .sub-menu:hover .sub-menu-text {
     color: white;
-    transition: all 0s ease-in-out; }
+    transition: all 0.0s ease-in-out; }
   .sub-menu:hover .sub-menu-arrow {
     color: white; }
 
