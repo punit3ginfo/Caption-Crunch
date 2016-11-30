@@ -26,8 +26,8 @@ $(document).ready(function(){
 	});
 
 	$('#getting-started-trigger').hover( function () {
-		$('getting-started-icon').toggleClass('fa-star');
-		$('getting-started-icon').toggleClass('fa-chevron-down');
+		$('#getting-started-icon').toggleClass('fa-star');
+		$('#getting-started-icon').toggleClass('fa-chevron-down');
 	});
 
           $('#share-trigger').click(function() {
