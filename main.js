@@ -30,7 +30,9 @@ $(document).ready(function(){
 		  	$('#getting-started-trigger').removeClass('menu-container-active');
 			$('#getting-started-icon').removeClass('fa-chevron-down');
 			$('#getting-started-icon').removeClass('arrow-rotate');
+			
 			$('#getting-started-dropdown').slideToggle("slow");
+			$('#share-dropdown').slideToggle("slow");
 
 		} else {
 
@@ -40,7 +42,9 @@ $(document).ready(function(){
 			$('#getting-started-trigger').addClass('menu-container-active');
 			$('#getting-started-icon').addClass('fa-chevron-down');
 			$('#getting-started-icon').addClass('arrow-rotate');
+
 			$('#getting-started-dropdown').slideToggle("slow");
+			$('#share-dropdown').slideToggle("slow");
 
 		}
 	});
@@ -55,7 +59,9 @@ $(document).ready(function(){
 			$('#share-trigger').removeClass('menu-container-active');
 			$('#share-icon').removeClass('fa-chevron-down');
 			$('#share-icon').removeClass('arrow-rotate');
+
 			$('#share-dropdown').slideToggle("slow");
+			$('#getting-started-dropdown').slideToggle("slow");
 
 	      	} else {
 
@@ -65,7 +71,9 @@ $(document).ready(function(){
 			$('#share-trigger').addClass('menu-container-active');
 			$('#share-icon').addClass('fa-chevron-down');
 			$('#share-icon').addClass('arrow-rotate');
+
 			$('#share-dropdown').slideToggle("slow");
+			$('#getting-started-dropdown').slideToggle("slow");
 
 		}
           });
