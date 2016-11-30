@@ -22,46 +22,31 @@ $(document).ready(function(){
 
 //  Getting Started Section
 
+function menuReset() {
+	// Getting Started Reset
+		$('#getting-started-dropdown').slideUp("slow");
+		$('#getting-started-icon').addClass('fa-star');
+		$('#getting-started-trigger').removeClass('menu-container-active');
+		$('#getting-started-icon').removeClass('fa-chevron-down');
+		$('#getting-started-icon').removeClass('arrow-rotate');
+	// Share Reset
+		$('#share-dropdown').slideUp("slow");
+		$('#share-icon').addClass('fa-bullhorn');
+		$('#share-trigger').removeClass('menu-container-active');
+		$('#share-icon').removeClass('fa-chevron-down');
+		$('#share-icon').removeClass('arrow-rotate');
+}
+
 	 $('#getting-started-trigger').click( function() {
-		 if ($("#getting-started-icon").hasClass('arrow-rotate')) {
-
-			$('#getting-started-icon').addClass('fa-star');
-
-		  	$('#getting-started-trigger').removeClass('menu-container-active');
-			$('#getting-started-icon').removeClass('fa-chevron-down');
-			$('#getting-started-icon').removeClass('arrow-rotate');
-
-			$('#getting-started-dropdown').slideUp("slow");
-			// Show / Hide Getting StartedContainer
-			$('#gs-help-container').slideToggle("slow");
-			// Rotate Arrow 180 Degree / Click
-			$('#gs-help-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-
-		} else {
-
-			$('#getting-started-icon').removeClass('fa-star');
-			$('#share-icon').removeClass('menu-container-active');
-
-			$('#getting-started-trigger').addClass('menu-container-active');
-			$('#getting-started-icon').addClass('fa-chevron-down');
-			$('#getting-started-icon').addClass('arrow-rotate');
-
-			$('#getting-started-dropdown').slideDown("slow");
-
-		// Share Reset
-			$('#share-dropdown').slideUp("slow");
-
-			$('#share-icon').addClass('fa-bullhorn');
-
-			$('#share-trigger').removeClass('menu-container-active');
-			$('#share-icon').removeClass('fa-chevron-down');
-			$('#share-icon').removeClass('arrow-rotate');
-			// Show / Hide Getting StartedContainer
-			$('#gs-help-container').slideToggle("slow");
-			// Rotate Arrow 180 Degree / Click
-			$('#gs-help-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-
-		}
+		 menuReset()
+		// Show / Hide Getting Started Dropdown
+		 $('#getting-started-dropdown').slideDown("slow");
+		 // Show / Hide Getting Started Container
+		$('#gs-help-container').slideDown("slow");
+		$('#getting-started-icon').removeClass('fa-star');
+		$('#getting-started-trigger').addClass('menu-container-active');
+		$('#getting-started-icon').addClass('fa-chevron-down');
+		$('#getting-started-icon').addClass('arrow-rotate');
 	});
 
 	//  Getting Started Sub Menu
