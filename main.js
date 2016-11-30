@@ -37,7 +37,7 @@ function menuReset() {
 }
 
 	 $('#getting-started-trigger').click( function() {
-		 menuReset()
+		 menuReset();
 		// Show / Hide Getting Started Dropdown
 		 $('#getting-started-dropdown').slideDown("slow");
 		 // Show / Hide Getting Started Container
@@ -52,7 +52,7 @@ function menuReset() {
 
 	//  Getting Started  Help Content Trigger
 		$('#gs-help-trigger').click(function() {
-			menuReset()
+			menuReset();
 			// Show / Hide Getting StartedContainer
 			$('#gs-help-container').slideToggle("slow");
 			// Rotate Arrow 180 Degree / Click
@@ -70,7 +70,7 @@ function menuReset() {
 	//  Share Section Menu Trigger
 
           $('#share-trigger').click( function() {
-		  menuReset()
+		  menuReset();
  		// Show / Hide Getting Started Dropdown
  		 $('#share-dropdown').slideDown("slow");
  		 // Show / Hide Getting Started Container
@@ -85,7 +85,7 @@ function menuReset() {
 
 	  //  Share  Help Content Trigger
 		  $('#share-help-trigger').click(function() {
-			  menuReset()
+			  menuReset();
 			  // Show / Hide Getting StartedContainer
 			  $('#share-help-container').slideToggle("slow");
 			  // Rotate Arrow 180 Degree / Click
