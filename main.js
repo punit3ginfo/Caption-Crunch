@@ -59,15 +59,14 @@ $(document).ready(function(){
 	//  Getting Started Sub Menu
 
 	$('.sub-menu:nth-child(1)').click( function() {
-			$('#gs-second-trigger').removeClass('sub-menu-active');
-			$('#gs-third-trigger').removeClass('sub-menu-active');
-			$('#gs-fourth-trigger').removeClass('sub-menu-active');
-			$('#gs-first-trigger').addClass('sub-menu-active');
-
-			$('#gs-five-trigger').removeClass('sub-menu-active');
-			$('#gs-six-trigger').removeClass('sub-menu-active');
-			$('#gs-seven-trigger').removeClass('sub-menu-active');
-			$('#gs-eight-trigger').removeClass('sub-menu-active');
+			$('.sub-menu:nth-child(1)').addClass('sub-menu-active');
+			$('.sub-menu:nth-child(2)').removeClass('sub-menu-active');
+			$('.sub-menu:nth-child(3)').removeClass('sub-menu-active');
+			$('.sub-menu:nth-child(4)').removeClass('sub-menu-active');
+			$('.sub-menu:nth-child(5)').removeClass('sub-menu-active');
+			$('.sub-menu:nth-child(6)').removeClass('sub-menu-active');
+			$('.sub-menu:nth-child(7)').removeClass('sub-menu-active');
+			$('.sub-menu:nth-child(8)').removeClass('sub-menu-active');
 	});
 
 	$('#gs-second-trigger').click( function() {
