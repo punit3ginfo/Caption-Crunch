@@ -114,11 +114,25 @@ $(document).ready(function(){
 			$('#gs-help-container > .form-help:nth-child(3)').addClass('form-active');
 	});
 
+	$('#gs-help-container > .form-help:nth-child(3)').click( function() {
+			SubMenuReset();
+			$('#getting-started-dropdown > .sub-menu:nth-child(3)').toggleClass('sub-menu-active');
+			helpSectionReset();
+			$('#gs-help-container > .form-help:nth-child(3)').toggleClass('form-active');
+	});
+
 	$('#getting-started-dropdown > .sub-menu:nth-child(4)').click( function() {
 			SubMenuReset();
 			$('#getting-started-dropdown > .sub-menu:nth-child(4)').addClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(4)').addClass('form-active');
+	});
+
+	$('#gs-help-container > .form-help:nth-child(4)').click( function() {
+			SubMenuReset();
+			$('#getting-started-dropdown > .sub-menu:nth-child(4)').toggleClass('sub-menu-active');
+			helpSectionReset();
+			$('#gs-help-container > .form-help:nth-child(4)').toggleClass('form-active');
 	});
 
 	$('#getting-started-dropdown > .sub-menu:nth-child(5)').click( function() {
@@ -128,11 +142,25 @@ $(document).ready(function(){
 			$('#gs-help-container > .form-help:nth-child(5)').addClass('form-active');
 	});
 
+	$('#gs-help-container > .form-help:nth-child(5)').click( function() {
+			SubMenuReset();
+			$('#getting-started-dropdown > .sub-menu:nth-child(5)').toggleClass('sub-menu-active');
+			helpSectionReset();
+			$('#gs-help-container > .form-help:nth-child(5)').toggleClass('form-active');
+	});
+
 	$('#getting-started-dropdown > .sub-menu:nth-child(6)').click( function() {
 			SubMenuReset();
 			$('#getting-started-dropdown > .sub-menu:nth-child(6)').addClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(6)').addClass('form-active');
+	});
+
+	$('#gs-help-container > .form-help:nth-child(6)').click( function() {
+			SubMenuReset();
+			$('#getting-started-dropdown > .sub-menu:nth-child(6)').toggleClass('sub-menu-active');
+			helpSectionReset();
+			$('#gs-help-container > .form-help:nth-child(6)').toggleClass('form-active');
 	});
 
 	$('#getting-started-dropdown > .sub-menu:nth-child(7)').click( function() {
@@ -142,11 +170,25 @@ $(document).ready(function(){
 			$('#gs-help-container > .form-help:nth-child(7)').addClass('form-active');
 	});
 
+	$('#gs-help-container > .form-help:nth-child(7)').click( function() {
+			SubMenuReset();
+			$('#getting-started-dropdown > .sub-menu:nth-child(7)').toggleClass('sub-menu-active');
+			helpSectionReset();
+			$('#gs-help-container > .form-help:nth-child(7)').toggleClass('form-active');
+	});
+
 	$('#getting-started-dropdown > .sub-menu:nth-child(8)').click( function() {
 			SubMenuReset();
 			$('#getting-started-dropdown > .sub-menu:nth-child(8)').addClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(8)').addClass('form-active');
+	});
+
+	$('#gs-help-container > .form-help:nth-child(8)').click( function() {
+			SubMenuReset();
+			$('#getting-started-dropdown > .sub-menu:nth-child(8)').toggleClass('sub-menu-active');
+			helpSectionReset();
+			$('#gs-help-container > .form-help:nth-child(8)').toggleClass('form-active');
 	});
 
 	//  Getting Started  Help Content
