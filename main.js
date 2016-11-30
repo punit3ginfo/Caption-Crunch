@@ -58,7 +58,7 @@ $(document).ready(function(){
 
 	//  Getting Started Sub Menu
 
-	$('#getting-started-dropdown').click( function() {
+	$('#getting-started-trigger').click( function() {
 			$('.sub-menu:nth-child(1)').removeClass('sub-menu-active');
 			$('.sub-menu:nth-child(2)').removeClass('sub-menu-active');
 			$('.sub-menu:nth-child(3)').removeClass('sub-menu-active');
@@ -69,7 +69,7 @@ $(document).ready(function(){
 			$('.sub-menu:nth-child(8)').removeClass('sub-menu-active');
 	});
 
-	$('.sub-menu:nth-child(1)').click( function() {
+	$('#getting-started-dropdown > .sub-menu:nth-child(1)').click( function() {
 			$('.sub-menu:nth-child(1)').addClass('sub-menu-active');
 			$('.sub-menu:nth-child(2)').removeClass('sub-menu-active');
 			$('.sub-menu:nth-child(3)').removeClass('sub-menu-active');
