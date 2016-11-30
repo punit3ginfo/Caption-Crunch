@@ -32,6 +32,10 @@ $(document).ready(function(){
 			$('#getting-started-icon').removeClass('arrow-rotate');
 
 			$('#getting-started-dropdown').slideUp("slow");
+			// Show / Hide Getting StartedContainer
+			$('#gs-help-container').slideToggle("slow");
+			// Rotate Arrow 180 Degree / Click
+			$('#gs-help-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
 
 		} else {
 
@@ -52,12 +56,16 @@ $(document).ready(function(){
 			$('#share-trigger').removeClass('menu-container-active');
 			$('#share-icon').removeClass('fa-chevron-down');
 			$('#share-icon').removeClass('arrow-rotate');
+			// Show / Hide Getting StartedContainer
+			$('#gs-help-container').slideToggle("slow");
+			// Rotate Arrow 180 Degree / Click
+			$('#gs-help-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
 
 		}
 	});
 
 	$('#gs-help-trigger').click(function() {
-		// Show / Hide Conditions Container
+		// Show / Hide Getting StartedContainer
 		$('#gs-help-container').slideToggle("slow");
 		// Rotate Arrow 180 Degree / Click
 		$('#gs-help-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
