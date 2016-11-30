@@ -74,7 +74,7 @@ $(document).ready(function(){
 		$('.form-help').removeClass('form-active');
 	}
 
-	$('#getting-started-trigger').click( function() {
+	$('#getting-started-trigger, #gs-help-trigger').click( function() {
 			SubMenuReset();
 			helpSectionReset();
 	});
