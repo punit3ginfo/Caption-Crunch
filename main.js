@@ -38,15 +38,8 @@ function menuReset() {
 		$('#share-help-arrow-icon').removeClass('arrow-rotate');
 }
 
-function helpContentReset() {
-	// Getting Started Reset
-	$('#gs-help-container').slideUp("slow");
-	// $('#share-content-dropdown').slideUp("slow");
-}
-
 	 $('#getting-started-trigger').click( function() {
 		 menuReset();
-		 helpContentReset();
 		// Show / Hide Getting Started Dropdown
 		 $('#getting-started-dropdown').slideDown("slow");
 		 // Show / Hide Getting Started Container
@@ -64,7 +57,6 @@ function helpContentReset() {
 
           $('#share-trigger').click( function() {
 		  menuReset();
-		  helpContentReset();
  		// Show / Hide Getting Started Dropdown
  		 $('#share-dropdown').slideDown("slow");
  		 // Show / Hide Getting Started Container
@@ -76,6 +68,7 @@ function helpContentReset() {
 		$('#share-help-arrow-icon').addClass('arrow-rotate');
 		//  Dropdown Reset
 		$('#getting-started-dropdown').slideUp("slow");
+		$('#gs-help-container').slideUp("slow");
           });
 
 	//  Getting Started Sub Menu
