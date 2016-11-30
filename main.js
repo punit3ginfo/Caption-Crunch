@@ -157,6 +157,14 @@ $(document).ready(function(){
 			$('#getting-started-dropdown > .sub-menu:nth-child(7)').removeClass('sub-menu-active');
 	});
 
+	$('#gs-help-trigger').click(function() {
+		// Show / Hide Conditions Container
+		$('#gs-help-container').slideToggle("slow");
+		// Rotate Arrow 180 Degree / Click
+		$('#gs-help-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+	});
+
+
 
 	//  Share Section
 
