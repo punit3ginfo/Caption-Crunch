@@ -48,7 +48,7 @@ function menuReset() {
 		$('#getting-started-trigger').addClass('menu-container-active');
 		$('#getting-started-icon').addClass('fa-chevron-down');
 		$('#getting-started-icon').addClass('arrow-rotate');
-		$('#gs-help-arrow-icon').removeClass('arrow-rotate');
+		$('#gs-help-arrow-icon').addClass('arrow-rotate');
 		//  Dropdown Reset
 		$('#share-dropdown').slideUp("slow");
 	});

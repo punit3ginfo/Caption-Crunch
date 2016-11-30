@@ -2,7 +2,7 @@
 	<!--  Step 1  -->
 	<div class="form-container">
 		<div class="form-clearfix" style="border-top: 0px;">
-			<span class="cc-text-medium form-text-header" id="gs-help-trigger">
+			<span class="cc-text-medium form-text-header">
 				Getting Started Guide
 				<i id="gs-help-arrow-icon" class="fa fa-chevron-down icon-rotate" aria-hidden="true" style="float: right; line-height: 46px;"></i>
 			</span>
