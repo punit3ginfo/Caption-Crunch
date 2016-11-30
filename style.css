@@ -2011,7 +2011,8 @@ ul#pagination-list li {
   width: calc(100% - 50px);
   height: 40px;
   padding-right: 25px;
-  padding-left: 25px; }
+  padding-left: 25px;
+  cursor: pointer; }
 
 .sub-menu-clearfix {
   width: 100%;
@@ -2033,16 +2034,16 @@ ul#pagination-list li {
 .sub-menu-active {
   background-color: #555; }
   .sub-menu-active .sub-menu-text {
-    color: white; }
+    color: #7ab55c; }
   .sub-menu-active .sub-menu-arrow {
-    color: white; }
+    color: #7ab55c; }
 
 .sub-menu:hover {
   background-color: #555; }
   .sub-menu:hover .sub-menu-text {
-    color: white; }
+    color: #7ab55c; }
   .sub-menu:hover .sub-menu-arrow {
-    color: white; }
+    color: #7ab55c; }
 
 .arrow-rotate {
   transform: rotate(180deg) !important; }
