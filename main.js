@@ -34,6 +34,11 @@ $(document).ready(function(){
     	      $('#share-trigger').addClass('menu-container-active');
     	      $('#getting-started-trigger').removeClass('menu-container-active');
           });
+
+	  $('#share-trigger').hover( function () {
+  		$('#share-icon').toggleClass('fa-bullhorn');
+  		$('#share-icon').toggleClass('fa-chevron-down');
+  	});
 });
 
 // Preview JS
