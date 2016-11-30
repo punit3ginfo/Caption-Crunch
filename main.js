@@ -170,7 +170,7 @@ $(document).ready(function(){
 			// Show / Hide Getting StartedContainer
 			$('#gs-help-container').slideToggle("slow");
 			// Rotate Arrow 180 Degree / Click
-			$('#gs-help-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+			$('#gs-help-arrow-icon').toggleClass('arrow-rotate');
 
 			$('#getting-started-icon').toggleClass('fa-star');
 			$('#share-icon').removeClass('menu-container-active');

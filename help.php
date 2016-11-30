@@ -23,7 +23,7 @@
 								</div>
 								<div class="menu-icon-clearfix">
 									<div class="menu-icon-container">
-										<span class="help-menu-icon"><i id="getting-started-icon" class="fa fa-star" style="line-height: 40px;" aria-hidden="true"></i></span>
+										<span class="help-menu-icon"><i id="getting-started-icon" class="fa fa-star icon-rotate" style="line-height: 40px;" aria-hidden="true"></i></span>
 									</div>
 								</div>
 							</div>
@@ -81,7 +81,7 @@
 								</div>
 								<div class="menu-icon-clearfix">
 									<div class="menu-icon-container">
-										<spa class="help-menu-icon"><i id="share-icon" class="fa fa-bullhorn" style="line-height: 40px;" aria-hidden="true"></i></span>
+										<spa class="help-menu-icon"><i id="share-icon" class="fa fa-bullhorn icon-rotate" style="line-height: 40px;" aria-hidden="true"></i></span>
 										</div>
 									</div>
 								</div>

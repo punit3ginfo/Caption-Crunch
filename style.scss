@@ -2748,13 +2748,6 @@ ul#pagination-list li {
 	color          : #FFFFFF;
 }
 
-#getting-started-icon {
-    transform: rotate(0deg);
-    transition-timing-function: ease;
-    transition-duration: 0.5s;
-    animation-direction: normal;
-}
-
 #getting-started-dropdown {
 	width: 100%;
 	height: auto;
@@ -2824,6 +2817,13 @@ ul#pagination-list li {
 		.sub-menu-arrow {
 			color: white;
 		}
+}
+
+.icon-rotate {
+	transform: rotate(0deg);
+        transition-timing-function: ease;
+        transition-duration: 0.5s;
+        animation-direction: normal;
 }
 
 .arrow-rotate {
