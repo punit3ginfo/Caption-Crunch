@@ -43,7 +43,15 @@ $(document).ready(function(){
 			$('#getting-started-icon').addClass('arrow-rotate');
 
 			$('#getting-started-dropdown').slideDown("slow");
+
+		// Share Reset
 			$('#share-dropdown').slideUp("slow");
+
+			$('#share-icon').addClass('fa-bullhorn');
+
+			$('#share-trigger').removeClass('menu-container-active');
+			$('#share-icon').removeClass('fa-chevron-down');
+			$('#share-icon').removeClass('arrow-rotate');
 
 		}
 	});
@@ -71,7 +79,15 @@ $(document).ready(function(){
 			$('#share-icon').addClass('arrow-rotate');
 
 			$('#share-dropdown').slideDown("slow");
+
+			// Getting Started Reset
 			$('#getting-started-dropdown').slideUp("slow");
+
+			$('#getting-started-icon').addClass('fa-star');
+
+		  	$('#getting-started-trigger').removeClass('menu-container-active');
+			$('#getting-started-icon').removeClass('fa-chevron-down');
+			$('#getting-started-icon').removeClass('arrow-rotate');
 
 		}
           });
