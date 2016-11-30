@@ -31,63 +31,46 @@
 					</a>
 
 					<div id="getting-started-dropdown">
-						<a href="javascript:void(0)">
-							<div class="sub-menu" id="gs-first-trigger">
-								<div class="sub-menu-clearfix">
-									<span class="sub-menu-text">Help Topic 1<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
-								</div>
+						<div class="sub-menu" id="gs-first-trigger">
+							<div class="sub-menu-clearfix">
+								<span class="sub-menu-text">Help Topic 1<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 							</div>
-						</a>
-						<a href="javascript:void(0)">
-							<div class="sub-menu" id="gs-second-trigger">
-								<div class="sub-menu-clearfix">
-									<span class="sub-menu-text">Help Topic 2<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
-								</div>
+						</div>
+						<div class="sub-menu" id="gs-second-trigger">
+							<div class="sub-menu-clearfix">
+								<span class="sub-menu-text">Help Topic 2<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 							</div>
-						</a>
-						<a href="javascript:void(0)">
-							<div class="sub-menu" id="gs-third-trigger">
-								<div class="sub-menu-clearfix">
-									<span class="sub-menu-text">Help Topic 3<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
-								</div>
+						</div>
+						<div class="sub-menu" id="gs-third-trigger">
+							<div class="sub-menu-clearfix">
+								<span class="sub-menu-text">Help Topic 3<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 							</div>
-						</a>
-						<a href="javascript:void(0)">
-							<div class="sub-menu" id="gs-fourth-trigger">
-								<div class="sub-menu-clearfix">
-									<span class="sub-menu-text">Help Topic 4<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
-								</div>
+						</div>
+						<div class="sub-menu" id="gs-fourth-trigger">
+							<div class="sub-menu-clearfix">
+								<span class="sub-menu-text">Help Topic 4<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 							</div>
-						</a>
-						<a href="javascript:void(0)">
-							<div class="sub-menu" id="gs-five-trigger">
-								<div class="sub-menu-clearfix">
-									<span class="sub-menu-text">Help Topic 5<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
-								</div>
+						</div>
+						<div class="sub-menu" id="gs-five-trigger">
+							<div class="sub-menu-clearfix">
+								<span class="sub-menu-text">Help Topic 5<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 							</div>
-						</a>
-						<a href="javascript:void(0)">
-							<div class="sub-menu" id="gs-six-trigger">
-								<div class="sub-menu-clearfix">
-									<span class="sub-menu-text">Help Topic 6<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
-								</div>
+						</div>
+						<div class="sub-menu" id="gs-six-trigger">
+							<div class="sub-menu-clearfix">
+								<span class="sub-menu-text">Help Topic 6<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 							</div>
-						</a>
-						<a href="javascript:void(0)">
-							<div class="sub-menu" id="gs-seven-trigger">
-								<div class="sub-menu-clearfix">
-									<span class="sub-menu-text">Help Topic 7<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
-								</div>
+						</div>
+						<div class="sub-menu" id="gs-seven-trigger">
+							<div class="sub-menu-clearfix">
+								<span class="sub-menu-text">Help Topic 7<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 							</div>
-						</a>
-						<a href="javascript:void(0)">
-							<div class="sub-menu" id="gs-eight-trigger">
-								<div class="sub-menu-clearfix">
-									<span class="sub-menu-text">Help Topic 8<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
-								</div>
+						</div>
+						<div class="sub-menu" id="gs-eight-trigger">
+							<div class="sub-menu-clearfix">
+								<span class="sub-menu-text">Help Topic 8<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 							</div>
-						</a>
-
+						</div>
 					</div>
 
 					<a href="javascript:void(0)">
@@ -106,27 +89,21 @@
 						</a>
 
 						<div id="share-dropdown">
-							<a href="javascript:void(0)">
-								<div class="sub-menu" id="">
-									<div class="sub-menu-clearfix">
-										<span class="sub-menu-text">Help Topic<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
-									</div>
+							<div class="sub-menu" id="">
+								<div class="sub-menu-clearfix">
+									<span class="sub-menu-text">Help Topic<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 								</div>
-							</a>
-							<a href="javascript:void(0)">
-								<div class="sub-menu">
-									<div class="sub-menu-clearfix">
-										<span class="sub-menu-text">Help Topic<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
-									</div>
+							</div>
+							<div class="sub-menu">
+								<div class="sub-menu-clearfix">
+									<span class="sub-menu-text">Help Topic<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 								</div>
-							</a>
-							<a href="javascript:void(0)">
-								<div class="sub-menu">
-									<div class="sub-menu-clearfix">
-										<span class="sub-menu-text">Help Topic<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
-									</div>
+							</div>
+							<div class="sub-menu">
+								<div class="sub-menu-clearfix">
+									<span class="sub-menu-text">Help Topic<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 								</div>
-							</a>
+							</div>
 						</div>
 
 						<!-- Collection Card -->
