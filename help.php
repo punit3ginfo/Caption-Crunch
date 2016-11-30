@@ -33,22 +33,22 @@
 					<div id="getting-started-dropdown">
 						<div class="sub-menu">
 							<div class="sub-menu-clearfix">
-								<span class="cc-text-medium">Help Topic</span>
+								<span class="cc-text-medium sub-menu-text">Help Topic</span>
 							</div>
 						</div>
 						<div class="sub-menu">
 							<div class="sub-menu-clearfix">
-								<span class="cc-text-medium">Help Topic</span>
+								<span class="cc-text-medium sub-menu-tex">Help Topic</span>
 							</div>
 						</div>
 						<div class="sub-menu">
 							<div class="sub-menu-clearfix">
-								<span class="cc-text-medium">Help Topic</span>
+								<span class="cc-text-medium sub-menu-tex">Help Topic</span>
 							</div>
 						</div>
 						<div class="sub-menu">
 							<div class="sub-menu-clearfix">
-								<span class="cc-text-medium">Help Topic</span>
+								<span class="cc-text-medium sub-menu-tex">Help Topic</span>
 							</div>
 						</div>
 					</div>
@@ -71,17 +71,17 @@
 					<div id="share-dropdown">
 						<div class="sub-menu">
 							<div class="sub-menu-clearfix">
-								<span class="cc-text-medium">Help Topic</span>
+								<span class="cc-text-medium sub-menu-tex">Help Topic</span>
 							</div>
 						</div>
 						<div class="sub-menu">
 							<div class="sub-menu-clearfix">
-								<span class="cc-text-medium">Help Topic</span>
+								<span class="cc-text-medium sub-menu-tex">Help Topic</span>
 							</div>
 						</div>
 						<div class="sub-menu">
 							<div class="sub-menu-clearfix">
-								<span class="cc-text-medium">Help Topic</span>
+								<span class="cc-text-medium sub-menu-tex">Help Topic</span>
 							</div>
 						</div>
 					</div>

@@ -2757,7 +2757,7 @@ ul#pagination-list li {
 
 #getting-started-dropdown {
 	width: 100%;
-	height: 300px;
+	height: auto;
 	display: none;
 }
 
@@ -2770,7 +2770,7 @@ ul#pagination-list li {
 
 #share-dropdown {
 	width: 100%;
-	height: 300px;
+	height: auto;
 	background: grey;
 	display: none;
 }
@@ -2786,6 +2786,10 @@ ul#pagination-list li {
 	width: 100%;
 	height: 40px;
 	border-bottom: 1px solid #F2F3F3;
+}
+
+.sub-menu-text {
+	line-height: 40px;
 }
 
 .arrow-rotate {
