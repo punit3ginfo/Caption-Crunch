@@ -31,26 +31,34 @@
 					</a>
 
 					<div id="getting-started-dropdown">
-						<div class="sub-menu">
-							<div class="sub-menu-clearfix">
-								<span class="cc-text-medium sub-menu-text">Help Topic</span>
+						<a href="javascript:void(0)">
+							<div class="sub-menu">
+								<div class="sub-menu-clearfix">
+									<span class="cc-text-medium sub-menu-text">Help Topic</span>
+								</div>
 							</div>
-						</div>
-						<div class="sub-menu">
-							<div class="sub-menu-clearfix">
-								<span class="cc-text-medium sub-menu-text">Help Topic</span>
+						</a>
+						<a href="javascript:void(0)">
+							<div class="sub-menu">
+								<div class="sub-menu-clearfix">
+									<span class="cc-text-medium sub-menu-text">Help Topic</span>
+								</div>
 							</div>
-						</div>
-						<div class="sub-menu">
-							<div class="sub-menu-clearfix">
-								<span class="cc-text-medium sub-menu-text">Help Topic</span>
+						</a>
+						<a href="javascript:void(0)">
+							<div class="sub-menu">
+								<div class="sub-menu-clearfix">
+									<span class="cc-text-medium sub-menu-text">Help Topic</span>
+								</div>
 							</div>
-						</div>
-						<div class="sub-menu">
-							<div class="sub-menu-clearfix">
-								<span class="cc-text-medium sub-menu-text">Help Topic</span>
+						</a>
+						<a href="javascript:void(0)">
+							<div class="sub-menu">
+								<div class="sub-menu-clearfix">
+									<span class="cc-text-medium sub-menu-text">Help Topic</span>
+								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 
 					<a href="javascript:void(0)">
@@ -62,64 +70,70 @@
 								<div class="menu-icon-clearfix">
 									<div class="menu-icon-container">
 										<spa class="help-menu-icon"><i id="share-icon" class="fa fa-bullhorn" style="line-height: 40px;" aria-hidden="true"></i></span>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					</a>
+						</a>
 
-					<div id="share-dropdown">
-						<div class="sub-menu">
-							<div class="sub-menu-clearfix">
-								<span class="cc-text-medium sub-menu-text">Help Topic</span>
-							</div>
+						<div id="share-dropdown">
+							<a href="javascript:void(0)">
+								<div class="sub-menu">
+									<div class="sub-menu-clearfix">
+										<span class="cc-text-medium sub-menu-text">Help Topic</span>
+									</div>
+								</div>
+							</a>
+							<a href="javascript:void(0)">
+								<div class="sub-menu">
+									<div class="sub-menu-clearfix">
+										<span class="cc-text-medium sub-menu-text">Help Topic</span>
+									</div>
+								</div>
+							</a>
+							<a href="javascript:void(0)">
+								<div class="sub-menu">
+									<div class="sub-menu-clearfix">
+										<span class="cc-text-medium sub-menu-text">Help Topic</span>
+									</div>
+								</div>
+							</a>
 						</div>
-						<div class="sub-menu">
-							<div class="sub-menu-clearfix">
-								<span class="cc-text-medium sub-menu-text">Help Topic</span>
-							</div>
-						</div>
-						<div class="sub-menu">
-							<div class="sub-menu-clearfix">
-								<span class="cc-text-medium sub-menu-text">Help Topic</span>
-							</div>
-						</div>
+
+						<!-- Collection Card -->
+
 					</div>
-
-					<!-- Collection Card -->
-
-				</div>
-			</div>
-		</div>
-
-		<div class="content-header">
-
-			<div class="content-header-3col-container">
-				<div class="content-header-container">
-					<a href="javascript:void(0)" onclick="" class="sidebar-span share-history-button">
-						<i class="fa fa-ticket" aria-hidden="true"></i>
-						Support
-					</a>
 				</div>
 			</div>
 
-			<div class="content-header-3col-container">
-				<div class="content-header-container">
-					<input class="search-text-box" onKeyDown="if(event.keyCode==13) search(document.getElementById('formValueId').value);" id="formValueId" type="text" name="q_name" placeholder="Search" />
-					<i class="fa fa-search search-button" onclick="search(document.getElementById('formValueId').value);"></i>
+			<div class="content-header">
+
+				<div class="content-header-3col-container">
+					<div class="content-header-container">
+						<a href="javascript:void(0)" onclick="" class="sidebar-span share-history-button">
+							<i class="fa fa-ticket" aria-hidden="true"></i>
+							Support
+						</a>
+					</div>
+				</div>
+
+				<div class="content-header-3col-container">
+					<div class="content-header-container">
+						<input class="search-text-box" onKeyDown="if(event.keyCode==13) search(document.getElementById('formValueId').value);" id="formValueId" type="text" name="q_name" placeholder="Search" />
+						<i class="fa fa-search search-button" onclick="search(document.getElementById('formValueId').value);"></i>
+					</div>
+				</div>
+
+				<div class="content-header-3col-container">
+					<div class="content-header-container">
+
+					</div>
 				</div>
 			</div>
-
-			<div class="content-header-3col-container">
-				<div class="content-header-container">
-
+			<div class="content-overflow-container">
+				<div  class="help-content-overflow">
+					<?php include 'help-content.php' ?>
 				</div>
-			</div>
-		</div>
-		<div class="content-overflow-container">
-			<div  class="help-content-overflow">
-				<?php include 'help-content.php' ?>
 			</div>
 		</div>
 	</div>
-</div>
