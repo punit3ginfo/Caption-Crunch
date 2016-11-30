@@ -29,11 +29,6 @@ $(document).ready(function(){
 		$('#getting-started-icon').addClass('fa-chevron-down');
 	});
 
-	$('#getting-started-trigger').hover( function () {
-		$('#getting-started-icon').toggleClass('fa-star');
-		$('#getting-started-icon').toggleClass('fa-chevron-down');
-	});
-
 	//  Share Section
 
           $('#share-trigger').click( function() {
@@ -42,11 +37,6 @@ $(document).ready(function(){
 	      $('#share-icon').removeClass('fa-bullhorn');
 	      $('#share-icon').addClass('fa-chevron-down');
           });
-
-	  $('#share-trigger').hover( function () {
-  		$('#share-icon').toggleClass('fa-bullhorn');
-  		$('#share-icon').toggleClass('fa-chevron-down');
-  	});
 });
 
 // Preview JS
