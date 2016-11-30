@@ -2005,11 +2005,10 @@ ul#pagination-list li {
 #share-dropdown {
   width: 100%;
   height: auto;
-  background: grey;
   display: none; }
 
 .sub-menu {
-  width: calc(100% - 30px);
+  width: calc(100% - 45px);
   height: 40px;
   padding-right: 15px;
   padding-left: 25px; }
