@@ -80,88 +80,81 @@ $(document).ready(function(){
 			$('#getting-started-dropdown > .sub-menu:nth-child(8)').removeClass('sub-menu-active');
 	});
 
-	$('#gs-second-trigger').click( function() {
-			$('#gs-first-trigger').removeClass('sub-menu-active');
-			$('#gs-third-trigger').removeClass('sub-menu-active');
-			$('#gs-fourth-trigger').removeClass('sub-menu-active');
-			$('#gs-second-trigger').addClass('sub-menu-active');
-
-			$('#gs-five-trigger').removeClass('sub-menu-active');
-			$('#gs-six-trigger').removeClass('sub-menu-active');
-			$('#gs-seven-trigger').removeClass('sub-menu-active');
-			$('#gs-eight-trigger').removeClass('sub-menu-active');
+	$('#getting-started-dropdown > .sub-menu:nth-child(2)').click( function() {
+			$('#getting-started-dropdown > .sub-menu:nth-child(2)').addClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(1)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(3)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(4)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(5)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(6)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(7)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(8)').removeClass('sub-menu-active');
 	});
 
-	$('#gs-third-trigger').click( function() {
-			$('#gs-first-trigger').removeClass('sub-menu-active');
-			$('#gs-second-trigger').removeClass('sub-menu-active');
-			$('#gs-fourth-trigger').removeClass('sub-menu-active');
-			$('#gs-third-trigger').addClass('sub-menu-active');
-
-			$('#gs-five-trigger').removeClass('sub-menu-active');
-			$('#gs-six-trigger').removeClass('sub-menu-active');
-			$('#gs-seven-trigger').removeClass('sub-menu-active');
-			$('#gs-eight-trigger').removeClass('sub-menu-active');
+	$('#getting-started-dropdown > .sub-menu:nth-child(3)').click( function() {
+			$('#getting-started-dropdown > .sub-menu:nth-child(3)').addClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(1)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(2)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(4)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(5)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(6)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(7)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(8)').removeClass('sub-menu-active');
 	});
 
-	$('#gs-fourth-trigger').click( function() {
-			$('#gs-first-trigger').removeClass('sub-menu-active');
-			$('#gs-second-trigger').removeClass('sub-menu-active');
-			$('#gs-third-trigger').removeClass('sub-menu-active');
-			$('#gs-fourth-trigger').addClass('sub-menu-active');
-
-			$('#gs-five-trigger').removeClass('sub-menu-active');
-			$('#gs-six-trigger').removeClass('sub-menu-active');
-			$('#gs-seven-trigger').removeClass('sub-menu-active');
-			$('#gs-eight-trigger').removeClass('sub-menu-active');
+	$('#getting-started-dropdown > .sub-menu:nth-child(4)').click( function() {
+			$('#getting-started-dropdown > .sub-menu:nth-child(4)').addClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(1)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(2)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(3)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(5)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(6)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(7)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(8)').removeClass('sub-menu-active');
 	});
 
-	$('#gs-five-trigger').click( function() {
-			$('#gs-first-trigger').removeClass('sub-menu-active');
-			$('#gs-second-trigger').removeClass('sub-menu-active');
-			$('#gs-third-trigger').removeClass('sub-menu-active');
-			$('#gs-fourth-trigger').removeClass('sub-menu-active');
-
-			$('#gs-five-trigger').addClass('sub-menu-active');
-			$('#gs-six-trigger').removeClass('sub-menu-active');
-			$('#gs-seven-trigger').removeClass('sub-menu-active');
-			$('#gs-eight-trigger').removeClass('sub-menu-active');
+	$('#getting-started-dropdown > .sub-menu:nth-child(5)').click( function() {
+			$('#getting-started-dropdown > .sub-menu:nth-child(5)').addClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(1)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(2)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(3)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(4)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(6)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(7)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(8)').removeClass('sub-menu-active');
 	});
 
-	$('#gs-six-trigger').click( function() {
-			$('#gs-first-trigger').removeClass('sub-menu-active');
-			$('#gs-third-trigger').removeClass('sub-menu-active');
-			$('#gs-fourth-trigger').removeClass('sub-menu-active');
-			$('#gs-second-trigger').removeClass('sub-menu-active');
-
-			$('#gs-five-trigger').removeClass('sub-menu-active');
-			$('#gs-six-trigger').addClass('sub-menu-active');
-			$('#gs-seven-trigger').removeClass('sub-menu-active');
-			$('#gs-eight-trigger').removeClass('sub-menu-active');
+	$('#getting-started-dropdown > .sub-menu:nth-child(6)').click( function() {
+			$('#getting-started-dropdown > .sub-menu:nth-child(6)').addClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(1)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(2)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(3)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(4)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(5)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(7)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(8)').removeClass('sub-menu-active');
 	});
 
-	$('#gs-seven-trigger').click( function() {
-			$('#gs-first-trigger').removeClass('sub-menu-active');
-			$('#gs-second-trigger').removeClass('sub-menu-active');
-			$('#gs-fourth-trigger').removeClass('sub-menu-active');
-			$('#gs-third-trigger').removeClass('sub-menu-active');
-
-			$('#gs-five-trigger').removeClass('sub-menu-active');
-			$('#gs-six-trigger').removeClass('sub-menu-active');
-			$('#gs-seven-trigger').addClass('sub-menu-active');
-			$('#gs-eight-trigger').removeClass('sub-menu-active');
+	$('#getting-started-dropdown > .sub-menu:nth-child(7)').click( function() {
+			$('#getting-started-dropdown > .sub-menu:nth-child(7)').addClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(1)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(2)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(3)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(4)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(5)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(6)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(8)').removeClass('sub-menu-active');
 	});
 
-	$('#gs-eight-trigger').click( function() {
-			$('#gs-first-trigger').removeClass('sub-menu-active');
-			$('#gs-second-trigger').removeClass('sub-menu-active');
-			$('#gs-third-trigger').removeClass('sub-menu-active');
-			$('#gs-fourth-trigger').removeClass('sub-menu-active');
-
-			$('#gs-five-trigger').removeClass('sub-menu-active');
-			$('#gs-six-trigger').removeClass('sub-menu-active');
-			$('#gs-seven-trigger').removeClass('sub-menu-active');
-			$('#gs-eight-trigger').addClass('sub-menu-active');
+	$('#getting-started-dropdown > .sub-menu:nth-child(8)').click( function() {
+			$('#getting-started-dropdown > .sub-menu:nth-child(8)').addClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(1)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(2)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(3)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(4)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(5)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(6)').removeClass('sub-menu-active');
+			$('#getting-started-dropdown > .sub-menu:nth-child(7)').removeClass('sub-menu-active');
 	});
 
 
