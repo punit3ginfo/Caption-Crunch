@@ -40,7 +40,7 @@ function menuReset() {
 
 function helpContentReset() {
 	// Getting Started Reset
-	$('#getting-started-dropdown').slideUp("slow");
+	$('#gs-help-container').slideUp("slow");
 	// $('#share-content-dropdown').slideUp("slow");
 }
 
