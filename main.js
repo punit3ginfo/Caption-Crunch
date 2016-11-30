@@ -75,7 +75,7 @@ function menuReset() {
  		 $('#share-dropdown').slideDown("slow");
  		 // Show / Hide Getting Started Container
  		$('#share-help-container').slideDown("slow");
- 		$('#share-icon').removeClass('fa-star');
+ 		$('#share-icon').removeClass('fa-bullhorn');
  		$('#share-trigger').addClass('menu-container-active');
  		$('#share-icon').addClass('fa-chevron-down');
  		$('#share-icon').addClass('arrow-rotate');
@@ -86,11 +86,11 @@ function menuReset() {
 	  //  Share  Help Content Trigger
 		  $('#share-help-trigger').click(function() {
 			  menuReset();
-			  // Show / Hide Getting StartedContainer
+			  // Show / Hide Share Container
 			  $('#share-help-container').slideToggle("slow");
 			  // Rotate Arrow 180 Degree / Click
 			  $('#share-help-arrow-icon').toggleClass('arrow-rotate');
-			  $('#share-icon').toggleClass('fa-star');
+			  $('#share-icon').toggleClass('fa-bullhorn');
 			  $('#share-trigger').toggleClass('menu-container-active');
 			  $('#share-icon').toggleClass('fa-chevron-down');
 			  $('#share-icon').toggleClass('arrow-rotate');
