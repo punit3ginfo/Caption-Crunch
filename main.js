@@ -82,7 +82,7 @@ $(document).ready(function(){
 	$('#gs-fourth-trigger').click( function() {
 			$('#gs-first-trigger').removeClass('sub-menu-active');
 			$('#gs-second-trigger').removeClass('sub-menu-active');
-			$('#gs-thrid-trigger').removeClass('sub-menu-active');
+			$('#gs-third-trigger').removeClass('sub-menu-active');
 			$('#gs-fourth-trigger').addClass('sub-menu-active');
 	});
 
