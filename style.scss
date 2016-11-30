@@ -2754,6 +2754,12 @@ ul#pagination-list li {
     animation-direction: normal;
 }
 
+#getting-started-dropdown {
+	width: 100%;
+	height: 300px;
+	background: grey;
+}
+
 #share-icon {
     transform: rotate(0deg);
     transition-timing-function: ease;
@@ -2763,4 +2769,8 @@ ul#pagination-list li {
 
 .arrow-rotate {
     transform: rotate(180deg) !important;
+}
+
+.hide {
+	display: none !important;
 }

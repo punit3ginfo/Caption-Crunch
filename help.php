@@ -30,6 +30,10 @@
 						</div>
 					</a>
 
+					<div id="getting-started-dropdown">
+
+					</div>
+
 					<a href="javascript:void(0)">
 						<div id="share-trigger" class="menu-container">
 							<div class="menu-clearfix">

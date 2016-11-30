@@ -25,21 +25,22 @@ $(document).ready(function(){
 	 $('#getting-started-trigger').click( function() {
 		 if ($("#getting-started-icon").hasClass('arrow-rotate')) {
 
-			 $('#getting-started-icon').addClass('fa-star');
+			$('#getting-started-icon').addClass('fa-star');
 
 		  	$('#getting-started-trigger').removeClass('menu-container-active');
 			$('#getting-started-icon').removeClass('fa-chevron-down');
 			$('#getting-started-icon').removeClass('arrow-rotate');
+			$('#getting-started-dropdown').slideToggle("slow");
 
 		} else {
 
 			$('#getting-started-icon').removeClass('fa-star');
+			$('#share-icon').removeClass('menu-container-active');
 
 			$('#getting-started-trigger').addClass('menu-container-active');
 			$('#getting-started-icon').addClass('fa-chevron-down');
 			$('#getting-started-icon').addClass('arrow-rotate');
-
-			$('#share-icon').removeClass('menu-container-active');
+			$('#getting-started-dropdown').slideToggle("slow");
 
 		}
 	});
@@ -49,21 +50,20 @@ $(document).ready(function(){
           $('#share-trigger').click( function() {
 		  if ($("#share-icon").hasClass('arrow-rotate')) {
 
-			  $('#share-icon').addClass('fa-bullhorn');
+			$('#share-icon').addClass('fa-bullhorn');
 
-	    	      $('#share-trigger').removeClass('menu-container-active');
-		      $('#share-icon').removeClass('fa-chevron-down');
-		      $('#share-icon').removeClass('arrow-rotate');
+			$('#share-trigger').removeClass('menu-container-active');
+			$('#share-icon').removeClass('fa-chevron-down');
+			$('#share-icon').removeClass('arrow-rotate');
 
 	      	} else {
 
 			$('#share-icon').removeClass('fa-bullhorn');
+			$('#getting-started-trigger').removeClass('menu-container-active');
 
-		      $('#share-trigger').addClass('menu-container-active');
-	  	      $('#share-icon').addClass('fa-chevron-down');
-	  	      $('#share-icon').addClass('arrow-rotate');
-
-		      $('#getting-started-trigger').removeClass('menu-container-active');
+			$('#share-trigger').addClass('menu-container-active');
+			$('#share-icon').addClass('fa-chevron-down');
+			$('#share-icon').addClass('arrow-rotate');
 
 		}
           });
