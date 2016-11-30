@@ -193,6 +193,108 @@ $(document).ready(function(){
 
 		}
           });
+
+	  //  Getting Started Sub Menu
+
+  	$('#share-trigger').click( function() {
+  			$('.sub-menu:nth-child(1)').removeClass('sub-menu-active');
+  			$('.sub-menu:nth-child(2)').removeClass('sub-menu-active');
+  			$('.sub-menu:nth-child(3)').removeClass('sub-menu-active');
+  			$('.sub-menu:nth-child(4)').removeClass('sub-menu-active');
+  			$('.sub-menu:nth-child(5)').removeClass('sub-menu-active');
+  			$('.sub-menu:nth-child(6)').removeClass('sub-menu-active');
+  			$('.sub-menu:nth-child(7)').removeClass('sub-menu-active');
+  			$('.sub-menu:nth-child(8)').removeClass('sub-menu-active');
+  	});
+
+  	$('  #share-dropdown > .sub-menu:nth-child(1)').click( function() {
+  			$('#share-dropdown > .sub-menu:nth-child(1)').addClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(2)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(3)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(4)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(5)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(6)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(7)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(8)').removeClass('sub-menu-active');
+  	});
+
+  	$('#share-dropdown > .sub-menu:nth-child(2)').click( function() {
+  			$('#share-dropdown > .sub-menu:nth-child(2)').addClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(1)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(3)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(4)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(5)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(6)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(7)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(8)').removeClass('sub-menu-active');
+  	});
+
+  	$('#share-dropdown > .sub-menu:nth-child(3)').click( function() {
+  			$('#share-dropdown > .sub-menu:nth-child(3)').addClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(1)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(2)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(4)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(5)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(6)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(7)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(8)').removeClass('sub-menu-active');
+  	});
+
+  	$('#share-dropdown > .sub-menu:nth-child(4)').click( function() {
+  			$('#share-dropdown > .sub-menu:nth-child(4)').addClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(1)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(2)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(3)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(5)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(6)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(7)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(8)').removeClass('sub-menu-active');
+  	});
+
+  	$('#share-dropdown > .sub-menu:nth-child(5)').click( function() {
+  			$('#share-dropdown > .sub-menu:nth-child(5)').addClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(1)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(2)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(3)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(4)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(6)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(7)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(8)').removeClass('sub-menu-active');
+  	});
+
+  	$('#share-dropdown > .sub-menu:nth-child(6)').click( function() {
+  			$('#share-dropdown > .sub-menu:nth-child(6)').addClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(1)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(2)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(3)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(4)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(5)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(7)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(8)').removeClass('sub-menu-active');
+  	});
+
+  	$('#share-dropdown > .sub-menu:nth-child(7)').click( function() {
+  			$('#share-dropdown > .sub-menu:nth-child(7)').addClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(1)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(2)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(3)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(4)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(5)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(6)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(8)').removeClass('sub-menu-active');
+  	});
+
+  	$('#share-dropdown > .sub-menu:nth-child(8)').click( function() {
+  			$('#share-dropdown > .sub-menu:nth-child(8)').addClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(1)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(2)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(3)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(4)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(5)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(6)').removeClass('sub-menu-active');
+  			$('#share-dropdown > .sub-menu:nth-child(7)').removeClass('sub-menu-active');
+  	});
+
 });
 
 // Preview JS
