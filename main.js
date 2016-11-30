@@ -84,6 +84,7 @@ $(document).ready(function(){
 	$('#getting-started-dropdown > .sub-menu:nth-child(1)').click( function() {
 			SubMenuReset();
 			$('#getting-started-dropdown > .sub-menu:nth-child(1)').addClass('sub-menu-active');
+			$('#gs-help-container > .form-help:nth-child(1)').addClass('form-active');
 	});
 
 	$('#getting-started-dropdown > .sub-menu:nth-child(2)').click( function() {
