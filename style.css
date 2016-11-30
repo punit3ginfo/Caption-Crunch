@@ -2034,16 +2034,16 @@ ul#pagination-list li {
 .sub-menu-active {
   background-color: #555; }
   .sub-menu-active .sub-menu-text {
-    color: #7ab55c; }
+    color: white; }
   .sub-menu-active .sub-menu-arrow {
-    color: #7ab55c; }
+    color: white; }
 
 .sub-menu:hover {
   background-color: #555; }
   .sub-menu:hover .sub-menu-text {
-    color: #7ab55c; }
+    color: white; }
   .sub-menu:hover .sub-menu-arrow {
-    color: #7ab55c; }
+    color: white; }
 
 .arrow-rotate {
   transform: rotate(180deg) !important; }
