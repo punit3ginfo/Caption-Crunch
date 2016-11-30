@@ -56,6 +56,22 @@ $(document).ready(function(){
 		}
 	});
 
+	$('#gs-help-trigger').click(function() {
+		// Show / Hide Conditions Container
+		$('#gs-help-container').slideToggle("slow");
+		// Rotate Arrow 180 Degree / Click
+		$('#gs-help-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+
+		$('#getting-started-icon').toggleClass('fa-star');
+		$('#share-icon').toggleClass('menu-container-active');
+
+		$('#getting-started-trigger').toggleClass('menu-container-active');
+		$('#getting-started-icon').toggleClass('fa-chevron-down');
+		$('#getting-started-icon').toggleClass('arrow-rotate');
+
+		$('#getting-started-dropdown').slideToggle("slow");
+	});
+
 	//  Getting Started Sub Menu
 
 	$('#getting-started-trigger').click( function() {
@@ -156,15 +172,6 @@ $(document).ready(function(){
 			$('#getting-started-dropdown > .sub-menu:nth-child(6)').removeClass('sub-menu-active');
 			$('#getting-started-dropdown > .sub-menu:nth-child(7)').removeClass('sub-menu-active');
 	});
-
-	$('#gs-help-trigger').click(function() {
-		// Show / Hide Conditions Container
-		$('#gs-help-container').slideToggle("slow");
-		// Rotate Arrow 180 Degree / Click
-		$('#gs-help-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-	});
-
-
 
 	//  Share Section
 
