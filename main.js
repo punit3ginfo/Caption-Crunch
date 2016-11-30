@@ -122,7 +122,7 @@ $(document).ready(function(){
 			$('#gs-first-trigger').removeClass('sub-menu-active');
 			$('#gs-third-trigger').removeClass('sub-menu-active');
 			$('#gs-fourth-trigger').removeClass('sub-menu-active');
-			$('#gs-second-trigger').addClass('sub-menu-active');
+			$('#gs-second-trigger').removeClass('sub-menu-active');
 
 			$('#gs-five-trigger').removeClass('sub-menu-active');
 			$('#gs-six-trigger').addClass('sub-menu-active');
@@ -134,7 +134,7 @@ $(document).ready(function(){
 			$('#gs-first-trigger').removeClass('sub-menu-active');
 			$('#gs-second-trigger').removeClass('sub-menu-active');
 			$('#gs-fourth-trigger').removeClass('sub-menu-active');
-			$('#gs-third-trigger').addClass('sub-menu-active');
+			$('#gs-third-trigger').removeClass('sub-menu-active');
 
 			$('#gs-five-trigger').removeClass('sub-menu-active');
 			$('#gs-six-trigger').removeClass('sub-menu-active');
@@ -146,7 +146,7 @@ $(document).ready(function(){
 			$('#gs-first-trigger').removeClass('sub-menu-active');
 			$('#gs-second-trigger').removeClass('sub-menu-active');
 			$('#gs-third-trigger').removeClass('sub-menu-active');
-			$('#gs-fourth-trigger').addClass('sub-menu-active');
+			$('#gs-fourth-trigger').removeClass('sub-menu-active');
 
 			$('#gs-five-trigger').removeClass('sub-menu-active');
 			$('#gs-six-trigger').removeClass('sub-menu-active');
