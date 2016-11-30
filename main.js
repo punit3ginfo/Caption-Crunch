@@ -29,11 +29,13 @@ function menuReset() {
 		$('#getting-started-trigger').removeClass('menu-container-active');
 		$('#getting-started-icon').removeClass('fa-chevron-down');
 		$('#getting-started-icon').removeClass('arrow-rotate');
+		$('#gs-help-arrow-icon').removeClass('arrow-rotate');
 	// Share Reset
 		$('#share-icon').addClass('fa-bullhorn');
 		$('#share-trigger').removeClass('menu-container-active');
 		$('#share-icon').removeClass('fa-chevron-down');
 		$('#share-icon').removeClass('arrow-rotate');
+		$('#share-help-arrow-icon').removeClass('arrow-rotate');
 }
 
 	 $('#getting-started-trigger').click( function() {
@@ -46,26 +48,10 @@ function menuReset() {
 		$('#getting-started-trigger').addClass('menu-container-active');
 		$('#getting-started-icon').addClass('fa-chevron-down');
 		$('#getting-started-icon').addClass('arrow-rotate');
+		$('#gs-help-arrow-icon').removeClass('arrow-rotate');
 		//  Dropdown Reset
 		$('#share-dropdown').slideUp("slow");
 	});
-
-	//  Getting Started  Help Content Trigger
-		$('#gs-help-trigger').click(function() {
-			menuReset();
-			// Show / Hide Getting StartedContainer
-			$('#gs-help-container').slideToggle("slow");
-			// Rotate Arrow 180 Degree / Click
-			$('#gs-help-arrow-icon').toggleClass('arrow-rotate');
-
-			$('#getting-started-icon').toggleClass('fa-star');
-
-			$('#getting-started-trigger').toggleClass('menu-container-active');
-			$('#getting-started-icon').toggleClass('fa-chevron-down');
-			$('#getting-started-icon').toggleClass('arrow-rotate');
-
-			$('#getting-started-dropdown').slideToggle("slow");
-		});
 
 	//  Share Section Menu Trigger
 
@@ -79,25 +65,10 @@ function menuReset() {
  		$('#share-trigger').addClass('menu-container-active');
  		$('#share-icon').addClass('fa-chevron-down');
  		$('#share-icon').addClass('arrow-rotate');
- 		//  Dropdown Reset
- 		$('#getting-started-dropdown').slideUp("slow");
+		$('#share-help-arrow-icon').addClass('arrow-rotate');
+		//  Dropdown Reset
+		$('#getting-started-dropdown').slideUp("slow");
           });
-
-	  //  Share  Help Content Trigger
-		  $('#share-help-trigger').click(function() {
-			  menuReset();
-			  // Show / Hide Share Container
-			  $('#share-help-container').slideToggle("slow");
-			  // Rotate Arrow 180 Degree / Click
-			  $('#share-help-arrow-icon').toggleClass('arrow-rotate');
-			  $('#share-icon').toggleClass('fa-bullhorn');
-			  $('#share-trigger').toggleClass('menu-container-active');
-			  $('#share-icon').toggleClass('fa-chevron-down');
-			  $('#share-icon').toggleClass('arrow-rotate');
-			  //  Dropdown Reset
-			  $('#share-dropdown').slideToggle("slow");
-		  });
-
 
 	//  Getting Started Sub Menu
 
