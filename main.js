@@ -284,6 +284,11 @@ function menuReset() {
 		$('#share-dropdown > .sub-menu:nth-child(6)').toggleClass('sub-menu-active');
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(6)').toggleClass('form-active');
+		var $container = $('.help-content-overflow'),
+		    $scrollTo = this;
+		$container.animate({
+		    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+		});
   	});
 
 
@@ -299,6 +304,11 @@ function menuReset() {
 		$('#share-dropdown > .sub-menu:nth-child(7)').toggleClass('sub-menu-active');
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(7)').toggleClass('form-active');
+		var $container = $('.help-content-overflow'),
+		    $scrollTo = $('#share-help-container > .form-help:nth-child(7)');
+		$container.animate({
+		    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+		});
   	});
 
 
@@ -320,7 +330,6 @@ function menuReset() {
 		    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
 		});
   	});
-
 
 		$('#share-help-container > .form-help:nth-child(8)').click( function() {
 				SubMenuReset();
