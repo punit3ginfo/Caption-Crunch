@@ -326,7 +326,7 @@ function menuReset() {
 
 
 
-		$('#share-dropdown > .sub-menu:nth-child(8)').clack( function titties() {
+		$('#share-dropdown > .sub-menu:nth-child(8)').click( function titties() {
 			var $container = $('.help-content-overflow'),
 			    $scrollTo = $('#share-help-container > .form-help:nth-child(8)');
 
