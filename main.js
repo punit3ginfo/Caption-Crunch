@@ -210,7 +210,7 @@ function menuReset() {
 		$('#share-dropdown > .sub-menu:nth-child(1)').toggleClass('sub-menu-active');
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(1)').toggleClass('form-active');
-		$(".help-content-overflow").animate({ scrollTop: $("#share-help-container > .form-help:nth-child(2)").offset().top }, 1500);
+		$(".help-content-overflow").animate({ scrollTop: $("#share-help-container > .form-help:nth-child(1)").offset().top }, 1500);
   	});
 
 	$('#share-help-container > .form-help:nth-child(1)').click( function() {
