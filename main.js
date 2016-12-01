@@ -504,7 +504,6 @@ $(document).ready(function(){
 				formFocus();
 				$('#share-help-container > .form-help:nth-child(8)').removeClass('form-focus');
 		});
-});
 
 // Preview JS
 
@@ -598,4 +597,6 @@ $('#step3prevbutton').click(function() {
 	$('.caption-show-hide').slideToggle("slow");
 	// Rotate Arrow 180 Degree / Click
 	$('#caption-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+});
+
 });
