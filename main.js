@@ -324,7 +324,68 @@ function menuReset() {
 				$('#share-help-container > .form-help:nth-child(8)').toggleClass('form-active');
 		});
 
+		$('#share-dropdown > .sub-menu:nth-child(1)').click( function titties() {
+			var $container = $('.help-content-overflow'),
+			    $scrollTo = $('#share-help-container > .form-help:nth-child(1)');
 
+			$container.animate({
+			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+			});
+		});
+
+		$('#share-dropdown > .sub-menu:nth-child(2)').click( function titties() {
+			var $container = $('.help-content-overflow'),
+			    $scrollTo = $('#share-help-container > .form-help:nth-child(2)');
+
+			$container.animate({
+			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+			});
+		});
+
+		$('#share-dropdown > .sub-menu:nth-child(3)').click( function titties() {
+			var $container = $('.help-content-overflow'),
+			    $scrollTo = $('#share-help-container > .form-help:nth-child(3)');
+
+			$container.animate({
+			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+			});
+		});
+
+		$('#share-dropdown > .sub-menu:nth-child(4)').click( function titties() {
+			var $container = $('.help-content-overflow'),
+			    $scrollTo = $('#share-help-container > .form-help:nth-child(4)');
+
+			$container.animate({
+			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+			});
+		});
+
+		$('#share-dropdown > .sub-menu:nth-child(5)').click( function titties() {
+			var $container = $('.help-content-overflow'),
+			    $scrollTo = $('#share-help-container > .form-help:nth-child(5)');
+
+			$container.animate({
+			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+			});
+		});
+
+		$('#share-dropdown > .sub-menu:nth-child(6)').click( function titties() {
+			var $container = $('.help-content-overflow'),
+			    $scrollTo = $('#share-help-container > .form-help:nth-child(6)');
+
+			$container.animate({
+			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+			});
+		});
+
+		$('#share-dropdown > .sub-menu:nth-child(7)').click( function titties() {
+			var $container = $('.help-content-overflow'),
+			    $scrollTo = $('#share-help-container > .form-help:nth-child(7)');
+
+			$container.animate({
+			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+			});
+		});
 
 		$('#share-dropdown > .sub-menu:nth-child(8)').click( function titties() {
 			var $container = $('.help-content-overflow'),
