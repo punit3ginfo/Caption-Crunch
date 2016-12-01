@@ -210,6 +210,11 @@ function menuReset() {
 		$('#share-dropdown > .sub-menu:nth-child(1)').toggleClass('sub-menu-active');
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(1)').toggleClass('form-active');
+		var $container = $('.help-content-overflow'),
+		    $scrollTo = $('#share-help-container > .form-help:nth-child(1)');
+		$container.animate({
+		    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+		});
   	});
 
 	$('#share-help-container > .form-help:nth-child(1)').click( function() {
@@ -224,6 +229,11 @@ function menuReset() {
 		$('#share-dropdown > .sub-menu:nth-child(2)').toggleClass('sub-menu-active');
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(2)').toggleClass('form-active');
+		var $container = $('.help-content-overflow'),
+		    $scrollTo = $('#share-help-container > .form-help:nth-child(2)');
+		$container.animate({
+		    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+		});
   	});
 
 
@@ -239,6 +249,11 @@ function menuReset() {
  		$('#share-dropdown > .sub-menu:nth-child(3)').toggleClass('sub-menu-active');
  		helpSectionReset();
  		$('#share-help-container > .form-help:nth-child(3)').toggleClass('form-active');
+		var $container = $('.help-content-overflow'),
+		    $scrollTo = $('#share-help-container > .form-help:nth-child(3)');
+		$container.animate({
+		    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+		});
   	});
 
 
@@ -254,6 +269,11 @@ function menuReset() {
 		$('#share-dropdown > .sub-menu:nth-child(4)').toggleClass('sub-menu-active');
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(4)').toggleClass('form-active');
+		var $container = $('.help-content-overflow'),
+		    $scrollTo = $('#share-help-container > .form-help:nth-child(4)');
+		$container.animate({
+		    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+		});
   	});
 
 
@@ -269,6 +289,11 @@ function menuReset() {
 		$('#share-dropdown > .sub-menu:nth-child(5)').toggleClass('sub-menu-active');
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(5)').toggleClass('form-active');
+		var $container = $('.help-content-overflow'),
+		    $scrollTo = $('#share-help-container > .form-help:nth-child(5)');
+		$container.animate({
+		    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+		});
   	});
 
 
@@ -285,7 +310,7 @@ function menuReset() {
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(6)').toggleClass('form-active');
 		var $container = $('.help-content-overflow'),
-		    $scrollTo = this;
+		    $scrollTo = $('#share-help-container > .form-help:nth-child(6)');
 		$container.animate({
 		    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
 		});
