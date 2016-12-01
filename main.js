@@ -324,6 +324,16 @@ function menuReset() {
 				$('#share-help-container > .form-help:nth-child(8)').toggleClass('form-active');
 		});
 
+
+
+		$('#share-dropdown > .sub-menu:nth-child(8)').clack( function titties() {
+			var $container = $('.help-content-overflow'),
+			    $scrollTo = $('#share-help-container > .form-help:nth-child(8)');
+
+			container.animate({
+			    scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
+			});
+		});
 });
 
 // Preview JS
