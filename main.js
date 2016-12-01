@@ -188,7 +188,7 @@ function menuReset() {
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(6)').addClass('form-active');
 			var $container = $('.help-content-overflow'),
-			    $scrollTo = $('#gs-help-container > .form-help:nth-child(6)');
+			    $scrollTo = $('#gs-help-container > .form-help:nth-child(6) > .anchor');
 			$container.animate({
 			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
 			});
@@ -207,7 +207,7 @@ function menuReset() {
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(7)').addClass('form-active');
 			var $container = $('.help-content-overflow'),
-			    $scrollTo = $('#gs-help-container > .form-help:nth-child(7)');
+			    $scrollTo = $('#gs-help-container > .form-help:nth-child(7) > .anchor');
 			$container.animate({
 			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
 			});
@@ -226,7 +226,7 @@ function menuReset() {
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(8)').addClass('form-active');
 			var $container = $('.help-content-overflow'),
-			    $scrollTo = $('#gs-help-container > .form-help:nth-child(8)');
+			    $scrollTo = $('#gs-help-container > .form-help:nth-child(8) > .anchor');
 			$container.animate({
 			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
 			});
@@ -252,7 +252,7 @@ function menuReset() {
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(1)').toggleClass('form-active');
 		var $container = $('.help-content-overflow'),
-		    $scrollTo = $('#share-help-container > .form-help:nth-child(1)');
+		    $scrollTo = $('#share-help-container > .form-help:nth-child(1) > .anchor');
 		$container.animate({
 		    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
 		});
@@ -271,7 +271,7 @@ function menuReset() {
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(2)').toggleClass('form-active');
 		var $container = $('.help-content-overflow'),
-		    $scrollTo = $('#share-help-container > .form-help:nth-child(2)');
+		    $scrollTo = $('#share-help-container > .form-help:nth-child(2) > .anchor');
 		$container.animate({
 		    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
 		});
@@ -291,7 +291,7 @@ function menuReset() {
  		helpSectionReset();
  		$('#share-help-container > .form-help:nth-child(3)').toggleClass('form-active');
 		var $container = $('.help-content-overflow'),
-		    $scrollTo = $('#share-help-container > .form-help:nth-child(3)');
+		    $scrollTo = $('#share-help-container > .form-help:nth-child(3) > .anchor');
 		$container.animate({
 		    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
 		});
@@ -311,7 +311,7 @@ function menuReset() {
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(4)').toggleClass('form-active');
 		var $container = $('.help-content-overflow'),
-		    $scrollTo = $('#share-help-container > .form-help:nth-child(4)');
+		    $scrollTo = $('#share-help-container > .form-help:nth-child(4) > .anchor');
 		$container.animate({
 		    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
 		});
@@ -331,7 +331,7 @@ function menuReset() {
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(5)').toggleClass('form-active');
 		var $container = $('.help-content-overflow'),
-		    $scrollTo = $('#share-help-container > .form-help:nth-child(5)');
+		    $scrollTo = $('#share-help-container > .form-help:nth-child(5) > .anchor');
 		$container.animate({
 		    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
 		});
@@ -351,7 +351,7 @@ function menuReset() {
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(6)').toggleClass('form-active');
 		var $container = $('.help-content-overflow'),
-		    $scrollTo = $('#share-help-container > .form-help:nth-child(6)');
+		    $scrollTo = $('#share-help-container > .form-help:nth-child(6) > .anchor');
 		$container.animate({
 		    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
 		});
@@ -371,7 +371,7 @@ function menuReset() {
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(7)').toggleClass('form-active');
 		var $container = $('.help-content-overflow'),
-		    $scrollTo = $('#share-help-container > .form-help:nth-child(7)');
+		    $scrollTo = $('#share-help-container > .form-help:nth-child(7) > .anchor');
 		$container.animate({
 		    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
 		});
@@ -391,7 +391,7 @@ function menuReset() {
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(8)').toggleClass('form-active');
 		var $container = $('.help-content-overflow'),
-		    $scrollTo = $('#share-help-container > .form-help:nth-child(8)');
+		    $scrollTo = $('#share-help-container > .form-help:nth-child(8) > .anchor');
 		$container.animate({
 		    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
 		});
