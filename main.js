@@ -208,57 +208,57 @@ function menuReset() {
   	$('  #share-dropdown > .sub-menu:nth-child(1)').click( function() {
 		SubMenuReset();
 		$('#share-dropdown > .sub-menu:nth-child(1)').toggleClass('sub-menu-active');
-		// helpSectionReset();
-		// $('#share-help-container > .form-help:nth-child(1)').toggleClass('form-active');
+		helpSectionReset();
+		$('#share-help-container > .form-help:nth-child(1)').toggleClass('form-active');
   	});
 
   	$('#share-dropdown > .sub-menu:nth-child(2)').click( function() {
 		SubMenuReset();
 		$('#share-dropdown > .sub-menu:nth-child(2)').toggleClass('sub-menu-active');
-		// helpSectionReset();
-		// $('#share-help-container > .form-help:nth-child(2)').toggleClass('form-active');
+		helpSectionReset();
+		$('#share-help-container > .form-help:nth-child(2)').toggleClass('form-active');
   	});
 
   	$('#share-dropdown > .sub-menu:nth-child(3)').click( function() {
 		SubMenuReset();
  		$('#share-dropdown > .sub-menu:nth-child(3)').toggleClass('sub-menu-active');
- 		// helpSectionReset();
- 		// $('#share-help-container > .form-help:nth-child(3)').toggleClass('form-active');
+ 		helpSectionReset();
+ 		$('#share-help-container > .form-help:nth-child(3)').toggleClass('form-active');
   	});
 
   	$('#share-dropdown > .sub-menu:nth-child(4)').click( function() {
 		SubMenuReset();
 		$('#share-dropdown > .sub-menu:nth-child(4)').toggleClass('sub-menu-active');
-		// helpSectionReset();
-		// $('#share-help-container > .form-help:nth-child(4)').toggleClass('form-active');
+		helpSectionReset();
+		$('#share-help-container > .form-help:nth-child(4)').toggleClass('form-active');
   	});
 
   	$('#share-dropdown > .sub-menu:nth-child(5)').click( function() {
 		SubMenuReset();
 		$('#share-dropdown > .sub-menu:nth-child(5)').toggleClass('sub-menu-active');
-		// helpSectionReset();
-		// $('#share-help-container > .form-help:nth-child(5)').toggleClass('form-active');
+		helpSectionReset();
+		$('#share-help-container > .form-help:nth-child(5)').toggleClass('form-active');
   	});
 
   	$('#share-dropdown > .sub-menu:nth-child(6)').click( function() {
 		SubMenuReset();
 		$('#share-dropdown > .sub-menu:nth-child(6)').toggleClass('sub-menu-active');
-		// helpSectionReset();
-		// $('#share-help-container > .form-help:nth-child(6)').toggleClass('form-active');
+		helpSectionReset();
+		$('#share-help-container > .form-help:nth-child(6)').toggleClass('form-active');
   	});
 
   	$('#share-dropdown > .sub-menu:nth-child(7)').click( function() {
 		SubMenuReset();
 		$('#share-dropdown > .sub-menu:nth-child(7)').toggleClass('sub-menu-active');
-		// helpSectionReset();
-		// $('#share-help-container > .form-help:nth-child(7)').toggleClass('form-active');
+		helpSectionReset();
+		$('#share-help-container > .form-help:nth-child(7)').toggleClass('form-active');
   	});
 
   	$('#share-dropdown > .sub-menu:nth-child(8)').click( function() {
 		SubMenuReset();
 		$('#share-dropdown > .sub-menu:nth-child(8)').toggleClass('sub-menu-active');
-		// helpSectionReset();
-		// $('#share-help-container > .form-help:nth-child(8)').toggleClass('form-active');
+		helpSectionReset();
+		$('#share-help-container > .form-help:nth-child(8)').toggleClass('form-active');
   	});
 
 });
