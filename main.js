@@ -9,12 +9,16 @@ $(document).ready(function(){
 			$('#getting-started-icon').removeClass('fa-chevron-down');
 			$('#getting-started-icon').removeClass('arrow-rotate');
 			$('#gs-help-arrow-icon').removeClass('arrow-rotate');
+			 $('#getting-started-dropdown').slideUp("slow");
+			$('#gs-help-container').slideUp("slow");
 		// Share Reset
 			$('#share-icon').addClass('fa-bullhorn');
 			$('#share-trigger').removeClass('menu-container-active');
 			$('#share-icon').removeClass('fa-chevron-down');
 			$('#share-icon').removeClass('arrow-rotate');
 			$('#share-help-arrow-icon').removeClass('arrow-rotate');
+			 $('#share-dropdown').slideUp("slow");
+			$('#share-help-container').slideUp("slow");
 	}
 
 	function formFocusReset() {
