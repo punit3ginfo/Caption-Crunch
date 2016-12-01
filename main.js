@@ -60,6 +60,7 @@ function formFocus() {
 		//  Dropdown Reset
 		$('#share-dropdown').slideUp("slow");
 		$('#share-help-container').slideUp("slow");
+		formFocusReset();
 	});
 
 	//  Share Section Menu Trigger
@@ -78,6 +79,7 @@ function formFocus() {
 		//  Dropdown Reset
 		$('#getting-started-dropdown').slideUp("slow");
 		$('#gs-help-container').slideUp("slow");
+		formFocusReset();
           });
 
 	//  Getting Started Sub Menu
