@@ -114,6 +114,7 @@ $(document).ready(function(){
 			$('#scripts').html("$($trigger).click( function() {SubMenuReset();$($trigger).addClass('sub-menu-active');helpSectionReset();$($trigger2).addClass('form-active');formFocus();$($trigger2).removeClass('form-focus');var $container = $('.help-content-overflow'),$scrollTo = $($trigger2 + ' > .anchor');$container.animate({scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()});});$($trigger2).click( function() {SubMenuReset();$($trigger).toggleClass('sub-menu-active');helpSectionReset();$($trigger2).toggleClass('form-active');formFocus();$($trigger2).removeClass('form-focus');});");
 		i++;
 	});
+	}
 
 
 
