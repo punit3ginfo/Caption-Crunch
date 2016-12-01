@@ -328,9 +328,11 @@ function menuReset() {
 			var $container = $('.help-content-overflow'),
 			    $scrollTo = $('#share-help-container > .form-help:nth-child(1)');
 
-			$container.animate({
-			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
-			});
+			    $(".help-content-overflow").animate({ scrollTop: $("#share-help-container > .form-help:nth-child(1)").offset().top }, 1500);
+
+			// $container.animate({
+			//     scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+			// });
 		});
 
 		$('#share-dropdown > .sub-menu:nth-child(2)').click( function titties() {
