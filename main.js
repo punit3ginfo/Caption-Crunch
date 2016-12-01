@@ -93,7 +93,7 @@ function menuReset() {
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(1)').addClass('form-active');
 			var $container = $('.help-content-overflow'),
-			    $scrollTo = $('#gs-help-container > .form-help:nth-child(1)');
+			    $scrollTo = $('#gs-help-container > .form-help:nth-child(1) > .anchor');
 			$container.animate({
 			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
 			});
@@ -112,7 +112,7 @@ function menuReset() {
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(2)').addClass('form-active');
 			var $container = $('.help-content-overflow'),
-			    $scrollTo = $('#gs-help-container > .form-help:nth-child(2)');
+			    $scrollTo = $('#gs-help-container > .form-help:nth-child(2) > .anchor');
 			$container.animate({
 			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
 			});
@@ -131,7 +131,7 @@ function menuReset() {
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(3)').addClass('form-active');
 			var $container = $('.help-content-overflow'),
-			    $scrollTo = $('#gs-help-container > .form-help:nth-child(3)');
+			    $scrollTo = $('#gs-help-container > .form-help:nth-child(3) > .anchor');
 			$container.animate({
 			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
 			});
@@ -150,7 +150,7 @@ function menuReset() {
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(4)').addClass('form-active');
 			var $container = $('.help-content-overflow'),
-			    $scrollTo = $('#gs-help-container > .form-help:nth-child(4)');
+			    $scrollTo = $('#gs-help-container > .form-help:nth-child(4) > .anchor');
 			$container.animate({
 			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
 			});
@@ -169,7 +169,7 @@ function menuReset() {
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(5)').addClass('form-active');
 			var $container = $('.help-content-overflow'),
-			    $scrollTo = $('#gs-help-container > .form-help:nth-child(5)');
+			    $scrollTo = $('#gs-help-container > .form-help:nth-child(5) > .anchor');
 			$container.animate({
 			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
 			});

@@ -2055,10 +2055,15 @@ ul#pagination-list li {
   padding: 15px;
   width: calc(100% - 34px);
   border: 2px solid transparent;
-  margin-top: 15px; }
+  margin-top: 15px;
+  position: relative; }
 
 .form-active {
   border: 2px solid #7ab55c !important;
   border-radius: 23px; }
+
+.anchor {
+  position: absolute;
+  top: -15px; }
 
 /*# sourceMappingURL=style.css.map */
