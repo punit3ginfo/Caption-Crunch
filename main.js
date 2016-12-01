@@ -1,5 +1,38 @@
 // Help Slide
 $(document).ready(function(){
+
+	function menuReset() {
+		// Getting Started Reset
+			// $('#getting-started-dropdown').slideUp("slow");
+			$('#getting-started-icon').addClass('fa-star');
+			$('#getting-started-trigger').removeClass('menu-container-active');
+			$('#getting-started-icon').removeClass('fa-chevron-down');
+			$('#getting-started-icon').removeClass('arrow-rotate');
+			$('#gs-help-arrow-icon').removeClass('arrow-rotate');
+		// Share Reset
+			$('#share-icon').addClass('fa-bullhorn');
+			$('#share-trigger').removeClass('menu-container-active');
+			$('#share-icon').removeClass('fa-chevron-down');
+			$('#share-icon').removeClass('arrow-rotate');
+			$('#share-help-arrow-icon').removeClass('arrow-rotate');
+	}
+
+	function formFocusReset() {
+			$('.form-help').removeClass('form-focus');
+	}
+
+	function formFocus() {
+			$('.form-help').addClass('form-focus');
+	}
+
+	function SubMenuReset() {
+		$('.sub-menu').removeClass('sub-menu-active');
+	}
+
+	function helpSectionReset() {
+		$('.form-help').removeClass('form-active');
+	}
+
   $('#help-button').click(function() {
       if ($("#right-slide-left").hasClass('right-slide-left-animate')) {
           $('#right-slide-left').removeClass("right-slide-left-animate");
@@ -17,34 +50,13 @@ $(document).ready(function(){
           $('.sidebar-nav-container-header').addClass("sidebar-nav-container-header-active");
           $('.help-header-link').css("color", "white");
 	  $("#help-title").html('<i style="font-size: 20px;" class="fa fa-times" aria-hidden="true"></i><br> Back');
+	  menuReset();
+	  formFocusReset();
+	  SubMenuReset();
       };
   });
 
 //  Getting Started Section
-
-function menuReset() {
-	// Getting Started Reset
-		// $('#getting-started-dropdown').slideUp("slow");
-		$('#getting-started-icon').addClass('fa-star');
-		$('#getting-started-trigger').removeClass('menu-container-active');
-		$('#getting-started-icon').removeClass('fa-chevron-down');
-		$('#getting-started-icon').removeClass('arrow-rotate');
-		$('#gs-help-arrow-icon').removeClass('arrow-rotate');
-	// Share Reset
-		$('#share-icon').addClass('fa-bullhorn');
-		$('#share-trigger').removeClass('menu-container-active');
-		$('#share-icon').removeClass('fa-chevron-down');
-		$('#share-icon').removeClass('arrow-rotate');
-		$('#share-help-arrow-icon').removeClass('arrow-rotate');
-}
-
-function formFocusReset() {
-		$('.form-help').removeClass('form-focus');
-}
-
-function formFocus() {
-		$('.form-help').addClass('form-focus');
-}
 
 	 $('#getting-started-trigger').click( function() {
 		 menuReset();
@@ -83,14 +95,6 @@ function formFocus() {
           });
 
 	//  Getting Started Sub Menu
-
-	function SubMenuReset() {
-		$('.sub-menu').removeClass('sub-menu-active');
-	}
-
-	function helpSectionReset() {
-		$('.form-help').removeClass('form-active');
-	}
 
 	$('#getting-started-trigger').click( function() {
 			SubMenuReset();

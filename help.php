@@ -33,32 +33,32 @@
 					<div id="getting-started-dropdown">
 						<div class="sub-menu">
 							<div class="sub-menu-clearfix">
-								<span class="sub-menu-text">Help Topic 1<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
+								<span class="sub-menu-text">Getting Started<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 							</div>
 						</div>
 						<div class="sub-menu">
 							<div class="sub-menu-clearfix">
-								<span class="sub-menu-text">Help Topic 2<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
+								<span class="sub-menu-text">Get Connected<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 							</div>
 						</div>
 						<div class="sub-menu">
 							<div class="sub-menu-clearfix">
-								<span class="sub-menu-text">Help Topic 3<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
+								<span class="sub-menu-text">Share Page<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 							</div>
 						</div>
 						<div class="sub-menu">
 							<div class="sub-menu-clearfix">
-								<span class="sub-menu-text">Help Topic 4<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
+								<span class="sub-menu-text">Captions Page<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 							</div>
 						</div>
 						<div class="sub-menu">
 							<div class="sub-menu-clearfix">
-								<span class="sub-menu-text">Help Topic 5<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
+								<span class="sub-menu-text">Settings Page<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 							</div>
 						</div>
 						<div class="sub-menu">
 							<div class="sub-menu-clearfix">
-								<span class="sub-menu-text">Help Topic 6<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
+								<span class="sub-menu-text">Intro to Buffer<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 							</div>
 						</div>
 						<div class="sub-menu">
