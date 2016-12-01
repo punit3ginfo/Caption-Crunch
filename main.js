@@ -398,6 +398,8 @@ function formFocus() {
 		$('#share-dropdown > .sub-menu:nth-child(8)').toggleClass('sub-menu-active');
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(8)').toggleClass('form-active');
+		formFocus();
+		$('#share-help-container > .form-help:nth-child(8)').removeClass('form-focus');
 		var $container = $('.help-content-overflow'),
 		    $scrollTo = $('#share-help-container > .form-help:nth-child(8) > .anchor');
 		$container.animate({
