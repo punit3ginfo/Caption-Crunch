@@ -259,6 +259,8 @@ function formFocus() {
 		$('#share-dropdown > .sub-menu:nth-child(1)').toggleClass('sub-menu-active');
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(1)').toggleClass('form-active');
+		formFocus();
+		$('#share-help-container > .form-help:nth-child(1)').removeClass('form-focus');
 		var $container = $('.help-content-overflow'),
 		    $scrollTo = $('#share-help-container > .form-help:nth-child(1) > .anchor');
 		$container.animate({
@@ -271,6 +273,8 @@ function formFocus() {
 			$('#share-dropdown > .sub-menu:nth-child(1)').toggleClass('sub-menu-active');
 			helpSectionReset();
 			$('#share-help-container > .form-help:nth-child(1)').toggleClass('form-active');
+			formFocus();
+			$('#share-help-container > .form-help:nth-child(1)').removeClass('form-focus');
 	});
 
   	$('#share-dropdown > .sub-menu:nth-child(2)').click( function() {
@@ -278,6 +282,8 @@ function formFocus() {
 		$('#share-dropdown > .sub-menu:nth-child(2)').toggleClass('sub-menu-active');
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(2)').toggleClass('form-active');
+		formFocus();
+		$('#share-help-container > .form-help:nth-child(2)').removeClass('form-focus');
 		var $container = $('.help-content-overflow'),
 		    $scrollTo = $('#share-help-container > .form-help:nth-child(2) > .anchor');
 		$container.animate({
@@ -291,6 +297,8 @@ function formFocus() {
 				$('#share-dropdown > .sub-menu:nth-child(2)').toggleClass('sub-menu-active');
 				helpSectionReset();
 				$('#share-help-container > .form-help:nth-child(2)').toggleClass('form-active');
+				formFocus();
+				$('#share-help-container > .form-help:nth-child(2)').removeClass('form-focus');
 		});
 
   	$('#share-dropdown > .sub-menu:nth-child(3)').click( function() {
@@ -298,6 +306,8 @@ function formFocus() {
  		$('#share-dropdown > .sub-menu:nth-child(3)').toggleClass('sub-menu-active');
  		helpSectionReset();
  		$('#share-help-container > .form-help:nth-child(3)').toggleClass('form-active');
+		formFocus();
+		$('#share-help-container > .form-help:nth-child(3)').removeClass('form-focus');
 		var $container = $('.help-content-overflow'),
 		    $scrollTo = $('#share-help-container > .form-help:nth-child(3) > .anchor');
 		$container.animate({
@@ -311,6 +321,8 @@ function formFocus() {
 				$('#share-dropdown > .sub-menu:nth-child(3)').toggleClass('sub-menu-active');
 				helpSectionReset();
 				$('#share-help-container > .form-help:nth-child(3)').toggleClass('form-active');
+				formFocus();
+				$('#share-help-container > .form-help:nth-child(3)').removeClass('form-focus');
 		});
 
   	$('#share-dropdown > .sub-menu:nth-child(4)').click( function() {
@@ -318,6 +330,8 @@ function formFocus() {
 		$('#share-dropdown > .sub-menu:nth-child(4)').toggleClass('sub-menu-active');
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(4)').toggleClass('form-active');
+		formFocus();
+		$('#share-help-container > .form-help:nth-child(4)').removeClass('form-focus');
 		var $container = $('.help-content-overflow'),
 		    $scrollTo = $('#share-help-container > .form-help:nth-child(4) > .anchor');
 		$container.animate({
@@ -331,6 +345,8 @@ function formFocus() {
 				$('#share-dropdown > .sub-menu:nth-child(4)').toggleClass('sub-menu-active');
 				helpSectionReset();
 				$('#share-help-container > .form-help:nth-child(4)').toggleClass('form-active');
+				formFocus();
+				$('#share-help-container > .form-help:nth-child(4)').removeClass('form-focus');
 		});
 
   	$('#share-dropdown > .sub-menu:nth-child(5)').click( function() {
@@ -338,6 +354,8 @@ function formFocus() {
 		$('#share-dropdown > .sub-menu:nth-child(5)').toggleClass('sub-menu-active');
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(5)').toggleClass('form-active');
+		formFocus();
+		$('#share-help-container > .form-help:nth-child(5)').removeClass('form-focus');
 		var $container = $('.help-content-overflow'),
 		    $scrollTo = $('#share-help-container > .form-help:nth-child(5) > .anchor');
 		$container.animate({
@@ -351,6 +369,8 @@ function formFocus() {
 				$('#share-dropdown > .sub-menu:nth-child(5)').toggleClass('sub-menu-active');
 				helpSectionReset();
 				$('#share-help-container > .form-help:nth-child(5)').toggleClass('form-active');
+				formFocus();
+				$('#share-help-container > .form-help:nth-child(5)').removeClass('form-focus');
 		});
 
   	$('#share-dropdown > .sub-menu:nth-child(6)').click( function() {
@@ -358,6 +378,8 @@ function formFocus() {
 		$('#share-dropdown > .sub-menu:nth-child(6)').toggleClass('sub-menu-active');
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(6)').toggleClass('form-active');
+		formFocus();
+		$('#share-help-container > .form-help:nth-child(6)').removeClass('form-focus');
 		var $container = $('.help-content-overflow'),
 		    $scrollTo = $('#share-help-container > .form-help:nth-child(6) > .anchor');
 		$container.animate({
@@ -371,6 +393,8 @@ function formFocus() {
 				$('#share-dropdown > .sub-menu:nth-child(6)').toggleClass('sub-menu-active');
 				helpSectionReset();
 				$('#share-help-container > .form-help:nth-child(6)').toggleClass('form-active');
+				formFocus();
+				$('#share-help-container > .form-help:nth-child(6)').removeClass('form-focus');
 		});
 
   	$('#share-dropdown > .sub-menu:nth-child(7)').click( function() {
@@ -378,6 +402,8 @@ function formFocus() {
 		$('#share-dropdown > .sub-menu:nth-child(7)').toggleClass('sub-menu-active');
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(7)').toggleClass('form-active');
+		formFocus();
+		$('#share-help-container > .form-help:nth-child(7)').removeClass('form-focus');
 		var $container = $('.help-content-overflow'),
 		    $scrollTo = $('#share-help-container > .form-help:nth-child(7) > .anchor');
 		$container.animate({
@@ -391,6 +417,8 @@ function formFocus() {
 				$('#share-dropdown > .sub-menu:nth-child(7)').toggleClass('sub-menu-active');
 				helpSectionReset();
 				$('#share-help-container > .form-help:nth-child(7)').toggleClass('form-active');
+				formFocus();
+				$('#share-help-container > .form-help:nth-child(7)').removeClass('form-focus');
 		});
 
   	$('#share-dropdown > .sub-menu:nth-child(8)').click( function() {
