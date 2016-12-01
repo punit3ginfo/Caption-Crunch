@@ -330,8 +330,8 @@ function menuReset() {
 			var $container = $('.help-content-overflow'),
 			    $scrollTo = $('#share-help-container > .form-help:nth-child(8)');
 
-			container.animate({
-			    scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
+			$container.animate({
+			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
 			});
 		});
 });
