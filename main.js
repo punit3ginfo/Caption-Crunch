@@ -210,7 +210,6 @@ function menuReset() {
 		$('#share-dropdown > .sub-menu:nth-child(1)').toggleClass('sub-menu-active');
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(1)').toggleClass('form-active');
-		$(".help-content-overflow").animate({ scrollTop: $("#share-help-container > .form-help:nth-child(1)").offset().top }, 1500);
   	});
 
 	$('#share-help-container > .form-help:nth-child(1)').click( function() {
@@ -225,7 +224,6 @@ function menuReset() {
 		$('#share-dropdown > .sub-menu:nth-child(2)').toggleClass('sub-menu-active');
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(2)').toggleClass('form-active');
-		$(".help-content-overflow").animate({ scrollTop: $("#share-help-container > .form-help:nth-child(2)").offset().top }, 1500);
   	});
 
 
@@ -241,7 +239,6 @@ function menuReset() {
  		$('#share-dropdown > .sub-menu:nth-child(3)').toggleClass('sub-menu-active');
  		helpSectionReset();
  		$('#share-help-container > .form-help:nth-child(3)').toggleClass('form-active');
-		$(".help-content-overflow").animate({ scrollTop: $("#share-help-container > .form-help:nth-child(3)").offset().top }, 1500);
   	});
 
 
@@ -257,7 +254,6 @@ function menuReset() {
 		$('#share-dropdown > .sub-menu:nth-child(4)').toggleClass('sub-menu-active');
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(4)').toggleClass('form-active');
-		$(".help-content-overflow").animate({ scrollTop: $("#share-help-container > .form-help:nth-child(4)").offset().top }, 1500);
   	});
 
 
@@ -273,7 +269,6 @@ function menuReset() {
 		$('#share-dropdown > .sub-menu:nth-child(5)').toggleClass('sub-menu-active');
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(5)').toggleClass('form-active');
-		$(".help-content-overflow").animate({ scrollTop: $("#share-help-container > .form-help:nth-child(5v)").offset().top }, 1500);
   	});
 
 
@@ -289,7 +284,6 @@ function menuReset() {
 		$('#share-dropdown > .sub-menu:nth-child(6)').toggleClass('sub-menu-active');
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(6)').toggleClass('form-active');
-		$(".help-content-overflow").animate({ scrollTop: $("#share-help-container > .form-help:nth-child(6)").offset().top }, 1500);
   	});
 
 
@@ -305,7 +299,6 @@ function menuReset() {
 		$('#share-dropdown > .sub-menu:nth-child(7)').toggleClass('sub-menu-active');
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(7)').toggleClass('form-active');
-		$(".help-content-overflow").animate({ scrollTop: $("#share-help-container > .form-help:nth-child(7)").offset().top }, 1500);
   	});
 
 
@@ -321,7 +314,11 @@ function menuReset() {
 		$('#share-dropdown > .sub-menu:nth-child(8)').toggleClass('sub-menu-active');
 		helpSectionReset();
 		$('#share-help-container > .form-help:nth-child(8)').toggleClass('form-active');
-		$(".help-content-overflow").animate({ scrollTop: $("#share-help-container > .form-help:nth-child(8)").offset().top }, 1500);
+		var $container = $('.help-content-overflow'),
+		    $scrollTo = $('#share-help-container > .form-help:nth-child(8)');
+		$container.animate({
+		    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+		});
   	});
 
 
@@ -331,8 +328,6 @@ function menuReset() {
 				helpSectionReset();
 				$('#share-help-container > .form-help:nth-child(8)').toggleClass('form-active');
 		});
-
-		$(".help-content-overflow").animate({ scrollTop: $("#share-help-container > .form-help:nth-child(1)").offset().top }, 1500);
 });
 
 // Preview JS
