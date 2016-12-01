@@ -38,6 +38,14 @@ function menuReset() {
 		$('#share-help-arrow-icon').removeClass('arrow-rotate');
 }
 
+function formFocusReset() {
+		$('.form-help').removeClass('form-focus');
+}
+
+function formFocus() {
+		$('.form-help').addClass('form-focus');
+}
+
 	 $('#getting-started-trigger').click( function() {
 		 menuReset();
 		// Show / Hide Getting Started Dropdown
@@ -402,6 +410,8 @@ function menuReset() {
 				$('#share-dropdown > .sub-menu:nth-child(8)').toggleClass('sub-menu-active');
 				helpSectionReset();
 				$('#share-help-container > .form-help:nth-child(8)').toggleClass('form-active');
+				formFocus();
+				$('#share-help-container > .form-help:nth-child(8)').removeClass('form-focus');
 		});
 });
 
