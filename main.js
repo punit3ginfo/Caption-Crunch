@@ -91,6 +91,11 @@ function menuReset() {
 			$('#getting-started-dropdown > .sub-menu:nth-child(1)').addClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(1)').addClass('form-active');
+			var $container = $('.help-content-overflow'),
+			    $scrollTo = $('#gs-help-container > .form-help:nth-child(1)');
+			$container.animate({
+			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+			});
 	});
 
 	$('#gs-help-container > .form-help:nth-child(1)').click( function() {
@@ -105,6 +110,11 @@ function menuReset() {
 			$('#getting-started-dropdown > .sub-menu:nth-child(2)').addClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(2)').addClass('form-active');
+			var $container = $('.help-content-overflow'),
+			    $scrollTo = $('#gs-help-container > .form-help:nth-child(2)');
+			$container.animate({
+			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+			});
 	});
 
 	$('#gs-help-container > .form-help:nth-child(2)').click( function() {
@@ -119,6 +129,11 @@ function menuReset() {
 			$('#getting-started-dropdown > .sub-menu:nth-child(3)').addClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(3)').addClass('form-active');
+			var $container = $('.help-content-overflow'),
+			    $scrollTo = $('#gs-help-container > .form-help:nth-child(3)');
+			$container.animate({
+			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+			});
 	});
 
 	$('#gs-help-container > .form-help:nth-child(3)').click( function() {
@@ -133,6 +148,11 @@ function menuReset() {
 			$('#getting-started-dropdown > .sub-menu:nth-child(4)').addClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(4)').addClass('form-active');
+			var $container = $('.help-content-overflow'),
+			    $scrollTo = $('#gs-help-container > .form-help:nth-child(4)');
+			$container.animate({
+			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+			});
 	});
 
 	$('#gs-help-container > .form-help:nth-child(4)').click( function() {
@@ -147,6 +167,11 @@ function menuReset() {
 			$('#getting-started-dropdown > .sub-menu:nth-child(5)').addClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(5)').addClass('form-active');
+			var $container = $('.help-content-overflow'),
+			    $scrollTo = $('#gs-help-container > .form-help:nth-child(5)');
+			$container.animate({
+			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+			});
 	});
 
 	$('#gs-help-container > .form-help:nth-child(5)').click( function() {
@@ -161,6 +186,11 @@ function menuReset() {
 			$('#getting-started-dropdown > .sub-menu:nth-child(6)').addClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(6)').addClass('form-active');
+			var $container = $('.help-content-overflow'),
+			    $scrollTo = $('#gs-help-container > .form-help:nth-child(6)');
+			$container.animate({
+			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+			});
 	});
 
 	$('#gs-help-container > .form-help:nth-child(6)').click( function() {
@@ -175,6 +205,11 @@ function menuReset() {
 			$('#getting-started-dropdown > .sub-menu:nth-child(7)').addClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(7)').addClass('form-active');
+			var $container = $('.help-content-overflow'),
+			    $scrollTo = $('#gs-help-container > .form-help:nth-child(7)');
+			$container.animate({
+			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+			});
 	});
 
 	$('#gs-help-container > .form-help:nth-child(7)').click( function() {
@@ -189,6 +224,11 @@ function menuReset() {
 			$('#getting-started-dropdown > .sub-menu:nth-child(8)').addClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(8)').addClass('form-active');
+			var $container = $('.help-content-overflow'),
+			    $scrollTo = $('#gs-help-container > .form-help:nth-child(8)');
+			$container.animate({
+			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+			});
 	});
 
 	$('#gs-help-container > .form-help:nth-child(8)').click( function() {
