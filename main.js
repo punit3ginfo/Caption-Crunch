@@ -51,6 +51,7 @@ function menuReset() {
 		$('#gs-help-arrow-icon').addClass('arrow-rotate');
 		//  Dropdown Reset
 		$('#share-dropdown').slideUp("slow");
+		$('#share-help-container').slideUp("slow");
 	});
 
 	//  Share Section Menu Trigger
