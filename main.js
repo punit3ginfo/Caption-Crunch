@@ -259,7 +259,19 @@ $(document).ready(function(){
 	// 	i++;
 	// }
 
-
+	$('#gs-dropdown > .sub-menu:nth-child(1)').click( function() {
+			SubMenuReset();
+			$('#gs-dropdown > .sub-menu:nth-child(1)').addClass('sub-menu-active');
+			helpSectionReset();
+			$('#gs-help-container > .form-help:nth-child(1)').addClass('form-active');
+			formFocus();
+			$('#gs-help-container > .form-help:nth-child(1)').removeClass('form-focus');
+			var $container = $('.help-content-overflow'),
+			    $scrollTo = $('#gs-help-container > .form-help:nth-child(1) > .anchor');
+			$container.animate({
+			    scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+			});
+	});
 
 	$('#gs-help-container > .form-help:nth-child(1)').click( function() {
 			SubMenuReset();
