@@ -139,12 +139,15 @@
 									</div>
 									<div class="menu-icon-clearfix">
 										<div class="menu-icon-container">
-											<span class="help-menu-icon"><div id="captions-icon" class="icon-rotate captions-menu-icon" style="line-height: 40px;" aria-hidden="true"></div></span>
-											</div>
+											<span class="help-menu-icon">
+												<div id="captions-icon" class="icon-rotate captions-menu-icon" style="line-height: 40px;" aria-hidden="true"></div>
+												<!-- <i id="captions-arrow-icon" class="fa fa-bullhorn icon-rotate" style="line-height: 40px;" aria-hidden="true"> -->
+											</span>
 										</div>
 									</div>
 								</div>
-							</a>
+							</div>
+						</a>
 
 							<div id="captions-dropdown">
 								<div class="sub-menu">
