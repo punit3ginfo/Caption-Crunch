@@ -16,21 +16,21 @@
 
 					<!-- Collection Card -->
 					<a href="javascript:void(0)">
-						<div id="1-trigger" class="menu-container">
+						<div id="gs-trigger" class="menu-container">
 							<div class="menu-clearfix">
 								<div class="menu-font-container">
 									<span class="menu-font">Getting Started</span>
 								</div>
 								<div class="menu-icon-clearfix">
 									<div class="menu-icon-container">
-										<span class="help-menu-icon"><i id="1-icon" class="fa fa-star icon-rotate" style="line-height: 40px;" aria-hidden="true"></i></span>
+										<span class="help-menu-icon"><i id="gs-icon" class="fa fa-star icon-rotate" style="line-height: 40px;" aria-hidden="true"></i></span>
 									</div>
 								</div>
 							</div>
 						</div>
 					</a>
 
-					<div id="1-dropdown">
+					<div id="gs-dropdown">
 						<div class="sub-menu">
 							<div class="sub-menu-clearfix">
 								<span class="sub-menu-text">Getting Started<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
