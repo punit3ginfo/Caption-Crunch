@@ -214,7 +214,7 @@ $(document).ready(function(){
 	      $('#captions-trigger').addClass('menu-container-active');
 	      $('#captions-icon').css('display','none');
 	      $('#captions-arrow-icon').css('display','block');
-	      $('#captions-icon').addClass('arrow-rotate');
+	      $('#captions-arrow-icon').addClass('arrow-rotate');
 	      $('#captions-help-arrow-icon').addClass('arrow-rotate');
 	      //  Dropdown Reset
 	      $('#1-dropdown').slideUp("slow");
