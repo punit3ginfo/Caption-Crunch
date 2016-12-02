@@ -113,7 +113,7 @@ $(document).ready(function(){
 			$('#share-dropdown').slideUp("slow");
 			$('#share-help-container').slideUp("slow");
 		//  Captions Reset
-			$('#captions-icon').addClass('fa-bullhorn');
+			// $('#captions-icon').addClass('fa-bullhorn');
 			$('#captions-trigger').removeClass('menu-container-active');
 			$('#captions-icon').removeClass('fa-chevron-down');
 			$('#captions-icon').removeClass('arrow-rotate');
