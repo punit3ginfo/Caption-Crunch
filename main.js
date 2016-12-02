@@ -117,7 +117,7 @@ $(document).ready(function(){
 			$('#captions-trigger').removeClass('menu-container-active');
 			$('#captions-icon').css('display','block');
 			$('#captions-arrow-icon').css('display','none');
-			$('#captions-icon').removeClass('arrow-rotate');
+			$('#captions-arrow-icon').removeClass('arrow-rotate');
 			$('#captions-help-arrow-icon').removeClass('arrow-rotate');
 			$('#captions-dropdown').slideUp("slow");
 			$('#captions-help-container').slideUp("slow");
