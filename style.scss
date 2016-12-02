@@ -62,14 +62,15 @@ body {
 	margin           : 0;
 
 	color            : $secondary-color;
-	background-image : url("./images/background.jpg");
-	background-size  : 100% 100%;
 
 	font-family      : 'Ubuntu',
 	sans-serif;
 	font-size        : 14px;
 	font-weight      : 100;
 	line-height      : 1.42857143;
+
+	background-image : url("./images/background.jpg");
+	background-size  : 100% 100%;
 }
 
 /* ------------------- Type / Fonts -------------------- */
@@ -807,12 +808,11 @@ body {
 
 .preview-container {
 	position     : relative;
-	left: 0px;
 
 	width        : calc(100% - 80px);
 	height       : calc(100vh - 63px);
 	padding-left : 80px;
-
+	left: 0px;
 	transition-timing-function : ease;
 	transition-duration        : 0.3s;
 	animation-direction        : normal;
@@ -1293,7 +1293,6 @@ body {
 	position         : fixed;
 	top              : 0px;
 	left: 0px;
-
 	width            : calc(100vw - 80px);
 	height           : calc(100vh - 63px);
 	padding-top      : 63px;
@@ -1412,8 +1411,8 @@ body {
 }
 
 .menu-overflow {
-	overflow-x: hidden;
 	overflow-y : scroll;
+	overflow-x: hidden;
 
 	width    : 100%;
 	height   : calc(100% - 160px);
@@ -2739,9 +2738,7 @@ ul#pagination-list li {
 }
 
 .help-menu-icon {
-	display: flex;
 
-	height: 40px;
 
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
@@ -2749,30 +2746,29 @@ ul#pagination-list li {
 	transition: all 0.5s ease-in-out;
 
 	color          : #FFFFFF;
-
+	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 40px;
 }
 
 #getting-started-dropdown {
-	display: none;
-
 	width: 100%;
 	height: auto;
+	display: none;
 }
 
 #share-icon {
+    transform: rotate(0deg);
     transition-timing-function: ease;
     transition-duration: 0.5s;
-    transform: rotate(0deg);
     animation-direction: normal;
 }
 
 #share-dropdown {
-	display: none;
-
 	width: 100%;
 	height: auto;
+	display: none;
 }
 
 .sub-menu {
@@ -2780,31 +2776,26 @@ ul#pagination-list li {
 	height: 40px;
 	padding-right: 25px;
 	padding-left: 25px;
-
 	cursor: pointer;
 }
 
 .sub-menu-clearfix {
 	width: 100%;
 	height: 40px;
-
 	border-bottom: 1px solid #F2F3F3;
 }
 
 .sub-menu-text {
+	line-height: 40px;
 	letter-spacing: 0.82px;
-
 	    color: #555555;
-
 	    font-family: 'Ubuntu', sans-serif;
 	    font-size: 16px;
 	    font-weight: 500;
-	line-height: 40px;
 }
 
 .sub-menu-arrow {
 	float: right;
-
 	line-height: 40px;
 }
 
@@ -2833,9 +2824,9 @@ ul#pagination-list li {
 }
 
 .icon-rotate {
+	transform: rotate(0deg);
         transition-timing-function: ease;
         transition-duration: 0.5s;
-	transform: rotate(0deg);
         animation-direction: normal;
 }
 
@@ -2848,13 +2839,11 @@ ul#pagination-list li {
 }
 
 .form-help {
-    position: relative;
-
-    width: calc(100% - 34px);
-    margin-top: 15px;
     padding: 15px;
-
+    width: calc(100% - 34px);
     border: 2px solid transparent;
+    margin-top: 15px;
+    position: relative;
 }
 
 .form-active {
@@ -2872,10 +2861,9 @@ ul#pagination-list li {
 }
 
 .captions-menu-icon {
+    background-image: url(./images/hammer-white.svg);
+    background-size: contain;
 	width: 20px;
 	height: 20px;
-
-    background-image: url(./images/hammer-white.svg);
 	background-repeat: no-repeat;
-    background-size: contain;
 }
