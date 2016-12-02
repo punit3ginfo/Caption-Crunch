@@ -32,12 +32,12 @@ body {
   max-height: 100vh;
   margin: 0;
   color: #555555;
+  background-image: url("./images/background.jpg");
+  background-size: 100% 100%;
   font-family: 'Ubuntu', sans-serif;
   font-size: 14px;
   font-weight: 100;
-  line-height: 1.42857143;
-  background-image: url("./images/background.jpg");
-  background-size: 100% 100%; }
+  line-height: 1.42857143; }
 
 /* ------------------- Type / Fonts -------------------- */
 .cc-text-small {
@@ -576,10 +576,10 @@ body {
 
 .preview-container {
   position: relative;
+  left: 0px;
   width: calc(100% - 80px);
   height: calc(100vh - 63px);
   padding-left: 80px;
-  left: 0px;
   transition-timing-function: ease;
   transition-duration: 0.3s;
   animation-direction: normal; }
@@ -1022,8 +1022,8 @@ body {
   padding-top: 80px; }
 
 .menu-overflow {
-  overflow-y: scroll;
   overflow-x: hidden;
+  overflow-y: scroll;
   width: 100%;
   height: calc(100% - 160px); }
 
@@ -1978,28 +1978,31 @@ ul#pagination-list li {
   background-size: 100%; }
 
 .help-menu-icon {
-  display: block;
+  display: flex;
+  height: 40px;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  justify-content: center;
+  align-items: center; }
 
 #getting-started-dropdown {
+  display: none;
   width: 100%;
-  height: auto;
-  display: none; }
+  height: auto; }
 
 #share-icon {
-  transform: rotate(0deg);
   transition-timing-function: ease;
   transition-duration: 0.5s;
+  transform: rotate(0deg);
   animation-direction: normal; }
 
 #share-dropdown {
+  display: none;
   width: 100%;
-  height: auto;
-  display: none; }
+  height: auto; }
 
 .sub-menu {
   width: calc(100% - 50px);
@@ -2014,12 +2017,12 @@ ul#pagination-list li {
   border-bottom: 1px solid #F2F3F3; }
 
 .sub-menu-text {
-  line-height: 40px;
   letter-spacing: 0.82px;
   color: #555555;
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
-  font-weight: 500; }
+  font-weight: 500;
+  line-height: 40px; }
 
 .sub-menu-arrow {
   float: right;
@@ -2040,9 +2043,9 @@ ul#pagination-list li {
     color: white; }
 
 .icon-rotate {
-  transform: rotate(0deg);
   transition-timing-function: ease;
   transition-duration: 0.5s;
+  transform: rotate(0deg);
   animation-direction: normal; }
 
 .arrow-rotate {
@@ -2052,11 +2055,11 @@ ul#pagination-list li {
   display: none !important; }
 
 .form-help {
-  padding: 15px;
+  position: relative;
   width: calc(100% - 34px);
-  border: 2px solid transparent;
   margin-top: 15px;
-  position: relative; }
+  padding: 15px;
+  border: 2px solid transparent; }
 
 .form-active {
   border: 2px solid #7ab55c !important;
@@ -2070,6 +2073,10 @@ ul#pagination-list li {
   opacity: 0.2; }
 
 .captions-menu-icon {
-  background-image: url(./images/hammer-white.svg); }
+  width: 20px;
+  height: 20px;
+  background-image: url(./images/hammer-white.svg);
+  background-repeat: no-repeat;
+  background-size: contain; }
 
 /*# sourceMappingURL=style.css.map */

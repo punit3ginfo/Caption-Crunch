@@ -115,7 +115,8 @@ $(document).ready(function(){
 		//  Captions Reset
 			// $('#captions-icon').addClass('fa-bullhorn');
 			$('#captions-trigger').removeClass('menu-container-active');
-			$('#captions-icon').removeClass('fa-chevron-down');
+			$('#captions-icon').css('display','block');
+			$('#captions-arrow-icon').css('display','none');
 			$('#captions-icon').removeClass('arrow-rotate');
 			$('#captions-help-arrow-icon').removeClass('arrow-rotate');
 			$('#captions-dropdown').slideUp("slow");
@@ -147,6 +148,9 @@ $(document).ready(function(){
           $('.sidebar-nav-container-header').removeClass("sidebar-nav-container-header-active");
           $('.help-header-link').css("color", "#666");
 	  $("#help-title").html('<i style="font-size: 20px;" class="fa fa-info" aria-hidden="true"></i><br> Help');
+	  menuReset();
+	  formFocusReset();
+	  SubMenuReset();
       } else {
           $('#right-slide-left').addClass("right-slide-left-animate");
 	  $(".preview-container").addClass("main-container-slide-left");
@@ -155,9 +159,6 @@ $(document).ready(function(){
           $('.sidebar-nav-container-header').addClass("sidebar-nav-container-header-active");
           $('.help-header-link').css("color", "white");
 	  $("#help-title").html('<i style="font-size: 20px;" class="fa fa-times" aria-hidden="true"></i><br> Back');
-	  menuReset();
-	  formFocusReset();
-	  SubMenuReset();
       };
   });
 
@@ -211,7 +212,8 @@ $(document).ready(function(){
 	      $('#captions-help-container').slideDown("slow");
 	      $('#captions-icon').removeClass('fa-bullhorn');
 	      $('#captions-trigger').addClass('menu-container-active');
-	      $('#captions-icon').addClass('fa-chevron-down');
+	      $('#captions-icon').css('display','none');
+	      $('#captions-arrow-icon').css('display','block');
 	      $('#captions-icon').addClass('arrow-rotate');
 	      $('#captions-help-arrow-icon').addClass('arrow-rotate');
 	      //  Dropdown Reset
