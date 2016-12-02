@@ -6,7 +6,7 @@
 				Getting Started Guide
 				<i id="gs-help-arrow-icon" class="fa fa-chevron-down icon-rotate" aria-hidden="true" style="float: right; line-height: 46px;"></i>
 			</span>
-		</div> 
+		</div>
 		<div id="gs-help-container" style="border-top: 1px solid #eee; display: none;">
 			<div class="form-clearfix form-help">
 				<div class="anchor"></div>
