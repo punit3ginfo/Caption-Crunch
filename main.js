@@ -210,7 +210,6 @@ $(document).ready(function(){
 	       $('#captions-dropdown').slideDown("slow");
 	       // Show / Hide Getting Started Container
 	      $('#captions-help-container').slideDown("slow");
-	      $('#captions-icon').removeClass('fa-bullhorn');
 	      $('#captions-trigger').addClass('menu-container-active');
 	      $('#captions-icon').css('display','none');
 	      $('#captions-arrow-icon').css('display','block');
