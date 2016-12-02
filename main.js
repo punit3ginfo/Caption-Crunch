@@ -96,13 +96,13 @@ $(document).ready(function(){
 
 	function menuReset() {
 		// Getting Started Reset
-			// $('#getting-started-dropdown').slideUp("slow");
-			$('#getting-started-icon').addClass('fa-star');
-			$('#getting-started-trigger').removeClass('menu-container-active');
-			$('#getting-started-icon').removeClass('fa-chevron-down');
-			$('#getting-started-icon').removeClass('arrow-rotate');
+			// $('#1-dropdown').slideUp("slow");
+			$('#1-icon').addClass('fa-star');
+			$('#1-trigger').removeClass('menu-container-active');
+			$('#1-icon').removeClass('fa-chevron-down');
+			$('#1-icon').removeClass('arrow-rotate');
 			$('#gs-help-arrow-icon').removeClass('arrow-rotate');
-			$('#getting-started-dropdown').slideUp("slow");
+			$('#1-dropdown').slideUp("slow");
 			$('#gs-help-container').slideUp("slow");
 		// Share Reset
 			$('#share-icon').addClass('fa-bullhorn');
@@ -166,16 +166,16 @@ $(document).ready(function(){
 
 //  Getting Started Section
 
-	 $('#getting-started-trigger').click( function() {
+	 $('#1-trigger').click( function() {
 		 menuReset();
 		// Show / Hide Getting Started Dropdown
-		 $('#getting-started-dropdown').slideDown("slow");
+		 $('#1-dropdown').slideDown("slow");
 		 // Show / Hide Getting Started Container
 		$('#gs-help-container').slideDown("slow");
-		$('#getting-started-icon').removeClass('fa-star');
-		$('#getting-started-trigger').addClass('menu-container-active');
-		$('#getting-started-icon').addClass('fa-chevron-down');
-		$('#getting-started-icon').addClass('arrow-rotate');
+		$('#1-icon').removeClass('fa-star');
+		$('#1-trigger').addClass('menu-container-active');
+		$('#1-icon').addClass('fa-chevron-down');
+		$('#1-icon').addClass('arrow-rotate');
 		$('#gs-help-arrow-icon').addClass('arrow-rotate');
 		//  Dropdown Reset
 		$('#share-dropdown').slideUp("slow");
@@ -199,7 +199,7 @@ $(document).ready(function(){
  		$('#share-icon').addClass('arrow-rotate');
 		$('#share-help-arrow-icon').addClass('arrow-rotate');
 		//  Dropdown Reset
-		$('#getting-started-dropdown').slideUp("slow");
+		$('#1-dropdown').slideUp("slow");
 		$('#gs-help-container').slideUp("slow");
 		$('#captions-dropdown').slideUp("slow");
   	      $('#captions-help-container').slideUp("slow");
@@ -218,7 +218,7 @@ $(document).ready(function(){
 	      $('#captions-icon').addClass('arrow-rotate');
 	      $('#captions-help-arrow-icon').addClass('arrow-rotate');
 	      //  Dropdown Reset
-	      $('#getting-started-dropdown').slideUp("slow");
+	      $('#1-dropdown').slideUp("slow");
 	      $('#gs-help-container').slideUp("slow");
 	      $('#share-dropdown').slideUp("slow");
 	      $('#share-help-container').slideUp("slow");
@@ -227,7 +227,7 @@ $(document).ready(function(){
 
 	//  Getting Started Sub Menu
 
-	$('#getting-started-trigger').click( function() {
+	$('#1-trigger').click( function() {
 			SubMenuReset();
 			helpSectionReset();
 	});
@@ -236,7 +236,7 @@ $(document).ready(function(){
 
 	// var i = 0;
 	// while (i<=8) {
-	// 	var $trigger = '#getting-started-dropdown > .sub-menu:nth-child(' + i + ')';
+	// 	var $trigger = '#1-dropdown > .sub-menu:nth-child(' + i + ')';
 	// 	var $trigger2 = '#gs-help-container > .form-help:nth-child(' + i + ')';
 	// 	$($trigger).click( function() {
 	// 			SubMenuReset();
@@ -267,16 +267,16 @@ $(document).ready(function(){
 
 	$('#gs-help-container > .form-help:nth-child(1)').click( function() {
 			SubMenuReset();
-			$('#getting-started-dropdown > .sub-menu:nth-child(1)').toggleClass('sub-menu-active');
+			$('#1-dropdown > .sub-menu:nth-child(1)').toggleClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(1)').toggleClass('form-active');
 			formFocus();
 			$('#gs-help-container > .form-help:nth-child(1)').removeClass('form-focus');
 	});
 
-	$('#getting-started-dropdown > .sub-menu:nth-child(2)').click( function() {
+	$('#1-dropdown > .sub-menu:nth-child(2)').click( function() {
 			SubMenuReset();
-			$('#getting-started-dropdown > .sub-menu:nth-child(2)').addClass('sub-menu-active');
+			$('#1-dropdown > .sub-menu:nth-child(2)').addClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(2)').addClass('form-active');
 			formFocus();
@@ -290,16 +290,16 @@ $(document).ready(function(){
 
 	$('#gs-help-container > .form-help:nth-child(2)').click( function() {
 			SubMenuReset();
-			$('#getting-started-dropdown > .sub-menu:nth-child(2)').toggleClass('sub-menu-active');
+			$('#1-dropdown > .sub-menu:nth-child(2)').toggleClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(2)').toggleClass('form-active');
 			formFocus();
 			$('#gs-help-container > .form-help:nth-child(2)').removeClass('form-focus');
 	});
 
-	$('#getting-started-dropdown > .sub-menu:nth-child(3)').click( function() {
+	$('#1-dropdown > .sub-menu:nth-child(3)').click( function() {
 			SubMenuReset();
-			$('#getting-started-dropdown > .sub-menu:nth-child(3)').addClass('sub-menu-active');
+			$('#1-dropdown > .sub-menu:nth-child(3)').addClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(3)').addClass('form-active');
 			formFocus();
@@ -313,16 +313,16 @@ $(document).ready(function(){
 
 	$('#gs-help-container > .form-help:nth-child(3)').click( function() {
 			SubMenuReset();
-			$('#getting-started-dropdown > .sub-menu:nth-child(3)').toggleClass('sub-menu-active');
+			$('#1-dropdown > .sub-menu:nth-child(3)').toggleClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(3)').toggleClass('form-active');
 			formFocus();
 			$('#gs-help-container > .form-help:nth-child(3)').removeClass('form-focus');
 	});
 
-	$('#getting-started-dropdown > .sub-menu:nth-child(4)').click( function() {
+	$('#1-dropdown > .sub-menu:nth-child(4)').click( function() {
 			SubMenuReset();
-			$('#getting-started-dropdown > .sub-menu:nth-child(4)').addClass('sub-menu-active');
+			$('#1-dropdown > .sub-menu:nth-child(4)').addClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(4)').addClass('form-active');
 			formFocus();
@@ -336,16 +336,16 @@ $(document).ready(function(){
 
 	$('#gs-help-container > .form-help:nth-child(4)').click( function() {
 			SubMenuReset();
-			$('#getting-started-dropdown > .sub-menu:nth-child(4)').toggleClass('sub-menu-active');
+			$('#1-dropdown > .sub-menu:nth-child(4)').toggleClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(4)').toggleClass('form-active');
 			formFocus();
 			$('#gs-help-container > .form-help:nth-child(4)').removeClass('form-focus');
 	});
 
-	$('#getting-started-dropdown > .sub-menu:nth-child(5)').click( function() {
+	$('#1-dropdown > .sub-menu:nth-child(5)').click( function() {
 			SubMenuReset();
-			$('#getting-started-dropdown > .sub-menu:nth-child(5)').addClass('sub-menu-active');
+			$('#1-dropdown > .sub-menu:nth-child(5)').addClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(5)').addClass('form-active');
 			formFocus();
@@ -359,16 +359,16 @@ $(document).ready(function(){
 
 	$('#gs-help-container > .form-help:nth-child(5)').click( function() {
 			SubMenuReset();
-			$('#getting-started-dropdown > .sub-menu:nth-child(5)').toggleClass('sub-menu-active');
+			$('#1-dropdown > .sub-menu:nth-child(5)').toggleClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(5)').toggleClass('form-active');
 			formFocus();
 			$('#gs-help-container > .form-help:nth-child(5)').removeClass('form-focus');
 	});
 
-	$('#getting-started-dropdown > .sub-menu:nth-child(6)').click( function() {
+	$('#1-dropdown > .sub-menu:nth-child(6)').click( function() {
 			SubMenuReset();
-			$('#getting-started-dropdown > .sub-menu:nth-child(6)').addClass('sub-menu-active');
+			$('#1-dropdown > .sub-menu:nth-child(6)').addClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(6)').addClass('form-active');
 			formFocus();
@@ -382,16 +382,16 @@ $(document).ready(function(){
 
 	$('#gs-help-container > .form-help:nth-child(6)').click( function() {
 			SubMenuReset();
-			$('#getting-started-dropdown > .sub-menu:nth-child(6)').toggleClass('sub-menu-active');
+			$('#1-dropdown > .sub-menu:nth-child(6)').toggleClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(6)').toggleClass('form-active');
 			formFocus();
 			$('#gs-help-container > .form-help:nth-child(6)').removeClass('form-focus');
 	});
 
-	$('#getting-started-dropdown > .sub-menu:nth-child(7)').click( function() {
+	$('#1-dropdown > .sub-menu:nth-child(7)').click( function() {
 			SubMenuReset();
-			$('#getting-started-dropdown > .sub-menu:nth-child(7)').addClass('sub-menu-active');
+			$('#1-dropdown > .sub-menu:nth-child(7)').addClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(7)').addClass('form-active');
 			formFocus();
@@ -405,16 +405,16 @@ $(document).ready(function(){
 
 	$('#gs-help-container > .form-help:nth-child(7)').click( function() {
 			SubMenuReset();
-			$('#getting-started-dropdown > .sub-menu:nth-child(7)').toggleClass('sub-menu-active');
+			$('#1-dropdown > .sub-menu:nth-child(7)').toggleClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(7)').toggleClass('form-active');
 			formFocus();
 			$('#gs-help-container > .form-help:nth-child(7)').removeClass('form-focus');
 	});
 
-	$('#getting-started-dropdown > .sub-menu:nth-child(8)').click( function() {
+	$('#1-dropdown > .sub-menu:nth-child(8)').click( function() {
 			SubMenuReset();
-			$('#getting-started-dropdown > .sub-menu:nth-child(8)').addClass('sub-menu-active');
+			$('#1-dropdown > .sub-menu:nth-child(8)').addClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(8)').addClass('form-active');
 			formFocus();
@@ -428,7 +428,7 @@ $(document).ready(function(){
 
 	$('#gs-help-container > .form-help:nth-child(8)').click( function() {
 			SubMenuReset();
-			$('#getting-started-dropdown > .sub-menu:nth-child(8)').toggleClass('sub-menu-active');
+			$('#1-dropdown > .sub-menu:nth-child(8)').toggleClass('sub-menu-active');
 			helpSectionReset();
 			$('#gs-help-container > .form-help:nth-child(8)').toggleClass('form-active');
 			formFocus();
