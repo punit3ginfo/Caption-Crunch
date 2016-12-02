@@ -141,7 +141,7 @@
 										<div class="menu-icon-container">
 											<span class="help-menu-icon">
 												<!-- <div id="captions-icon" class="captions-menu-icon icon-rotate"></div> -->
-												<i class="fa fa-chevron-down icon-rotate" style="line-height: 40px;" aria-hidden="true" style="display: none;">
+												<!-- <i class="fa fa-chevron-down icon-rotate" style="line-height: 40px;" aria-hidden="true" style="display: none;"> -->
 											</span>
 											</div>
 										</div>
