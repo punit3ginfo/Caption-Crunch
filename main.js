@@ -18,7 +18,7 @@ $(document).ready(function(){
 	});
 
 	// Step 3 | Add Image - Show / Hide
-	$('.image-show-hide-button').click(function() {
+	$('.image-show-hide-button').click(function() { 
 		// Show / Hide Conditions Container
 		$('.image-show-hide').slideToggle("slow");
 		// Rotate Arrow 180 Degree / Click
