@@ -113,7 +113,6 @@ $(document).ready(function(){
 			$('#share-dropdown').slideUp("slow");
 			$('#share-help-container').slideUp("slow");
 		//  Captions Reset
-			// $('#captions-icon').addClass('fa-bullhorn');
 			$('#captions-trigger').removeClass('menu-container-active');
 			$('#captions-icon').removeClass('fa-chevron-down');
 			$('#captions-icon').removeClass('arrow-rotate');
@@ -209,10 +208,10 @@ $(document).ready(function(){
 	       $('#captions-dropdown').slideDown("slow");
 	       // Show / Hide Getting Started Container
 	      $('#captions-help-container').slideDown("slow");
-	      $('#captions-icon').removeClass('fa-bullhorn');
+	//       $('#captions-icon').removeClass('fa-bullhorn');
 	      $('#captions-trigger').addClass('menu-container-active');
-	      $('#captions-icon').addClass('fa-chevron-down');
-	      $('#captions-icon').addClass('arrow-rotate');
+	//       $('#captions-icon').addClass('fa-chevron-down');
+	//       $('#captions-icon').addClass('arrow-rotate');
 	      $('#captions-help-arrow-icon').addClass('arrow-rotate');
 	      //  Dropdown Reset
 	      $('#1-dropdown').slideUp("slow");
