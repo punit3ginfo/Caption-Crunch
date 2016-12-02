@@ -139,7 +139,7 @@
 									</div>
 									<div class="menu-icon-clearfix">
 										<div class="menu-icon-container">
-											<span class="help-menu-icon"><i id="captions-icon" class="fa fa-bullhorn icon-rotate" style="line-height: 40px;" aria-hidden="true"></i></span>
+											<span class="help-menu-icon"><i id="captions-icon" class="sidebar-hammer-img icon-rotate" style="line-height: 40px;" aria-hidden="true"></i></span>
 											</div>
 										</div>
 									</div>
