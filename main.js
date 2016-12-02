@@ -115,9 +115,8 @@ $(document).ready(function(){
 		//  Captions Reset
 			// $('#captions-icon').addClass('fa-bullhorn');
 			$('#captions-trigger').removeClass('menu-container-active');
-			$('#captions-icon').css('display','block');
-			$('#captions-arrow-icon').css('display','none');
-			$('#captions-arrow-icon').removeClass('arrow-rotate');
+			$('#captions-icon').removeClass('fa-chevron-down');
+			$('#captions-icon').removeClass('arrow-rotate');
 			$('#captions-help-arrow-icon').removeClass('arrow-rotate');
 			$('#captions-dropdown').slideUp("slow");
 			$('#captions-help-container').slideUp("slow");
@@ -210,10 +209,10 @@ $(document).ready(function(){
 	       $('#captions-dropdown').slideDown("slow");
 	       // Show / Hide Getting Started Container
 	      $('#captions-help-container').slideDown("slow");
+	      $('#captions-icon').removeClass('fa-bullhorn');
 	      $('#captions-trigger').addClass('menu-container-active');
-	      $('#captions-icon').css('display','none');
-	      $('#captions-arrow-icon').css('display','block');
-	      $('#captions-arrow-icon').addClass('arrow-rotate');
+	      $('#captions-icon').addClass('fa-chevron-down');
+	      $('#captions-icon').addClass('arrow-rotate');
 	      $('#captions-help-arrow-icon').addClass('arrow-rotate');
 	      //  Dropdown Reset
 	      $('#1-dropdown').slideUp("slow");
