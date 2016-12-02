@@ -77,11 +77,11 @@
 						<div id="share-trigger" class="menu-container">
 							<div class="menu-clearfix">
 								<div class="menu-font-container">
-									<span class="menu-font">Share</span>
+									<span class="menu-font">Share Page</span>
 								</div>
 								<div class="menu-icon-clearfix">
 									<div class="menu-icon-container">
-										<spa class="help-menu-icon"><i id="share-icon" class="fa fa-bullhorn icon-rotate" style="line-height: 40px;" aria-hidden="true"></i></span>
+										<span class="help-menu-icon"><i id="share-icon" class="fa fa-bullhorn icon-rotate" style="line-height: 40px;" aria-hidden="true"></i></span>
 										</div>
 									</div>
 								</div>
@@ -131,42 +131,100 @@
 							</div>
 						</div>
 
-						<!-- Collection Card -->
+						<a href="javascript:void(0)">
+							<div id="captions-trigger" class="menu-container">
+								<div class="menu-clearfix">
+									<div class="menu-font-container">
+										<span class="menu-font">Captions Page</span>
+									</div>
+									<div class="menu-icon-clearfix">
+										<div class="menu-icon-container">
+											<span class="help-menu-icon"><i id="captions-icon" class="fa fa-bullhorn icon-rotate" style="line-height: 40px;" aria-hidden="true"></i></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
 
+							<div id="captions-dropdown">
+								<div class="sub-menu">
+									<div class="sub-menu-clearfix">
+										<span class="sub-menu-text">Help Topic 1<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
+									</div>
+								</div>
+								<div class="sub-menu">
+									<div class="sub-menu-clearfix">
+										<span class="sub-menu-text">Help Topic 2<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
+									</div>
+								</div>
+								<div class="sub-menu">
+									<div class="sub-menu-clearfix">
+										<span class="sub-menu-text">Help Topic 3<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
+									</div>
+								</div>
+								<div class="sub-menu">
+									<div class="sub-menu-clearfix">
+										<span class="sub-menu-text">Help Topic 4<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
+									</div>
+								</div>
+								<div class="sub-menu">
+									<div class="sub-menu-clearfix">
+										<span class="sub-menu-text">Help Topic 5<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
+									</div>
+								</div>
+								<div class="sub-menu">
+									<div class="sub-menu-clearfix">
+										<span class="sub-menu-text">Help Topic 6<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
+									</div>
+								</div>
+								<div class="sub-menu">
+									<div class="sub-menu-clearfix">
+										<span class="sub-menu-text">Help Topic 7<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
+									</div>
+								</div>
+								<div class="sub-menu">
+									<div class="sub-menu-clearfix">
+										<span class="sub-menu-text">Help Topic 8<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
+									</div>
+								</div>
+							</div>
+
+							<!-- Collection Card -->
+
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="content-header">
+				<div class="content-header">
 
-				<div class="content-header-3col-container">
-					<div class="content-header-container">
-						<a href="javascript:void(0)" onclick="" class="sidebar-span share-history-button">
-							<i class="fa fa-ticket" aria-hidden="true"></i>
-							Support
-						</a>
+					<div class="content-header-3col-container">
+						<div class="content-header-container">
+							<a href="javascript:void(0)" onclick="" class="sidebar-span share-history-button">
+								<i class="fa fa-ticket" aria-hidden="true"></i>
+								Support
+							</a>
+						</div>
+					</div>
+
+					<div class="content-header-3col-container">
+						<div class="content-header-container">
+							<input class="search-text-box" onKeyDown="if(event.keyCode==13) search(document.getElementById('formValueId').value);" id="formValueId" type="text" name="q_name" placeholder="Search" />
+							<i class="fa fa-search search-button" onclick="search(document.getElementById('formValueId').value);"></i>
+						</div>
+					</div>
+
+					<div class="content-header-3col-container">
+						<div class="content-header-container">
+
+						</div>
 					</div>
 				</div>
-
-				<div class="content-header-3col-container">
-					<div class="content-header-container">
-						<input class="search-text-box" onKeyDown="if(event.keyCode==13) search(document.getElementById('formValueId').value);" id="formValueId" type="text" name="q_name" placeholder="Search" />
-						<i class="fa fa-search search-button" onclick="search(document.getElementById('formValueId').value);"></i>
+				<div class="content-overflow-container">
+					<div  class="help-content-overflow">
+						<?php include 'help-content.php' ?>
 					</div>
-				</div>
-
-				<div class="content-header-3col-container">
-					<div class="content-header-container">
-
-					</div>
-				</div>
-			</div>
-			<div class="content-overflow-container">
-				<div  class="help-content-overflow">
-					<?php include 'help-content.php' ?>
 				</div>
 			</div>
 		</div>
-	</div>
 
-<script id="scripts"></script>
+		<script id="scripts"></script>
