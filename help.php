@@ -139,15 +139,12 @@
 									</div>
 									<div class="menu-icon-clearfix">
 										<div class="menu-icon-container">
-<<<<<<< HEAD
 											<span class="help-menu-icon">
 												<div id="captions-icon" class="captions-menu-icon icon-rotate" style="line-height: 40px;" aria-hidden="true"></div>
-												<i id="captions-arrow-icon" class="fa fa-chevron-down icon-rotate" style="line-height: 40px;" aria-hidden="true" style="display: none;">
+												<!-- <i id="captions-arrow-icon" class="fa fa-chevron-down icon-rotate" style="line-height: 40px;" aria-hidden="true" style="display: none;"> -->
 											</span>
-=======
 											<span class="help-menu-icon"><div id="captions-icon" class="icon-rotate captions-menu-icon" style="line-height: 40px;" aria-hidden="true"></div></span>
 											</div>
->>>>>>> parent of a3894cf... u
 										</div>
 									</div>
 								</div>
