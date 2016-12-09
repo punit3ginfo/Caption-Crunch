@@ -1628,6 +1628,9 @@ a:hover {
   background-color: white;
   box-shadow: 1px -2px 17px 0px rgba(0, 0, 0, 0.14); }
 
+.form-container:last-child {
+  margin-bottom: 15px; }
+
 .form-clearfix {
   position: relative;
   overflow: visible;
