@@ -4,7 +4,7 @@
 			<div class="content-header-title-container">
 				<div class="content-header-title">
 					<span class="cc-text-large">
-						PRODUCTS
+						COLLECTIONS
 					</span>
 				</div>
 			</div>
@@ -62,7 +62,7 @@
 				<div class="content-header-container" id="share-back">
 					<a href="javascript:void(0)" onclick="getsharehistory()" class="sidebar-span share-history-button">
 						<i class="fa fa-history" aria-hidden="true"></i>
-						History
+						Share History
 					</a>
 				</div>
 			</div>
