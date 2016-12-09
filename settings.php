@@ -23,13 +23,30 @@
                                                                       <div class="menu-icon-clearfix">
                                                                           <div class="menu-icon-container menu-icon-container-active">
                                                                                     <span class="menu-icon">
-                                                                                                <i class="fa fa-sign-in settings-menu-icon" aria-hidden="true"></i>
+                                                                                                <i class="icon-shopify"></i>
                                                                                     </span>
                                                                           </div>
                                                                       </div>
                                                                   </div>
                                                               </div>
                                                           </a>
+
+							  <a href="javascript:void(0)" onclick="">
+								  <div class="menu-container menu-container-active">
+								      <div class="menu-clearfix">
+									  <div class="menu-font-container">
+									      <span class="menu-font">BUFFER</span>
+									  </div>
+									  <div class="menu-icon-clearfix">
+									      <div class="menu-icon-container menu-icon-container-active">
+											<span class="menu-icon">
+												    <i class="icon-buffer"></i>
+											</span>
+									      </div>
+									  </div>
+								      </div>
+								  </div>
+							      </a>
 
                                                        <!-- Preview Section -->
                                                   </div>
