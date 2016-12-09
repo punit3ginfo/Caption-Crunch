@@ -201,6 +201,7 @@ function getproducts(){
 			$('#share-link').addClass('sidebar-link-active');
 			$('#captions-link').removeClass('sidebar-link-active');
 			$('#settings-link').removeClass('sidebar-link-active');
+			$('#autopilot-link').removeClass('sidebar-link-active');
 			$('#all-products').addClass('menu-container-active');
 		}
 	});
@@ -224,7 +225,9 @@ function getnewproducts(){
 			$('#share-link').addClass('sidebar-link-active');
 			$('#captions-link').removeClass('sidebar-link-active');
 			$('#settings-link').removeClass('sidebar-link-active');
+			$('#autopilot-link').removeClass('sidebar-link-active');
 			$('#new-products').addClass('menu-container-active');
+
 		}
 	});
 }
@@ -259,6 +262,7 @@ function getcaptions(){
 			$('#captions-link').addClass('sidebar-link-active');
 			$('#share-link').removeClass('sidebar-link-active');
 			$('#settings-link').removeClass('sidebar-link-active');
+			$('#autopilot-link').removeClass('sidebar-link-active');
 		}
 	});
 }
@@ -277,6 +281,7 @@ function getsettings(){
 			$('#settings-link').addClass('sidebar-link-active');
 			$('#share-link').removeClass('sidebar-link-active');
 			$('#captions-link').removeClass('sidebar-link-active');
+			$('#autopilot-link').removeClass('sidebar-link-active');
 		}
 	});
 }
@@ -310,9 +315,10 @@ function getautopilot(){
 			//console.log(data);
 			// var data1= data.find('.chat_container').html()
 			$('.content-container').html(data);
-			$('#captions-link').addClass('sidebar-link-active');
+			$('#autopilot-link').addClass('sidebar-link-active');
 			$('#share-link').removeClass('sidebar-link-active');
 			$('#settings-link').removeClass('sidebar-link-active');
+			$('#captions-link').addClass('sidebar-link-active');
 		}
 	});
 }
