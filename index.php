@@ -318,7 +318,7 @@ function getautopilot(){
 			$('#autopilot-link').addClass('sidebar-link-active');
 			$('#share-link').removeClass('sidebar-link-active');
 			$('#settings-link').removeClass('sidebar-link-active');
-			$('#captions-link').addClass('sidebar-link-active');
+			$('#captions-link').removeClass('sidebar-link-active');
 		}
 	});
 }
