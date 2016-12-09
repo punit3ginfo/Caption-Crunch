@@ -129,8 +129,8 @@ try
 					</div>
 				</div>
 
-			          <a class='btn green-button share-button hvr-shutter-out-horizontal share-button-<?php echo $p_id1; ?>' id='share-button-<?php echo $p_id1; ?>' data-shared='<?php echo $shared; ?>' <?php if ($shared =='shared'){ echo "style='display:block;'";}else{ echo "style='display:none;'";} ?>><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
-			 	  <a id="reset-button-<?php echo $p_id1; ?>" class="btn grey-button share-button hvr-shutter-out-horizontal" data-shared="unshared" onclick="unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag;?>')" <?php if ($shared == 'unshared'){ echo "style='display:block;'";} else{ echo "style='display:none;'";} ?>><i class="fa fa-times" aria-hidden="true"></i> Reset</a>
+			          <a class='btn green-button share-button share-button-<?php echo $p_id1; ?>' id='share-button-<?php echo $p_id1; ?>' data-shared='<?php echo $shared; ?>' <?php if ($shared =='shared'){ echo "style='display:block;'";}else{ echo "style='display:none;'";} ?>><i class='fa fa-bullhorn' aria-hidden='true'></i> Share</a>
+			 	  <a id="reset-button-<?php echo $p_id1; ?>" class="btn grey-button share-button" data-shared="unshared" onclick="unshareButton(<?php echo $p_id1; ?>,'<?php echo $OrigonalTag;?>')" <?php if ($shared == 'unshared'){ echo "style='display:block;'";} else{ echo "style='display:none;'";} ?>><i class="fa fa-times" aria-hidden="true"></i> Reset</a>
 
 			</div>
 

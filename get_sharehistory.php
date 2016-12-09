@@ -93,7 +93,7 @@ try
 					</div>
 				</div>
 
-				<a class='btn grey-button share-button hvr-shutter-out-horizontal' id='reset-button-<?php echo $p_id1; ?>' data-shared="unshared"><i class='fa fa-times' aria-hidden='true'></i> Reset</a>
+				<a class='btn grey-button share-button' id='reset-button-<?php echo $p_id1; ?>' data-shared="unshared"><i class='fa fa-times' aria-hidden='true'></i> Reset</a>
 
 			</div>
 
