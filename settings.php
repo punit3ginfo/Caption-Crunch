@@ -22,7 +22,7 @@
                                                                       </div>
                                                                       <div class="menu-icon-clearfix">
                                                                           <div class="menu-icon-container menu-icon-container-active">
-                                                                                    <span class="menu-icon">
+                                                                                    <span class="menu-icon icon-center">
                                                                                                 <i class="icon-shopify"></i>
                                                                                     </span>
                                                                           </div>
@@ -39,7 +39,7 @@
 									  </div>
 									  <div class="menu-icon-clearfix">
 									      <div class="menu-icon-container menu-icon-container-active">
-											<span class="menu-icon">
+											<span class="menu-icon icon-center">
 												    <i class="icon-buffer"></i>
 											</span>
 									      </div>

@@ -2094,4 +2094,10 @@ ul#pagination-list li {
   height: 20px;
   background-repeat: no-repeat; }
 
+.icon-center {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 /*# sourceMappingURL=style.css.map */
