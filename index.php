@@ -50,6 +50,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
         <script src="jquery.twbsPagination.js" type="text/javascript"></script>
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous"> -->
 	<link rel="stylesheet" href="style.css">
+	<link href="https://file.myfontastic.com/WA7RDnzqg5i5rqC96gJyXY/icons.css" rel="stylesheet">
 
 </head>
 
@@ -69,7 +70,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 			<a class="sidebar-link" href="javascript:void(0)" onclick="getnewproducts()" id="share-link">
 				<div class="sidebar-nav-container">
 					<span >
-						<i style="font-size: 20px;" class="fa fa-bullhorn" aria-hidden="true"></i><br>
+						<i style="font-size: 20px;" class="icon-shop"></i><br>
 						Products
 					</span>
 				</div>
