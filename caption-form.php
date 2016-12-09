@@ -7,7 +7,7 @@
 					<!-- <span class="cc-text-small" style="float: left; line-height: 30px;">
 					Use the selectors below to add autofilled variables to your caption.
 				</span> -->
-				<i id="template-arrow-icon" class="icon-chevron-up" aria-hidden="true" style="float: right; line-height: 46px;"></i>
+				<i id="template-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 46px;"></i>
 			</span>
 		</span>
 	</div>
@@ -61,7 +61,7 @@
 
 		<span class="cc-text-medium form-text-header conditions-show-hide-button">
 			Conditions
-			<i id="condition-arrow-icon" class="icon-chevron-up" aria-hidden="true" style="float: right; line-height: 46px;"></i>
+			<i id="condition-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 46px;"></i>
 		</span>
 
 	</div>
