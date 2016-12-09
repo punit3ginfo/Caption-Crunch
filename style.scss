@@ -1333,6 +1333,7 @@ body {
 	width   : calc(100% - 15px);
 	height  : 100%;
 	padding : 15px;
+	padding-bottom: : 0px;
 }
 
 .content-container {
@@ -1415,7 +1416,7 @@ body {
 	overflow-x: hidden;
 
 	width    : 100%;
-	height   : calc(100% - 160px);
+	height   : calc(100% - 145px);
 }
 
 .menu-container {
@@ -2856,7 +2857,7 @@ ul#pagination-list li {
 	top: -15px;
 }
 
-.form-focus { 
+.form-focus {
 	opacity: 0.2;
 }
 
