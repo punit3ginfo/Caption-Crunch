@@ -33,7 +33,7 @@
 					<div id="gs-dropdown">
 						<div class="sub-menu">
 							<div class="sub-menu-clearfix">
-								<span class="sub-menu-text">Getting Started<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
+								<span class="sub-menu-text">Getting Started<i class="icon-buffer sub-menu-arrow" aria-hidden="true"></i></span>
 							</div>
 						</div>
 						<div class="sub-menu">
@@ -81,7 +81,7 @@
 								</div>
 								<div class="menu-icon-clearfix">
 									<div class="menu-icon-container">
-										<span class="help-menu-icon"><i id="share-icon" class="fa fa-bullhorn icon-rotate" style="line-height: 40px;" aria-hidden="true"></i></span>
+										<span class="help-menu-icon"><i id="share-icon" class="icon-shop icon-rotate" style="line-height: 40px;" aria-hidden="true"></i></span>
 										</div>
 									</div>
 								</div>
@@ -140,7 +140,8 @@
 									<div class="menu-icon-clearfix">
 										<div class="menu-icon-container">
 											<span class="help-menu-icon">
-												<div id="captions-icon" class="captions-menu-icon icon-rotate"></div>
+												<!-- <div id="captions-icon" class="captions-menu-icon icon-rotate"></div> -->
+												<span class="help-menu-icon"><i id="share-icon" class="icon-hammer icon-rotate" style="line-height: 40px;" aria-hidden="true"></i></span>
 											</span>
 											</div>
 										</div>
