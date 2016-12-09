@@ -50,7 +50,6 @@ require __DIR__.'/smart_collection.php'; //create smart collection
         <script src="jquery.twbsPagination.js" type="text/javascript"></script>
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous"> -->
 	<link rel="stylesheet" href="style.css">
-	<link href="https://file.myfontastic.com/WA7RDnzqg5i5rqC96gJyXY/icons.css" rel="stylesheet">
 	<link href="https://file.myfontastic.com/2QhKnEmxbVRUZVd3jnyZjj/icons.css" rel="stylesheet">
 
 </head>
@@ -90,7 +89,8 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 			<a  class="sidebar-link sidebar-hammer" href="javascript:void(0)" onclick="getcaptions()" id="captions-link">
 				<div class="sidebar-nav-container">
 					<span>
-						<div class="sidebar-hammer-img"></div>
+						<i style="font-size: 20px;" class="icon-hammer"></i><br>
+						<!-- <div class="sidebar-hammer-img"></div> -->
 						Captions
 					</span>
 				</div>
