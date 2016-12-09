@@ -140,9 +140,6 @@ $(document).ready(function(){
           $('.sidebar-nav-container-header').addClass("sidebar-nav-container-header-active");
           $('.help-header-link').css("color", "white");
 	  $("#help-title").html('<i style="font-size: 20px;" class="fa fa-times" aria-hidden="true"></i><br> Back');
-	  menuReset();
-	  formFocusReset();
-	  SubMenuReset();
 	  $('#gs-dropdown').slideUp("slow");
 	  $('#gs-help-container').slideUp("slow");
 	  $('#share-dropdown').slideUp("slow");
