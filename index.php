@@ -68,6 +68,15 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 			</a>
 
+			<a class="sidebar-link" href="javascript:void(0)" onclick="getautopilot()" id="autopilot-link">
+				<div class="sidebar-nav-container">
+					<span >
+						<i style="font-size: 20px;" class="icon-paperplane"></i><br>
+						Autopilot
+					</span>
+				</div>
+			</a>
+
 			<a class="sidebar-link" href="javascript:void(0)" onclick="getnewproducts()" id="share-link">
 				<div class="sidebar-nav-container">
 					<span >
