@@ -479,10 +479,10 @@ body {
   background-size: 100%; }
 
 .sidebar-link:hover .sidebar-hammer-img {
-  background-image: url("./images/store-white.png"); }
+  background-image: url("./images/hammer-white.svg"); }
 
 .sidebar-link-active .sidebar-hammer-img {
-  background-image: url("./images/store-white.png"); }
+  background-image: url("./images/hammer-white.svg"); }
 
 /* ------------- Help Menu -------------- */
 #right-slide-left {
