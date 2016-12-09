@@ -61,8 +61,8 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 			<a  class="sidebar-link" href="https://buffer.com" target="_blank">
 				<div class="sidebar-nav-container">
 					<span >
-						<i style="font-size: 20px;" class="fa fa-tachometer" aria-hidden="true"></i><br>
-						Dashboard
+						<i style="font-size: 20px;" class="icon-dashboard-speed-streamline"></i><br>
+						Buffer
 					</span>
 				</div>
 			</a>
