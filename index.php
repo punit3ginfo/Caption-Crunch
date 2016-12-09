@@ -127,7 +127,8 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 	<!-- Brand and toggle get grouped for better mobile display -->
 
 	<a class="navbar-brand" href="/">
-		<object type="image/svg+xml" class="header-cc-hammer-img" data="./images/hammer.svg"></object>
+		<!-- <object type="image/svg+xml" class="header-cc-hammer-img" data="./images/hammer.svg"></object> -->
+		<i style="font-size: 20px;" class="icon-hammer"></i>
 		<span class="header-help">Caption</span>
 		<span class="header-central">Crunch</span>
 	</a>
