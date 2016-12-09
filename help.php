@@ -33,7 +33,7 @@
 					<div id="gs-dropdown">
 						<div class="sub-menu">
 							<div class="sub-menu-clearfix">
-								<span class="sub-menu-text">Getting Started<i class="icon-buffer sub-menu-arrow" aria-hidden="true"></i></span>
+								<span class="sub-menu-text">Getting Started<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 							</div>
 						</div>
 						<div class="sub-menu">
