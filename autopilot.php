@@ -61,7 +61,7 @@
 	<div class="content-overflow-container">
 
 		<div  class="content-overflow">
-			<?php include 'caption-form.php';?>
+			<?php include 'autopilot-form.php';?>
 		</div>
 
 	</div>
