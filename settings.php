@@ -23,7 +23,7 @@
                                                                       <div class="menu-icon-clearfix">
                                                                           <div class="menu-icon-container menu-icon-container-active">
                                                                                     <span class="menu-icon">
-                                                                                                <i class="icon-buffer-icon-grey settings-menu-icon"></i>
+                                                                                                <i class="fa fa-sign-in settings-menu-icon" aria-hidden="true"></i>
                                                                                     </span>
                                                                           </div>
                                                                       </div>
