@@ -21,8 +21,8 @@
                                                                           <span class="menu-font">Shopify</span>
                                                                       </div>
                                                                       <div class="menu-icon-clearfix">
-                                                                          <div class="menu-icon-container menu-icon-container-active">
-                                                                                    <span class="menu-icon icon-center">
+                                                                          <div class="menu-icon-container  icon-center menu-icon-container-active">
+                                                                                    <span class="menu-icon">
                                                                                                 <i class="icon-shopify"></i>
                                                                                     </span>
                                                                           </div>
@@ -32,14 +32,14 @@
                                                           </a>
 
 							  <a href="javascript:void(0)" onclick="">
-								  <div class="menu-container menu-container-active">
+								  <div class="menu-container">
 								      <div class="menu-clearfix">
 									  <div class="menu-font-container">
 									      <span class="menu-font">BUFFER</span>
 									  </div>
 									  <div class="menu-icon-clearfix">
-									      <div class="menu-icon-container menu-icon-container-active">
-											<span class="menu-icon icon-center">
+									      <div class="menu-icon-container  icon-center menu-icon-container-active">
+											<span class="menu-icon">
 												    <i class="icon-buffer"></i>
 											</span>
 									      </div>
