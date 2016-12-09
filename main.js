@@ -132,6 +132,12 @@ $(document).ready(function(){
           $('.sidebar-nav-container-header').removeClass("sidebar-nav-container-header-active");
           $('.help-header-link').css("color", "#666");
 	  $("#help-title").html('<i style="font-size: 20px;" class="fa fa-info" aria-hidden="true"></i><br> Help');
+	    $('#gs-dropdown').slideUp("slow");
+	    $('#gs-help-container').slideUp("slow");
+	    $('#share-dropdown').slideUp("slow");
+	    $('#share-help-container').slideUp("slow");
+	    $('#captions-dropdown').slideUp("slow");
+	    $('#captions-help-container').slideUp("slow");
       } else {
           $('#right-slide-left').addClass("right-slide-left-animate");
 	  $(".preview-container").addClass("main-container-slide-left");
