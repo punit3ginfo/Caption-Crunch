@@ -62,7 +62,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				<div class="sidebar-nav-container">
 					<span >
 						<!-- <i style="font-size: 20px;" class="icon-dashboard-speed-streamline"></i><br> -->
-						<div class="sidebar-buffer-img"></div>
+						<i style="font-size: 20px;" class="icon-buffer"></i><br>
 						Buffer
 					</span>
 				</div>
