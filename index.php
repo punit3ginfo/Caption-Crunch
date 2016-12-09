@@ -51,6 +51,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous"> -->
 	<link rel="stylesheet" href="style.css">
 	<link href="https://file.myfontastic.com/WA7RDnzqg5i5rqC96gJyXY/icons.css" rel="stylesheet">
+	<link href="https://file.myfontastic.com/2QhKnEmxbVRUZVd3jnyZjj/icons.css" rel="stylesheet">
 
 </head>
 
