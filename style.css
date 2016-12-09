@@ -230,6 +230,12 @@ body {
   height: 14px;
   margin-right: 2px; }
 
+.header-hammer {
+  font-size: 15px;
+  color: #7ab55c;
+  margin-right: 2px;
+  margin-bottom: -4px; }
+
 .header-help {
   margin-left: -4px;
   color: #7ab55c; }
