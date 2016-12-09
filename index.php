@@ -70,7 +70,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				<div class="sidebar-nav-container">
 					<span >
 						<i style="font-size: 20px;" class="fa fa-bullhorn" aria-hidden="true"></i><br>
-						Share
+						Products
 					</span>
 				</div>
 			</a>
@@ -88,7 +88,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				<div class="sidebar-nav-container">
 					<span>
 						<div class="sidebar-hammer-img"></div>
-						Captions
+						Templates
 					</span>
 				</div>
 			</a>
@@ -97,7 +97,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				<div class="sidebar-nav-container">
 					<span >
 						<i style="font-size: 20px;" class="fa fa-cogs" aria-hidden="true"></i><br>
-						Settings
+						Accounts
 					</span>
 				</div>
 			</a>

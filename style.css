@@ -599,9 +599,10 @@ body {
   position: relative;
   overflow: hidden;
   width: auto;
-  height: calc(100% - 30px);
+  height: calc(100% - 15px);
   padding: 15px;
-  padding-right: 0px; }
+  padding-right: 0px;
+  padding-bottom: 0px; }
 
 .preview-template-container {
   position: relative;
