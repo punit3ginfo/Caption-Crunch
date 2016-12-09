@@ -297,6 +297,26 @@ function gethistory(){
 	});
 }
 
+// Autopilot
+// Get Captions Page
+function getautopilot(){
+
+	var access_token='<?php echo $access_token ?>';
+	var shop='<?php echo $_REQUEST['shop'] ?>';
+
+	$.ajax({
+		url: '/autopilot.php?access_token='+access_token+'&shop='+shop,
+		success: function(data){
+			//console.log(data);
+			// var data1= data.find('.chat_container').html()
+			$('.content-container').html(data);
+			$('#captions-link').addClass('sidebar-link-active');
+			$('#share-link').removeClass('sidebar-link-active');
+			$('#settings-link').removeClass('sidebar-link-active');
+		}
+	});
+}
+
 // Initial Page Load
 (function($) {
 	$(document).ready(function() {
