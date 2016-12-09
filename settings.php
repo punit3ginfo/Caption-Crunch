@@ -4,7 +4,7 @@
                                                 <div class="content-header-title-container">
                                                           <div class="content-header-title">
                                                                   <span class="cc-text-large">
-                                                                    SETTINGS
+                                                                    CONNECT
                                                                   </span>
                                                       </div>
                                               </div>
@@ -18,12 +18,12 @@
                                                               <div class="menu-container menu-container-active">
                                                                   <div class="menu-clearfix">
                                                                       <div class="menu-font-container">
-                                                                          <span class="menu-font">Connect</span>
+                                                                          <span class="menu-font">Shopify</span>
                                                                       </div>
                                                                       <div class="menu-icon-clearfix">
                                                                           <div class="menu-icon-container menu-icon-container-active">
                                                                                     <span class="menu-icon">
-                                                                                                <i class="fa fa-sign-in settings-menu-icon" aria-hidden="true"></i>
+                                                                                                <i class="icon-buffer-icon-grey settings-menu-icon"></i>
                                                                                     </span>
                                                                           </div>
                                                                       </div>
