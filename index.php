@@ -97,7 +97,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				<div class="sidebar-nav-container">
 					<span >
 						<i style="font-size: 20px;" class="fa fa-cogs" aria-hidden="true"></i><br>
-						Accounts
+						Settings
 					</span>
 				</div>
 			</a>
