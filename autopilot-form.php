@@ -110,7 +110,7 @@
 			<div class="form-3col-clearfix">
 				<input class="form-input" type="text-box" placeholder="Enter condition"/>
 			</div> -->
-		</div>
+		<!-- </div> -->
 		<!-- <div class="form-clearfix" id="add-condition-container">
 			<a href="#" class="add-condition-button btn grey-button"><i class="fa fa-plus" aria-hidden="true"></i> Add another condition</a>
 		</div> -->
