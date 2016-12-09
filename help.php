@@ -23,7 +23,7 @@
 								</div>
 								<div class="menu-icon-clearfix">
 									<div class="menu-icon-container">
-										<span class="help-menu-icon"><i id="gs-icon" class="icon-buffer icon-rotate" style="line-height: 40px;" aria-hidden="true"></i></span>
+										<span class="help-menu-icon"><i id="gs-icon" class="icon-buffer" style="line-height: 40px;" aria-hidden="true"></i></span>
 									</div>
 								</div>
 							</div>
@@ -77,11 +77,11 @@
 						<div id="share-trigger" class="menu-container">
 							<div class="menu-clearfix">
 								<div class="menu-font-container">
-									<span class="menu-font">Share Page</span>
+									<span class="menu-font">Products Page</span>
 								</div>
 								<div class="menu-icon-clearfix">
 									<div class="menu-icon-container">
-										<span class="help-menu-icon"><i id="share-icon" class="icon-shop icon-rotate" style="line-height: 40px;" aria-hidden="true"></i></span>
+										<span class="help-menu-icon"><i id="share-icon" class="icon-shop" style="line-height: 40px;" aria-hidden="true"></i></span>
 										</div>
 									</div>
 								</div>
@@ -141,7 +141,7 @@
 										<div class="menu-icon-container">
 											<span class="help-menu-icon">
 												<!-- <div id="captions-icon" class="captions-menu-icon icon-rotate"></div> -->
-												<span class="help-menu-icon"><i id="share-icon" class="icon-hammer icon-rotate" style="line-height: 40px;" aria-hidden="true"></i></span>
+												<span class="help-menu-icon"><i id="share-icon" class="icon-hammer" style="line-height: 40px;" aria-hidden="true"></i></span>
 											</span>
 											</div>
 										</div>
