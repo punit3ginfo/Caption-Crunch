@@ -4,7 +4,7 @@
                                                 <div class="content-header-title-container">
                                                           <div class="content-header-title">
                                                                   <span class="cc-text-large">
-                                                                    CONNECT
+                                                                    NETWORK SETTINGS
                                                                   </span>
                                                       </div>
                                               </div>
