@@ -88,7 +88,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				<div class="sidebar-nav-container">
 					<span>
 						<div class="sidebar-hammer-img"></div>
-						Templates
+						Captions
 					</span>
 				</div>
 			</a>
