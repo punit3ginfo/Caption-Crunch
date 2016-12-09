@@ -23,7 +23,7 @@
 								</div>
 								<div class="menu-icon-clearfix">
 									<div class="menu-icon-container">
-										<span class="help-menu-icon"><i id="gs-icon" class="fa fa-star icon-rotate" style="line-height: 40px;" aria-hidden="true"></i></span>
+										<span class="help-menu-icon"><i id="gs-icon" class="icon-buffer icon-rotate" style="line-height: 40px;" aria-hidden="true"></i></span>
 									</div>
 								</div>
 							</div>
