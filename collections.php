@@ -62,7 +62,7 @@
 				<div class="content-header-container" id="share-back">
 					<a href="javascript:void(0)" onclick="getsharehistory()" class="sidebar-span share-history-button">
 						<i class="fa fa-history" aria-hidden="true"></i>
-						Share History
+						 Share History
 					</a>
 				</div>
 			</div>

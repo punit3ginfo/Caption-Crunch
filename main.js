@@ -132,12 +132,12 @@ $(document).ready(function(){
           $('.sidebar-nav-container-header').removeClass("sidebar-nav-container-header-active");
           $('.help-header-link').css("color", "#666");
 	  $("#help-title").html('<i style="font-size: 20px;" class="fa fa-info" aria-hidden="true"></i><br> Help');
-	    $('#gs-dropdown').slideUp("slow");
-	    $('#gs-help-container').slideUp("slow");
-	    $('#share-dropdown').slideUp("slow");
-	    $('#share-help-container').slideUp("slow");
-	    $('#captions-dropdown').slideUp("slow");
-	    $('#captions-help-container').slideUp("slow");
+	    $('#gs-dropdown').css("display","none");
+	    $('#gs-help-container').css("display","none");
+	    $('#share-dropdown').css("display","none");
+	    $('#share-help-container').css("display","none");
+	    $('#captions-dropdown').css("display","none");
+	    $('#captions-help-container').css("display","none");
       } else {
           $('#right-slide-left').addClass("right-slide-left-animate");
 	  $(".preview-container").addClass("main-container-slide-left");
@@ -155,6 +155,12 @@ $(document).ready(function(){
 	//   $('#share-help-container').slideUp("slow");
 	//   $('#captions-dropdown').slideUp("slow");
 	//   $('#captions-help-container').slideUp("slow");
+	$('#gs-dropdown').css("display","none");
+	$('#gs-help-container').css("display","none");
+	$('#share-dropdown').css("display","none");
+	$('#share-help-container').css("display","none");
+	$('#captions-dropdown').css("display","none");
+	$('#captions-help-container').css("display","none");
       };
   });
 
