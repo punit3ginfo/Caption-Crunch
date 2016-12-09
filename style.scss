@@ -692,6 +692,23 @@ body {
 	background-image : url("./images/hammer-white.svg");
 }
 
+.sidebar-buffer-img {
+	width            : 20px;
+	height           : 20px;
+	margin           : auto;
+
+	background-image : url("./images/buffer-icon-grey.png");
+	background-size  : 100%;
+}
+
+.sidebar-link:hover .sidebar-buffer-img {
+	background-image : url("./images/buffer-icon-white.png");
+}
+
+.sidebar-link-active .sidebar-buffer-img {
+	background-image : url("./images/buffer-icon-white.png");
+}
+
 /* ------------- Help Menu -------------- */
 
 #right-slide-left {
