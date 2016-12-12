@@ -105,14 +105,14 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 			</a>
 
-			<a class="sidebar-link" href="javascript:void(0)" onclick="getsettings()" id="settings-link">
+			<!-- <a class="sidebar-link" href="javascript:void(0)" onclick="getsettings()" id="settings-link">
 				<div class="sidebar-nav-container">
 					<span >
 						<i style="font-size: 20px;" class="icon-link"></i><br>
 						Networks
 					</span>
 				</div>
-			</a>
+			</a> -->
 
 
 			<!-- <a class="sidebar-link" href="/?page=autopilot">
