@@ -157,14 +157,14 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 
 <!-- /.Page Container -->
 
-<!-- <div id="right-slide-left">
+<div id="right-slide-left" style="display: none;">
 	<?php include 'help.php';?>
-</div> -->
+</div>
 
-<!-- <div id="top-slide-down">
+<div id="top-slide-down" style="display: none;">
 	<?php include 'preview.php';?>
 	<?php include 'product-preview.php';?>
-</div> -->
+</div>
 
 <div id="dashboard">
 	<div class="main_container_clearfix">
