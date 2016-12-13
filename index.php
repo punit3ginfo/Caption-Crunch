@@ -55,7 +55,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 </head>
 
 <body>
-	<div class="back">
+	<div class="main-template">
 		<!-- Sidebar Nav -->
 		<aside class="sidebar_nav">
 			<a  class="sidebar-link" href="https://buffer.com" target="_blank">
@@ -106,76 +106,114 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 			</a>
 
 			<!-- <a class="sidebar-link" href="javascript:void(0)" onclick="getsettings()" id="settings-link">
-				<div class="sidebar-nav-container">
-					<span >
-						<i style="font-size: 20px;" class="icon-link"></i><br>
-						Networks
-					</span>
-				</div>
-			</a> -->
+									<div class="sidebar-nav-container">
+									<span >
+									<i style="font-size: 20px;" class="icon-link"></i><br>
+									Networks
+								</span>
+							</div>
+						</a> -->
 
 
-			<!-- <a class="sidebar-link" href="/?page=autopilot">
-			<div class="sidebar-nav-container">
-			<span >
-			<i style="font-size: 20px;" class="fa fa-paper-plane-o" aria-hidden="true"></i><br>
-			Autopilot
-		</span>
+						<!-- <a class="sidebar-link" href="/?page=autopilot">
+						<div class="sidebar-nav-container">
+						<span >
+						<i style="font-size: 20px;" class="fa fa-paper-plane-o" aria-hidden="true"></i><br>
+						Autopilot
+						</span>
+						</div>
+						</a> -->
+		</aside>
+
+		<!-- /.Sidebar Nav -->
+
+		<!-- Navigation -->
+		<header class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="top: 0px;">
+
+			<!-- Brand and toggle get grouped for better mobile display -->
+
+			<a class="navbar-brand" href="/">
+				<!-- <object type="image/svg+xml" class="header-cc-hammer-img" data="./images/hammer.svg"></object> -->
+				<i class="icon-hammer header-hammer"></i>
+				<span class="header-help">Caption</span>
+				<span class="header-central">Crunch</span>
+			</a>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<nav class="main-nav-container">
+				<a id="help-button" class="help-header-link" style="text-decoration: none; float: right; cursor:pointer;">
+					<div class="sidebar-nav-container-header">
+						<span id="help-title">
+							<i style="font-size: 20px;" class="fa fa-info" aria-hidden="true"></i><br>
+							Help
+						</span>
+					</div>
+				</a>
+			</nav>
+			<!-- /.navbar-collapse -->
+			<!-- /.container -->
+		</header>
 	</div>
-</a> -->
-</aside>
-
-</div>
-
-</div>
-<!-- /.Sidebar Nav -->
-
-<!-- Navigation -->
-<header class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="top: 0px;">
-
-	<!-- Brand and toggle get grouped for better mobile display -->
-
-	<a class="navbar-brand" href="/">
-		<!-- <object type="image/svg+xml" class="header-cc-hammer-img" data="./images/hammer.svg"></object> -->
-		<i class="icon-hammer header-hammer"></i>
-		<span class="header-help">Caption</span>
-		<span class="header-central">Crunch</span>
-	</a>
-
-	<!-- Collect the nav links, forms, and other content for toggling -->
-	<nav class="main-nav-container">
-		<a id="help-button" class="help-header-link" style="text-decoration: none; float: right; cursor:pointer;">
-			<div class="sidebar-nav-container-header">
-				<span id="help-title">
-					<i style="font-size: 20px;" class="fa fa-info" aria-hidden="true"></i><br>
-					Help
-				</span>
-			</div>
-		</a>
-	</nav>
-	<!-- /.navbar-collapse -->
-
-	<!-- /.container -->
-</header>
 
 <!-- /.Page Container -->
 
-<div id="right-slide-left">
+<!-- <div id="right-slide-left">
 	<?php include 'help.php';?>
-</div>
+</div> -->
 
-<div id="top-slide-down">
+<!-- <div id="top-slide-down">
 	<?php include 'preview.php';?>
 	<?php include 'product-preview.php';?>
+</div> -->
+
+<div id="dashboard">
+	<div class="main_container_clearfix">
+		<div id="main-padded-container" class="">
+			<div class="main_container">
+				<div class="content-container"></div>
+			</div>
+		</div>
+	</div>
 </div>
 
-<div class="main_container_clearfix">
+<div id="autopilot">
+	<div class="main_container_clearfix">
+		<div id="main-padded-container" class="">
+			<div class="main_container">
+				<div class="content-container"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="captions">
+	<div class="main_container_clearfix">
+		<div id="main-padded-container" class="">
+			<div class="main_container">
+				<div class="content-container"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="products">
+	<div class="main_container_clearfix">
+		<div id="main-padded-container" class="">
+			<div class="main_container">
+				<div class="content-container"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- <div class="main_container_clearfix">
 	<div id="main-padded-container" class="">
 		<div class="main_container">
 			<div class="content-container"></div>
 		</div>
 	</div>
-</div>
+</div> -->
+
 <!-- /.Page Container -->
 </div>
 
