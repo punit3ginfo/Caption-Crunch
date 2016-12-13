@@ -71,26 +71,8 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 			<a class="sidebar-link" href="javascript:void(0)" onclick="getautopilot()" id="autopilot-link">
 				<div class="sidebar-nav-container">
 					<span >
-						<i style="font-size: 20px;" class="icon-paperplane"></i><br>
+						<i style="font-size: 20px;" class="icon-paperplane-ico"></i><br>
 						Autopilot
-					</span>
-				</div>
-			</a>
-
-			<a class="sidebar-link" href="javascript:void(0)" onclick="getnewproducts()" id="share-link">
-				<div class="sidebar-nav-container">
-					<span >
-						<i style="font-size: 20px;" class="icon-shop"></i><br>
-						Products
-					</span>
-				</div>
-			</a>
-
-			<a class="sidebar-link-active back-link" href="javascript:void(0)" style="display: none;">
-				<div class="sidebar-nav-container">
-					<span  style="color: white;">
-						<i style="font-size: 20px;" class="fa fa-times" aria-hidden="true"></i><br>
-						Back
 					</span>
 				</div>
 			</a>
@@ -101,6 +83,24 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 						<i style="font-size: 20px;" class="icon-hammer"></i><br>
 						<!-- <div class="sidebar-hammer-img"></div> -->
 						Captions
+					</span>
+				</div>
+			</a>
+
+			<a class="sidebar-link" href="javascript:void(0)" onclick="getnewproducts()" id="share-link">
+				<div class="sidebar-nav-container">
+					<span >
+						<i style="font-size: 20px;" class="icon-tag"></i><br>
+						Products
+					</span>
+				</div>
+			</a>
+
+			<a class="sidebar-link-active back-link" href="javascript:void(0)" style="display: none;">
+				<div class="sidebar-nav-container">
+					<span  style="color: white;">
+						<i style="font-size: 20px;" class="fa fa-times" aria-hidden="true"></i><br>
+						Back
 					</span>
 				</div>
 			</a>
