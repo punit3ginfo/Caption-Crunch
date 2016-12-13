@@ -946,7 +946,16 @@ body {
   left: 0px; }
 
 /* ---------------- Main Container ----------------- */
-.main_container_clearfix {
+.section {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: calc(100vw - 80px);
+  height: calc(100vh - 63px);
+  padding-top: 63px;
+  padding-left: 80px; }
+
+.main-container-clearfix {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -956,7 +965,8 @@ body {
   padding-left: 80px;
   transition-timing-function: ease;
   transition-duration: 0.3s;
-  animation-direction: normal; }
+  animation-direction: normal;
+  background: red; }
 
 .slide-left {
   left: -100vw !important; }

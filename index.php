@@ -166,47 +166,23 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 	<?php include 'product-preview.php';?>
 </div>
 
-<div id="dashboard">
-	<div class="main_container_clearfix">
-		<div id="main-padded-container" class="">
-			<div class="main_container">
-				<div class="content-container"></div>
-			</div>
-		</div>
-	</div>
+<div id="dashboard" class="section">
+
 </div>
 
-<div id="autopilot">
-	<div class="main_container_clearfix">
-		<div id="main-padded-container" class="">
-			<div class="main_container">
-				<div class="content-container"></div>
-			</div>
-		</div>
-	</div>
+<div id="autopilot" class="section">
+
 </div>
 
-<div id="captions">
-	<div class="main_container_clearfix">
-		<div id="main-padded-container" class="">
-			<div class="main_container">
-				<div class="content-container"></div>
-			</div>
-		</div>
-	</div>
+<div id="captions" class="section" style="display: none;">
+
 </div>
 
-<div id="products">
-	<div class="main_container_clearfix">
-		<div id="main-padded-container" class="">
-			<div class="main_container">
-				<div class="content-container"></div>
-			</div>
-		</div>
-	</div>
+<div id="products" class="section" style="display: none;">
+
 </div>
 
-<!-- <div class="main_container_clearfix">
+<!-- <div class="main-container-clearfix">
 	<div id="main-padded-container" class="">
 		<div class="main_container">
 			<div class="content-container"></div>
