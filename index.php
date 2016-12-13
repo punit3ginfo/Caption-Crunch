@@ -81,7 +81,6 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				<div class="sidebar-nav-container">
 					<span>
 						<i style="font-size: 20px;" class="icon-hammer"></i><br>
-						<!-- <div class="sidebar-hammer-img"></div> -->
 						Captions
 					</span>
 				</div>
@@ -112,16 +111,6 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 									Networks
 								</span>
 							</div>
-						</a> -->
-
-
-						<!-- <a class="sidebar-link" href="/?page=autopilot">
-						<div class="sidebar-nav-container">
-						<span >
-						<i style="font-size: 20px;" class="fa fa-paper-plane-o" aria-hidden="true"></i><br>
-						Autopilot
-						</span>
-						</div>
 						</a> -->
 		</aside>
 
@@ -157,15 +146,6 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 
 <!-- /.Page Container -->
 
-<div id="right-slide-left" style="display: none;">
-	<?php include 'help.php';?>
-</div>
-
-<div id="top-slide-down" style="display: none;">
-	<?php include 'preview.php';?>
-	<?php include 'product-preview.php';?>
-</div>
-
 <div id="dashboard" class="section">
 
 </div>
@@ -190,7 +170,17 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 	</div>
 </div> -->
 
+<div id="right-slide-left" style="display: none;">
+	<?php include 'help.php';?>
+</div>
+
+<div id="top-slide-down" style="display: none;">
+	<?php include 'preview.php';?>
+	<?php include 'product-preview.php';?>
+</div>
+
 <!-- /.Page Container -->
+</div>
 
 <script>
 // Load Pages
