@@ -191,7 +191,6 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 </div> -->
 
 <!-- /.Page Container -->
-</div>
 
 <script>
 // Load Pages
@@ -341,7 +340,7 @@ function getautopilot(){
 (function($) {
 	$(document).ready(function() {
 		var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-		 $('.content-container').html(data);
+		 $('#dashboard').html(data);
 		getnewproducts(); // start the loop
 	});
 })(jQuery);
