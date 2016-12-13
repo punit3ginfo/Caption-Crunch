@@ -947,13 +947,11 @@ body {
 
 /* ---------------- Main Container ----------------- */
 .section {
-  position: absolute;
-  top: 0px;
-  left: 0px;
   width: calc(100vw - 80px);
   height: calc(100vh - 63px);
   padding-top: 63px;
-  padding-left: 80px; }
+  padding-left: 80px;
+  position: relative; }
 
 .main-container-clearfix {
   position: fixed;
