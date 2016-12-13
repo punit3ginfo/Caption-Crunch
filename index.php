@@ -159,7 +159,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 </div>
 
 <div id="products" class="section" style="display: none;">
-
+	<?php include 'getnewproducts.php' ?>
 </div>
 
 <!-- <div class="main-container-clearfix">
