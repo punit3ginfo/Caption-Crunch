@@ -147,18 +147,18 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 <!-- /.Page Container -->
 
 <div id="dashboard" class="section">
-
+	<?php include 'dashboard.php' ?>
 </div>
 
 <div id="autopilot" class="section">
-
+	<?php include 'autopilot.php' ?>
 </div>
 
-<div id="captions" class="section" style="display: none;">
-
+<div id="captions" class="section">
+	<?php include 'captions.php' ?>
 </div>
 
-<div id="products" class="section" style="display: none;">
+<div id="products" class="section">
 	<?php include 'getnewproducts.php' ?>
 </div>
 
