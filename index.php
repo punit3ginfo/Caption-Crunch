@@ -149,15 +149,15 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 <div class="main-content-container">
 
 	<div id="dashboard" class="section">
-		<?php include 'dashboard.php' ?>
+		
 	</div>
 
 	<div id="autopilot" class="section">
-		<?php include 'autopilot.php' ?>
+
 	</div>
 
 	<div id="captions" class="section">
-		<?php include 'captions.php' ?>
+
 	</div>
 
 	<div id="products" class="section">
@@ -331,13 +331,16 @@ function gethistory(){
 // }
 
 // Initial Page Load
-// (function($) {
-// 	$(document).ready(function() {
-// 		// var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-// 		//  $('#products').html(data);
-// 		getnewproducts(); // start the loop
-// 	});
-// })(jQuery);
+(function($) {
+	$(document).ready(function() {
+		var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
+		 $('#products').html(data);
+		getnewproducts(); // start the loop
+		$("#dashboard").load('dashboard.php');
+		$("#autopilot").load('autopilot.php');
+		$("#captions").load('captions.php');
+	});
+})(jQuery);
 </script>
 
 <!-- Scripts -->
