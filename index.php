@@ -159,7 +159,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 </div>
 
 <div id="products" class="section">
-	<?php include 'getnewproducts.php' ?>
+
 </div>
 
 <!-- <div class="main-container-clearfix">
@@ -217,13 +217,13 @@ function getnewproducts(){
 	var access_token='<?php echo $access_token ?>';
 	var shop='<?php echo $_REQUEST['shop'] ?>';
 	var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-     	$('#dashboard').html(data);
+     	$('#products').html(data);
 	$.ajax({
 		url: '/collections.php?access_token='+access_token+'&shop='+shop+'&max=60',
 		success: function(data){
 			//console.log(data);
 			// var data1= data.find('.chat_container').html()
-			$('#dashboard').html(data);
+			$('#products').html(data);
 
 			$('#share-link').addClass('sidebar-link-active');
 			$('#captions-link').removeClass('sidebar-link-active');
@@ -331,7 +331,7 @@ function getautopilot(){
 	$(document).ready(function() {
 		var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
 		 $('#dashboard').html(data);
-		getnewproducts(); // start the loop
+		// getnewproducts(); // start the loop
 	});
 })(jQuery);
 </script>
