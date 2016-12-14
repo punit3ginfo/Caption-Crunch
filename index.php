@@ -158,11 +158,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 
 	<div id="captions" class="section"></div>
 
-	<div id="products" class="section">
-		<div id="top-slide-down">
-			<?php include 'preview.php';?>
-		</div>
-	</div>
+	<div id="products" class="section"></div>
 
 </div>
 

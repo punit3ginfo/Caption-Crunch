@@ -113,3 +113,7 @@
 		</div>
 	</div>
 </div>
+
+<div id="top-slide-down">
+	<?php include 'preview.php';?>
+</div>
