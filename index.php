@@ -146,19 +146,23 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 
 <!-- /.Page Container -->
 
-<div id="dashboard" class="section">
-	<?php include 'dashboard.php' ?>
-</div>
+<div class="main-content-container">
 
-<div id="autopilot" class="section">
-	<?php include 'autopilot.php' ?>
-</div>
+	<div id="dashboard" class="section">
+		<?php include 'dashboard.php' ?>
+	</div>
 
-<div id="captions" class="section">
-	<?php include 'captions.php' ?>
-</div>
+	<div id="autopilot" class="section">
+		<?php include 'autopilot.php' ?>
+	</div>
 
-<div id="products" class="section">
+	<div id="captions" class="section">
+		<?php include 'captions.php' ?>
+	</div>
+
+	<div id="products" class="section">
+
+	</div>
 
 </div>
 
@@ -327,13 +331,13 @@ function gethistory(){
 // }
 
 // Initial Page Load
-(function($) {
-	$(document).ready(function() {
-		// var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-		//  $('#products').html(data);
-		getnewproducts(); // start the loop
-	});
-})(jQuery);
+// (function($) {
+// 	$(document).ready(function() {
+// 		// var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
+// 		//  $('#products').html(data);
+// 		getnewproducts(); // start the loop
+// 	});
+// })(jQuery);
 </script>
 
 <!-- Scripts -->

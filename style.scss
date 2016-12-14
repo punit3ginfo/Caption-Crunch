@@ -52,8 +52,8 @@ input {
 body {
 	position         : relative;
 
-	overflow-y        : scroll;
-	overflow-x: hidden;
+	overflow-y        : hidden;
+	overflow-x: scroll;
 
 	width            : 100vw;
 	max-width        : 100vw;
@@ -1309,6 +1309,13 @@ body {
 }
 
 /* ---------------- Main Container ----------------- */
+
+.main-content-container {
+	width: 400vw;
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+}
 
 .section {
 	// position         : absolute;
