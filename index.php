@@ -58,7 +58,8 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 	<div class="main-template">
 		<!-- Sidebar Nav -->
 		<aside class="sidebar_nav">
-			<a  class="sidebar-link" href="https://buffer.com" target="_blank">
+			<!-- <a  class="sidebar-link" href="https://buffer.com" target="_blank"> -->
+			<a  class="sidebar-link" onclick="goToDashboard()" id="dashboard-link">
 				<div class="sidebar-nav-container">
 					<span >
 						<!-- <i style="font-size: 20px;" class="icon-dashboard-speed-streamline"></i><br> -->
@@ -68,7 +69,8 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 			</a>
 
-			<a class="sidebar-link" href="javascript:void(0)" onclick="getautopilot()" id="autopilot-link">
+			<!-- <a class="sidebar-link" href="javascript:void(0)" onclick="getautopilot()" id="autopilot-link"> -->
+			<a class="sidebar-link" href="javascript:void(0)" onclick="goToAutopilot()" id="autopilot-link">
 				<div class="sidebar-nav-container">
 					<span >
 						<i style="font-size: 20px;" class="icon-paperplane-ico"></i><br>
@@ -77,7 +79,8 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 			</a>
 
-			<a  class="sidebar-link sidebar-hammer" href="javascript:void(0)" onclick="getcaptions()" id="captions-link">
+			<!-- <a  class="sidebar-link sidebar-hammer" href="javascript:void(0)" onclick="getcaptions()" id="captions-link"> -->
+			<a  class="sidebar-link sidebar-hammer" href="javascript:void(0)" onclick="goToCaptions();" id="captions-link">
 				<div class="sidebar-nav-container">
 					<span>
 						<i style="font-size: 20px;" class="icon-hammer"></i><br>
@@ -86,7 +89,8 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 			</a>
 
-			<a class="sidebar-link" href="javascript:void(0)" onclick="getnewproducts()" id="share-link">
+			<!-- <a class="sidebar-link" href="javascript:void(0)" onclick="getnewproducts()" id="share-link"> -->
+				<a class="sidebar-link" href="javascript:void(0)" onclick="goToProducts()" id="share-link">
 				<div class="sidebar-nav-container">
 					<span >
 						<i style="font-size: 20px;" class="icon-tag"></i><br>
@@ -188,6 +192,18 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 
 <script>
 // Load Pages
+
+function goToDashboard(){
+	$('.main-content-container').css('left','0px');
+}
+
+function goToAutopilot(){
+	$('.main-content-container').css('left','-100vw');
+}
+
+function goToCaptions(){
+	$('.main-content-container').css('left','-200vw');
+}
 
 // Get Collections / Share Page
 function getproducts(){
