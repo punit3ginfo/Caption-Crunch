@@ -1332,6 +1332,11 @@ body {
 	    position: relative;
 }
 
+.dashboard {
+	width: calc(100vw - 95px);
+	height: calc(100vh - 80px);
+}
+
 .main-container-clearfix {
 	position         : fixed;
 	top              : 0px;
