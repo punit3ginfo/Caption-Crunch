@@ -235,6 +235,10 @@ function getnewproducts(){
 			$('#autopilot-link').removeClass('sidebar-link-active');
 			$('#new-products').addClass('menu-container-active');
 
+			$("#dashboard").load('dashboard.php');
+    		    $("#autopilot").load('autopilot.php');
+    		    $("#captions").load('captions.php');
+
 		}
 	});
 }
@@ -336,10 +340,6 @@ function gethistory(){
 		var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
 		 $('#products').html(data);
 		getnewproducts(); // start the loop
-
-		    $("#dashboard").load('dashboard.php');
-		    $("#autopilot").load('autopilot.php');
-		    $("#captions").load('captions.php');
 	});
 })(jQuery);
 </script>
