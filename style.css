@@ -967,7 +967,8 @@ body {
 
 .dashboard {
   width: calc(100vw - 95px);
-  height: calc(100vh - 80px); }
+  height: calc(100vh - 80px);
+  background-color: white; }
 
 .main-container-clearfix {
   position: fixed;
