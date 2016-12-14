@@ -236,8 +236,8 @@ function getnewproducts(){
 			$('#new-products').addClass('menu-container-active');
 
 			$("#dashboard").load('dashboard.php');
-    		    $("#autopilot").load('autopilot.php');
-    		    $("#captions").load('captions.php');
+    		        $("#autopilot").load('autopilot.php');
+    		        $("#captions").load('captions.php');
 
 		}
 	});
