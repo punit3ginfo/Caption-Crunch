@@ -251,86 +251,86 @@ function getdashboard(){
 }
 
 // Get Captions Page
-function getcaptions(){
-
-	var access_token='<?php echo $access_token ?>';
-	var shop='<?php echo $_REQUEST['shop'] ?>';
-
-	$.ajax({
-		url: '/captions.php?access_token='+access_token+'&shop='+shop,
-		success: function(data){
-			//console.log(data);
-			// var data1= data.find('.chat_container').html()
-			$('.content-container').html(data);
-			$('#captions-link').addClass('sidebar-link-active');
-			$('#share-link').removeClass('sidebar-link-active');
-			$('#settings-link').removeClass('sidebar-link-active');
-			$('#autopilot-link').removeClass('sidebar-link-active');
-		}
-	});
-}
+// function getcaptions(){
+//
+// 	var access_token='<?php echo $access_token ?>';
+// 	var shop='<?php echo $_REQUEST['shop'] ?>';
+//
+// 	$.ajax({
+// 		url: '/captions.php?access_token='+access_token+'&shop='+shop,
+// 		success: function(data){
+// 			//console.log(data);
+// 			// var data1= data.find('.chat_container').html()
+// 			$('.content-container').html(data);
+// 			$('#captions-link').addClass('sidebar-link-active');
+// 			$('#share-link').removeClass('sidebar-link-active');
+// 			$('#settings-link').removeClass('sidebar-link-active');
+// 			$('#autopilot-link').removeClass('sidebar-link-active');
+// 		}
+// 	});
+// }
 // Get Settings Page
-function getsettings(){
-
-	var access_token='<?php echo $access_token ?>';
-	var shop='<?php echo $_REQUEST['shop'] ?>';
-
-	$.ajax({
-		url: '/settings.php?access_token='+access_token+'&shop='+shop,
-		success: function(data){
-			//console.log(data);
-			// var data1= data.find('.chat_container').html()
-			$('.content-container').html(data);
-			$('#settings-link').addClass('sidebar-link-active');
-			$('#share-link').removeClass('sidebar-link-active');
-			$('#captions-link').removeClass('sidebar-link-active');
-			$('#autopilot-link').removeClass('sidebar-link-active');
-		}
-	});
-}
+// function getsettings(){
+//
+// 	var access_token='<?php echo $access_token ?>';
+// 	var shop='<?php echo $_REQUEST['shop'] ?>';
+//
+// 	$.ajax({
+// 		url: '/settings.php?access_token='+access_token+'&shop='+shop,
+// 		success: function(data){
+// 			//console.log(data);
+// 			// var data1= data.find('.chat_container').html()
+// 			$('.content-container').html(data);
+// 			$('#settings-link').addClass('sidebar-link-active');
+// 			$('#share-link').removeClass('sidebar-link-active');
+// 			$('#captions-link').removeClass('sidebar-link-active');
+// 			$('#autopilot-link').removeClass('sidebar-link-active');
+// 		}
+// 	});
+// }
 // Get Share History
 function gethistory(){
 
 	var access_token='<?php echo $access_token ?>';
 	var shop='<?php echo $_REQUEST['shop'] ?>';
      var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-     $('.content-overflow').html(data);
+     $('#products').html(data);
 	$.ajax({
 		url: '/collections.php?access_token='+access_token+'&shop='+shop+'&status=history',
 		success: function(data){
 			//console.log(data);
 			// var data1= data.find('.chat_container').html()
-			$('.content-container').html(data);
+			$('#products').html(data);
 		}
 	});
 }
 
 // Autopilot
 // Get Captions Page
-function getautopilot(){
-
-	var access_token='<?php echo $access_token ?>';
-	var shop='<?php echo $_REQUEST['shop'] ?>';
-
-	$.ajax({
-		url: '/autopilot.php?access_token='+access_token+'&shop='+shop,
-		success: function(data){
-			//console.log(data);
-			// var data1= data.find('.chat_container').html()
-			$('.content-container').html(data);
-			$('#autopilot-link').addClass('sidebar-link-active');
-			$('#share-link').removeClass('sidebar-link-active');
-			$('#settings-link').removeClass('sidebar-link-active');
-			$('#captions-link').removeClass('sidebar-link-active');
-		}
-	});
-}
+// function getautopilot(){
+//
+// 	var access_token='<?php echo $access_token ?>';
+// 	var shop='<?php echo $_REQUEST['shop'] ?>';
+//
+// 	$.ajax({
+// 		url: '/autopilot.php?access_token='+access_token+'&shop='+shop,
+// 		success: function(data){
+// 			//console.log(data);
+// 			// var data1= data.find('.chat_container').html()
+// 			$('.content-container').html(data);
+// 			$('#autopilot-link').addClass('sidebar-link-active');
+// 			$('#share-link').removeClass('sidebar-link-active');
+// 			$('#settings-link').removeClass('sidebar-link-active');
+// 			$('#captions-link').removeClass('sidebar-link-active');
+// 		}
+// 	});
+// }
 
 // Initial Page Load
 (function($) {
 	$(document).ready(function() {
-		var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-		 $('#dashboard').html(data);
+		// var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
+		//  $('#dashboard').html(data);
 		// getnewproducts(); // start the loop
 	});
 })(jQuery);
