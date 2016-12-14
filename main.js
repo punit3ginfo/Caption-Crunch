@@ -151,7 +151,7 @@ $(document).ready(function(){
           $('#right-slide-left').addClass("right-slide-left-animate");
 	  $(".preview-container").addClass("main-container-slide-left");
 	  $(".main_container_clearfix").addClass("slide-left");
-	  $(".main-content-container").css('top','-100vh');
+	  $(".main-content-container").css('top','100vh');
 	  $(".sidebar_nav").addClass("main-container-slide-left");
           $('.sidebar-nav-container-header').addClass("sidebar-nav-container-header-active");
           $('.help-header-link').css("color", "white");
