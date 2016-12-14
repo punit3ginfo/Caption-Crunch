@@ -1318,6 +1318,10 @@ body {
 	top: 0px;
 	display: flex;
 	justify-content: space-between;
+
+	transition-timing-function : ease;
+	transition-duration        : 0.3s;
+	animation-direction        : normal;
 }
 
 .section {
@@ -1340,7 +1344,6 @@ body {
 	transition-timing-function : ease;
 	transition-duration        : 0.3s;
 	animation-direction        : normal;
-	background: red;
 }
 
 .slide-left {

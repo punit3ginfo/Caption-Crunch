@@ -953,7 +953,10 @@ body {
   left: -300vw;
   top: 0px;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  transition-timing-function: ease;
+  transition-duration: 0.3s;
+  animation-direction: normal; }
 
 .section {
   width: calc(100vw - 80px);
@@ -972,8 +975,7 @@ body {
   padding-left: 80px;
   transition-timing-function: ease;
   transition-duration: 0.3s;
-  animation-direction: normal;
-  background: red; }
+  animation-direction: normal; }
 
 .slide-left {
   left: -100vw !important; }

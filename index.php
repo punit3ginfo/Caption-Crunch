@@ -205,6 +205,12 @@ function goToCaptions(){
 	$('.main-content-container').css('left','-200vw');
 }
 
+function goToproducts(){
+	$('.main-content-container').css('left','-300vw');
+}
+
+
+
 // Get Collections / Share Page
 function getproducts(){
 	$('.menu-container').each(function(){
