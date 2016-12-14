@@ -193,13 +193,13 @@ function getproducts(){
 	var access_token='<?php echo $access_token ?>';
 	var shop='<?php echo $_REQUEST['shop'] ?>';
     var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-     $('.content-overflow').html(data);
+     $('#products').html(data);
 	$.ajax({
 		url: '/collections.php?access_token='+access_token+'&shop='+shop,
 		success: function(data){
 			//console.log(data);
 			// var data1= data.find('.chat_container').html()
-			$('.content-container').html(data);
+			$('#products').html(data);
 
 			$('#share-link').addClass('sidebar-link-active');
 			$('#captions-link').removeClass('sidebar-link-active');
@@ -245,7 +245,7 @@ function getdashboard(){
 		success: function(data){
 			//console.log(data);
 			// var data1= data.find('.chat_container').html()
-			$('.content-container').html(data);
+			$('#dashboard').html(data);
 		}
 	});
 }
