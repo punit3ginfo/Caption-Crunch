@@ -512,8 +512,8 @@ body {
   width: 100vw;
   height: calc(100vh - 63px);
   margin-top: 63px;
-  transition-timing-function: ease;
-  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-duration: 1s;
   animation-direction: normal;
   background-color: transparent; }
 
@@ -955,7 +955,7 @@ body {
   display: flex;
   justify-content: space-between;
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-  transition-duration: 2s;
+  transition-duration: 1s;
   animation-direction: normal; }
 
 .section {
