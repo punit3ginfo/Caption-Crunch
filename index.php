@@ -187,18 +187,34 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 
 function goToDashboard(){
 	$('.main-content-container').css('left','0px');
+	$('#share-link').removeClass('sidebar-link-active');
+	$('#captions-link').removeClass('sidebar-link-active');
+	$('#dashboard-link').addClass('sidebar-link-active');
+	$('#autopilot-link').removeClass('sidebar-link-active');
 }
 
 function goToAutopilot(){
 	$('.main-content-container').css('left','-100vw');
+	$('#share-link').removeClass('sidebar-link-active');
+	$('#captions-link').removeClass('sidebar-link-active');
+	$('#dashboard-link').removeClass('sidebar-link-active');
+	$('#autopilot-link').addClass('sidebar-link-active');
 }
 
 function goToCaptions(){
 	$('.main-content-container').css('left','-200vw');
+	$('#share-link').removeClass('sidebar-link-active');
+	$('#captions-link').addClass('sidebar-link-active');
+	$('#dashboard-link').removeClass('sidebar-link-active');
+	$('#autopilot-link').removeClass('sidebar-link-active');
 }
 
 function goToProducts(){
 	$('.main-content-container').css('left','-300vw');
+	$('#share-link').addClass('sidebar-link-active');
+	$('#captions-link').removeClass('sidebar-link-active');
+	$('#dashboard-link').removeClass('sidebar-link-active');
+	$('#autopilot-link').removeClass('sidebar-link-active');
 }
 
 
@@ -219,10 +235,10 @@ function getproducts(){
 			// var data1= data.find('.chat_container').html()
 			$('#products').html(data);
 
-			$('#share-link').addClass('sidebar-link-active');
-			$('#captions-link').removeClass('sidebar-link-active');
-			$('#settings-link').removeClass('sidebar-link-active');
-			$('#autopilot-link').removeClass('sidebar-link-active');
+			// $('#share-link').addClass('sidebar-link-active');
+			// $('#captions-link').removeClass('sidebar-link-active');
+			// $('#settings-link').removeClass('sidebar-link-active');
+			// $('#autopilot-link').removeClass('sidebar-link-active');
 			$('#all-products').addClass('menu-container-active');
 		}
 	});
@@ -243,10 +259,10 @@ function getnewproducts(){
 			// var data1= data.find('.chat_container').html()
 			$('#products').html(data);
 
-			$('#share-link').addClass('sidebar-link-active');
-			$('#captions-link').removeClass('sidebar-link-active');
-			$('#settings-link').removeClass('sidebar-link-active');
-			$('#autopilot-link').removeClass('sidebar-link-active');
+			// $('#share-link').addClass('sidebar-link-active');
+			// $('#captions-link').removeClass('sidebar-link-active');
+			// $('#settings-link').removeClass('sidebar-link-active');
+			// $('#autopilot-link').removeClass('sidebar-link-active');
 			$('#new-products').addClass('menu-container-active');
 
 			$("#dashboard").load('dashboard.php');
@@ -257,20 +273,20 @@ function getnewproducts(){
 	});
 }
 // Get Dashboard Page
-function getdashboard(){
-
-	var access_token='<?php echo $access_token ?>';
-	var shop='<?php echo $_REQUEST['shop'] ?>';
-
-	$.ajax({
-		url: '/dashboard.php?access_token='+access_token+'&shop='+shop,
-		success: function(data){
-			//console.log(data);
-			// var data1= data.find('.chat_container').html()
-			$('#dashboard').html(data);
-		}
-	});
-}
+// function getdashboard(){
+//
+// 	var access_token='<?php echo $access_token ?>';
+// 	var shop='<?php echo $_REQUEST['shop'] ?>';
+//
+// 	$.ajax({
+// 		url: '/dashboard.php?access_token='+access_token+'&shop='+shop,
+// 		success: function(data){
+// 			//console.log(data);
+// 			// var data1= data.find('.chat_container').html()
+// 			$('#dashboard').html(data);
+// 		}
+// 	});
+// }
 
 // Get Captions Page
 // function getcaptions(){
