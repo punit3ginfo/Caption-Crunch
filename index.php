@@ -330,8 +330,8 @@ function gethistory(){
 (function($) {
 	$(document).ready(function() {
 		// var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-		//  $('#dashboard').html(data);
-		// getnewproducts(); // start the loop
+		//  $('#products').html(data);
+		getnewproducts(); // start the loop
 	});
 })(jQuery);
 </script>
