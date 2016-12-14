@@ -1319,9 +1319,8 @@ body {
 	display: flex;
 	justify-content: space-between;
 
-	// transition-timing-function : easeOutElastic;
-	transition:         all 600ms cubic-bezier(0.19, 1, 0.22, 1);
-	transition-duration        : 0.6s;
+	transition-timing-function : cubic-bezier(0.19, 1, 0.22, 1);
+	transition-duration        : 2s;
 	animation-direction        : normal;
 }
 
