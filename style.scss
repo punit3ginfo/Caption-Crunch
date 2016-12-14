@@ -1319,8 +1319,8 @@ body {
 	display: flex;
 	justify-content: space-between;
 
-	transition-timing-function : ease;
-	transition-duration        : 0.3s;
+	transition-timing-function : ease-out;
+	transition-duration        : 0.4s;
 	animation-direction        : normal;
 }
 
