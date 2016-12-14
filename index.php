@@ -170,7 +170,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 	</div>
 </div> -->
 
-<div id="right-slide-left" style="display: none;">
+<div id="right-slide-left">
 	<?php include 'help.php';?>
 </div>
 

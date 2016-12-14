@@ -507,8 +507,8 @@ body {
 #right-slide-left {
   position: absolute;
   z-index: 85;
-  top: 0px;
-  right: -100vw;
+  top: 100vh;
+  left: 0px;
   width: 100vw;
   height: calc(100vh - 63px);
   margin-top: 63px;
@@ -518,7 +518,7 @@ body {
   background-color: transparent; }
 
 .right-slide-left-animate {
-  right: 0px !important; }
+  top: 0px !important; }
 
 .help-container {
   position: absolute;
