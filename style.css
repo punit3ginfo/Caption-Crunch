@@ -998,7 +998,7 @@ body {
 
 .main-container-slide-left {
   position: absolute !important;
-  left: -100vw !important; }
+  left: -80px !important; }
 
 .main_container {
   display: inline-table;

@@ -1367,13 +1367,13 @@ body {
 	height : 100%;
 
 	transition-timing-function: ease;
-	transition-duration: 0.3s;
+	transition-duration: 0.5s;
 	animation-direction: normal;
 }
 
 .main-container-slide-left {
 	position: absolute !important;
-	left: -100vw !important;
+	left: -80px !important;
 }
 
 .main_container {
