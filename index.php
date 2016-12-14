@@ -152,21 +152,13 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 
 <div class="main-content-container">
 
-	<div id="dashboard" class="section">
+	<div id="dashboard" class="section"></div>
 
-	</div>
+	<div id="autopilot" class="section"></div>
 
-	<div id="autopilot" class="section">
+	<div id="captions" class="section"></div>
 
-	</div>
-
-	<div id="captions" class="section">
-
-	</div>
-
-	<div id="products" class="section">
-
-	</div>
+	<div id="products" class="section"></div>
 
 </div>
 
@@ -205,7 +197,7 @@ function goToCaptions(){
 	$('.main-content-container').css('left','-200vw');
 }
 
-function goToproducts(){
+function goToProducts(){
 	$('.main-content-container').css('left','-300vw');
 }
 
