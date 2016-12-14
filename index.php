@@ -158,7 +158,11 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 
 	<div id="captions" class="section"></div>
 
-	<div id="products" class="section"></div>
+	<div id="products" class="section">
+		<div id="top-slide-down">
+			<?php include 'preview.php';?>
+		</div>
+	</div>
 
 </div>
 
@@ -172,11 +176,6 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 
 <div id="right-slide-left">
 	<?php include 'help.php';?>
-</div>
-
-<div id="top-slide-down" style="display: none;">
-	<?php include 'preview.php';?>
-	<?php include 'product-preview.php';?>
 </div>
 
 <!-- /.Page Container -->
