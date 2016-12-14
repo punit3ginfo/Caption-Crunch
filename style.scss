@@ -1313,6 +1313,9 @@ body {
 .main-content-container {
 	width: 400vw;
 	height: 100vh;
+	position: absolute;
+	left: -300vw;
+	top: 0px;
 	display: flex;
 	justify-content: space-between;
 }
