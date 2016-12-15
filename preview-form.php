@@ -2,19 +2,13 @@
 	<!--  Step 1  -->
 	<div class="form-container" style="padding-bottom: 0px">
 
-
 		<div class="form-clearfix" style="border-top: 0px;">
 
 			<span class="cc-text-medium form-text-header account-show-hide-button">
-				Step 1 | Choose Profile
-				<i id="account-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 46px;"></i>
+				Step 1 | Choose Profile:
 			</span>
 
-		</div>
-
-		<div class="account-show-hide">
-			<div class="form-clearfix">
-
+			<div class="account-bubble-container">
 				<!-- Account Bubbles -->
 				<div class="account-bubble-clearfix">
 					<a href="/#">
@@ -56,9 +50,57 @@
 					</a>
 				</div>
 				<!-- Account Bubbles -->
-
 			</div>
+
 		</div>
+
+		<!-- <div class="account-show-hide">
+			<div class="form-clearfix"> -->
+
+				<!-- Account Bubbles -->
+				<!-- <div class="account-bubble-clearfix">
+					<a href="/#">
+						<div class="account-bubble">
+							<i class="fa fa-facebook account-icon" aria-hidden="true"></i>
+						</div>
+					</a>
+				</div>
+
+				<div class="account-bubble-clearfix">
+					<a href="/#">
+						<div class="account-bubble">
+							<i class="fa fa-twitter account-icon" aria-hidden="true"></i>
+						</div>
+					</a>
+				</div>
+
+				<div class="account-bubble-clearfix">
+					<a href="/#">
+						<div class="account-bubble">
+							<i class="fa fa-google-plus account-icon" aria-hidden="true"></i>
+						</div>
+					</a>
+				</div>
+
+				<div class="account-bubble-clearfix">
+					<a href="/#">
+						<div class="account-bubble">
+							<i class="fa fa-pinterest-p account-icon" aria-hidden="true"></i>
+						</div>
+					</a>
+				</div>
+
+				<div class="account-bubble-clearfix">
+					<a href="/#">
+						<div class="account-bubble">
+							<i class="fa fa-instagram account-icon" aria-hidden="true"></i>
+						</div>
+					</a>
+				</div> -->
+				<!-- Account Bubbles -->
+<!-- 
+			</div>
+		</div> -->
 	</div>
 	<!--  Step 2  -->
 	<div class="form-container" style="padding-bottom: 0px">
