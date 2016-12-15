@@ -68,15 +68,17 @@
 				Step 3 | Add Image
 			</span>
 
-			<div class="addimage-clearfix">
-				<div id="addimage-image-one" class="addimage-container">
+			<div class="caption-textarea-container" style="padding-bottom: 0px;">
+				<div class="addimage-clearfix">
+					<div id="addimage-image-one" class="addimage-container">
 
+					</div>
 				</div>
-			</div>
 
-			<div class="addimage-clearfix">
-				<div class="addimage-container addimage-active">
-					<i class="fa fa-plus addimage-plus-icon" aria-hidden="true"></i>
+				<div class="addimage-clearfix">
+					<div class="addimage-container addimage-active">
+						<i class="fa fa-plus addimage-plus-icon" aria-hidden="true"></i>
+					</div>
 				</div>
 			</div>
 		</div>
