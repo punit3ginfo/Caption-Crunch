@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 	function loading() {
 		$(".main-content-container").css('top','0px');
-		$(".sidebar_nav").css('left','0px');	
+		$(".sidebar_nav").css('left','0px');
 	}
 
 	// Step 1 | Choose Account - Show / Hide

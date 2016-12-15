@@ -118,4 +118,8 @@
 	<?php include 'preview.php';?>
 </div>
 
-<script>loading();</script>
+<script>
+	$(document).ready(function(){
+		loading();
+	});
+</script>
