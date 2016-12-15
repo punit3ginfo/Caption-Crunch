@@ -7,7 +7,7 @@
 				<i id="gs-help-arrow-icon" class="icon-chevron-down icon-rotate" aria-hidden="true" style="float: right; line-height: 46px;"></i>
 			</span>
 		</div>
-		<div id="gs-help-container" style="border-top: 1px solid #eee; display: none;">
+		<div id="gs-help-container" style="border-top: 1px solid #eee;">
 			<div class="form-clearfix form-help">
 				<div class="anchor"></div>
 				<span class="cc-text-medium">Help Topics</span><br /><br />
@@ -58,7 +58,7 @@
 				<i id="share-help-arrow-icon" class="icon-chevron-down icon-rotate" aria-hidden="true" style="float: right; line-height: 46px;"></i>
 			</span>
 		</div>
-		<div id="share-help-container" style="border-top: 1px solid #eee; display: none;">
+		<div id="share-help-container" style="border-top: 1px solid #eee;">
 			<div class="form-clearfix form-help">
 				<div class="anchor"></div>
 				<span class="cc-text-medium">Help Topics</span><br /><br />
@@ -109,7 +109,7 @@
 				<i id="captions-help-arrow-icon" class="icon-chevron-down icon-rotate" aria-hidden="true" style="float: right; line-height: 46px;"></i>
 			</span>
 		</div>
-		<div id="captions-help-container" style="border-top: 1px solid #eee; display: none;">
+		<div id="captions-help-container" style="border-top: 1px solid #eee;">
 			<div class="form-clearfix form-help">
 				<div class="anchor"></div>
 				<span class="cc-text-medium">Help Topics</span><br /><br />

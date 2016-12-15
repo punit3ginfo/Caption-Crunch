@@ -951,7 +951,7 @@ body {
   height: 100vh;
   position: absolute;
   left: -300vw;
-  top: 0px;
+  top: 100vh;
   display: flex;
   justify-content: space-between;
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
