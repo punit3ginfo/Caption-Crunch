@@ -76,8 +76,13 @@
 				</div>
 
 				<div class="addimage-clearfix">
-					<div class="addimage-container">
-						<i class="icon-upload-cloud addimage-plus-icon" aria-hidden="true"></i>
+					<div class="addimage-container upload-image">
+						<div>
+							<i class="icon-upload-cloud addimage-plus-icon" aria-hidden="true"></i><br />
+							<span class="cc-text-small">
+								Upload Image
+							</span>
+						</div>
 					</div>
 				</div>
 			</div>

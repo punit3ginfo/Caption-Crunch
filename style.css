@@ -809,13 +809,15 @@ body {
 .addimage-active {
   border: 2px solid #7ab55c; }
 
+.upload-image {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .addimage-plus-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 16px !important;
-  line-height: 16px !important; }
+  font-size: 20px !important;
+  line-height: 20px !important;
+  margin: auto; }
 
 .addimage-container:hover .addimage-plus-icon {
   color: #7ab55c; }
