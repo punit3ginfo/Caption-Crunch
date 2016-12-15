@@ -55,7 +55,9 @@
 		</div>
 
 		<div class="form-clearfix">
-			titties
+			<span class="cc-text-medium caption-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
+				Step 2 | Choose Caption
+			</span>
 		</div>
 
 		<!-- <div class="account-show-hide">
