@@ -826,7 +826,11 @@ body {
 .addimage-plus-icon {
   font-size: 20px !important;
   line-height: 20px !important;
-  margin: auto; }
+  margin: auto;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
 
 .addimage-container:hover .addimage-plus-icon {
   color: #7ab55c; }
