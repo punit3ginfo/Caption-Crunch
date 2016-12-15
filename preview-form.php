@@ -77,7 +77,7 @@
 
 				<div class="addimage-clearfix">
 					<div class="addimage-container">
-						<i class="fa fa-plus addimage-plus-icon" aria-hidden="true"></i>
+						<i class="icon-upload-cloud addimage-plus-icon" aria-hidden="true"></i>
 					</div>
 				</div>
 			</div>
