@@ -709,16 +709,22 @@ body {
   font-size: 16px;
   line-height: 30px; }
 
+.account-bubble-container {
+  width: auto;
+  height: 46px;
+  float: right;
+  display: flex;
+  justify-content: space-between; }
+
 .account-bubble-clearfix {
-  display: inline-block;
-  width: 77px;
-  height: 77px;
+  width: 46px;
+  height: 46px;
   padding: 5px; }
 
 .account-bubble {
   position: relative;
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
   margin: auto;
   border: 2px solid #555555;
   border-radius: 50%;
@@ -732,8 +738,8 @@ body {
   position: absolute;
   top: 80%;
   left: 80%;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   transform: translate(-50%, -50%);
   text-align: center;
   color: #555555;
@@ -741,7 +747,7 @@ body {
   border-radius: 50%;
   background: white;
   font-size: 14px !important;
-  line-height: 27px !important; }
+  line-height: 20px !important; }
 
 .account-bubble:hover .account-icon {
   color: #7ab55c;
