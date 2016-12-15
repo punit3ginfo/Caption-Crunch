@@ -72,7 +72,7 @@ try
 
 
 		var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-		$('..content-overflow').html(data);
+		$('.content-overflow').html(data);
 
 		$.ajax({
 			url: '/get_products.php?access_token='+access_token+'&shop='+shop+'&colid='+id+'&colhandle='+handle,
