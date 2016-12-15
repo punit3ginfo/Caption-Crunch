@@ -63,6 +63,24 @@
 			</div>
 		</div>
 
+		<div class="form-clearfix">
+			<span class="cc-text-medium image-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
+				Step 3 | Add Image
+			</span>
+
+			<div class="addimage-clearfix">
+				<div id="addimage-image-one" class="addimage-container">
+
+				</div>
+			</div>
+
+			<div class="addimage-clearfix">
+				<div class="addimage-container addimage-active">
+					<i class="fa fa-plus addimage-plus-icon" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+
 		<!-- <div class="account-show-hide">
 			<div class="form-clearfix"> -->
 
@@ -161,11 +179,11 @@
 				</div>
 			</div>
 
-			<!-- <div class="addimage-clearfix">
-			<div class="addimage-container addimage-active">
-			<i class="fa fa-plus addimage-plus-icon" aria-hidden="true"></i>
-		</div>
-	</div> -->
+			<div class="addimage-clearfix">
+				<div class="addimage-container addimage-active">
+					<i class="fa fa-plus addimage-plus-icon" aria-hidden="true"></i>
+				</div>
+			</div>
 </div>
 </div>
 </div>
