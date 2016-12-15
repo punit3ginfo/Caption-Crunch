@@ -420,7 +420,7 @@ body {
 /* Sidebar Nav */
 .sidebar_nav {
   position: fixed;
-  z-index: 85;
+  z-index: 100;
   top: 0;
   left: 0;
   overflow: auto;
@@ -428,8 +428,8 @@ body {
   height: calc(100% - 63px);
   min-height: 550px;
   padding-top: 63px;
-  transition-timing-function: ease;
-  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-duration: 1s;
   animation-direction: normal;
   background: #FFFFFF;
   box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.07); }
