@@ -364,8 +364,8 @@ try
 			    //alert(totolpageno);
 			     if(parseInt(TotalnoOfProduct) == 0){
 
-			        //  $('.content-overflow').html('<span class="cc-text-large">No matching results.</span>');
-				 $('.content-overflow').html('<div class="no-product-clearfix"><span class="cc-text-large no-product-container">No matching results.</span></div>');
+			        //  $('#product-feed').html('<span class="cc-text-large">No matching results.</span>');
+				 $('#product-feed').html('<div class="no-product-clearfix"><span class="cc-text-large no-product-container">No matching results.</span></div>');
 			    }
 			           if(totolpageno1 > 1) {
 					var obj = $('#pagination2').twbsPagination({
