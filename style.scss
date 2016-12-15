@@ -1079,6 +1079,12 @@ body {
 	border-radius: 15px;
 }
 
+.add-image-container {
+	    width: 100%;
+	    height: auto;
+	    margin-top: 25px;
+}
+
 .addimage-clearfix {
 	display       : inline-block;
 
@@ -1095,7 +1101,7 @@ body {
 
 	cursor              : pointer;
 
-	border              : 2px solid $brand-color;
+	border              : 2px solid $secondary-color;
 	background-repeat   : no-repeat;
 	background-position : center;
 	background-size     : contain;
