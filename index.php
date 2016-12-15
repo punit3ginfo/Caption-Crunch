@@ -55,6 +55,17 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 </head>
 
 <body>
+	<div class="loader">
+		<div class='loading-clearfix'>
+			<div class='loading-container'>
+				<div>
+					<img class='loading-img' src='images/loading13.gif' />
+					<span class='cc-text-small loader-text'>Loading...</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class="main-template">
 		<!-- Sidebar Nav -->
 		<aside class="sidebar_nav">
@@ -353,8 +364,8 @@ function gethistory(){
 // Initial Page Load
 (function($) {
 	$(document).ready(function() {
-		var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-		 $('#products').html(data);
+		// var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
+		//  $('#products').html(data);
 
 		getnewproducts(); // start the loop
 

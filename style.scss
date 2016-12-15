@@ -1310,6 +1310,24 @@ body {
 
 /* ---------------- Main Container ----------------- */
 
+.loader {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	transition-timing-function : cubic-bezier(0.19, 1, 0.22, 1);
+	transition-duration        : 1s;
+	animation-direction        : normal;
+
+}
+
 .main-content-container {
 	width: 400vw;
 	height: 100vh;

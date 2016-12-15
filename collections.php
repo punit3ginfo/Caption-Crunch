@@ -120,7 +120,7 @@
 
 <script>
 	$(document).ready(function(){
-		// loading();
+		$('loader').css('top','-100vh');
 		$(".main-content-container").css('top','0px');
 		$(".sidebar_nav").css('left','0px');
 	});
