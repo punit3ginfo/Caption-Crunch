@@ -120,6 +120,8 @@
 
 <script>
 	$(document).ready(function(){
-		loading();
+		// loading();
+		$(".main-content-container").css('top','0px');
+		$(".sidebar_nav").css('left','0px');
 	});
 </script>
