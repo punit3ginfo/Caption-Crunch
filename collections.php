@@ -95,7 +95,7 @@
 				</div> -->
 		</div>
 		<div class="content-overflow-container">
-			<div  class="content-overflow">
+			<div id="products-feed"  class="content-overflow">
 
 				<?php
 

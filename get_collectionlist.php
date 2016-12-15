@@ -72,14 +72,14 @@ try
 
 
 		var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-		$('.content-overflow').html(data);
+		$('.#products-feed').html(data);
 
 		$.ajax({
 			url: '/get_products.php?access_token='+access_token+'&shop='+shop+'&colid='+id+'&colhandle='+handle,
 			success: function(data){
 				//console.log(data);
 				// var data1= data.find('.chat_container').html()
-				$('.content-overflow').html(data);
+				$('#products-feed').html(data);
 
 			}
 		});
@@ -91,14 +91,14 @@ try
 
 
 		var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-		$('.content-overflow').html(data);
+		$('#products-feed').html(data);
 
 		$.ajax({
 			url: '/get_sharehistory.php?access_token='+access_token+'&shop='+shop,
 			success: function(data){
 				//console.log(data);
 				// var data1= data.find('.chat_container').html()
-				$('.content-overflow').html(data);
+				$('#products-feed').html(data);
 
 				$('#pagination').html('');
 				$('#pagination1').empty();
@@ -111,7 +111,7 @@ try
 	function search(p_title){
 
 		var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-		$('.content-overflow').html(data);
+		$('#products-feed').html(data);
 
 
 		var access_token='<?php echo $access_token ?>';
@@ -123,7 +123,7 @@ try
 			success: function(data){
 				//console.log(data);
 				// var data1= data.find('.chat_container').html()
-				$('.content-overflow').html(data);
+				$('#products-feed').html(data);
 			}
 		});
 	}
@@ -138,7 +138,7 @@ try
 			success: function(data){
 				//console.log(data);
 				// var data1= data.find('.chat_container').html()
-				$('.content-overflow').html(data);
+				$('#products-feed').html(data);
 
 				CurrentPageid= "#pagination-list li#"+id;
 				// alert(CurrentPageid);
@@ -161,7 +161,7 @@ try
 			success: function(data){
 				//console.log(data);
 				// var data1= data.find('.chat_container').html()
-				$('.content-overflow').html(data);
+				$('#products-feed').html(data);
 
 
 
