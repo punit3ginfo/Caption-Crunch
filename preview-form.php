@@ -58,8 +58,6 @@
 			<span class="cc-text-medium caption-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
 				Step 2 | Choose Caption:
 			</span>
-		</div>
-		<div class="form-clearfix">
 			<div class="caption-textarea-container" style="padding-bottom: 0px;">
 				<textarea id="preview-textarea-large" class="caption-textarea"></textarea>
 			</div>
