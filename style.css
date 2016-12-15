@@ -577,8 +577,8 @@ body {
   width: 100vw;
   height: calc(100vh - 63px);
   padding-top: 63px;
-  transition-timing-function: ease;
-  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-duration: 1s;
   animation-direction: normal; }
 
 #post-preview-container {
