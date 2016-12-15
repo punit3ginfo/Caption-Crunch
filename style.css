@@ -1229,9 +1229,10 @@ body {
   overflow-y: scroll;
   box-sizing: border-box;
   width: 100%;
-  height: calc(100vh - 150px);
+  height: calc(100vh - 160px);
   padding-left: 10px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  padding-right: 2px; }
 
 .preview-content-overflow {
   position: relative;

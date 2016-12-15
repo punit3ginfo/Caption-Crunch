@@ -1695,17 +1695,15 @@ body {
 }
 
 .content-overflow {
-	position      : relative;
-
-	overflow-x    : hidden;
-	overflow-y    : scroll;
-
-	box-sizing    : border-box;
-	width         : 100%;
-	height: calc(100vh - 150px);
-	// padding-right: 3px;
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	box-sizing: border-box;
+	width: 100%;
+	height: calc(100vh - 160px);
 	padding-left: 10px;
 	padding-bottom: 10px;
+	padding-right: 2px;
 }
 
 .preview-content-overflow {
@@ -1763,6 +1761,7 @@ body {
 }
 
 @media (max-width: 950px) {
+
 	.content-overflow {
 		padding-right: 12px;
 	}
