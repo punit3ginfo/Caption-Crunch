@@ -117,3 +117,5 @@
 <div id="top-slide-down">
 	<?php include 'preview.php';?>
 </div>
+
+<script>loading();</script>
