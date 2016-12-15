@@ -784,7 +784,9 @@ body {
 .add-image-container {
   width: 100%;
   height: auto;
-  margin-top: 25px; }
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-start; }
 
 .addimage-clearfix {
   display: inline-block;

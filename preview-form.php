@@ -77,7 +77,7 @@
 
 				<div class="addimage-clearfix">
 					<div class="addimage-container upload-image">
-						<div>
+						<div style="text-align: center;">
 							<i class="icon-upload-cloud addimage-plus-icon" aria-hidden="true"></i><br />
 							<span class="cc-text-small">
 								Upload Image
