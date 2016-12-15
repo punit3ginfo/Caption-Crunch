@@ -11,7 +11,7 @@
 			<div class="account-bubble-container">
 				<!-- Account Bubbles -->
 				<div class="account-bubble-clearfix">
-					<a href="/#">
+					<a href="">
 						<div class="account-bubble">
 							<i class="fa fa-facebook account-icon" aria-hidden="true"></i>
 						</div>
@@ -19,7 +19,7 @@
 				</div>
 
 				<div class="account-bubble-clearfix">
-					<a href="/#">
+					<a href="">
 						<div class="account-bubble">
 							<i class="fa fa-twitter account-icon" aria-hidden="true"></i>
 						</div>
@@ -27,7 +27,7 @@
 				</div>
 
 				<div class="account-bubble-clearfix">
-					<a href="/#">
+					<a href="">
 						<div class="account-bubble">
 							<i class="fa fa-google-plus account-icon" aria-hidden="true"></i>
 						</div>
@@ -35,7 +35,7 @@
 				</div>
 
 				<div class="account-bubble-clearfix">
-					<a href="/#">
+					<a href="">
 						<div class="account-bubble">
 							<i class="fa fa-pinterest-p account-icon" aria-hidden="true"></i>
 						</div>
@@ -43,7 +43,7 @@
 				</div>
 
 				<div class="account-bubble-clearfix">
-					<a href="/#">
+					<a href="">
 						<div class="account-bubble">
 							<i class="fa fa-instagram account-icon" aria-hidden="true"></i>
 						</div>
