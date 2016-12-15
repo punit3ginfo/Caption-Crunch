@@ -261,11 +261,7 @@ function getnewproducts(){
 			// var data1= data.find('.chat_container').html()
 			$('#products').html(data);
 			$('#new-products').addClass('menu-container-active');
-
-			$("#dashboard").load('dashboard.php');
-    		        $("#autopilot").load('autopilot.php');
-    		        $("#captions").load('captions.php');
-
+			
 		}
 	});
 }
