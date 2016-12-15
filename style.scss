@@ -1688,7 +1688,7 @@ body {
 .content-overflow-container {
 	position: relative;
 
-	overflow-y: scroll;
+	overflow-y: hidden;
 
 	width    : 100%;
 	height: calc(100vh - 160px);
@@ -1703,7 +1703,7 @@ body {
 	box-sizing    : border-box;
 	width         : 100%;
 	height: calc(100vh - 150px);
-	padding-right: 3px;
+	// padding-right: 3px;
 	padding-left: 10px;
 	padding-bottom: 10px;
 }
