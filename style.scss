@@ -1114,6 +1114,10 @@ body {
 	border : 2px solid $brand-color;
 }
 
+.addimage-container:hover > div > span {
+	color : $brand-color;
+}
+
 .addimage-active {
 	border : 2px solid $brand-color;
 }

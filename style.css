@@ -808,6 +808,9 @@ body {
 .addimage-container:hover {
   border: 2px solid #7ab55c; }
 
+.addimage-container:hover > div > span {
+  color: #7ab55c; }
+
 .addimage-active {
   border: 2px solid #7ab55c; }
 
