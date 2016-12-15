@@ -1676,9 +1676,10 @@ body {
 
 	box-sizing    : border-box;
 	width         : 100%;
-	height        : calc(100vh - 160px);
-	padding-right : 5px;
-	padding-left  : 10px;
+	height: calc(100vh - 150px);
+	padding-right: 3px;
+	padding-left: 10px;
+	padding-bottom: 10px;
 }
 
 .preview-content-overflow {
