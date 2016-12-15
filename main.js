@@ -1,6 +1,9 @@
 // Help Slide
 $(document).ready(function(){
 
+	$(".main-content-container").css('top','0px');
+	$(".sidebar_nav").css('left','0px');
+
 	// Step 1 | Choose Account - Show / Hide
 	$('.account-show-hide-button').click(function() {
 		// Show / Hide Conditions Container

@@ -600,7 +600,7 @@ body {
 	position    : fixed;
 	z-index     : 100;
 	top         : 0;
-	left        : 0;
+	left        : -80px;
 
 	overflow    : auto;
 
@@ -1324,6 +1324,13 @@ body {
 	transition-duration        : 1s;
 	animation-direction        : normal;
 }
+
+.main-content-load {
+	top: 0px !important;
+}
+
+// main-container-slide-left
+
 
 .section {
 	    width: calc(100vw - 95px);

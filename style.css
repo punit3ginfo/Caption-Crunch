@@ -422,7 +422,7 @@ body {
   position: fixed;
   z-index: 100;
   top: 0;
-  left: 0;
+  left: -80px;
   overflow: auto;
   width: 80px;
   height: calc(100% - 63px);
@@ -957,6 +957,9 @@ body {
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   transition-duration: 1s;
   animation-direction: normal; }
+
+.main-content-load {
+  top: 0px !important; }
 
 .section {
   width: calc(100vw - 95px);
