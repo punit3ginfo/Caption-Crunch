@@ -8,10 +8,9 @@ $(document).ready(function(){
 
 	$('.sidebar-link').mouseenter( function menuHover() {
 		$('.sidebar-link-active').addClass('hover-active-menu');
-	});
-
-	$('.sidebar-link').mouseout( function menuHover() {
-		$('.sidebar-link-active').removeClass('hover-active-menu');
+		$('.sidebar-link').mouseout( function menuHover() {
+			$('.sidebar-link-active').removeClass('hover-active-menu');
+		});
 	});
 
 	// Step 1 | Choose Account - Show / Hide
