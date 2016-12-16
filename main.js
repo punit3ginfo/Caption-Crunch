@@ -14,11 +14,11 @@ $(document).ready(function(){
 		$('.sidebar-link-active').removeClass('hover-active-menu');
 	});
 
-	$('.sidebar-link > span').mouseenter( function menuHover() {
+	$('.sidebar-link span').mouseenter( function menuHover() {
 		$('.sidebar-link-active').addClass('hover-active-menu');
 	});
 
-	$('.sidebar-link > span').mouseout( function menuHover() {
+	$('.sidebar-link span').mouseout( function menuHover() {
 		$('.sidebar-link-active').removeClass('hover-active-menu');
 	});
 
