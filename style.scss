@@ -754,16 +754,20 @@ body {
 	padding-bottom : 0px;
 }
 
-.help-header-link-active {
-	color : #FFFFFF !important;
-}
-
 .help-header-link {
 	color : $secondary-color;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.help-header-link-active {
+	color : white;
 }
 
 .help-header-link:hover {
-	color : white !important;
+	color : white;
 }
 
 .help-header-link:hover .sidebar-nav-container-header {
