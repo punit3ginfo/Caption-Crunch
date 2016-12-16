@@ -1700,6 +1700,14 @@ body {
 	display: none;
 }
 
+.menu-container .menu-icon-bg {
+	display: block;
+}
+
+.menu-container:hover .menu-icon-bg {
+	display: block;
+}
+
 .menu-container-active .menu-icon-bg {
 	display: block;
 }
