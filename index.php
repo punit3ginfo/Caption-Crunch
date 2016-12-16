@@ -146,7 +146,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 			<nav class="main-nav-container load-help">
 				<div id="help-button" class="help-header-link">
 					<div class="sidebar-nav-container-header">
-						<span id="help-title">
+						<span id="help-title" class="help-title">
 							<i class="fa fa-info sidebar-icon" aria-hidden="true"></i><br>
 							Help
 						</span>

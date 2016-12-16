@@ -143,6 +143,7 @@ $(document).ready(function(){
 	  $(".main-content-container").css('top','0px');
 	  $(".main_container_clearfix").removeClass("slide-left");
           $('.sidebar-nav-container-header').removeClass("sidebar-nav-container-header-active");
+          $('.help-header-link').css("color", "#666");
 	  $("#help-title").html('<i  class="fa fa-info sidebar-icon" aria-hidden="true"></i><br> Help');
       } else {
 	// $('#gs-dropdown').css("display","none");
@@ -158,6 +159,7 @@ $(document).ready(function(){
 	  $(".main-content-container").css('top','100vh');
 	  $(".sidebar_nav").addClass("main-container-slide-left");
           $('.sidebar-nav-container-header').addClass("sidebar-nav-container-header-active");
+          $('.help-header-link').css("color", "white");
 	  $("#help-title").html('<i class="fa fa-times sidebar-icon" aria-hidden="true"></i><br> Back');
       };
   });
