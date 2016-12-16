@@ -544,7 +544,7 @@ body {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
-.help-header-link:hover {
+.help-header-link-active {
   color: white; }
 
 .help-header-link:hover .sidebar-nav-container-header {
