@@ -500,6 +500,9 @@ body {
 .sidebar-icon {
   font-size: 20px; }
 
+.sidebar-link-active:hover .sidebar-link {
+  opacity: 0.5; }
+
 /* ------------- Help Menu -------------- */
 #right-slide-left {
   position: absolute;
