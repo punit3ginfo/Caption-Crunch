@@ -762,11 +762,15 @@ body {
 	transition: all 0.2s ease-in-out;
 }
 
-.help-header-link-active {
+#help-title {
+	color : $secondary-color;
+}
+
+.help-header-link-active > #help-title {
 	color : white;
 }
 
-.help-header-link:hover {
+.help-header-link:hover > #help-title {
 	color : white;
 }
 
