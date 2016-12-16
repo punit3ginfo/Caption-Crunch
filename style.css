@@ -1252,6 +1252,8 @@ body {
   opacity: 0.6; }
 
 .menu-icon-container {
+  position: absolute;
+  z-index: 1;
   width: 40px;
   height: 40px;
   margin: 10px;
