@@ -1079,6 +1079,21 @@ body {
 	border-radius: 15px;
 }
 
+.twitter-caption-textarea {
+	overflow: auto;
+	width: 100%;
+	height: 75px;
+	resize: none;
+	letter-spacing: 0.82px;
+	color: black;
+	border: 0px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: $medium-text;
+	line-height: 25px;
+	padding: 10px;
+	border-radius: 15px;
+}
+
 .add-image-container {
 	    width: 100%;
 	    height: auto;

@@ -62,7 +62,7 @@
 				<textarea id="preview-textarea-large" class="caption-textarea"></textarea>
 			</div>
 			<div class="caption-textarea-container" style="padding-bottom: 0px;">
-				<textarea id="preview-textarea-large" class="caption-textarea"></textarea>
+				<textarea id="twitter-textarea-large" class="twitter-caption-textarea"></textarea>
 			</div>
 		</div>
 
