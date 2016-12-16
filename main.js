@@ -6,6 +6,10 @@ $(document).ready(function(){
 		$(".sidebar_nav").css('left','0px');
 	}
 
+	$('.sidebar-link').hover( function menuHover() {
+		$('.sidebar-link-active').toggleClass('hover-active-menu');
+	});
+
 	// Step 1 | Choose Account - Show / Hide
 	$('.account-show-hide-button').click(function() {
 		// Show / Hide Conditions Container
