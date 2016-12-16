@@ -10,10 +10,6 @@ $(document).ready(function(){
 		$('.sidebar-link-active').toggleClass('hover-active-menu');
 	});
 
-	$('.sidebar-link-active').hover( function menuHover() {
-		$('.sidebar-link').removeClass('hover-active-menu');
-	});
-
 	// Step 1 | Choose Account - Show / Hide
 	$('.account-show-hide-button').click(function() {
 		// Show / Hide Conditions Container
