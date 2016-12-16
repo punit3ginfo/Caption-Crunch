@@ -255,14 +255,11 @@ body {
 .main-nav-container {
   height: 63px;
   position: absolute;
-  right: 0px;
+  right: -80px;
   top: 0px;
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   transition-duration: 1s;
   animation-direction: normal; }
-
-.load-help {
-  right: -80px; }
 
 .close-preview-container {
   display: none;

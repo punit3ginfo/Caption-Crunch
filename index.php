@@ -369,7 +369,6 @@ function gethistory(){
 		$('#captions-link').removeClass('sidebar-link-active');
 		$('#dashboard-link').removeClass('sidebar-link-active');
 		$('#autopilot-link').removeClass('sidebar-link-active');
-		$('.main-nav-container').removeClass('load-help');
 	});
 })(jQuery);
 </script>
