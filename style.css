@@ -544,13 +544,10 @@ body {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
-#help-title {
-  color: #555555; }
-
-.help-header-link-active > #help-title {
+.help-header-link-active {
   color: white; }
 
-.help-header-link:hover > #help-title {
+.help-header-link:hover {
   color: white; }
 
 .help-header-link:hover .sidebar-nav-container-header {
