@@ -1250,11 +1250,10 @@ body {
   background-color: #D577C3;
   z-index: 0;
   opacity: 0.6;
-  display: none;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out; }
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
 
 .menu-container:hover .menu-icon-bg {
   display: block;
@@ -1285,17 +1284,17 @@ body {
   margin: 10px;
   text-align: center;
   border-radius: 50%;
-  background: #555555; }
+  background: #555555;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
 
 .menu-container-active .menu-icon-container {
   background: #D577C3; }
 
 .menu-icon {
   display: block;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
   letter-spacing: 0.82px;
   color: #FFFFFF;
   font-family: 'Ubuntu', sans-serif;
