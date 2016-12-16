@@ -11,7 +11,7 @@ $(document).ready(function(){
 	});
 
 	$('.sidebar-link-active').hover( function menuHover() {
-		$('.sidebar-link-active').removeClass('hover-active-menu');
+		$('.sidebar-link').removeClass('hover-active-menu');
 	});
 
 	// Step 1 | Choose Account - Show / Hide

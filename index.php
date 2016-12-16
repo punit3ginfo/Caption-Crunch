@@ -194,6 +194,7 @@ function goToDashboard(){
 	$('#captions-link').removeClass('sidebar-link-active');
 	$('#dashboard-link').addClass('sidebar-link-active');
 	$('#autopilot-link').removeClass('sidebar-link-active');
+	// $('.sidebar-link-active').removeClass('hover-active-menu');
 }
 
 function goToAutopilot(){
@@ -202,6 +203,7 @@ function goToAutopilot(){
 	$('#captions-link').removeClass('sidebar-link-active');
 	$('#dashboard-link').removeClass('sidebar-link-active');
 	$('#autopilot-link').addClass('sidebar-link-active');
+	// $('.sidebar-link-active').removeClass('hover-active-menu');
 }
 
 function goToCaptions(){
@@ -210,6 +212,7 @@ function goToCaptions(){
 	$('#captions-link').addClass('sidebar-link-active');
 	$('#dashboard-link').removeClass('sidebar-link-active');
 	$('#autopilot-link').removeClass('sidebar-link-active');
+	// $('.sidebar-link-active').removeClass('hover-active-menu');
 }
 
 function goToProducts(){
@@ -218,6 +221,7 @@ function goToProducts(){
 	$('#captions-link').removeClass('sidebar-link-active');
 	$('#dashboard-link').removeClass('sidebar-link-active');
 	$('#autopilot-link').removeClass('sidebar-link-active');
+	// $('.sidebar-link-active').removeClass('hover-active-menu');
 }
 
 
