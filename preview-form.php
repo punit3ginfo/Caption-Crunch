@@ -62,8 +62,8 @@
 					Step 2 | Choose Caption
 				</span>
 				<div class="account-bubble-container">
-					<select class="form-select" style="width: 200px;">
-						<option>Caption 1</option>
+					<select class="form-select" style="width: 250px;">
+						<option>Captions will list here</option>
 						<option>Caption 2</option>
 						<option>Caption 3</option>
 						<option>Caption 4</option>
