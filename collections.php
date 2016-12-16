@@ -124,6 +124,7 @@
 		$(".main-content-container").css('top','0px');
 		$(".sidebar_nav").css('left','0px');
 		$('.main-nav-container').css('right','0px');
+		$('.navbar-brand').css('left','20px');
 
 		$("#dashboard").load('dashboard.php');
 		$("#autopilot").load('autopilot.php');

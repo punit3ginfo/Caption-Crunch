@@ -135,13 +135,12 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 		<header class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="top: 0px;">
 
 			<!-- Brand and toggle get grouped for better mobile display -->
-
-			<a class="navbar-brand" href="/">
-				<!-- <object type="image/svg+xml" class="header-cc-hammer-img" data="./images/hammer.svg"></object> -->
-				<i class="icon-hammer header-hammer"></i>
-				<span class="header-help">Caption</span>
-				<span class="header-central">Crunch</span>
-			</a>
+				<div class="navbar-brand">
+					<!-- <object type="image/svg+xml" class="header-cc-hammer-img" data="./images/hammer.svg"></object> -->
+					<i class="icon-hammer header-hammer"></i>
+					<span class="header-help">Caption</span>
+					<span class="header-central">Crunch</span>
+				</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<nav class="main-nav-container load-help">
