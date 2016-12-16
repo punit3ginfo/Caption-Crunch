@@ -712,7 +712,8 @@ body {
 .form-title-container {
   width: 100%;
   height: 46px;
-  position: relative; }
+  position: relative;
+  margin-bottom: 15px; }
 
 .account-bubble-container {
   width: auto;
@@ -771,7 +772,7 @@ body {
   border: 2px solid #555555;
   border-radius: 15px;
   margin-top: 5px;
-  margin-bottom: 5px; }
+  margin-bottom: 15px; }
 
 .caption-textarea {
   overflow: auto;

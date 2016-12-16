@@ -74,11 +74,11 @@
 					</select>
 				</div>
 			</div>
-			<span class="cc-text-small" style="padding-top: 10px;">Caption for Facebook, Google+, & Pinterest:</span>
+			<span class="cc-text-small">Caption for Facebook, Google+, & Pinterest</span>
 			<div class="caption-textarea-container">
 				<textarea id="preview-textarea-large" class="caption-textarea"></textarea>
 			</div>
-			<span class="cc-text-small" style="padding-top: 10px;">Caption for Twitter:</span>
+			<span class="cc-text-small">Caption for Twitter</span>
 			<div class="twitter-textarea-container">
 				<textarea id="twitter-textarea-large" class="twitter-caption-textarea"></textarea>
 			</div>
