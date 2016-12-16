@@ -332,6 +332,15 @@ body {
 	left: 50vw;
 	top: 0px;
 	transform: translate(-50%,0);
+
+	transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+	transition-duration: 1s;
+	animation-direction: normal;
+}
+
+.navbar-load {
+	left: 20px;
+	transform: translate(0%,0);
 }
 
 .header-cc-hammer-img {
