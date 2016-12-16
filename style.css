@@ -2095,8 +2095,9 @@ ul#pagination-list li {
 .loading-container {
   position: relative;
   display: flex;
-  width: 160px;
-  height: 140px;
+  width: 250px;
+  height: 150px;
+  border-radius: 15px;
   background-color: white;
   box-shadow: 1px -2px 17px 0 rgba(0, 0, 0, 0.14);
   align-items: center;
