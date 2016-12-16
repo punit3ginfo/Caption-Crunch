@@ -500,12 +500,6 @@ body {
 .sidebar-icon {
   font-size: 20px; }
 
-.sidebar-link:hover .sidebar-icon {
-  font-size: 24px; }
-
-.sidebar-link-active .sidebar-icon {
-  font-size: 24px; }
-
 /* ------------- Help Menu -------------- */
 #right-slide-left {
   position: absolute;
