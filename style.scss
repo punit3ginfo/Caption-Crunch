@@ -681,8 +681,12 @@ body {
 	color            : $secondary-color;
 	background-color : white;
 
-	font-family      : 'Ubuntu',
-	sans-serif;
+	font-family      : 'Ubuntu', sans-serif;
+
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 .sidebar-link:hover {
@@ -697,38 +701,20 @@ body {
 	background-color : $secondary-color;
 }
 
-.sidebar-hammer-img {
-	width            : 20px;
-	height           : 20px;
-	margin           : auto;
-
-	background-image : url("./images/hammer-grey.svg");
-	background-size  : 100%;
+.sidebar-icon {
+	font-size: 20px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
-.sidebar-link:hover .sidebar-hammer-img {
-	background-image : url("./images/hammer-white.svg");
+.sidebar-link:hover .sidebar-icon {
+	font-size: 24px;
 }
 
-.sidebar-link-active .sidebar-hammer-img {
-	background-image : url("./images/hammer-white.svg");
-}
-
-.sidebar-buffer-img {
-	width            : 20px;
-	height           : 20px;
-	margin           : auto;
-
-	background-image : url("./images/buffer-icon-grey.png");
-	background-size  : 100%;
-}
-
-.sidebar-link:hover .sidebar-buffer-img {
-	background-image : url("./images/buffer-icon-white.png");
-}
-
-.sidebar-link-active .sidebar-buffer-img {
-	background-image : url("./images/buffer-icon-white.png");
+.sidebar-link-active .sidebar-icon {
+	font-size: 24px;
 }
 
 /* ------------- Help Menu -------------- */
