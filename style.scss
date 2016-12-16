@@ -1079,6 +1079,14 @@ body {
 	border-radius: 15px;
 }
 
+.twitter-textarea-container {
+	    width: 100%;
+	    height: auto;
+	    border: 2px solid $secondary-color;
+	    border-radius: 15px;
+	    margin-top: 15px;
+}
+
 .twitter-caption-textarea {
 	overflow: auto;
 	width: 100%;

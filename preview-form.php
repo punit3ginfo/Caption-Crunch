@@ -71,10 +71,10 @@
 				</select>
 			</div>
 
-			<div class="caption-textarea-container" style="padding-bottom: 0px;">
+			<div class="caption-textarea-container">
 				<textarea id="preview-textarea-large" class="caption-textarea"></textarea>
 			</div>
-			<div class="caption-textarea-container" style="padding-bottom: 0px;">
+			<div class="twitter-textarea-container">
 				<textarea id="twitter-textarea-large" class="twitter-caption-textarea"></textarea>
 			</div>
 		</div>
