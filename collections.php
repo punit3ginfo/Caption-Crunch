@@ -21,9 +21,11 @@
 									<span class="menu-font">NEWEST PRODUCTS</span>
 								</div>
 								<div class="menu-icon-clearfix">
-									<div class="menu-icon-bg"></div>
-									<div class="menu-icon-container">
-										<span class="menu-icon">NEW</span>
+									<div class="menu-icon-con">
+										<div class="menu-icon-bg"></div>
+										<div class="menu-icon-container">
+											<span class="menu-icon">NEW</span>
+										</div>
 									</div>
 								</div>
 							</div>

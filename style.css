@@ -1163,7 +1163,11 @@ body {
   width: calc(100% - 29px);
   height: 75px;
   padding: 15px;
-  padding-bottom: 0px; }
+  padding-bottom: 0px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
 
 .menu-container-active {
   background-color: #7ab55c;
@@ -1228,6 +1232,11 @@ body {
 .menu-icon-clearfix {
   position: absolute;
   right: 0px;
+  width: 60px;
+  height: 60px; }
+
+.menu-icon-con {
+  position: relative;
   width: 60px;
   height: 60px; }
 
