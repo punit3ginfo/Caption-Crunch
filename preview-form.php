@@ -55,7 +55,7 @@
 		</div>
 
 		<div class="form-clearfix">
-			<span class="cc-text-medium caption-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
+			<span class="cc-text-medium caption-show-hide-button" style="line-height: 46px; cursor: pointer; width: 100%;">
 				Step 2 | Choose Caption
 			</span>
 			<div class="account-bubble-container">
@@ -80,7 +80,7 @@
 		</div>
 
 		<div class="form-clearfix">
-			<span class="cc-text-medium image-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
+			<span class="cc-text-medium image-show-hide-button" style="line-height: 46px; cursor: pointer; width: 100%;">
 				Step 3 | Add Image
 			</span>
 
