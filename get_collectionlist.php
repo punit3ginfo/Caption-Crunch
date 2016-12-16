@@ -33,8 +33,11 @@ try
 						<span class="menu-font"><?php echo $title;  ?></span>
 					</div>
 					<div class="menu-icon-clearfix">
-						<div class="menu-icon-container">
-							<span class="menu-icon"><?php echo $noOfProduct; ?></span>
+						<div class="menu-icon-con">
+							<div class="menu-icon-bg"></div>
+							<div class="menu-icon-container">
+								<span class="menu-icon"><?php echo $noOfProduct; ?></span>
+							</div>
 						</div>
 					</div>
 				</div>

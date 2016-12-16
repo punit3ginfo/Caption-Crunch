@@ -39,8 +39,11 @@
 									<span class="menu-font">ALL PRODUCTS</span>
 								</div>
 								<div class="menu-icon-clearfix">
-									<div class="menu-icon-container">
-										<span class="menu-icon">ALL</span>
+									<div class="menu-icon-con">
+										<div class="menu-icon-bg"></div>
+										<div class="menu-icon-container">
+											<span class="menu-icon">ALL</span>
+										</div>
 									</div>
 								</div>
 							</div>

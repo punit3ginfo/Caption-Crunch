@@ -1697,6 +1697,15 @@ body {
 	background-color: #D577C3;
 	z-index: 0;
 	opacity: 0.6;
+	display: none;
+}
+
+.menu-container-active .menu-icon-bg {
+	display: block;
+}
+
+.menu-container-active:hover .menu-icon-bg {
+	display: block;
 }
 
 .menu-icon-container {
