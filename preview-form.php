@@ -58,6 +58,19 @@
 			<span class="cc-text-medium caption-show-hide-button" style="line-height: 30px; cursor: pointer; width: 100%;">
 				Step 2 | Choose Caption
 			</span>
+			<div class="account-bubble-container">
+				<select class="form-select">
+					<option>is equal to</option>
+					<option>is not equal to</option>
+					<option>is greater than</option>
+					<option>is less than</option>
+					<option>starts with</option>
+					<option>ends with</option>
+					<option>contains</option>
+					<option>does not contain</option>
+				</select>
+			</div>
+
 			<div class="caption-textarea-container" style="padding-bottom: 0px;">
 				<textarea id="preview-textarea-large" class="caption-textarea"></textarea>
 			</div>
