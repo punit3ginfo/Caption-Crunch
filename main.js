@@ -6,11 +6,35 @@ $(document).ready(function(){
 		$(".sidebar_nav").css('left','0px');
 	}
 
-	$('.sidebar-link').mouseenter( function menuHover() {
+	$('#dashboard-link').mouseenter( function menuHover() {
 		$('.sidebar-link-active').addClass('hover-active-menu');
 	});
 
-	$('.sidebar-link').mouseout( function menuHover() {
+	$('#dashboard-link').mouseout( function menuHover() {
+		$('.sidebar-link-active').removeClass('hover-active-menu');
+	});
+
+	$('#autopilot-link').mouseenter( function menuHover() {
+		$('.sidebar-link-active').addClass('hover-active-menu');
+	});
+
+	$('#autopilot-link').mouseout( function menuHover() {
+		$('.sidebar-link-active').removeClass('hover-active-menu');
+	});
+
+	$('#captions-link').mouseenter( function menuHover() {
+		$('.sidebar-link-active').addClass('hover-active-menu');
+	});
+
+	$('#captions-link').mouseout( function menuHover() {
+		$('.sidebar-link-active').removeClass('hover-active-menu');
+	});
+
+	$('#share-link').mouseenter( function menuHover() {
+		$('.sidebar-link-active').addClass('hover-active-menu');
+	});
+
+	$('#share-link').mouseout( function menuHover() {
 		$('.sidebar-link-active').removeClass('hover-active-menu');
 	});
 
