@@ -125,6 +125,7 @@
 		$(".sidebar_nav").css('left','0px');
 		$('.main-nav-container').css('right','0px');
 		$('.navbar-brand').css('left','20px');
+		$('.navbar-brand').css('ltransform','translate(0,0)');
 
 		$("#dashboard").load('dashboard.php');
 		$("#autopilot").load('autopilot.php');
