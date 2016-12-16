@@ -62,15 +62,15 @@
 					Step 2 | Choose Caption
 				</span>
 				<div class="account-bubble-container">
-					<select class="form-select">
-						<option>is equal to</option>
-						<option>is not equal to</option>
-						<option>is greater than</option>
-						<option>is less than</option>
-						<option>starts with</option>
-						<option>ends with</option>
-						<option>contains</option>
-						<option>does not contain</option>
+					<select class="form-select" style="width: 200px;">
+						<option>Caption 1</option>
+						<option>Caption 2</option>
+						<option>Caption 3</option>
+						<option>Caption 4</option>
+						<option>Caption 5</option>
+						<option>Caption 6</option>
+						<option>Caption 7</option>
+						<option>Caption 8</option>
 					</select>
 				</div>
 			</div>
