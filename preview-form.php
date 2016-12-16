@@ -61,6 +61,9 @@
 			<div class="caption-textarea-container" style="padding-bottom: 0px;">
 				<textarea id="preview-textarea-large" class="caption-textarea"></textarea>
 			</div>
+			<div class="caption-textarea-container" style="padding-bottom: 0px;">
+				<textarea id="preview-textarea-large" class="caption-textarea"></textarea>
+			</div>
 		</div>
 
 		<div class="form-clearfix">
