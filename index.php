@@ -144,7 +144,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 			</a>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
-			<nav class="main-nav-container">
+			<nav class="main-nav-container load-help">
 				<a id="help-button" class="help-header-link" style="text-decoration: none; float: right; cursor:pointer;">
 					<div class="sidebar-nav-container-header">
 						<span id="help-title">
@@ -261,7 +261,7 @@ function getnewproducts(){
 			// var data1= data.find('.chat_container').html()
 			$('#products').html(data);
 			$('#new-products').addClass('menu-container-active');
-			
+
 		}
 	});
 }
@@ -369,6 +369,7 @@ function gethistory(){
 		$('#captions-link').removeClass('sidebar-link-active');
 		$('#dashboard-link').removeClass('sidebar-link-active');
 		$('#autopilot-link').removeClass('sidebar-link-active');
+		$('.main-nav-container').removeClass('load-help');
 	});
 })(jQuery);
 </script>

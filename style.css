@@ -253,8 +253,16 @@ body {
   line-height: 63px; }
 
 .main-nav-container {
-  float: right;
-  height: 63px; }
+  height: 63px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-duration: 1s;
+  animation-direction: normal; }
+
+.load-help {
+  right: -80px; }
 
 .close-preview-container {
   display: none;
