@@ -11,10 +11,9 @@ $(document).ready(function(){
 		$('.sidebar-link span').mouseenter( function menuHover() {
 			$('.sidebar-link-active').addClass('hover-active-menu');
 		});
-	});
-
-	$('.sidebar-link').mouseout( function menuHover() {
-		$('.sidebar-link-active').removeClass('hover-active-menu');
+		$('.sidebar-link').mouseout( function menuHover() {
+			$('.sidebar-link-active').removeClass('hover-active-menu');
+		});
 	});
 
 	// $('#dashboard-link').mouseenter( function menuHover() {
