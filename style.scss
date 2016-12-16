@@ -762,12 +762,12 @@ body {
 	transition: all 0.2s ease-in-out;
 }
 
-.help-header-link:hover .sidebar-nav-container-header {
-	background-color : $secondary-color;
+.help-header-link:hover {
+	color : white;
 }
 
-.help-link {
-	color : $brand-color;
+.help-header-link:hover .sidebar-nav-container-header {
+	background-color : $secondary-color;
 }
 
 /* ---------------- Preview Dropdown ----------------- */

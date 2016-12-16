@@ -544,11 +544,11 @@ body {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
+.help-header-link:hover {
+  color: white; }
+
 .help-header-link:hover .sidebar-nav-container-header {
   background-color: #555555; }
-
-.help-link {
-  color: #7ab55c; }
 
 /* ---------------- Preview Dropdown ----------------- */
 .collections-animation-container {
