@@ -989,6 +989,12 @@ body {
 	line-height    : 30px;
 }
 
+.form-title-container {
+	width: 100%;
+	height: 46px;
+	position: relative;
+}
+
 .account-bubble-container {
 	width: auto;
 	height: 46px;
@@ -1061,7 +1067,7 @@ body {
 	    height: auto;
 	    border: 2px solid $secondary-color;
 	    border-radius: 15px;
-	    margin-top: 25px;
+	    margin-top: 15px;
 }
 
 .caption-textarea {
