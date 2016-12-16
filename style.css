@@ -1252,9 +1252,6 @@ body {
   opacity: 0.6;
   display: none; }
 
-.menu-container .menu-icon-bg {
-  display: block; }
-
 .menu-container:hover .menu-icon-bg {
   display: block; }
 
