@@ -222,8 +222,12 @@ body {
   width: 100%; }
 
 .navbar-brand {
-  padding: 0px;
-  padding-left: 20px; }
+  width: auto;
+  height: 63px;
+  position: absolute;
+  left: 50vw;
+  top: 0px;
+  transform: translate(-50%, 0); }
 
 .header-cc-hammer-img {
   display: inline-block;
