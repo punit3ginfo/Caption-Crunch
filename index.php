@@ -144,14 +144,14 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<nav class="main-nav-container load-help">
-				<a id="help-button" class="help-header-link" style="text-decoration: none; float: right; cursor:pointer;">
+				<div id="help-button" class="help-header-link">
 					<div class="sidebar-nav-container-header">
 						<span id="help-title">
 							<i class="fa fa-info sidebar-icon" aria-hidden="true"></i><br>
 							Help
 						</span>
 					</div>
-				</a>
+				</div>
 			</nav>
 			<!-- /.navbar-collapse -->
 			<!-- /.container -->
