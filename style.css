@@ -1239,7 +1239,8 @@ body {
   left: 5px;
   border-radius: 50%;
   background-color: #D577C3;
-  z-index: 0; }
+  z-index: 0;
+  opacity: 0.6; }
 
 .menu-icon-container {
   width: 40px;
