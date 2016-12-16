@@ -22,14 +22,14 @@
 					</div>
 
 					<div class="content-header preview-header">
-						<a href="javascript:void(0)" class="btn green-button button-three-col back-link"><i class="fa fa-bullhorn" aria-hidden="true"></i> Share Now</a>
+						<!-- <a href="javascript:void(0)" class="btn green-button button-three-col back-link"><i class="fa fa-bullhorn" aria-hidden="true"></i> Share Now</a>
 						<a href="javascript:void(0)" class="btn grey-button button-three-col back-link"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i> Share Next</a>
-						<a href="javascript:void(0)" class="btn grey-button button-three-col back-link"><i class="fa fa-clock-o" aria-hidden="true"></i> Share Later</a>
+						<a href="javascript:void(0)" class="btn grey-button button-three-col back-link"><i class="fa fa-clock-o" aria-hidden="true"></i> Share Later</a> -->
 
-						<!-- <a href="javascript:void(0)" class="btn green-button button-four-col back-link"><i class="fa fa-bullhorn" aria-hidden="true"></i> Share Now</a>
-										<a href="javascript:void(0)" class="btn grey-button button-four-col back-link"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i> Share Next</a>
-										<a href="javascript:void(0)" class="btn grey-button button-four-col back-link"><i class="fa fa-clock-o" aria-hidden="true"></i> Share Later</a>
-										<a href="javascript:void(0)" class="btn grey-button button-four-col back-link"><i class="fa fa-calendar" aria-hidden="true"></i> Schedule</a> -->
+						<a href="javascript:void(0)" class="btn green-button button-four-col back-link"><i class="fa fa-bullhorn" aria-hidden="true"></i> Share Now</a>
+						<a href="javascript:void(0)" class="btn grey-button button-four-col back-link"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i> Share Next</a>
+						<a href="javascript:void(0)" class="btn grey-button button-four-col back-link"><i class="fa fa-clock-o" aria-hidden="true"></i> Share Later</a>
+						<a href="javascript:void(0)" class="btn grey-button button-four-col back-link"><i class="fa fa-calendar" aria-hidden="true"></i> Schedule</a>
 					</div>
 
 					<div class="content-overflow-container">
