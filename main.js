@@ -15,10 +15,6 @@ $(document).ready(function(){
 	});
 
 	$('.sidebar-link-active').mouseenter( function menuHover() {
-		$('.sidebar-link-active').addClass('hover-active-menu');
-	});
-
-	$('.sidebar-link-active').mouseleave( function menuHover() {
 		$('.sidebar-link-active').removeClass('hover-active-menu');
 	});
 
