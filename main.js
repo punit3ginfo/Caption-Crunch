@@ -8,17 +8,26 @@ $(document).ready(function(){
 
 	$('.sidebar-nav-container').mouseenter( function menuHover() {
 		$('.sidebar-link-active').addClass('hover-active-menu');
+		console.log('1 works');
 	});
 
-	// $('.sidebar-link  span').mouseenter( function menuHover() {
-	// 	$('.sidebar-link-active').addClass('hover-active-menu');
-	// });
+	$('.sidebar-link  span').mouseenter( function menuHover() {
+		$('.sidebar-link-active').addClass('hover-active-menu');
+		console.log('2 works');
+	});
+
+	$('.sidebar-link  span').mouseout( function menuHover() {
+		$('.sidebar-link-active').addClass('hover-active-menu');
+		console.log('3 works');
+	});
+
 	// $('.sidebar-link > span > i').mouseenter( function menuHover() {
 	// 	$('.sidebar-link-active').addClass('hover-active-menu');
 	// });
 
 	$('.sidebar-nav-container').mouseout( function menuHover() {
 		$('.sidebar-link-active').removeClass('hover-active-menu');
+		console.log('remove');
 	});
 
 	// $('#dashboard-link').mouseenter( function menuHover() {
