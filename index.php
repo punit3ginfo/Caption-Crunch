@@ -72,7 +72,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 			<!-- <a  class="sidebar-link" href="https://buffer.com" target="_blank"> -->
 			<a  class="sidebar-link" onclick="goToDashboard()" id="dashboard-link">
 				<div class="sidebar-nav-container">
-					<span >
+					<span class="sidebar-nav-span">
 						<!-- <i style="font-size: 20px;" class="icon-dashboard-speed-streamline"></i><br> -->
 						<i class="icon-buffer sidebar-icon"></i><br>
 						Buffer
@@ -83,7 +83,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 			<!-- <a class="sidebar-link" href="javascript:void(0)" onclick="getautopilot()" id="autopilot-link"> -->
 			<a class="sidebar-link" href="javascript:void(0)" onclick="goToAutopilot()" id="autopilot-link">
 				<div class="sidebar-nav-container">
-					<span >
+					<span class="sidebar-nav-span">
 						<i class="icon-paperplane-ico sidebar-icon"></i><br>
 						Autopilot
 					</span>
@@ -93,7 +93,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 			<!-- <a  class="sidebar-link sidebar-hammer" href="javascript:void(0)" onclick="getcaptions()" id="captions-link"> -->
 			<a  class="sidebar-link sidebar-hammer" href="javascript:void(0)" onclick="goToCaptions();" id="captions-link">
 				<div class="sidebar-nav-container">
-					<span>
+					<span class="sidebar-nav-span">
 						<i class="icon-hammer sidebar-icon"></i><br>
 						Captions
 					</span>
@@ -103,7 +103,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 			<!-- <a class="sidebar-link" href="javascript:void(0)" onclick="getnewproducts()" id="share-link"> -->
 				<a class="sidebar-link" href="javascript:void(0)" onclick="goToProducts()" id="share-link">
 				<div class="sidebar-nav-container">
-					<span >
+					<span class="sidebar-nav-span">
 						<i class="icon-tag sidebar-icon"></i><br>
 						Products
 					</span>
@@ -112,7 +112,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 
 			<a class="sidebar-link-active back-link" href="javascript:void(0)" style="display: none;">
 				<div class="sidebar-nav-container">
-					<span  style="color: white;">
+					<span  style="color: white;"  class="sidebar-nav-span">
 						<i class="fa fa-times sidebar-icon" aria-hidden="true"></i><br>
 						Back
 					</span>
