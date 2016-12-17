@@ -14,6 +14,14 @@ $(document).ready(function(){
 		$('.sidebar-link-active').removeClass('hover-active-menu');
 	});
 
+	$('.sidebar-link').mouseenter( function menuHover() {
+		$('.sidebar-link-active').addClass('hover-active-menu');
+	});
+
+	$('.sidebar-link').mouseout( function menuHover() {
+		$('.sidebar-link-active').removeClass('hover-active-menu');
+	});
+
 	$('.sidebar-nav-span').mouseenter( function menuHover() {
 		$('.sidebar-link-active').addClass('hover-active-menu');
 	});
@@ -29,15 +37,6 @@ $(document).ready(function(){
 	$('.sidebar-icon').mouseout( function menuHover() {
 		$('.sidebar-link-active').addClass('hover-active-menu');
 	});
-
-
-		$('.sidebar-link').mouseenter( function menuHover() {
-			$('.sidebar-link-active').addClass('hover-active-menu');
-		});
-
-		$('.sidebar-link').mouseout( function menuHover() {
-			$('.sidebar-link-active').removeClass('hover-active-menu');
-		});
 
 	// $('#dashboard-link').mouseenter( function menuHover() {
 	// 	$('.sidebar-link-active').addClass('hover-active-menu');
