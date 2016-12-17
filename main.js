@@ -6,6 +6,8 @@ $(document).ready(function(){
 		$(".sidebar_nav").css('left','0px');
 	}
 
+	// Side bar
+
 	$('.sidebar-link').mouseenter( function menuHover() {
 		$('.sidebar-link-active').addClass('hover-active-menu');
 	});
@@ -16,6 +18,20 @@ $(document).ready(function(){
 
 	$('.sidebar-link-active').mouseenter( function menuHover() {
 		$('.sidebar-link-active').removeClass('hover-active-menu');
+	});
+
+	//  Menu
+
+	$('.menu-container').mouseenter( function menuHover() {
+		$('.menu-container-active').addClass('hover-active-menu');
+	});
+
+	$('.menu-container').mouseleave( function menuHover() {
+		$('.menu-container-active').removeClass('hover-active-menu');
+	});
+
+	$('.menu-container-active').mouseenter( function menuHover() {
+		$('.menu-container-active').removeClass('hover-active-menu');
 	});
 
 	// $('#dashboard-link').mouseenter( function menuHover() {
