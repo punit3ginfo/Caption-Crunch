@@ -8,12 +8,14 @@ $(document).ready(function(){
 
 	$('.sidebar-link').mouseenter( function menuHover() {
 		$('.sidebar-link-active').addClass('hover-active-menu');
-		$('.sidebar-link span').mouseenter( function menuHover() {
-			$('.sidebar-link-active').addClass('hover-active-menu');
-		});
-		$('.sidebar-link span i').mouseenter( function menuHover() {
-			$('.sidebar-link-active').addClass('hover-active-menu');
-		});
+	});
+
+	$('.sidebar-link span').mouseenter( function menuHover() {
+		$('.sidebar-link-active').addClass('hover-active-menu');
+	});
+
+	$('.sidebar-link span i').mouseenter( function menuHover() {
+		$('.sidebar-link-active').addClass('hover-active-menu');
 	});
 
 	$('.sidebar-link').mouseout( function menuHover() {
