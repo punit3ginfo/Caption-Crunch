@@ -6,11 +6,11 @@ $(document).ready(function(){
 		$(".sidebar_nav").css('left','0px');
 	}
 
-	$('.sidebar-link').mouseover( function menuHover() {
+	$('.sidebar-link').mouseenter( function menuHover() {
 		$('.sidebar-link-active').addClass('hover-active-menu');
 	});
 
-	$('.sidebar-link').mouseout( function menuHover() {
+	$('.sidebar-link').mouseleave( function menuHover() {
 		$('.sidebar-link-active').removeClass('hover-active-menu');
 	});
 
