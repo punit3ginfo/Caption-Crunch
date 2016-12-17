@@ -14,21 +14,13 @@ $(document).ready(function(){
 		$('.sidebar-link-active').removeClass('hover-active-menu');
 	});
 
-	// $('.sidebar-nav-span').mouseenter( function menuHover() {
-	// 	$('.sidebar-link-active').addClass('hover-active-menu');
-	// });
-	//
-	// $('.sidebar-nav-span').mouseout( function menuHover() {
-	// 	$('.sidebar-link-active').addClass('hover-active-menu');
-	// });
-	//
-	// $('.sidebar-icon').mouseenter( function menuHover() {
-	// 	$('.sidebar-link-active').addClass('hover-active-menu');
-	// });
-	//
-	// $('.sidebar-icon').mouseout( function menuHover() {
-	// 	$('.sidebar-link-active').addClass('hover-active-menu');
-	// });
+	$('.sidebar-link-active').mouseenter( function menuHover() {
+		$('.sidebar-link-active').addClass('hover-active-menu');
+	});
+
+	$('.sidebar-link-active').mouseleave( function menuHover() {
+		$('.sidebar-link-active').removeClass('hover-active-menu');
+	});
 
 	// $('#dashboard-link').mouseenter( function menuHover() {
 	// 	$('.sidebar-link-active').addClass('hover-active-menu');
