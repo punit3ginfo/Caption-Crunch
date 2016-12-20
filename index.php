@@ -163,7 +163,6 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 
 
 <script>
-$(document).ready(function(){
 // Load Pages
 
 function goToDashboard(){
@@ -264,8 +263,6 @@ function gethistory(){
 		}
 	});
 }
-
-});
 
 // Initial Page Load
 (function($) {
