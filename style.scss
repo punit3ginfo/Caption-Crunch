@@ -1703,14 +1703,6 @@ body {
 	height: 50px;
 }
 
-.menu-container-active:hover .menu-icon-bg {
-	display: block;
-	top: 5px;
-	left: 5px;
-	width: 50px;
-	height: 50px;
-}
-
 .menu-icon-container {
 	position: absolute;
 	z-index: 1;
@@ -1744,6 +1736,14 @@ body {
 	font-size      : 12px;
 	font-weight: 700;
 	line-height    : 40px;
+}
+
+.menu-container:hover .menu-icon {
+	font-size      : 14px;
+}
+
+.menu-container-active .menu-icon {
+	font-size      : 14px;
 }
 
 .paginate-style {
