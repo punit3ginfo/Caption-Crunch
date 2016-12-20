@@ -23,8 +23,7 @@ $(document).ready(function(){
 	//  Menu
 
 	$('.menu-link').mouseenter( function() {
-		console.log('works');
-		// $('.menu-container-active').addClass('hover-active-menu');
+		$('.menu-container-active').addClass('hover-active-menu');
 	});
 	//
 	// $('.menu-container').mouseleave( function() {
