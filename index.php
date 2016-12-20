@@ -69,18 +69,15 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 	<div class="main-template">
 		<!-- Sidebar Nav -->
 		<aside class="sidebar_nav">
-			<!-- <a  class="sidebar-link" href="https://buffer.com" target="_blank"> -->
 			<a  class="sidebar-link" onclick="goToDashboard()" id="dashboard-link">
 				<div class="sidebar-nav-container">
 					<span class="sidebar-nav-span">
-						<!-- <i style="font-size: 20px;" class="icon-dashboard-speed-streamline"></i><br> -->
 						<i class="icon-buffer sidebar-icon"></i><br>
 						Buffer
 					</span>
 				</div>
 			</a>
 
-			<!-- <a class="sidebar-link" href="javascript:void(0)" onclick="getautopilot()" id="autopilot-link"> -->
 			<a class="sidebar-link" href="javascript:void(0)" onclick="goToAutopilot()" id="autopilot-link">
 				<div class="sidebar-nav-container">
 					<span class="sidebar-nav-span">
@@ -90,7 +87,6 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 			</a>
 
-			<!-- <a  class="sidebar-link sidebar-hammer" href="javascript:void(0)" onclick="getcaptions()" id="captions-link"> -->
 			<a  class="sidebar-link" href="javascript:void(0)" onclick="goToCaptions();" id="captions-link">
 				<div class="sidebar-nav-container">
 					<span class="sidebar-nav-span">
@@ -100,7 +96,6 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 			</a>
 
-			<!-- <a class="sidebar-link" href="javascript:void(0)" onclick="getnewproducts()" id="share-link"> -->
 				<a class="sidebar-link" href="javascript:void(0)" onclick="goToProducts()" id="share-link">
 				<div class="sidebar-nav-container">
 					<span class="sidebar-nav-span">
@@ -110,23 +105,14 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 			</a>
 
-			<a class="sidebar-link sidebar-link-active back-link" href="javascript:void(0)" style="display: none;">
+			<!-- <a class="sidebar-link sidebar-link-active back-link" href="javascript:void(0)" style="display: none;">
 				<div class="sidebar-nav-container">
 					<span  style="color: white;"  class="sidebar-nav-span">
 						<i class="fa fa-times sidebar-icon" aria-hidden="true"></i><br>
 						Back
 					</span>
 				</div>
-			</a>
-
-			<!-- <a class="sidebar-link" href="javascript:void(0)" onclick="getsettings()" id="settings-link">
-									<div class="sidebar-nav-container">
-									<span >
-									<i style="font-size: 20px;" class="icon-link"></i><br>
-									Networks
-								</span>
-							</div>
-						</a> -->
+			</a> -->
 		</aside>
 
 		<!-- /.Sidebar Nav -->
@@ -136,7 +122,6 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 
 			<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-brand">
-					<!-- <object type="image/svg+xml" class="header-cc-hammer-img" data="./images/hammer.svg"></object> -->
 					<i class="icon-hammer header-hammer"></i>
 					<span class="header-help">Caption</span>
 					<span class="header-central">Crunch</span>
