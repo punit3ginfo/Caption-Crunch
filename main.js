@@ -22,9 +22,10 @@ $(document).ready(function(){
 
 	//  Menu
 
-	// $('.menu-container').mouseenter( function() {
-	// 	$('.menu-container-active').addClass('hover-active-menu');
-	// });
+	$('.menu-container').mouseenter( function() {
+		console.log('works');
+		// $('.menu-container-active').addClass('hover-active-menu');
+	});
 	//
 	// $('.menu-container').mouseleave( function() {
 	// 	$('.menu-container-active').removeClass('hover-active-menu');
