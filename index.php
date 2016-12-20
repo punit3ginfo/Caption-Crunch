@@ -91,7 +91,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 			</a>
 
 			<!-- <a  class="sidebar-link sidebar-hammer" href="javascript:void(0)" onclick="getcaptions()" id="captions-link"> -->
-			<a  class="sidebar-link sidebar-hammer" href="javascript:void(0)" onclick="goToCaptions();" id="captions-link">
+			<a  class="sidebar-link" href="javascript:void(0)" onclick="goToCaptions();" id="captions-link">
 				<div class="sidebar-nav-container">
 					<span class="sidebar-nav-span">
 						<i class="icon-hammer sidebar-icon"></i><br>
@@ -110,7 +110,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 			</a>
 
-			<a class="sidebar-link-active back-link" href="javascript:void(0)" style="display: none;">
+			<a class="sidebar-link sidebar-link-active back-link" href="javascript:void(0)" style="display: none;">
 				<div class="sidebar-nav-container">
 					<span  style="color: white;"  class="sidebar-nav-span">
 						<i class="fa fa-times sidebar-icon" aria-hidden="true"></i><br>
