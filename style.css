@@ -1212,10 +1212,12 @@ body {
   line-height: 40px; }
 
 .menu-container:hover .menu-font {
-  color: white; }
+  color: white;
+  font-size: 18px; }
 
 .menu-container-active .menu-font {
-  color: white; }
+  color: white;
+  font-size: 18px; }
 
 .menu-icon-clearfix {
   position: absolute;
