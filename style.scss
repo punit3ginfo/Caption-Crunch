@@ -19,6 +19,10 @@ $large-text      : 18px;
 
 // #65D35B
 
+// $animation-function : $animation-function ;
+
+$animation-function : ease;
+
 /* CSS Document */
 
 a {
@@ -333,7 +337,7 @@ body {
 	top: 0px;
 	transform: translate(-50%,0);
 
-	transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+	transition-timing-function: $animation-function ;
 	transition-duration: 1s;
 	animation-direction: normal;
 }
@@ -386,7 +390,7 @@ body {
         right: -80px;
         top: 0px;
 
-	transition-timing-function : cubic-bezier(0.19, 1, 0.22, 1);
+	transition-timing-function : $animation-function ;
 	transition-duration        : 1s;
 	animation-direction        : normal;
 }
@@ -627,7 +631,7 @@ body {
 	min-height  : 550px;
 	padding-top : 63px;
 
-	transition-timing-function : cubic-bezier(0.19, 1, 0.22, 1);
+	transition-timing-function : $animation-function ;
 	transition-duration        : 1s;
 	animation-direction        : normal;
 
@@ -725,7 +729,7 @@ body {
 	height                     : calc(100vh - 63px);
 	margin-top                 : 63px;
 
-	transition-timing-function : cubic-bezier(0.19, 1, 0.22, 1);
+	transition-timing-function : $animation-function ;
 	transition-duration        : 1s;
 	animation-direction        : normal;
 
@@ -809,7 +813,7 @@ body {
 	height                     : calc(100vh - 63px);
 	padding-top                : 63px;
 
-	transition-timing-function : cubic-bezier(0.19, 1, 0.22, 1);
+	transition-timing-function : $animation-function ;
 	transition-duration        : 1s;
 	animation-direction        : normal;
 }
@@ -1381,7 +1385,7 @@ body {
 	justify-content: center;
 	align-items: center;
 
-	transition-timing-function : cubic-bezier(0.19, 1, 0.22, 1);
+	transition-timing-function : $animation-function ;
 	transition-duration        : 1s;
 	animation-direction        : normal;
 
@@ -1397,7 +1401,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 
-	transition-timing-function : cubic-bezier(0.19, 1, 0.22, 1);
+	transition-timing-function : $animation-function ;
 	transition-duration        : 1s;
 	animation-direction        : normal;
 }
