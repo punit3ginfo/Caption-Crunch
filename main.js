@@ -22,14 +22,14 @@ $(document).ready(function(){
 
 	//  Menu
 
-	$('.menu-link').mouseenter( function() {
+	$('.menu-container').mouseenter( function() {
 		$('.menu-container-active').addClass('hover-active-menu');
 	});
-	//
+
 	// $('.menu-container').mouseleave( function() {
 	// 	$('.menu-container-active').removeClass('hover-active-menu');
 	// });
-	//
+
 	// $('.menu-container-active').mouseenter( function() {
 	// 	$('.menu-container-active').removeClass('hover-active-menu');
 	// });

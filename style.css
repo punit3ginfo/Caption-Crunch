@@ -1018,7 +1018,7 @@ body {
   justify-content: center;
   align-items: center;
   transition-timing-function: ease;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   animation-direction: normal; }
 
 .main-content-container {
