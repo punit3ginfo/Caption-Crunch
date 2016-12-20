@@ -172,14 +172,6 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 
 </div>
 
-<!-- <div class="main-container-clearfix">
-	<div id="main-padded-container" class="">
-		<div class="main_container">
-			<div class="content-container"></div>
-		</div>
-	</div>
-</div> -->
-
 <div id="right-slide-left"></div>
 
 <!-- /.Page Container -->
@@ -268,60 +260,7 @@ function getnewproducts(){
 		}
 	});
 }
-// Get Dashboard Page
-// function getdashboard(){
-//
-// 	var access_token='<?php echo $access_token ?>';
-// 	var shop='<?php echo $_REQUEST['shop'] ?>';
-//
-// 	$.ajax({
-// 		url: '/dashboard.php?access_token='+access_token+'&shop='+shop,
-// 		success: function(data){
-// 			//console.log(data);
-// 			// var data1= data.find('.chat_container').html()
-// 			$('#dashboard').html(data);
-// 		}
-// 	});
-// }
 
-// Get Captions Page
-// function getcaptions(){
-//
-// 	var access_token='<?php echo $access_token ?>';
-// 	var shop='<?php echo $_REQUEST['shop'] ?>';
-//
-// 	$.ajax({
-// 		url: '/captions.php?access_token='+access_token+'&shop='+shop,
-// 		success: function(data){
-// 			//console.log(data);
-// 			// var data1= data.find('.chat_container').html()
-// 			$('.content-container').html(data);
-// 			$('#captions-link').addClass('sidebar-link-active');
-// 			$('#share-link').removeClass('sidebar-link-active');
-// 			$('#settings-link').removeClass('sidebar-link-active');
-// 			$('#autopilot-link').removeClass('sidebar-link-active');
-// 		}
-// 	});
-// }
-// Get Settings Page
-// function getsettings(){
-//
-// 	var access_token='<?php echo $access_token ?>';
-// 	var shop='<?php echo $_REQUEST['shop'] ?>';
-//
-// 	$.ajax({
-// 		url: '/settings.php?access_token='+access_token+'&shop='+shop,
-// 		success: function(data){
-// 			//console.log(data);
-// 			// var data1= data.find('.chat_container').html()
-// 			$('.content-container').html(data);
-// 			$('#settings-link').addClass('sidebar-link-active');
-// 			$('#share-link').removeClass('sidebar-link-active');
-// 			$('#captions-link').removeClass('sidebar-link-active');
-// 			$('#autopilot-link').removeClass('sidebar-link-active');
-// 		}
-// 	});
-// }
 // Get Share History
 function gethistory(){
 
@@ -338,27 +277,6 @@ function gethistory(){
 		}
 	});
 }
-
-// Autopilot
-// Get Captions Page
-// function getautopilot(){
-//
-// 	var access_token='<?php echo $access_token ?>';
-// 	var shop='<?php echo $_REQUEST['shop'] ?>';
-//
-// 	$.ajax({
-// 		url: '/autopilot.php?access_token='+access_token+'&shop='+shop,
-// 		success: function(data){
-// 			//console.log(data);
-// 			// var data1= data.find('.chat_container').html()
-// 			$('.content-container').html(data);
-// 			$('#autopilot-link').addClass('sidebar-link-active');
-// 			$('#share-link').removeClass('sidebar-link-active');
-// 			$('#settings-link').removeClass('sidebar-link-active');
-// 			$('#captions-link').removeClass('sidebar-link-active');
-// 		}
-// 	});
-// }
 
 // Initial Page Load
 (function($) {
