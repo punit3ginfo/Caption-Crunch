@@ -34,129 +34,140 @@ $(document).ready(function(){
 	// 	$('.menu-container-active').removeClass('hover-active-menu');
 	// });
 
-	// $('#dashboard-link').mouseenter( function menuHover() {
-	// 	$('.sidebar-link-active').addClass('hover-active-menu');
-	// });
-	//
-	// $('#dashboard-link').mouseout( function menuHover() {
-	// 	$('.sidebar-link-active').removeClass('hover-active-menu');
-	// });
-	//
-	// $('#autopilot-link').mouseenter( function menuHover() {
-	// 	$('.sidebar-link-active').addClass('hover-active-menu');
-	// });
-	//
-	// $('#autopilot-link').mouseout( function menuHover() {
-	// 	$('.sidebar-link-active').removeClass('hover-active-menu');
-	// });
-	//
-	// $('#captions-link').mouseenter( function menuHover() {
-	// 	$('.sidebar-link-active').addClass('hover-active-menu');
-	// });
-	//
-	// $('#captions-link').mouseout( function menuHover() {
-	// 	$('.sidebar-link-active').removeClass('hover-active-menu');
-	// });
-	//
-	$('#share-link').mouseenter( function menuHover() {
-		$('.sidebar-link-active').addClass('hover-active-menu');
-	});
+	// Load Pages
 
-	$('#share-link').mouseleave( function menuHover() {
+	function goToDashboard(){
+		$('.main-content-container').css('left','0px');
+		$('#share-link').removeClass('sidebar-link-active');
+		$('#captions-link').removeClass('sidebar-link-active');
+		$('#dashboard-link').addClass('sidebar-link-active');
+		$('#autopilot-link').removeClass('sidebar-link-active');
 		$('.sidebar-link-active').removeClass('hover-active-menu');
-	});
+		$('.sidebar-link').removeClass('hover-active-menu');
+	}
 
-	// Step 1 | Choose Account - Show / Hide
-	$('.account-show-hide-button').click(function() {
-		// Show / Hide Conditions Container
-		$('.account-show-hide').slideToggle("slow");
-		// Rotate Arrow 180 Degree / Click
-		$('#account-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-	});
+	function goToAutopilot(){
+		$('.main-content-container').css('left','-100vw');
+		$('#share-link').removeClass('sidebar-link-active');
+		$('#captions-link').removeClass('sidebar-link-active');
+		$('#dashboard-link').removeClass('sidebar-link-active');
+		$('#autopilot-link').addClass('sidebar-link-active');
+		$('.sidebar-link-active').removeClass('hover-active-menu');
+		$('.sidebar-link').removeClass('hover-active-menu');
+	}
 
-	// Step 2 | Choose Caption - Show / Hide
-	$('.caption-show-hide-button').click(function() {
-		// Show / Hide Conditions Container
-		$('.caption-show-hide').slideToggle("slow");
-		// Rotate Arrow 180 Degree / Click
-		$('#caption-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-	});
+	function goToCaptions(){
+		$('.main-content-container').css('left','-200vw');
+		$('#share-link').removeClass('sidebar-link-active');
+		$('#captions-link').addClass('sidebar-link-active');
+		$('#dashboard-link').removeClass('sidebar-link-active');
+		$('#autopilot-link').removeClass('sidebar-link-active');
+		$('.sidebar-link-active').removeClass('hover-active-menu');
+		$('.sidebar-link').removeClass('hover-active-menu');
+	}
 
-	// Step 3 | Add Image - Show / Hide
-	$('.image-show-hide-button').click(function() {
-		// Show / Hide Conditions Container
-		$('.image-show-hide').slideToggle("slow");
-		// Rotate Arrow 180 Degree / Click
-		$('#image-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-	});
+	function goToProducts(){
+		$('.main-content-container').css('left','-300vw');
+		$('#share-link').addClass('sidebar-link-active');
+		$('#captions-link').removeClass('sidebar-link-active');
+		$('#dashboard-link').removeClass('sidebar-link-active');
+		$('#autopilot-link').removeClass('sidebar-link-active');
+		$('.sidebar-link-active').removeClass('hover-active-menu');
+		$('.sidebar-link').removeClass('hover-active-menu');
+	}
 
-	// Step 4 | Share - Show / Hide
-	$('.share-show-hide-button').click(function() {
-		// Show / Hide Conditions Container
-		$('.share-show-hide').slideToggle("slow");
-		// Rotate Arrow 180 Degree / Click
-		$('#share-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-	});
 
-	// Next Step 1 - 2 | Show / Hide
-	$('#step2button').click(function() {
-		// Show / Hide Conditions Container
-		$('.caption-show-hide').slideToggle("slow");
-		// Rotate Arrow 180 Degree / Click
-		$('#caption-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-		// Show / Hide Conditions Container
-		$('.account-show-hide').slideToggle("slow");
-		// Rotate Arrow 180 Degree / Click
-		$('#account-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-	});
-
-	// Next Step 2 - 3 | Show / Hide
-	$('#step3button').click(function() {
-		// Show / Hide Conditions Container
-		$('.image-show-hide').slideToggle("slow");
-		// Rotate Arrow 180 Degree / Click
-		$('#image-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-		// Show / Hide Conditions Container
-		$('.caption-show-hide').slideToggle("slow");
-		// Rotate Arrow 180 Degree / Click
-		$('#caption-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-	});
-
-	// Next Step 3 - 4 | Show / Hide
-	$('#step4button').click(function() {
-		// Show / Hide Conditions Container
-		$('.image-show-hide').slideToggle("slow");
-		// Rotate Arrow 180 Degree / Click
-		$('#image-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-		// Show / Hide Conditions Container
-		$('.share-show-hide').slideToggle("slow");
-		// Rotate Arrow 180 Degree / Click
-		$('#share-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-	});
-
-	// Prev Step 1 - 2 | Show / Hide
-	$('#step2prevbutton').click(function() {
-		// Show / Hide Conditions Container
-		$('.caption-show-hide').slideToggle("slow");
-		// Rotate Arrow 180 Degree / Click
-		$('#caption-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-		// Show / Hide Conditions Container
-		$('.account-show-hide').slideToggle("slow");
-		// Rotate Arrow 180 Degree / Click
-		$('#account-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-	});
-
-	// Prev Step 2 - 1 | Show / Hide
-	$('#step3prevbutton').click(function() {
-		// Show / Hide Conditions Container
-		$('.image-show-hide').slideToggle("slow");
-		// Rotate Arrow 180 Degree / Click
-		$('#image-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-		// Show / Hide Conditions Container
-		$('.caption-show-hide').slideToggle("slow");
-		// Rotate Arrow 180 Degree / Click
-		$('#caption-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-	});
+	// // Step 1 | Choose Account - Show / Hide
+	// $('.account-show-hide-button').click(function() {
+	// 	// Show / Hide Conditions Container
+	// 	$('.account-show-hide').slideToggle("slow");
+	// 	// Rotate Arrow 180 Degree / Click
+	// 	$('#account-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+	// });
+	//
+	// // Step 2 | Choose Caption - Show / Hide
+	// $('.caption-show-hide-button').click(function() {
+	// 	// Show / Hide Conditions Container
+	// 	$('.caption-show-hide').slideToggle("slow");
+	// 	// Rotate Arrow 180 Degree / Click
+	// 	$('#caption-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+	// });
+	//
+	// // Step 3 | Add Image - Show / Hide
+	// $('.image-show-hide-button').click(function() {
+	// 	// Show / Hide Conditions Container
+	// 	$('.image-show-hide').slideToggle("slow");
+	// 	// Rotate Arrow 180 Degree / Click
+	// 	$('#image-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+	// });
+	//
+	// // Step 4 | Share - Show / Hide
+	// $('.share-show-hide-button').click(function() {
+	// 	// Show / Hide Conditions Container
+	// 	$('.share-show-hide').slideToggle("slow");
+	// 	// Rotate Arrow 180 Degree / Click
+	// 	$('#share-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+	// });
+	//
+	// // Next Step 1 - 2 | Show / Hide
+	// $('#step2button').click(function() {
+	// 	// Show / Hide Conditions Container
+	// 	$('.caption-show-hide').slideToggle("slow");
+	// 	// Rotate Arrow 180 Degree / Click
+	// 	$('#caption-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+	// 	// Show / Hide Conditions Container
+	// 	$('.account-show-hide').slideToggle("slow");
+	// 	// Rotate Arrow 180 Degree / Click
+	// 	$('#account-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+	// });
+	//
+	// // Next Step 2 - 3 | Show / Hide
+	// $('#step3button').click(function() {
+	// 	// Show / Hide Conditions Container
+	// 	$('.image-show-hide').slideToggle("slow");
+	// 	// Rotate Arrow 180 Degree / Click
+	// 	$('#image-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+	// 	// Show / Hide Conditions Container
+	// 	$('.caption-show-hide').slideToggle("slow");
+	// 	// Rotate Arrow 180 Degree / Click
+	// 	$('#caption-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+	// });
+	//
+	// // Next Step 3 - 4 | Show / Hide
+	// $('#step4button').click(function() {
+	// 	// Show / Hide Conditions Container
+	// 	$('.image-show-hide').slideToggle("slow");
+	// 	// Rotate Arrow 180 Degree / Click
+	// 	$('#image-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+	// 	// Show / Hide Conditions Container
+	// 	$('.share-show-hide').slideToggle("slow");
+	// 	// Rotate Arrow 180 Degree / Click
+	// 	$('#share-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+	// });
+	//
+	// // Prev Step 1 - 2 | Show / Hide
+	// $('#step2prevbutton').click(function() {
+	// 	// Show / Hide Conditions Container
+	// 	$('.caption-show-hide').slideToggle("slow");
+	// 	// Rotate Arrow 180 Degree / Click
+	// 	$('#caption-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+	// 	// Show / Hide Conditions Container
+	// 	$('.account-show-hide').slideToggle("slow");
+	// 	// Rotate Arrow 180 Degree / Click
+	// 	$('#account-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+	// });
+	//
+	// // Prev Step 2 - 1 | Show / Hide
+	// $('#step3prevbutton').click(function() {
+	// 	// Show / Hide Conditions Container
+	// 	$('.image-show-hide').slideToggle("slow");
+	// 	// Rotate Arrow 180 Degree / Click
+	// 	$('#image-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+	// 	// Show / Hide Conditions Container
+	// 	$('.caption-show-hide').slideToggle("slow");
+	// 	// Rotate Arrow 180 Degree / Click
+	// 	$('#caption-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
+	// });
 
 
 	function menuReset() {

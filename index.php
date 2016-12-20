@@ -105,14 +105,14 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 			</a>
 
-			<!-- <a class="sidebar-link sidebar-link-active back-link" href="javascript:void(0)" style="display: none;">
+			<a class="sidebar-link sidebar-link-active back-link" href="javascript:void(0)" style="display: none;">
 				<div class="sidebar-nav-container">
 					<span  style="color: white;"  class="sidebar-nav-span">
 						<i class="fa fa-times sidebar-icon" aria-hidden="true"></i><br>
 						Back
 					</span>
 				</div>
-			</a> -->
+			</a>
 		</aside>
 
 		<!-- /.Sidebar Nav -->
