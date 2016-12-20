@@ -20,10 +20,6 @@ $(document).ready(function(){
 		$('.sidebar-link-active').removeClass('hover-active-menu');
 	});
 
-	$('.sidebar-link-active').mouseleave( function() {
-		$('.sidebar-link-active').removeClass('hover-active-menu');
-	});
-
 	//  Menu
 
 	// $('.menu-container').mouseenter( function() {
@@ -62,13 +58,13 @@ $(document).ready(function(){
 	// 	$('.sidebar-link-active').removeClass('hover-active-menu');
 	// });
 	//
-	// $('#share-link').mouseenter( function menuHover() {
-	// 	$('.sidebar-link-active').addClass('hover-active-menu');
-	// });
-	//
-	// $('#share-link').mouseout( function menuHover() {
-	// 	$('.sidebar-link-active').removeClass('hover-active-menu');
-	// });
+	$('#share-link').mouseenter( function menuHover() {
+		$('.sidebar-link-active').addClass('hover-active-menu');
+	});
+
+	$('#share-link').mouseleave( function menuHover() {
+		$('.sidebar-link-active').removeClass('hover-active-menu');
+	});
 
 	// Step 1 | Choose Account - Show / Hide
 	$('.account-show-hide-button').click(function() {
