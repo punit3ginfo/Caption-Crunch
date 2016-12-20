@@ -2150,7 +2150,8 @@ ul#pagination-list li {
   background-color: white; }
 
 .menu-link {
-  display: block; }
+  display: block;
+  position: relative; }
 
 .help-menu-container {
   width: calc(100% - 29px);

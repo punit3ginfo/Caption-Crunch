@@ -20,11 +20,7 @@ try
 
 		//  $noOfProduct=sizeof($products1);
 
-
-
 		?>
-
-
 
 		<a href="javascript:void(0)" onclick="getcolproduct(<?php echo $id;?>,'<?php echo $handle;?>')" class="menu-link">
 			<div class="menu-container <?php echo $handle;?>">
