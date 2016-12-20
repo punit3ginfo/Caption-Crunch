@@ -69,7 +69,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 	<div class="main-template">
 		<!-- Sidebar Nav -->
 		<aside class="sidebar_nav">
-			<a  class="sidebar-link" onclick="goToDashboard()">
+			<a  class="sidebar-link" onclick="goToDashboard()" id="dashboard-link">
 				<div class="sidebar-nav-container">
 					<span class="sidebar-nav-span">
 						<i class="icon-buffer sidebar-icon"></i><br>
@@ -78,7 +78,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 			</a>
 
-			<a class="sidebar-link" href="javascript:void(0)" onclick="goToAutopilot()">
+			<a class="sidebar-link" href="javascript:void(0)" onclick="goToAutopilot()" id="autopilot-link">
 				<div class="sidebar-nav-container">
 					<span class="sidebar-nav-span">
 						<i class="icon-paperplane-ico sidebar-icon"></i><br>
@@ -87,7 +87,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 			</a>
 
-			<a  class="sidebar-link" href="javascript:void(0)" onclick="goToCaptions();">
+			<a  class="sidebar-link" href="javascript:void(0)" onclick="goToCaptions();" id="captions-link">
 				<div class="sidebar-nav-container">
 					<span class="sidebar-nav-span">
 						<i class="icon-hammer sidebar-icon"></i><br>
@@ -96,7 +96,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 			</a>
 
-			<a class="sidebar-link" href="javascript:void(0)" onclick="goToProducts()">
+			<a class="sidebar-link" href="javascript:void(0)" onclick="goToProducts()" id="share-link">
 				<div class="sidebar-nav-container">
 					<span class="sidebar-nav-span">
 						<i class="icon-tag sidebar-icon"></i><br>
