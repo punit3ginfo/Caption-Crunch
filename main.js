@@ -20,6 +20,10 @@ $(document).ready(function(){
 		$('.sidebar-link-active').removeClass('hover-active-menu');
 	});
 
+	$('.sidebar-link-active').mouseleave( function menuHover() {
+		$('.sidebar-link-active').removeClass('hover-active-menu');
+	});
+
 	//  Menu
 
 	$('.menu-container').mouseenter( function menuHover() {
