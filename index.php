@@ -60,7 +60,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 			<div class='loading-container'>
 				<div>
 					<img class='loading-img' src='images/loading13.gif' />
-					<span class='cc-text-small loader-text'>Loading...</span>
+					<span class='cc-text-small loader-text'>Importing Products...</span>
 				</div>
 			</div>
 		</div>
@@ -69,7 +69,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 	<div class="main-template">
 		<!-- Sidebar Nav -->
 		<aside class="sidebar_nav">
-			<a  class="sidebar-link" onclick="goToDashboard()" id="dashboard-link">
+			<a  class="sidebar-link" onclick="goToDashboard()">
 				<div class="sidebar-nav-container">
 					<span class="sidebar-nav-span">
 						<i class="icon-buffer sidebar-icon"></i><br>
@@ -78,7 +78,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 			</a>
 
-			<a class="sidebar-link" href="javascript:void(0)" onclick="goToAutopilot()" id="autopilot-link">
+			<a class="sidebar-link" href="javascript:void(0)" onclick="goToAutopilot()">
 				<div class="sidebar-nav-container">
 					<span class="sidebar-nav-span">
 						<i class="icon-paperplane-ico sidebar-icon"></i><br>
@@ -87,7 +87,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 			</a>
 
-			<a  class="sidebar-link" href="javascript:void(0)" onclick="goToCaptions();" id="captions-link">
+			<a  class="sidebar-link" href="javascript:void(0)" onclick="goToCaptions();">
 				<div class="sidebar-nav-container">
 					<span class="sidebar-nav-span">
 						<i class="icon-hammer sidebar-icon"></i><br>
@@ -96,7 +96,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 			</a>
 
-				<a class="sidebar-link" href="javascript:void(0)" onclick="goToProducts()" id="share-link">
+			<a class="sidebar-link" href="javascript:void(0)" onclick="goToProducts()">
 				<div class="sidebar-nav-container">
 					<span class="sidebar-nav-span">
 						<i class="icon-tag sidebar-icon"></i><br>
