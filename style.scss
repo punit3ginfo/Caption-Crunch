@@ -1633,6 +1633,11 @@ body {
 	font-size      : $medium-text;
 	font-weight    : 600;
 	line-height    : 40px;
+
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 // @media (max-width: 1000px) {
@@ -1736,6 +1741,11 @@ body {
 	font-size      : 12px;
 	font-weight: 700;
 	line-height    : 40px;
+
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 .menu-container:hover .menu-icon {
