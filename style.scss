@@ -2876,7 +2876,7 @@ ul#pagination-list li {
 	display: flex;
 
 	width: 250px;
-	height: 250px;
+	height: 175px;
 	border-radius: 15px;
 
 	// border-radius: 0;
@@ -2899,6 +2899,14 @@ ul#pagination-list li {
 .loader-text {
 	display: block;
 	color: #7ab55c;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+}
+
+.pulse-text {
+	  animation: fadeIn 1s infinite alternate;
 }
 
 .share-loading {

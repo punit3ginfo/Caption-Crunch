@@ -60,7 +60,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 			<div class='loading-container'>
 				<div>
 					<img class='loading-img' src='images/loading13.gif' />
-					<span class='cc-text-small loader-text'>Importing Products...</span>
+					<span class='cc-text-small loader-text pulse-text'>Importing Products...</span>
 				</div>
 			</div>
 		</div>
