@@ -22,7 +22,7 @@ $(document).ready(function(){
 
 	//  Menu
 
-	$('.menu-container').mouseenter( function() {
+	$('.menu-link').mouseenter( function() {
 		console.log('works');
 		// $('.menu-container-active').addClass('hover-active-menu');
 	});
