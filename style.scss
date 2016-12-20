@@ -2932,6 +2932,10 @@ ul#pagination-list li {
 
 //  Help page-item
 
+.menu-link {
+	display: block;
+}
+
 .help-menu-container {
 	width          : calc(100% - 29px);
 	height         : 75px;
