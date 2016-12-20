@@ -32,7 +32,6 @@ $(document).ready(function(){
 
 	$('.menu-container-active').mouseenter( function() {
 		// $('.menu-container-active').removeClass('hover-active-menu');
-		$('.menu-container-active').css('opacity','0.5');
 	});
 
 
