@@ -19,9 +19,7 @@ $large-text      : 18px;
 
 // #65D35B
 
-// $animation-function : $animation-function ;
-
-$animation-function : ease-out;
+$animation-function : ease;
 
 /* CSS Document */
 
@@ -1402,7 +1400,7 @@ body {
 	justify-content: space-between;
 
 	transition-timing-function : $animation-function ;
-	transition-duration        : 1s;
+	transition-duration        : 0.5s;
 	animation-direction        : normal;
 }
 
