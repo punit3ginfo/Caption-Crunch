@@ -8,16 +8,16 @@ $(document).ready(function(){
 
 	// Side bar
 
-	$('.sidebar-link').mouseenter( function() {
-		$('.sidebar-link-active').addClass('hover-active-menu');
+	$('.sidebar-link').mouseleave( function() {
+		$('.sidebar-link-active').removeClass('hover-active-menu');
 	});
 
 	$('.sidebar-link-active').mouseenter( function() {
 		$('.sidebar-link-active').removeClass('hover-active-menu');
 	});
 
-	$('.sidebar-link').mouseleave( function() {
-		$('.sidebar-link-active').removeClass('hover-active-menu');
+	$('.sidebar-link').mouseenter( function() {
+		$('.sidebar-link-active').addClass('hover-active-menu');
 	});
 
 	//  Menu
