@@ -8,35 +8,35 @@ $(document).ready(function(){
 
 	// Side bar
 
-	$('.sidebar-link').mouseenter( function menuHover() {
+	$('.sidebar-link').mouseenter( function() {
 		$('.sidebar-link-active').addClass('hover-active-menu');
 	});
 
-	$('.sidebar-link').mouseleave( function menuHover() {
+	$('.sidebar-link').mouseleave( function() {
 		$('.sidebar-link-active').removeClass('hover-active-menu');
 	});
 
-	$('.sidebar-link-active').mouseenter( function menuHover() {
+	$('.sidebar-link-active').mouseenter( function() {
 		$('.sidebar-link-active').removeClass('hover-active-menu');
 	});
 
-	$('.sidebar-link-active').mouseleave( function menuHover() {
+	$('.sidebar-link-active').mouseleave( function() {
 		$('.sidebar-link-active').removeClass('hover-active-menu');
 	});
 
 	//  Menu
 
-	$('.menu-container').mouseenter( function menuHover() {
-		$('.menu-container-active').addClass('hover-active-menu');
-	});
-
-	$('.menu-container').mouseleave( function menuHover() {
-		$('.menu-container-active').removeClass('hover-active-menu');
-	});
-
-	$('.menu-container-active').mouseenter( function menuHover() {
-		$('.menu-container-active').removeClass('hover-active-menu');
-	});
+	// $('.menu-container').mouseenter( function() {
+	// 	$('.menu-container-active').addClass('hover-active-menu');
+	// });
+	//
+	// $('.menu-container').mouseleave( function() {
+	// 	$('.menu-container-active').removeClass('hover-active-menu');
+	// });
+	//
+	// $('.menu-container-active').mouseenter( function() {
+	// 	$('.menu-container-active').removeClass('hover-active-menu');
+	// });
 
 	// $('#dashboard-link').mouseenter( function menuHover() {
 	// 	$('.sidebar-link-active').addClass('hover-active-menu');
