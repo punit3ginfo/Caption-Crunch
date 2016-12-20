@@ -336,7 +336,7 @@ body {
 	transform: translate(-50%,0);
 
 	transition-timing-function: $animation-function ;
-	transition-duration: 1s;
+	transition-duration: 0.5s;
 	animation-direction: normal;
 }
 
@@ -389,7 +389,7 @@ body {
         top: 0px;
 
 	transition-timing-function : $animation-function ;
-	transition-duration        : 1s;
+	transition-duration        : 0.5s;
 	animation-direction        : normal;
 }
 
@@ -630,7 +630,7 @@ body {
 	padding-top : 63px;
 
 	transition-timing-function : $animation-function ;
-	transition-duration        : 1s;
+	transition-duration        : 0.5s;
 	animation-direction        : normal;
 
 	background  : #FFFFFF;
@@ -728,7 +728,7 @@ body {
 	margin-top                 : 63px;
 
 	transition-timing-function : $animation-function ;
-	transition-duration        : 1s;
+	transition-duration        : 0.5s;
 	animation-direction        : normal;
 
 	background-color                 : transparent;
@@ -812,7 +812,7 @@ body {
 	padding-top                : 63px;
 
 	transition-timing-function : $animation-function ;
-	transition-duration        : 1s;
+	transition-duration        : 0.5s;
 	animation-direction        : normal;
 }
 

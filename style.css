@@ -229,7 +229,7 @@ body {
   top: 0px;
   transform: translate(-50%, 0);
   transition-timing-function: ease;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   animation-direction: normal; }
 
 .navbar-load {
@@ -269,7 +269,7 @@ body {
   right: -80px;
   top: 0px;
   transition-timing-function: ease;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   animation-direction: normal; }
 
 .close-preview-container {
@@ -445,7 +445,7 @@ body {
   min-height: 550px;
   padding-top: 63px;
   transition-timing-function: ease;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   animation-direction: normal;
   background: #FFFFFF;
   box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.07); }
@@ -516,7 +516,7 @@ body {
   height: calc(100vh - 63px);
   margin-top: 63px;
   transition-timing-function: ease;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   animation-direction: normal;
   background-color: transparent; }
 
@@ -582,7 +582,7 @@ body {
   height: calc(100vh - 63px);
   padding-top: 63px;
   transition-timing-function: ease;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   animation-direction: normal; }
 
 #post-preview-container {
