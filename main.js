@@ -31,8 +31,8 @@ $(document).ready(function(){
 	// });
 
 	$('.menu-container-active').mouseenter( function() {
-		$('.menu-container-active').removeClass('hover-active-menu');
 		console.log("titties");
+		$('.menu-container-active').removeClass('hover-active-menu');
 	});
 
 
