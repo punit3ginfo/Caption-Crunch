@@ -62,10 +62,10 @@
 		</div>
 		<div class="conditions-show-hide">
 			<div class="form-clearfix flex-col">
-
+				<span class="cc-text-small">Push new products to front of queue</span>
 			</div>
 			<div class="form-clearfix flex-col">
-
+				<span class="cc-text-small">Repeat campaign after all products have been shared once</span>
 			</div>
 		</div>
 
