@@ -156,5 +156,3 @@
 <!-- HTML Content for Product END    -->
 
 </form>
-
-<?php include 'caption-form-js.php';?>
