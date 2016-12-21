@@ -42,8 +42,10 @@
 
 		<div class="content-header-3col-container">
 			<div class="content-header-container">
-				<input class="search-text-box" onKeyDown="if(event.keyCode==13) search(document.getElementById('formValueId').value);" id="formValueId" type="text" name="q_name" placeholder="Search" />
-				<i class="fa fa-search search-button" onclick="search(document.getElementById('formValueId').value);"></i>
+				<a href="javascript:void(0)" class="btn green-button save-button">
+					<i class="fa fa-unlock-alt" aria-hidden="true"></i>
+					SAVE
+				</a>
 			</div>
 		</div>
 
