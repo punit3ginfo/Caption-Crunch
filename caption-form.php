@@ -119,7 +119,7 @@
 		</span>
 
 		<div class="priority-container">
-			<span class="cc-text-small">
+			<span class="cc-text-small" style=" width: 70px; line-height: 46px;">
 				Priority :
 			</span>
 			<select class="form-select" style="margin: 0px; width: 60px;">
