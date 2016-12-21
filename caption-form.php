@@ -2,6 +2,60 @@
 	<!-- TEMPLATE -->
 	<div class="form-container" style="height: auto;">
 		<div class="form-clearfix" style="border-top: 0px;">
+			<div class="form-title-container">
+				<span class="cc-text-medium form-text-header account-show-hide-button">
+					Step 1 | Choose Profile
+				</span>
+
+				<div class="account-bubble-container">
+					<!-- Account Bubbles -->
+					<div class="account-bubble-clearfix">
+						<a href="javascript:void(0)">
+							<div class="account-bubble">
+								<i class="fa fa-facebook account-icon" aria-hidden="true"></i>
+							</div>
+						</a>
+					</div>
+
+					<div class="account-bubble-clearfix">
+						<a href="javascript:void(0)">
+							<div class="account-bubble">
+								<i class="fa fa-twitter account-icon" aria-hidden="true"></i>
+							</div>
+						</a>
+					</div>
+
+					<div class="account-bubble-clearfix">
+						<a href="javascript:void(0)">
+							<div class="account-bubble">
+								<i class="fa fa-google-plus account-icon" aria-hidden="true"></i>
+							</div>
+						</a>
+					</div>
+
+					<div class="account-bubble-clearfix">
+						<a href="javascript:void(0)">
+							<div class="account-bubble">
+								<i class="fa fa-pinterest-p account-icon" aria-hidden="true"></i>
+							</div>
+						</a>
+					</div>
+
+					<div class="account-bubble-clearfix">
+						<a href="javascript:void(0)">
+							<div class="account-bubble">
+								<i class="fa fa-instagram account-icon" aria-hidden="true"></i>
+							</div>
+						</a>
+					</div>
+					<!-- Account Bubbles -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="form-container" style="height: auto;">
+		<div class="form-clearfix" style="border-top: 0px;">
 			<span class="cc-text-medium form-text-header templates-show-hide-button" style="float: left;">
 				<span class="cc-text-medium form-text-header">
 					Template
