@@ -122,7 +122,7 @@
 			<span class="cc-text-small" style=" width: 70px; line-height: 46px;">
 				Priority :
 			</span>
-			<select class="form-select" style="margin: 0px; width: 60px;">
+			<select class="form-select priority-dropdown">
 				<option>1</option>
 				<option>2</option>
 				<option>3</option>
