@@ -63,9 +63,19 @@
 		<div class="conditions-show-hide">
 			<div class="form-clearfix flex-col">
 				<span class="cc-text-small" style="line-height: 46px;">Push new products to front of queue</span>
+
+				<a href="javascript:void(0)" class="btn grey-button save-button">
+					<i class="fa fa-times" aria-hidden="true"></i>
+					NO
+				</a>
 			</div>
 			<div class="form-clearfix flex-col">
 				<span class="cc-text-small" style="line-height: 46px;">Repeat campaign after all products have been shared once</span>
+
+				<a href="javascript:void(0)" class="btn green-button save-button">
+					<i class="fa fa-check" aria-hidden="true"></i>
+					YES
+				</a>
 			</div>
 		</div>
 
