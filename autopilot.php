@@ -43,8 +43,7 @@
 		<div class="content-header-3col-container">
 			<div class="content-header-container">
 				<a href="javascript:void(0)" class="btn green-button save-button">
-					<i class="fa fa-unlock-alt" aria-hidden="true"></i>
-					SAVE
+					ON
 				</a>
 			</div>
 		</div>
