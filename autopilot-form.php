@@ -53,7 +53,7 @@
 			</div>
 		</div>
 		<div class="form-clearfix flex-col" style="padding-bottom: 0px;">
-			<span class="cc-text-small">Post Frequency :</span>
+			<span class="cc-text-small" style="line-height: 46px;">Post Frequency :</span>
 			<div class="priority-container">
 				<span class="cc-text-small" style=" width: 70px; line-height: 46px;">
 					Priority :
@@ -70,7 +70,7 @@
 					<option>9</option>
 					<option>10</option>
 				</select>
-				<select class="form-select priority-dropdown">
+				<select class="form-select frequecy-dropdown">
 					<option>Daily</option>
 					<option>Bi-weekly</option>
 					<option>Weekly</option>

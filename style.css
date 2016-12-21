@@ -2292,4 +2292,10 @@ ul#pagination-list li {
   background: white url("https://cdn.shopify.com/s/files/1/1484/1256/files/arrow-down.png?9258385709659661406") no-repeat 75% 50%;
   background-size: 16px 16px; }
 
+.frequecy-dropdown {
+  margin: 0px;
+  width: 100px;
+  background: white url("https://cdn.shopify.com/s/files/1/1484/1256/files/arrow-down.png?9258385709659661406") no-repeat 75% 50%;
+  background-size: 16px 16px; }
+
 /*# sourceMappingURL=style.css.map */
