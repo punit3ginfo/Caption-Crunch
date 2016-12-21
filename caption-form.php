@@ -1,59 +1,4 @@
 <form class="form">
-	<!-- TEMPLATE -->
-	<!-- <div class="form-container" style="height: auto;">
-		<div class="form-clearfix" style="border-top: 0px; padding-bottom: 0px;">
-			<div class="form-title-container">
-				<span class="cc-text-medium form-text-header account-show-hide-button">
-					Step 1 | Select Profiles
-				</span>
-
-				<div class="account-bubble-container"> -->
-					<!-- Account Bubbles -->
-					<!-- <div class="account-bubble-clearfix">
-						<a href="javascript:void(0)">
-							<div class="account-bubble">
-								<i class="fa fa-facebook account-icon" aria-hidden="true"></i>
-							</div>
-						</a>
-					</div>
-
-					<div class="account-bubble-clearfix">
-						<a href="javascript:void(0)">
-							<div class="account-bubble">
-								<i class="fa fa-twitter account-icon" aria-hidden="true"></i>
-							</div>
-						</a>
-					</div>
-
-					<div class="account-bubble-clearfix">
-						<a href="javascript:void(0)">
-							<div class="account-bubble">
-								<i class="fa fa-google-plus account-icon" aria-hidden="true"></i>
-							</div>
-						</a>
-					</div>
-
-					<div class="account-bubble-clearfix">
-						<a href="javascript:void(0)">
-							<div class="account-bubble">
-								<i class="fa fa-pinterest-p account-icon" aria-hidden="true"></i>
-							</div>
-						</a>
-					</div>
-
-					<div class="account-bubble-clearfix">
-						<a href="javascript:void(0)">
-							<div class="account-bubble">
-								<i class="fa fa-instagram account-icon" aria-hidden="true"></i>
-							</div>
-						</a>
-					</div> -->
-					<!-- Account Bubbles -->
-				<!-- </div>
-			</div>
-		</div>
-	</div> -->
-
 	<div class="form-container" style="height: auto;">
 		<div class="form-clearfix" style="border-top: 0px;">
 			<span class="cc-text-medium form-text-header templates-show-hide-button" style="float: left;">
@@ -62,144 +7,51 @@
 				</span>
 			</span>
 		</div>
-	<div class="template-show-hide">
-		<div class="form-clearfix">
-			<div class="form-caption-list-clearfix">
-				<a id="product-title-btn" href="javascript:void(0)" class="btn button-three-col grey-button">
-					<i id="product-title-icon" class="fa fa-times" aria-hidden="true"></i> Product Title
-				</a>
-				<a id="product-price-btn" href="javascript:void(0)" class="btn button-three-col grey-button">
-					<i id="product-price-icon" class="fa fa-times" aria-hidden="true"></i> Product Price
-				</a>
-				<a id="product-comp-price-btn" href="javascript:void(0)" class="btn button-three-col grey-button">
-					<i id="product-comp-price-icon" class="fa fa-times" aria-hidden="true"></i> Compare Price
-				</a>
-				<a id="product-type-btn" href="javascript:void(0)" class="btn button-three-col grey-button">
-					<i  id="product-type-icon" class="fa fa-times" aria-hidden="true"></i> Product Type
-				</a>
-				<a id="product-url-btn" href="javascript:void(0)" class="btn button-three-col grey-button">
-					<i id="product-url-icon" class="fa fa-times" aria-hidden="true"></i> Product Url
-				</a>
-				<a id="product-description-btn" href="javascript:void(0)" class="btn button-three-col grey-button">
-					<i id="product-description-icon" class="fa fa-times" aria-hidden="true"></i> Description
-				</a>
-				<a id="product-collection-btn" href="javascript:void(0)" class="btn button-three-col grey-button">
-					<i id="product-collection-icon" class="fa fa-times" aria-hidden="true"></i> Collection Title
-				</a>
-				<a id="product-percent-btn" href="javascript:void(0)" class="btn button-three-col grey-button">
-					<i id="product-percent-icon" class="fa fa-times" aria-hidden="true"></i> Precent Off
-				</a>
-				<a id="product-dollars-btn" href="javascript:void(0)" class="btn button-three-col grey-button">
-					<i id="product-dollars-icon" class="fa fa-times" aria-hidden="true"></i> Dollars Saved
-				</a>
+		<div class="template-show-hide">
+			<div class="form-clearfix">
+				<div class="form-caption-list-clearfix">
+					<a id="product-title-btn" href="javascript:void(0)" class="btn button-three-col grey-button">
+						<i id="product-title-icon" class="fa fa-times" aria-hidden="true"></i> Product Title
+					</a>
+					<a id="product-price-btn" href="javascript:void(0)" class="btn button-three-col grey-button">
+						<i id="product-price-icon" class="fa fa-times" aria-hidden="true"></i> Product Price
+					</a>
+					<a id="product-comp-price-btn" href="javascript:void(0)" class="btn button-three-col grey-button">
+						<i id="product-comp-price-icon" class="fa fa-times" aria-hidden="true"></i> Compare Price
+					</a>
+					<a id="product-type-btn" href="javascript:void(0)" class="btn button-three-col grey-button">
+						<i  id="product-type-icon" class="fa fa-times" aria-hidden="true"></i> Product Type
+					</a>
+					<a id="product-url-btn" href="javascript:void(0)" class="btn button-three-col grey-button">
+						<i id="product-url-icon" class="fa fa-times" aria-hidden="true"></i> Product Url
+					</a>
+					<a id="product-description-btn" href="javascript:void(0)" class="btn button-three-col grey-button">
+						<i id="product-description-icon" class="fa fa-times" aria-hidden="true"></i> Description
+					</a>
+					<a id="product-collection-btn" href="javascript:void(0)" class="btn button-three-col grey-button">
+						<i id="product-collection-icon" class="fa fa-times" aria-hidden="true"></i> Collection Title
+					</a>
+					<a id="product-percent-btn" href="javascript:void(0)" class="btn button-three-col grey-button">
+						<i id="product-percent-icon" class="fa fa-times" aria-hidden="true"></i> Precent Off
+					</a>
+					<a id="product-dollars-btn" href="javascript:void(0)" class="btn button-three-col grey-button">
+						<i id="product-dollars-icon" class="fa fa-times" aria-hidden="true"></i> Dollars Saved
+					</a>
+				</div>
 			</div>
-		</div>
-		<div class="form-clearfix" style="padding-bottom: 0px;">
-			<span class="cc-text-small">Caption for Facebook, Instagram, Google+, & Pinterest</span>
-			<div class="caption-textarea-container" style="padding-bottom: 0px;">
-				<textarea id="caption-textarea-large" class="caption-textarea"></textarea>
+			<div class="form-clearfix" style="padding-bottom: 0px;">
+				<span class="cc-text-small">Caption for Facebook, Instagram, Google+, & Pinterest</span>
+				<div class="caption-textarea-container" style="padding-bottom: 0px;">
+					<textarea id="caption-textarea-large" class="caption-textarea"></textarea>
+				</div>
+				<span class="cc-text-small">Caption for Twitter (Character Limit: 140)</span>
+				<div class="twitter-textarea-container">
+					<textarea id="caption-textarea-small" class="twitter-caption-textarea"></textarea>
+				</div>
 			</div>
-			<span class="cc-text-small">Caption for Twitter (Character Limit: 140)</span>
-			<div class="twitter-textarea-container">
-				<textarea id="caption-textarea-small" class="twitter-caption-textarea"></textarea>
-			</div>
-	</div>
-</div>
-</div>
-<!-- CONDITIONS -->
-<!-- <div class="form-container">
-	<div class="form-clearfix" style="border-top: 0px;">
-
-		<span class="cc-text-medium form-text-header conditions-show-hide-button">
-			Step 2 | Set  Product Conditions
-		</span> -->
-
-		<!-- <div class="priority-container">
-			<span class="cc-text-small" style=" width: 70px; line-height: 46px;">
-				Priority :
-			</span>
-			<select class="form-select priority-dropdown">
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-				<option>6</option>
-				<option>7</option>
-				<option>8</option>
-				<option>9</option>
-				<option>10</option>
-			</select>
-		</div> -->
-
-	<!-- </div>
-	<div class="conditions-show-hide">
-		<div class="form-clearfix flex-col">
-			<div class="form-3col-clearfix flex-center">
-				<span>Products must match: </span>
-			</div>
-			<div class="form-3col-clearfix"> -->
-				<!-- <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>All conditions -->
-				<!-- <a id="all-conditions-btn" href="javascript:void(0)" class="button-three-col btn green-button" style="width: calc(100% - 22px);">
-					<i id="all-conditions-icon" class="fa fa-check" aria-hidden="true"></i> All conditions
-				</a>
-			</div>
-			<div class="form-3col-clearfix"> -->
-				<!-- <input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Any condition -->
-				<!-- <a id="any-condition-btn" href="javascript:void(0)" class="button-three-col btn grey-button" style="width: calc(100% - 22px);">
-					<i id="any-condition-icon" class="fa fa-times" aria-hidden="true"></i> Any condition
-				</a>
-			</div>
-		</div>
-		<div class="form-clearfix flex-col">
-			<div class="form-3col-clearfix">
-				<select class="form-select">
-					<option>Collection Title</option>
-					<option>Product Title</option>
-					<option>Product Type</option>
-					<option>Product Vendor</option>
-					<option>Product Price</option>
-					<option>Product Tag</option>
-					<option>Compare At Price</option>
-					<option>Weight</option>
-					<option>Inventory Stock</option>
-					<option>Varient Title</option>
-				</select>
-			</div>
-			<div class="form-3col-clearfix">
-				<select class="form-select">
-					<option>is equal to</option>
-					<option>is not equal to</option>
-					<option>is greater than</option>
-					<option>is less than</option>
-					<option>starts with</option>
-					<option>ends with</option>
-					<option>contains</option>
-					<option>does not contain</option>
-				</select>
-			</div>
-			<div class="form-3col-clearfix">
-				<input class="form-input" type="text-box" placeholder="Enter condition"/>
-			</div>
-		</div>
-		<div class="form-clearfix" id="add-condition-container">
-			<a href="#" class="add-condition-button btn grey-button"><i class="fa fa-plus" aria-hidden="true"></i> Add another condition</a>
 		</div>
 	</div>
-
-</div> -->
-<!-- PRODUCTS -->
-<!-- <div class="form-container">
-	<div class="form-clearfix" style="border-top: 0px;">
-		<span class="cc-text-medium form-text-header products-show-hide-button">
-			Products
-		</span>
-	</div>
-</div> -->
-<!-- PRODUCT LIST -->
-
-<!-- HTML Content for Product END    -->
-
+	<!-- HTML Content for Product END    -->
 </form>
 
 <?php include 'caption-form-js.php';?>
