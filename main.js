@@ -848,9 +848,4 @@ $(document).ready(function(){
 				formFocus();
 				$('#captions-help-container > .form-help:nth-child(8)').removeClass('form-focus');
 		});
-
-		AOS.init({
-		      duration: 1200,
-		      easing: 'ease-in-out-back'
-		    });
 });

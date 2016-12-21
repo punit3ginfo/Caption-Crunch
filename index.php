@@ -51,7 +51,6 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous"> -->
 	<link rel="stylesheet" href="style.css">
 	<link href="https://file.myfontastic.com/2QhKnEmxbVRUZVd3jnyZjj/icons.css" rel="stylesheet">
-	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -284,6 +283,5 @@ function gethistory(){
 <!-- Scripts -->
 <script src="main.js"></script>
 <?php include 'caption-form-js.php';?>
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
 </body>

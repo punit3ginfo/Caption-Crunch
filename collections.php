@@ -101,7 +101,7 @@
 				</div> -->
 		</div>
 		<div class="content-overflow-container">
-			<div data-aos="fade-up" id="product-feed" class="content-overflow">
+			<div id="product-feed" class="content-overflow">
 
 				<?php
 
