@@ -139,7 +139,7 @@
 	</div>
 	<div class="conditions-show-hide">
 		<div class="form-clearfix flex-col">
-			<div class="form-3col-clearfix">
+			<div class="form-3col-clearfix flex-center">
 				<span>Products must match: </span>
 			</div>
 			<div class="form-3col-clearfix">

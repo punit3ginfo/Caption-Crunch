@@ -1817,6 +1817,11 @@ a:hover {
   display: flex;
   justify-content: space-between; }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .form-text-header {
   width: 100%;
   cursor: pointer;
