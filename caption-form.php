@@ -58,7 +58,7 @@
 		<div class="form-clearfix" style="border-top: 0px;">
 			<span class="cc-text-medium form-text-header templates-show-hide-button" style="float: left;">
 				<span class="cc-text-medium form-text-header">
-					Step 2 | Create Template
+					Step 1 | Create Template
 				</span>
 			</span>
 		</div>
@@ -115,10 +115,10 @@
 	<div class="form-clearfix" style="border-top: 0px;">
 
 		<span class="cc-text-medium form-text-header conditions-show-hide-button">
-			Step 3 | Set  Product Conditions
+			Step 2 | Set  Product Conditions
 		</span>
 
-		<div class="priority-container">
+		<!-- <div class="priority-container">
 			<span class="cc-text-small" style=" width: 70px; line-height: 46px;">
 				Priority :
 			</span>
@@ -134,7 +134,7 @@
 				<option>9</option>
 				<option>10</option>
 			</select>
-		</div>
+		</div> -->
 
 	</div>
 	<div class="conditions-show-hide">
