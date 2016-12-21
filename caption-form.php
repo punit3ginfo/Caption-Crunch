@@ -4,7 +4,7 @@
 		<div class="form-clearfix" style="border-top: 0px;">
 			<div class="form-title-container">
 				<span class="cc-text-medium form-text-header account-show-hide-button">
-					Step 1 | Choose Profile
+					Select Profiles
 				</span>
 
 				<div class="account-bubble-container">
