@@ -24,10 +24,10 @@ $('#product-title-btn').click(function(){
 	} else if ($("#product-title-btn").hasClass('green-button')) {
 			// get the content of the #result textarea
 	    valLarge = $('#caption-textarea-large').val();
-		// valSmall = $('#caption-textarea-small').val();
+	    valSmall = $('#caption-textarea-small').val();
 	        // remove all occurence of content of #name in #result
 	    $('#caption-textarea-large').val(valLarge.replace($productTitle, ""));
-		// $('#caption-textarea-small').val(valSmall.replace($productTitle, ""));
+		$('#caption-textarea-small').val(valSmall.replace($productTitle, ""));
 		$("#product-title-btn").removeClass("green-button");
 		$("#product-title-btn").addClass("grey-button");
 		$("#product-title-icon").removeClass("fa-check");
@@ -46,10 +46,10 @@ $('#product-price-btn').click(function(){
 	} else if ($("#product-price-btn").hasClass('green-button')) {
 			// get the content of the #result textarea
 		val = $('#caption-textarea-large').val();
-		// val = $('#caption-textarea-small').val();
+		val = $('#caption-textarea-small').val();
 			// remove all occurence of content of #name in #result
 		$('#caption-textarea-large').val(val.replace($productPrice, ""));
-		// $('#caption-textarea-small').val(val.replace($productPrice, ""));
+		$('#caption-textarea-small').val(val.replace($productPrice, ""));
 		$("#product-price-btn").removeClass("green-button");
 		$("#product-price-btn").addClass("grey-button");
 		$("#product-price-icon").removeClass("fa-check");
@@ -68,10 +68,10 @@ $('#product-comp-price-btn').click(function(){
 	} else if ($("#product-comp-price-btn").hasClass('green-button')) {
 			// get the content of the #result textarea
 		val = $('#caption-textarea-large').val();
-		// val = $('#caption-textarea-small').val();
+		val = $('#caption-textarea-small').val();
 			// remove all occurence of content of #name in #result
 		$('#caption-textarea-large').val(val.replace($productComparePrice, ""));
-		// $('#caption-textarea-small').val(val.replace($productComparePrice, ""));
+		$('#caption-textarea-small').val(val.replace($productComparePrice, ""));
 		$("#product-comp-price-btn").removeClass("green-button");
 		$("#product-comp-price-btn").addClass("grey-button");
 		$("#product-comp-price-icon").removeClass("fa-check");
@@ -90,10 +90,10 @@ $('#product-type-btn').click(function(){
 	} else if ($("#product-type-btn").hasClass('green-button')) {
 			// get the content of the #result textarea
 		val = $('#caption-textarea-large').val();
-		// val = $('#caption-textarea-small').val();
+		val = $('#caption-textarea-small').val();
 			// remove all occurence of content of #name in #result
 		$('#caption-textarea-large').val(val.replace($productType, ""));
-		// $('#caption-textarea-small').val(val.replace($productType, ""));
+		$('#caption-textarea-small').val(val.replace($productType, ""));
 		$("#product-type-btn").removeClass("green-button");
 		$("#product-type-btn").addClass("grey-button");
 		$("#product-type-icon").removeClass("fa-check");
@@ -112,10 +112,10 @@ $('#product-url-btn').click(function(){
 	} else if ($("#product-url-btn").hasClass('green-button')) {
 			// get the content of the #result textarea
 		val = $('#caption-textarea-large').val();
-		// val = $('#caption-textarea-small').val();
+		val = $('#caption-textarea-small').val();
 			// remove all occurence of content of #name in #result
 		$('#caption-textarea-large').val(val.replace($productUrl, ""));
-		// $('#caption-textarea-small').val(val.replace($productUrl, ""));
+		$('#caption-textarea-small').val(val.replace($productUrl, ""));
 		$("#product-url-btn").removeClass("green-button");
 		$("#product-url-btn").addClass("grey-button");
 		$("#product-url-icon").removeClass("fa-check");
@@ -134,10 +134,10 @@ $('#product-description-btn').click(function(){
 	} else if ($("#product-description-btn").hasClass('green-button')) {
 			// get the content of the #result textarea
 		val = $('#caption-textarea-large').val();
-		// val = $('#caption-textarea-small').val();
+		val = $('#caption-textarea-small').val();
 			// remove all occurence of content of #name in #result
 		$('#caption-textarea-large').val(val.replace($productDescription, ""));
-		// $('#caption-textarea-small').val(val.replace($productDescription, ""));
+		$('#caption-textarea-small').val(val.replace($productDescription, ""));
 		$("#product-description-btn").removeClass("green-button");
 		$("#product-description-btn").addClass("grey-button");
 		$("#product-description-icon").removeClass("fa-check");
@@ -156,10 +156,10 @@ $('#product-collection-btn').click(function(){
 	} else if ($("#product-collection-btn").hasClass('green-button')) {
 			// get the content of the #result textarea
 		val = $('#caption-textarea-large').val();
-		// val = $('#caption-textarea-small').val();
+		val = $('#caption-textarea-small').val();
 			// remove all occurence of content of #name in #result
 		$('#caption-textarea-large').val(val.replace($collectionTitle, ""));
-		// $('#caption-textarea-small').val(val.replace($collectionTitle, ""));
+		$('#caption-textarea-small').val(val.replace($collectionTitle, ""));
 		$("#product-collection-btn").removeClass("green-button");
 		$("#product-collection-btn").addClass("grey-button");
 		$("#product-collection-icon").removeClass("fa-check");
@@ -178,10 +178,10 @@ $('#product-percent-btn').click(function(){
 	} else if ($("#product-percent-btn").hasClass('green-button')) {
 			// get the content of the #result textarea
 		val = $('#caption-textarea-large').val();
-		// val = $('#caption-textarea-small').val();
+		val = $('#caption-textarea-small').val();
 			// remove all occurence of content of #name in #result
 		$('#caption-textarea-large').val(val.replace($percentOff, ""));
-		// $('#caption-textarea-small').val(val.replace($percentOff, ""));
+		$('#caption-textarea-small').val(val.replace($percentOff, ""));
 		$("#product-percent-btn").removeClass("green-button");
 		$("#product-percent-btn").addClass("grey-button");
 		$("#product-percent-icon").removeClass("fa-check");
@@ -200,10 +200,10 @@ $('#product-dollars-btn').click(function(){
 	} else if ($("#product-dollars-btn").hasClass('green-button')) {
 			// get the content of the #result textarea
 		val = $('#caption-textarea-large').val();
-		// val = $('#caption-textarea-small').val();
+		val = $('#caption-textarea-small').val();
 			// remove all occurence of content of #name in #result
 		$('#caption-textarea-large').val(val.replace($dollarsOff, ""));
-		// $('#caption-textarea-small').val(val.replace($dollarsOff, ""));
+		$('#caption-textarea-small').val(val.replace($dollarsOff, ""));
 		$("#product-dollars-btn").removeClass("green-button");
 		$("#product-dollars-btn").addClass("grey-button");
 		$("#product-dollars-icon").removeClass("fa-check");
