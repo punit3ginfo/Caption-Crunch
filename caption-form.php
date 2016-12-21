@@ -99,14 +99,10 @@
 			<div class="caption-textarea-container" style="padding-bottom: 0px;">
 				<textarea id="caption-textarea-large" class="caption-textarea"></textarea>
 			</div>
-			<span class="cc-text-small">Caption for Twitter</span>
+			<span class="cc-text-small">Caption for Twitter (Character Limit: 140)</span>
 			<div class="twitter-textarea-container">
 				<textarea id="caption-textarea-small" class="twitter-caption-textarea"></textarea>
 			</div>
-			<!-- <span class="cc-text-small">Caption for: Twitter (Character Limit: 140)</span>
-			<div class="caption-textarea-container" style="margin-bottom: 0px;">
-			<textarea id="caption-textarea-small" class="caption-textarea"></textarea>
-		</div> -->
 	</div>
 </div>
 </div>

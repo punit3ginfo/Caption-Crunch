@@ -52,6 +52,10 @@
 				</div>
 			</div>
 		</div>
+		<div class="form-clearfix flex-col" style="border-top: 0px; padding-bottom: 0px;">
+			<span class="cc-text-small">Post Frequency :</span>
+
+		</div>
 	</div>
 	<!-- SETTINGS -->
 	<div class="form-container">
