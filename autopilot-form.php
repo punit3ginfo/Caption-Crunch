@@ -64,9 +64,6 @@
 			<div class="form-clearfix flex-col">
 				<span class="cc-text-small" style="line-height: 46px;">Post Frequency :</span>
 				<div class="priority-container">
-					<span class="cc-text-small" style=" width: 70px; line-height: 46px;">
-						Priority :
-					</span>
 					<select class="form-select priority-dropdown">
 						<option>1</option>
 						<option>2</option>
