@@ -61,7 +61,7 @@
 			</span>
 		</div>
 		<div class="conditions-show-hide">
-			<div class="form-clearfix flex-col" style="padding-bottom: 0px;">
+			<div class="form-clearfix flex-col">
 				<span class="cc-text-small" style="line-height: 46px;">Post Frequency :</span>
 				<div class="priority-container">
 					<span class="cc-text-small" style=" width: 70px; line-height: 46px;">
