@@ -95,7 +95,7 @@
 			</div>
 		</div>
 		<div class="form-clearfix" style="padding-bottom: 0px;">
-			<span class="cc-text-small">Caption for Facebook, Google+, & Pinterest</span>
+			<span class="cc-text-small">Caption for Facebook, Instagram, Google+, & Pinterest</span>
 			<div class="caption-textarea-container" style="padding-bottom: 0px;">
 				<textarea id="caption-textarea-large" class="caption-textarea"></textarea>
 			</div>
@@ -111,12 +111,12 @@
 </div>
 </div>
 <!-- CONDITIONS -->
-<div class="form-container">
+<!-- <div class="form-container">
 	<div class="form-clearfix" style="border-top: 0px;">
 
 		<span class="cc-text-medium form-text-header conditions-show-hide-button">
 			Step 2 | Set  Product Conditions
-		</span>
+		</span> -->
 
 		<!-- <div class="priority-container">
 			<span class="cc-text-small" style=" width: 70px; line-height: 46px;">
@@ -136,21 +136,21 @@
 			</select>
 		</div> -->
 
-	</div>
+	<!-- </div>
 	<div class="conditions-show-hide">
 		<div class="form-clearfix flex-col">
 			<div class="form-3col-clearfix flex-center">
 				<span>Products must match: </span>
 			</div>
-			<div class="form-3col-clearfix">
+			<div class="form-3col-clearfix"> -->
 				<!-- <input type="checkbox" name="all-conditions" value="all" style="margin-right: 10px;"/>All conditions -->
-				<a id="all-conditions-btn" href="javascript:void(0)" class="button-three-col btn green-button" style="width: calc(100% - 22px);">
+				<!-- <a id="all-conditions-btn" href="javascript:void(0)" class="button-three-col btn green-button" style="width: calc(100% - 22px);">
 					<i id="all-conditions-icon" class="fa fa-check" aria-hidden="true"></i> All conditions
 				</a>
 			</div>
-			<div class="form-3col-clearfix">
+			<div class="form-3col-clearfix"> -->
 				<!-- <input type="checkbox" name="any-conditions" value="any" style="margin-right: 10px;"/>Any condition -->
-				<a id="any-condition-btn" href="javascript:void(0)" class="button-three-col btn grey-button" style="width: calc(100% - 22px);">
+				<!-- <a id="any-condition-btn" href="javascript:void(0)" class="button-three-col btn grey-button" style="width: calc(100% - 22px);">
 					<i id="any-condition-icon" class="fa fa-times" aria-hidden="true"></i> Any condition
 				</a>
 			</div>
@@ -191,17 +191,16 @@
 		</div>
 	</div>
 
-</div>
+</div> -->
 <!-- PRODUCTS -->
-<div class="form-container">
+<!-- <div class="form-container">
 	<div class="form-clearfix" style="border-top: 0px;">
 		<span class="cc-text-medium form-text-header products-show-hide-button">
 			Products
 		</span>
 	</div>
-</div>
+</div> -->
 <!-- PRODUCT LIST -->
-<?php echo "Display products that match conditions here." ?>
 
 <!-- HTML Content for Product END    -->
 
