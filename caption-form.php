@@ -129,7 +129,9 @@
 	</div>
 </div>
 <!-- PRODUCT LIST -->
+<span style="padding-bottom: 15px; text-align: center;">
 <?php echo "Display products that match conditions here." ?>
+</span>
 <!-- HTML Content for Product END    -->
 
 </form>
