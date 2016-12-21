@@ -1823,12 +1823,8 @@ a:hover {
   line-height: 46px; }
 
 .form-3col-clearfix {
-  display: flex;
-  float: left;
   width: calc(33% - 3px);
-  height: 46px;
-  align-items: center;
-  justify-content: center; }
+  height: 46px; }
 
 .form-caption-list-clearfix {
   display: flex;

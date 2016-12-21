@@ -2484,14 +2484,8 @@ a:hover {
 }
 
 .form-3col-clearfix {
-	display         : flex;
-	float           : left;
-
 	width           : calc(33% - 3px);
 	height          : 46px;
-
-	align-items     : center;
-	justify-content : center;
 }
 
 .form-caption-list-clearfix {
