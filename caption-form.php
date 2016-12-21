@@ -3,14 +3,11 @@
 	<div class="form-container" style="height: auto;">
 		<div class="form-clearfix" style="border-top: 0px;">
 			<span class="cc-text-medium form-text-header templates-show-hide-button" style="float: left;">
-				<span class="cc-text-medium form-text-header template-tip">Template
-					<!-- <span class="cc-text-small" style="float: left; line-height: 30px;">
-					Use the selectors below to add autofilled variables to your caption.
-				</span> -->
-				<i id="template-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 46px;"></i>
+				<span class="cc-text-medium form-text-header">
+					Template
+				</span>
 			</span>
-		</span>
-	</div>
+		</div>
 	<div class="template-show-hide">
 		<div class="form-clearfix">
 			<div class="form-caption-list-clearfix">
@@ -61,7 +58,6 @@
 
 		<span class="cc-text-medium form-text-header conditions-show-hide-button">
 			Conditions
-			<i id="condition-arrow-icon" class="fa fa-chevron-up" aria-hidden="true" style="float: right; line-height: 46px;"></i>
 		</span>
 
 	</div>
@@ -129,9 +125,8 @@
 	</div>
 </div>
 <!-- PRODUCT LIST -->
-<span style="padding-bottom: 15px; text-align: center;">
 <?php echo "Display products that match conditions here." ?>
-</span>
+
 <!-- HTML Content for Product END    -->
 
 </form>
