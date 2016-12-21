@@ -1,15 +1,15 @@
 <form class="form">
 	<!-- TEMPLATE -->
-	<div class="form-container" style="height: auto;">
+	<!-- <div class="form-container" style="height: auto;">
 		<div class="form-clearfix" style="border-top: 0px; padding-bottom: 0px;">
 			<div class="form-title-container">
 				<span class="cc-text-medium form-text-header account-show-hide-button">
 					Step 1 | Select Profiles
 				</span>
 
-				<div class="account-bubble-container">
+				<div class="account-bubble-container"> -->
 					<!-- Account Bubbles -->
-					<div class="account-bubble-clearfix">
+					<!-- <div class="account-bubble-clearfix">
 						<a href="javascript:void(0)">
 							<div class="account-bubble">
 								<i class="fa fa-facebook account-icon" aria-hidden="true"></i>
@@ -47,12 +47,12 @@
 								<i class="fa fa-instagram account-icon" aria-hidden="true"></i>
 							</div>
 						</a>
-					</div>
+					</div> -->
 					<!-- Account Bubbles -->
-				</div>
+				<!-- </div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<div class="form-container" style="height: auto;">
 		<div class="form-clearfix" style="border-top: 0px;">
