@@ -2275,4 +2275,11 @@ ul#pagination-list li {
   align-items: center;
   justify-content: center; }
 
+.priority-container {
+  width: auto;
+  height: 46px;
+  float: right;
+  display: flex;
+  justify-content: space-between; }
+
 /*# sourceMappingURL=style.css.map */
