@@ -53,7 +53,23 @@
 			</div>
 		</div>
 	</div>
+	<!-- SETTINGS -->
+	<div class="form-container">
+		<div class="form-clearfix" style="border-top: 0px;">
+			<span class="cc-text-medium form-text-header conditions-show-hide-button">
+				Step 2 | Campaign Settings
+			</span>
+		</div>
+		<div class="conditions-show-hide">
+			<div class="form-clearfix flex-col">
 
+			</div>
+			<div class="form-clearfix flex-col">
+
+			</div>
+		</div>
+
+	</div>
 <!-- CONDITIONS -->
 <div class="form-container">
 	<div class="form-clearfix" style="border-top: 0px;">
