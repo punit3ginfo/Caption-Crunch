@@ -1813,6 +1813,10 @@ a:hover {
   padding: 15px 0px;
   border-top: 1px solid #eee; }
 
+.flex-col {
+  display: flex;
+  justify-content: space-between; }
+
 .form-text-header {
   width: 100%;
   cursor: pointer;
@@ -1821,7 +1825,7 @@ a:hover {
 .form-3col-clearfix {
   display: flex;
   float: left;
-  width: 33%;
+  width: calc(33% - 3px);
   height: 46px;
   align-items: center;
   justify-content: center; }
@@ -1874,7 +1878,7 @@ select:focus {
 
 .form-select {
   overflow: hidden;
-  width: calc(100% - 8px);
+  width: 100%;
   height: 44px;
   margin: auto;
   padding: 11px 11px;
@@ -1888,7 +1892,7 @@ select:focus {
   border: 1px solid #7ab55c; }
 
 .form-input {
-  width: calc(100% - 20px);
+  width: 100%;
   height: 46px;
   padding-left: 16px;
   border: 1px solid #555555;

@@ -2470,6 +2470,11 @@ a:hover {
 	border-top : 1px solid #eee;
 }
 
+.flex-col {
+	display: flex;
+	justify-content: space-between;
+}
+
 .form-text-header {
 	width       : 100%;
 
@@ -2482,7 +2487,7 @@ a:hover {
 	display         : flex;
 	float           : left;
 
-	width           : 33%;
+	width           : calc(33% - 3px);
 	height          : 46px;
 
 	align-items     : center;
@@ -2551,7 +2556,7 @@ select:focus {
 .form-select {
 	overflow        : hidden;
 
-	width           : calc(100% - 8px);
+	width           : 100%;
 	height          : 44px;
 	margin          : auto;
 	padding         : 11px 11px;
@@ -2568,7 +2573,7 @@ select:focus {
 }
 
 .form-input {
-	width         : calc(100% - 20px);
+	width         : 100%;
 	height        : 46px;
 	padding-left  : 16px;
 

@@ -138,7 +138,7 @@
 
 	</div>
 	<div class="conditions-show-hide">
-		<div class="form-clearfix">
+		<div class="form-clearfix flex-col">
 			<div class="form-3col-clearfix">
 				<span>Products must match: </span>
 			</div>
@@ -155,7 +155,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="form-clearfix">
+		<div class="form-clearfix flex-col">
 			<div class="form-3col-clearfix">
 				<select class="form-select">
 					<option>Collection Title</option>
