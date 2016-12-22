@@ -89,6 +89,14 @@ $('.toggle-left').click(function() {
 	$('.campaign-toggle-button').addClass('green-button-solid');
 });
 
+$('.toggle-right').click(function() {
+	// $('.campaign-toggle-button').css('left','20px');
+	$('.campaign-toggle-button').removeClass('toggle-right');
+	$('.campaign-toggle-button').addClass('toggle-left');
+	$('.campaign-toggle-button').removeClass('green-button-solid');
+	$('.campaign-toggle-button').addClass('grey-button-solid');
+});
+
 
 // Condition - Show / Hide
 // $('.conditions-show-hide-button').click(function() {

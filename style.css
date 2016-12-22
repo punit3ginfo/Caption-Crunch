@@ -148,8 +148,8 @@ body {
   content: "";
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
   -webkit-transition-property: transform;
   transition-property: transform;
   -webkit-transform: scale(0);
@@ -199,8 +199,8 @@ body {
   content: "";
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
   -webkit-transition-property: transform;
   transition-property: transform;
   -webkit-transform: scale(0);
@@ -224,7 +224,11 @@ body {
 
 .campaign-toggle-button {
   border-radius: 20px;
-  padding: 9px 11px; }
+  padding: 9px 11px;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s; }
 
 .toggle-left {
   position: absolute;
