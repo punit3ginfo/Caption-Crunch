@@ -233,7 +233,8 @@ body {
 .toggle-left {
   position: absolute;
   left: 2px;
-  top: 2px; }
+  top: 2px;
+  right: auto; }
 
 .toggle-right {
   position: absolute;
