@@ -52,6 +52,16 @@
 		</div>
 
 		<div class="content-header-3col-container">
+
+			<div class="content-header-container">
+				<div class="toggle-container">
+					<a href="javascript:void(0)" class="btn grey-button-solid toggle-button  toggle-left">
+						<i class="fa fa-times" aria-hidden="true"></i>
+						 OFF
+					</a>
+				</div>
+			</div>
+
 			<!-- <div class="content-header-container">
 				<a href="javascript:void(0)" class="btn green-button save-button">
 					<i class="fa fa-unlock-alt" aria-hidden="true"></i>
