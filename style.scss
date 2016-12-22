@@ -316,6 +316,13 @@ body {
 
 }
 
+.grey-button-solid:hover {
+	color                       : white;
+	border                      : 1px solid $secondary-color;
+	background-color                  : $secondary-color;
+
+}
+
 
 .toggle-button{
 	border-radius: 20px;
