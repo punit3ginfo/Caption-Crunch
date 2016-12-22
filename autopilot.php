@@ -44,7 +44,8 @@
 			<div class="content-header-container">
 				<div class="toggle-container">
 					<a href="javascript:void(0)" class="btn grey-button toggle-button  toggle-left">
-						OFF
+						<i class="fa fa-times" aria-hidden="true"></i>
+						 OFF
 					</a>
 				</div>
 			</div>
