@@ -87,6 +87,7 @@ $('.toggle-left').click(function() {
 	$('.campaign-toggle-button').addClass('toggle-right');
 	$('.campaign-toggle-button').removeClass('grey-button-solid');
 	$('.campaign-toggle-button').addClass('green-button-solid');
+	$('.campaign-toggle-button').html('<i class="fa fa-check" aria-hidden="true"></i> ON');
 });
 
 $('.toggle-right').click(function() {
@@ -95,6 +96,7 @@ $('.toggle-right').click(function() {
 	$('.campaign-toggle-button').addClass('toggle-left');
 	$('.campaign-toggle-button').removeClass('green-button-solid');
 	$('.campaign-toggle-button').addClass('grey-button-solid');
+	$('.campaign-toggle-button').html('<i class="fa fa-times" aria-hidden="true"></i> OFF');
 });
 
 
