@@ -50,7 +50,7 @@
 
 			<div class="content-header-container">
 				<div class="toggle-container">
-					<a href="javascript:void(0)" class="btn grey-button-solid campaign-toggle-button  toggle-left">
+					<a href="javascript:void(0)" class="btn grey-button-solid campaign-toggle-button toggle-left">
 						<i class="fa fa-times" aria-hidden="true"></i>
 						 OFF
 					</a>
