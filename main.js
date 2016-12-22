@@ -20,6 +20,15 @@ $(document).ready(function(){
 		$('.sidebar-link-active').addClass('hover-active-menu');
 	});
 
+	//  Campaign Toggle
+
+	$('.toggle-left').click(function() {
+		$('.campaign-toggle-button').removeClass('toggle-left');
+		$('.campaign-toggle-button').addClass('toggle-right');
+		$('.campaign-toggle-button').removeClass('grey-button-solid');
+		$('.campaign-toggle-button').addClass('green-button-solid');
+	});
+
 	//  Menu
 
 	// $('.menu-link').mouseenter( function() {

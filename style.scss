@@ -256,6 +256,13 @@ body {
 
 }
 
+.green-button-solid:hover {
+	color                       : white;
+	border                      : 1px solid $brand-color;
+	background-color                  : $brand-color;
+
+}
+
 /* Grey Button */
 
 .grey-button {
@@ -323,7 +330,7 @@ body {
 }
 
 
-.toggle-button{
+.campaign-toggle-button{
 	border-radius: 20px;
 	padding        : 9px 11px;
 }
@@ -332,6 +339,13 @@ body {
 	position: absolute;
 	left: 2px;
 	top: 2px;
+}
+
+.toggle-right {
+	position: absolute;
+	left: auto;
+	top: 2px;
+	right: 2px;
 }
 
 .main-template {
