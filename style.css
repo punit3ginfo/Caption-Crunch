@@ -225,21 +225,19 @@ body {
 .campaign-toggle-button {
   border-radius: 20px;
   padding: 9px 11px;
+  position: absolute;
+  left: auto;
+  top: 2px;
+  right: auto;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s; }
 
 .toggle-left {
-  position: absolute;
-  left: 2px;
-  top: 2px;
-  right: auto; }
+  left: 2px; }
 
 .toggle-right {
-  position: absolute;
-  left: auto;
-  top: 2px;
   right: 2px; }
 
 .main-template {
