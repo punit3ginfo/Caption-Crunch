@@ -79,6 +79,17 @@
 <!-- Show / Hide Script -->
 <script type="text/javascript">
 
+//  Campaign Toggle
+
+$('.toggle-left').click(function() {
+	// $('.campaign-toggle-button').css('left','20px');
+	$('.campaign-toggle-button').removeClass('toggle-left');
+	$('.campaign-toggle-button').addClass('toggle-right');
+	$('.campaign-toggle-button').removeClass('grey-button-solid');
+	$('.campaign-toggle-button').addClass('green-button-solid');
+});
+
+
 // Condition - Show / Hide
 // $('.conditions-show-hide-button').click(function() {
 // 	// Show / Hide Conditions Container
