@@ -43,7 +43,7 @@
 		<div class="content-header-3col-container">
 			<div class="content-header-container">
 				<div class="toggle-container">
-					<a href="javascript:void(0)" class="btn grey-button toggle-button  toggle-left">
+					<a href="javascript:void(0)" class="btn grey-button-solid toggle-button  toggle-left">
 						<i class="fa fa-times" aria-hidden="true"></i>
 						 OFF
 					</a>
