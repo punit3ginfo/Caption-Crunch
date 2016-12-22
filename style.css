@@ -215,8 +215,7 @@ body {
 .grey-button-solid:hover {
   color: white;
   border: 1px solid #555555;
-  background-color: #555555;
-  content: 'tits'; }
+  background-color: #555555; }
 
 .toggle-button {
   border-radius: 20px;
