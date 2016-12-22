@@ -6,6 +6,15 @@ $(document).ready(function(){
 		$(".sidebar_nav").css('left','0px');
 	}
 
+	//  Campaign Toggle
+
+	$('.toggle-left').click(function() {
+		$('.campaign-toggle-button').removeClass('toggle-left');
+		$('.campaign-toggle-button').addClass('toggle-right');
+		$('.campaign-toggle-button').removeClass('grey-button-solid');
+		$('.campaign-toggle-button').addClass('green-button-solid');
+	});
+
 	// Side bar
 
 	$('.sidebar-link').mouseleave( function() {
@@ -18,15 +27,6 @@ $(document).ready(function(){
 
 	$('.sidebar-link').mouseenter( function() {
 		$('.sidebar-link-active').addClass('hover-active-menu');
-	});
-
-	//  Campaign Toggle
-
-	$('.toggle-left').click(function() {
-		$('.campaign-toggle-button').removeClass('toggle-left');
-		$('.campaign-toggle-button').addClass('toggle-right');
-		$('.campaign-toggle-button').removeClass('grey-button-solid');
-		$('.campaign-toggle-button').addClass('green-button-solid');
 	});
 
 	//  Menu
