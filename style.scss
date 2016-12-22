@@ -249,6 +249,24 @@ body {
 	transform         : scale(1);
 }
 
+.green-button-solid {
+	color                       : white;
+	border                      : 1px solid $brand-color;
+	background-color                  : $brand-color;
+
+}
+
+.toggle-button{
+	height: 42px;
+	border-radius: 21px;
+}
+
+.toggle-left {
+	position: absolute;
+	left: 2px;
+	top: 2px;
+}
+
 /* Grey Button */
 
 .grey-button {
@@ -3115,4 +3133,11 @@ ul#pagination-list li {
 	background: white url('https://cdn.shopify.com/s/files/1/1484/1256/files/arrow-down.png?9258385709659661406') no-repeat 75% 50%;
 	background-size: 16px 16px;
 	margin-left: 15px;
+}
+
+.toggle-container {
+	width: 200px;
+	height: 46px;
+	border: 1px solid $secondary-color;
+	position: relative;
 }
