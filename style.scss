@@ -256,17 +256,6 @@ body {
 
 }
 
-.toggle-button{
-	height: 42px;
-	border-radius: 21px;
-}
-
-.toggle-left {
-	position: absolute;
-	left: 2px;
-	top: 2px;
-}
-
 /* Grey Button */
 
 .grey-button {
@@ -318,6 +307,18 @@ body {
 .grey-button:hover:before {
 	-webkit-transform : scale(1);
 	transform         : scale(1);
+}
+
+
+.toggle-button{
+	border-radius: 21px;
+	padding        : 10px 11px;
+}
+
+.toggle-left {
+	position: absolute;
+	left: 2px;
+	top: 2px;
 }
 
 .main-template {
