@@ -207,9 +207,14 @@ body {
   -webkit-transform: scale(1);
   transform: scale(1); }
 
+.grey-button-solid {
+  color: white;
+  border: 1px solid #555555;
+  background-color: #555555; }
+
 .toggle-button {
-  border-radius: 21px;
-  padding: 10px 11px; }
+  border-radius: 20px;
+  padding: 9px 11px; }
 
 .toggle-left {
   position: absolute;
@@ -2317,6 +2322,7 @@ ul#pagination-list li {
   width: 200px;
   height: 46px;
   border: 1px solid #555555;
-  position: relative; }
+  position: relative;
+  border-radius: 23px; }
 
 /*# sourceMappingURL=style.css.map */

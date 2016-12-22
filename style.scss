@@ -309,10 +309,17 @@ body {
 	transform         : scale(1);
 }
 
+.grey-button-solid {
+	color                       : white;
+	border                      : 1px solid $secondary-color;
+	background-color                  : $secondary-color;
+
+}
+
 
 .toggle-button{
-	border-radius: 21px;
-	padding        : 10px 11px;
+	border-radius: 20px;
+	padding        : 9px 11px;
 }
 
 .toggle-left {
@@ -3141,4 +3148,5 @@ ul#pagination-list li {
 	height: 46px;
 	border: 1px solid $secondary-color;
 	position: relative;
+	border-radius: 23px;
 }
