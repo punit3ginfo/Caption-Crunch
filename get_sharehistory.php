@@ -55,6 +55,10 @@ try
 
 		foreach($images as $images){
 			$src=$images['src']; //Image Source
+			$parts = explode(".",$src); 
+			$extension = array_pop($parts);
+			$name = implode('.', $parts);
+			$src = $name."_large.".$extension;
 		}
 
 		?>
