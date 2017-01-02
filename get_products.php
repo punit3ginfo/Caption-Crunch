@@ -82,10 +82,14 @@ try
 
 		foreach($images as $images){
 			$src=$images['src']; //Image Source
-			$info = pathinfo($src);
+			/*$info = pathinfo($src);
 			echo $name = $info['filename'];
 			echo $format = $info['extension'];
-			echo src =$name."_large".$format;
+			echo src =$name."_large".$format; */
+			$parts = explode(".",$filename); 
+			$extension = array_pop($parts);
+			$name = implode('.', $parts);
+			echo src = $name."_large".$extension;
 			
 		}
 
