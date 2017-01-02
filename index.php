@@ -19,15 +19,13 @@ $shop_url=$_REQUEST['shop'];
  $select_store = pg_query($dbconn4,"SELECT * FROM store_info WHERE store_url = '$shop_url'"); 
 //check if the store exists
 if (pg_num_rows($select_store) > 0) {
-	echo "<script>alert(1)</script>";
 $data = pg_fetch_assoc($select_store);
-echo $access_token= $data['access_token'];
+ $access_token= $data['access_token'];
 }
 else {
 $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
-	echo "<script>alert(2)</script>";
- $insert_data = "insert into store_info(store_url,access_token) values('$shop_url','$access_token')";
- echo $ret = pg_query($dbconn4, $insert_data); 
+$insert_data = "insert into store_info(store_url,access_token) values('$shop_url','$access_token')";
+  $ret = pg_query($dbconn4, $insert_data); 
 }
 require __DIR__.'/smart_collection.php'; //create smart collection
 
