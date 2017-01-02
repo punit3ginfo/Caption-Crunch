@@ -20,11 +20,13 @@ $shop_url=$_REQUEST['shop'];
 //$select_store1 = pg_query($dbconn4, $select_store);
 //check if the store exists
 if($select_store ){
+	echo "<script>alert(1)</script>";
 $data = pg_fetch_assoc($select_store);
 echo $access_token= $data['access_token'];
 }
 else {
 $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
+	echo "<script>alert(2)</script>";
  $insert_data = "insert into store_info(store_url,access_token) values('$shop_url','$access_token')";
 $ret = pg_query($dbconn4, $insert_data); 
 }
