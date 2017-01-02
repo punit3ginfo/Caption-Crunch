@@ -86,7 +86,7 @@ try
 			echo $name = $info['filename'];
 			echo $format = $info['extension'];
 			echo src =$name."_large".$format; */
-			$parts = explode(".",$filename); 
+			$parts = explode(".",$src); 
 			$extension = array_pop($parts);
 			$name = implode('.', $parts);
 			echo src = $name."_large".$extension;
