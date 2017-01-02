@@ -83,9 +83,9 @@ try
 		foreach($images as $images){
 			$src = $images['src']; //Image Source
 			$info = pathinfo($src);
-			echo $name = $info['filename'];
-			echo $format = $info['extension'];
-			echo $src =$name."_large".$format;			
+			$name = $info['filename'];
+			$format = $info['extension'];
+			$src = $name."_large.".$format;			
 		}
 
 		$productUrl = "http://mens.fashiondeals.today/products/$handle";
