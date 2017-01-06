@@ -124,9 +124,39 @@ function goToProductsHelp() {
 
 };
 
-function goToHelpBack(){
-		 $("#help-back-link").css('display','none');
-		 $("#help-link").css('display','block');
+function goToBufferHelpBack(){
+		 $("#buffer-help-back-link").css('display','none');
+		 $("#buffer-help-link").css('display','block');
+		$('#help-slide').removeClass("help-slide-animate");
+		$(".sidebar_nav").removeClass("main-container-slide-left");
+		$(".preview-container").removeClass("main-container-slide-left");
+		$(".main-content-container").css('top','0px');
+		$(".main_container_clearfix").removeClass("slide-left");
+}
+
+function goToAutopilotHelpBack(){
+		 $("#autopilot-help-back-link").css('display','none');
+		 $("#autopilot-help-link").css('display','block');
+		$('#help-slide').removeClass("help-slide-animate");
+		$(".sidebar_nav").removeClass("main-container-slide-left");
+		$(".preview-container").removeClass("main-container-slide-left");
+		$(".main-content-container").css('top','0px');
+		$(".main_container_clearfix").removeClass("slide-left");
+}
+
+function goToCaptionsHelpBack(){
+		 $("#captions-help-back-link").css('display','none');
+		 $("#captions-help-link").css('display','block');
+		$('#help-slide').removeClass("help-slide-animate");
+		$(".sidebar_nav").removeClass("main-container-slide-left");
+		$(".preview-container").removeClass("main-container-slide-left");
+		$(".main-content-container").css('top','0px');
+		$(".main_container_clearfix").removeClass("slide-left");
+}
+
+function goToProductsHelpBack(){
+		 $("#products-help-back-link").css('display','none');
+		 $("#products-help-link").css('display','block');
 		$('#help-slide').removeClass("help-slide-animate");
 		$(".sidebar_nav").removeClass("main-container-slide-left");
 		$(".preview-container").removeClass("main-container-slide-left");
