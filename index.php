@@ -193,7 +193,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 					</div>
 				</div>
 
-				<div class="sidebar-link sidebar-link-active help-back-link" onclick="goToHelpBack()"  style="display: none;">
+				<div class="sidebar-link sidebar-link-active" id="help-back-link" onclick="goToHelpBack()"  style="display: none;">
 					<div class="sidebar-nav-container">
 						<span  style="color: white;"  class="sidebar-nav-span">
 							<i class="icon-times sidebar-icon" aria-hidden="true"></i><br>
@@ -282,7 +282,7 @@ function goToProducts(){
 function goToHelp() {
 
 	 $("#help-link").css('display','none');
-	 $(".help-back-link").css('display','block');
+	 $("#help-back-link").css('display','block');
 
 	 $('#share-link').removeClass('sidebar-link-active');
 	 $('#captions-link').removeClass('sidebar-link-active');
@@ -296,7 +296,7 @@ function goToHelp() {
 };
 
 function goToHelpBack(){
-		 $(".help-back-link").css('display','none');
+		 $("#help-back-link").css('display','none');
 		 $("#help-link").css('display','block');
 
 		$('#help-slide').removeClass("help-slide-animate");
