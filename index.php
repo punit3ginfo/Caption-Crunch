@@ -188,7 +188,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 					<div class="sidebar-nav-container">
 						<span class="sidebar-nav-span">
 							<i class="icon-question sidebar-icon"></i><br>
-							Help
+							Help b
 						</span>
 					</div>
 				</div>
@@ -197,7 +197,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 					<div class="sidebar-nav-container">
 						<span class="sidebar-nav-span">
 							<i class="icon-question sidebar-icon"></i><br>
-							Help
+							Help a
 						</span>
 					</div>
 				</div>
@@ -206,7 +206,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 					<div class="sidebar-nav-container">
 						<span class="sidebar-nav-span">
 							<i class="icon-question sidebar-icon"></i><br>
-							Help
+							Help c
 						</span>
 					</div>
 				</div>
@@ -215,7 +215,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 					<div class="sidebar-nav-container">
 						<span class="sidebar-nav-span">
 							<i class="icon-question sidebar-icon"></i><br>
-							Help
+							Help p
 						</span>
 					</div>
 				</div>
@@ -274,6 +274,12 @@ function goToDashboard(){
 	$('#autopilot-link').removeClass('sidebar-link-active');
 	$('.sidebar-link-active').removeClass('hover-active-menu');
 	$('.sidebar-link').removeClass('hover-active-menu');
+
+	$("#buffer-help-link").css('display','block');
+	$("#autopilot-help-link").css('display','none');
+	$("#caption-help-link").css('display','none');
+	$("#products-help-link").css('display','none');
+	$("#help-back-link").css('display','none');
 }
 
 function goToAutopilot(){
@@ -284,6 +290,12 @@ function goToAutopilot(){
 	$('#autopilot-link').addClass('sidebar-link-active');
 	$('.sidebar-link-active').removeClass('hover-active-menu');
 	$('.sidebar-link').removeClass('hover-active-menu');
+
+	$("#buffer-help-link").css('display','none');
+	$("#autopilot-help-link").css('display','block');
+	$("#caption-help-link").css('display','none');
+	$("#products-help-link").css('display','none');
+	$("#help-back-link").css('display','none');
 }
 
 function goToCaptions(){
@@ -294,6 +306,12 @@ function goToCaptions(){
 	$('#autopilot-link').removeClass('sidebar-link-active');
 	$('.sidebar-link-active').removeClass('hover-active-menu');
 	$('.sidebar-link').removeClass('hover-active-menu');
+
+	$("#buffer-help-link").css('display','none');
+	$("#autopilot-help-link").css('display','none');
+	$("#caption-help-link").css('display','block');
+	$("#products-help-link").css('display','none');
+	$("#help-back-link").css('display','none');
 }
 
 function goToProducts(){
@@ -304,10 +322,16 @@ function goToProducts(){
 	$('#autopilot-link').removeClass('sidebar-link-active');
 	$('.sidebar-link-active').removeClass('hover-active-menu');
 	$('.sidebar-link').removeClass('hover-active-menu');
+
+	$("#buffer-help-link").css('display','none');
+	$("#autopilot-help-link").css('display','none');
+	$("#caption-help-link").css('display','none');
+	$("#products-help-link").css('display','block');
+	$("#help-back-link").css('display','none');
 }
 
 function goToBufferHelp() {
-	 $("#help-link").css('display','none');
+	 $("#buffer-help-link").css('display','none');
 	 $("#help-back-link").css('display','block');
 	 $('#products-link').removeClass('sidebar-link-active');
 	 $('#captions-link').removeClass('sidebar-link-active');
@@ -322,7 +346,7 @@ function goToBufferHelp() {
 };
 
 function goToAutopilotHelp() {
-	 $("#help-link").css('display','none');
+	 $("#autopilot-help-link").css('display','none');
 	 $("#help-back-link").css('display','block');
 	 $('#products-link').removeClass('sidebar-link-active');
 	 $('#captions-link').removeClass('sidebar-link-active');
@@ -337,7 +361,7 @@ function goToAutopilotHelp() {
 };
 
 function goToCaptionsHelp() {
-	 $("#help-link").css('display','none');
+	 $("#caption-help-link").css('display','none');
 	 $("#help-back-link").css('display','block');
 	 $('#products-link').removeClass('sidebar-link-active');
 	 $('#captions-link').removeClass('sidebar-link-active');
@@ -352,7 +376,7 @@ function goToCaptionsHelp() {
 };
 
 function goToProductsHelp() {
-	 $("#help-link").css('display','none');
+	 $("#products-help-link").css('display','none');
 	 $("#help-back-link").css('display','block');
 	 $('#products-link').removeClass('sidebar-link-active');
 	 $('#captions-link').removeClass('sidebar-link-active');
