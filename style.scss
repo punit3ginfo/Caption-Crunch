@@ -870,9 +870,8 @@ body {
 .preview-container {
 	position     : relative;
 
-	width        : calc(100% - 80px);
+	width        : 100%;
 	height       : calc(100vh - 63px);
-	padding-left : 80px;
 	left: 0px;
 	transition-timing-function : ease;
 	transition-duration        : 0.3s;
