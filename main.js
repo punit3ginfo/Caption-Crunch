@@ -1,10 +1,146 @@
 // Help Slide
+
+function goToDashboard(){
+	$('.main-content-container').css('left','0px');
+	$('#products-link').removeClass('sidebar-link-active');
+	$('#captions-link').removeClass('sidebar-link-active');
+	$('#dashboard-link').addClass('sidebar-link-active');
+	$('#autopilot-link').removeClass('sidebar-link-active');
+	$('.sidebar-link-active').removeClass('hover-active-menu');
+	$('.sidebar-link').removeClass('hover-active-menu');
+
+	$("#buffer-help-link").css('display','block');
+	$("#autopilot-help-link").css('display','none');
+	$("#captions-help-link").css('display','none');
+	$("#products-help-link").css('display','none');
+	$("#help-back-link").css('display','none');
+}
+
+function goToAutopilot(){
+	$('.main-content-container').css('left','-100vw');
+	$('#products-link').removeClass('sidebar-link-active');
+	$('#captions-link').removeClass('sidebar-link-active');
+	$('#dashboard-link').removeClass('sidebar-link-active');
+	$('#autopilot-link').addClass('sidebar-link-active');
+	$('.sidebar-link-active').removeClass('hover-active-menu');
+	$('.sidebar-link').removeClass('hover-active-menu');
+
+	$("#buffer-help-link").css('display','none');
+	$("#autopilot-help-link").css('display','block');
+	$("#captions-help-link").css('display','none');
+	$("#products-help-link").css('display','none');
+	$("#help-back-link").css('display','none');
+}
+
+function goToCaptions(){
+	$('.main-content-container').css('left','-200vw');
+	$('#products-link').removeClass('sidebar-link-active');
+	$('#captions-link').addClass('sidebar-link-active');
+	$('#dashboard-link').removeClass('sidebar-link-active');
+	$('#autopilot-link').removeClass('sidebar-link-active');
+	$('.sidebar-link-active').removeClass('hover-active-menu');
+	$('.sidebar-link').removeClass('hover-active-menu');
+
+	$("#buffer-help-link").css('display','none');
+	$("#autopilot-help-link").css('display','none');
+	$("#captions-help-link").css('display','block');
+	$("#products-help-link").css('display','none');
+	$("#help-back-link").css('display','none');
+}
+
+function goToProducts(){
+	$('.main-content-container').css('left','-300vw');
+	$('#products-link').addClass('sidebar-link-active');
+	$('#captions-link').removeClass('sidebar-link-active');
+	$('#dashboard-link').removeClass('sidebar-link-active');
+	$('#autopilot-link').removeClass('sidebar-link-active');
+	$('.sidebar-link-active').removeClass('hover-active-menu');
+	$('.sidebar-link').removeClass('hover-active-menu');
+
+	$("#buffer-help-link").css('display','none');
+	$("#autopilot-help-link").css('display','none');
+	$("#captions-help-link").css('display','none');
+	$("#products-help-link").css('display','block');
+	$("#help-back-link").css('display','none');
+}
+
+function goToBufferHelp() {
+	 $("#buffer-help-link").css('display','none');
+	 $("#help-back-link").css('display','block');
+	 $('#products-link').removeClass('sidebar-link-active');
+	 $('#captions-link').removeClass('sidebar-link-active');
+	 $('#dashboard-link').removeClass('sidebar-link-active');
+	 $('#autopilot-link').removeClass('sidebar-link-active');
+	 $('.sidebar-link').removeClass('hover-active-menu');
+	$('#help-slide').addClass("help-slide-animate");
+	$(".preview-container").addClass("main-container-slide-left");
+	$(".main_container_clearfix").addClass("slide-left");
+	$(".main-content-container").css('top','100vh');
+
+};
+
+function goToAutopilotHelp() {
+	 $("#autopilot-help-link").css('display','none');
+	 $("#help-back-link").css('display','block');
+	 $('#products-link').removeClass('sidebar-link-active');
+	 $('#captions-link').removeClass('sidebar-link-active');
+	 $('#dashboard-link').removeClass('sidebar-link-active');
+	 $('#autopilot-link').removeClass('sidebar-link-active');
+	 $('.sidebar-link').removeClass('hover-active-menu');
+	$('#help-slide').addClass("help-slide-animate");
+	$(".preview-container").addClass("main-container-slide-left");
+	$(".main_container_clearfix").addClass("slide-left");
+	$(".main-content-container").css('top','100vh');
+
+};
+
+function goToCaptionsHelp() {
+	 $("#caption-help-link").css('display','none');
+	 $("#help-back-link").css('display','block');
+	 $('#products-link').removeClass('sidebar-link-active');
+	 $('#captions-link').removeClass('sidebar-link-active');
+	 $('#dashboard-link').removeClass('sidebar-link-active');
+	 $('#autopilot-link').removeClass('sidebar-link-active');
+	 $('.sidebar-link').removeClass('hover-active-menu');
+	$('#help-slide').addClass("help-slide-animate");
+	$(".preview-container").addClass("main-container-slide-left");
+	$(".main_container_clearfix").addClass("slide-left");
+	$(".main-content-container").css('top','100vh');
+
+};
+
+function goToProductsHelp() {
+	 $("#products-help-link").css('display','none');
+	 $("#help-back-link").css('display','block');
+	 $('#products-link').removeClass('sidebar-link-active');
+	 $('#captions-link').removeClass('sidebar-link-active');
+	 $('#dashboard-link').removeClass('sidebar-link-active');
+	 $('#autopilot-link').removeClass('sidebar-link-active');
+	 $('.sidebar-link').removeClass('hover-active-menu');
+	$('#help-slide').addClass("help-slide-animate");
+	$(".preview-container").addClass("main-container-slide-left");
+	$(".main_container_clearfix").addClass("slide-left");
+	$(".main-content-container").css('top','100vh');
+
+};
+
+function goToHelpBack(){
+		 $("#help-back-link").css('display','none');
+		 $("#help-link").css('display','block');
+		$('#help-slide').removeClass("help-slide-animate");
+		$(".sidebar_nav").removeClass("main-container-slide-left");
+		$(".preview-container").removeClass("main-container-slide-left");
+		$(".main-content-container").css('top','0px');
+		$(".main_container_clearfix").removeClass("slide-left");
+}
+
+
 $(document).ready(function(){
 
 	function loading() {
 		$(".main-content-container").css('top','0px');
 		$(".sidebar_nav").css('left','0px');
-	}
+	};
 
 	// Side bar
 
