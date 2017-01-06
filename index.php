@@ -140,7 +140,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<nav class="main-nav-container load-help">
 				<div  class="sidebar-link" onclick="goToDashboard()" id="dashboard-link">
-					<div class="sidebar-nav-container">
+					<div class="sidebar-nav-container" style="border-left: 1px solid #eee;">
 						<span class="sidebar-nav-span">
 							<i class="icon-buffer sidebar-icon"></i><br>
 							Buffer
