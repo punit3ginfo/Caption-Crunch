@@ -239,74 +239,70 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 <script>
 // Load Pages
 
-function goToDashboard(){
-	$('.main-content-container').css('left','0px');
-	$('#share-link').removeClass('sidebar-link-active');
-	$('#captions-link').removeClass('sidebar-link-active');
-	$('#dashboard-link').addClass('sidebar-link-active');
-	$('#autopilot-link').removeClass('sidebar-link-active');
-	$('.sidebar-link-active').removeClass('hover-active-menu');
-	$('.sidebar-link').removeClass('hover-active-menu');
-}
-
-function goToAutopilot(){
-	$('.main-content-container').css('left','-100vw');
-	$('#share-link').removeClass('sidebar-link-active');
-	$('#captions-link').removeClass('sidebar-link-active');
-	$('#dashboard-link').removeClass('sidebar-link-active');
-	$('#autopilot-link').addClass('sidebar-link-active');
-	$('.sidebar-link-active').removeClass('hover-active-menu');
-	$('.sidebar-link').removeClass('hover-active-menu');
-}
-
-function goToCaptions(){
-	$('.main-content-container').css('left','-200vw');
-	$('#share-link').removeClass('sidebar-link-active');
-	$('#captions-link').addClass('sidebar-link-active');
-	$('#dashboard-link').removeClass('sidebar-link-active');
-	$('#autopilot-link').removeClass('sidebar-link-active');
-	$('.sidebar-link-active').removeClass('hover-active-menu');
-	$('.sidebar-link').removeClass('hover-active-menu');
-}
-
-function goToProducts(){
-	$('.main-content-container').css('left','-300vw');
-	$('#share-link').addClass('sidebar-link-active');
-	$('#captions-link').removeClass('sidebar-link-active');
-	$('#dashboard-link').removeClass('sidebar-link-active');
-	$('#autopilot-link').removeClass('sidebar-link-active');
-	$('.sidebar-link-active').removeClass('hover-active-menu');
-	$('.sidebar-link').removeClass('hover-active-menu');
-}
-
-function goToHelp() {
-
-	 $("#help-link").css('display','none');
-	 $("#help-back-link").css('display','block');
-
-	 $('#share-link').removeClass('sidebar-link-active');
-	 $('#captions-link').removeClass('sidebar-link-active');
-	 $('#dashboard-link').removeClass('sidebar-link-active');
-	 $('#autopilot-link').removeClass('sidebar-link-active');
-	 $('.sidebar-link').removeClass('hover-active-menu');
-
-	$('#help-slide').addClass("help-slide-animate");
-	$(".preview-container").addClass("main-container-slide-left");
-	$(".main_container_clearfix").addClass("slide-left");
-	$(".main-content-container").css('top','100vh');
-
-};
-
-function goToHelpBack(){
-		 $("#help-back-link").css('display','none');
-		 $("#help-link").css('display','block');
-
-		$('#help-slide').removeClass("help-slide-animate");
-		$(".sidebar_nav").removeClass("main-container-slide-left");
-		$(".preview-container").removeClass("main-container-slide-left");
-		$(".main-content-container").css('top','0px');
-		$(".main_container_clearfix").removeClass("slide-left");
-}
+// function goToDashboard(){
+// 	$('.main-content-container').css('left','0px');
+// 	$('#share-link').removeClass('sidebar-link-active');
+// 	$('#captions-link').removeClass('sidebar-link-active');
+// 	$('#dashboard-link').addClass('sidebar-link-active');
+// 	$('#autopilot-link').removeClass('sidebar-link-active');
+// 	$('.sidebar-link-active').removeClass('hover-active-menu');
+// 	$('.sidebar-link').removeClass('hover-active-menu');
+// }
+//
+// function goToAutopilot(){
+// 	$('.main-content-container').css('left','-100vw');
+// 	$('#share-link').removeClass('sidebar-link-active');
+// 	$('#captions-link').removeClass('sidebar-link-active');
+// 	$('#dashboard-link').removeClass('sidebar-link-active');
+// 	$('#autopilot-link').addClass('sidebar-link-active');
+// 	$('.sidebar-link-active').removeClass('hover-active-menu');
+// 	$('.sidebar-link').removeClass('hover-active-menu');
+// }
+//
+// function goToCaptions(){
+// 	$('.main-content-container').css('left','-200vw');
+// 	$('#share-link').removeClass('sidebar-link-active');
+// 	$('#captions-link').addClass('sidebar-link-active');
+// 	$('#dashboard-link').removeClass('sidebar-link-active');
+// 	$('#autopilot-link').removeClass('sidebar-link-active');
+// 	$('.sidebar-link-active').removeClass('hover-active-menu');
+// 	$('.sidebar-link').removeClass('hover-active-menu');
+// }
+//
+// function goToProducts(){
+// 	$('.main-content-container').css('left','-300vw');
+// 	$('#share-link').addClass('sidebar-link-active');
+// 	$('#captions-link').removeClass('sidebar-link-active');
+// 	$('#dashboard-link').removeClass('sidebar-link-active');
+// 	$('#autopilot-link').removeClass('sidebar-link-active');
+// 	$('.sidebar-link-active').removeClass('hover-active-menu');
+// 	$('.sidebar-link').removeClass('hover-active-menu');
+// }
+//
+// function goToHelp() {
+// 	 $("#help-link").css('display','none');
+// 	 $("#help-back-link").css('display','block');
+// 	 $('#share-link').removeClass('sidebar-link-active');
+// 	 $('#captions-link').removeClass('sidebar-link-active');
+// 	 $('#dashboard-link').removeClass('sidebar-link-active');
+// 	 $('#autopilot-link').removeClass('sidebar-link-active');
+// 	 $('.sidebar-link').removeClass('hover-active-menu');
+// 	$('#help-slide').addClass("help-slide-animate");
+// 	$(".preview-container").addClass("main-container-slide-left");
+// 	$(".main_container_clearfix").addClass("slide-left");
+// 	$(".main-content-container").css('top','100vh');
+//
+// };
+//
+// function goToHelpBack(){
+// 		 $("#help-back-link").css('display','none');
+// 		 $("#help-link").css('display','block');
+// 		$('#help-slide').removeClass("help-slide-animate");
+// 		$(".sidebar_nav").removeClass("main-container-slide-left");
+// 		$(".preview-container").removeClass("main-container-slide-left");
+// 		$(".main-content-container").css('top','0px');
+// 		$(".main_container_clearfix").removeClass("slide-left");
+// }
 
 // Get Collections / Share Page
 function getproducts(){
@@ -315,13 +311,11 @@ function getproducts(){
 	});
 	var access_token='<?php echo $access_token ?>';
 	var shop='<?php echo $_REQUEST['shop'] ?>';
-    var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-     $('#products').html(data);
+    	var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
+     	$('#products').html(data);
 	$.ajax({
 		url: '/collections.php?access_token='+access_token+'&shop='+shop,
 		success: function(data){
-			//console.log(data);
-			// var data1= data.find('.chat_container').html()
 			$('#products').html(data);
 
 			$('#all-products').addClass('menu-container-active');
@@ -333,7 +327,6 @@ function getnewproducts(){
 	$('.menu-container').each(function(){
 		$(this).removeClass('menu-container-active');
 	});
-
 	var access_token='<?php echo $access_token ?>';
 	var shop='<?php echo $_REQUEST['shop'] ?>';
 	var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
@@ -341,27 +334,21 @@ function getnewproducts(){
 	$.ajax({
 		url: '/collections.php?access_token='+access_token+'&shop='+shop+'&max=60',
 		success: function(data){
-			//console.log(data);
-			// var data1= data.find('.chat_container').html()
 			$('#products').html(data);
 			$('#new-products').addClass('menu-container-active');
-
 		}
 	});
 }
 
 // Get Share History
 function gethistory(){
-
 	var access_token='<?php echo $access_token ?>';
 	var shop='<?php echo $_REQUEST['shop'] ?>';
-     var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-     $('#products').html(data);
+     	var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
+     	$('#products').html(data);
 	$.ajax({
 		url: '/collections.php?access_token='+access_token+'&shop='+shop+'&status=history',
 		success: function(data){
-			//console.log(data);
-			// var data1= data.find('.chat_container').html()
 			$('#products').html(data);
 		}
 	});
@@ -370,11 +357,7 @@ function gethistory(){
 // Initial Page Load
 (function($) {
 	$(document).ready(function() {
-		// var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
-		//  $('#products').html(data);
-
 		getnewproducts(); // start the loop
-
 		$('#share-link').addClass('sidebar-link-active');
 		$('#captions-link').removeClass('sidebar-link-active');
 		$('#dashboard-link').removeClass('sidebar-link-active');
