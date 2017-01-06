@@ -288,11 +288,13 @@ function goToHelp() {
 	 $('#captions-link').removeClass('sidebar-link-active');
 	 $('#dashboard-link').removeClass('sidebar-link-active');
 	 $('#autopilot-link').removeClass('sidebar-link-active');
+	 $('.sidebar-link').removeClass('hover-active-menu');
 
 	$('#help-slide').addClass("help-slide-animate");
 	$(".preview-container").addClass("main-container-slide-left");
 	$(".main_container_clearfix").addClass("slide-left");
 	$(".main-content-container").css('top','100vh');
+
 };
 
 function goToHelpBack(){
