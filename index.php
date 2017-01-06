@@ -106,7 +106,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 			</a>
 
-			<a class="sidebar-link" href="javascript:void(0)" onclick="goToProducts()" id="share-link">
+			<a class="sidebar-link" href="javascript:void(0)" onclick="goToProducts()" id="products-link">
 				<div class="sidebar-nav-container">
 					<span class="sidebar-nav-span">
 						<i class="icon-tag sidebar-icon"></i><br>
@@ -166,7 +166,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 					</div>
 				</div>
 
-				<div class="sidebar-link" onclick="goToProducts()" id="share-link">
+				<div class="sidebar-link" onclick="goToProducts()" id="products-link">
 					<div class="sidebar-nav-container">
 						<span class="sidebar-nav-span">
 							<i class="icon-tag sidebar-icon"></i><br>
@@ -184,7 +184,34 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 					</div>
 				</div>
 
-				<div class="sidebar-link" onclick="goToHelp()" id="help-link">
+				<div class="sidebar-link" onclick="goToBufferHelp()" id="buffer-help-link" style="display: none;">
+					<div class="sidebar-nav-container">
+						<span class="sidebar-nav-span">
+							<i class="icon-question sidebar-icon"></i><br>
+							Help
+						</span>
+					</div>
+				</div>
+
+				<div class="sidebar-link" onclick="goToAutopilotHelp()" id="autopilot-help-link" style="display: none;">
+					<div class="sidebar-nav-container">
+						<span class="sidebar-nav-span">
+							<i class="icon-question sidebar-icon"></i><br>
+							Help
+						</span>
+					</div>
+				</div>
+
+				<div class="sidebar-link" onclick="goToCaptionsHelp()" id="captions-help-link" style="display: none;">
+					<div class="sidebar-nav-container">
+						<span class="sidebar-nav-span">
+							<i class="icon-question sidebar-icon"></i><br>
+							Help
+						</span>
+					</div>
+				</div>
+
+				<div class="sidebar-link" onclick="goToProductsHelp()" id="products-help-link">
 					<div class="sidebar-nav-container">
 						<span class="sidebar-nav-span">
 							<i class="icon-question sidebar-icon"></i><br>
@@ -241,7 +268,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 
 function goToDashboard(){
 	$('.main-content-container').css('left','0px');
-	$('#share-link').removeClass('sidebar-link-active');
+	$('#products-link').removeClass('sidebar-link-active');
 	$('#captions-link').removeClass('sidebar-link-active');
 	$('#dashboard-link').addClass('sidebar-link-active');
 	$('#autopilot-link').removeClass('sidebar-link-active');
@@ -251,7 +278,7 @@ function goToDashboard(){
 
 function goToAutopilot(){
 	$('.main-content-container').css('left','-100vw');
-	$('#share-link').removeClass('sidebar-link-active');
+	$('#products-link').removeClass('sidebar-link-active');
 	$('#captions-link').removeClass('sidebar-link-active');
 	$('#dashboard-link').removeClass('sidebar-link-active');
 	$('#autopilot-link').addClass('sidebar-link-active');
@@ -261,7 +288,7 @@ function goToAutopilot(){
 
 function goToCaptions(){
 	$('.main-content-container').css('left','-200vw');
-	$('#share-link').removeClass('sidebar-link-active');
+	$('#products-link').removeClass('sidebar-link-active');
 	$('#captions-link').addClass('sidebar-link-active');
 	$('#dashboard-link').removeClass('sidebar-link-active');
 	$('#autopilot-link').removeClass('sidebar-link-active');
@@ -271,7 +298,7 @@ function goToCaptions(){
 
 function goToProducts(){
 	$('.main-content-container').css('left','-300vw');
-	$('#share-link').addClass('sidebar-link-active');
+	$('#products-link').addClass('sidebar-link-active');
 	$('#captions-link').removeClass('sidebar-link-active');
 	$('#dashboard-link').removeClass('sidebar-link-active');
 	$('#autopilot-link').removeClass('sidebar-link-active');
@@ -279,10 +306,55 @@ function goToProducts(){
 	$('.sidebar-link').removeClass('hover-active-menu');
 }
 
-function goToHelp() {
+function goToBufferHelp() {
 	 $("#help-link").css('display','none');
 	 $("#help-back-link").css('display','block');
-	 $('#share-link').removeClass('sidebar-link-active');
+	 $('#products-link').removeClass('sidebar-link-active');
+	 $('#captions-link').removeClass('sidebar-link-active');
+	 $('#dashboard-link').removeClass('sidebar-link-active');
+	 $('#autopilot-link').removeClass('sidebar-link-active');
+	 $('.sidebar-link').removeClass('hover-active-menu');
+	$('#help-slide').addClass("help-slide-animate");
+	$(".preview-container").addClass("main-container-slide-left");
+	$(".main_container_clearfix").addClass("slide-left");
+	$(".main-content-container").css('top','100vh');
+
+};
+
+function goToAutopilotHelp() {
+	 $("#help-link").css('display','none');
+	 $("#help-back-link").css('display','block');
+	 $('#products-link').removeClass('sidebar-link-active');
+	 $('#captions-link').removeClass('sidebar-link-active');
+	 $('#dashboard-link').removeClass('sidebar-link-active');
+	 $('#autopilot-link').removeClass('sidebar-link-active');
+	 $('.sidebar-link').removeClass('hover-active-menu');
+	$('#help-slide').addClass("help-slide-animate");
+	$(".preview-container").addClass("main-container-slide-left");
+	$(".main_container_clearfix").addClass("slide-left");
+	$(".main-content-container").css('top','100vh');
+
+};
+
+function goToCaptionsHelp() {
+	 $("#help-link").css('display','none');
+	 $("#help-back-link").css('display','block');
+	 $('#products-link').removeClass('sidebar-link-active');
+	 $('#captions-link').removeClass('sidebar-link-active');
+	 $('#dashboard-link').removeClass('sidebar-link-active');
+	 $('#autopilot-link').removeClass('sidebar-link-active');
+	 $('.sidebar-link').removeClass('hover-active-menu');
+	$('#help-slide').addClass("help-slide-animate");
+	$(".preview-container").addClass("main-container-slide-left");
+	$(".main_container_clearfix").addClass("slide-left");
+	$(".main-content-container").css('top','100vh');
+
+};
+
+function goToProductsHelp() {
+	 $("#help-link").css('display','none');
+	 $("#help-back-link").css('display','block');
+	 $('#products-link').removeClass('sidebar-link-active');
 	 $('#captions-link').removeClass('sidebar-link-active');
 	 $('#dashboard-link').removeClass('sidebar-link-active');
 	 $('#autopilot-link').removeClass('sidebar-link-active');
@@ -358,7 +430,7 @@ function gethistory(){
 (function($) {
 	$(document).ready(function() {
 		getnewproducts(); // start the loop
-		$('#share-link').addClass('sidebar-link-active');
+		$('#products-link').addClass('sidebar-link-active');
 		$('#captions-link').removeClass('sidebar-link-active');
 		$('#dashboard-link').removeClass('sidebar-link-active');
 		$('#autopilot-link').removeClass('sidebar-link-active');
