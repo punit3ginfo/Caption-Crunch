@@ -157,6 +157,7 @@ function goToCaptionsHelpBack(){
 function goToProductsHelpBack(){
 		 $("#products-help-back-link").css('display','none');
 		 $("#products-help-link").css('display','block');
+		 $('#products-link').addClass('sidebar-link-active');
 		$('#help-slide').removeClass("help-slide-animate");
 		$(".sidebar_nav").removeClass("main-container-slide-left");
 		$(".preview-container").removeClass("main-container-slide-left");
