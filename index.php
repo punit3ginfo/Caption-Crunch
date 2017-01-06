@@ -16,7 +16,7 @@ if((isset($_REQUEST['shop'])) && (isset($_REQUEST['code'])) && $_REQUEST['shop']
 	$_SESSION['code']=$_REQUEST['code'];
 }
 $shop_url=$_REQUEST['shop'];
- $select_store = pg_query($dbconn4,"SELECT * FROM store_info WHERE store_url = '$shop_url'"); 
+ $select_store = pg_query($dbconn4,"SELECT * FROM store_info WHERE store_url = '$shop_url'");
 //check if the store exists
 if (pg_num_rows($select_store) > 0) {
 $data = pg_fetch_assoc($select_store);
@@ -25,7 +25,7 @@ $data = pg_fetch_assoc($select_store);
 else {
 $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
 $insert_data = "insert into store_info(store_url,access_token) values('$shop_url','$access_token')";
-  $ret = pg_query($dbconn4, $insert_data); 
+  $ret = pg_query($dbconn4, $insert_data);
 }
 require __DIR__.'/smart_collection.php'; //create smart collection
 
@@ -78,7 +78,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 
 	<div class="main-template">
 		<!-- Sidebar Nav -->
-		<aside class="sidebar_nav">
+		<!-- <aside class="sidebar_nav">
 			<a  class="sidebar-link" onclick="goToDashboard()" id="dashboard-link">
 				<div class="sidebar-nav-container">
 					<span class="sidebar-nav-span">
@@ -123,7 +123,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 					</span>
 				</div>
 			</a>
-		</aside>
+		</aside> -->
 
 		<!-- /.Sidebar Nav -->
 
@@ -139,6 +139,51 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<nav class="main-nav-container load-help">
+				<a  class="sidebar-link" onclick="goToDashboard()" id="dashboard-link">
+					<div class="sidebar-nav-container">
+						<span class="sidebar-nav-span">
+							<i class="icon-buffer sidebar-icon"></i><br>
+							Buffer
+						</span>
+					</div>
+				</a>
+
+				<a class="sidebar-link" href="javascript:void(0)" onclick="goToAutopilot()" id="autopilot-link">
+					<div class="sidebar-nav-container">
+						<span class="sidebar-nav-span">
+							<i class="icon-paperplane-ico sidebar-icon"></i><br>
+							Autopilot
+						</span>
+					</div>
+				</a>
+
+				<a  class="sidebar-link" href="javascript:void(0)" onclick="goToCaptions();" id="captions-link">
+					<div class="sidebar-nav-container">
+						<span class="sidebar-nav-span">
+							<i class="icon-hammer sidebar-icon"></i><br>
+							Captions
+						</span>
+					</div>
+				</a>
+
+				<a class="sidebar-link" href="javascript:void(0)" onclick="goToProducts()" id="share-link">
+					<div class="sidebar-nav-container">
+						<span class="sidebar-nav-span">
+							<i class="icon-tag sidebar-icon"></i><br>
+							Products
+						</span>
+					</div>
+				</a>
+
+				<a class="sidebar-link sidebar-link-active back-link" href="javascript:void(0)" style="display: none;">
+					<div class="sidebar-nav-container">
+						<span  style="color: white;"  class="sidebar-nav-span">
+							<i class="fa fa-times sidebar-icon" aria-hidden="true"></i><br>
+							Back
+						</span>
+					</div>
+				</a>
+
 				<div id="help-button" class="help-header-link">
 					<div class="sidebar-nav-container-header">
 						<span id="help-title" class="help-title">
