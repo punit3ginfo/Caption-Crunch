@@ -1069,7 +1069,8 @@ body {
   width: 100vw;
   height: calc(100vh - 80px);
   padding-top: 80px;
-  position: relative; }
+  position: relative;
+  padding-left: 15px; }
 
 .dashboard {
   width: calc(100% - 15px);
