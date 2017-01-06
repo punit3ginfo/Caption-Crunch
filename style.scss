@@ -828,8 +828,8 @@ body {
 .collections-animation-container {
 	    position: absolute;
 	    top: 80px;
-	    left: 95px;
-	    width: calc(100vw - 95px);
+	    left: 15px;
+	    width: calc(100vw - 15px);
 	    height: calc(100vh - 80px);
 	    transition-timing-function: ease;
 	    transition-duration: 0.5s;
@@ -1451,10 +1451,9 @@ body {
 
 
 .section {
-	    width: calc(100vw - 95px);
+	    width: 100vw;
 	    height: calc(100vh - 80px);
 	    padding-top: 80px;
-	    padding-left: 95px;
 	    position: relative;
 }
 
