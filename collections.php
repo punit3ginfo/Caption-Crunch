@@ -14,7 +14,7 @@
 
 					<!-- Collection Card -->
 
-					<a href="javascript:void(0)" onclick="getnewproducts()" class="menu-link">
+					<div onclick="getnewproducts()" class="menu-link">
 						<div class="menu-container" id="new-products">
 							<div class="menu-clearfix">
 								<div class="menu-font-container">
@@ -30,9 +30,9 @@
 								</div>
 							</div>
 						</div>
-					</a>
+					</div>
 
-					<a href="javascript:void(0)" onclick="getproducts()" class="menu-link">
+					<div href="javascript:void(0)" onclick="getproducts()" class="menu-link">
 						<div class="menu-container"  id="all-products">
 							<div class="menu-clearfix">
 								<div class="menu-font-container">
@@ -48,7 +48,7 @@
 								</div>
 							</div>
 						</div>
-					</a>
+					</div>
 
 					<?php
 
