@@ -184,14 +184,33 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 					</div>
 				</div>
 
-				<div  class="sidebar-link help-header-link" id="help-button" onclick="goToHelp()">
+				<div class="sidebar-link" onclick="goToHelp()" id="help-link">
+					<div class="sidebar-nav-container">
+						<span class="sidebar-nav-span">
+							<i class="icon-tag sidebar-icon"></i><br>
+							Help
+						</span>
+					</div>
+				</div>
+
+				<div class="sidebar-link sidebar-link-active help-back-link" style="display: none;">
+					<div class="sidebar-nav-container">
+						<span  style="color: white;"  class="sidebar-nav-span">
+							<i class="fa fa-times sidebar-icon" aria-hidden="true"></i><br>
+							Back
+						</span>
+					</div>
+				</div>
+
+				<!-- <div  class="sidebar-link help-header-link" id="help-button" onclick="goToHelp()">
 					<div class="sidebar-nav-container-header sidebar-nav-container">
 						<span id="help-title" class="help-title">
 							<i class="fa fa-info sidebar-icon" aria-hidden="true"></i><br>
 							Help
 						</span>
 					</div>
-				</div>
+				</div> -->
+
 			</nav>
 			<!-- /.navbar-collapse -->
 			<!-- /.container -->
@@ -212,7 +231,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 
 </div>
 
-<div id="right-slide-left"></div>
+<div id="help-slide"></div>
 
 <!-- /.Page Container -->
 
@@ -261,28 +280,32 @@ function goToProducts(){
 }
 
 function goToHelp() {
-    if ($("#right-slide-left").hasClass('right-slide-left-animate')) {
+    if ($("#help-slide").hasClass('help-slide-animate')) {
 
-	$('#right-slide-left').removeClass("right-slide-left-animate");
+	$('#help-slide').removeClass("help-slide-animate");
 	$(".sidebar_nav").removeClass("main-container-slide-left");
 	$(".preview-container").removeClass("main-container-slide-left");
 	$(".main-content-container").css('top','0px');
 	$(".main_container_clearfix").removeClass("slide-left");
-	$('.sidebar-nav-container-header').removeClass("sidebar-nav-container-header-active");
+	$(".help-back-link").css('display','none');
+	$("#help-slide").css('display','block');
+	// $('.sidebar-nav-container-header').removeClass("sidebar-nav-container-header-active");
       //   $('.help-header-link').css("color", "#666");
-	$('.help-header-link').removeClass('help-header-link-active');
-	$("#help-title").html('<i  class="fa fa-info sidebar-icon" aria-hidden="true"></i><br> Help');
+	// $('.help-header-link').removeClass('help-header-link-active');
+	// $("#help-title").html('<i  class="fa fa-info sidebar-icon" aria-hidden="true"></i><br> Help');
     } else {
 
-	$('#right-slide-left').addClass("right-slide-left-animate");
+	$('#help-slide').addClass("help-slide-animate");
 	$(".preview-container").addClass("main-container-slide-left");
 	$(".main_container_clearfix").addClass("slide-left");
 	$(".main-content-container").css('top','100vh');
-	$(".sidebar_nav").addClass("main-container-slide-left");
-	$('.sidebar-nav-container-header').addClass("sidebar-nav-container-header-active");
+	$("#help-slide").css('display','none');
+	$(".help-back-link").css('display','block');
+	// $(".sidebar_nav").addClass("main-container-slide-left");
+	// $('.sidebar-nav-container-header').addClass("sidebar-nav-container-header-active");
       //   $('.help-header-link').css("color", "white");
-	$('.help-header-link').addClass('help-header-link-active');
-	$("#help-title").html('<i class="fa fa-times sidebar-icon" aria-hidden="true"></i><br> Back');
+	// $('.help-header-link').addClass('help-header-link-active');
+	// $("#help-title").html('<i class="fa fa-times sidebar-icon" aria-hidden="true"></i><br> Back');
     };
 };
 

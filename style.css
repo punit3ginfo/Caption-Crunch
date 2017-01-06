@@ -535,7 +535,7 @@ body {
   opacity: 1; }
 
 /* ------------- Help Menu -------------- */
-#right-slide-left {
+#help-slide {
   position: absolute;
   z-index: 85;
   top: -100vh;
@@ -548,7 +548,7 @@ body {
   animation-direction: normal;
   background-color: transparent; }
 
-.right-slide-left-animate {
+.help-slide-animate {
   top: 0px !important; }
 
 .help-container {
