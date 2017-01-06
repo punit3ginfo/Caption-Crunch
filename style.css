@@ -502,18 +502,6 @@ body {
   align-items: center;
   justify-content: center; }
 
-.sidebar-nav-container-header {
-  display: flex;
-  width: 80px;
-  height: 100%;
-  text-align: center;
-  border-left: 1px solid #eee;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  align-items: center;
-  justify-content: center; }
-
 .sidebar-nav-container-header-active {
   background-color: #555555; }
 

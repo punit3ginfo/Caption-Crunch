@@ -158,31 +158,31 @@ $(document).ready(function(){
 		$('.form-help').removeClass('form-active');
 	}
 
-  $('#help-button').click(function() {
-      if ($("#right-slide-left").hasClass('right-slide-left-animate')) {
-
-          $('#right-slide-left').removeClass("right-slide-left-animate");
-	  $(".sidebar_nav").removeClass("main-container-slide-left");
-	  $(".preview-container").removeClass("main-container-slide-left");
-	  $(".main-content-container").css('top','0px');
-	  $(".main_container_clearfix").removeClass("slide-left");
-          $('.sidebar-nav-container-header').removeClass("sidebar-nav-container-header-active");
-        //   $('.help-header-link').css("color", "#666");
-	  $('.help-header-link').removeClass('help-header-link-active');
-	  $("#help-title").html('<i  class="fa fa-info sidebar-icon" aria-hidden="true"></i><br> Help');
-      } else {
-
-          $('#right-slide-left').addClass("right-slide-left-animate");
-	  $(".preview-container").addClass("main-container-slide-left");
-	  $(".main_container_clearfix").addClass("slide-left");
-	  $(".main-content-container").css('top','100vh');
-	  $(".sidebar_nav").addClass("main-container-slide-left");
-          $('.sidebar-nav-container-header').addClass("sidebar-nav-container-header-active");
-        //   $('.help-header-link').css("color", "white");
-	  $('.help-header-link').addClass('help-header-link-active');
-	  $("#help-title").html('<i class="fa fa-times sidebar-icon" aria-hidden="true"></i><br> Back');
-      };
-  });
+  // $('#help-button').click(function() {
+  //     if ($("#right-slide-left").hasClass('right-slide-left-animate')) {
+  //
+  //         $('#right-slide-left').removeClass("right-slide-left-animate");
+  //  $(".sidebar_nav").removeClass("main-container-slide-left");
+  //  $(".preview-container").removeClass("main-container-slide-left");
+  //  $(".main-content-container").css('top','0px');
+  //  $(".main_container_clearfix").removeClass("slide-left");
+  //         $('.sidebar-nav-container-header').removeClass("sidebar-nav-container-header-active");
+  //       //   $('.help-header-link').css("color", "#666");
+  //  $('.help-header-link').removeClass('help-header-link-active');
+  //  $("#help-title").html('<i  class="fa fa-info sidebar-icon" aria-hidden="true"></i><br> Help');
+  //     } else {
+  //
+  //         $('#right-slide-left').addClass("right-slide-left-animate");
+  //  $(".preview-container").addClass("main-container-slide-left");
+  //  $(".main_container_clearfix").addClass("slide-left");
+  //  $(".main-content-container").css('top','100vh');
+  //  $(".sidebar_nav").addClass("main-container-slide-left");
+  //         $('.sidebar-nav-container-header').addClass("sidebar-nav-container-header-active");
+  //       //   $('.help-header-link').css("color", "white");
+  //  $('.help-header-link').addClass('help-header-link-active');
+  //  $("#help-title").html('<i class="fa fa-times sidebar-icon" aria-hidden="true"></i><br> Back');
+  //     };
+  // });
 
 //  Getting Started Section
 
