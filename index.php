@@ -193,7 +193,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 					</div>
 				</div>
 
-				<div class="sidebar-link sidebar-link-active help-back-link" style="display: none;">
+				<div class="sidebar-link sidebar-link-active help-back-link" onclick="goToHelpBack()"  style="display: none;">
 					<div class="sidebar-nav-container">
 						<span  style="color: white;"  class="sidebar-nav-span">
 							<i class="icon-times sidebar-icon" aria-hidden="true"></i><br>
@@ -280,21 +280,6 @@ function goToProducts(){
 }
 
 function goToHelp() {
-    if ($("#help-slide").hasClass('help-slide-animate')) {
-
-	 $(".help-back-link").css('display','none');
-	 $("#help-link").css('display','block');
-
-	$('#help-slide').removeClass("help-slide-animate");
-	$(".sidebar_nav").removeClass("main-container-slide-left");
-	$(".preview-container").removeClass("main-container-slide-left");
-	$(".main-content-container").css('top','0px');
-	$(".main_container_clearfix").removeClass("slide-left");
-	// $('.sidebar-nav-container-header').removeClass("sidebar-nav-container-header-active");
-      //   $('.help-header-link').css("color", "#666");
-	// $('.help-header-link').removeClass('help-header-link-active');
-	// $("#help-title").html('<i  class="fa fa-info sidebar-icon" aria-hidden="true"></i><br> Help');
-    } else {
 
 	 $("#help-link").css('display','none');
 	 $(".help-back-link").css('display','block');
@@ -308,13 +293,18 @@ function goToHelp() {
 	$(".preview-container").addClass("main-container-slide-left");
 	$(".main_container_clearfix").addClass("slide-left");
 	$(".main-content-container").css('top','100vh');
-	// $(".sidebar_nav").addClass("main-container-slide-left");
-	// $('.sidebar-nav-container-header').addClass("sidebar-nav-container-header-active");
-      //   $('.help-header-link').css("color", "white");
-	// $('.help-header-link').addClass('help-header-link-active');
-	// $("#help-title").html('<i class="fa fa-times sidebar-icon" aria-hidden="true"></i><br> Back');
-    };
 };
+
+function goToHelpBlack(){
+		 $(".help-back-link").css('display','none');
+		 $("#help-link").css('display','block');
+
+		$('#help-slide').removeClass("help-slide-animate");
+		$(".sidebar_nav").removeClass("main-container-slide-left");
+		$(".preview-container").removeClass("main-container-slide-left");
+		$(".main-content-container").css('top','0px');
+		$(".main_container_clearfix").removeClass("slide-left");
+}
 
 // Get Collections / Share Page
 function getproducts(){
