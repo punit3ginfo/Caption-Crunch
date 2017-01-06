@@ -442,6 +442,8 @@ body {
 	transition-timing-function : $animation-function ;
 	transition-duration        : 0.5s;
 	animation-direction        : normal;
+	width: 404px;
+	display: flex;
 }
 
 .close-preview-container {

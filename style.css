@@ -308,7 +308,9 @@ body {
   top: 0px;
   transition-timing-function: ease;
   transition-duration: 0.5s;
-  animation-direction: normal; }
+  animation-direction: normal;
+  width: 404px;
+  display: flex; }
 
 .close-preview-container {
   display: none;
