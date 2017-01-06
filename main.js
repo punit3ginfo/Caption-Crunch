@@ -82,6 +82,7 @@ function goToBufferHelp() {
 function goToBufferHelpBack(){
 		 $("#buffer-help-back-link").css('display','none');
 		 $("#buffer-help-link").css('display','block');
+		 $('#dashboard-link').addClass('sidebar-link-active');
 		$('#help-slide').removeClass("help-slide-animate");
 		$(".sidebar_nav").removeClass("main-container-slide-left");
 		$(".preview-container").removeClass("main-container-slide-left");
@@ -107,6 +108,7 @@ function goToAutopilotHelp() {
 function goToAutopilotHelpBack(){
 		 $("#autopilot-help-back-link").css('display','none');
 		 $("#autopilot-help-link").css('display','block');
+		 $('#autopilot-link').addClass('sidebar-link-active');
 		$('#help-slide').removeClass("help-slide-animate");
 		$(".sidebar_nav").removeClass("main-container-slide-left");
 		$(".preview-container").removeClass("main-container-slide-left");
