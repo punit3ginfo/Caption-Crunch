@@ -66,7 +66,7 @@ function goToProducts(){
 
 function goToBufferHelp() {
 	 $("#buffer-help-link").css('display','none');
-	 $("#help-back-link").css('display','block');
+	 $("#buffer-help-back-link").css('display','block');
 	 $('#products-link').removeClass('sidebar-link-active');
 	 $('#captions-link').removeClass('sidebar-link-active');
 	 $('#dashboard-link').removeClass('sidebar-link-active');
@@ -81,7 +81,7 @@ function goToBufferHelp() {
 
 function goToAutopilotHelp() {
 	 $("#autopilot-help-link").css('display','none');
-	 $("#help-back-link").css('display','block');
+	 $("#autopilot-help-back-link").css('display','block');
 	 $('#products-link').removeClass('sidebar-link-active');
 	 $('#captions-link').removeClass('sidebar-link-active');
 	 $('#dashboard-link').removeClass('sidebar-link-active');
@@ -96,7 +96,7 @@ function goToAutopilotHelp() {
 
 function goToCaptionsHelp() {
 	 $("#caption-help-link").css('display','none');
-	 $("#help-back-link").css('display','block');
+	 $("#captions-help-back-link").css('display','block');
 	 $('#products-link').removeClass('sidebar-link-active');
 	 $('#captions-link').removeClass('sidebar-link-active');
 	 $('#dashboard-link').removeClass('sidebar-link-active');
@@ -111,7 +111,7 @@ function goToCaptionsHelp() {
 
 function goToProductsHelp() {
 	 $("#products-help-link").css('display','none');
-	 $("#help-back-link").css('display','block');
+	 $("#products-help-back-link").css('display','block');
 	 $('#products-link').removeClass('sidebar-link-active');
 	 $('#captions-link').removeClass('sidebar-link-active');
 	 $('#dashboard-link').removeClass('sidebar-link-active');
