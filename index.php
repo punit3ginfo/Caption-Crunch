@@ -184,8 +184,8 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 					</div>
 				</div>
 
-				<div id="help-button" class="help-header-link">
-					<div class="sidebar-nav-container-header">
+				<div  class="sidebar-link help-header-link" id="help-button">
+					<div class="sidebar-nav-container">
 						<span id="help-title" class="help-title">
 							<i class="fa fa-info sidebar-icon" aria-hidden="true"></i><br>
 							Help
