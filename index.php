@@ -256,15 +256,6 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 					</div>
 				</div>
 
-				<!-- <div  class="sidebar-link help-header-link" id="help-button" onclick="goToHelp()">
-					<div class="sidebar-nav-container-header sidebar-nav-container">
-						<span id="help-title" class="help-title">
-							<i class="fa fa-info sidebar-icon" aria-hidden="true"></i><br>
-							Help
-						</span>
-					</div>
-				</div> -->
-
 			</nav>
 			<!-- /.navbar-collapse -->
 			<!-- /.container -->

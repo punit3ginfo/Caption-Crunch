@@ -14,6 +14,12 @@ function goToDashboard(){
 	$("#captions-help-link").css('display','none');
 	$("#products-help-link").css('display','none');
 	$("#help-back-link").css('display','none');
+
+	$('#help-slide').removeClass("help-slide-animate");
+	$(".sidebar_nav").removeClass("main-container-slide-left");
+	$(".preview-container").removeClass("main-container-slide-left");
+	$(".main-content-container").css('top','0px');
+	$(".main_container_clearfix").removeClass("slide-left");
 }
 
 function goToAutopilot(){
@@ -30,6 +36,12 @@ function goToAutopilot(){
 	$("#captions-help-link").css('display','none');
 	$("#products-help-link").css('display','none');
 	$("#help-back-link").css('display','none');
+
+	$('#help-slide').removeClass("help-slide-animate");
+	$(".sidebar_nav").removeClass("main-container-slide-left");
+	$(".preview-container").removeClass("main-container-slide-left");
+	$(".main-content-container").css('top','0px');
+	$(".main_container_clearfix").removeClass("slide-left");
 }
 
 function goToCaptions(){
@@ -46,6 +58,12 @@ function goToCaptions(){
 	$("#captions-help-link").css('display','block');
 	$("#products-help-link").css('display','none');
 	$("#help-back-link").css('display','none');
+
+	$('#help-slide').removeClass("help-slide-animate");
+	$(".sidebar_nav").removeClass("main-container-slide-left");
+	$(".preview-container").removeClass("main-container-slide-left");
+	$(".main-content-container").css('top','0px');
+	$(".main_container_clearfix").removeClass("slide-left");
 }
 
 function goToProducts(){
@@ -62,6 +80,12 @@ function goToProducts(){
 	$("#captions-help-link").css('display','none');
 	$("#products-help-link").css('display','block');
 	$("#help-back-link").css('display','none');
+
+	$('#help-slide').removeClass("help-slide-animate");
+	$(".sidebar_nav").removeClass("main-container-slide-left");
+	$(".preview-container").removeClass("main-container-slide-left");
+	$(".main-content-container").css('top','0px');
+	$(".main_container_clearfix").removeClass("slide-left");
 }
 
 function goToBufferHelp() {
