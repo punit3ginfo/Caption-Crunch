@@ -508,6 +508,7 @@ body {
 .sidebar-link {
   display: block;
   text-decoration: none;
+  cursor: pointer;
   color: #555555;
   background-color: white;
   font-family: 'Ubuntu', sans-serif;
