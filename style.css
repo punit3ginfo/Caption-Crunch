@@ -2184,7 +2184,8 @@ ul#pagination-list li {
 
 .menu-link {
   display: block;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
 
 .help-menu-container {
   width: calc(100% - 29px);

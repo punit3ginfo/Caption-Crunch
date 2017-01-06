@@ -35,100 +35,6 @@ $(document).ready(function(){
 	// 	$('.menu-container-active').removeClass('hover-active-menu');
 	// });
 
-
-	// // Step 1 | Choose Account - Show / Hide
-	// $('.account-show-hide-button').click(function() {
-	// 	// Show / Hide Conditions Container
-	// 	$('.account-show-hide').slideToggle("slow");
-	// 	// Rotate Arrow 180 Degree / Click
-	// 	$('#account-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-	// });
-	//
-	// // Step 2 | Choose Caption - Show / Hide
-	// $('.caption-show-hide-button').click(function() {
-	// 	// Show / Hide Conditions Container
-	// 	$('.caption-show-hide').slideToggle("slow");
-	// 	// Rotate Arrow 180 Degree / Click
-	// 	$('#caption-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-	// });
-	//
-	// // Step 3 | Add Image - Show / Hide
-	// $('.image-show-hide-button').click(function() {
-	// 	// Show / Hide Conditions Container
-	// 	$('.image-show-hide').slideToggle("slow");
-	// 	// Rotate Arrow 180 Degree / Click
-	// 	$('#image-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-	// });
-	//
-	// // Step 4 | Share - Show / Hide
-	// $('.share-show-hide-button').click(function() {
-	// 	// Show / Hide Conditions Container
-	// 	$('.share-show-hide').slideToggle("slow");
-	// 	// Rotate Arrow 180 Degree / Click
-	// 	$('#share-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-	// });
-	//
-	// // Next Step 1 - 2 | Show / Hide
-	// $('#step2button').click(function() {
-	// 	// Show / Hide Conditions Container
-	// 	$('.caption-show-hide').slideToggle("slow");
-	// 	// Rotate Arrow 180 Degree / Click
-	// 	$('#caption-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-	// 	// Show / Hide Conditions Container
-	// 	$('.account-show-hide').slideToggle("slow");
-	// 	// Rotate Arrow 180 Degree / Click
-	// 	$('#account-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-	// });
-	//
-	// // Next Step 2 - 3 | Show / Hide
-	// $('#step3button').click(function() {
-	// 	// Show / Hide Conditions Container
-	// 	$('.image-show-hide').slideToggle("slow");
-	// 	// Rotate Arrow 180 Degree / Click
-	// 	$('#image-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-	// 	// Show / Hide Conditions Container
-	// 	$('.caption-show-hide').slideToggle("slow");
-	// 	// Rotate Arrow 180 Degree / Click
-	// 	$('#caption-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-	// });
-	//
-	// // Next Step 3 - 4 | Show / Hide
-	// $('#step4button').click(function() {
-	// 	// Show / Hide Conditions Container
-	// 	$('.image-show-hide').slideToggle("slow");
-	// 	// Rotate Arrow 180 Degree / Click
-	// 	$('#image-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-	// 	// Show / Hide Conditions Container
-	// 	$('.share-show-hide').slideToggle("slow");
-	// 	// Rotate Arrow 180 Degree / Click
-	// 	$('#share-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-	// });
-	//
-	// // Prev Step 1 - 2 | Show / Hide
-	// $('#step2prevbutton').click(function() {
-	// 	// Show / Hide Conditions Container
-	// 	$('.caption-show-hide').slideToggle("slow");
-	// 	// Rotate Arrow 180 Degree / Click
-	// 	$('#caption-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-	// 	// Show / Hide Conditions Container
-	// 	$('.account-show-hide').slideToggle("slow");
-	// 	// Rotate Arrow 180 Degree / Click
-	// 	$('#account-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-	// });
-	//
-	// // Prev Step 2 - 1 | Show / Hide
-	// $('#step3prevbutton').click(function() {
-	// 	// Show / Hide Conditions Container
-	// 	$('.image-show-hide').slideToggle("slow");
-	// 	// Rotate Arrow 180 Degree / Click
-	// 	$('#image-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-	// 	// Show / Hide Conditions Container
-	// 	$('.caption-show-hide').slideToggle("slow");
-	// 	// Rotate Arrow 180 Degree / Click
-	// 	$('#caption-arrow-icon').toggleClass('fa-chevron-up fa-chevron-down');
-	// });
-
-
 	function menuReset() {
 		// Getting Started Reset
 			// $('#gs-dropdown').slideUp("slow");
@@ -157,32 +63,6 @@ $(document).ready(function(){
 	function helpSectionReset() {
 		$('.form-help').removeClass('form-active');
 	}
-
-  // $('#help-button').click(function() {
-  //     if ($("#right-slide-left").hasClass('right-slide-left-animate')) {
-  //
-  //         $('#right-slide-left').removeClass("right-slide-left-animate");
-  //  $(".sidebar_nav").removeClass("main-container-slide-left");
-  //  $(".preview-container").removeClass("main-container-slide-left");
-  //  $(".main-content-container").css('top','0px');
-  //  $(".main_container_clearfix").removeClass("slide-left");
-  //         $('.sidebar-nav-container-header').removeClass("sidebar-nav-container-header-active");
-  //       //   $('.help-header-link').css("color", "#666");
-  //  $('.help-header-link').removeClass('help-header-link-active');
-  //  $("#help-title").html('<i  class="fa fa-info sidebar-icon" aria-hidden="true"></i><br> Help');
-  //     } else {
-  //
-  //         $('#right-slide-left').addClass("right-slide-left-animate");
-  //  $(".preview-container").addClass("main-container-slide-left");
-  //  $(".main_container_clearfix").addClass("slide-left");
-  //  $(".main-content-container").css('top','100vh');
-  //  $(".sidebar_nav").addClass("main-container-slide-left");
-  //         $('.sidebar-nav-container-header').addClass("sidebar-nav-container-header-active");
-  //       //   $('.help-header-link').css("color", "white");
-  //  $('.help-header-link').addClass('help-header-link-active');
-  //  $("#help-title").html('<i class="fa fa-times sidebar-icon" aria-hidden="true"></i><br> Back');
-  //     };
-  // });
 
 //  Getting Started Section
 
