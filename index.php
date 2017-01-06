@@ -295,7 +295,7 @@ function goToHelp() {
 	$(".main-content-container").css('top','100vh');
 };
 
-function goToHelpBlack(){
+function goToHelpBack(){
 		 $(".help-back-link").css('display','none');
 		 $("#help-link").css('display','block');
 
