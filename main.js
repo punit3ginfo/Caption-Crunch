@@ -141,7 +141,7 @@ function goToAutopilotHelpBack(){
 };
 
 function goToCaptionsHelp() {
-	 $("#caption-help-link").css('display','none');
+	 $("#captions-help-link").css('display','none');
 	 $("#captions-help-back-link").css('display','block');
 	 $('#products-link').removeClass('sidebar-link-active');
 	 $('#captions-link').removeClass('sidebar-link-active');
