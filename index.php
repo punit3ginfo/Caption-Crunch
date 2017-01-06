@@ -139,50 +139,50 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<nav class="main-nav-container load-help">
-				<a  class="sidebar-link" onclick="goToDashboard()" id="dashboard-link">
+				<div  class="sidebar-link" onclick="goToDashboard()" id="dashboard-link">
 					<div class="sidebar-nav-container">
 						<span class="sidebar-nav-span">
 							<i class="icon-buffer sidebar-icon"></i><br>
 							Buffer
 						</span>
 					</div>
-				</a>
+				</div>
 
-				<a class="sidebar-link" href="javascript:void(0)" onclick="goToAutopilot()" id="autopilot-link">
+				<div class="sidebar-link" onclick="goToAutopilot()" id="autopilot-link">
 					<div class="sidebar-nav-container">
 						<span class="sidebar-nav-span">
 							<i class="icon-paperplane-ico sidebar-icon"></i><br>
 							Autopilot
 						</span>
 					</div>
-				</a>
+				</div>
 
-				<a  class="sidebar-link" href="javascript:void(0)" onclick="goToCaptions();" id="captions-link">
+				<div  class="sidebar-link" onclick="goToCaptions();" id="captions-link">
 					<div class="sidebar-nav-container">
 						<span class="sidebar-nav-span">
 							<i class="icon-hammer sidebar-icon"></i><br>
 							Captions
 						</span>
 					</div>
-				</a>
+				</div>
 
-				<a class="sidebar-link" href="javascript:void(0)" onclick="goToProducts()" id="share-link">
+				<div class="sidebar-link" onclick="goToProducts()" id="share-link">
 					<div class="sidebar-nav-container">
 						<span class="sidebar-nav-span">
 							<i class="icon-tag sidebar-icon"></i><br>
 							Products
 						</span>
 					</div>
-				</a>
+				</div>
 
-				<a class="sidebar-link sidebar-link-active back-link" href="javascript:void(0)" style="display: none;">
+				<div class="sidebar-link sidebar-link-active back-link" style="display: none;">
 					<div class="sidebar-nav-container">
 						<span  style="color: white;"  class="sidebar-nav-span">
 							<i class="fa fa-times sidebar-icon" aria-hidden="true"></i><br>
 							Back
 						</span>
 					</div>
-				</a>
+				</div>
 
 				<div id="help-button" class="help-header-link">
 					<div class="sidebar-nav-container-header">
