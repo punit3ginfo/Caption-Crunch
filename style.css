@@ -1174,7 +1174,7 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   width: 100%;
-  height: calc(100% - 145px); }
+  height: calc(100% - 160px); }
 
 .menu-container {
   width: calc(100% - 29px);
