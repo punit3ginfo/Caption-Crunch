@@ -178,7 +178,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				<div class="sidebar-link sidebar-link-active back-link" style="display: none;">
 					<div class="sidebar-nav-container">
 						<span  style="color: white;"  class="sidebar-nav-span">
-							<i class="fa fa-times sidebar-icon" aria-hidden="true"></i><br>
+							<i class="icon-times sidebar-icon" aria-hidden="true"></i><br>
 							Back
 						</span>
 					</div>
@@ -187,7 +187,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				<div class="sidebar-link" onclick="goToHelp()" id="help-link">
 					<div class="sidebar-nav-container">
 						<span class="sidebar-nav-span">
-							<i class="icon-tag sidebar-icon"></i><br>
+							<i class="icon-question sidebar-icon"></i><br>
 							Help
 						</span>
 					</div>
@@ -196,7 +196,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				<div class="sidebar-link sidebar-link-active help-back-link" style="display: none;">
 					<div class="sidebar-nav-container">
 						<span  style="color: white;"  class="sidebar-nav-span">
-							<i class="fa fa-times sidebar-icon" aria-hidden="true"></i><br>
+							<i class="icon-times sidebar-icon" aria-hidden="true"></i><br>
 							Back
 						</span>
 					</div>
