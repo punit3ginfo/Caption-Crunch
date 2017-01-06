@@ -32,7 +32,7 @@
 						</div>
 					</div>
 
-					<div href="javascript:void(0)" onclick="getproducts()" class="menu-link">
+					<div onclick="getproducts()" class="menu-link">
 						<div class="menu-container"  id="all-products">
 							<div class="menu-clearfix">
 								<div class="menu-font-container">
