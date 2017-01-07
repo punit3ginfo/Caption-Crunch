@@ -348,5 +348,4 @@ function gethistory(){
 <!-- Scripts -->
 <script src="main.js"></script>
 <?php include 'caption-form-js.php';?>
-
 </body>

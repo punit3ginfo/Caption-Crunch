@@ -135,6 +135,6 @@
 		$("#dashboard").load('dashboard.php');
 		$("#autopilot").load('autopilot.php');
 		$("#captions").load('captions.php');
-		$('#right-slide-left').load('help.php');
+		$('#help-slide').load('help.php');
 	});
 </script>
