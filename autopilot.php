@@ -42,7 +42,7 @@
 
 		<div class="content-header-3col-container">
 			<div class="content-header-container">
-					<span class="cc-text-small">Campaign Status :</span>
+					<span class="cc-text-small">{{ Campaign Title }} Campaign Status :</span>
 			</div>
 		</div>
 
