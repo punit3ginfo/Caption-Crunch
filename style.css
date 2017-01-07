@@ -1365,7 +1365,7 @@ body {
   position: relative;
   overflow-y: hidden;
   width: 100%;
-  height: calc(100vh - 160px); }
+  height: calc(100vh - 158px); }
 
 .content-overflow {
   position: relative;
@@ -1394,7 +1394,7 @@ body {
   overflow-y: scroll;
   box-sizing: border-box;
   width: 100%;
-  height: calc(100vh - 160px);
+  height: calc(100vh - 158px);
   padding-right: 5px;
   padding-left: 10px; }
 
