@@ -16,7 +16,7 @@ function goToDashboard(){
 	$("#help-back-link").css('display','none');
 
 	$('#help-slide').removeClass("help-slide-animate");
-	$(".sidebar_nav").removeClass("main-container-slide-left");
+
 	$(".preview-container").removeClass("main-container-slide-left");
 	$(".main-content-container").css('top','0px');
 	$(".main_container_clearfix").removeClass("slide-left");
@@ -43,7 +43,7 @@ function goToAutopilot(){
 	$("#help-back-link").css('display','none');
 
 	$('#help-slide').removeClass("help-slide-animate");
-	$(".sidebar_nav").removeClass("main-container-slide-left");
+
 	$(".preview-container").removeClass("main-container-slide-left");
 	$(".main-content-container").css('top','0px');
 	$(".main_container_clearfix").removeClass("slide-left");
@@ -70,7 +70,7 @@ function goToCaptions(){
 	$("#help-back-link").css('display','none');
 
 	$('#help-slide').removeClass("help-slide-animate");
-	$(".sidebar_nav").removeClass("main-container-slide-left");
+
 	$(".preview-container").removeClass("main-container-slide-left");
 	$(".main-content-container").css('top','0px');
 	$(".main_container_clearfix").removeClass("slide-left");
@@ -97,7 +97,7 @@ function goToProducts(){
 	$("#help-back-link").css('display','none');
 
 	$('#help-slide').removeClass("help-slide-animate");
-	$(".sidebar_nav").removeClass("main-container-slide-left");
+
 	$(".preview-container").removeClass("main-container-slide-left");
 	$(".main-content-container").css('top','0px');
 	$(".main_container_clearfix").removeClass("slide-left");
@@ -128,7 +128,7 @@ function goToBufferHelpBack(){
 		 $("#buffer-help-link").css('display','block');
 		 $('#dashboard-link').addClass('sidebar-link-active');
 		$('#help-slide').removeClass("help-slide-animate");
-		$(".sidebar_nav").removeClass("main-container-slide-left");
+
 		$(".preview-container").removeClass("main-container-slide-left");
 		$(".main-content-container").css('top','0px');
 		$(".main_container_clearfix").removeClass("slide-left");
@@ -154,7 +154,7 @@ function goToAutopilotHelpBack(){
 		 $("#autopilot-help-link").css('display','block');
 		 $('#autopilot-link').addClass('sidebar-link-active');
 		$('#help-slide').removeClass("help-slide-animate");
-		$(".sidebar_nav").removeClass("main-container-slide-left");
+
 		$(".preview-container").removeClass("main-container-slide-left");
 		$(".main-content-container").css('top','0px');
 		$(".main_container_clearfix").removeClass("slide-left");
@@ -180,7 +180,7 @@ function goToCaptionsHelpBack(){
 		 $("#captions-help-link").css('display','block');
 		 $('#captions-link').addClass('sidebar-link-active');
 		$('#help-slide').removeClass("help-slide-animate");
-		$(".sidebar_nav").removeClass("main-container-slide-left");
+
 		$(".preview-container").removeClass("main-container-slide-left");
 		$(".main-content-container").css('top','0px');
 		$(".main_container_clearfix").removeClass("slide-left");
@@ -206,7 +206,7 @@ function goToProductsHelpBack(){
 		 $("#products-help-link").css('display','block');
 		 $('#products-link').addClass('sidebar-link-active');
 		$('#help-slide').removeClass("help-slide-animate");
-		$(".sidebar_nav").removeClass("main-container-slide-left");
+
 		$(".preview-container").removeClass("main-container-slide-left");
 		$(".main-content-container").css('top','0px');
 		$(".main_container_clearfix").removeClass("slide-left");
