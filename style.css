@@ -2222,8 +2222,7 @@ ul#pagination-list li {
 
 #share-dropdown {
   width: 100%;
-  height: auto;
-  display: none; }
+  height: auto; }
 
 .sub-menu {
   width: calc(100% - 50px);
