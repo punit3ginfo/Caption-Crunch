@@ -86,7 +86,7 @@ try
 			$name = $info['filename'];
 			$format = $info['extension'];
 			$src = $name."_large.".$format;	*/
-			$parts = explode(".",$src); 
+			$parts = explode(".",$src);
 			$extension = array_pop($parts);
 			$name = implode('.', $parts);
 			$src = $name."_large.".$extension;
@@ -162,8 +162,8 @@ try
 				//  Load
 				$("#post-preview-container").css("display","block");
 				// Back Button
-				$("#share-link").css("display", "none");
-				$(".back-link").css("display", "block");
+				$("#products-link").css("display", "none");
+				$(" #products-preview-back").css("display", "block");
 				// Help
 				$(".help-clearfix").empty();
 				$(".help-clearfix").load("help/preview.php");
@@ -229,12 +229,12 @@ try
 				});
 			});
 				//  Back Buttons
-			$('.back-link').click(function() {
+			$(' #products-preview-back').click(function() {
 				$('.collections-animation-container').removeClass("collections-animation");
 				$('#top-slide-down').removeClass("top-slide-down-animate");
 				// Back Button
-				$("#share-link").css("display", "block");
-				$(".back-link").css("display", "none");
+				$("#products-link").css("display", "block");
+				$(" #products-preview-back").css("display", "none");
 				// Help
 				$(".help-clearfix").empty();
 				$(".help-clearfix").load("help/share.php");
@@ -254,8 +254,8 @@ try
 				$('#top-slide-down').removeClass("top-slide-down-animate");
 				$('.collections-animation-container').removeClass("collections-animation");
 				// Back Button
-				$("#share-link").css("display", "block");
-				$(".back-link").css("display", "none");
+				$("#products-link").css("display", "block");
+				$(" #products-preview-back").css("display", "none");
 
 				setTimeout(function(){
 					$("#product-preview-container").css("display","none");

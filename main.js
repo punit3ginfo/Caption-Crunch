@@ -212,6 +212,17 @@ function goToProductsHelpBack(){
 		$(".main_container_clearfix").removeClass("slide-left");
 };
 
+// function goToPreviewBack(){
+// 		 $("#products-help-back-link").css('display','none');
+// 		 $("#products-help-link").css('display','block');
+// 		 $('#products-link').addClass('sidebar-link-active');
+// 		$('#help-slide').removeClass("help-slide-animate");
+//
+// 		$(".preview-container").removeClass("main-container-slide-left");
+// 		$(".main-content-container").css('top','0px');
+// 		$(".main_container_clearfix").removeClass("slide-left");
+// };
+
 
 $(document).ready(function(){
 

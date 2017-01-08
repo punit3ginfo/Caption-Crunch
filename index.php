@@ -175,7 +175,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 					</div>
 				</div>
 
-				<div class="sidebar-link sidebar-link-active back-link" style="display: none;">
+				<div class="sidebar-link sidebar-link-active" id="products-preview-back" style="display: none;">
 					<div class="sidebar-nav-container">
 						<span  style="color: white;"  class="sidebar-nav-span">
 							<i class="icon-times sidebar-icon" aria-hidden="true"></i><br>
