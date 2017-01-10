@@ -200,10 +200,10 @@ function goToProductsHelp() {
 	$(".main-content-container").css('top','100vh');
 
 	//  hide menu
-	$('#products-link').css('display','none');
 	$('#captions-link').css('display','none');
 	$('#dashboard-link').css('display','none');
 	$('#autopilot-link').css('display','none');
+	$('#products-link').css('display','none');
 
 };
 
