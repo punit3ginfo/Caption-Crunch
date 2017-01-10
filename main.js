@@ -111,79 +111,115 @@ function goToProducts(){
 function goToBufferHelp() {
 	 $("#buffer-help-link").css('display','none');
 	 $("#buffer-help-back-link").css('display','block');
-	 $('#products-link').removeClass('sidebar-link-active');
-	 $('#captions-link').removeClass('sidebar-link-active');
-	 $('#dashboard-link').removeClass('sidebar-link-active');
-	 $('#autopilot-link').removeClass('sidebar-link-active');
+	//  $('#products-link').removeClass('sidebar-link-active');
+	//  $('#captions-link').removeClass('sidebar-link-active');
+	//  $('#dashboard-link').removeClass('sidebar-link-active');
+	//  $('#autopilot-link').removeClass('sidebar-link-active');
 	 $('.sidebar-link').removeClass('hover-active-menu');
 	$('#help-slide').addClass("help-slide-animate");
 	$(".preview-container").addClass("main-container-slide-left");
 	$(".main_container_clearfix").addClass("slide-left");
 	$(".main-content-container").css('top','100vh');
+
+	//  hide menu
+	$('#captions-link').css('display','none');
+	$('#dashboard-link').css('display','none');
+	$('#autopilot-link').css('display','none');
+	$('#products-link').css('display','none');
 
 };
 
 function goToBufferHelpBack(){
 		 $("#buffer-help-back-link").css('display','none');
 		 $("#buffer-help-link").css('display','block');
-		 $('#dashboard-link').addClass('sidebar-link-active');
+		//  $('#dashboard-link').addClass('sidebar-link-active');
 		$('#help-slide').removeClass("help-slide-animate");
 
 		$(".preview-container").removeClass("main-container-slide-left");
 		$(".main-content-container").css('top','0px');
 		$(".main_container_clearfix").removeClass("slide-left");
+
+		//  show menu
+		$('#products-link').css('display','block');
+		$('#captions-link').css('display','block');
+		$('#dashboard-link').css('display','block');
+		$('#autopilot-link').css('display','block');
 };
 
 function goToAutopilotHelp() {
 	 $("#autopilot-help-link").css('display','none');
 	 $("#autopilot-help-back-link").css('display','block');
-	 $('#products-link').removeClass('sidebar-link-active');
-	 $('#captions-link').removeClass('sidebar-link-active');
-	 $('#dashboard-link').removeClass('sidebar-link-active');
-	 $('#autopilot-link').removeClass('sidebar-link-active');
+	//  $('#products-link').removeClass('sidebar-link-active');
+	//  $('#captions-link').removeClass('sidebar-link-active');
+	//  $('#dashboard-link').removeClass('sidebar-link-active');
+	//  $('#autopilot-link').removeClass('sidebar-link-active');
 	 $('.sidebar-link').removeClass('hover-active-menu');
 	$('#help-slide').addClass("help-slide-animate");
 	$(".preview-container").addClass("main-container-slide-left");
 	$(".main_container_clearfix").addClass("slide-left");
 	$(".main-content-container").css('top','100vh');
+
+	//  hide menu
+	$('#captions-link').css('display','none');
+	$('#dashboard-link').css('display','none');
+	$('#autopilot-link').css('display','none');
+	$('#products-link').css('display','none');
 
 };
 
 function goToAutopilotHelpBack(){
 		 $("#autopilot-help-back-link").css('display','none');
 		 $("#autopilot-help-link").css('display','block');
-		 $('#autopilot-link').addClass('sidebar-link-active');
+		//  $('#autopilot-link').addClass('sidebar-link-active');
 		$('#help-slide').removeClass("help-slide-animate");
 
 		$(".preview-container").removeClass("main-container-slide-left");
 		$(".main-content-container").css('top','0px');
 		$(".main_container_clearfix").removeClass("slide-left");
+
+		//  show menu
+		$('#products-link').css('display','block');
+		$('#captions-link').css('display','block');
+		$('#dashboard-link').css('display','block');
+		$('#autopilot-link').css('display','block');
 };
 
 function goToCaptionsHelp() {
 	 $("#captions-help-link").css('display','none');
 	 $("#captions-help-back-link").css('display','block');
-	 $('#products-link').removeClass('sidebar-link-active');
-	 $('#captions-link').removeClass('sidebar-link-active');
-	 $('#dashboard-link').removeClass('sidebar-link-active');
-	 $('#autopilot-link').removeClass('sidebar-link-active');
+	//  $('#products-link').removeClass('sidebar-link-active');
+	//  $('#captions-link').removeClass('sidebar-link-active');
+	//  $('#dashboard-link').removeClass('sidebar-link-active');
+	//  $('#autopilot-link').removeClass('sidebar-link-active');
 	 $('.sidebar-link').removeClass('hover-active-menu');
 	$('#help-slide').addClass("help-slide-animate");
 	$(".preview-container").addClass("main-container-slide-left");
 	$(".main_container_clearfix").addClass("slide-left");
 	$(".main-content-container").css('top','100vh');
 
+	//  hide menu
+	$('#captions-link').css('display','none');
+	$('#dashboard-link').css('display','none');
+	$('#autopilot-link').css('display','none');
+	$('#products-link').css('display','none');
+
 };
 
 function goToCaptionsHelpBack(){
 		 $("#captions-help-back-link").css('display','none');
 		 $("#captions-help-link").css('display','block');
-		 $('#captions-link').addClass('sidebar-link-active');
+		//  $('#captions-link').addClass('sidebar-link-active');
 		$('#help-slide').removeClass("help-slide-animate");
 
 		$(".preview-container").removeClass("main-container-slide-left");
 		$(".main-content-container").css('top','0px');
 		$(".main_container_clearfix").removeClass("slide-left");
+
+		//  show menu
+		$('#products-link').css('display','block');
+		$('#captions-link').css('display','block');
+		$('#dashboard-link').css('display','block');
+		$('#autopilot-link').css('display','block');
 };
 
 function goToProductsHelp() {
