@@ -310,7 +310,8 @@ body {
   transition-duration: 0.5s;
   animation-direction: normal;
   width: 404px;
-  display: flex; }
+  display: flex;
+  justify-content: flex-end; }
 
 .close-preview-container {
   display: none;
