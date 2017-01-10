@@ -1089,12 +1089,6 @@ body {
   transition-duration: 0.3s;
   animation-direction: normal; }
 
-.slide-left {
-  left: -100vw !important; }
-
-.main_container_clearfix-help {
-  left: -100vw; }
-
 #main-padded-container {
   left: 0px;
   width: 100%;
