@@ -254,7 +254,7 @@ try
 				$('#top-slide-down').removeClass("top-slide-down-animate");
 				$('.collections-animation-container').removeClass("collections-animation");
 				// Back Button
-				$("#products-link").css("display", "block");
+				// $("#products-link").css("display", "block");
 				$(" #products-preview-back").css("display", "none");
 
 				setTimeout(function(){
