@@ -199,6 +199,12 @@ function goToProductsHelp() {
 	$(".main_container_clearfix").addClass("slide-left");
 	$(".main-content-container").css('top','100vh');
 
+	//  hide menu
+	$('#products-link').css('display','none');
+	$('#captions-link').css('display','none');
+	$('#dashboard-link').css('display','none');
+	$('#autopilot-link').css('display','none');
+
 };
 
 function goToProductsHelpBack(){
@@ -210,6 +216,12 @@ function goToProductsHelpBack(){
 		$(".preview-container").removeClass("main-container-slide-left");
 		$(".main-content-container").css('top','0px');
 		$(".main_container_clearfix").removeClass("slide-left");
+
+		//  show menu
+		$('#products-link').css('display','block');
+		$('#captions-link').css('display','block');
+		$('#dashboard-link').css('display','block');
+		$('#autopilot-link').css('display','block');
 };
 
 // function goToPreviewBack(){
