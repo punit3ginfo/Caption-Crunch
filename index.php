@@ -77,55 +77,6 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 	</div>
 
 	<div class="main-template">
-		<!-- Sidebar Nav -->
-		<!-- <aside class="sidebar_nav">
-			<a  class="sidebar-link" onclick="goToDashboard()" id="dashboard-link">
-				<div class="sidebar-nav-container">
-					<span class="sidebar-nav-span">
-						<i class="icon-buffer sidebar-icon"></i><br>
-						Buffer
-					</span>
-				</div>
-			</a>
-
-			<a class="sidebar-link" href="javascript:void(0)" onclick="goToAutopilot()" id="autopilot-link">
-				<div class="sidebar-nav-container">
-					<span class="sidebar-nav-span">
-						<i class="icon-paperplane-ico sidebar-icon"></i><br>
-						Autopilot
-					</span>
-				</div>
-			</a>
-
-			<a  class="sidebar-link" href="javascript:void(0)" onclick="goToCaptions();" id="captions-link">
-				<div class="sidebar-nav-container">
-					<span class="sidebar-nav-span">
-						<i class="icon-hammer sidebar-icon"></i><br>
-						Captions
-					</span>
-				</div>
-			</a>
-
-			<a class="sidebar-link" href="javascript:void(0)" onclick="goToProducts()" id="products-link">
-				<div class="sidebar-nav-container">
-					<span class="sidebar-nav-span">
-						<i class="icon-tag sidebar-icon"></i><br>
-						Products
-					</span>
-				</div>
-			</a>
-
-			<a class="sidebar-link sidebar-link-active back-link" href="javascript:void(0)" style="display: none;">
-				<div class="sidebar-nav-container">
-					<span  style="color: white;"  class="sidebar-nav-span">
-						<i class="fa fa-times sidebar-icon" aria-hidden="true"></i><br>
-						Back
-					</span>
-				</div>
-			</a>
-		</aside> -->
-
-		<!-- /.Sidebar Nav -->
 
 		<!-- Navigation -->
 		<header class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="top: 0px;">
@@ -188,7 +139,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 					<div class="sidebar-nav-container">
 						<span class="sidebar-nav-span">
 							<i class="icon-question sidebar-icon"></i><br>
-							Help b
+							Help
 						</span>
 					</div>
 				</div>
@@ -197,7 +148,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 					<div class="sidebar-nav-container">
 						<span class="sidebar-nav-span">
 							<i class="icon-question sidebar-icon"></i><br>
-							Help a
+							Help
 						</span>
 					</div>
 				</div>
@@ -206,7 +157,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 					<div class="sidebar-nav-container">
 						<span class="sidebar-nav-span">
 							<i class="icon-question sidebar-icon"></i><br>
-							Help c
+							Help
 						</span>
 					</div>
 				</div>
@@ -215,7 +166,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 					<div class="sidebar-nav-container">
 						<span class="sidebar-nav-span">
 							<i class="icon-question sidebar-icon"></i><br>
-							Help p
+							Help
 						</span>
 					</div>
 				</div>
@@ -224,7 +175,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 					<div class="sidebar-nav-container">
 						<span  style="color: white;"  class="sidebar-nav-span">
 							<i class="icon-times sidebar-icon" aria-hidden="true"></i><br>
-							Back b
+							Back
 						</span>
 					</div>
 				</div>
@@ -233,7 +184,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 					<div class="sidebar-nav-container">
 						<span  style="color: white;"  class="sidebar-nav-span">
 							<i class="icon-times sidebar-icon" aria-hidden="true"></i><br>
-							Back a
+							Back
 						</span>
 					</div>
 				</div>
@@ -242,7 +193,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 					<div class="sidebar-nav-container">
 						<span  style="color: white;"  class="sidebar-nav-span">
 							<i class="icon-times sidebar-icon" aria-hidden="true"></i><br>
-							Back c
+							Back
 						</span>
 					</div>
 				</div>
@@ -251,7 +202,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 					<div class="sidebar-nav-container">
 						<span  style="color: white;"  class="sidebar-nav-span">
 							<i class="icon-times sidebar-icon" aria-hidden="true"></i><br>
-							Back p
+							Back
 						</span>
 					</div>
 				</div>
