@@ -111,15 +111,11 @@ function goToProducts(){
 function goToBufferHelp() {
 	 $("#buffer-help-link").css('display','none');
 	 $("#buffer-help-back-link").css('display','block');
-
 	 $('.sidebar-link').removeClass('hover-active-menu');
 	$('#help-slide').addClass("help-slide-animate");
-	// $(".preview-container").addClass("main-container-slide-left");
 	$(".main_container_clearfix").addClass("slide-left");
 	$(".main-content-container").css('top','100vh');
-
 	$('#post-preview-container').css('display','none');
-
 	//  hide menu
 	$('#captions-link').css('display','none');
 	$('#dashboard-link').css('display','none');
@@ -132,11 +128,8 @@ function goToBufferHelpBack(){
 		$("#buffer-help-back-link").css('display','none');
 		$("#buffer-help-link").css('display','block');
 		$('#help-slide').removeClass("help-slide-animate");
-
-		// $(".preview-container").removeClass("main-container-slide-left");
 		$(".main-content-container").css('top','0px');
 		$(".main_container_clearfix").removeClass("slide-left");
-
 		//  show menu
 		$('#products-link').css('display','block');
 		$('#captions-link').css('display','block');
@@ -147,32 +140,24 @@ function goToBufferHelpBack(){
 function goToAutopilotHelp() {
 	 $("#autopilot-help-link").css('display','none');
 	 $("#autopilot-help-back-link").css('display','block');
-
 	 $('.sidebar-link').removeClass('hover-active-menu');
 	$('#help-slide').addClass("help-slide-animate");
-	// $(".preview-container").addClass("main-container-slide-left");
 	$(".main_container_clearfix").addClass("slide-left");
 	$(".main-content-container").css('top','100vh');
-
 	$('#post-preview-container').css('display','none');
-
 	//  hide menu
 	$('#captions-link').css('display','none');
 	$('#dashboard-link').css('display','none');
 	$('#autopilot-link').css('display','none');
 	$('#products-link').css('display','none');
-
 };
 
 function goToAutopilotHelpBack(){
 		 $("#autopilot-help-back-link").css('display','none');
 		 $("#autopilot-help-link").css('display','block');
 		$('#help-slide').removeClass("help-slide-animate");
-
-		// $(".preview-container").removeClass("main-container-slide-left");
 		$(".main-content-container").css('top','0px');
 		$(".main_container_clearfix").removeClass("slide-left");
-
 		//  show menu
 		$('#products-link').css('display','block');
 		$('#captions-link').css('display','block');
@@ -185,12 +170,9 @@ function goToCaptionsHelp() {
 	 $("#captions-help-back-link").css('display','block');
 	 $('.sidebar-link').removeClass('hover-active-menu');
 	$('#help-slide').addClass("help-slide-animate");
-	// $(".preview-container").addClass("main-container-slide-left");
 	$(".main_container_clearfix").addClass("slide-left");
 	$(".main-content-container").css('top','100vh');
-
 	$('#post-preview-container').css('display','none');
-
 	//  hide menu
 	$('#captions-link').css('display','none');
 	$('#dashboard-link').css('display','none');
@@ -203,11 +185,8 @@ function goToCaptionsHelpBack(){
 		 $("#captions-help-back-link").css('display','none');
 		 $("#captions-help-link").css('display','block');
 		$('#help-slide').removeClass("help-slide-animate");
-
-		// $(".preview-container").removeClass("main-container-slide-left");
 		$(".main-content-container").css('top','0px');
 		$(".main_container_clearfix").removeClass("slide-left");
-
 		//  show menu
 		$('#products-link').css('display','block');
 		$('#captions-link').css('display','block');
@@ -218,15 +197,11 @@ function goToCaptionsHelpBack(){
 function goToProductsHelp() {
 	$("#products-help-link").css('display','none');
 	$("#products-help-back-link").css('display','block');
-
 	$('.sidebar-link').removeClass('hover-active-menu');
 	$('#help-slide').addClass("help-slide-animate");
-	// $(".preview-container").addClass("main-container-slide-left");
 	$(".main_container_clearfix").addClass("slide-left");
 	$(".main-content-container").css('top','100vh');
-
 	$('#post-preview-container').css('display','none');
-
 	//  hide menu
 	$('#captions-link').css('display','none');
 	$('#dashboard-link').css('display','none');
@@ -239,11 +214,8 @@ function goToProductsHelpBack(){
 		 $("#products-help-back-link").css('display','none');
 		 $("#products-help-link").css('display','block');
 		$('#help-slide').removeClass("help-slide-animate");
-
-		// $(".preview-container").removeClass("main-container-slide-left");
 		$(".main-content-container").css('top','0px');
 		$(".main_container_clearfix").removeClass("slide-left");
-
 		//  show menu
 		$('#products-link').css('display','block');
 		$('#captions-link').css('display','block');
