@@ -1469,7 +1469,6 @@ body {
 	height           : calc(100vh - 63px);
 	padding-top      : 63px;
 	padding-left     : 80px;
-
 	transition-timing-function : ease;
 	transition-duration        : 0.3s;
 	animation-direction        : normal;
@@ -1493,11 +1492,6 @@ body {
 	transition-duration: 0.5s;
 	animation-direction: normal;
 }
-
-// .main-container-slide-left {
-// 	position: absolute !important;
-// 	left: -80px !important;
-// }
 
 .main_container {
 	display : inline-table;
