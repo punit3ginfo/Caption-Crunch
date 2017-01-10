@@ -111,13 +111,10 @@ function goToProducts(){
 function goToBufferHelp() {
 	 $("#buffer-help-link").css('display','none');
 	 $("#buffer-help-back-link").css('display','block');
-	//  $('#products-link').removeClass('sidebar-link-active');
-	//  $('#captions-link').removeClass('sidebar-link-active');
-	//  $('#dashboard-link').removeClass('sidebar-link-active');
-	//  $('#autopilot-link').removeClass('sidebar-link-active');
+
 	 $('.sidebar-link').removeClass('hover-active-menu');
 	$('#help-slide').addClass("help-slide-animate");
-	$(".preview-container").addClass("main-container-slide-left");
+	// $(".preview-container").addClass("main-container-slide-left");
 	$(".main_container_clearfix").addClass("slide-left");
 	$(".main-content-container").css('top','100vh');
 
@@ -132,12 +129,11 @@ function goToBufferHelp() {
 };
 
 function goToBufferHelpBack(){
-		 $("#buffer-help-back-link").css('display','none');
-		 $("#buffer-help-link").css('display','block');
-		//  $('#dashboard-link').addClass('sidebar-link-active');
+		$("#buffer-help-back-link").css('display','none');
+		$("#buffer-help-link").css('display','block');
 		$('#help-slide').removeClass("help-slide-animate");
 
-		$(".preview-container").removeClass("main-container-slide-left");
+		// $(".preview-container").removeClass("main-container-slide-left");
 		$(".main-content-container").css('top','0px');
 		$(".main_container_clearfix").removeClass("slide-left");
 
@@ -151,13 +147,10 @@ function goToBufferHelpBack(){
 function goToAutopilotHelp() {
 	 $("#autopilot-help-link").css('display','none');
 	 $("#autopilot-help-back-link").css('display','block');
-	//  $('#products-link').removeClass('sidebar-link-active');
-	//  $('#captions-link').removeClass('sidebar-link-active');
-	//  $('#dashboard-link').removeClass('sidebar-link-active');
-	//  $('#autopilot-link').removeClass('sidebar-link-active');
+
 	 $('.sidebar-link').removeClass('hover-active-menu');
 	$('#help-slide').addClass("help-slide-animate");
-	$(".preview-container").addClass("main-container-slide-left");
+	// $(".preview-container").addClass("main-container-slide-left");
 	$(".main_container_clearfix").addClass("slide-left");
 	$(".main-content-container").css('top','100vh');
 
@@ -174,10 +167,9 @@ function goToAutopilotHelp() {
 function goToAutopilotHelpBack(){
 		 $("#autopilot-help-back-link").css('display','none');
 		 $("#autopilot-help-link").css('display','block');
-		//  $('#autopilot-link').addClass('sidebar-link-active');
 		$('#help-slide').removeClass("help-slide-animate");
 
-		$(".preview-container").removeClass("main-container-slide-left");
+		// $(".preview-container").removeClass("main-container-slide-left");
 		$(".main-content-container").css('top','0px');
 		$(".main_container_clearfix").removeClass("slide-left");
 
@@ -191,13 +183,9 @@ function goToAutopilotHelpBack(){
 function goToCaptionsHelp() {
 	 $("#captions-help-link").css('display','none');
 	 $("#captions-help-back-link").css('display','block');
-	//  $('#products-link').removeClass('sidebar-link-active');
-	//  $('#captions-link').removeClass('sidebar-link-active');
-	//  $('#dashboard-link').removeClass('sidebar-link-active');
-	//  $('#autopilot-link').removeClass('sidebar-link-active');
 	 $('.sidebar-link').removeClass('hover-active-menu');
 	$('#help-slide').addClass("help-slide-animate");
-	$(".preview-container").addClass("main-container-slide-left");
+	// $(".preview-container").addClass("main-container-slide-left");
 	$(".main_container_clearfix").addClass("slide-left");
 	$(".main-content-container").css('top','100vh');
 
@@ -214,10 +202,9 @@ function goToCaptionsHelp() {
 function goToCaptionsHelpBack(){
 		 $("#captions-help-back-link").css('display','none');
 		 $("#captions-help-link").css('display','block');
-		//  $('#captions-link').addClass('sidebar-link-active');
 		$('#help-slide').removeClass("help-slide-animate");
 
-		$(".preview-container").removeClass("main-container-slide-left");
+		// $(".preview-container").removeClass("main-container-slide-left");
 		$(".main-content-container").css('top','0px');
 		$(".main_container_clearfix").removeClass("slide-left");
 
@@ -229,15 +216,12 @@ function goToCaptionsHelpBack(){
 };
 
 function goToProductsHelp() {
-	 $("#products-help-link").css('display','none');
-	 $("#products-help-back-link").css('display','block');
-	//  $('#products-link').removeClass('sidebar-link-active');
-	//  $('#captions-link').removeClass('sidebar-link-active');
-	//  $('#dashboard-link').removeClass('sidebar-link-active');
-	//  $('#autopilot-link').removeClass('sidebar-link-active');
-	 $('.sidebar-link').removeClass('hover-active-menu');
+	$("#products-help-link").css('display','none');
+	$("#products-help-back-link").css('display','block');
+
+	$('.sidebar-link').removeClass('hover-active-menu');
 	$('#help-slide').addClass("help-slide-animate");
-	$(".preview-container").addClass("main-container-slide-left");
+	// $(".preview-container").addClass("main-container-slide-left");
 	$(".main_container_clearfix").addClass("slide-left");
 	$(".main-content-container").css('top','100vh');
 
@@ -254,10 +238,9 @@ function goToProductsHelp() {
 function goToProductsHelpBack(){
 		 $("#products-help-back-link").css('display','none');
 		 $("#products-help-link").css('display','block');
-		//  $('#products-link').addClass('sidebar-link-active');
 		$('#help-slide').removeClass("help-slide-animate");
 
-		$(".preview-container").removeClass("main-container-slide-left");
+		// $(".preview-container").removeClass("main-container-slide-left");
 		$(".main-content-container").css('top','0px');
 		$(".main_container_clearfix").removeClass("slide-left");
 
@@ -267,18 +250,6 @@ function goToProductsHelpBack(){
 		$('#dashboard-link').css('display','block');
 		$('#autopilot-link').css('display','block');
 };
-
-// function goToPreviewBack(){
-// 		 $("#products-help-back-link").css('display','none');
-// 		 $("#products-help-link").css('display','block');
-// 		 $('#products-link').addClass('sidebar-link-active');
-// 		$('#help-slide').removeClass("help-slide-animate");
-//
-// 		$(".preview-container").removeClass("main-container-slide-left");
-// 		$(".main-content-container").css('top','0px');
-// 		$(".main_container_clearfix").removeClass("slide-left");
-// };
-
 
 $(document).ready(function(){
 

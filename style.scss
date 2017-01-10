@@ -1447,9 +1447,6 @@ body {
 	top: 0px !important;
 }
 
-// main-container-slide-left
-
-
 .section {
 	    width: 100vw;
 	    height: calc(100vh - 80px);
@@ -1497,10 +1494,10 @@ body {
 	animation-direction: normal;
 }
 
-.main-container-slide-left {
-	position: absolute !important;
-	left: -80px !important;
-}
+// .main-container-slide-left {
+// 	position: absolute !important;
+// 	left: -80px !important;
+// }
 
 .main_container {
 	display : inline-table;

@@ -1103,10 +1103,6 @@ body {
   transition-duration: 0.5s;
   animation-direction: normal; }
 
-.main-container-slide-left {
-  position: absolute !important;
-  left: -80px !important; }
-
 .main_container {
   display: inline-table;
   width: calc(100% - 15px);
