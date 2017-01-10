@@ -204,7 +204,6 @@ function goToProductsHelp() {
 	$('#dashboard-link').css('display','none');
 	$('#autopilot-link').css('display','none');
 	$('#products-link').css('display','none');
-	$('#products-link').css('background-color','red');
 
 };
 
