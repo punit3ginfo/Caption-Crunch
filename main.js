@@ -121,6 +121,8 @@ function goToBufferHelp() {
 	$(".main_container_clearfix").addClass("slide-left");
 	$(".main-content-container").css('top','100vh');
 
+	$('#post-preview-container').css('display','none');
+
 	//  hide menu
 	$('#captions-link').css('display','none');
 	$('#dashboard-link').css('display','none');
@@ -158,6 +160,8 @@ function goToAutopilotHelp() {
 	$(".preview-container").addClass("main-container-slide-left");
 	$(".main_container_clearfix").addClass("slide-left");
 	$(".main-content-container").css('top','100vh');
+
+	$('#post-preview-container').css('display','none');
 
 	//  hide menu
 	$('#captions-link').css('display','none');
@@ -197,6 +201,8 @@ function goToCaptionsHelp() {
 	$(".main_container_clearfix").addClass("slide-left");
 	$(".main-content-container").css('top','100vh');
 
+	$('#post-preview-container').css('display','none');
+
 	//  hide menu
 	$('#captions-link').css('display','none');
 	$('#dashboard-link').css('display','none');
@@ -234,6 +240,8 @@ function goToProductsHelp() {
 	$(".preview-container").addClass("main-container-slide-left");
 	$(".main_container_clearfix").addClass("slide-left");
 	$(".main-content-container").css('top','100vh');
+
+	$('#post-preview-container').css('display','none');
 
 	//  hide menu
 	$('#captions-link').css('display','none');
