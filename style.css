@@ -1298,6 +1298,12 @@ body {
 .menu-container-active .menu-icon-container {
   background: #D577C3; }
 
+.help-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; }
+
 .menu-icon {
   display: block;
   letter-spacing: 0.82px;
