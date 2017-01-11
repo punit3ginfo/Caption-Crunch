@@ -1,5 +1,5 @@
 <!-- Gettings Started Nav Menu -->
-<div class="menu-container">
+<!-- <div class="menu-container">
 	<div class="menu-clearfix">
 		<div class="menu-font-container">
 			<span class="menu-font">Getting Started</span>
@@ -7,6 +7,24 @@
 		<div class="menu-icon-clearfix">
 			<div class="menu-icon-container">
 				<span class="help-menu-icon"><i id="gs-icon" class="icon-buffer" style="line-height: 40px;" aria-hidden="true"></i></span>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+<div onclick="" class="menu-link">
+	<div class="menu-container">
+		<div class="menu-clearfix">
+			<div class="menu-font-container">
+				<span class="menu-font">Getting Started</span>
+			</div>
+			<div class="menu-icon-clearfix">
+				<div class="menu-icon-con">
+					<div class="menu-icon-bg"></div>
+					<div class="menu-icon-container">
+						<span class="menu-icon"><i class="icon-buffer" style="line-height: 40px;" aria-hidden="true"></i></span>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
