@@ -15,7 +15,7 @@
 				<div class="menu-overflow">
 
 					<!-- Gettings Started Nav Menu -->
-					<div id="gs-trigger" class="menu-container">
+					<div class="menu-container">
 						<div class="menu-clearfix">
 							<div class="menu-font-container">
 								<span class="menu-font">Getting Started</span>
@@ -28,7 +28,7 @@
 						</div>
 					</div>
 
-					<div id="gs-dropdown">
+					<div>
 						<div class="sub-menu">
 							<div class="sub-menu-clearfix">
 								<span class="sub-menu-text">Help Topic 1<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
@@ -72,7 +72,7 @@
 					</div>
 
 					<!-- Buffer/Dashboard Nav Menu -->
-					<div id="share-trigger" class="menu-container">
+					<div class="menu-container">
 						<div class="menu-clearfix">
 							<div class="menu-font-container">
 								<span class="menu-font">Buffer Page</span>
@@ -85,7 +85,7 @@
 						</div>
 					</div>
 
-					<div id="share-dropdown">
+					<div>
 						<div class="sub-menu">
 							<div class="sub-menu-clearfix">
 								<span class="sub-menu-text">Help Topic 1<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
