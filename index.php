@@ -136,7 +136,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 
 				<div class="sidebar-link" onclick="goToBufferHelp()" id="buffer-help-link" style="display: none;">
-					<div class="sidebar-nav-container">
+					<div class="sidebar-nav-container" style="border: 0px;">
 						<span class="sidebar-nav-span">
 							<i class="icon-question sidebar-icon"></i><br>
 							Help
@@ -145,7 +145,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 
 				<div class="sidebar-link" onclick="goToAutopilotHelp()" id="autopilot-help-link" style="display: none;">
-					<div class="sidebar-nav-container">
+					<div class="sidebar-nav-container" style="border: 0px;">
 						<span class="sidebar-nav-span">
 							<i class="icon-question sidebar-icon"></i><br>
 							Help
@@ -154,7 +154,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 
 				<div class="sidebar-link" onclick="goToCaptionsHelp()" id="captions-help-link" style="display: none;">
-					<div class="sidebar-nav-container">
+					<div class="sidebar-nav-container" style="border: 0px;">
 						<span class="sidebar-nav-span">
 							<i class="icon-question sidebar-icon"></i><br>
 							Help
@@ -163,7 +163,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 
 				<div class="sidebar-link" onclick="goToProductsHelp()" id="products-help-link">
-					<div class="sidebar-nav-container">
+					<div class="sidebar-nav-container" style="border: 0px;">
 						<span class="sidebar-nav-span">
 							<i class="icon-question sidebar-icon"></i><br>
 							Help
@@ -172,7 +172,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 
 				<div class="sidebar-link sidebar-link-active" id="buffer-help-back-link" onclick="goToBufferHelpBack()"  style="display: none;">
-					<div class="sidebar-nav-container">
+					<div class="sidebar-nav-container" style="border: 0px;">
 						<span  style="color: white;"  class="sidebar-nav-span">
 							<i class="icon-times sidebar-icon" aria-hidden="true"></i><br>
 							Back
@@ -181,7 +181,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 
 				<div class="sidebar-link sidebar-link-active" id="autopilot-help-back-link" onclick="goToAutopilotHelpBack()"  style="display: none;">
-					<div class="sidebar-nav-container">
+					<div class="sidebar-nav-container" style="border: 0px;">
 						<span  style="color: white;"  class="sidebar-nav-span">
 							<i class="icon-times sidebar-icon" aria-hidden="true"></i><br>
 							Back
@@ -190,7 +190,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 
 				<div class="sidebar-link sidebar-link-active" id="captions-help-back-link" onclick="goToCaptionsHelpBack()"  style="display: none;">
-					<div class="sidebar-nav-container">
+					<div class="sidebar-nav-container" style="border: 0px;">
 						<span  style="color: white;"  class="sidebar-nav-span">
 							<i class="icon-times sidebar-icon" aria-hidden="true"></i><br>
 							Back
@@ -199,7 +199,7 @@ require __DIR__.'/smart_collection.php'; //create smart collection
 				</div>
 
 				<div class="sidebar-link sidebar-link-active" id="products-help-back-link" onclick="goToProductsHelpBack()"  style="display: none;">
-					<div class="sidebar-nav-container">
+					<div class="sidebar-nav-container" style="border: 0px;">
 						<span  style="color: white;"  class="sidebar-nav-span">
 							<i class="icon-times sidebar-icon" aria-hidden="true"></i><br>
 							Back
