@@ -22,7 +22,7 @@
 				<div class="menu-icon-con">
 					<div class="menu-icon-bg"></div>
 					<div class="menu-icon-container help-icon-container">
-						<i class="icon-play"></i>
+						<i class="icon-youtube-play"></i>
 					</div>
 				</div>
 			</div>
