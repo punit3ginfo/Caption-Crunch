@@ -59,7 +59,7 @@
 <div class="menu-container">
 	<div class="menu-clearfix">
 		<div class="menu-font-container">
-			<span class="menu-font">Buffer Page</span>
+			<span class="menu-font">Buffer</span>
 		</div>
 		<div class="menu-icon-clearfix">
 			<div class="menu-icon-container">
@@ -116,7 +116,7 @@
 <div class="menu-container">
 	<div class="menu-clearfix">
 		<div class="menu-font-container">
-			<span class="menu-font">Autopilot Page</span>
+			<span class="menu-font">Autopilot</span>
 		</div>
 		<div class="menu-icon-clearfix">
 			<div class="menu-icon-container">
@@ -175,7 +175,7 @@
 <div class="menu-container">
 	<div class="menu-clearfix">
 		<div class="menu-font-container">
-			<span class="menu-font">Captions Page</span>
+			<span class="menu-font">Captions</span>
 		</div>
 		<div class="menu-icon-clearfix">
 			<div class="menu-icon-container">
@@ -234,7 +234,7 @@
 <div class="menu-container">
 	<div class="menu-clearfix">
 		<div class="menu-font-container">
-			<span class="menu-font">Products Page</span>
+			<span class="menu-font">Products</span>
 		</div>
 		<div class="menu-icon-clearfix">
 			<div class="menu-icon-container">
