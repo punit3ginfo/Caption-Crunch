@@ -1487,7 +1487,7 @@ body {
 
 .main_container {
 	display : inline-table;
-	
+
 	width   : calc(100% - 15px);
 	height  : 100%;
 	padding : 15px;
@@ -1751,6 +1751,12 @@ body {
 
 .menu-container-active .menu-icon-container {
 	background : #D577C3;
+}
+
+.help-icon-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .menu-icon {

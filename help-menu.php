@@ -21,8 +21,8 @@
 			<div class="menu-icon-clearfix">
 				<div class="menu-icon-con">
 					<div class="menu-icon-bg"></div>
-					<div class="menu-icon-container">
-						<span class="menu-icon"><i class="icon-buffer" style="line-height: 40px;" aria-hidden="true"></i></span>
+					<div class="menu-icon-container help-icon-container">
+						<i class="icon-buffer"></i>
 					</div>
 				</div>
 			</div>
