@@ -18,42 +18,42 @@
 </div>
 
 <div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 1<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 2<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 3<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 4<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 5<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 6<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 7<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 8<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
@@ -80,42 +80,42 @@
 </div>
 
 <div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 1<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 2<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 3<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 4<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 5<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 6<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 7<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 8<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
@@ -142,42 +142,42 @@
 </div>
 
 <div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 1<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 2<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 3<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 4<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 5<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 6<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 7<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 8<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
@@ -204,42 +204,42 @@
 </div>
 
 <div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 1<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 2<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 3<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 4<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 5<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 6<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 7<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 8<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
@@ -266,42 +266,42 @@
 </div>
 
 <div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 1<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 2<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 3<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 4<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 5<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 6<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 7<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
 	</div>
-	<div class="sub-menu">
+	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 8<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
 		</div>
