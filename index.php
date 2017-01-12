@@ -16,12 +16,13 @@ if((isset($_REQUEST['shop'])) && (isset($_REQUEST['code'])) && $_REQUEST['shop']
 	$_SESSION['shop']=$_REQUEST['shop'];
 	$_SESSION['code']=$_REQUEST['code'];
 }
-$shop_url=$_REQUEST['shop'];
+//$shop_url=$_REQUEST['shop'];
  $select_store = pg_query($dbconn4,"SELECT * FROM store_info WHERE store_url = '$shop_url'");
 //check if the store exists
 if (pg_num_rows($select_store) > 0) {
 $data = pg_fetch_assoc($select_store);
  $access_token= $data['access_token'];
+ $store_url = $data['store_url'];
 }
 else {
 $access_token = shopify\access_token($_REQUEST['shop'], SHOPIFY_APP_API_KEY, SHOPIFY_APP_SHARED_SECRET, $_REQUEST['code']);
@@ -241,7 +242,7 @@ function getproducts(){
 		$(this).removeClass('menu-container-active');
 	});
 	var access_token='<?php echo $access_token ?>';
-	var shop='<?php echo $_REQUEST['shop'] ?>';
+	var shop='<?php echo $store_url ?>';
     	var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
      	$('#products').html(data);
 	$.ajax({
@@ -259,7 +260,7 @@ function getnewproducts(){
 		$(this).removeClass('menu-container-active');
 	});
 	var access_token='<?php echo $access_token ?>';
-	var shop='<?php echo $_REQUEST['shop'] ?>';
+	var shop='<?php echo $store_url ?>';
 	var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
      	$('#products').html(data);
 	$.ajax({
@@ -274,7 +275,7 @@ function getnewproducts(){
 // Get Share History
 function gethistory(){
 	var access_token='<?php echo $access_token ?>';
-	var shop='<?php echo $_REQUEST['shop'] ?>';
+	var shop='<?php echo $store_url ?>';
      	var data="<div class='loading-clearfix'><div class='loading-container'><div><img class='loading-img' src='images/loading13.gif' /><span class='cc-text-small loader-text'>Loading...</span></div></div></div>";
      	$('#products').html(data);
 	$.ajax({
