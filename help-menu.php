@@ -248,7 +248,7 @@
 
 <!-- Products Nav Menu -->
 <div onclick="" class="menu-link">
-	<div class="menu-container">
+	<div class="menu-container" id="products-help-menu-container">
 		<div class="menu-clearfix">
 			<div class="menu-font-container">
 				<span class="menu-font">Products</span>
