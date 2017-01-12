@@ -16,6 +16,7 @@ if((isset($_REQUEST['shop'])) && (isset($_REQUEST['code'])) && $_REQUEST['shop']
 	$_SESSION['shop']=$_REQUEST['shop'];
 	$_SESSION['code']=$_REQUEST['code'];
 }
+print_r($_SESSION);
 $shop_url = $_SESSION['shop'];
  $select_store = pg_query($dbconn4,"SELECT * FROM store_info WHERE store_url = '$shop_url'");
 //check if the store exists
