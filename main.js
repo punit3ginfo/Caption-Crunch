@@ -150,6 +150,7 @@ function goToProductsHelp() {
 	$('#products-link').css('display','none');
 	//  help menu active
 	$('#products-help-menu-container').addClass('menu-container-active');
+	$('#pruducts-help-sub-menu > .sub-menu:nth-child(1)').addClass('sub-menu-active');
 
 };
 

@@ -265,7 +265,7 @@
 	</div>
 </div>
 
-<div>
+<div id="pruducts-help-sub-menu">
 	<div class="sub-menu"  onclick="">
 		<div class="sub-menu-clearfix">
 			<span class="sub-menu-text">Help Topic 1<i class="fa fa-chevron-right sub-menu-arrow" aria-hidden="true"></i></span>
