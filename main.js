@@ -151,6 +151,12 @@ function goToProductsHelp() {
 	//  help menu active
 	$('#products-help-menu-container').addClass('menu-container-active');
 	$('#pruducts-help-sub-menu > .sub-menu:nth-child(1)').addClass('sub-menu-active');
+     //  help menu scroll
+     var $container = $('#help-menu-overflow'),
+	 $scrollTo = $('#products-help-menu-container');
+     $container.animate({
+	 scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop()
+     });
 
 };
 

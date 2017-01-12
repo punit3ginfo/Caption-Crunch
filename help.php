@@ -12,7 +12,7 @@
 			</div>
 
 			<div class="menu-overflow-container">
-				<div class="menu-overflow">
+				<div class="menu-overflow" id="help-menu-overflow">
 					<?php include 'help-menu.php' ?>
 				</div>
 			</div>
